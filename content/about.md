@@ -7,9 +7,9 @@ draft: false
 Product at Ramp | New York, NY
 
 ## Previously
-* DoorDash
-* Uber
-* WeWork
+* **DoorDash** – Strategy & Operations
+* **Uber** – Strategy & Operations
+* **WeWork** – Finance & Business Operations
 
 ## Education
 **Northwestern University**
