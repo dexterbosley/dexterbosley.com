@@ -7,3 +7,24 @@ theme = 'PaperMod'
 [params]
     defaultTheme = "dark"
     ShowReadingTime = true
+    # This line ensures the homepage shows a feed from all these folders
+    mainSections = ["product", "essays", "logs", "posts"]
+
+[menu]
+  [[menu.main]]
+    identifier = "on work"
+    name = "Product"
+    url = "/product/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "on anything else"
+    name = "Essays"
+    url = "/essays/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Logs"
+    url = "/logs/"
+    weight = 30
