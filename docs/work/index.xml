@@ -6,6 +6,14 @@
     <description>Recent content in Work on Dexter Bosley</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dexterbosley.com/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Work Post</title>
+      <link>https://dexterbosley.com/work/test-work/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://dexterbosley.com/work/test-work/</guid>
+      <description>&lt;p&gt;This is a test post for the Work tab.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

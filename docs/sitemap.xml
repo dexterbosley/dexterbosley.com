@@ -17,16 +17,24 @@
     <loc>https://dexterbosley.com/posts/the-first-story/</loc>
     <lastmod>2025-12-21T02:48:58-05:00</lastmod>
   </url><url>
-    <loc>https://dexterbosley.com/categories/</loc>
-  </url><url>
     <loc>https://dexterbosley.com/everything-else/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dexterbosley.com/everything-else/test-everything/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dexterbosley.com/work/test-work/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dexterbosley.com/work/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dexterbosley.com/about/</loc>
+  </url><url>
+    <loc>https://dexterbosley.com/categories/</loc>
   </url><url>
     <loc>https://dexterbosley.com/tags/</loc>
   </url><url>
     <loc>https://dexterbosley.com/work/technology/</loc>
-  </url><url>
-    <loc>https://dexterbosley.com/about/</loc>
-  </url><url>
-    <loc>https://dexterbosley.com/work/</loc>
   </url>
 </urlset>

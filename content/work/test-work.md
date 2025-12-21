@@ -1,5 +1,6 @@
-+++
-date = '2025-12-21T04:24:41-05:00'
-draft = true
-title = 'Test Work'
-+++
+---
+title: "Test Work Post"
+date: 2025-12-21
+draft: false
+---
+This is a test post for the Work tab.
