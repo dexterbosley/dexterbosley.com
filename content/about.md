@@ -10,40 +10,28 @@ draft: false
     <img src="/images/profile.jpg" alt="Dexter Bosley" width="200" style="border-radius: 8px;">
 </div>
 
-## Summary
-Product Lead with a background in high-growth Strategy & Operations. Focused on applying economic principles to scale marketplace logistics and reduce platform inefficiencies.
-
 ## Experience
 
-### Ramp
-**Product Lead** | *May 2024 – Present*
-* Developing the core spend platform.
+**Ramp**
+* Product Lead *(May 2024 – Present)*
 
----
+**DoorDash**
+* Associate Manager, Strategy & Operations *(Oct 2023 – Apr 2024)*
+* Senior Associate, Strategy & Operations *(Jan 2022 – Sep 2023)*
 
-### DoorDash
-**Associate Manager, Merchant Strategy & Operations** | *Jan 2022 – Apr 2024*
-* Developed products for a B+ business; delivered **$4.7M in annual savings** by optimizing driver wait times and fraud prevention.
-* Designed the core **'Prep Time Error' KPI** to measure order-ready accuracy platform-wide.
+**Uber**
+* Manager, Territory Operations *(Apr 2021 – Jan 2022)*
 
----
-
-### Uber
-**Manager, Territory Operations** | *Apr 2021 – Jan 2022*
-* Led US-Northeast operations analytics and merchant acquisition for a **$200M+ quarterly business**.
-* Managed a contract team responsible for ~40% of regional sales activity.
-
----
-
-### WeWork
-**Lead, Finance & Business Operations** | *Jul 2019 – Mar 2021*
-* Managed the **Executive Deal Desk**, approving **$240M+** in contract value during the COVID-19 pandemic.
-* Launched the first broker agency program across **4.0M rentable sq ft** in major US markets.
+**WeWork**
+* Lead, Finance & Business Operations *(Jan 2021 – Mar 2021)*
+* Associate, Sales Strategy & Operations *(Jul 2020 – Dec 2020)*
+* Analyst, Sales Strategy & Operations *(Jul 2019 – Jun 2020)*
 
 ## Education
+
 **Northwestern University**
-B.S., Economics, Learning and Organizational Change
+* B.S. Economics, Learning and Organizational Change *(2019)*
 
 ## Skills & Interests
-* **Skills:** SQL, R, STATA, Advanced Excel, Product Experiment Design.
-* **Interests:** Ski Racing, Political Organizing, Chess, Trance Music, Creative Writing, Urbanism.
+* **Skills:** SQL, R, STATA, Excel, Product Experiment Design
+* **Interests:** Ski Racing, Political Organizing, Chess, Trance Music, Creative Writing, Urbanism
