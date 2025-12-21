@@ -7,21 +7,11 @@ draft: false
 Product at Ramp | New York, NY
 
 ## Previously
-
-**DoorDash**
-* Associate Manager, Strategy & Operations
-* Senior Associate, Strategy & Operations
-
-**Uber**
-* Manager, Strategy & Operations
-
-**WeWork**
-* Lead, Finance & Business Operations
-* Associate, Sales Strategy & Operations
-* Analyst, Sales Strategy & Operations
+* DoorDash
+* Uber
+* WeWork
 
 ## Education
-
 **Northwestern University**
 * Bachelor's Degree in Economics
 
