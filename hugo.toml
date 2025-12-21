@@ -1,30 +1,30 @@
 baseURL = 'https://dexterbosley.com/'
 publishDir = "docs"
 languageCode = 'en-us'
-title = 'Dexter’s Archives'
+title = 'Dexter Bosley'
 theme = 'PaperMod'
 
 [params]
     defaultTheme = "dark"
     ShowReadingTime = true
-    # This line ensures the homepage shows a feed from all these folders
-    mainSections = ["product", "essays", "logs", "posts"]
+    # Update the feed to look at the new folder names
+    mainSections = ["essays", "stories", "blog"]
 
 [menu]
   [[menu.main]]
-    identifier = "on work"
-    name = "Product"
-    url = "/product/"
+    identifier = "essays"
+    name = "Essays"
+    url = "/essays/"
     weight = 10
 
   [[menu.main]]
-    identifier = "on anything else"
-    name = "Essays"
-    url = "/essays/"
+    identifier = "stories"
+    name = "Stories"
+    url = "/stories/"
     weight = 20
 
   [[menu.main]]
     identifier = "blog"
-    name = "Logs"
-    url = "/logs/"
+    name = "Blog"
+    url = "/blog/"
     weight = 30

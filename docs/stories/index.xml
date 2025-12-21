@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dexter Bosley</title>
-    <link>https://dexterbosley.com/</link>
-    <description>Recent content on Dexter Bosley</description>
+    <title>Product on Dexter Bosley</title>
+    <link>https://dexterbosley.com/stories/</link>
+    <description>Recent content in Product on Dexter Bosley</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Dec 2025 03:59:07 -0500</lastBuildDate>
-    <atom:link href="https://dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dexterbosley.com/stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
       <link>https://dexterbosley.com/stories/hello-world/</link>
       <pubDate>Sun, 21 Dec 2025 03:59:07 -0500</pubDate>
       <guid>https://dexterbosley.com/stories/hello-world/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>The First Story</title>
-      <link>https://dexterbosley.com/posts/the-first-story/</link>
-      <pubDate>Sun, 21 Dec 2025 02:48:58 -0500</pubDate>
-      <guid>https://dexterbosley.com/posts/the-first-story/</guid>
       <description></description>
     </item>
   </channel>
