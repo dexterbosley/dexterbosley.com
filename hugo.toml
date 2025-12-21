@@ -28,3 +28,9 @@ theme = 'PaperMod'
     name = "Blog"
     url = "/blog/"
     weight = 30
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
