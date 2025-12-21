@@ -11,13 +11,13 @@
     <loc>https://dexterbosley.com/work/hello-world/</loc>
     <lastmod>2025-12-21T03:59:07-05:00</lastmod>
   </url><url>
+    <loc>https://dexterbosley.com/work/</loc>
+    <lastmod>2025-12-21T03:59:07-05:00</lastmod>
+  </url><url>
     <loc>https://dexterbosley.com/other/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
     <loc>https://dexterbosley.com/blog/</loc>
-    <lastmod>2025-12-21T03:49:46-05:00</lastmod>
-  </url><url>
-    <loc>https://dexterbosley.com/work/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
     <loc>https://dexterbosley.com/posts/</loc>
@@ -32,6 +32,6 @@
   </url><url>
     <loc>https://dexterbosley.com/tags/</loc>
   </url><url>
-    <loc>https://dexterbosley.com/technology/</loc>
+    <loc>https://dexterbosley.com/work/technology/</loc>
   </url>
 </urlset>

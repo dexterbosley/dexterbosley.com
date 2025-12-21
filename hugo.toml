@@ -7,8 +7,8 @@ theme = 'PaperMod'
 [params]
     defaultTheme = "dark"
     ShowReadingTime = true
-    # This ensures the "All" tab shows content from your two main sections
-    mainSections = ["technology", "everything-else"]
+    # Homepage feed sources:
+    mainSections = ["work", "everything-else"]
 
 [menu]
   [[menu.main]]
@@ -18,9 +18,9 @@ theme = 'PaperMod'
     weight = 5
 
   [[menu.main]]
-    identifier = "technology"
-    name = "Technology"
-    url = "/technology/"
+    identifier = "work"
+    name = "Work"
+    url = "/work/"
     weight = 10
 
   [[menu.main]]
