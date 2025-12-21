@@ -4,7 +4,7 @@ draft: false
 ---
 
 # Dexter Bosley
-**Product Lead @ Ramp** | New York, NY
+**Product at Ramp** | New York, NY
 
 <div style="float: right; margin-left: 20px; margin-bottom: 20px;">
     <img src="/images/profile.jpg" alt="Dexter Bosley" width="200" style="border-radius: 8px;">
@@ -13,7 +13,7 @@ draft: false
 ## Experience
 
 **Ramp**
-* Product Lead *(May 2024 – Present)*
+* Product *(May 2024 – Present)*
 
 **DoorDash**
 * Associate Manager, Strategy & Operations *(Oct 2023 – Apr 2024)*
@@ -30,8 +30,7 @@ draft: false
 ## Education
 
 **Northwestern University**
-* B.S. Economics, Learning and Organizational Change *(2019)*
+* Bachelor's Degree in Economics *(2019)*
 
-## Skills & Interests
-* **Skills:** SQL, R, STATA, Excel, Product Experiment Design
-* **Interests:** Ski Racing, Political Organizing, Chess, Trance Music, Creative Writing, Urbanism
+## Interests
+* Skiing, Writing, Walking
