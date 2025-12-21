@@ -34,7 +34,21 @@
       <link>https://dexterbosley.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dexterbosley.com/about/</guid>
-      <description>&lt;p&gt;This is the About Me page. It should NOT appear on the All tab.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;dexter-bosley&#34;&gt;Dexter Bosley&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Product Lead @ Ramp&lt;/strong&gt; | New York, NY&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Product Lead with a background in high-growth Strategy &amp;amp; Operations at DoorDash and Uber. Focused on developing core platforms and applying economic principles to scale marketplace logistics.&lt;/p&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
+&lt;h3 id=&#34;ramp&#34;&gt;Ramp&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Product Lead&lt;/strong&gt; | &lt;em&gt;May 2024 – Present&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developing the core spend platform.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;doordash&#34;&gt;DoorDash&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Associate Manager, Strategy &amp;amp; Operations&lt;/strong&gt; | &lt;em&gt;Sep 2023 – Apr 2024&lt;/em&gt;
+&lt;strong&gt;Senior Associate, Strategy &amp;amp; Operations&lt;/strong&gt; | &lt;em&gt;Jan 2022 – Sep 2023&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
