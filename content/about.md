@@ -3,13 +3,10 @@ title: "About Me"
 draft: false
 ---
 
-# Dexter Bosley
-**Product at Ramp** | New York, NY
+**Currently**
+Product at Ramp | New York, NY
 
-## Experience
-
-**Ramp**
-* Product *(May 2024 – Present)*
+## Previously
 
 **DoorDash**
 * Associate Manager, Strategy & Operations *(Oct 2023 – Apr 2024)*
