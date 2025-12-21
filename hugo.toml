@@ -1,0 +1,9 @@
+baseURL = 'https://dexterbosley.com/'
+publishDir = "docs"
+languageCode = 'en-us'
+title = 'Dexter’s Archives'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "dark"
+    ShowReadingTime = true
