@@ -13,7 +13,7 @@ Product at Ramp | New York, NY
 * Senior Associate, Strategy & Operations
 
 **Uber**
-* Manager, Territory Operations
+* Manager, Strategy & Operations
 
 **WeWork**
 * Lead, Finance & Business Operations
