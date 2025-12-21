@@ -6,8 +6,15 @@
     <description>Recent content on Dexter’s Archives</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Dec 2025 02:48:58 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 03:59:07 -0500</lastBuildDate>
     <atom:link href="https://dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://dexterbosley.com/product/hello-world/</link>
+      <pubDate>Sun, 21 Dec 2025 03:59:07 -0500</pubDate>
+      <guid>https://dexterbosley.com/product/hello-world/</guid>
+      <description></description>
+    </item>
     <item>
       <title>The First Story</title>
       <link>https://dexterbosley.com/posts/the-first-story/</link>
