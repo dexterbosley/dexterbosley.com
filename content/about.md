@@ -12,8 +12,7 @@ Product at Ramp | New York, NY
 * **WeWork** – Finance & Business Operations
 
 ## Education
-**Northwestern University**
-* Bachelor's Degree in Economics
+* **Northwestern University** – Bachelor's Degree in Economics
 
 ## Interests
 * Skiing, Writing, Walking, and Talking
