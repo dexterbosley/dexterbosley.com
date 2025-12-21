@@ -6,10 +6,6 @@ draft: false
 # Dexter Bosley
 **Product at Ramp** | New York, NY
 
-<div style="float: right; margin-left: 20px; margin-bottom: 20px;">
-    <img src="/images/profile.jpg" alt="Dexter Bosley" width="200" style="border-radius: 8px;">
-</div>
-
 ## Experience
 
 **Ramp**
