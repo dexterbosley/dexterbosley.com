@@ -23,7 +23,7 @@ Product at Ramp | New York, NY
 ## Education
 
 **Northwestern University**
-* Bachelor's Degree in Economics *(2019)*
+* Bachelor's Degree in Economics
 
 ## Interests
-* Skiing, Writing, Walking
+* Skiing, Writing, Walking, and Talking
