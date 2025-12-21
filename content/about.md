@@ -11,7 +11,7 @@ draft: false
 </div>
 
 ## Summary
-Product Lead with a background in high-growth Strategy & Operations at DoorDash and Uber. Focused on developing core platforms and applying economic principles to scale marketplace logistics.
+Product Lead with a background in high-growth Strategy & Operations. Focused on applying economic principles to scale marketplace logistics and reduce platform inefficiencies.
 
 ## Experience
 
@@ -22,24 +22,28 @@ Product Lead with a background in high-growth Strategy & Operations at DoorDash 
 ---
 
 ### DoorDash
-**Associate Manager, Strategy & Operations** | *Sep 2023 – Apr 2024*
-**Senior Associate, Strategy & Operations** | *Jan 2022 – Sep 2023*
+**Associate Manager, Merchant Strategy & Operations** | *Jan 2022 – Apr 2024*
+* Developed products for a B+ business; delivered **$4.7M in annual savings** by optimizing driver wait times and fraud prevention.
+* Designed the core **'Prep Time Error' KPI** to measure order-ready accuracy platform-wide.
 
 ---
 
 ### Uber
-**Manager, Strategy & Operations** | *Apr 2021 – Jan 2022*
+**Manager, Territory Operations** | *Apr 2021 – Jan 2022*
+* Led US-Northeast operations analytics and merchant acquisition for a **$200M+ quarterly business**.
+* Managed a contract team responsible for ~40% of regional sales activity.
 
 ---
 
 ### WeWork
-**Lead, Finance & Operations** | *Jan 2021 – Apr 2021*
-* Previously held Associate and Analyst roles in Sales Strategy & Operations (2019–2021).
+**Lead, Finance & Business Operations** | *Jul 2019 – Mar 2021*
+* Managed the **Executive Deal Desk**, approving **$240M+** in contract value during the COVID-19 pandemic.
+* Launched the first broker agency program across **4.0M rentable sq ft** in major US markets.
 
 ## Education
 **Northwestern University**
-B.A., Economics
+B.S., Economics, Learning and Organizational Change
 
-## Skills
-* SQL
-* Microsoft Excel
+## Skills & Interests
+* **Skills:** SQL, R, STATA, Advanced Excel, Product Experiment Design.
+* **Interests:** Ski Racing, Political Organizing, Chess, Trance Music, Creative Writing, Urbanism.
