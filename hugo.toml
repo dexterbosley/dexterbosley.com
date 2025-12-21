@@ -1,43 +1,30 @@
 baseURL = 'https://dexterbosley.com/'
 publishDir = "docs"
 languageCode = 'en-us'
-title = 'Dexter Bosley'
+title = 'Dexter’s Archives'
 theme = 'PaperMod'
 
 [params]
     defaultTheme = "dark"
     ShowReadingTime = true
-    # This controls what appears on the "All" (Home) page.
-    # Currently set to show everything. Remove "blog" if you only want Essays/Stories there.
-    mainSections = ["essays", "stories", "blog"]
+    # The homepage will show a feed from Technology and Everything Else
+    mainSections = ["technology", "everything-else"]
 
 [menu]
   [[menu.main]]
-    identifier = "all"
-    name = "All"
-    url = "/"
-    weight = 5
-
-  [[menu.main]]
-    identifier = "essays"
-    name = "Essays"
-    url = "/essays/"
+    identifier = "technology"
+    name = "Technology"
+    url = "/technology/"
     weight = 10
 
   [[menu.main]]
-    identifier = "stories"
-    name = "Stories"
-    url = "/stories/"
+    identifier = "everything-else"
+    name = "Everything Else"
+    url = "/everything-else/"
     weight = 20
 
   [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 30
-
-  [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "About Me"
     url = "/about/"
-    weight = 40
+    weight = 30

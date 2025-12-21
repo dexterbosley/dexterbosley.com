@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dexter Bosley</title>
+    <title>Dexter’s Archives</title>
     <link>https://dexterbosley.com/</link>
-    <description>Recent content on Dexter Bosley</description>
+    <description>Recent content on Dexter’s Archives</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Dec 2025 04:07:18 -0500</lastBuildDate>
@@ -17,9 +17,9 @@
     </item>
     <item>
       <title>Hello World</title>
-      <link>https://dexterbosley.com/stories/hello-world/</link>
+      <link>https://dexterbosley.com/work/hello-world/</link>
       <pubDate>Sun, 21 Dec 2025 03:59:07 -0500</pubDate>
-      <guid>https://dexterbosley.com/stories/hello-world/</guid>
+      <guid>https://dexterbosley.com/work/hello-world/</guid>
       <description></description>
     </item>
     <item>
