@@ -7,10 +7,17 @@ theme = 'PaperMod'
 [params]
     defaultTheme = "dark"
     ShowReadingTime = true
-    # Update the feed to look at the new folder names
+    # This controls what appears on the "All" (Home) page.
+    # Currently set to show everything. Remove "blog" if you only want Essays/Stories there.
     mainSections = ["essays", "stories", "blog"]
 
 [menu]
+  [[menu.main]]
+    identifier = "all"
+    name = "All"
+    url = "/"
+    weight = 5
+
   [[menu.main]]
     identifier = "essays"
     name = "Essays"
@@ -29,7 +36,7 @@ theme = 'PaperMod'
     url = "/blog/"
     weight = 30
 
-[[menu.main]]
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
