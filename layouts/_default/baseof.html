@@ -30,14 +30,19 @@
         
         /* --- SIDEBAR LINKS --- */
         .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
-        /* Default state: No underline, normal weight */
-        .sidebar-menu a { text-decoration: none; color: var(--primary); border-bottom: none; display: inline-block; }
+        .sidebar-menu a { 
+            text-decoration: none; 
+            color: var(--primary); 
+            border-bottom: none; /* Default: No underline */
+            display: inline-block; 
+        }
         .sidebar-menu a:hover { color: var(--secondary); }
         
-        /* --- ACTIVE STATE (BOLD ONLY) --- */
+        /* --- ACTIVE STATE --- */
         .sidebar-menu a.active { 
             font-weight: bold !important; 
-            border-bottom: none !important; /* Ensures no underline appears */
+            border-bottom: none !important; 
+            color: var(--primary) !important;
         }
     </style>
 </head>
@@ -64,20 +69,22 @@
 
     <script>
         (function() {
-            // Get current path and remove trailing slash for consistent comparison
-            const currentPath = window.location.pathname.replace(/\/$/, "");
+            // Remove "active" from everyone first (Safety measure)
+            document.querySelectorAll('.sidebar-menu a').forEach(a => a.classList.remove('active'));
+
+            const currentPath = window.location.pathname.replace(/\/$/, ""); // Strip trailing slash
             const links = document.querySelectorAll('.sidebar-menu a');
             
             links.forEach(link => {
-                // Get link path and remove trailing slash
-                const linkPath = link.getAttribute('href').replace(/\/$/, "");
+                const linkHref = link.getAttribute('href');
+                const linkPath = linkHref.replace(/\/$/, ""); // Strip trailing slash
                 
-                // 1. HOME: If both are empty strings or just slash (after replacing), it's Home
+                // 1. HOME: Only match if current path is empty or "/"
                 if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
                     link.classList.add('active');
                 }
-                // 2. OTHER PAGES: If current path starts with link path (and link isn't home)
-                // e.g. current: "/about" matches link: "/about"
+                // 2. SECTIONS: Match if path starts with link (but link isn't home)
+                // This ensures "/essays/" matches "/essays/my-post"
                 else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
                     link.classList.add('active');
                 }

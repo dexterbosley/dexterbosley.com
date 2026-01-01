@@ -123,14 +123,19 @@
         
          
         .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
-         
-        .sidebar-menu a { text-decoration: none; color: var(--primary); border-bottom: none; display: inline-block; }
+        .sidebar-menu a { 
+            text-decoration: none; 
+            color: var(--primary); 
+            border-bottom: none;  
+            display: inline-block; 
+        }
         .sidebar-menu a:hover { color: var(--secondary); }
         
          
         .sidebar-menu a.active { 
             font-weight: bold !important; 
-            border-bottom: none !important;  
+            border-bottom: none !important; 
+            color: var(--primary) !important;
         }
     </style>
 </head>
@@ -275,12 +280,14 @@
     <script>
         (function() {
             
-            const currentPath = window.location.pathname.replace(/\/$/, "");
+            document.querySelectorAll('.sidebar-menu a').forEach(a => a.classList.remove('active'));
+
+            const currentPath = window.location.pathname.replace(/\/$/, ""); 
             const links = document.querySelectorAll('.sidebar-menu a');
             
             links.forEach(link => {
-                
-                const linkPath = link.getAttribute('href').replace(/\/$/, "");
+                const linkHref = link.getAttribute('href');
+                const linkPath = linkHref.replace(/\/$/, ""); 
                 
                 
                 if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
