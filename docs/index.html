@@ -94,7 +94,10 @@
 }
 </script><style>
          
-        .header .menu { display: none !important; }
+         
+        .header .menu, .nav, #menu { 
+            display: none !important; 
+        }
         
          
         #Box {
@@ -107,14 +110,14 @@
         @media (min-width: 800px) {
             #Box {
                 display: grid;
-                grid-template-columns: 200px 1fr;  
+                grid-template-columns: 200px 1fr;
                 grid-template-rows: auto 1fr;
                 grid-template-areas: 
                     "banner banner"
                     "sidebar main";
                 column-gap: 40px;
             }
-            .df-banner-wrapper { grid-area: banner; margin-bottom: 40px; }
+            .df-banner-wrapper { grid-area: banner; margin-bottom: 20px; }
             #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
             #Main { grid-area: main; }
         }
@@ -136,23 +139,34 @@
             line-height: 2.0;
             font-size: 18px;
         }
-
-         
         .sidebar-menu a {
             text-decoration: none;
             color: var(--primary);  
             border-bottom: 2px solid transparent;  
         }
-
-         
         .sidebar-menu a:hover {
-            color: var(--secondary);
+            color: var(--secondary);  
         }
-
-         
         .sidebar-menu a.active {
             font-weight: bold;
             border-bottom: 2px solid var(--primary);  
+        }
+
+         
+        .banner-subtitle {
+            margin-top: -25px;  
+            margin-bottom: 20px;
+            margin-left: 2px;   
+            color: var(--secondary);  
+            font-size: 16px;
+            font-weight: normal;
+        }
+         
+        @media (max-width: 799px) {
+            .banner-subtitle {
+                text-align: center;
+                margin-top: -10px;
+            }
         }
     </style>
 </head>
@@ -212,11 +226,10 @@
         </ul>
     </nav>
 </header>
-</div>
+<div class="banner-subtitle">By Dexter Bosley</div>
+        </div>
 
-        <div id="Sidebar"><p>By <strong>Dexter&nbsp;Bosley</strong></p>
-
-<ul class="sidebar-menu">
+        <div id="Sidebar"><ul class="sidebar-menu">
     <li>
         <a href="/" title="All" class="">
             All
