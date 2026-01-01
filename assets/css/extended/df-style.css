@@ -1,0 +1,51 @@
+/* Disable default PaperMod Header since we built our own */
+header.header { display: none !important; }
+
+/* Main Layout Container */
+#Box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: sans-serif; /* DF uses sans-serif for UI */
+}
+
+/* Default Mobile Layout (Stacked) */
+#Banner, #Sidebar, #Main {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Desktop Layout (Grid) */
+@media (min-width: 800px) {
+    #Box {
+        display: grid;
+        grid-template-columns: 220px 1fr; /* Sidebar width | Content width */
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+            "banner banner"
+            "sidebar main";
+        column-gap: 40px;
+    }
+
+    #Banner  { grid-area: banner; background-color: #4a525a; padding: 10px; color: white; margin-bottom: 30px; }
+    #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid #eee; padding-right: 20px; }
+    #Main    { grid-area: main; }
+}
+
+/* Sidebar Styling */
+#Sidebar a {
+    text-decoration: none;
+    color: #000;
+}
+#Sidebar a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+/* Banner Styling */
+#Banner {
+    background-color: #222; /* Dark background like DF header area */
+    color: #fff;
+    padding: 15px;
+}
+#Banner a { color: white; }
