@@ -16,6 +16,20 @@
       <description></description>
     </item>
     <item>
+      <title>My First Test Essay</title>
+      <link>https://www.dexterbosley.com/essays/test-essay/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/test-essay/</guid>
+      <description>&lt;p&gt;This is a test essay. It should appear in the Essays tab and the All tab.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Test Story</title>
+      <link>https://www.dexterbosley.com/stories/test-story/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story/</guid>
+      <description>&lt;p&gt;This is a test story. It should appear in the Stories tab and the All tab.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Test Everything Else Post</title>
       <link>https://www.dexterbosley.com/everything-else/test-post/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
