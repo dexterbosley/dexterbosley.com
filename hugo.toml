@@ -1,41 +1,30 @@
-baseURL = 'https://dexterbosley.com/'
-publishDir = "docs"
+baseURL = 'https://www.dexterbosley.com/'
 languageCode = 'en-us'
-title = 'Dexter Bosley'
+title = 'Thinking in Public'
 theme = 'PaperMod'
 
-[params]
-    defaultTheme = "dark"
-    ShowReadingTime = true
-    # Homepage feed sources:
-    mainSections = ["work", "everything-else"]
+[menus]
 
-[menu]
-  [[menu.main]]
-    identifier = "all"
-    name = "All"
-    url = "/"
-    weight = 5
+[[menus.main]]
+  identifier = "all"
+  name = "All"
+  url = "/"
+  weight = 10
 
-  [[menu.main]]
-    identifier = "work"
-    name = "Work"
-    url = "/work/"
-    weight = 10
+[[menus.main]]
+  identifier = "essays"
+  name = "Essays"
+  url = "/essays/"
+  weight = 20
 
-  [[menu.main]]
-    identifier = "everything-else"
-    name = "Everything Else"
-    url = "/everything-else/"
-    weight = 20
+[[menus.main]]
+  identifier = "stories"
+  name = "Stories"
+  url = "/stories/"
+  weight = 30
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About Me"
-    url = "/about/"
-    weight = 30
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[[menus.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40
