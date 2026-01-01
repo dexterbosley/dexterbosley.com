@@ -1,25 +1,42 @@
-/* Disable default PaperMod Header since we built our own */
-header.header { display: none !important; }
-
-/* Main Layout Container */
+/* --- Grid Layout Setup --- */
 #Box {
     max-width: 1000px;
     margin: 0 auto;
     padding: 15px;
-    font-family: sans-serif; /* DF uses sans-serif for UI */
+    font-family: sans-serif;
 }
 
-/* Default Mobile Layout (Stacked) */
-#Banner, #Sidebar, #Main {
+/* Position the Header in the 'banner' slot */
+.df-banner-wrapper {
+    grid-area: banner;
+    margin-bottom: 20px;
+}
+
+/* Force the internal PaperMod header to fit our layout */
+.header {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/* HIDE the menu links in the top header (since they are in the sidebar) */
+.header .menu {
+    display: none;
+}
+
+/* Mobile Layout (Stacked) */
+.df-banner-wrapper, #Sidebar, #Main {
     width: 100%;
     margin-bottom: 20px;
 }
 
-/* Desktop Layout (Grid) */
+/* Desktop Layout (Side-by-Side) */
 @media (min-width: 800px) {
     #Box {
         display: grid;
-        grid-template-columns: 220px 1fr; /* Sidebar width | Content width */
+        grid-template-columns: 220px 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas: 
             "banner banner"
@@ -27,25 +44,24 @@ header.header { display: none !important; }
         column-gap: 40px;
     }
 
-    #Banner  { grid-area: banner; background-color: #4a525a; padding: 10px; color: white; margin-bottom: 30px; }
-    #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid #eee; padding-right: 20px; }
-    #Main    { grid-area: main; }
+    #Sidebar { 
+        grid-area: sidebar; 
+        text-align: right; 
+        border-right: 1px solid #eee; 
+        padding-right: 20px; 
+    }
+    
+    #Main { 
+        grid-area: main; 
+    }
 }
 
-/* Sidebar Styling */
+/* Sidebar Link Styling */
 #Sidebar a {
     text-decoration: none;
-    color: #000;
+    color: var(--primary); /* Uses PaperMod's dynamic text color */
 }
 #Sidebar a:hover {
     text-decoration: underline;
-    color: #0066cc;
+    color: var(--secondary);
 }
-
-/* Banner Styling */
-#Banner {
-    background-color: #222; /* Dark background like DF header area */
-    color: #fff;
-    padding: 15px;
-}
-#Banner a { color: white; }
