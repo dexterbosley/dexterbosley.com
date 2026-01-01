@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 <head>
-	<meta name="generator" content="Hugo 0.153.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.153.1">
+    <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -92,90 +93,49 @@
       
   ]
 }
-</script><style>
+</script>
+    <style>
          
-         
-        .header .menu, .nav, #menu { 
-            display: none !important; 
-        }
+        #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
         
-         
-        #Box {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-         
         @media (min-width: 800px) {
-            #Box {
-                display: grid;
-                grid-template-columns: 200px 1fr;
-                grid-template-rows: auto 1fr;
-                grid-template-areas: 
-                    "banner banner"
-                    "sidebar main";
-                column-gap: 40px;
+            #Box { 
+                display: grid; 
+                grid-template-columns: 200px 1fr; 
+                grid-template-rows: auto 1fr; 
+                grid-template-areas: "banner banner" "sidebar main"; 
+                column-gap: 40px; 
             }
             .df-banner-wrapper { grid-area: banner; margin-bottom: 20px; }
             #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
             #Main { grid-area: main; }
         }
-
-         
+        
         @media (max-width: 799px) {
             #Sidebar { 
                 text-align: center; 
                 border-bottom: 1px solid var(--border); 
                 padding-bottom: 20px; 
-                margin-bottom: 20px;
+                margin-bottom: 20px; 
             }
         }
-
+        
          
-        .sidebar-menu {
-            list-style: none;
-            padding: 0;
-            line-height: 2.0;
-            font-size: 18px;
-        }
-        .sidebar-menu a {
-            text-decoration: none;
-            color: var(--primary);  
-            border-bottom: 2px solid transparent;  
-        }
-        .sidebar-menu a:hover {
-            color: var(--secondary);  
-        }
-        .sidebar-menu a.active {
-            font-weight: bold;
-            border-bottom: 2px solid var(--primary);  
-        }
-
+        .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
+        .sidebar-menu a { text-decoration: none; color: var(--primary); border-bottom: 2px solid transparent; display: inline-block; }
+        .sidebar-menu a:hover { color: var(--secondary); }
+        
          
-        .banner-subtitle {
-            margin-top: -25px;  
-            margin-bottom: 20px;
-            margin-left: 2px;   
-            color: var(--secondary);  
-            font-size: 16px;
-            font-weight: normal;
-        }
-         
-        @media (max-width: 799px) {
-            .banner-subtitle {
-                text-align: center;
-                margin-top: -10px;
-            }
+        .sidebar-menu a.active { 
+            font-weight: bold !important; 
+            border-bottom: 2px solid var(--primary) !important; 
         }
     </style>
 </head>
-
 <body class="" id="top">
-
     <div id="Box">
-        
-        <div class="df-banner-wrapper"><header class="header">
+        <div class="df-banner-wrapper">
+            <header class="header">
     <nav class="nav" style="display: flex !important; justify-content: flex-start; align-items: center; margin-left: 0;">
         <div class="logo" style="display: flex; align-items: center; gap: 15px;">
             
@@ -211,37 +171,20 @@
         </div>
     </nav>
 </header>
-</div>
 
-        <div id="Sidebar"><ul class="sidebar-menu">
-    <li>
-        <a href="/" title="All" class="">
-            All
-        </a>
-    </li>
-    <li>
-        <a href="/essays/" title="Essays" class="">
-            Essays
-        </a>
-    </li>
-    <li>
-        <a href="/stories/" title="Stories" class="">
-            Stories
-        </a>
-    </li>
-    <li>
-        <a href="/about/" title="About" class="">
-            About
-        </a>
-    </li>
-</ul>
+        </div>
 
-<div style="margin-top: 2rem;">
-    <p><small>© 2025</small></p>
-</div>
-</div>
+        <div id="Sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/">All</a></li>
+                <li><a href="/essays/">Essays</a></li>
+                <li><a href="/stories/">Stories</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </div>
 
-        <main id="Main" class="main"> 
+        <main id="Main" class="main">
+             
 
 <article class="first-entry"> 
   <header class="entry-header">
@@ -269,8 +212,8 @@
   <a class="entry-link" aria-label="post link to My First Test Story" href="https://www.dexterbosley.com/stories/test-story/"></a>
 </article>
         </main>
-
     </div>
+    
 <footer class="footer">
         <span>&copy; 2025 <a href="https://www.dexterbosley.com/">Thinking in Public</a></span> · 
 
@@ -346,5 +289,23 @@
     })
 
 </script>
+
+
+    <script>
+        (function() {
+            const currentPath = window.location.pathname;
+            const links = document.querySelectorAll('.sidebar-menu a');
+            
+            links.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (currentPath === '/' && linkPath === '/') {
+                    link.classList.add('active');
+                }
+                else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    link.classList.add('active');
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

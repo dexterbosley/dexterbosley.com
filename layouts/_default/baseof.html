@@ -1,107 +1,81 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+<html lang="en" dir="auto">
 <head>
-    {{- partial "head.html" . -}}
-    
+    {{ partial "head.html" . }}
     <style>
-        /* 1. HIDE TOP NAVIGATION MENU */
-        /* This ensures the links (All, Essays, etc) do NOT appear in the top header */
-        .header .menu, .nav, #menu { 
-            display: none !important; 
-        }
+        /* --- LAYOUT CSS --- */
+        #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
         
-        /* 2. Layout Grid */
-        #Box {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Desktop Layout */
         @media (min-width: 800px) {
-            #Box {
-                display: grid;
-                grid-template-columns: 200px 1fr;
-                grid-template-rows: auto 1fr;
-                grid-template-areas: 
-                    "banner banner"
-                    "sidebar main";
-                column-gap: 40px;
+            #Box { 
+                display: grid; 
+                grid-template-columns: 200px 1fr; 
+                grid-template-rows: auto 1fr; 
+                grid-template-areas: "banner banner" "sidebar main"; 
+                column-gap: 40px; 
             }
             .df-banner-wrapper { grid-area: banner; margin-bottom: 20px; }
             #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
             #Main { grid-area: main; }
         }
-
-        /* Mobile Layout */
+        
         @media (max-width: 799px) {
             #Sidebar { 
                 text-align: center; 
                 border-bottom: 1px solid var(--border); 
                 padding-bottom: 20px; 
-                margin-bottom: 20px;
+                margin-bottom: 20px; 
             }
         }
-
-        /* 3. Sidebar Styling (Matching Old Hugo Header Style) */
-        .sidebar-menu {
-            list-style: none;
-            padding: 0;
-            line-height: 2.0;
-            font-size: 18px;
-        }
-        .sidebar-menu a {
-            text-decoration: none;
-            color: var(--primary); /* Standard text color */
-            border-bottom: 2px solid transparent; /* Invisible border to stop jumping */
-        }
-        .sidebar-menu a:hover {
-            color: var(--secondary); /* Grey on hover */
-        }
-        .sidebar-menu a.active {
-            font-weight: bold;
-            border-bottom: 2px solid var(--primary); /* The active underline */
-        }
-
-        /* 4. Subtitle Styling (Byline) */
-        .banner-subtitle {
-            margin-top: -25px; /* Pull it up closer to the Title */
-            margin-bottom: 20px;
-            margin-left: 2px;  /* Align with logo text */
-            color: var(--secondary); /* Theme's muted/grey text color */
-            font-size: 16px;
-            font-weight: normal;
-        }
-        /* Mobile adjust for subtitle */
-        @media (max-width: 799px) {
-            .banner-subtitle {
-                text-align: center;
-                margin-top: -10px;
-            }
+        
+        /* --- SIDEBAR LINKS --- */
+        .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
+        .sidebar-menu a { text-decoration: none; color: var(--primary); border-bottom: 2px solid transparent; display: inline-block; }
+        .sidebar-menu a:hover { color: var(--secondary); }
+        
+        /* --- ACTIVE STATE --- */
+        .sidebar-menu a.active { 
+            font-weight: bold !important; 
+            border-bottom: 2px solid var(--primary) !important; 
         }
     </style>
 </head>
-
-<body class="{{ if .Site.Params.list_layout }}list{{ end }}" id="top">
-
+<body class="" id="top">
     <div id="Box">
-        
         <div class="df-banner-wrapper">
-            {{- partial "header.html" . -}}
-            
+            {{ partial "header.html" . }}
         </div>
 
         <div id="Sidebar">
-            {{- partial "sidebar.html" . -}}
+            <ul class="sidebar-menu">
+                <li><a href="/">All</a></li>
+                <li><a href="/essays/">Essays</a></li>
+                <li><a href="/stories/">Stories</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
         </div>
 
         <main id="Main" class="main">
-            {{- block "main" . }}{{- end }}
+            {{ block "main" . }}{{ end }}
         </main>
-
     </div>
+    {{ partial "footer.html" . }}
 
-    {{- partial "footer.html" . -}}
-
+    <script>
+        (function() {
+            const currentPath = window.location.pathname;
+            const links = document.querySelectorAll('.sidebar-menu a');
+            
+            links.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (currentPath === '/' && linkPath === '/') {
+                    link.classList.add('active');
+                }
+                else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    link.classList.add('active');
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
