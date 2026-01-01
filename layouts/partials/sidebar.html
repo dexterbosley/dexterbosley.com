@@ -1,13 +1,16 @@
 <p>By <strong>Dexter&nbsp;Bosley</strong></p>
 
-<ul style="list-style: none; padding: 0; line-height: 1.6;">
+<ul class="sidebar-menu">
+    {{- $currentPage := . }}
     {{- range .Site.Menus.main }}
     <li>
-        <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+        <a href="{{ .URL }}" title="{{ .Name }}" class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
+            {{ .Name }}
+        </a>
     </li>
     {{- end }}
 </ul>
 
 <div style="margin-top: 2rem;">
-    <p><small>Thinking in Public<br>© 2025</small></p>
+    <p><small>© 2025</small></p>
 </div>

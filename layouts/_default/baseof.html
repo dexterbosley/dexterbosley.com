@@ -2,6 +2,70 @@
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 <head>
     {{- partial "head.html" . -}}
+    
+    <style>
+        /* 1. Hide Default Header Menu (since we moved it to the sidebar) */
+        .header .menu { display: none !important; }
+        
+        /* 2. Layout Grid */
+        #Box {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Desktop Layout (Split Screen) */
+        @media (min-width: 800px) {
+            #Box {
+                display: grid;
+                grid-template-columns: 200px 1fr; /* Sidebar | Content */
+                grid-template-rows: auto 1fr;
+                grid-template-areas: 
+                    "banner banner"
+                    "sidebar main";
+                column-gap: 40px;
+            }
+            .df-banner-wrapper { grid-area: banner; margin-bottom: 40px; }
+            #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
+            #Main { grid-area: main; }
+        }
+
+        /* Mobile Layout (Stacked) */
+        @media (max-width: 799px) {
+            #Sidebar { 
+                text-align: center; 
+                border-bottom: 1px solid var(--border); 
+                padding-bottom: 20px; 
+                margin-bottom: 20px;
+            }
+        }
+
+        /* 3. Sidebar Styling */
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            line-height: 2.0;
+            font-size: 18px;
+        }
+
+        /* Normal Link Style */
+        .sidebar-menu a {
+            text-decoration: none;
+            color: var(--primary); /* Uses Theme Color (Black/White) */
+            border-bottom: 2px solid transparent; /* Invisible border to prevent jumping */
+        }
+
+        /* Hover State */
+        .sidebar-menu a:hover {
+            color: var(--secondary);
+        }
+
+        /* Active/Selected State (Underlined and White/Primary) */
+        .sidebar-menu a.active {
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary); /* The Underline */
+        }
+    </style>
 </head>
 
 <body class="{{ if .Site.Params.list_layout }}list{{ end }}" id="top">

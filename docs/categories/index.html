@@ -78,6 +78,69 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Categories">
 <meta name="twitter:description" content="">
+<style>
+         
+        .header .menu { display: none !important; }
+        
+         
+        #Box {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+         
+        @media (min-width: 800px) {
+            #Box {
+                display: grid;
+                grid-template-columns: 200px 1fr;  
+                grid-template-rows: auto 1fr;
+                grid-template-areas: 
+                    "banner banner"
+                    "sidebar main";
+                column-gap: 40px;
+            }
+            .df-banner-wrapper { grid-area: banner; margin-bottom: 40px; }
+            #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
+            #Main { grid-area: main; }
+        }
+
+         
+        @media (max-width: 799px) {
+            #Sidebar { 
+                text-align: center; 
+                border-bottom: 1px solid var(--border); 
+                padding-bottom: 20px; 
+                margin-bottom: 20px;
+            }
+        }
+
+         
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            line-height: 2.0;
+            font-size: 18px;
+        }
+
+         
+        .sidebar-menu a {
+            text-decoration: none;
+            color: var(--primary);  
+            border-bottom: 2px solid transparent;  
+        }
+
+         
+        .sidebar-menu a:hover {
+            color: var(--secondary);
+        }
+
+         
+        .sidebar-menu a.active {
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary);  
+        }
+    </style>
 </head>
 
 <body class="" id="top">
@@ -139,23 +202,31 @@
 
         <div id="Sidebar"><p>By <strong>Dexter&nbsp;Bosley</strong></p>
 
-<ul style="list-style: none; padding: 0; line-height: 1.6;">
+<ul class="sidebar-menu">
     <li>
-        <a href="/" title="All">All</a>
+        <a href="/" title="All" class="">
+            All
+        </a>
     </li>
     <li>
-        <a href="/essays/" title="Essays">Essays</a>
+        <a href="/essays/" title="Essays" class="">
+            Essays
+        </a>
     </li>
     <li>
-        <a href="/stories/" title="Stories">Stories</a>
+        <a href="/stories/" title="Stories" class="">
+            Stories
+        </a>
     </li>
     <li>
-        <a href="/about/" title="About">About</a>
+        <a href="/about/" title="About" class="">
+            About
+        </a>
     </li>
 </ul>
 
 <div style="margin-top: 2rem;">
-    <p><small>Thinking in Public<br>© 2025</small></p>
+    <p><small>© 2025</small></p>
 </div>
 </div>
 
