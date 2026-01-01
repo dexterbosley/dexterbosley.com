@@ -2,6 +2,7 @@ baseURL = 'https://www.dexterbosley.com/'
 languageCode = 'en-us'
 title = 'Thinking in Public'
 theme = 'PaperMod'
+publishDir = "docs"
 
 [menus]
 

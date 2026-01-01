@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Thinking in Public</title>
+    <link>https://www.dexterbosley.com/</link>
+    <description>Recent content on Thinking in Public</description>
+    <generator>Hugo -- 0.153.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 02:48:58 -0500</lastBuildDate>
+    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The First Story</title>
+      <link>https://www.dexterbosley.com/posts/the-first-story/</link>
+      <pubDate>Sun, 21 Dec 2025 02:48:58 -0500</pubDate>
+      <guid>https://www.dexterbosley.com/posts/the-first-story/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test Everything Else Post</title>
+      <link>https://www.dexterbosley.com/everything-else/test-post/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/everything-else/test-post/</guid>
+      <description>&lt;p&gt;This is a test post.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Work Post</title>
+      <link>https://www.dexterbosley.com/work/test-work/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/work/test-work/</guid>
+      <description>&lt;p&gt;This is a test post for the Work tab.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://www.dexterbosley.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/about/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Currently&lt;/strong&gt;
+Product at Ramp | New York, NY&lt;/p&gt;
+&lt;h2 id=&#34;previously&#34;&gt;Previously&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DoorDash&lt;/strong&gt; – Strategy &amp;amp; Operations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uber&lt;/strong&gt; – Strategy &amp;amp; Operations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WeWork&lt;/strong&gt; – Finance &amp;amp; Business Operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Northwestern University&lt;/strong&gt; – Bachelor&amp;rsquo;s Degree in Economics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Skiing, Writing, Walking, and Talking&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
