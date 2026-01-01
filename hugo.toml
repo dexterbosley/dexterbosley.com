@@ -4,6 +4,10 @@ title = 'Thinking in Public'
 theme = 'PaperMod'
 publishDir = "docs"
 
+[params]
+  # This line tells the "All" tab to show these folders
+  mainSections = ["essays", "stories"]
+
 [menus]
 
 [[menus.main]]
