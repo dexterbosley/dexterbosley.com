@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 <head>
-    {{ partial "head.html" . }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Thinking in Public</title>
+    {{- partial "head.html" . -}}
     <style>
-        /* --- LAYOUT CSS --- */
+        /* Base Layout CSS */
         #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        
         @media (min-width: 800px) {
-            #Box { 
-                display: grid; 
-                grid-template-columns: 200px 1fr; 
-                grid-template-rows: auto 1fr; 
-                grid-template-areas: "banner banner" "sidebar main"; 
-                column-gap: 40px; 
+            #Box {
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: auto 1fr;
+                grid-template-areas: "banner banner" "sidebar main";
+                column-gap: 40px;
             }
             .df-banner-wrapper { grid-area: banner; margin-bottom: 20px; }
             #Sidebar { grid-area: sidebar; text-align: right; border-right: 1px solid var(--border); padding-right: 20px; }
             #Main { grid-area: main; }
         }
-        
         @media (max-width: 799px) {
-            #Sidebar { 
-                text-align: center; 
-                border-bottom: 1px solid var(--border); 
-                padding-bottom: 20px; 
-                margin-bottom: 20px; 
+            #Sidebar {
+                text-align: center;
+                border-bottom: 1px solid var(--border);
+                padding-bottom: 20px;
+                margin-bottom: 20px;
             }
         }
-        
-        /* --- SIDEBAR LINKS --- */
         .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
-        .sidebar-menu a { 
-            text-decoration: none; 
-            color: var(--primary); 
-            border-bottom: none; /* Default: No underline */
-            display: inline-block; 
+        .sidebar-menu a {
+            text-decoration: none;
+            color: var(--primary);
+            border-bottom: none;
+            display: inline-block;
         }
         .sidebar-menu a:hover { color: var(--secondary); }
-        
-        /* --- ACTIVE STATE --- */
-        .sidebar-menu a.active { 
-            font-weight: bold !important; 
-            border-bottom: none !important; 
+        .sidebar-menu a.active {
+            font-weight: bold !important;
+            border-bottom: none !important;
             color: var(--primary) !important;
+        }
+
+        /* NEW SUBSCRIBE BUTTON CSS */
+        .nav-subscribe-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 18px;
+            border: 1px solid var(--primary);
+            border-radius: 50px;
+            text-decoration: none !important;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            text-align: center;
+            color: var(--primary) !important;
+            background-color: transparent;
+        }
+        .nav-subscribe-btn:hover {
+            background-color: var(--primary);
+            color: var(--theme) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body class="" id="top">
     <div id="Box">
         <div class="df-banner-wrapper">
-            {{ partial "header.html" . }}
+             {{ partial "header.html" . }}
         </div>
 
         <div id="Sidebar">
@@ -60,40 +80,43 @@
                 <li><a href="/about/">About</a></li>
             </ul>
 
-            <div style="margin-top: 30px; background: var(--entry); padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
+            <div style="margin-bottom: 25px;">
+                <a href="/subscribe" class="nav-subscribe-btn">
+                    Subscribe
+                </a>
+            </div>
+
+            <div style="margin-top: 10px; background: var(--entry); padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
                 <h3 style="font-size: 11px; text-transform: uppercase; color: var(--secondary); margin: 0 0 10px 0; letter-spacing: 2px; font-weight: bold;">Popular</h3>
                 <ul class="sidebar-menu" style="font-size: 14px; line-height: 1.4; margin: 0; padding: 0;">
                     <li style="margin-bottom: 6px;"><a href="/essays/test-essay/" style="display: block;">Test Essay</a></li>
                     <li><a href="/stories/test-story/" style="display: block;">Test Story</a></li>
                 </ul>
             </div>
-
         </div>
 
         <main id="Main" class="main">
             {{ block "main" . }}{{ end }}
         </main>
     </div>
+
     {{ partial "footer.html" . }}
 
     <script>
         (function() {
-            // Remove "active" from everyone first (Safety measure)
-            document.querySelectorAll('.sidebar-menu a').forEach(a => a.classList.remove('active'));
-
-            const currentPath = window.location.pathname.replace(/\/$/, ""); // Strip trailing slash
+            const currentPath = window.location.pathname.replace(/\/$/, ""); 
             const links = document.querySelectorAll('.sidebar-menu a');
             
             links.forEach(link => {
+                link.classList.remove('active'); 
                 const linkHref = link.getAttribute('href');
-                const linkPath = linkHref.replace(/\/$/, ""); // Strip trailing slash
+                const linkPath = linkHref.replace(/\/$/, "");
                 
-                // 1. HOME: Only match if current path is empty or "/"
+                // Exact match for home
                 if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
                     link.classList.add('active');
                 }
-                // 2. SECTIONS: Match if path starts with link (but link isn't home)
-                // This ensures "/essays/" matches "/essays/my-post"
+                // Prefix match for sections
                 else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
                     link.classList.add('active');
                 }
