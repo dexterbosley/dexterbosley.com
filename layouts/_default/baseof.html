@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Thinking in Public</title>
     {{- partial "head.html" . -}}
+    
+    <script>
+        if (localStorage.getItem("pref-theme") === "light") {
+            document.documentElement.dataset.theme = 'light';
+        } else {
+            document.documentElement.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", "dark");
+        }
+    </script>
+
     <style>
         /* Base Layout CSS */
         #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
