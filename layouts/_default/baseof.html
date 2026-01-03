@@ -40,17 +40,14 @@
                 text-align: right; 
                 border-right: 1px solid var(--border); 
                 padding-right: 20px;
-                /* MAKE FLEX CONTAINER FOR REORDERING */
                 display: flex;
                 flex-direction: column;
             }
             #Main { grid-area: main; }
             
-            /* DESKTOP ORDERING: Nav 1st, Popular 2nd */
+            /* DESKTOP ORDERING */
             .nav-group { order: 1; display: block !important; }
             .popular-group { order: 2; margin-top: 30px; }
-
-            /* Hide Mobile Hamburger on Desktop */
             .mobile-menu-trigger { display: none !important; }
         }
 
@@ -58,14 +55,19 @@
         @media (max-width: 799px) {
             #Sidebar {
                 text-align: center;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
+                /* REDUCED BOTTOM MARGIN/PADDING TO FIX GAP */
+                padding-bottom: 5px;
+                margin-bottom: 10px;
                 display: flex;
                 flex-direction: column;
+                border-bottom: 1px solid var(--border);
             }
 
-            /* MOBILE ORDERING: Popular 1st, Nav 2nd */
-            .popular-group { order: 1; margin-bottom: 20px; }
+            /* MOBILE ORDERING */
+            .popular-group { 
+                order: 1; 
+                margin-bottom: 15px; /* Reduced from 20px */
+            }
             .nav-group { order: 2; }
 
             /* Hamburger Button */
@@ -81,15 +83,14 @@
                 color: var(--primary);
             }
 
-            /* Nav Group Hidden by Default on Mobile */
             .nav-group {
                 display: none; 
-                padding-bottom: 20px;
+                padding-bottom: 15px;
                 border-bottom: 1px dashed var(--border);
                 margin-top: 10px;
+                margin-bottom: 15px;
             }
 
-            /* Class to show menu when clicked */
             .nav-group.show {
                 display: block;
                 animation: fadeIn 0.3s ease;
@@ -223,13 +224,11 @@
     {{ partial "footer.html" . }}
 
     <script>
-        // Mobile Menu Toggle
         document.getElementById('menu-trigger').addEventListener('click', function() {
             var navGroup = document.getElementById('nav-group');
             navGroup.classList.toggle('show');
         });
 
-        // Theme Toggle
         document.getElementById("theme-toggle").addEventListener("click", () => {
             const html = document.querySelector("html");
             if (html.dataset.theme === "dark") {
@@ -241,7 +240,6 @@
             }
         });
 
-        // Active Link Bolding
         (function() {
             const currentPath = window.location.pathname.replace(/\/$/, ""); 
             const links = document.querySelectorAll('.sidebar-menu a');
