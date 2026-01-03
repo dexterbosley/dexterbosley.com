@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,8 @@
     {{- partial "head.html" . -}}
     
     <script>
-        if (localStorage.getItem("pref-theme") === "light") {
-            document.documentElement.dataset.theme = 'light';
-        } else {
-            document.documentElement.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", "dark");
-        }
+        document.documentElement.dataset.theme = 'dark';
+        localStorage.setItem("pref-theme", "dark");
     </script>
 
     <style>
@@ -22,27 +18,6 @@
             --gap: 24px;
             --content-gap: 20px;
         }
-
-        /* --- THEME TOGGLE LOGIC --- */
-        /* Reset button styles */
-        #theme-toggle {
-            background: none;
-            border: none;
-            padding: 5px; /* Increase touch target */
-            cursor: pointer;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-        }
-        
-        /* Icon Toggling Logic */
-        #sun { display: none; }
-        #moon { display: block; }
-
-        /* When Dark Mode is Active: Show Sun, Hide Moon */
-        html[data-theme='dark'] #sun { display: block; }
-        html[data-theme='dark'] #moon { display: none; }
-
 
         /* --- LAYOUT GRID (DESKTOP) --- */
         #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
@@ -74,7 +49,7 @@
 
         /* --- MOBILE LAYOUT --- */
         @media (max-width: 799px) {
-            #Box { display: block; } /* Ensure block layout on mobile */
+            #Box { display: block; }
             
             #Sidebar {
                 text-align: center;
@@ -100,7 +75,7 @@
                 background: none;
                 border: none;
                 cursor: pointer;
-                padding: 5px; /* Larger touch target */
+                padding: 5px;
                 margin-left: 10px;
                 color: var(--primary);
             }
@@ -178,27 +153,6 @@
                     </div>
 
                     <div style="display: flex; align-items: center;">
-                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                <line x1="1" y1="12" x2="3" y2="12"></line>
-                                <line x1="21" y1="12" x2="23" y2="12"></line>
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                            </svg>
-                        </button>
-
                         <button class="mobile-menu-trigger" id="menu-trigger" aria-label="Toggle Menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -246,22 +200,13 @@
     {{ partial "footer.html" . }}
 
     <script>
+        // Only Hamburger Logic Remains
         document.getElementById('menu-trigger').addEventListener('click', function() {
             var navGroup = document.getElementById('nav-group');
             navGroup.classList.toggle('show');
         });
 
-        document.getElementById("theme-toggle").addEventListener("click", () => {
-            const html = document.documentElement;
-            if (html.dataset.theme === "dark") {
-                html.dataset.theme = 'light';
-                localStorage.setItem("pref-theme", 'light');
-            } else {
-                html.dataset.theme = 'dark';
-                localStorage.setItem("pref-theme", 'dark');
-            }
-        });
-
+        // Bolding Logic
         (function() {
             const currentPath = window.location.pathname.replace(/\/$/, ""); 
             const links = document.querySelectorAll('.sidebar-menu a');
