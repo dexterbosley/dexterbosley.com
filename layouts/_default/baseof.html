@@ -23,6 +23,27 @@
             --content-gap: 20px;
         }
 
+        /* --- THEME TOGGLE LOGIC --- */
+        /* Reset button styles */
+        #theme-toggle {
+            background: none;
+            border: none;
+            padding: 5px; /* Increase touch target */
+            cursor: pointer;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Icon Toggling Logic */
+        #sun { display: none; }
+        #moon { display: block; }
+
+        /* When Dark Mode is Active: Show Sun, Hide Moon */
+        html[data-theme='dark'] #sun { display: block; }
+        html[data-theme='dark'] #moon { display: none; }
+
+
         /* --- LAYOUT GRID (DESKTOP) --- */
         #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
         
@@ -53,9 +74,10 @@
 
         /* --- MOBILE LAYOUT --- */
         @media (max-width: 799px) {
+            #Box { display: block; } /* Ensure block layout on mobile */
+            
             #Sidebar {
                 text-align: center;
-                /* REDUCED BOTTOM MARGIN/PADDING TO FIX GAP */
                 padding-bottom: 5px;
                 margin-bottom: 10px;
                 display: flex;
@@ -66,7 +88,7 @@
             /* MOBILE ORDERING */
             .popular-group { 
                 order: 1; 
-                margin-bottom: 15px; /* Reduced from 20px */
+                margin-bottom: 15px; 
             }
             .nav-group { order: 2; }
 
@@ -78,8 +100,8 @@
                 background: none;
                 border: none;
                 cursor: pointer;
-                padding: 0;
-                margin-left: 15px;
+                padding: 5px; /* Larger touch target */
+                margin-left: 10px;
                 color: var(--primary);
             }
 
@@ -230,7 +252,7 @@
         });
 
         document.getElementById("theme-toggle").addEventListener("click", () => {
-            const html = document.querySelector("html");
+            const html = document.documentElement;
             if (html.dataset.theme === "dark") {
                 html.dataset.theme = 'light';
                 localStorage.setItem("pref-theme", 'light');
