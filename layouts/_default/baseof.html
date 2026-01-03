@@ -13,6 +13,16 @@
     </script>
 
     <style>
+        /* --- 2. NUCLEAR CSS: HIDE THEME TOGGLE EVERYWHERE --- */
+        #theme-toggle, .theme-toggle, button[title="(Alt + T)"] { 
+            display: none !important; 
+            visibility: hidden !important;
+            opacity: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+            pointer-events: none !important;
+        }
+
         /* --- GLOBAL VARIABLES --- */
         :root {
             --gap: 24px;
@@ -41,7 +51,7 @@
             }
             #Main { grid-area: main; }
             
-            /* DESKTOP ORDERING */
+            /* DESKTOP ORDERING: Nav First */
             .nav-group { order: 1; display: block !important; }
             .popular-group { order: 2; margin-top: 30px; }
             .mobile-menu-trigger { display: none !important; }
@@ -60,7 +70,7 @@
                 border-bottom: 1px solid var(--border);
             }
 
-            /* MOBILE ORDERING */
+            /* MOBILE ORDERING: Popular First */
             .popular-group { 
                 order: 1; 
                 margin-bottom: 15px; 
@@ -153,6 +163,7 @@
                     </div>
 
                     <div style="display: flex; align-items: center;">
+                        
                         <button class="mobile-menu-trigger" id="menu-trigger" aria-label="Toggle Menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -200,7 +211,7 @@
     {{ partial "footer.html" . }}
 
     <script>
-        // Only Hamburger Logic Remains
+        // Hamburger Logic
         document.getElementById('menu-trigger').addEventListener('click', function() {
             var navGroup = document.getElementById('nav-group');
             navGroup.classList.toggle('show');
@@ -223,6 +234,15 @@
                 }
             });
         })();
+
+        // Safety Script: Remove Theme Toggle if it exists
+        document.addEventListener("DOMContentLoaded", function() {
+            var toggle = document.getElementById("theme-toggle");
+            if(toggle) toggle.remove();
+            
+            var toggles = document.querySelectorAll(".theme-toggle");
+            toggles.forEach(t => t.remove());
+        });
     </script>
 </body>
 </html>
