@@ -1,5 +1,7 @@
-/* 1. Constrain Banner Height & Color */
-.entry-cover img {
+/* --- IMAGES (List & Single) --- */
+/* Target both entry-cover (list) and post-cover (single) */
+.entry-cover img, 
+.post-cover img {
     max-height: 210px !important;
     width: 100%;
     object-fit: cover;
@@ -8,21 +10,35 @@
     transition: all 0.3s ease; 
 }
 
-.entry-cover img:hover {
+/* Hover color return */
+.entry-cover img:hover,
+.post-cover img:hover {
     filter: grayscale(0%);
 }
 
-/* 2. Spacing Tweaks */
-.entry-header {
+/* --- SPACING (List & Single) --- */
+/* Space below Title */
+.entry-header, 
+.post-header {
     margin-bottom: 16px !important; 
 }
 
-.entry-cover {
+/* Space below Banner */
+.entry-cover, 
+.post-cover {
     margin-bottom: 16px !important; 
 }
 
-/* 3. Metadata Color Update */
-.entry-footer {
-    color: var(--primary) !important; /* Sets text to white/primary color */
-    opacity: 1 !important; /* Removes the default "dimmed" look */
+/* --- METADATA TEXT COLOR --- */
+/* Make date/read-time white (Primary Color) */
+.entry-footer, 
+.post-meta {
+    color: var(--primary) !important; 
+    opacity: 1 !important; 
+}
+
+/* Ensure links in metadata (like author names) are also white */
+.entry-footer a, 
+.post-meta a {
+    color: var(--primary) !important;
 }
