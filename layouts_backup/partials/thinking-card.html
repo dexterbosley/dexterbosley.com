@@ -1,0 +1,54 @@
+<div class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden font-sans">
+  
+  <div class="flex items-center justify-between px-4 py-3 border-b border-gray-100">
+    <div class="flex items-center gap-2">
+      <h2 class="text-sm font-semibold text-gray-900">
+        Thinking in Public
+      </h2>
+    </div>
+    
+    <button 
+      id="toggle-btn"
+      onclick="toggleContent()"
+      class="p-1.5 text-gray-500 hover:bg-gray-100 rounded-md transition-colors cursor-pointer"
+      aria-label="Switch mode"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="p-4">
+    <div class="flex items-start gap-3">
+      <div class="flex-1">
+        <p id="content-text" class="text-sm text-gray-600 leading-relaxed">
+          Here is the updated content view. The header above now correctly displays the requested title and the interaction icon.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 py-3 bg-gray-50 flex justify-between items-center text-xs text-gray-500">
+    <span>Updated just now</span>
+    <button class="hover:text-gray-900">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  let isPublic = true;
+  function toggleContent() {
+    isPublic = !isPublic;
+    const textField = document.getElementById('content-text');
+    
+    if (isPublic) {
+      textField.innerText = "Here is the updated content view. The header above now correctly displays the requested title and the interaction icon.";
+    } else {
+      textField.innerText = "This is the private/internal view. The content has switched.";
+    }
+  }
+</script>

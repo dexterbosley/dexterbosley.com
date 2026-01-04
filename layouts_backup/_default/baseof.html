@@ -1,85 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="dark">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Thinking in Public</title><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>The First Story | Thinking in Public</title>
-<meta name="keywords" content="">
-<meta name="description" content="The First Story - Thinking in Public">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/the-first-story/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.cab7dced0fda7ef759ed3a7f9d4f35e89cb3eec58ae90e5327d263ecf06adeba.css" integrity="sha256-yrfc7Q/afvdZ7Tp/nU816Jyz7sWK6Q5TJ9Jj7PBq3ro=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/the-first-story/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><script>
+    <title>Thinking in Public</title>
+    {{- partial "head.html" . -}}
+    
+    <script>
         document.documentElement.dataset.theme = 'dark';
         localStorage.setItem("pref-theme", "dark");
     </script>
 
     <style>
-         
+        /* --- 2. NUCLEAR CSS: HIDE THEME TOGGLE EVERYWHERE --- */
         #theme-toggle, .theme-toggle, button[title="(Alt + T)"] { 
             display: none !important; 
             visibility: hidden !important;
@@ -89,13 +23,13 @@
             pointer-events: none !important;
         }
 
-         
+        /* --- GLOBAL VARIABLES --- */
         :root {
             --gap: 24px;
             --content-gap: 20px;
         }
 
-         
+        /* --- LAYOUT GRID (DESKTOP) --- */
         #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
         
         @media (min-width: 800px) {
@@ -117,13 +51,13 @@
             }
             #Main { grid-area: main; }
             
-             
+            /* DESKTOP ORDERING: Nav First */
             .nav-group { order: 1; display: block !important; }
             .popular-group { order: 2; margin-top: 30px; }
             .mobile-menu-trigger { display: none !important; }
         }
 
-         
+        /* --- MOBILE LAYOUT --- */
         @media (max-width: 799px) {
             #Box { display: block; }
             
@@ -136,14 +70,14 @@
                 border-bottom: 1px solid var(--border);
             }
 
-             
+            /* MOBILE ORDERING: Popular First */
             .popular-group { 
                 order: 1; 
                 margin-bottom: 15px; 
             }
             .nav-group { order: 2; }
 
-             
+            /* Hamburger Button */
             .mobile-menu-trigger {
                 display: flex;
                 align-items: center;
@@ -175,7 +109,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-         
+        /* --- COMPONENT STYLES --- */
         .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
         .sidebar-menu a {
             text-decoration: none;
@@ -190,7 +124,7 @@
             color: var(--primary) !important;
         }
 
-         
+        /* SUBSCRIBE BUTTON */
         .nav-subscribe-btn {
             display: inline-block;
             margin-top: 15px;
@@ -270,113 +204,20 @@
         </div>
 
         <main id="Main" class="main">
-            
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      The First Story
-    </h1>
-    <div class="post-meta"><span title='2025-12-21 02:48:58 -0500 -0500'>December 21, 2025</span>
-
-</div>
-  </header> 
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
+            {{ block "main" . }}{{ end }}
         </main>
     </div>
 
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Thinking in Public</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-
+    {{ partial "footer.html" . }}
 
     <script>
-        
+        // Hamburger Logic
         document.getElementById('menu-trigger').addEventListener('click', function() {
             var navGroup = document.getElementById('nav-group');
             navGroup.classList.toggle('show');
         });
 
-        
+        // Bolding Logic
         (function() {
             const currentPath = window.location.pathname.replace(/\/$/, ""); 
             const links = document.querySelectorAll('.sidebar-menu a');
@@ -394,7 +235,7 @@
             });
         })();
 
-        
+        // Safety Script: Remove Theme Toggle if it exists
         document.addEventListener("DOMContentLoaded", function() {
             var toggle = document.getElementById("theme-toggle");
             if(toggle) toggle.remove();
