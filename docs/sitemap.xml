@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/other/</loc>
+    <loc>https://www.dexterbosley.com/other/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://www.dexterbosley.com/blog/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.dexterbosley.com/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://www.dexterbosley.com/posts/</loc>
     <lastmod>2025-12-21T02:48:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/the-first-story/</loc>
+    <loc>https://www.dexterbosley.com/posts/the-first-story/</loc>
     <lastmod>2025-12-21T02:48:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/essays/</loc>
+    <loc>https://www.dexterbosley.com/essays/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/essays/test-essay/</loc>
+    <loc>https://www.dexterbosley.com/essays/test-essay/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/stories/test-story/</loc>
+    <loc>https://www.dexterbosley.com/stories/test-story/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/stories/</loc>
+    <loc>https://www.dexterbosley.com/stories/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everything-else/</loc>
+    <loc>https://www.dexterbosley.com/everything-else/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everything-else/test-post/</loc>
+    <loc>https://www.dexterbosley.com/everything-else/test-post/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/work/test-work/</loc>
+    <loc>https://www.dexterbosley.com/work/test-work/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/work/</loc>
+    <loc>https://www.dexterbosley.com/work/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://www.dexterbosley.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.dexterbosley.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.dexterbosley.com/tags/</loc>
   </url>
 </urlset>

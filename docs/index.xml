@@ -2,52 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Thinking in Public</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.dexterbosley.com/</link>
     <description>Recent content on Thinking in Public</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Dec 2025 02:48:58 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The First Story</title>
-      <link>http://localhost:1313/posts/the-first-story/</link>
+      <link>https://www.dexterbosley.com/posts/the-first-story/</link>
       <pubDate>Sun, 21 Dec 2025 02:48:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/the-first-story/</guid>
+      <guid>https://www.dexterbosley.com/posts/the-first-story/</guid>
       <description></description>
     </item>
     <item>
       <title>My First Test Essay</title>
-      <link>http://localhost:1313/essays/test-essay/</link>
+      <link>https://www.dexterbosley.com/essays/test-essay/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/essays/test-essay/</guid>
+      <guid>https://www.dexterbosley.com/essays/test-essay/</guid>
       <description>&lt;p&gt;This is a test essay. It should appear in the Essays tab and the All tab.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Test Story</title>
-      <link>http://localhost:1313/stories/test-story/</link>
+      <link>https://www.dexterbosley.com/stories/test-story/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/stories/test-story/</guid>
-      <description>&lt;p&gt;This is a test story. It should appear in the Stories tab and the All tab.&lt;/p&gt;</description>
+      <guid>https://www.dexterbosley.com/stories/test-story/</guid>
+      <description>&lt;p&gt;This is a test story. It should appear in the Stories tab and the All tab.
+Trying to see if it works.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test Everything Else Post</title>
-      <link>http://localhost:1313/everything-else/test-post/</link>
+      <link>https://www.dexterbosley.com/everything-else/test-post/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/everything-else/test-post/</guid>
+      <guid>https://www.dexterbosley.com/everything-else/test-post/</guid>
       <description>&lt;p&gt;This is a test post.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test Work Post</title>
-      <link>http://localhost:1313/work/test-work/</link>
+      <link>https://www.dexterbosley.com/work/test-work/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/test-work/</guid>
+      <guid>https://www.dexterbosley.com/work/test-work/</guid>
       <description>&lt;p&gt;This is a test post for the Work tab.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://www.dexterbosley.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://www.dexterbosley.com/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Currently&lt;/strong&gt;
 Product at Ramp | New York, NY&lt;/p&gt;
 &lt;h2 id=&#34;previously&#34;&gt;Previously&lt;/h2&gt;
