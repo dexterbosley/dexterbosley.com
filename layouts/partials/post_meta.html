@@ -1,0 +1,15 @@
+{{- /* 1. DATE */ -}}
+{{- .Date.Format "January 2, 2006" -}}
+
+{{- /* Separator */ -}}
+&nbsp;·&nbsp;
+
+{{- /* 2. TYPE (Section Name) */ -}}
+{{- /* 'humanize' fixes capitalization, 'singularize' turns Essays -> Essay */ -}}
+{{- .Section | humanize | singularize | title -}}
+
+{{- /* Separator */ -}}
+&nbsp;·&nbsp;
+
+{{- /* 3. READ TIME */ -}}
+{{- .ReadingTime -}} min
