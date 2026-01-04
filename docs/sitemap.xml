@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.dexterbosley.com/essays/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/stories/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/essays/traditional-vs-agentic/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/stories/traditional-vs-agentic/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.dexterbosley.com/other/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/blog/</loc>
-    <lastmod>2025-12-21T03:49:46-05:00</lastmod>
-  </url><url>
-    <loc>https://www.dexterbosley.com/</loc>
     <lastmod>2025-12-21T03:49:46-05:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/posts/</loc>
@@ -17,16 +29,10 @@
     <loc>https://www.dexterbosley.com/posts/the-first-story/</loc>
     <lastmod>2025-12-21T02:48:58-05:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/essays/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.dexterbosley.com/essays/test-essay/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/stories/test-story/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.dexterbosley.com/stories/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/everything-else/</loc>
