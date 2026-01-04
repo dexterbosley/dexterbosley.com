@@ -20,8 +20,7 @@
       <link>https://www.dexterbosley.com/stories/test-story/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/test-story/</guid>
-      <description>&lt;p&gt;This is a test story. It should appear in the Stories tab and the All tab.
-Trying to see if it works.&lt;/p&gt;</description>
+      <description>This is a test story with the new banner style.</description>
     </item>
   </channel>
 </rss>
