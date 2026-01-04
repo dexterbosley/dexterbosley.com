@@ -1,27 +1,28 @@
 /* 1. Constrain Banner Height & Color */
 .entry-cover img {
-    max-height: 210px !important; /* Reduced height */
+    max-height: 210px !important;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
-    /* Make black and white */
     filter: grayscale(100%); 
-    /* Optional: smooth transition if you ever want hover effects */
     transition: all 0.3s ease; 
 }
 
-/* Optional: Bring color back on mouse hover. 
-   Delete these 3 lines if you want it always B&W. */
 .entry-cover img:hover {
     filter: grayscale(0%);
 }
 
-/* 2. Keep existing spacing between Title and Banner */
+/* 2. Spacing Tweaks */
 .entry-header {
     margin-bottom: 16px !important; 
 }
 
-/* 3. Keep existing spacing between Banner and Summary */
 .entry-cover {
     margin-bottom: 16px !important; 
+}
+
+/* 3. Metadata Color Update */
+.entry-footer {
+    color: var(--primary) !important; /* Sets text to white/primary color */
+    opacity: 1 !important; /* Removes the default "dimmed" look */
 }
