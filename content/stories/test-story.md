@@ -1,12 +1,13 @@
 ---
 title: "My First Test Story"
 date: 2025-01-01
-draft: false
-summary: "This is a test story with the new banner style."
+description: "This is a test story with the new banner style."
+type: "Story"
 cover:
-    image: "images/banner.jpg"
+    image: "/images/banner.jpg"
     alt: "Test Banner"
-    relative: false
+quote: "We are what we pretend to be, so we must be careful about what we pretend to be."
+quoteAuthor: "Kurt Vonnegut"
 ---
 
-This is a test story. It should appear in the Stories tab and the All tab.
+This is the body of the test story.

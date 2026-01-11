@@ -1,12 +1,13 @@
 ---
 title: "Traditional vs. Agentic"
-date: 2026-01-04
-draft: false
-summary: "A look at the friction between traditional software development and the emerging agentic paradigm."
+date: 2025-01-04
+description: "A story exploring the human side of technological change."
+type: "Story"
 cover:
-    image: "images/banner.jpg"
+    image: "/images/banner.jpg"
     alt: "Agentic AI Banner"
-    relative: false
+quote: "Any sufficiently advanced technology is indistinguishable from magic."
+quoteAuthor: "Arthur C. Clarke"
 ---
 
-A look at the friction between traditional software development and the emerging agentic paradigm.
+A story exploring the human side of technological change.
