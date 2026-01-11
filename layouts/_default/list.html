@@ -14,12 +14,14 @@
   <h1><span class="section-name">{{ .Title }}</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
   {{- end }}
 </header>
-{{- $pages := .Pages }}
-{{- if .IsHome }}
-  {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
+
+{{- $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
+{{- if not .IsHome }}
+  {{- $paginator = .Paginate .Pages }}
 {{- end }}
+
 {{- $first := true }}
-{{- range $pages.ByDate.Reverse }}
+{{- range $paginator.Pages }}
 <article class="post-entry{{ if $first }} featured{{ end }}">
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
@@ -39,4 +41,17 @@
 </article>
 {{- $first = false }}
 {{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">← Previous</a>
+  {{- end }}
+  <span class="pagination-info">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{- if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next →</a>
+  {{- end }}
+</nav>
+{{- end }}
+
 {{- end }}
