@@ -1,9 +1,11 @@
 {{- define "main" }}
-{{- if .Title }}
 <header class="page-header">
-  <h1>{{ .Title }}</h1>
+  {{- if .IsHome }}
+  <h1><span class="section-name">All</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+  {{- else if .Title }}
+  <h1><span class="section-name">{{ .Title }}</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+  {{- end }}
 </header>
-{{- end }}
 {{- $pages := .Pages }}
 {{- if .IsHome }}
   {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}

@@ -1,0 +1,22 @@
+.page-header h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999999;
+    margin-bottom: 35px;
+}
+.page-header .section-name {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+.page-header .section-sep {
+    color: #cccccc;
+    margin: 0 6px;
+    font-weight: 300;
+}
+.page-header .section-sub {
+    color: #999999;
+    font-weight: 300;
+}
