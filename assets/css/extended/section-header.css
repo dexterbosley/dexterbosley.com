@@ -54,3 +54,31 @@
 .pinned-link:hover {
     text-decoration: underline;
 }
+
+/* Minimal lightweight pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 3rem 0 2rem;
+    font-size: 13px;
+    font-weight: 300;
+    color: #999;
+}
+.pagination a {
+    text-decoration: none;
+    color: #999;
+    transition: color 0.2s ease;
+}
+.pagination a:hover {
+    color: #1a1a1a;
+}
+.pagination-current {
+    color: #1a1a1a;
+    font-weight: 400;
+}
+.pagination-prev,
+.pagination-next {
+    color: #999;
+}

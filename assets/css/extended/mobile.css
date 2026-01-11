@@ -149,27 +149,6 @@
     }
 }
 
-/* Pagination */
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-    padding: 1rem 0;
-    font-size: 14px;
-}
-.pagination a {
-    text-decoration: none;
-    color: #1a1a1a;
-}
-.pagination a:hover {
-    text-decoration: underline;
-}
-.pagination-info {
-    color: #666;
-}
-
 /* Hide subscribe button on mobile */
 @media (max-width: 799px) {
     .nav-subscribe-btn,
@@ -178,25 +157,3 @@
     }
 }
 
-/* Google-style pagination */
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 2rem 0;
-    padding: 1rem 0;
-    font-size: 14px;
-}
-.pagination a {
-    text-decoration: none;
-    color: #1a1a1a;
-    padding: 0.25rem 0.5rem;
-}
-.pagination a:hover {
-    text-decoration: underline;
-}
-.pagination-current {
-    font-weight: bold;
-    padding: 0.25rem 0.5rem;
-}
