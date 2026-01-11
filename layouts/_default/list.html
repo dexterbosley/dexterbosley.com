@@ -6,7 +6,7 @@
 {{- end }}
 {{- $pages := .Pages }}
 {{- if .IsHome }}
-  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
 {{- end }}
 {{- range $pages.ByDate.Reverse }}
 <article class="post-entry">
