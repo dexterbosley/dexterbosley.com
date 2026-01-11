@@ -45,11 +45,27 @@
 {{- if gt $paginator.TotalPages 1 }}
 <nav class="pagination">
   {{- if $paginator.HasPrev }}
-  <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">← Previous</a>
+  <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">Previous</a>
   {{- end }}
-  <span class="pagination-info">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  
+  {{- $currentPage := $paginator.PageNumber }}
+  {{- $totalPages := $paginator.TotalPages }}
+  {{- $startPage := math.Max 1 (sub $currentPage 1) }}
+  {{- $endPage := math.Min $totalPages (add $startPage 2) }}
+  {{- if lt (sub $endPage $startPage) 2 }}
+    {{- $startPage = math.Max 1 (sub $endPage 2) }}
+  {{- end }}
+  
+  {{- range seq $startPage $endPage }}
+    {{- if eq . $currentPage }}
+    <span class="pagination-current">{{ . }}</span>
+    {{- else }}
+    <a href="{{ (index $paginator.Pagers (sub . 1)).URL }}">{{ . }}</a>
+    {{- end }}
+  {{- end }}
+  
   {{- if $paginator.HasNext }}
-  <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next →</a>
+  <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next</a>
   {{- end }}
 </nav>
 {{- end }}
