@@ -1,17 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 28" width="72" height="28">
-  <ellipse cx="12" cy="17" rx="5" ry="9" fill="#1a1a1a"/>
-  <ellipse cx="12" cy="15" rx="3" ry="4.5" fill="#fff"/>
-  <circle cx="12" cy="9" r="4.5" fill="#1a1a1a"/>
-  <circle cx="10.8" cy="8.2" r="0.8" fill="#fff"/>
-  <circle cx="13.2" cy="8.2" r="0.8" fill="#fff"/>
-  <ellipse cx="36" cy="15" rx="6.5" ry="11" fill="#1a1a1a"/>
-  <ellipse cx="36" cy="13" rx="4" ry="6" fill="#fff"/>
-  <circle cx="36" cy="6" r="5.5" fill="#1a1a1a"/>
-  <circle cx="34.5" cy="5" r="1" fill="#fff"/>
-  <circle cx="37.5" cy="5" r="1" fill="#fff"/>
-  <ellipse cx="60" cy="16" rx="5.5" ry="10" fill="#1a1a1a"/>
-  <ellipse cx="60" cy="14" rx="3.5" ry="5" fill="#fff"/>
-  <circle cx="60" cy="7.5" r="5" fill="#1a1a1a"/>
-  <circle cx="58.5" cy="6.5" r="0.9" fill="#fff"/>
-  <circle cx="61.5" cy="6.5" r="0.9" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 36" width="100" height="36">
+  <!-- Penguin 1 (left, small) -->
+  <g transform="translate(5, 4) scale(0.55)" fill="none" stroke="#1a1a1a" stroke-width="1.2">
+    <polygon points="20,8 26,12 22,14 24,10"/>
+    <polygon points="20,8 18,14 22,14"/>
+    <circle cx="19" cy="10" r="1" fill="#1a1a1a" stroke="none"/>
+    <polygon points="18,14 14,24 22,24 22,14"/>
+    <polygon points="14,24 10,34 18,34 22,24"/>
+    <polygon points="22,24 22,14 28,20 26,28"/>
+    <polygon points="18,34 22,38 14,38 10,34"/>
+    <polygon points="22,24 26,28 24,34 22,38 18,34"/>
+    <polygon points="24,34 28,36 22,38"/>
+  </g>
+  
+  <!-- Penguin 2 (center, large) -->
+  <g transform="translate(32, 0) scale(0.75)" fill="none" stroke="#1a1a1a" stroke-width="1.2">
+    <polygon points="20,8 26,12 22,14 24,10"/>
+    <polygon points="20,8 18,14 22,14"/>
+    <circle cx="19" cy="10" r="1" fill="#1a1a1a" stroke="none"/>
+    <polygon points="18,14 14,24 22,24 22,14"/>
+    <polygon points="14,24 10,34 18,34 22,24"/>
+    <polygon points="22,24 22,14 28,20 26,28"/>
+    <polygon points="18,34 22,38 14,38 10,34"/>
+    <polygon points="22,24 26,28 24,34 22,38 18,34"/>
+    <polygon points="24,34 28,36 22,38"/>
+  </g>
+  
+  <!-- Penguin 3 (right, medium) -->
+  <g transform="translate(62, 2) scale(0.65)" fill="none" stroke="#1a1a1a" stroke-width="1.2">
+    <polygon points="20,8 26,12 22,14 24,10"/>
+    <polygon points="20,8 18,14 22,14"/>
+    <circle cx="19" cy="10" r="1" fill="#1a1a1a" stroke="none"/>
+    <polygon points="18,14 14,24 22,24 22,14"/>
+    <polygon points="14,24 10,34 18,34 22,24"/>
+    <polygon points="22,24 22,14 28,20 26,28"/>
+    <polygon points="18,34 22,38 14,38 10,34"/>
+    <polygon points="22,24 26,28 24,34 22,38 18,34"/>
+    <polygon points="24,34 28,36 22,38"/>
+  </g>
 </svg>
