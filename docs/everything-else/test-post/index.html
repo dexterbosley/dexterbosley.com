@@ -606,7 +606,7 @@
         });
         (function() {
             const currentPath = window.location.pathname.replace(/\/$/, ""); 
-            document.querySelectorAll('.sidebar-menu a').forEach(link => {
+            document.querySelectorAll('.nav-group .sidebar-menu a').forEach(link => {
                 link.classList.remove('active'); 
                 const linkPath = link.getAttribute('href').replace(/\/$/, "");
                 if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
