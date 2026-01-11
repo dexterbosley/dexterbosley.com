@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="dark">
+<html lang="en" dir="auto" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,77 +7,98 @@
     <title>Thinking in Public</title>
     {{- partial "head.html" . -}}
     
-    <script>
-        document.documentElement.dataset.theme = 'dark';
-        localStorage.setItem("pref-theme", "dark");
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
-        /* --- 2. NUCLEAR CSS: HIDE THEME TOGGLE EVERYWHERE --- */
-        #theme-toggle, .theme-toggle, button[title="(Alt + T)"] { 
-            display: none !important; 
-            visibility: hidden !important;
-            opacity: 0 !important;
-            width: 0 !important;
-            height: 0 !important;
-            pointer-events: none !important;
-        }
-
-        /* --- GLOBAL VARIABLES --- */
-        :root {
+        /* 1990s Minimal Aesthetic - inspired by ktuck.com */
+        
+        /* Force light theme */
+        :root, html, html[data-theme="dark"], html[data-theme="light"] {
+            --theme: #ffffff;
+            --entry: #ffffff;
+            --primary: #1a1a1a;
+            --secondary: #666666;
+            --tertiary: #f5f5f5;
+            --content: #333333;
+            --code-block-bg: #f8f8f8;
+            --code-bg: #f0f0f0;
+            --border: #e0e0e0;
             --gap: 24px;
             --content-gap: 20px;
+            color-scheme: light;
         }
 
-        /* --- LAYOUT GRID (DESKTOP) --- */
-        #Box { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        /* Hide theme toggle */
+        #theme-toggle, .theme-toggle, button[title="(Alt + T)"] { 
+            display: none !important; 
+        }
+
+        /* Base typography */
+        body {
+            background: #ffffff !important;
+            color: #1a1a1a;
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+        }
+
+        /* Layout */
+        #Box { 
+            max-width: 880px; 
+            margin: 0 auto; 
+            padding: 50px 40px; 
+        }
         
         @media (min-width: 800px) {
             #Box {
                 display: grid;
-                grid-template-columns: 200px 1fr;
+                grid-template-columns: 160px 1fr;
                 grid-template-rows: auto 1fr;
                 grid-template-areas: "banner banner" "sidebar main";
-                column-gap: 40px;
+                column-gap: 50px;
             }
-            .df-banner-wrapper { grid-area: banner; margin-bottom: 20px; }
+            .df-banner-wrapper { 
+                grid-area: banner; 
+                margin-bottom: 40px; 
+                padding-bottom: 25px;
+                border-bottom: 1px solid #e0e0e0;
+            }
             #Sidebar { 
                 grid-area: sidebar; 
-                text-align: right; 
-                border-right: 1px solid var(--border); 
-                padding-right: 20px;
+                text-align: left; 
+                border-right: none; 
+                padding-right: 0;
                 display: flex;
                 flex-direction: column;
             }
             #Main { grid-area: main; }
-            
-            /* DESKTOP ORDERING: Nav First */
             .nav-group { order: 1; display: block !important; }
-            .popular-group { order: 2; margin-top: 30px; }
+            .popular-group { order: 2; margin-top: 35px; }
             .mobile-menu-trigger { display: none !important; }
         }
 
-        /* --- MOBILE LAYOUT --- */
+        /* Mobile */
         @media (max-width: 799px) {
-            #Box { display: block; }
-            
+            #Box { display: block; padding: 30px 25px; }
+            .df-banner-wrapper {
+                margin-bottom: 25px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e0e0e0;
+            }
             #Sidebar {
-                text-align: center;
-                padding-bottom: 5px;
-                margin-bottom: 10px;
+                text-align: left;
+                padding-bottom: 0;
+                margin-bottom: 25px;
                 display: flex;
                 flex-direction: column;
-                border-bottom: 1px solid var(--border);
+                border-bottom: none;
             }
-
-            /* MOBILE ORDERING: Popular First */
-            .popular-group { 
-                order: 1; 
-                margin-bottom: 15px; 
-            }
+            .popular-group { order: 1; margin-bottom: 20px; }
             .nav-group { order: 2; }
-
-            /* Hamburger Button */
             .mobile-menu-trigger {
                 display: flex;
                 align-items: center;
@@ -87,20 +108,22 @@
                 cursor: pointer;
                 padding: 5px;
                 margin-left: 10px;
-                color: var(--primary);
+                color: #1a1a1a;
             }
-
             .nav-group {
                 display: none; 
                 padding-bottom: 15px;
-                border-bottom: 1px dashed var(--border);
                 margin-top: 10px;
                 margin-bottom: 15px;
             }
-
             .nav-group.show {
                 display: block;
                 animation: fadeIn 0.3s ease;
+            }
+            .sidebar-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px 20px;
             }
         }
 
@@ -109,63 +132,209 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- COMPONENT STYLES --- */
-        .sidebar-menu { list-style: none; padding: 0; line-height: 2.0; font-size: 18px; }
-        .sidebar-menu a {
-            text-decoration: none;
-            color: var(--primary);
-            border-bottom: none;
-            display: inline-block;
+        /* Header */
+        .header { background: transparent; border: none; box-shadow: none; }
+        .logo a {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px !important;
+            font-weight: 300 !important;
+            letter-spacing: 0.02em;
+            color: #1a1a1a !important;
+            text-decoration: none !important;
         }
-        .sidebar-menu a:hover { color: var(--secondary); }
-        .sidebar-menu a.active {
-            font-weight: bold !important;
-            border-bottom: none !important;
-            color: var(--primary) !important;
+        .logo span {
+            font-size: 13px !important;
+            font-weight: 300 !important;
+            color: #888888 !important;
+            letter-spacing: 0.02em;
         }
 
-        /* SUBSCRIBE BUTTON */
+        /* Sidebar */
+        .popular-group {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+        .popular-group h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 10px !important;
+            font-weight: 400 !important;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #999999 !important;
+            margin-bottom: 12px !important;
+        }
+        .sidebar-menu { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0;
+            line-height: 2.0; 
+            font-size: 15px; 
+        }
+        .sidebar-menu a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: #1a1a1a !important;
+            border-bottom: none;
+            display: inline-block;
+            transition: color 0.2s ease;
+        }
+        .sidebar-menu a:hover { color: #666666 !important; }
+        .sidebar-menu a.active {
+            font-weight: 400 !important;
+            color: #1a1a1a !important;
+        }
+
+        /* Subscribe - simple underline */
         .nav-subscribe-btn {
             display: inline-block;
-            margin-top: 15px;
-            padding: 6px 18px;
-            border: 1px solid var(--primary);
-            border-radius: 50px;
-            text-decoration: none !important;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
-            text-align: center;
-            color: var(--primary) !important;
-            background-color: transparent;
+            margin-top: 25px;
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            background: transparent !important;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px !important;
+            font-weight: 300 !important;
+            color: #1a1a1a !important;
+            text-decoration: none;
+            border-bottom: 1px solid #1a1a1a !important;
+            letter-spacing: 0.02em;
+            transition: opacity 0.2s ease;
         }
         .nav-subscribe-btn:hover {
-            background-color: var(--primary);
-            color: var(--theme) !important;
-            transform: translateY(-1px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: transparent !important;
+            color: #666666 !important;
+            border-bottom-color: #666666 !important;
+            transform: none !important;
+            box-shadow: none !important;
         }
+
+        /* Main content */
+        .page-header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #999999;
+            margin-bottom: 35px;
+        }
+
+        /* Post entries */
+        .post-entry {
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            margin-bottom: 40px;
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+        .post-entry .entry-cover { display: none; }
+        .post-entry .entry-header h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 19px;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .post-entry:hover .entry-header h2 { color: #666666; }
+        .post-entry:hover { transform: none; }
+        .post-entry .entry-content p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            color: #666666;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .post-entry .entry-footer {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            color: #999999;
+            margin-top: 10px;
+            letter-spacing: 0.02em;
+        }
+        .entry-link { border-radius: 0; }
+
+        /* Footer */
+        .footer {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            color: #999999;
+            padding: 50px 40px 30px;
+            text-align: center;
+            background: transparent !important;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 50px;
+        }
+        .footer a { color: #666666; text-decoration: none; }
+        .footer span:last-child { display: none; }
+        .top-link { display: none !important; }
+
+        /* Single post */
+        .post-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+        .post-meta {
+            font-size: 13px;
+            font-weight: 300;
+            color: #999999;
+            margin-bottom: 35px;
+        }
+        .post-content {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #333333;
+        }
+        .post-content p { margin-bottom: 1.4em; }
+        .post-content h2, .post-content h3 {
+            font-weight: 400;
+            margin-top: 1.8em;
+            margin-bottom: 0.7em;
+        }
+
+        /* Links */
+        a { color: #1a1a1a; text-decoration: none; }
+        a:hover { color: #666666; }
+        .post-content a { border-bottom: 1px solid #ccc; }
+        .post-content a:hover { border-bottom-color: #666; }
+
+        /* Selection */
+        ::selection { background: #e0e0e0; color: #1a1a1a; }
+
+        /* Override any dark theme remnants */
+        .list, .toc { background: transparent !important; }
     </style>
-<script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init("phc_mdM0KdTg128roSq1HNjy9x98ruY8v6wd5ZNEbYo2HU2",{api_host:"https://us.i.posthog.com", person_profiles: "always"})</script></head>
+
+<script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init("phc_mdM0KdTg128roSq1HNjy9x98ruY8v6wd5ZNEbYo2HU2",{api_host:"https://us.i.posthog.com", person_profiles: "always"})</script>
+</head>
 <body class="" id="top">
     <div id="Box">
         <div class="df-banner-wrapper">
-             <header class="header">
+            <header class="header">
                 <nav class="nav" style="display: flex !important; justify-content: space-between; align-items: center; width: 100%;">
-                    
                     <div class="logo" style="display: flex; align-items: center; gap: 15px;">
                         <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                            <a href="/" accesskey="h" title="Thinking in Public" style="font-size: 24px; font-weight: bold; text-decoration: none; color: inherit;">
+                            <a href="/" accesskey="h" title="Thinking in Public">
                                 Thinking in Public
                             </a>
-                            <span style="font-size: 14px; opacity: 0.8;">by Dexter Bosley</span>
+                            <span>by Dexter Bosley</span>
                         </div>
                     </div>
-
                     <div style="display: flex; align-items: center;">
-                        
                         <button class="mobile-menu-trigger" id="menu-trigger" aria-label="Toggle Menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="3" y1="12" x2="21" y2="12"></line>
                                 <line x1="3" y1="6" x2="21" y2="6"></line>
                                 <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -177,12 +346,11 @@
         </div>
 
         <div id="Sidebar">
-            
-            <div class="popular-group" style="background: var(--entry); padding: 15px; border-radius: 8px; border: 1px solid var(--border); text-align: left;">
-                <h3 style="font-size: 11px; text-transform: uppercase; color: var(--secondary); margin: 0 0 10px 0; letter-spacing: 2px; font-weight: bold;">Popular</h3>
-                <ul class="sidebar-menu" style="font-size: 14px; line-height: 1.4; margin: 0; padding: 0;">
-                    <li style="margin-bottom: 6px;"><a href="/essays/test-essay/" style="display: block;">Test Essay</a></li>
-                    <li><a href="/stories/test-story/" style="display: block;">Test Story</a></li>
+            <div class="popular-group">
+                <h3>Popular</h3>
+                <ul class="sidebar-menu" style="font-size: 14px; line-height: 1.6;">
+                    <li style="margin-bottom: 4px;"><a href="/essays/test-essay/">Test Essay</a></li>
+                    <li><a href="/stories/test-story/">Test Story</a></li>
                 </ul>
             </div>
 
@@ -193,14 +361,10 @@
                     <li><a href="/stories/">Stories</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
-
-                <div style="margin-bottom: 25px;">
-                    <a href="https://www.givewell.org" target="_blank" class="nav-subscribe-btn">
-                        Subscribe
-                    </a>
+                <div>
+                    <a href="https://www.givewell.org" target="_blank" class="nav-subscribe-btn">Subscribe</a>
                 </div>
             </div>
-
         </div>
 
         <main id="Main" class="main">
@@ -211,38 +375,21 @@
     {{ partial "footer.html" . }}
 
     <script>
-        // Hamburger Logic
         document.getElementById('menu-trigger').addEventListener('click', function() {
-            var navGroup = document.getElementById('nav-group');
-            navGroup.classList.toggle('show');
+            document.getElementById('nav-group').classList.toggle('show');
         });
-
-        // Bolding Logic
         (function() {
             const currentPath = window.location.pathname.replace(/\/$/, ""); 
-            const links = document.querySelectorAll('.sidebar-menu a');
-            links.forEach(link => {
+            document.querySelectorAll('.sidebar-menu a').forEach(link => {
                 link.classList.remove('active'); 
-                const linkHref = link.getAttribute('href');
-                const linkPath = linkHref.replace(/\/$/, "");
-                
+                const linkPath = link.getAttribute('href').replace(/\/$/, "");
                 if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
                     link.classList.add('active');
-                }
-                else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
+                } else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
                     link.classList.add('active');
                 }
             });
         })();
-
-        // Safety Script: Remove Theme Toggle if it exists
-        document.addEventListener("DOMContentLoaded", function() {
-            var toggle = document.getElementById("theme-toggle");
-            if(toggle) toggle.remove();
-            
-            var toggles = document.querySelectorAll(".theme-toggle");
-            toggles.forEach(t => t.remove());
-        });
     </script>
 </body>
 </html>
