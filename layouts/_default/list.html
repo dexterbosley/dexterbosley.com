@@ -8,7 +8,7 @@
 {{- if .IsHome }}
   {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- end }}
-{{- range $pages }}
+{{- range $pages.ByDate.Reverse }}
 <article class="post-entry">
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
