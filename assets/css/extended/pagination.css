@@ -1,0 +1,41 @@
+/* Override PaperMod pagination - remove all bubbles/backgrounds */
+.pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    margin: 3rem 0 2rem !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+.pagination a,
+.pagination span {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    color: #999 !important;
+    text-decoration: none !important;
+}
+.pagination a:hover {
+    color: #1a1a1a !important;
+    background: none !important;
+}
+.pagination .page-number {
+    background: none !important;
+    border: none !important;
+}
+.pagination-current {
+    color: #1a1a1a !important;
+    font-weight: 400 !important;
+    background: none !important;
+}
+.pagination .prev,
+.pagination .next {
+    background: none !important;
+    border: none !important;
+}
