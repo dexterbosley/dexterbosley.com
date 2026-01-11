@@ -1,89 +1,30 @@
 {{- define "main" }}
-{{- if (and .Site.Params.profileMode.enabled .IsHome) }}
-{{- partial "index_profile.html" . }}
-{{- else }}
-
-{{/* --- UPDATED HEADER LOGIC START --- */}}
-{{- if .IsHome }}
+{{- if .Title }}
 <header class="page-header">
-  <h1>Recent</h1>
-</header>
-{{- else if .Title }}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description | markdownify }}
-  </div>
-  {{- end }}
 </header>
 {{- end }}
-{{/* --- UPDATED HEADER LOGIC END --- */}}
-
-{{- if .Content }}
-<div class="post-content">
-  {{- if not (.Param "disableAnchoredHeadings") }}
-  {{- partial "anchored_headings.html" .Content -}}
-  {{- else }}{{ .Content }}{{ end }}
-</div>
-{{- end }}
-
-{{- $pages := union .RegularPages .Sections }}
-
+{{- $pages := .Pages }}
 {{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- end }}
-
-{{- $paginator := .Paginate $pages }}
-
-{{- if and .IsHome .Site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
-{{- range $paginator.Pages }}
-
-<article class="{{ if .IsHome }}first-entry{{ else }}post-entry{{ end }}">
-  <header class="entry-header">
-    <h2>
-      {{- .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
-  </header>
-  
-  {{- $isHidden := .Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList }}
-  {{- if (and .Params.cover.image (not $isHidden)) }}
-  <figure class="entry-cover">
-    {{- if (ne .Params.cover.relative true) }}
+{{- range $pages }}
+<article class="post-entry">
+  {{- if .Params.cover.image }}
+  <figure class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-    {{- else }}
-    <img loading="lazy" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-    {{- end }}
   </figure>
   {{- end }}
-
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
   <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <p>{{ .Description | default .Summary | truncate 150 }}</p>
   </div>
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
-{{- end }}
-
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« Prev</a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">Next »</a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
-
 {{- end }}
 {{- end }}

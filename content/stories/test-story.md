@@ -4,10 +4,8 @@ date: 2025-01-01
 description: "This is a test story with the new banner style."
 type: "Story"
 cover:
-    image: "/images/banner.jpg"
-    alt: "Test Banner"
-quote: "We are what we pretend to be, so we must be careful about what we pretend to be."
-quoteAuthor: "Kurt Vonnegut"
+    image: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800"
+    alt: "Abstract colorful swirls"
 ---
 
 This is the body of the test story.
