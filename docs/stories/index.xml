@@ -6,14 +6,84 @@
     <description>Recent content in Stories on Thinking in Public</description>
     <generator>Hugo -- 0.153.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/stories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Story 1</title>
+      <link>https://www.dexterbosley.com/stories/test-story-1/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-1/</guid>
+      <description>This is test story number 1 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 2</title>
+      <link>https://www.dexterbosley.com/stories/test-story-2/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-2/</guid>
+      <description>This is test story number 2 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 3</title>
+      <link>https://www.dexterbosley.com/stories/test-story-3/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-3/</guid>
+      <description>This is test story number 3 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 4</title>
+      <link>https://www.dexterbosley.com/stories/test-story-4/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-4/</guid>
+      <description>This is test story number 4 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 5</title>
+      <link>https://www.dexterbosley.com/stories/test-story-5/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-5/</guid>
+      <description>This is test story number 5 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 6</title>
+      <link>https://www.dexterbosley.com/stories/test-story-6/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-6/</guid>
+      <description>This is test story number 6 for pagination testing.</description>
+    </item>
     <item>
       <title>Small Talk</title>
       <link>https://www.dexterbosley.com/stories/small-talk/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
       <description>It was a sticky day outside the church. Two brothers wait on the steps, engaging in small talk until the world interrupts.</description>
+    </item>
+    <item>
+      <title>Test Story 7</title>
+      <link>https://www.dexterbosley.com/stories/test-story-7/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-7/</guid>
+      <description>This is test story number 7 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 8</title>
+      <link>https://www.dexterbosley.com/stories/test-story-8/</link>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-8/</guid>
+      <description>This is test story number 8 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 9</title>
+      <link>https://www.dexterbosley.com/stories/test-story-9/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-9/</guid>
+      <description>This is test story number 9 for pagination testing.</description>
+    </item>
+    <item>
+      <title>Test Story 10</title>
+      <link>https://www.dexterbosley.com/stories/test-story-10/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/test-story-10/</guid>
+      <description>This is test story number 10 for pagination testing.</description>
     </item>
     <item>
       <title>Traditional vs. Agentic</title>
