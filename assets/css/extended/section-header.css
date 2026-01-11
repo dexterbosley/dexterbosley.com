@@ -1,3 +1,6 @@
+.page-header {
+    margin-bottom: 15px;
+}
 .page-header h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 12px;
@@ -5,7 +8,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #999999;
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
 .page-header .section-name {
     color: #1a1a1a;
@@ -19,4 +22,35 @@
 .page-header .section-sub {
     color: #999999;
     font-weight: 300;
+}
+
+.pinned-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 30px;
+}
+.pinned-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #666;
+    background: #e8e8e8;
+    padding: 3px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+.pinned-link {
+    font-size: 15px;
+    color: #1a1a1a;
+    text-decoration: none;
+    line-height: 1.4;
+}
+.pinned-link:hover {
+    text-decoration: underline;
 }
