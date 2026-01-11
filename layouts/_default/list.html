@@ -1,16 +1,51 @@
 {{- define "main" }}
 
-<header class="page-header">
-  {{- if .IsHome }}
-  <h1><span class="section-name">All</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
-  {{- else if eq .Title "Essays" }}
-  <h1><span class="section-name">Essays</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
-  {{- else if eq .Title "Stories" }}
-  <h1><span class="section-name">Stories</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
-  {{- else if .Title }}
-  <h1><span class="section-name">{{ .Title }}</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+{{- $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
+{{- if not .IsHome }}
+  {{- $paginator = .Paginate .Pages }}
+{{- end }}
+
+<div class="page-header-row">
+  <header class="page-header">
+    {{- if .IsHome }}
+    <h1><span class="section-name">All</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+    {{- else if eq .Title "Essays" }}
+    <h1><span class="section-name">Essays</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+    {{- else if eq .Title "Stories" }}
+    <h1><span class="section-name">Stories</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+    {{- else if .Title }}
+    <h1><span class="section-name">{{ .Title }}</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
+    {{- end }}
+  </header>
+  
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="pagination pagination-top">
+    {{- $currentPage := $paginator.PageNumber }}
+    {{- $totalPages := $paginator.TotalPages }}
+    {{- $startPage := math.Max 1 (sub $currentPage 1) }}
+    {{- $endPage := math.Min $totalPages (add $startPage 2) }}
+    {{- if lt (sub $endPage $startPage) 2 }}
+      {{- $startPage = math.Max 1 (sub $endPage 2) }}
+    {{- end }}
+    
+    {{- if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">Previous</a>
+    {{- end }}
+    
+    {{- range seq $startPage $endPage }}
+      {{- if eq . $currentPage }}
+      <span class="pagination-current">{{ . }}</span>
+      {{- else }}
+      <a href="{{ (index $paginator.Pagers (sub . 1)).URL }}">{{ . }}</a>
+      {{- end }}
+    {{- end }}
+    
+    {{- if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Next</a>
+    {{- end }}
+  </nav>
   {{- end }}
-</header>
+</div>
 
 {{- if .IsHome }}
 <div class="pinned-banner">
@@ -27,11 +62,6 @@
   <span class="pinned-label">Pinned</span>
   <a href="/stories/small-talk/" class="pinned-link">Small Talk — A story about two brothers waiting outside a church</a>
 </div>
-{{- end }}
-
-{{- $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
-{{- if not .IsHome }}
-  {{- $paginator = .Paginate .Pages }}
 {{- end }}
 
 {{- $first := true }}
@@ -57,17 +87,17 @@
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
-<nav class="pagination">
-  {{- if $paginator.HasPrev }}
-  <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">Previous</a>
-  {{- end }}
-  
+<nav class="pagination pagination-bottom">
   {{- $currentPage := $paginator.PageNumber }}
   {{- $totalPages := $paginator.TotalPages }}
   {{- $startPage := math.Max 1 (sub $currentPage 1) }}
   {{- $endPage := math.Min $totalPages (add $startPage 2) }}
   {{- if lt (sub $endPage $startPage) 2 }}
     {{- $startPage = math.Max 1 (sub $endPage 2) }}
+  {{- end }}
+  
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}">Previous</a>
   {{- end }}
   
   {{- range seq $startPage $endPage }}
@@ -79,7 +109,7 @@
   {{- end }}
   
   {{- if $paginator.HasNext }}
-  <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next</a>
+  <a href="{{ $paginator.Next.URL }}">Next</a>
   {{- end }}
 </nav>
 {{- end }}

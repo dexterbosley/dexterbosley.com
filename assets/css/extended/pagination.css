@@ -39,3 +39,30 @@
     background: none !important;
     border: none !important;
 }
+
+/* Header row with pagination */
+.page-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.page-header-row .page-header {
+    margin-bottom: 0;
+}
+.page-header-row .page-header h1 {
+    margin-bottom: 0;
+}
+
+/* Top pagination - inline with header */
+.pagination-top {
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0.75rem !important;
+}
+
+/* Bottom pagination - centered */
+.pagination-bottom {
+    justify-content: center !important;
+    margin: 3rem 0 2rem !important;
+}
