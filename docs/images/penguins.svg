@@ -1,23 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" width="28" height="38">
-  <!-- Back/dark side -->
-  <polygon points="16,4 6,14 4,32 10,42 16,42" fill="#1a1a1a"/>
-  <!-- Front/white belly -->
-  <polygon points="16,14 10,20 10,38 16,42 22,38 22,20" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.5"/>
-  <!-- Right dark side -->
-  <polygon points="16,4 26,14 28,32 22,42 16,42" fill="#333333"/>
-  <!-- Head -->
-  <ellipse cx="16" cy="8" rx="8" ry="6" fill="#1a1a1a"/>
-  <!-- White face patch -->
-  <ellipse cx="18" cy="9" rx="3" ry="2.5" fill="#ffffff"/>
-  <!-- Eye -->
-  <circle cx="19" cy="8" r="1" fill="#1a1a1a"/>
-  <!-- Beak -->
-  <polygon points="24,10 30,12 24,14" fill="#444444"/>
-  <!-- Left wing -->
-  <polygon points="6,14 2,26 4,32 10,28" fill="#1a1a1a"/>
-  <!-- Right wing hint -->
-  <polygon points="26,14 30,26 28,32 22,28" fill="#222222"/>
-  <!-- Feet -->
-  <polygon points="10,42 6,46 14,46 16,42" fill="#333333"/>
-  <polygon points="22,42 18,46 26,46 28,44" fill="#444444"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Hyper-minimalist Picasso-esque penguin: angular geometric lines only -->
+  <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body outline - single angular contour -->
+    <polyline points="35,85 30,55 38,25 50,15 62,25 70,55 65,85"/>
+    <!-- Wing line left -->
+    <line x1="32" y1="45" x2="22" y2="62"/>
+    <!-- Wing line right -->
+    <line x1="68" y1="45" x2="78" y2="62"/>
+    <!-- Eyes - two dots -->
+    <circle cx="44" cy="32" r="2" fill="#000"/>
+    <circle cx="56" cy="32" r="2" fill="#000"/>
+    <!-- Beak - angular -->
+    <polyline points="50,38 56,44 50,48"/>
+  </g>
 </svg>
