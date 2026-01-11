@@ -1,4 +1,12 @@
 {{- define "main" }}
+
+{{- if .IsHome }}
+<div class="pinned-banner">
+  <span class="pinned-label">Pinned</span>
+  <a href="/stories/small-talk/" class="pinned-link">Small Talk — A story about two brothers waiting outside a church</a>
+</div>
+{{- end }}
+
 <header class="page-header">
   {{- if .IsHome }}
   <h1><span class="section-name">All</span> <span class="section-sep">›</span> <span class="section-sub">Recent</span></h1>
@@ -10,8 +18,9 @@
 {{- if .IsHome }}
   {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
 {{- end }}
+{{- $first := true }}
 {{- range $pages.ByDate.Reverse }}
-<article class="post-entry">
+<article class="post-entry{{ if $first }} featured{{ end }}">
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
@@ -28,5 +37,6 @@
   </footer>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
+{{- $first = false }}
 {{- end }}
 {{- end }}
