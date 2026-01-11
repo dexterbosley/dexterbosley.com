@@ -1,0 +1,150 @@
+@media (max-width: 799px) {
+    /* Base layout */
+    #Box {
+        padding: 20px 20px;
+    }
+    
+    /* Header */
+    .df-banner-wrapper {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .logo a {
+        font-size: 18px !important;
+    }
+    .logo span {
+        font-size: 12px !important;
+    }
+    
+    /* Sidebar navigation */
+    #Sidebar {
+        margin-bottom: 20px;
+    }
+    .popular-group {
+        display: none;
+    }
+    .nav-group {
+        display: none;
+        padding: 15px 0;
+        border-top: 1px solid #e0e0e0;
+        margin-top: 15px;
+    }
+    .nav-group.show {
+        display: block;
+    }
+    .nav-group .sidebar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        justify-content: flex-start;
+    }
+    .nav-group .sidebar-menu li {
+        margin: 0;
+    }
+    .nav-subscribe-btn {
+        margin-top: 15px !important;
+        margin-left: 0;
+    }
+    
+    /* Mobile menu trigger */
+    .mobile-menu-trigger {
+        display: flex !important;
+        padding: 8px;
+        color: #1a1a1a;
+    }
+    
+    /* Pinned banner */
+    .pinned-banner {
+        margin-bottom: 20px;
+        padding: 12px 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .pinned-label {
+        font-size: 9px;
+    }
+    .pinned-link {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    /* Page header */
+    .page-header {
+        margin-bottom: 25px;
+    }
+    .page-header h1 {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    
+    /* Post entries */
+    .post-entry {
+        margin-bottom: 30px;
+    }
+    .entry-banner {
+        margin-bottom: 12px;
+        border-radius: 3px;
+    }
+    .entry-banner img {
+        height: 160px;
+    }
+    .post-entry .entry-header h2 {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+    .post-entry .entry-content p {
+        font-size: 13px;
+    }
+    .post-entry .entry-footer {
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    
+    /* Single post */
+    .post-header {
+        margin-bottom: 20px;
+    }
+    .post-title {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+    .post-meta {
+        font-size: 12px !important;
+        margin-bottom: 25px !important;
+    }
+    .post-banner {
+        margin: 20px 0 25px 0;
+        border-radius: 3px;
+    }
+    .post-content {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 20px 20px;
+        margin-top: 30px;
+        font-size: 11px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #Box {
+        padding: 15px 15px;
+    }
+    .logo a {
+        font-size: 16px !important;
+    }
+    .entry-banner img {
+        height: 140px;
+    }
+    .post-entry .entry-header h2 {
+        font-size: 16px;
+    }
+    .post-title {
+        font-size: 20px !important;
+    }
+}
