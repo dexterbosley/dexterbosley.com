@@ -1,5 +1,7 @@
 ---
 title: "Test Story 1"
+quote: "There is no greater agony than bearing an untold story inside you."
+quote_author: "Maya Angelou"
 date: 2026-01-10
 type: story
 description: "This is test story number 1 for pagination testing."

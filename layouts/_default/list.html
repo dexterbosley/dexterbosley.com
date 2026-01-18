@@ -39,9 +39,12 @@
   <header class="entry-header">
     <h2>{{ .Title }}</h2>
   </header>
-  <div class="entry-content">
-    <p>{{ .Description | default .Summary | truncate 150 }}</p>
-  </div>
+  {{- if .Params.quote }}
+  <blockquote class="entry-quote">
+    <p>"{{ .Params.quote }}"</p>
+    <cite>— {{ .Params.quote_author }}</cite>
+  </blockquote>
+  {{- end }}
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>

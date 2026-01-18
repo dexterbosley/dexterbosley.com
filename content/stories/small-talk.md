@@ -1,5 +1,7 @@
 ---
 title: "Small Talk"
+quote: "The story of life is quicker than the blink of an eye. The story of love is hello and goodbye."
+quote_author: "Jimi Hendrix"
 date: 2026-01-04
 draft: false
 summary: "It was a sticky day outside the church. Two brothers wait on the steps, engaging in small talk until the world interrupts."

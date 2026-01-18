@@ -195,3 +195,29 @@ a.pinned-banner .pinned-meta {
   border-color: #ddd !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
+
+/* Entry quote styling */
+.entry-quote {
+  margin: 12px 0 0 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.entry-quote p {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  color: #555 !important;
+  line-height: 1.5 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.entry-quote cite {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #888 !important;
+}
