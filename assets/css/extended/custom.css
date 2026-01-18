@@ -28,3 +28,22 @@ a.pinned-banner .pinned-meta {
   font-weight: 300 !important;
   color: #999999 !important;
 }
+
+/* Restore feed entry banner sizing */
+.post-entry .entry-banner {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+.post-entry .entry-banner img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16/9 !important;
+  object-fit: cover !important;
+  border-radius: 4px !important;
+}
+
+/* Featured (first) post gets larger image */
+.post-entry.featured .entry-banner img {
+  aspect-ratio: 2/1 !important;
+}
