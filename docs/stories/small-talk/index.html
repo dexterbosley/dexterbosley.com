@@ -192,6 +192,7 @@
             #Box { display: block; padding: 25px 20px 100px 20px; }
             .df-banner-wrapper { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e0e0e0; }
             #Sidebar { display: none; }
+            
         }
 
         .header { background: transparent; border: none; box-shadow: none; }
@@ -289,6 +290,7 @@
                             <span>by Dexter Bosley</span>
                         </div>
                     </div>
+                    
                 </nav>
             </header>
         </div>
@@ -314,3 +316,75 @@
                 </ul>
             </div>
         </div>
+
+        <main id="Main" class="main">
+            
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Small Talk
+    </h1>
+    <div class="post-meta">January 4, 2026&nbsp;·&nbsp;Story&nbsp;·&nbsp;2min
+</div>
+  </header>
+  <figure class="post-banner">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/banner.jpg" alt="Small Talk Banner">
+  </figure>
+  <div class="post-content"><p>It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together on the entrance steps as cars ground north on Third Avenue.</p>
+<p>Steve tapped his black shoes together. &ldquo;I’m hungry.&rdquo;</p>
+<p>&ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&rdquo;</p>
+<p>Steve nodded. &ldquo;So bad. I hate tomatoes.&rdquo;</p>
+<p>&ldquo;I’ll make you something tonight, maybe tortellini with that alfredo.&rdquo;</p>
+<p>Steve smiled and closed his eyes. &ldquo;So where’s Mom now?&rdquo;</p>
+<p>Elliott shook his head. &ldquo;I don’t know.&rdquo;</p>
+<p>Steve looked at the road and back toward the tall oak doors. &ldquo;Mom never liked this place.&rdquo;</p>
+<p>&ldquo;Yeah, she said it was better to sleep in the morning. Remember that study thing? The one in our group cha—&rdquo;</p>
+<p>A scream fell from above.</p>
+<p>Then a crash.</p>
+<p>On the sidewalk to their right—a bit closer to the Park than the Avenue—water and glass danced. Cut flowers, white and pink, spilled from a cheap vase. A man lay face-down, cheek pressed to the pavement. Steve looked up. A girl gripped the balcony rail, elbow frozen.</p>
+<p>&ldquo;Did she… drop that?&rdquo;</p>
+<p>&ldquo;Had to… look at all that glass… I don’t… Steve, he’s not moving,&rdquo; Elliott whispered.</p>
+<p>A woman ran across the street toward the scene. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve stared at the stained concrete.</p>
+<p>There were sirens and flashes and uniforms, and soon they’d pushed everyone back. Elliott sank into the shade to rest. Steve focused on the traffic. The girl slipped inside.</p>
+<p>Another man approached—not a priest. He stopped. &ldquo;I… we’re ready. It’s time to carry your mom outside.&rdquo;</p>
+<p>Steve got up first and rubbed his eyes.</p>
+
+
+  </div>
+  <footer class="post-footer">
+  </footer>
+</article>
+        </main>
+    </div>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="/">All</a></li>
+            <li><a href="/essays/">Essays</a></li>
+            <li><a href="/stories/">Stories</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </nav>
+
+    <footer class="footer">
+    <span>© 2026 Dexter Bosley</span>
+</footer>
+
+
+    <script>
+        (function() {
+            const currentPath = window.location.pathname.replace(/\/$/, "");
+            document.querySelectorAll('.sidebar-menu a, .mobile-nav a').forEach(link => {
+                link.classList.remove('active');
+                const linkPath = link.getAttribute('href').replace(/\/$/, "");
+                if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
+                    link.classList.add('active');
+                } else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
+                    link.classList.add('active');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
