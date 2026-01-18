@@ -180,10 +180,18 @@ a.pinned-banner .pinned-meta {
 
 }
 
-/* Popular Section - Subtle Highlighted Box */
+
+/* Popular Section - Subtle Bubble with Hover */
 .popular-group {
   background: #f9f9f9 !important;
   border: 1px solid #ebebeb !important;
   border-radius: 8px !important;
   padding: 16px 18px !important;
+  transition: all 0.25s ease !important;
+}
+
+.popular-group:hover {
+  background: #f5f5f5 !important;
+  border-color: #ddd !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
