@@ -40,4 +40,4 @@ publishDir = "docs"
   name = "About"
   url = "/about/"
   weight = 40
-paginate = 10
+paginate = 5
