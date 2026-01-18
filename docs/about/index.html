@@ -441,7 +441,7 @@ Product at Ramp | New York, NY</p>
 
     <script>
         (function() {
-            const currentPath = window.location.pathname.replace(/\/$/, "");
+            const currentPath = window.location.pathname.replace(/\/page\/[0-9]+\/?$/, "").replace(/\/$/, "");
             document.querySelectorAll('.sidebar-menu a, .mobile-nav a').forEach(link => {
                 link.classList.remove('active');
                 const linkPath = link.getAttribute('href').replace(/\/$/, "");
