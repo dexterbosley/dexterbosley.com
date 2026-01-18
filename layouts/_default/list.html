@@ -49,7 +49,7 @@
   </blockquote>
   {{- end }}
   <footer class="entry-footer">
-    <span class="section-icon">{{ if eq $type "essay" }}✎{{ else }}❧{{ end }}</span>{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }}min
+    <span class="section-icon">{{ if eq $type "essay" }}✎{{ else }}◆{{ end }}</span>{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }}min
 </footer>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
