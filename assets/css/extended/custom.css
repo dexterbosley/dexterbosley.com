@@ -1,3 +1,9 @@
+/* Accent color - Economist red */
+:root {
+  --accent: #E3120B;
+  --accent-hover: #c40f09;
+}
+
 /* Pinned banner styling */
 a.pinned-banner {
   display: flex !important;
@@ -104,4 +110,64 @@ a.pinned-banner .pinned-meta {
   .df-banner-wrapper {
     position: relative !important;
   }
+}
+
+/* === ACCENT COLOR APPLICATIONS === */
+
+/* Subscribe button - red underline */
+.nav-subscribe-btn {
+  border-bottom: 1px solid var(--accent) !important;
+  color: #1a1a1a !important;
+}
+
+.nav-subscribe-btn:hover {
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent) !important;
+}
+
+/* Post title hover */
+.post-entry:hover .entry-header h2 {
+  color: var(--accent) !important;
+}
+
+/* Sidebar links hover */
+.sidebar-menu a:hover {
+  color: var(--accent) !important;
+}
+
+/* Mobile nav hover */
+.mobile-nav a:hover {
+  color: var(--accent) !important;
+}
+
+/* Popular section title */
+.popular-group h3 {
+  color: var(--accent) !important;
+  opacity: 0.8 !important;
+}
+
+/* Pagination current page */
+.pagination .pagination-current {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+}
+
+/* Pagination hover */
+.pagination a:hover {
+  color: var(--accent) !important;
+}
+
+/* Post content links */
+.post-content a {
+  border-bottom-color: var(--accent) !important;
+}
+
+.post-content a:hover {
+  color: var(--accent) !important;
+}
+
+/* Pinned banner hover - subtle red border */
+a.pinned-banner:hover {
+  border-color: var(--accent) !important;
+  border-left: 3px solid var(--accent) !important;
 }
