@@ -13,7 +13,7 @@
 <meta name="description" content="It was a sticky day outside the church. Two brothers wait on the steps, engaging in small talk until the world interrupts.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.dexterbosley.com/stories/small-talk/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.88d0df5c625faa27608996ec1694179a4efc89d6253f30013b9f9c5a9d07ede6.css" integrity="sha256-iNDfXGJfqidgiZbsFpQXmk78idYlPzABO5&#43;cWp0H7eY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b0c6a207207e482e60c0ad3b10aea5cb6b50b8ae18e888fc5fee5261be592b68.css" integrity="sha256-sMaiByB&#43;SC5gwK07EK6ly2tQuK4Y6Ij8X&#43;5SYb5ZK2g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.dexterbosley.com/favicon.svg">
@@ -371,19 +371,21 @@
 
         <main id="Main" class="main">
             
+<div class="reading-progress" id="reading-progress"></div>
 <article class="post-single">
   <header class="post-header">
     
     <h1 class="post-title">
       Small Talk
     </h1>
-    <div class="post-meta">January 4, 2026&nbsp;·&nbsp;Story&nbsp;·&nbsp;2min
+    <div class="post-meta">
+      <span class="section-icon">❧</span>January 4, 2026&nbsp;·&nbsp;Story&nbsp;·&nbsp;2min
 </div>
   </header>
   <figure class="post-banner">
     <img loading="lazy" src="https://www.dexterbosley.com/images/banner.jpg" alt="Small Talk Banner">
   </figure>
-  <div class="post-content"><p>It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together on the entrance steps as cars ground north on Third Avenue.</p>
+  <div class="post-content story-content"><p>It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together on the entrance steps as cars ground north on Third Avenue.</p>
 <p>Steve tapped his black shoes together. &ldquo;I’m hungry.&rdquo;</p>
 <p>&ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&rdquo;</p>
 <p>Steve nodded. &ldquo;So bad. I hate tomatoes.&rdquo;</p>
@@ -407,6 +409,19 @@
   <footer class="post-footer">
   </footer>
 </article>
+<script>
+window.addEventListener('scroll', function() {
+  const article = document.querySelector('.post-content');
+  const progress = document.getElementById('reading-progress');
+  if (!article || !progress) return;
+  const articleTop = article.offsetTop;
+  const articleHeight = article.offsetHeight;
+  const windowHeight = window.innerHeight;
+  const scrolled = window.scrollY;
+  const percent = Math.min(100, Math.max(0, ((scrolled - articleTop + windowHeight * 0.3) / articleHeight) * 100));
+  progress.style.width = percent + '%';
+});
+</script>
         </main>
     </div>
 

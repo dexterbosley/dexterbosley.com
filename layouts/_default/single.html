@@ -1,4 +1,6 @@
 {{- define "main" }}
+{{- $isStory := eq .Section "stories" }}
+<div class="reading-progress" id="reading-progress"></div>
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -7,6 +9,7 @@
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h1>
     <div class="post-meta">
+      <span class="section-icon">{{ if $isStory }}❧{{ else }}✎{{ end }}</span>
       {{- partial "post_meta.html" . -}}
     </div>
   </header>
@@ -15,7 +18,7 @@
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
   </figure>
   {{- end }}
-  <div class="post-content">
+  <div class="post-content{{ if $isStory }} story-content{{ end }}">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
@@ -30,4 +33,17 @@
     {{- end }}
   </footer>
 </article>
+<script>
+window.addEventListener('scroll', function() {
+  const article = document.querySelector('.post-content');
+  const progress = document.getElementById('reading-progress');
+  if (!article || !progress) return;
+  const articleTop = article.offsetTop;
+  const articleHeight = article.offsetHeight;
+  const windowHeight = window.innerHeight;
+  const scrolled = window.scrollY;
+  const percent = Math.min(100, Math.max(0, ((scrolled - articleTop + windowHeight * 0.3) / articleHeight) * 100));
+  progress.style.width = percent + '%';
+});
+</script>
 {{- end }}

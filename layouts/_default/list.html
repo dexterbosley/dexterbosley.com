@@ -30,7 +30,8 @@
 
 {{- $first := true }}
 {{- range $paginator.Pages }}
-<article class="post-entry{{ if $first }} featured{{ end }}">
+{{- $type := cond (eq .Section "essays") "essay" "story" }}
+<article class="post-entry{{ if $first }} featured{{ end }}" data-type="{{ $type }}">
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
@@ -42,12 +43,16 @@
   {{- if .Params.quote }}
   <blockquote class="entry-quote">
     <p>"{{ .Params.quote }}"</p>
+    {{- if .Params.quote_author }}
     <cite>— {{ .Params.quote_author }}</cite>
+    {{- end }}
   </blockquote>
+  {{- else if .Params.first_line }}
+  <p class="entry-first-line">"{{ .Params.first_line }}"</p>
   {{- end }}
   <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
+    <span class="section-icon">{{ if eq $type "essay" }}✎{{ else }}❧{{ end }}</span>{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }}min
+</footer>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
 {{- $first = false }}
