@@ -26,6 +26,8 @@ a.pinned-banner .pinned-title {
 a.pinned-banner .pinned-title::before {
   content: '📌 ' !important;
   font-size: 13px !important;
+  filter: grayscale(100%) !important;
+  opacity: 0.7 !important;
 }
 
 a.pinned-banner .pinned-meta {
@@ -33,6 +35,21 @@ a.pinned-banner .pinned-meta {
   font-size: 12px !important;
   font-weight: 300 !important;
   color: #999999 !important;
+  white-space: nowrap !important;
+}
+
+/* Mobile pinned banner */
+@media (max-width: 799px) {
+  a.pinned-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    padding: 14px 16px !important;
+  }
+  
+  a.pinned-banner .pinned-meta {
+    white-space: normal !important;
+  }
 }
 
 /* Restore feed entry banner sizing */
