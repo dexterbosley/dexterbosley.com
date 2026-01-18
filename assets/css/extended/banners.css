@@ -8,11 +8,11 @@
     height: 180px;
     object-fit: cover;
     display: block;
-    filter: grayscale(100%);
-    transition: filter 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .post-entry:hover .entry-banner img {
-    filter: grayscale(0%);
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 .post-banner {
     margin: 25px 0 35px 0;

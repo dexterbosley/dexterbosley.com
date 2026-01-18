@@ -1,6 +1,6 @@
 /* Featured first post - always color */
 .post-entry.featured .entry-banner img {
-    filter: grayscale(0%);
+    
 }
 
 /* Pinned banner */
