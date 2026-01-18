@@ -70,3 +70,38 @@ a.pinned-banner .pinned-meta {
 .post-entry.featured .entry-banner img {
   aspect-ratio: 2/1 !important;
 }
+
+/* Penguin logo styling */
+.penguin-logo {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.penguin-logo img {
+  height: 32px !important;
+  width: auto !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.penguin-logo:hover img {
+  opacity: 1 !important;
+}
+
+/* Mobile penguin logo */
+@media (max-width: 799px) {
+  .penguin-logo {
+    display: flex !important;
+    position: absolute !important;
+    right: 20px !important;
+    top: 25px !important;
+  }
+  
+  .penguin-logo img {
+    height: 28px !important;
+  }
+  
+  .df-banner-wrapper {
+    position: relative !important;
+  }
+}
