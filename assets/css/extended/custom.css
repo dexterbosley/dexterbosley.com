@@ -221,3 +221,13 @@ a.pinned-banner .pinned-meta {
   font-weight: 400 !important;
   color: #888 !important;
 }
+
+/* Quote left bar */
+.entry-quote {
+    border-left: 2px solid #d0d0d0;
+    padding-left: 16px;
+    margin: 15px 0;
+}
+html[data-theme="dark"] .entry-quote {
+    border-left-color: #444;
+}
