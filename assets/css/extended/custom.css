@@ -199,7 +199,7 @@ a.pinned-banner .pinned-meta {
 /* Entry quote styling */
 .entry-quote {
   margin: 12px 0 0 0 !important;
-  padding: 0 !important;
+  padding: 0 0 0 14px !important;
   border: none !important; border-left: 2px solid #d0d0d0 !important;
   background: none !important;
 }
@@ -222,12 +222,4 @@ a.pinned-banner .pinned-meta {
   color: #888 !important;
 }
 
-/* Quote left bar */
-.entry-quote {
-    border-left: 2px solid #d0d0d0;
-    padding-left: 16px;
-    margin: 15px 0;
-}
-html[data-theme="dark"] .entry-quote {
-    border-left-color: #444;
 }
