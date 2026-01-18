@@ -6,20 +6,26 @@
 {{- end }}
 
 {{- if .IsHome }}
-<div class="pinned-banner">
-  <span class="pinned-label">Pinned</span>
-  <a href="/stories/small-talk/" class="pinned-link">Small Talk — A story about two brothers waiting outside a church</a>
-</div>
+{{- with site.GetPage "/stories/small-talk" }}
+<a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-title">{{ .Title }}</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+</a>
+{{- end }}
 {{- else if eq .Title "Essays" }}
-<div class="pinned-banner">
-  <span class="pinned-label">Pinned</span>
-  <a href="/essays/test-essay-1/" class="pinned-link">Test Essay 1 — A pinned essay for the Essays section</a>
-</div>
+{{- with site.GetPage "/essays/test-essay-1" }}
+<a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-title">{{ .Title }}</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+</a>
+{{- end }}
 {{- else if eq .Title "Stories" }}
-<div class="pinned-banner">
-  <span class="pinned-label">Pinned</span>
-  <a href="/stories/small-talk/" class="pinned-link">Small Talk — A story about two brothers waiting outside a church</a>
-</div>
+{{- with site.GetPage "/stories/small-talk" }}
+<a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-title">{{ .Title }}</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .Section | humanize | singularize | title }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+</a>
+{{- end }}
 {{- end }}
 
 {{- $first := true }}
