@@ -5,6 +5,9 @@ title = 'Thinking in Public'
 theme = 'PaperMod'
 publishDir = "docs"
 
+[pagination]
+  pagerSize = 5
+
 [params]
   # This line tells the "All" tab to show these folders
   mainSections = ["essays", "stories"]
@@ -40,4 +43,3 @@ publishDir = "docs"
   name = "About"
   url = "/about/"
   weight = 40
-paginate = 5
