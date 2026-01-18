@@ -114,6 +114,12 @@ a.pinned-banner .pinned-meta {
 /* Subscribe button - maroon underline */
 .nav-subscribe-btn {
   border-bottom: 1px solid var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.nav-subscribe-btn:hover {
+  color: #6a1a27 !important;
+  border-bottom-color: #6a1a27 !important;
 }
 
 /* Remove footer divider */
@@ -149,10 +155,13 @@ a.pinned-banner .pinned-meta {
 
 /* === MAROON ACCENT APPLICATIONS === */
 
-/* Site title - subtle maroon dot */
-.logo a::after {
-  content: '.' !important;
+/* Site title - Thinking in Public in maroon */
+.logo a {
   color: var(--accent) !important;
+}
+
+.logo a:hover {
+  color: #6a1a27 !important;
 }
 
 /* Active nav item indicator */
