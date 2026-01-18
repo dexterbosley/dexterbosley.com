@@ -1,8 +1,3 @@
-/* Accent color - Maroon */
-:root {
-  --accent: #8B2332;
-}
-
 /* Pinned banner styling */
 a.pinned-banner {
   display: flex !important;
@@ -115,44 +110,4 @@ a.pinned-banner .pinned-meta {
 .footer {
   border-top: none !important;
   margin-top: 0 !important;
-}
-
-/* Popular section - maroon header only, no box */
-.popular-group h3 {
-  color: var(--accent) !important;
-  opacity: 1 !important;
-}
-
-.popular-group .sidebar-menu a:hover {
-  color: var(--accent) !important;
-}
-
-/* === MAROON ACCENT APPLICATIONS === */
-
-/* Active nav item indicator */
-.sidebar-menu a.active {
-  color: var(--accent) !important;
-  font-weight: 500 !important;
-}
-
-/* Mobile nav active */
-.mobile-nav a.active {
-  color: var(--accent) !important;
-}
-
-/* Pagination current page */
-.pagination .pagination-current {
-  color: var(--accent) !important;
-  font-weight: 500 !important;
-}
-
-/* Post entry date/meta */
-.post-entry .entry-footer {
-  color: #888888 !important;
-}
-
-/* First post title accent line */
-.post-entry.featured .entry-header h2 {
-  border-left: 3px solid var(--accent) !important;
-  padding-left: 12px !important;
 }
