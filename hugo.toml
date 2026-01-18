@@ -1,4 +1,3 @@
-
 baseURL = 'https://www.dexterbosley.com/'
 languageCode = 'en-us'
 title = 'Thinking in Public'
@@ -6,17 +5,16 @@ theme = 'PaperMod'
 publishDir = "docs"
 
 [pagination]
-  pagerSize = 5
+  pagerSize = 7
 
 [params]
-  # This line tells the "All" tab to show these folders
   mainSections = ["essays", "stories"]
 
 [params.assets]
-    favicon = "/favicon.svg"
-    favicon16x16 = "/favicon.svg"
-    favicon32x32 = "/favicon.svg"
-    apple_touch_icon = "/favicon.svg"
+  favicon = "/favicon.svg"
+  favicon16x16 = "/favicon.svg"
+  favicon32x32 = "/favicon.svg"
+  apple_touch_icon = "/favicon.svg"
 
 [menus]
 

@@ -1,6 +1,6 @@
-/* Accent color - Economist red */
+/* Accent color - Maroon */
 :root {
-  --accent: #E3120B;
+  --accent: #8B2332;
 }
 
 /* Pinned banner styling */
@@ -101,17 +101,17 @@ a.pinned-banner .pinned-meta {
     right: 20px !important;
     top: 25px !important;
   }
-  
+
   .penguin-logo img {
     height: 28px !important;
   }
-  
+
   .df-banner-wrapper {
     position: relative !important;
   }
 }
 
-/* Subscribe button - red underline only */
+/* Subscribe button - maroon underline */
 .nav-subscribe-btn {
   border-bottom: 1px solid var(--accent) !important;
 }
@@ -120,4 +120,65 @@ a.pinned-banner .pinned-meta {
 .footer {
   border-top: none !important;
   margin-top: 0 !important;
+}
+
+/* Popular section - outlined box similar to pinned */
+.popular-group {
+  background: #fafafa !important;
+  border: 1px solid #e8e8e4 !important;
+  border-radius: 6px !important;
+  padding: 16px !important;
+  margin-top: 30px !important;
+}
+
+.popular-group h3 {
+  color: var(--accent) !important;
+  opacity: 1 !important;
+  margin-bottom: 14px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid #e8e8e4 !important;
+}
+
+.popular-group .sidebar-menu a {
+  color: #1a1a1a !important;
+}
+
+.popular-group .sidebar-menu a:hover {
+  color: var(--accent) !important;
+}
+
+/* === MAROON ACCENT APPLICATIONS === */
+
+/* Site title - subtle maroon dot */
+.logo a::after {
+  content: '.' !important;
+  color: var(--accent) !important;
+}
+
+/* Active nav item indicator */
+.sidebar-menu a.active {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+}
+
+/* Mobile nav active */
+.mobile-nav a.active {
+  color: var(--accent) !important;
+}
+
+/* Pagination current page */
+.pagination .pagination-current {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+}
+
+/* Post entry date/meta */
+.post-entry .entry-footer {
+  color: #888888 !important;
+}
+
+/* First post title accent line */
+.post-entry.featured .entry-header h2 {
+  border-left: 3px solid var(--accent) !important;
+  padding-left: 12px !important;
 }
