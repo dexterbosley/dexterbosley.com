@@ -1,18 +1,19 @@
-/* Pinned banner only - no other styles */
+/* Pinned banner styling */
 a.pinned-banner {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   padding: 12px 16px !important;
   margin-bottom: 20px !important;
-  background: #ffffff !important;
-  border: 1px solid #e0e0e0 !important;
+  background: #f8f8f6 !important;
+  border: 1px solid #e8e8e4 !important;
   border-radius: 6px !important;
   text-decoration: none !important;
 }
 
 a.pinned-banner:hover {
-  border-color: #999999 !important;
+  border-color: #d0d0cc !important;
+  background: #f4f4f2 !important;
 }
 
 a.pinned-banner .pinned-title {
@@ -20,6 +21,11 @@ a.pinned-banner .pinned-title {
   font-size: 15px !important;
   font-weight: 400 !important;
   color: #1a1a1a !important;
+}
+
+a.pinned-banner .pinned-title::before {
+  content: '📌 ' !important;
+  font-size: 13px !important;
 }
 
 a.pinned-banner .pinned-meta {
