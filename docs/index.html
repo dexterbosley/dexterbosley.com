@@ -234,6 +234,37 @@
             .mobile-nav { display: block; }
             .footer { padding-bottom: 80px; }
         }
+
+         
+        html[data-theme="dark"] body,
+        html[data-theme="dark"] {
+            background: #1a1a1a !important;
+            color: #e0e0e0 !important;
+        }
+        html[data-theme="dark"] #Box { background: #1a1a1a; }
+        html[data-theme="dark"] .df-banner-wrapper { border-bottom-color: #333 !important; }
+        html[data-theme="dark"] .logo a { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .logo span { color: #888 !important; }
+        html[data-theme="dark"] .sidebar-menu a { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .sidebar-menu a:hover { color: #aaa !important; }
+        html[data-theme="dark"] .popular-group h3 { color: #666 !important; }
+        html[data-theme="dark"] .nav-subscribe-btn { color: #e0e0e0 !important; border-bottom-color: #e0e0e0 !important; }
+        html[data-theme="dark"] .nav-subscribe-btn:hover { color: #aaa !important; border-bottom-color: #aaa !important; }
+        html[data-theme="dark"] .post-entry .entry-header h2 { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .post-entry:hover .entry-header h2 { color: #aaa !important; }
+        html[data-theme="dark"] .post-entry .entry-content p { color: #999 !important; }
+        html[data-theme="dark"] .post-entry .entry-footer { color: #666 !important; }
+        html[data-theme="dark"] .pinned-banner { background: #252525 !important; border-color: #333 !important; }
+        html[data-theme="dark"] .pinned-banner:hover { background: #2a2a2a !important; border-color: #444 !important; }
+        html[data-theme="dark"] .pinned-banner .pinned-title { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .pinned-banner .pinned-meta { color: #666 !important; }
+        html[data-theme="dark"] .mobile-nav { background: #1a1a1a !important; border-top-color: #333 !important; }
+        html[data-theme="dark"] .mobile-nav a { color: #888 !important; }
+        html[data-theme="dark"] .mobile-nav a.active { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .footer { background: #1a1a1a !important; border-top-color: #333 !important; color: #666 !important; }
+        html[data-theme="dark"] .pagination a { color: #e0e0e0 !important; }
+        html[data-theme="dark"] .pagination-current { color: #e0e0e0 !important; }
+        html[data-theme="dark"] #theme-toggle { color: #e0e0e0; }
     </style>
 
 <script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init("phc_mdM0KdTg128roSq1HNjy9x98ruY8v6wd5ZNEbYo2HU2",{api_host:"https://us.i.posthog.com", person_profiles: "always"})</script>
@@ -249,7 +280,7 @@
                             <span>by Dexter Bosley</span>
                         </div>
                     </div>
-                    
+                    <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;font-size:18px;cursor:pointer;padding:8px;opacity:0.7;transition:opacity 0.2s;">☀️</button>
                 </nav>
             </header>
         </div>
@@ -413,6 +444,35 @@
                     link.classList.add('active');
                 } else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
                     link.classList.add('active');
+                }
+            });
+        })();
+    </script>
+
+    <script>
+        (function() {
+            const toggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            
+            
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                html.dataset.theme = 'dark';
+                toggle.textContent = '🌙';
+            } else {
+                html.dataset.theme = 'light';
+                toggle.textContent = '☀️';
+            }
+            
+            toggle.addEventListener('click', function() {
+                if (html.dataset.theme === 'dark') {
+                    html.dataset.theme = 'light';
+                    localStorage.setItem('theme', 'light');
+                    toggle.textContent = '☀️';
+                } else {
+                    html.dataset.theme = 'dark';
+                    localStorage.setItem('theme', 'dark');
+                    toggle.textContent = '🌙';
                 }
             });
         })();
