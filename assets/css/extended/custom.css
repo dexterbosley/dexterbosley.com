@@ -352,3 +352,119 @@ html[data-theme="dark"] .footer-quote {
 html[data-theme="dark"] .entry-first-line {
   color: #888;
 }
+
+/* ===== DROP CAPS ===== */
+.post-content > p:first-of-type::first-letter {
+  float: left;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.5em;
+  line-height: 0.8;
+  padding-right: 10px;
+  padding-top: 6px;
+  color: #1a1a1a;
+}
+html[data-theme="dark"] .post-content > p:first-of-type::first-letter {
+  color: #e0e0e0;
+}
+
+/* ===== SERIF FOR STORY CONTENT ===== */
+.story-content {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  line-height: 1.9 !important;
+}
+
+/* ===== SECTION DIVIDERS IN FEED ===== */
+.post-entry::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #d0d0d0;
+  margin: 40px auto 0;
+}
+.post-entry:last-of-type::after {
+  display: none;
+}
+html[data-theme="dark"] .post-entry::after {
+  background: #444;
+}
+
+/* ===== PAGE FADE-IN ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#Main {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ===== READING PROGRESS BAR ===== */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #1a1a1a 0%, #666 100%);
+  width: 0%;
+  z-index: 10000;
+  transition: width 0.1s ease-out;
+}
+html[data-theme="dark"] .reading-progress {
+  background: linear-gradient(90deg, #e0e0e0 0%, #888 100%);
+}
+
+/* ===== ANIMATED LINK UNDERLINES ===== */
+.post-content a {
+  border-bottom: none !important;
+  position: relative;
+}
+.post-content a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #1a1a1a;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+.post-content a:hover::after {
+  width: 100%;
+  left: 0;
+}
+html[data-theme="dark"] .post-content a::after {
+  background: #e0e0e0;
+}
+
+/* ===== ESSAY VS STORY COLOR ACCENTS ===== */
+.post-entry[data-type="essay"] .entry-header h2 {
+  border-left: 2px solid #c4a35a;
+  padding-left: 12px;
+}
+.post-entry[data-type="story"] .entry-header h2 {
+  border-left: 2px solid #5a8fc4;
+  padding-left: 12px;
+}
+
+/* ===== SECTION ICONS ===== */
+.section-icon {
+  display: inline-block;
+  margin-right: 6px;
+  opacity: 0.6;
+}
+
+/* ===== FOOTER QUOTE ===== */
+.footer-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html[data-theme="dark"] .footer-quote {
+  color: #666;
+}
