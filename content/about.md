@@ -1,7 +1,9 @@
 ---
+layout: about
 title: "About Me"
 draft: false
 ---
+layout: about
 
 **Currently**
 Product at Ramp | New York, NY

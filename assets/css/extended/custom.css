@@ -481,3 +481,48 @@ html[data-theme="dark"] .popular-list a:active,
 html[data-theme="dark"] .popular-list a:focus {
   color: #ccc !important;
 }
+
+/* ===== ABOUT PAGE - Centered & Clean ===== */
+.about-page {
+  max-width: 600px !important;
+  margin: 60px auto !important;
+  padding: 0 20px !important;
+  text-align: center !important;
+}
+
+.about-title {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  color: #1a1a1a !important;
+  margin-bottom: 40px !important;
+}
+
+.about-content {
+  text-align: left !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: #333 !important;
+}
+
+.about-content p {
+  margin-bottom: 1.5em !important;
+}
+
+/* Hide sidebar on about page */
+body:has(.about-page) .sidebar,
+body:has(.about-page) #sidebar {
+  display: none !important;
+}
+
+body:has(.about-page) .main {
+  max-width: 100% !important;
+}
+
+html[data-theme="dark"] .about-title {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .about-content {
+  color: #ccc !important;
+}
