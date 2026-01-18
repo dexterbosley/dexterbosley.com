@@ -265,6 +265,7 @@
         html[data-theme="dark"] .pagination a { color: #e0e0e0 !important; }
         html[data-theme="dark"] .pagination-current { color: #e0e0e0 !important; }
         html[data-theme="dark"] #theme-toggle { color: #e0e0e0; }
+        #theme-toggle:hover { opacity: 0.8; }
     </style>
 
 <script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init("phc_mdM0KdTg128roSq1HNjy9x98ruY8v6wd5ZNEbYo2HU2",{api_host:"https://us.i.posthog.com", person_profiles: "always"})</script>
@@ -280,7 +281,22 @@
                             <span>by Dexter Bosley</span>
                         </div>
                     </div>
-                    <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;font-size:18px;cursor:pointer;padding:8px;opacity:0.7;transition:opacity 0.2s;">☀️</button>
+                    <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;padding:6px;opacity:0.5;transition:opacity 0.2s;">
+                        <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
                 </nav>
             </header>
         </div>
@@ -458,10 +474,12 @@
             const saved = localStorage.getItem('theme');
             if (saved === 'dark') {
                 html.dataset.theme = 'dark';
-                toggle.textContent = '🌙';
+                toggle.querySelector('.sun-icon').style.display = 'none';
+                toggle.querySelector('.moon-icon').style.display = 'block';
             } else {
                 html.dataset.theme = 'light';
-                toggle.textContent = '☀️';
+                toggle.querySelector('.sun-icon').style.display = 'block';
+                toggle.querySelector('.moon-icon').style.display = 'none';
             }
             
             toggle.addEventListener('click', function() {
