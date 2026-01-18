@@ -111,3 +111,83 @@ a.pinned-banner .pinned-meta {
   border-top: none !important;
   margin-top: 0 !important;
 }
+
+/* Popular Section - Subtle Bubble Effect */
+.popular-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.popular-section:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.popular-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin: 0 0 0.8rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.popular-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.popular-list li:last-child {
+  padding-bottom: 0;
+}
+
+.popular-list li:hover {
+  border-bottom-color: #e0e0e0;
+}
+
+.popular-list a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.popular-list a:hover {
+  color: #666;
+}
+
+/* Dark mode support */
+.dark .popular-section {
+  background: linear-gradient(135deg, #1d1e20 0%, #25262a 100%);
+  border-color: #333;
+}
+
+.dark .popular-title {
+  color: #888;
+  border-bottom-color: #333;
+}
+
+.dark .popular-list a {
+  color: #ccc;
+}
+
+.dark .popular-list a:hover {
+  color: #fff;
+}
+
+.dark .popular-list li:hover {
+  border-bottom-color: #444;
+}
