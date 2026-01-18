@@ -133,7 +133,7 @@
         }
 
         @media (max-width: 799px) {
-            #Box { display: block; padding: 25px 20px 100px 20px; }
+            #Box { display: block; padding: 25px 20px 70px 20px; }
             .df-banner-wrapper { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e0e0e0; }
             #Sidebar { display: none; }
             
@@ -189,10 +189,13 @@
             bottom: 0;
             left: 0;
             right: 0;
+            width: 100%;
             background: #ffffff;
             border-top: 1px solid #e0e0e0;
             padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
-            z-index: 1000;
+            z-index: 9999;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
         .mobile-nav ul {
             display: flex;
@@ -217,7 +220,7 @@
         }
         @media (max-width: 799px) {
             .mobile-nav { display: block; }
-            .footer { padding-bottom: 80px; }
+            .footer { padding-bottom: 70px; }
         }
 
          
