@@ -111,42 +111,16 @@ a.pinned-banner .pinned-meta {
   }
 }
 
-/* Subscribe button - maroon underline */
-.nav-subscribe-btn {
-  border-bottom: 1px solid var(--accent) !important;
-  color: var(--accent) !important;
-}
-
-.nav-subscribe-btn:hover {
-  color: #6a1a27 !important;
-  border-bottom-color: #6a1a27 !important;
-}
-
 /* Remove footer divider */
 .footer {
   border-top: none !important;
   margin-top: 0 !important;
 }
 
-/* Popular section - outlined box similar to pinned */
-.popular-group {
-  background: #fafafa !important;
-  border: 1px solid #e8e8e4 !important;
-  border-radius: 6px !important;
-  padding: 16px !important;
-  margin-top: 30px !important;
-}
-
+/* Popular section - maroon header only, no box */
 .popular-group h3 {
   color: var(--accent) !important;
   opacity: 1 !important;
-  margin-bottom: 14px !important;
-  padding-bottom: 8px !important;
-  border-bottom: 1px solid #e8e8e4 !important;
-}
-
-.popular-group .sidebar-menu a {
-  color: #1a1a1a !important;
 }
 
 .popular-group .sidebar-menu a:hover {
@@ -154,15 +128,6 @@ a.pinned-banner .pinned-meta {
 }
 
 /* === MAROON ACCENT APPLICATIONS === */
-
-/* Site title - Thinking in Public in maroon */
-.logo a {
-  color: var(--accent) !important;
-}
-
-.logo a:hover {
-  color: #6a1a27 !important;
-}
 
 /* Active nav item indicator */
 .sidebar-menu a.active {
