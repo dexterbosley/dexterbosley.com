@@ -468,3 +468,16 @@ html[data-theme="dark"] .post-content a::after {
 html[data-theme="dark"] .footer-quote {
   color: #666;
 }
+
+/* Fix Popular links - no persistent bold on visited/active */
+.popular-list a:visited,
+.popular-list a:active,
+.popular-list a:focus {
+  font-weight: inherit !important;
+  color: #333 !important;
+}
+html[data-theme="dark"] .popular-list a:visited,
+html[data-theme="dark"] .popular-list a:active,
+html[data-theme="dark"] .popular-list a:focus {
+  color: #ccc !important;
+}
