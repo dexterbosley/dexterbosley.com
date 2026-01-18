@@ -364,11 +364,11 @@
                 if (html.dataset.theme === 'dark') {
                     html.dataset.theme = 'light';
                     localStorage.setItem('theme', 'light');
-                    toggle.textContent = '☀️';
+                    toggle.querySelector('.sun-icon').style.display = 'block'; toggle.querySelector('.moon-icon').style.display = 'none';
                 } else {
                     html.dataset.theme = 'dark';
                     localStorage.setItem('theme', 'dark');
-                    toggle.textContent = '🌙';
+                    toggle.querySelector('.sun-icon').style.display = 'none'; toggle.querySelector('.moon-icon').style.display = 'block';
                 }
             });
         })();
