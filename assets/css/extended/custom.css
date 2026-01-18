@@ -1,6 +1,5 @@
-
-/* Updated pinned banner - feed style */
-.pinned-banner {
+/* Pinned banner - minimal styles */
+a.pinned-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,25 +12,16 @@
   transition: border-color 0.2s ease;
 }
 
-.pinned-banner:hover {
+a.pinned-banner:hover {
   border-color: var(--primary);
 }
 
-.pinned-title {
+a.pinned-banner .pinned-title {
   font-weight: 600;
   color: var(--primary);
 }
 
-.pinned-meta {
+a.pinned-banner .pinned-meta {
   font-size: 0.85em;
   color: var(--secondary);
-}
-
-/* Remove old pinned styles if present */
-.pinned-label {
-  display: none;
-}
-
-.pinned-link {
-  display: none;
 }
