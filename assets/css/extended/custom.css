@@ -115,3 +115,9 @@ a.pinned-banner .pinned-meta {
 .nav-subscribe-btn {
   border-bottom: 1px solid var(--accent) !important;
 }
+
+/* Remove footer divider */
+.footer {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
