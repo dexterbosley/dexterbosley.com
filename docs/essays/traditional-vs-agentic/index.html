@@ -13,7 +13,7 @@
 <meta name="description" content="A look at the friction between traditional software development and the emerging agentic paradigm.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.dexterbosley.com/essays/traditional-vs-agentic/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.95aaee81472b56e9b9db3b6d34707322d96f6cdeba83eabe33d8da13fe16fed2.css" integrity="sha256-larugUcrVum52zttNHBzItlvbN66g&#43;q&#43;M9jaE/4W/tI=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3533dfdf308cd8a319249739e47eab2f3ec5792a5e9e1182fb6748e234ff003f.css" integrity="sha256-NTPf3zCM2KMZJJc55H6rLz7FeSpenhGC&#43;2dI4jT/AD8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.dexterbosley.com/favicon.svg">
@@ -192,7 +192,6 @@
             #Box { display: block; padding: 25px 20px 100px 20px; }
             .df-banner-wrapper { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e0e0e0; }
             #Sidebar { display: none; }
-            .penguin-logo { display: none !important; }
         }
 
         .header { background: transparent; border: none; box-shadow: none; }
@@ -290,7 +289,6 @@
                             <span>by Dexter Bosley</span>
                         </div>
                     </div>
-                    <a href="/" class="penguin-logo" style="display:flex;align-items:center;"><img src="/images/penguins.svg" alt="" style="height:32px;width:auto;opacity:0.8;"></a>
                 </nav>
             </header>
         </div>
@@ -308,63 +306,11 @@
             <div class="popular-group">
                 <h3>Popular</h3>
                 <ul class="sidebar-menu" style="font-size: 14px; line-height: 1.6;">
-                    <li style="margin-bottom: 4px;"><a href="/essays/test-essay/">Test Essay</a></li>
-                    <li><a href="/stories/test-story/">Test Story</a></li>
+                    <li style="margin-bottom: 4px;"><a href="/essays/test-essay/">On Writing</a></li>
+                    <li style="margin-bottom: 4px;"><a href="/essays/test-essay-1/">The Craft</a></li>
+                    <li style="margin-bottom: 4px;"><a href="/stories/test-story/">First Light</a></li>
+                    <li style="margin-bottom: 4px;"><a href="/essays/test-essay-2/">Finding Voice</a></li>
+                    <li><a href="/stories/test-story-1/">The Waiting</a></li>
                 </ul>
             </div>
         </div>
-
-        <main id="Main" class="main">
-            
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title">
-      Traditional vs. Agentic
-    </h1>
-    <div class="post-meta">January 4, 2025&nbsp;·&nbsp;Essay&nbsp;·&nbsp;1min
-</div>
-  </header>
-  <figure class="post-banner">
-    <img loading="lazy" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800" alt="Abstract lines and shapes">
-  </figure>
-  <div class="post-content"><p>A look at the friction between traditional software development and the emerging agentic paradigm.</p>
-
-
-  </div>
-  <footer class="post-footer">
-  </footer>
-</article>
-        </main>
-    </div>
-
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="/">All</a></li>
-            <li><a href="/essays/">Essays</a></li>
-            <li><a href="/stories/">Stories</a></li>
-            <li><a href="/about/">About</a></li>
-        </ul>
-    </nav>
-
-    <footer class="footer">
-    <span>© 2026 Dexter Bosley</span>
-</footer>
-
-
-    <script>
-        (function() {
-            const currentPath = window.location.pathname.replace(/\/$/, "");
-            document.querySelectorAll('.sidebar-menu a, .mobile-nav a').forEach(link => {
-                link.classList.remove('active');
-                const linkPath = link.getAttribute('href').replace(/\/$/, "");
-                if ((currentPath === "" || currentPath === "/") && (linkPath === "" || linkPath === "/")) {
-                    link.classList.add('active');
-                } else if (linkPath !== "" && linkPath !== "/" && currentPath.startsWith(linkPath)) {
-                    link.classList.add('active');
-                }
-            });
-        })();
-    </script>
-</body>
-</html>
