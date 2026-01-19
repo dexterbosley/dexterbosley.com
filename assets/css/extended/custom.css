@@ -309,12 +309,28 @@ html[data-theme="dark"] .post-content a::after {
 }
 
 /* ===== 7. ESSAY VS STORY COLOR ACCENTS ===== */
-/* Quote bar colors only - works on All page via data-type */
-.post-entry[data-type="essay"] .entry-quote {
-  border-left-color: #5c1a1a !important;  /* dark maroon */
+/* Grey bar + colored dot indicator */
+.entry-quote {
+  border-left-color: #d0d0d0 !important;
+  position: relative;
 }
-.post-entry[data-type="story"] .entry-quote {
-  border-left-color: #1a2a4a !important;  /* dark navy */
+.post-entry[data-type="essay"] .entry-quote::before {
+  content: "•";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  color: #5c1a1a;  /* dark maroon */
+  font-size: 14px;
+  line-height: 1.5;
+}
+.post-entry[data-type="story"] .entry-quote::before {
+  content: "•";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  color: #1a2a4a;  /* dark navy */
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* ===== 8. SECTION ICONS ===== */
