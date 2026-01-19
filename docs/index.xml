@@ -205,14 +205,20 @@
       <description>&lt;p&gt;This is a test post for the Work tab.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>About Dexter Bosley</title>
       <link>https://www.dexterbosley.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.dexterbosley.com/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m Dexter Bosley, a product manager at Ramp based in New York City.&lt;/p&gt;
-&lt;p&gt;Before Ramp, I worked in strategy and operations at DoorDash, Uber, and WeWork. I studied economics at Northwestern.&lt;/p&gt;
-&lt;p&gt;This site is where I write essays about things I&amp;rsquo;m thinking through and short stories when the mood strikes. The name comes from a belief that writing clarifies thinking—and that sharing it keeps me honest.&lt;/p&gt;
-&lt;p&gt;When I&amp;rsquo;m not working, you&amp;rsquo;ll find me skiing, walking around the city, or in conversation with friends.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Currently&lt;/strong&gt;&lt;br&gt;
+Product at Ramp · New York, NY&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Previously&lt;/strong&gt;&lt;br&gt;
+· DoorDash – Strategy &amp;amp; Operations&lt;br&gt;
+· Uber – Strategy &amp;amp; Operations&lt;br&gt;
+· WeWork – Finance &amp;amp; Business Operations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Education&lt;/strong&gt;&lt;br&gt;
+· Northwestern University – Economics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interests&lt;/strong&gt;&lt;br&gt;
+· Skiing, Writing, Walking, and Talking&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
