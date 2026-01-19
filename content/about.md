@@ -1,20 +1,13 @@
 ---
-layout: about
-title: "About Me"
+title: "About"
+layout: "about"
 draft: false
 ---
-layout: about
 
-**Currently**
-Product at Ramp | New York, NY
+I'm Dexter Bosley, a product manager at Ramp based in New York City.
 
-## Previously
-* **DoorDash** – Strategy & Operations
-* **Uber** – Strategy & Operations
-* **WeWork** – Finance & Business Operations
+Before Ramp, I worked in strategy and operations at DoorDash, Uber, and WeWork. I studied economics at Northwestern.
 
-## Education
-* **Northwestern University** – Bachelor's Degree in Economics
+This site is where I write essays about things I'm thinking through and short stories when the mood strikes. The name comes from a belief that writing clarifies thinking—and that sharing it keeps me honest.
 
-## Interests
-* Skiing, Writing, Walking, and Talking
+When I'm not working, you'll find me skiing, walking around the city, or in conversation with friends.

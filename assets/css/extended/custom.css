@@ -489,25 +489,31 @@ html[data-theme="dark"] .popular-list a:focus {
   color: #ccc !important;
 }
 
-/* ===== ABOUT PAGE - Centered & Clean ===== */
+/* ===== ABOUT PAGE ===== */
 .about-page {
-  max-width: 600px !important;
-  margin: 60px auto !important;
-  padding: 0 20px !important;
-  text-align: center !important;
+  max-width: 520px !important;
+}
+
+.about-header {
+  margin-bottom: 30px !important;
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid #e0e0e0 !important;
 }
 
 .about-title {
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 28px !important;
+  font-size: 11px !important;
   font-weight: 400 !important;
-  color: #1a1a1a !important;
-  margin-bottom: 40px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  color: #999 !important;
+  margin: 0 !important;
 }
 
 .about-content {
-  text-align: left !important;
+  font-family: 'DM Sans', sans-serif !important;
   font-size: 16px !important;
+  font-weight: 300 !important;
   line-height: 1.8 !important;
   color: #333 !important;
 }
@@ -516,18 +522,12 @@ html[data-theme="dark"] .popular-list a:focus {
   margin-bottom: 1.5em !important;
 }
 
-/* Hide sidebar on about page */
-body:has(.about-page) .sidebar,
-body:has(.about-page) #sidebar {
-  display: none !important;
+.about-content p:last-child {
+  margin-bottom: 0 !important;
 }
 
-body:has(.about-page) .main {
-  max-width: 100% !important;
-}
-
-html[data-theme="dark"] .about-title {
-  color: #e0e0e0 !important;
+html[data-theme="dark"] .about-header {
+  border-bottom-color: #333 !important;
 }
 
 html[data-theme="dark"] .about-content {

@@ -205,27 +205,14 @@
       <description>&lt;p&gt;This is a test post for the Work tab.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About Me</title>
+      <title>About</title>
       <link>https://www.dexterbosley.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.dexterbosley.com/about/</guid>
-      <description>&lt;p&gt;layout: about&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Currently&lt;/strong&gt;
-Product at Ramp | New York, NY&lt;/p&gt;
-&lt;h2 id=&#34;previously&#34;&gt;Previously&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;DoorDash&lt;/strong&gt; – Strategy &amp;amp; Operations&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Uber&lt;/strong&gt; – Strategy &amp;amp; Operations&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;WeWork&lt;/strong&gt; – Finance &amp;amp; Business Operations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Northwestern University&lt;/strong&gt; – Bachelor&amp;rsquo;s Degree in Economics&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Skiing, Writing, Walking, and Talking&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;m Dexter Bosley, a product manager at Ramp based in New York City.&lt;/p&gt;
+&lt;p&gt;Before Ramp, I worked in strategy and operations at DoorDash, Uber, and WeWork. I studied economics at Northwestern.&lt;/p&gt;
+&lt;p&gt;This site is where I write essays about things I&amp;rsquo;m thinking through and short stories when the mood strikes. The name comes from a belief that writing clarifies thinking—and that sharing it keeps me honest.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m not working, you&amp;rsquo;ll find me skiing, walking around the city, or in conversation with friends.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
