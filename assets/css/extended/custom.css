@@ -537,3 +537,7 @@ html[data-theme="dark"] .about-header {
 html[data-theme="dark"] .about-content {
   color: #ccc !important;
 }
+
+/* Section icon colors */
+article[data-type="essay"] .section-icon { color: #C41E3A; }
+article[data-type="story"] .section-icon { color: #87CEEB; }
