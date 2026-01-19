@@ -339,6 +339,8 @@ html[data-theme="dark"] .post-content a::after {
   margin-right: 6px;
   opacity: 0.6;
 }
+article[data-type="essay"] .section-icon { color: #800000; }
+article[data-type="story"] .section-icon { color: #87CEEB; }
 
 /* ===== 9. FOOTER QUOTE ===== */
 .footer-quote {
@@ -460,6 +462,8 @@ html[data-theme="dark"] .post-content a::after {
   margin-right: 6px;
   opacity: 0.6;
 }
+article[data-type="essay"] .section-icon { color: #800000; }
+article[data-type="story"] .section-icon { color: #87CEEB; }
 
 /* ===== FOOTER QUOTE ===== */
 .footer-quote {
