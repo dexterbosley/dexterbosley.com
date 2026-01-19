@@ -581,3 +581,44 @@ html[data-theme="dark"] a.pinned-banner:hover {
   border-color: #444 !important;
   border-left-color: #C41E3A !important;
 }
+
+/* ===== PINNED BANNER - GOLD ACCENT ===== */
+a.pinned-banner {
+  background: linear-gradient(135deg, #fffdf8 0%, #faf8f3 100%) !important;
+  border: 1px solid #e8e4d9 !important;
+  border-left: 3px solid #B8860B !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  padding: 14px 18px !important;
+  transition: all 0.2s ease !important;
+}
+
+a.pinned-banner:hover {
+  background: linear-gradient(135deg, #fdfbf5 0%, #f5f2ea 100%) !important;
+  border-color: #d9d4c5 !important;
+  border-left-color: #DAA520 !important;
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+a.pinned-banner .pinned-title {
+  font-weight: 500 !important;
+}
+
+a.pinned-banner .pinned-title::before {
+  filter: none !important;
+  opacity: 0.85 !important;
+}
+
+/* Dark mode pinned - gold */
+html[data-theme="dark"] a.pinned-banner {
+  background: linear-gradient(135deg, #252420 0%, #2a2825 100%) !important;
+  border-color: #3a3830 !important;
+  border-left-color: #DAA520 !important;
+}
+
+html[data-theme="dark"] a.pinned-banner:hover {
+  background: linear-gradient(135deg, #2a2825 0%, #302e28 100%) !important;
+  border-color: #4a4638 !important;
+  border-left-color: #DAA520 !important;
+  box-shadow: 0 4px 12px rgba(218, 165, 32, 0.15) !important;
+}
