@@ -975,16 +975,44 @@ html[data-theme="dark"] .share-btn:hover {
 
  
 .pinned-banner {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: block;
+    text-decoration: none;
+    padding: 28px 32px;
+    margin-bottom: 48px;
+    background: #252525;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pinned-banner:hover {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 4px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
-html[data-theme="dark"] .pinned-banner:hover {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 4px 24px rgba(0, 0, 0, 0.4);
+.pinned-type {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.pinned-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    color: #e0e0e0;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.pinned-meta {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
 }
 
  
