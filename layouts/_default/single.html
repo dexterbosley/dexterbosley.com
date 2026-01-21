@@ -1,8 +1,9 @@
 {{- define "main" }}
 <article class="post-single">
-    {{- if .Params.banner }}
+    {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
+    {{- with $banner }}
     <figure class="post-banner">
-        <img src="{{ .Params.banner }}" alt="{{ .Title }}">
+        <img src="{{ . }}" alt="{{ $.Title }}">
     </figure>
     {{- end }}
     
@@ -32,6 +33,43 @@
 
     <nav class="post-nav">
         <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← {{ if eq .Section "stories" }}Stories{{ else if eq .Section "essays" }}Essays{{ else }}All{{ end }}</a>
+        <button class="share-btn" aria-label="Share">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
     </nav>
 </article>
+
+<script>
+document.querySelector('.share-btn').addEventListener('click', async function() {
+    const data = {
+        title: '{{ .Title }}',
+        url: window.location.href
+    };
+    
+    if (navigator.share) {
+        try {
+            await navigator.share(data);
+        } catch (err) {
+            if (err.name !== 'AbortError') {
+                copyToClipboard();
+            }
+        }
+    } else {
+        copyToClipboard();
+    }
+    
+    function copyToClipboard() {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+            const btn = document.querySelector('.share-btn span');
+            btn.textContent = 'Copied';
+            setTimeout(() => btn.textContent = 'Share', 2000);
+        });
+    }
+});
+</script>
 {{- end }}

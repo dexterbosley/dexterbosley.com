@@ -497,6 +497,9 @@
             <main class="main-content">
                 
 <article class="post-single">
+    <figure class="post-banner">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800" alt="Test Essay 4">
+    </figure>
     
     <header class="post-header">
         <h1 class="post-title">Test Essay 4</h1>
@@ -516,8 +519,45 @@
 
     <nav class="post-nav">
         <a href="/essays/" class="back-link">← Essays</a>
+        <button class="share-btn" aria-label="Share">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
     </nav>
 </article>
+
+<script>
+document.querySelector('.share-btn').addEventListener('click', async function() {
+    const data = {
+        title: 'Test Essay 4',
+        url: window.location.href
+    };
+    
+    if (navigator.share) {
+        try {
+            await navigator.share(data);
+        } catch (err) {
+            if (err.name !== 'AbortError') {
+                copyToClipboard();
+            }
+        }
+    } else {
+        copyToClipboard();
+    }
+    
+    function copyToClipboard() {
+        navigator.clipboard.writeText(window.location.href).then(function() {
+            const btn = document.querySelector('.share-btn span');
+            btn.textContent = 'Copied';
+            setTimeout(() => btn.textContent = 'Share', 2000);
+        });
+    }
+});
+</script>
             </main>
         </div>
         
@@ -826,4 +866,48 @@ html[data-theme="dark"] ::selection {
         border-radius: 0;
     }
 }
+
+ 
+.post-nav {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.share-btn:hover {
+    color: #1a1a1a;
+}
+
+.share-btn svg {
+    opacity: 0.7;
+}
+
+.share-btn:hover svg {
+    opacity: 1;
+}
+
+html[data-theme="dark"] .share-btn {
+    color: #666;
+}
+
+html[data-theme="dark"] .share-btn:hover {
+    color: #e0e0e0;
+}
+
 </style>

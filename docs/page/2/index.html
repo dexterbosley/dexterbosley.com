@@ -858,4 +858,48 @@ html[data-theme="dark"] ::selection {
         border-radius: 0;
     }
 }
+
+ 
+.post-nav {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.share-btn:hover {
+    color: #1a1a1a;
+}
+
+.share-btn svg {
+    opacity: 0.7;
+}
+
+.share-btn:hover svg {
+    opacity: 1;
+}
+
+html[data-theme="dark"] .share-btn {
+    color: #666;
+}
+
+html[data-theme="dark"] .share-btn:hover {
+    color: #e0e0e0;
+}
+
 </style>
