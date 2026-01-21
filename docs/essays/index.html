@@ -982,44 +982,45 @@ html[data-theme="dark"] .share-btn:hover {
 
  
 .pinned-banner {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
-    padding: 28px 32px;
-    margin-bottom: 48px;
+    padding: 14px 20px;
+    margin-bottom: 40px;
     background: #252525;
     border-radius: 6px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.2s ease;
 }
 
 .pinned-banner:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    background: #2a2a2a;
 }
 
 .pinned-type {
-    display: block;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #888;
-    margin-bottom: 8px;
+    background: rgba(255,255,255,0.06);
+    padding: 4px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
 }
 
 .pinned-title {
-    display: block;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
     color: #e0e0e0;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
+    flex-grow: 1;
 }
 
 .pinned-meta {
-    display: block;
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
     font-weight: 300;
+    flex-shrink: 0;
 }
  
 .post-entry {
