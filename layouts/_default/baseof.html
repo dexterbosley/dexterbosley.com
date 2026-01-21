@@ -4,88 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>404 Page not found | Thinking in Public</title><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>404 Page not found | Thinking in Public</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="https://www.dexterbosley.com/404.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5597d4c275ef9af985f8194c19f1dcfd8212d4cc86f267636c16734933890f2b.css" integrity="sha256-VZfUwnXvmvmF&#43;BlMGfHc/YIS1MyG8mdjbBZzSTOJDys=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.dexterbosley.com/favicon.svg">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.dexterbosley.com/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.dexterbosley.com/favicon.svg">
-<link rel="apple-touch-icon" href="https://www.dexterbosley.com/favicon.svg">
-<link rel="mask-icon" href="https://www.dexterbosley.com/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.dexterbosley.com/404.html">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><script>
-    localStorage.setItem("pref-theme", "light");
-    document.documentElement.dataset.theme = 'light';
-</script>
-<meta property="og:url" content="https://www.dexterbosley.com/404.html">
-  <meta property="og:site_name" content="Thinking in Public">
-  <meta property="og:title" content="404 Page not found">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="404 Page not found">
-<meta name="twitter:description" content="">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>{{ if .IsHome }}Thinking in Public{{ else }}{{ .Title }} | Thinking in Public{{ end }}</title>
+    {{- partial "head.html" . -}}
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -108,7 +30,7 @@
             padding: 60px 40px;
         }
         
-         
+        /* Header */
         .site-header {
             text-align: center;
             margin-bottom: 50px;
@@ -133,14 +55,14 @@
             font-weight: 300;
         }
         
-         
+        /* Layout */
         .content-wrapper {
             display: grid;
             grid-template-columns: 140px 1fr;
             gap: 60px;
         }
         
-         
+        /* Sidebar Nav */
         .sidebar-nav {
             position: sticky;
             top: 40px;
@@ -173,12 +95,12 @@
             font-weight: 500;
         }
         
-         
+        /* Main content */
         .main-content {
             min-width: 0;
         }
         
-         
+        /* Footer */
         .site-footer {
             text-align: center;
             padding-top: 40px;
@@ -188,7 +110,7 @@
             color: #999;
         }
         
-         
+        /* Mobile */
         @media (max-width: 700px) {
             .site-wrapper {
                 padding: 30px 20px 80px;
@@ -207,7 +129,7 @@
             }
         }
         
-         
+        /* Mobile bottom nav */
         .mobile-nav {
             display: none;
             position: fixed;
@@ -252,8 +174,7 @@
             </nav>
             
             <main class="main-content">
-                
-<div class="not-found">404</div>
+                {{ block "main" . }}{{ end }}
             </main>
         </div>
         
@@ -280,9 +201,6 @@
         })();
     </script>
     
-    <footer class="footer">
-    <span>© 2026 Dexter Bosley</span>
-</footer>
-
+    {{ partial "footer.html" . }}
 </body>
 </html>
