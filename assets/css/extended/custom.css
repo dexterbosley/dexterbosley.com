@@ -88,3 +88,45 @@ body[data-section="stories"] .post-content a,
 .list-page[data-section="stories"] .page-header h1 {
   color: var(--stories-accent);
 }
+
+/* ===== FT-INSPIRED SECTION COLORS ===== */
+:root {
+  --accent-essays: #1a365d;   /* Navy - serious, analytical */
+  --accent-stories: #4a90a4;  /* Steel blue - creative, lighter */
+}
+
+/* Quote bar accents */
+.post-entry[data-type="essay"] .entry-quote {
+  border-left-color: var(--accent-essays) !important;
+}
+.post-entry[data-type="story"] .entry-quote {
+  border-left-color: var(--accent-stories) !important;
+}
+
+/* Section page quote bars */
+body[data-section="essays"] blockquote,
+body[data-section="essays"] .entry-quote {
+  border-left-color: var(--accent-essays) !important;
+}
+body[data-section="stories"] blockquote,
+body[data-section="stories"] .entry-quote {
+  border-left-color: var(--accent-stories) !important;
+}
+
+/* Links in article content */
+body[data-section="essays"] .post-content a { color: var(--accent-essays); }
+body[data-section="stories"] .post-content a { color: var(--accent-stories); }
+body[data-section="essays"] .post-content a::after { background: var(--accent-essays); }
+body[data-section="stories"] .post-content a::after { background: var(--accent-stories); }
+
+/* Drop cap color */
+body[data-section="essays"] .post-content > p:first-of-type::first-letter { color: var(--accent-essays); }
+body[data-section="stories"] .post-content > p:first-of-type::first-letter { color: var(--accent-stories); }
+
+/* Section header labels */
+body[data-section="essays"] .page-header h1 { color: var(--accent-essays); }
+body[data-section="stories"] .page-header h1 { color: var(--accent-stories); }
+
+/* Reading progress bar per section */
+body[data-section="essays"] .reading-progress { background: linear-gradient(90deg, var(--accent-essays) 0%, #4a5a7a 100%); }
+body[data-section="stories"] .reading-progress { background: linear-gradient(90deg, var(--accent-stories) 0%, #7ab8c9 100%); }
