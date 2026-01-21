@@ -492,3 +492,96 @@ html[data-theme="dark"] .back-link:hover {
 .post-entry[data-type]::after {
     display: none !important;
 }
+
+/* Enhanced Pinned Banner */
+.pinned-banner {
+    display: block;
+    position: relative;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pinned-banner::before {
+    content: 'PINNED';
+    position: absolute;
+    top: 12px;
+    left: 32px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.pinned-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #888 0%, #bbb 100%);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.pinned-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-top: 16px;
+    letter-spacing: -0.01em;
+    transition: letter-spacing 0.3s ease;
+}
+
+.pinned-meta {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-top: 6px;
+    font-weight: 300;
+}
+
+.pinned-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.pinned-banner:hover::after {
+    opacity: 1;
+}
+
+.pinned-banner:hover .pinned-title {
+    letter-spacing: 0.01em;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .pinned-banner {
+    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
+}
+
+html[data-theme="dark"] .pinned-banner::before {
+    color: #666;
+}
+
+html[data-theme="dark"] .pinned-banner::after {
+    background: linear-gradient(180deg, #666 0%, #444 100%);
+}
+
+html[data-theme="dark"] .pinned-title {
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .pinned-meta {
+    color: #666;
+}
+
+html[data-theme="dark"] .pinned-banner:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
