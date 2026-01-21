@@ -8,25 +8,25 @@
 {{- if .IsHome }}
 {{- with site.GetPage "/stories/small-talk" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
+  <span class="pinned-type">Story</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
 {{- else if eq .Title "Essays" }}
 {{- with site.GetPage "/essays/test-essay-1" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
+  <span class="pinned-type">Essay</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
 {{- else if eq .Title "Stories" }}
 {{- with site.GetPage "/stories/small-talk" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
+  <span class="pinned-type">Story</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
 {{- end }}
@@ -52,8 +52,8 @@
   </blockquote>
   {{- end }}
   <footer class="entry-footer">
-    {{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }}min
-</footer>
+    {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min
+  </footer>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
 {{- $first = false }}
@@ -61,28 +61,20 @@
 
 {{- if gt $paginator.TotalPages 1 }}
 <nav class="pagination pagination-bottom">
-  {{- $currentPage := $paginator.PageNumber }}
-  {{- $totalPages := $paginator.TotalPages }}
-  {{- $startPage := math.Max 1 (sub $currentPage 1) }}
-  {{- $endPage := math.Min $totalPages (add $startPage 2) }}
-  {{- if lt (sub $endPage $startPage) 2 }}
-    {{- $startPage = math.Max 1 (sub $endPage 2) }}
+  {{- if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}">Prev</a>
   {{- end }}
   
-  {{- if $paginator.HasPrev }}
-  <a href="{{ $paginator.Prev.URL }}">Previous</a>
+  {{- range .Paginator.Pagers }}
+  {{- if eq . $.Paginator }}
+  <span class="pagination-current">{{ .PageNumber }}</span>
+  {{- else }}
+  <a href="{{ .URL }}">{{ .PageNumber }}</a>
+  {{- end }}
   {{- end }}
   
-  {{- range seq $startPage $endPage }}
-    {{- if eq . $currentPage }}
-    <span class="pagination-current">{{ . }}</span>
-    {{- else }}
-    <a href="{{ (index $paginator.Pagers (sub . 1)).URL }}">{{ . }}</a>
-    {{- end }}
-  {{- end }}
-  
-  {{- if $paginator.HasNext }}
-  <a href="{{ $paginator.Next.URL }}">Next</a>
+  {{- if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}">Next</a>
   {{- end }}
 </nav>
 {{- end }}
