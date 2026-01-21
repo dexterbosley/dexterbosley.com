@@ -1,19 +1,18 @@
 ---
 title: "About Dexter Bosley"
 layout: "about"
-draft: false
 ---
 
-**Currently**  
+**Currently**
 Product at Ramp · New York, NY
 
-**Previously**  
-· DoorDash – Strategy & Operations  
-· Uber – Strategy & Operations  
+**Previously**
+· DoorDash – Strategy & Operations
+· Uber – Strategy & Operations
 · WeWork – Finance & Business Operations
 
-**Education**  
+**Education**
 · Northwestern University – Economics
 
-**Interests**  
+**Interests**
 · Skiing, Writing, Walking, and Talking
