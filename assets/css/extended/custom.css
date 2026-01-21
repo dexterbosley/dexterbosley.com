@@ -1,11 +1,9 @@
 /* ========================================
-   COLOR SCHEME - Essays (warm) vs Stories (cool)
+   COLOR SCHEME
    ======================================== */
 :root {
-    --essay-accent: #8B7355;    /* Warm taupe/brown */
-    --essay-light: #F5F3F0;
-    --story-accent: #5B7B8C;    /* Cool slate blue */
-    --story-light: #F0F4F5;
+    --essay-accent: #8B7355;
+    --story-accent: #5B7B8C;
 }
 
 /* ========================================
@@ -22,17 +20,6 @@
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
-}
-
-/* Type indicator bar on left */
-.post-entry[data-type="essay"] {
-    border-left: 3px solid var(--essay-accent);
-    padding-left: 20px;
-}
-
-.post-entry[data-type="story"] {
-    border-left: 3px solid var(--story-accent);
-    padding-left: 20px;
 }
 
 .post-entry .entry-banner {
@@ -62,31 +49,10 @@
     line-height: 1.35;
 }
 
-/* Section icon colors */
-.post-entry[data-type="essay"] .section-icon {
-    color: var(--essay-accent);
-    opacity: 0.8;
-}
-
-.post-entry[data-type="story"] .section-icon {
-    color: var(--story-accent);
-    opacity: 0.8;
-}
-
 .post-entry .entry-quote {
     margin: 0 0 12px 0;
     padding: 0 0 0 12px;
     border-left: 2px solid #ddd;
-}
-
-.post-entry[data-type="essay"] .entry-quote {
-    border-left-color: var(--essay-accent);
-    opacity: 0.7;
-}
-
-.post-entry[data-type="story"] .entry-quote {
-    border-left-color: var(--story-accent);
-    opacity: 0.7;
 }
 
 .post-entry .entry-quote p {
@@ -109,10 +75,40 @@
     font-size: 13px;
     font-weight: 300;
     color: #888;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+/* Type badges - subtle boxes */
 .post-entry .section-icon {
-    margin-right: 5px;
+    display: none;
+}
+
+.post-entry[data-type="essay"] .entry-footer::before {
+    content: 'Essay';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background: #f5f3f0;
+    color: var(--essay-accent);
+    margin-right: 4px;
+}
+
+.post-entry[data-type="story"] .entry-footer::before {
+    content: 'Story';
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background: #f0f4f5;
+    color: var(--story-accent);
+    margin-right: 4px;
 }
 
 .post-entry .entry-link {
@@ -153,53 +149,51 @@
     font-weight: 400;
     line-height: 1.25;
     margin: 0 0 14px 0;
-    letter-spacing: -0.01em;
 }
 
 .post-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     font-size: 13px;
     color: #888;
 }
 
 .post-type {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     padding: 3px 10px;
     border-radius: 3px;
 }
 
 .post-type-essay {
-    background: var(--essay-light);
+    background: #f5f3f0;
     color: var(--essay-accent);
 }
 
 .post-type-story {
-    background: var(--story-light);
+    background: #f0f4f5;
     color: var(--story-accent);
 }
 
-/* Epigraph / Quote */
 .post-epigraph {
-    margin: 0 0 40px 0;
-    padding: 24px 28px;
-    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    margin: 0 0 35px 0;
+    padding: 20px 24px;
+    background: #fafafa;
     border-radius: 6px;
-    border-left: 3px solid #ddd;
+    border-left: 3px solid #e0e0e0;
 }
 
 .post-epigraph p {
-    font-size: 17px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 300;
     color: #555;
     line-height: 1.6;
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
 }
 
 .post-epigraph cite {
@@ -208,7 +202,6 @@
     color: #888;
 }
 
-/* Post Content */
 .post-content {
     font-size: 17px;
     line-height: 1.8;
@@ -229,40 +222,23 @@
     color: #1a1a1a;
 }
 
-/* Story-specific styling - more literary feel */
 .story-content {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'Georgia', serif;
     font-size: 18px;
     line-height: 1.9;
 }
 
-.story-content p:first-of-type::first-letter {
-    font-family: 'Georgia', serif;
-}
-
-/* Links in content */
 .post-content a {
     color: #1a1a1a;
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-color: #ccc;
-    transition: text-decoration-color 0.2s;
 }
 
 .post-content a:hover {
     text-decoration-color: #1a1a1a;
 }
 
-/* Blockquotes in content */
-.post-content blockquote {
-    margin: 2em 0;
-    padding: 0 0 0 20px;
-    border-left: 2px solid #ddd;
-    font-style: italic;
-    color: #666;
-}
-
-/* Post Footer */
 .post-footer {
     margin-top: 60px;
     padding-top: 30px;
@@ -354,11 +330,6 @@ span.pagination-current {
 /* ========================================
    DARK MODE
    ======================================== */
-html[data-theme="dark"] {
-    --essay-light: #2a2520;
-    --story-light: #1f2628;
-}
-
 html[data-theme="dark"] .post-entry {
     border-color: #333;
 }
@@ -371,6 +342,10 @@ html[data-theme="dark"] .post-entry:hover .entry-header h2 {
     color: #aaa;
 }
 
+html[data-theme="dark"] .post-entry .entry-quote {
+    border-color: #444;
+}
+
 html[data-theme="dark"] .post-entry .entry-quote p {
     color: #999;
 }
@@ -381,6 +356,14 @@ html[data-theme="dark"] .post-entry .entry-quote cite {
 
 html[data-theme="dark"] .post-entry .entry-footer {
     color: #777;
+}
+
+html[data-theme="dark"] .post-entry[data-type="essay"] .entry-footer::before {
+    background: #2a2520;
+}
+
+html[data-theme="dark"] .post-entry[data-type="story"] .entry-footer::before {
+    background: #1f2628;
 }
 
 html[data-theme="dark"] .pinned-banner {
@@ -420,14 +403,21 @@ html[data-theme="dark"] span.pagination-current {
     background: #2a2a2a;
 }
 
-/* Single post dark mode */
 html[data-theme="dark"] .post-title {
     color: #e0e0e0;
 }
 
+html[data-theme="dark"] .post-type-essay {
+    background: #2a2520;
+}
+
+html[data-theme="dark"] .post-type-story {
+    background: #1f2628;
+}
+
 html[data-theme="dark"] .post-epigraph {
-    background: linear-gradient(135deg, #252525 0%, #2a2a2a 100%);
-    border-left-color: #444;
+    background: #252525;
+    border-color: #444;
 }
 
 html[data-theme="dark"] .post-epigraph p {
@@ -451,15 +441,6 @@ html[data-theme="dark"] .post-content a {
     text-decoration-color: #555;
 }
 
-html[data-theme="dark"] .post-content a:hover {
-    text-decoration-color: #e0e0e0;
-}
-
-html[data-theme="dark"] .post-content blockquote {
-    border-color: #444;
-    color: #999;
-}
-
 html[data-theme="dark"] .post-footer {
     border-color: #333;
 }
@@ -472,9 +453,6 @@ html[data-theme="dark"] .back-link:hover {
     color: #e0e0e0;
 }
 
-/* ========================================
-   MOBILE
-   ======================================== */
 @media (max-width: 700px) {
     .pinned-banner {
         flex-direction: column;
@@ -492,13 +470,5 @@ html[data-theme="dark"] .back-link:hover {
     
     .story-content {
         font-size: 17px;
-    }
-    
-    .post-epigraph {
-        padding: 18px 20px;
-    }
-    
-    .post-epigraph p {
-        font-size: 15px;
     }
 }
