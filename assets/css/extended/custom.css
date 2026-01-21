@@ -6,71 +6,25 @@
     --story-accent: #5B7B8C;
 }
 
-/* ========================================
-   PINNED BANNER - Fixed
-   ======================================== */
-a.pinned-banner {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 14px 18px !important;
-    margin-bottom: 30px !important;
-    background: #f9f9f7 !important;
-    border: 1px solid #eee !important;
-    border-radius: 6px !important;
-    text-decoration: none !important;
-    color: inherit !important;
-}
+a
 
-a.pinned-banner:hover {
-    background: #f5f5f3 !important;
-    border-color: #ddd !important;
-}
+a
 
-a.pinned-banner .pinned-title {
-    font-size: 15px !important;
-    font-weight: 400 !important;
-    color: #1a1a1a !important;
-}
+a
 
-a.pinned-banner .pinned-title::before {
-    content: '📌 ' !important;
-    font-size: 13px !important;
-    filter: grayscale(100%) !important;
-    opacity: 0.6 !important;
-}
-
-a.pinned-banner .pinned-meta {
-    font-size: 12px !important;
-    font-weight: 300 !important;
-    color: #999 !important;
-}
+a
 
 @media (max-width: 700px) {
-    a.pinned-banner {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 6px !important;
-    }
+    a
 }
 
-html[data-theme="dark"] a.pinned-banner {
-    background: #252525 !important;
-    border-color: #333 !important;
-}
+html[data-theme="dark"] a
 
-html[data-theme="dark"] a.pinned-banner:hover {
-    background: #2a2a2a !important;
-    border-color: #444 !important;
-}
+html[data-theme="dark"] a
 
-html[data-theme="dark"] a.pinned-banner .pinned-title {
-    color: #e0e0e0 !important;
-}
+html[data-theme="dark"] a
 
-html[data-theme="dark"] a.pinned-banner .pinned-meta {
-    color: #777 !important;
-}
+html[data-theme="dark"] a
 
 /* ========================================
    FEED - Post Entry Styling
@@ -493,13 +447,33 @@ html[data-theme="dark"] .back-link:hover {
     display: none !important;
 }
 
-/* Enhanced Pinned Banner */
+/* Dark mode */
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+/* Story/Essay type tag */
+
+html[data-theme="dark"] 
+
+html[data-theme="dark"] 
+
+
+/* ========== PINNED BANNER - COMPLETE STYLES ========== */
 .pinned-banner {
     display: block;
     position: relative;
     padding: 28px 32px;
     margin-bottom: 40px;
-    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
     border-radius: 6px;
     text-decoration: none;
     overflow: hidden;
@@ -507,14 +481,14 @@ html[data-theme="dark"] .back-link:hover {
 }
 
 .pinned-banner::before {
-    content: 'PINNED';
+    content: 'RISING';
     position: absolute;
     top: 12px;
     left: 32px;
     font-size: 9px;
     font-weight: 500;
     letter-spacing: 0.12em;
-    color: #999;
+    color: #666;
     text-transform: uppercase;
 }
 
@@ -525,32 +499,45 @@ html[data-theme="dark"] .back-link:hover {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(180deg, #888 0%, #bbb 100%);
+    background: linear-gradient(180deg, #666 0%, #444 100%);
     opacity: 0.6;
     transition: opacity 0.3s ease;
 }
 
-.pinned-title {
+.pinned-banner .pinned-type {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px 8px;
+    border-radius: 2px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.pinned-banner .pinned-title {
     display: block;
     font-size: 22px;
     font-weight: 400;
-    color: #1a1a1a;
-    margin-top: 16px;
+    color: #e0e0e0;
     letter-spacing: -0.01em;
     transition: letter-spacing 0.3s ease;
 }
 
-.pinned-meta {
+.pinned-banner .pinned-meta {
     display: block;
     font-size: 13px;
-    color: #888;
+    color: #666;
     margin-top: 6px;
     font-weight: 300;
 }
 
 .pinned-banner:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .pinned-banner:hover::after {
@@ -561,152 +548,17 @@ html[data-theme="dark"] .back-link:hover {
     letter-spacing: 0.01em;
 }
 
-/* Dark mode */
-html[data-theme="dark"] .pinned-banner {
-    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
+@media (max-width: 700px) {
+    .pinned-banner {
+        padding: 24px 20px;
+    }
+    
+    .pinned-banner::before {
+        left: 20px;
+    }
+    
+    .pinned-banner .pinned-title {
+        font-size: 20px;
+    }
 }
-
-html[data-theme="dark"] .pinned-banner::before {
-    color: #666;
-}
-
-html[data-theme="dark"] .pinned-banner::after {
-    background: linear-gradient(180deg, #666 0%, #444 100%);
-}
-
-html[data-theme="dark"] .pinned-title {
-    color: #e0e0e0;
-}
-
-html[data-theme="dark"] .pinned-meta {
-    color: #666;
-}
-
-html[data-theme="dark"] .pinned-banner:hover {
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Updated pinned banner - RISING label */
-.pinned-banner::before {
-    content: 'RISING' !important;
-}
-
-/* Story/Essay type tag */
-.pinned-type {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #666;
-    background: rgba(150, 150, 150, 0.15);
-    padding: 4px 10px;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 4px;
-}
-
-html[data-theme="dark"] .pinned-type {
-    color: #999;
-    background: rgba(255, 255, 255, 0.08);
-}
-
-/* RISING label and type tag for pinned banner */
-.pinned-banner::before {
-    content: 'RISING' !important;
-}
-
-.pinned-type {
-    display: block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #888;
-    background: rgba(150, 150, 150, 0.12);
-    padding: 3px 8px;
-    border-radius: 2px;
-    margin-top: 18px;
-    margin-bottom: 6px;
-    width: fit-content;
-}
-
-html[data-theme="dark"] .pinned-type {
-    color: #888;
-    background: rgba(255, 255, 255, 0.06);
-}
-
-/* Complete pinned banner overhaul */
-.pinned-banner {
-    display: block !important;
-    position: relative;
-    padding: 28px 32px;
-    margin-bottom: 40px;
-    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
-    border-radius: 6px;
-    text-decoration: none;
-    overflow: hidden;
-    text-align: left !important;
-}
-
-.pinned-banner::before {
-    content: 'RISING' !important;
-    position: absolute;
-    top: 12px;
-    left: 32px;
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    color: #666;
-    text-transform: uppercase;
-}
-
-.pinned-banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg, #666 0%, #444 100%);
-    opacity: 0.6;
-}
-
-.pinned-type {
-    display: inline-block !important;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #888;
-    background: rgba(255, 255, 255, 0.06);
-    padding: 3px 8px;
-    border-radius: 2px;
-    margin-top: 18px;
-    margin-bottom: 6px;
-}
-
-.pinned-title {
-    display: block !important;
-    font-size: 22px;
-    font-weight: 400;
-    color: #e0e0e0;
-    letter-spacing: -0.01em;
-}
-
-.pinned-meta {
-    display: block !important;
-    font-size: 13px;
-    color: #666;
-    margin-top: 6px;
-    font-weight: 300;
-}
-
-.pinned-banner:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
-.pinned-banner:hover::after {
-    opacity: 1;
-}
+/* ========== END PINNED BANNER ========== */
