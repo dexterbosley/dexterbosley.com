@@ -1,101 +1,205 @@
-/* Pinned banner styling */
-a.pinned-banner {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 12px 16px !important;
-  margin-bottom: 20px !important;
-  background: #f8f8f6 !important;
-  border: 1px solid #e8e8e4 !important;
-  border-radius: 6px !important;
-  text-decoration: none !important;
+/* Post entry styling */
+.post-entry {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #eee;
 }
 
-a.pinned-banner:hover {
-  border-color: #d0d0cc !important;
-  background: #f4f4f2 !important;
+.post-entry:last-of-type {
+    border-bottom: none;
 }
 
-a.pinned-banner .pinned-title {
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  color: #1a1a1a !important;
-}
-
-a.pinned-banner .pinned-title::before {
-  content: '📌 ' !important;
-  font-size: 13px !important;
-  filter: grayscale(100%) !important;
-  opacity: 0.7 !important;
-}
-
-a.pinned-banner .pinned-meta {
-  font-size: 12px !important;
-  font-weight: 300 !important;
-  color: #999999 !important;
-  white-space: nowrap !important;
-}
-
-/* Mobile pinned banner */
-@media (max-width: 799px) {
-  a.pinned-banner {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 6px !important;
-  }
-}
-
-/* Feed entry banner sizing */
 .post-entry .entry-banner {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+    margin-bottom: 16px;
 }
 
 .post-entry .entry-banner img {
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 16/9 !important;
-  object-fit: cover !important;
-  border-radius: 4px !important;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-/* Featured post larger image */
 .post-entry.featured .entry-banner img {
-  aspect-ratio: 2/1 !important;
+    aspect-ratio: 2/1;
 }
 
-/* Entry quote styling */
-.entry-quote {
-  margin: 12px 0 0 0 !important;
-  padding: 0 0 0 14px !important;
-  border-left: 2px solid #d0d0d0 !important;
-  background: none !important;
+.post-entry .entry-header {
+    margin-bottom: 12px;
 }
 
-.entry-quote p {
-  font-size: 14px !important;
-  font-style: italic !important;
-  font-weight: 300 !important;
-  color: #555 !important;
-  line-height: 1.5 !important;
-  margin: 0 0 4px 0 !important;
+.post-entry .entry-header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.3;
 }
 
-.entry-quote cite {
-  font-size: 12px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  color: #888 !important;
+.post-entry .entry-quote {
+    margin: 0 0 14px 0;
+    padding: 0 0 0 14px;
+    border-left: 2px solid #ddd;
 }
 
-/* Section icons */
-.section-icon {
-  display: inline-block;
-  margin-right: 6px;
-  opacity: 0.6;
+.post-entry .entry-quote p {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 0 4px 0;
 }
 
-/* Remove footer divider */
-.footer {
-  border-top: none !important;
+.post-entry .entry-quote cite {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #999;
+}
+
+.post-entry .entry-footer {
+    font-size: 13px;
+    font-weight: 300;
+    color: #888;
+}
+
+.post-entry .section-icon {
+    margin-right: 6px;
+    opacity: 0.6;
+}
+
+.post-entry .entry-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: #666;
+}
+
+/* Pinned banner */
+.pinned-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    margin-bottom: 35px;
+    background: #f9f9f7;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.pinned-banner:hover {
+    background: #f5f5f3;
+    border-color: #ddd;
+}
+
+.pinned-banner .pinned-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.pinned-banner .pinned-title::before {
+    content: '📌 ';
+    font-size: 13px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.pinned-banner .pinned-meta {
+    font-size: 12px;
+    font-weight: 300;
+    color: #999;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.pagination a {
+    color: #666;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #1a1a1a;
+}
+
+.pagination-current {
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+/* Dark mode for entries */
+html[data-theme="dark"] .post-entry {
+    border-color: #333;
+}
+
+html[data-theme="dark"] .post-entry .entry-header h2 {
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .post-entry:hover .entry-header h2 {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .post-entry .entry-quote {
+    border-color: #444;
+}
+
+html[data-theme="dark"] .post-entry .entry-quote p {
+    color: #999;
+}
+
+html[data-theme="dark"] .post-entry .entry-quote cite {
+    color: #777;
+}
+
+html[data-theme="dark"] .post-entry .entry-footer {
+    color: #777;
+}
+
+html[data-theme="dark"] .pinned-banner {
+    background: #252525;
+    border-color: #333;
+}
+
+html[data-theme="dark"] .pinned-banner:hover {
+    background: #2a2a2a;
+    border-color: #444;
+}
+
+html[data-theme="dark"] .pinned-banner .pinned-title {
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .pinned-banner .pinned-meta {
+    color: #777;
+}
+
+html[data-theme="dark"] .pagination a {
+    color: #888;
+}
+
+html[data-theme="dark"] .pagination a:hover,
+html[data-theme="dark"] .pagination-current {
+    color: #e0e0e0;
+}
+
+/* Mobile pinned banner */
+@media (max-width: 700px) {
+    .pinned-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
 }
