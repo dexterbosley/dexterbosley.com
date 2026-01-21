@@ -30,8 +30,8 @@
         {{ .Content }}
     </div>
 
-    <footer class="post-footer">
-        <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← Back to {{ if eq .Section "stories" }}stories{{ else if eq .Section "essays" }}essays{{ else }}all posts{{ end }}</a>
-    </footer>
+    <nav class="post-nav">
+        <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← {{ if eq .Section "stories" }}Stories{{ else if eq .Section "essays" }}Essays{{ else }}All{{ end }}</a>
+    </nav>
 </article>
 {{- end }}
