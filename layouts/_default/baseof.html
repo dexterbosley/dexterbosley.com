@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="light">
+<html lang="en" dir="auto" data-theme="dark">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -318,22 +318,7 @@
                 <h1 class="site-title"><a href="/">Thinking in Public</a></h1>
                 <p class="site-subtitle">by Dexter Bosley</p>
             </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+            
         </header>
         
         <div class="content-wrapper">
@@ -387,25 +372,7 @@
         })();
         
         // Dark mode toggle
-        (function() {
-            const toggle = document.getElementById('theme-toggle');
-            const html = document.documentElement;
-            const saved = localStorage.getItem('theme');
-            
-            if (saved === 'dark') {
-                html.dataset.theme = 'dark';
-            }
-            
-            toggle.addEventListener('click', function() {
-                if (html.dataset.theme === 'dark') {
-                    html.dataset.theme = 'light';
-                    localStorage.setItem('theme', 'light');
-                } else {
-                    html.dataset.theme = 'dark';
-                    localStorage.setItem('theme', 'dark');
-                }
-            });
-        })();
+        
     </script>
 </body>
 </html>
@@ -418,7 +385,7 @@
 }
 
 .post-banner {
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
     border-radius: 4px;
 }
@@ -436,7 +403,7 @@
 }
 
 .post-header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .post-title {
@@ -449,10 +416,11 @@
 
 .post-meta {
     font-size: 14px;
-    color: #888;
+    color: #666;
     display: flex;
     gap: 8px;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .post-epigraph {
