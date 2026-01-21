@@ -501,20 +501,25 @@
             <main class="main-content">
                 
 <article class="post-single">
+    
     <header class="post-header">
         <h1 class="post-title">The First Story</h1>
         <div class="post-meta">
             <span>Essay</span>
+            <span>·</span>
             <span>December 21, 2025</span>
+            <span>·</span>
             <span>0 min read</span>
         </div>
     </header>
 
-    <div class="post-content">
+    <div class="post-content ">
         
     </div>
 
-    <a href="/" class="back-link">← Back to all posts</a>
+    <footer class="post-footer">
+        <a href="/" class="back-link">← Back to all posts</a>
+    </footer>
 </article>
             </main>
         </div>
@@ -565,3 +570,268 @@
     </script>
 </body>
 </html>
+
+<style>
+ 
+.post-single {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.post-banner {
+    margin: 0 0 40px 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.post-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.6s ease;
+}
+
+.post-banner:hover img {
+    filter: grayscale(0%);
+}
+
+.post-header {
+    margin-bottom: 32px;
+}
+
+.post-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.02em;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.post-epigraph {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+    margin: 0 0 40px 0;
+    font-style: italic;
+}
+
+.post-epigraph p {
+    font-size: 17px;
+    color: #555;
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.post-epigraph cite {
+    font-size: 14px;
+    color: #888;
+    font-style: normal;
+}
+
+.post-content {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #333;
+}
+
+.post-content p {
+    margin: 0 0 24px 0;
+}
+
+.post-content h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 48px 0 20px 0;
+}
+
+.post-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px 0 16px 0;
+}
+
+.post-content blockquote {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+    margin: 32px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.post-content a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.2s;
+}
+
+.post-content a:hover {
+    opacity: 0.6;
+}
+
+.post-content hr {
+    border: none;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.post-content hr::before {
+    content: "···";
+    font-size: 20px;
+    letter-spacing: 12px;
+    color: #ccc;
+}
+
+ 
+.story-content {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.story-content p:first-of-type::first-letter {
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 12px;
+    padding-top: 6px;
+    font-weight: 400;
+}
+
+.post-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+}
+
+.back-link {
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #1a1a1a;
+}
+
+ 
+html[data-theme="dark"] .post-title {
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .post-meta {
+    color: #666;
+}
+
+html[data-theme="dark"] .post-epigraph {
+    border-left-color: #444;
+}
+
+html[data-theme="dark"] .post-epigraph p {
+    color: #aaa;
+}
+
+html[data-theme="dark"] .post-epigraph cite {
+    color: #666;
+}
+
+html[data-theme="dark"] .post-content {
+    color: #ccc;
+}
+
+html[data-theme="dark"] .post-content blockquote {
+    border-left-color: #444;
+    color: #aaa;
+}
+
+html[data-theme="dark"] .post-content a {
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .post-content hr::before {
+    color: #444;
+}
+
+html[data-theme="dark"] .post-footer {
+    border-top-color: #333;
+}
+
+html[data-theme="dark"] .back-link {
+    color: #666;
+}
+
+html[data-theme="dark"] .back-link:hover {
+    color: #e0e0e0;
+}
+
+ 
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dark"] ::selection {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.post-entry {
+    transition: transform 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+}
+
+.entry-banner img {
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.post-entry:hover .entry-banner img {
+    transform: scale(1.02);
+}
+
+ 
+.post-single {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ 
+@media (max-width: 700px) {
+    .post-title {
+        font-size: 28px;
+    }
+    
+    .post-content {
+        font-size: 16px;
+    }
+    
+    .story-content {
+        font-size: 17px;
+    }
+    
+    .story-content p:first-of-type::first-letter {
+        font-size: 2.8em;
+    }
+    
+    .post-banner {
+        margin: 0 -20px 32px -20px;
+        border-radius: 0;
+    }
+}
+</style>

@@ -1,15 +1,18 @@
 {{- define "main" }}
 <article class="post-single">
+    {{- if .Params.banner }}
+    <figure class="post-banner">
+        <img src="{{ .Params.banner }}" alt="{{ .Title }}">
+    </figure>
+    {{- end }}
+    
     <header class="post-header">
-        {{- if .Params.banner }}
-        <figure class="post-banner">
-            <img src="{{ .Params.banner }}" alt="{{ .Title }}">
-        </figure>
-        {{- end }}
         <h1 class="post-title">{{ .Title }}</h1>
         <div class="post-meta">
             <span>{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
+            <span>·</span>
             <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <span>·</span>
             <span>{{ .ReadingTime }} min read</span>
         </div>
     </header>
@@ -23,10 +26,12 @@
     </div>
     {{- end }}
 
-    <div class="{{ if eq $.Section "stories" }}story-content{{ else }}post-content{{ end }}">
+    <div class="post-content {{ if eq $.Section "stories" }}story-content{{ end }}">
         {{ .Content }}
     </div>
 
-    <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← Back to {{ if eq .Section "stories" }}stories{{ else if eq .Section "essays" }}essays{{ else }}all posts{{ end }}</a>
+    <footer class="post-footer">
+        <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← Back to {{ if eq .Section "stories" }}stories{{ else if eq .Section "essays" }}essays{{ else }}all posts{{ end }}</a>
+    </footer>
 </article>
 {{- end }}
