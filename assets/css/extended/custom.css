@@ -635,3 +635,78 @@ html[data-theme="dark"] .pinned-type {
     color: #888;
     background: rgba(255, 255, 255, 0.06);
 }
+
+/* Complete pinned banner overhaul */
+.pinned-banner {
+    display: block !important;
+    position: relative;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: left !important;
+}
+
+.pinned-banner::before {
+    content: 'RISING' !important;
+    position: absolute;
+    top: 12px;
+    left: 32px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.pinned-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #666 0%, #444 100%);
+    opacity: 0.6;
+}
+
+.pinned-type {
+    display: inline-block !important;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px 8px;
+    border-radius: 2px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.pinned-title {
+    display: block !important;
+    font-size: 22px;
+    font-weight: 400;
+    color: #e0e0e0;
+    letter-spacing: -0.01em;
+}
+
+.pinned-meta {
+    display: block !important;
+    font-size: 13px;
+    color: #666;
+    margin-top: 6px;
+    font-weight: 300;
+}
+
+.pinned-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pinned-banner:hover::after {
+    opacity: 1;
+}
