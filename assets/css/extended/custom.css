@@ -585,3 +585,28 @@ html[data-theme="dark"] .pinned-meta {
 html[data-theme="dark"] .pinned-banner:hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
+
+/* Updated pinned banner - RISING label */
+.pinned-banner::before {
+    content: 'RISING' !important;
+}
+
+/* Story/Essay type tag */
+.pinned-type {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #666;
+    background: rgba(150, 150, 150, 0.15);
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+html[data-theme="dark"] .pinned-type {
+    color: #999;
+    background: rgba(255, 255, 255, 0.08);
+}
