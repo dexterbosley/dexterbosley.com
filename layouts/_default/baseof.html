@@ -92,6 +92,7 @@
         .sidebar {
             position: sticky;
             top: 40px;
+            align-self: start;
         }
         
         .sidebar-nav ul {
@@ -185,6 +186,11 @@
             border-top: 1px solid #eee;
             font-size: 13px;
             color: #999;
+        }
+        
+        /* Hide default footer */
+        .footer {
+            display: none;
         }
         
         /* Mobile */
@@ -390,7 +396,5 @@
             });
         })();
     </script>
-    
-    {{ partial "footer.html" . }}
 </body>
 </html>
