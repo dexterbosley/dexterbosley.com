@@ -126,16 +126,23 @@
         
          
         .site-header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin-bottom: 50px;
             padding-bottom: 30px;
             border-bottom: 1px solid #eee;
         }
         
+        .site-branding {
+            text-align: left;
+        }
+        
         .site-title {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 400;
-            margin: 0 0 6px 0;
+            margin: 0 0 4px 0;
+            line-height: 1.2;
         }
         
         .site-title a {
@@ -144,9 +151,28 @@
         }
         
         .site-subtitle {
-            font-size: 14px;
+            font-size: 13px;
             color: #888;
             font-weight: 300;
+            margin: 0;
+        }
+        
+         
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+        
+        .theme-toggle:hover {
+            opacity: 1;
+        }
+        
+        .theme-toggle .moon-icon {
+            display: none;
         }
         
          
@@ -157,7 +183,7 @@
         }
         
          
-        .sidebar-nav {
+        .sidebar {
             position: sticky;
             top: 40px;
         }
@@ -165,11 +191,11 @@
         .sidebar-nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 0 30px 0;
         }
         
         .sidebar-nav li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         
         .sidebar-nav a {
@@ -187,6 +213,57 @@
         .sidebar-nav a.active {
             color: #1a1a1a;
             font-weight: 500;
+        }
+        
+        .subscribe-link {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 300;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #1a1a1a;
+            margin-bottom: 35px;
+        }
+        
+        .subscribe-link:hover {
+            color: #666;
+            border-color: #666;
+        }
+        
+         
+        .popular-section {
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+        }
+        
+        .popular-section h4 {
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin: 0 0 12px 0;
+        }
+        
+        .popular-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .popular-section li {
+            margin-bottom: 8px;
+        }
+        
+        .popular-section a {
+            font-size: 14px;
+            font-weight: 300;
+            color: #444;
+            text-decoration: none;
+        }
+        
+        .popular-section a:hover {
+            color: #1a1a1a;
         }
         
          
@@ -214,7 +291,7 @@
                 display: block;
             }
             
-            .sidebar-nav {
+            .sidebar {
                 display: none;
             }
             
@@ -248,24 +325,115 @@
             color: #1a1a1a;
             font-weight: 500;
         }
+        
+         
+        html[data-theme="dark"] body {
+            background: #1a1a1a;
+            color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .site-title a {
+            color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .site-header,
+        html[data-theme="dark"] .site-footer,
+        html[data-theme="dark"] .popular-section {
+            border-color: #333;
+        }
+        
+        html[data-theme="dark"] .sidebar-nav a {
+            color: #999;
+        }
+        
+        html[data-theme="dark"] .sidebar-nav a:hover,
+        html[data-theme="dark"] .sidebar-nav a.active {
+            color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .subscribe-link {
+            color: #e0e0e0;
+            border-color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .popular-section a {
+            color: #aaa;
+        }
+        
+        html[data-theme="dark"] .popular-section a:hover {
+            color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .mobile-nav {
+            background: #1a1a1a;
+            border-color: #333;
+        }
+        
+        html[data-theme="dark"] .mobile-nav a {
+            color: #888;
+        }
+        
+        html[data-theme="dark"] .mobile-nav a.active {
+            color: #e0e0e0;
+        }
+        
+        html[data-theme="dark"] .theme-toggle .sun-icon {
+            display: none;
+        }
+        
+        html[data-theme="dark"] .theme-toggle .moon-icon {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="site-wrapper">
         <header class="site-header">
-            <h1 class="site-title"><a href="/">Thinking in Public</a></h1>
-            <p class="site-subtitle">by Dexter Bosley</p>
+            <div class="site-branding">
+                <h1 class="site-title"><a href="/">Thinking in Public</a></h1>
+                <p class="site-subtitle">by Dexter Bosley</p>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
         </header>
         
         <div class="content-wrapper">
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="/">All</a></li>
-                    <li><a href="/essays/">Essays</a></li>
-                    <li><a href="/stories/">Stories</a></li>
-                    <li><a href="/about/">About</a></li>
-                </ul>
-            </nav>
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="/">All</a></li>
+                        <li><a href="/essays/">Essays</a></li>
+                        <li><a href="/stories/">Stories</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="https://www.givewell.org" target="_blank" class="subscribe-link">Subscribe</a>
+                
+                <div class="popular-section">
+                    <h4>Popular</h4>
+                    <ul>
+                        <li><a href="/essays/test-essay/">On Writing</a></li>
+                        <li><a href="/essays/test-essay-1/">The Craft</a></li>
+                        <li><a href="/stories/test-story/">First Light</a></li>
+                        <li><a href="/stories/test-story-1/">The Waiting</a></li>
+                    </ul>
+                </div>
+            </aside>
             
             <main class="main-content">
                 
@@ -383,12 +551,34 @@
     </nav>
     
     <script>
+        
         (function() {
             const path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
             document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(link => {
                 const href = link.getAttribute('href').replace(/\/$/, '') || '/';
                 if (path === '/' && href === '/') link.classList.add('active');
                 else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
+            });
+        })();
+        
+        
+        (function() {
+            const toggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            const saved = localStorage.getItem('theme');
+            
+            if (saved === 'dark') {
+                html.dataset.theme = 'dark';
+            }
+            
+            toggle.addEventListener('click', function() {
+                if (html.dataset.theme === 'dark') {
+                    html.dataset.theme = 'light';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.dataset.theme = 'dark';
+                    localStorage.setItem('theme', 'dark');
+                }
             });
         })();
     </script>
