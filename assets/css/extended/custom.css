@@ -476,3 +476,19 @@ html[data-theme="dark"] .back-link:hover {
         font-size: 17px;
     }
 }
+
+/* Fix post entry spacing */
+.post-entry:last-child {
+    margin-bottom: 0;
+}
+.main-content .post-entry {
+    margin-bottom: 24px;
+}
+
+/* Hide redundant section labels */
+.entry-section-label,
+.post-entry .section-type,
+.entry-type-label,
+.post-entry[data-type]::after {
+    display: none !important;
+}
