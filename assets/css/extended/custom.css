@@ -1,41 +1,101 @@
-/* FT-Inspired Section Color Scheme */
-:root {
-  --essays-accent: #4A90A4;    /* Steel blue */
-  --essays-accent-light: #E8F4F8;
-  --stories-accent: #1A365D;   /* Editorial navy */
-  --stories-accent-light: #EDF2F7;
+/* Pinned banner styling */
+a.pinned-banner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 12px 16px !important;
+  margin-bottom: 20px !important;
+  background: #f8f8f6 !important;
+  border: 1px solid #e8e8e4 !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
 }
 
-/* Essays section styling */
-body[data-section="essays"] .post-title a:hover,
-body[data-section="essays"] .entry-link:hover,
-.essays-section .post-title a:hover {
-  color: var(--essays-accent);
+a.pinned-banner:hover {
+  border-color: #d0d0cc !important;
+  background: #f4f4f2 !important;
 }
 
-body[data-section="essays"] blockquote,
-.essays-section blockquote {
-  border-left-color: var(--essays-accent);
+a.pinned-banner .pinned-title {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #1a1a1a !important;
 }
 
-body[data-section="essays"] .post-content a,
-.essays-section .post-content a {
-  color: var(--essays-accent);
+a.pinned-banner .pinned-title::before {
+  content: '📌 ' !important;
+  font-size: 13px !important;
+  filter: grayscale(100%) !important;
+  opacity: 0.7 !important;
 }
 
-/* Stories section styling */
-body[data-section="stories"] .post-title a:hover,
-body[data-section="stories"] .entry-link:hover,
-.stories-section .post-title a:hover {
-  color: var(--stories-accent);
+a.pinned-banner .pinned-meta {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: #999999 !important;
+  white-space: nowrap !important;
 }
 
-body[data-section="stories"] blockquote,
-.stories-section blockquote {
-  border-left-color: var(--stories-accent);
+/* Mobile pinned banner */
+@media (max-width: 799px) {
+  a.pinned-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
 }
 
-body[data-section="stories"] .post-content a,
-.stories-section .post-content a {
-  color: var(--stories-accent);
+/* Feed entry banner sizing */
+.post-entry .entry-banner {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+.post-entry .entry-banner img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16/9 !important;
+  object-fit: cover !important;
+  border-radius: 4px !important;
+}
+
+/* Featured post larger image */
+.post-entry.featured .entry-banner img {
+  aspect-ratio: 2/1 !important;
+}
+
+/* Entry quote styling */
+.entry-quote {
+  margin: 12px 0 0 0 !important;
+  padding: 0 0 0 14px !important;
+  border-left: 2px solid #d0d0d0 !important;
+  background: none !important;
+}
+
+.entry-quote p {
+  font-size: 14px !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  color: #555 !important;
+  line-height: 1.5 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.entry-quote cite {
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #888 !important;
+}
+
+/* Section icons */
+.section-icon {
+  display: inline-block;
+  margin-right: 6px;
+  opacity: 0.6;
+}
+
+/* Remove footer divider */
+.footer {
+  border-top: none !important;
 }
