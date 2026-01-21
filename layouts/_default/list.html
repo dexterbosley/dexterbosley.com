@@ -8,6 +8,7 @@
 {{- if .IsHome }}
 {{- with site.GetPage "/stories/small-talk" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
   <span class="pinned-title">{{ .Title }}</span>
   <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
 </a>
@@ -15,6 +16,7 @@
 {{- else if eq .Title "Essays" }}
 {{- with site.GetPage "/essays/test-essay-1" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
   <span class="pinned-title">{{ .Title }}</span>
   <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
 </a>
@@ -22,6 +24,7 @@
 {{- else if eq .Title "Stories" }}
 {{- with site.GetPage "/stories/small-talk" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
+  <span class="pinned-type">{{ .Section | humanize | singularize | title }}</span>
   <span class="pinned-title">{{ .Title }}</span>
   <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }}&nbsp;·&nbsp;{{ .ReadingTime }} min</span>
 </a>
