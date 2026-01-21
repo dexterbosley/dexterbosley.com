@@ -1,0 +1,34 @@
+
+/* Popular section divider */
+.popular-box {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    margin-top: 20px;
+    background: none;
+    border-radius: 0;
+    padding: 20px 0 0 0;
+}
+
+html[data-theme="dark"] .popular-box {
+    border-top-color: #333;
+    background: none;
+}
+
+/* Single post banner */
+.post-banner {
+    margin: 0 0 24px 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.post-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+
+.post-banner:hover img {
+    filter: grayscale(0%);
+}
