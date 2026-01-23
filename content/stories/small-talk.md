@@ -1,9 +1,8 @@
 ---
 title: "Small Talk"
-date: 2025-01-22
+date: 2025-01-18
 draft: false
-author: "Dexter Bosley"
-section: "stories"
+description: "Two brothers wait outside a church, watching the street."
 ---
 
 It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
