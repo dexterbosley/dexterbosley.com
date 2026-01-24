@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.dexterbosley.com/essays/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <loc>https://www.dexterbosley.com/stories/small-talk/</loc>
+    <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/stories/</loc>
+    <lastmod>2026-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/</loc>
+    <lastmod>2026-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.dexterbosley.com/essays/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/essays/test-essay-1/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/stories/test-story-1/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.dexterbosley.com/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/essays/test-essay-2/</loc>
@@ -82,9 +85,6 @@
   </url><url>
     <loc>https://www.dexterbosley.com/posts/the-first-story/</loc>
     <lastmod>2025-12-21T02:48:58-05:00</lastmod>
-  </url><url>
-    <loc>https://www.dexterbosley.com/stories/small-talk/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.dexterbosley.com/essays/traditional-vs-agentic/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>

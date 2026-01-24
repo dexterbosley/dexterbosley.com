@@ -1,6 +1,6 @@
 ---
 title: "Small Talk"
-date: 2025-01-18
+date: 2026-01-24
 draft: false
 quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
@@ -46,4 +46,3 @@ There were sirens and flashes and uniforms. Elliott sank back into the shade. St
 A man approached, not a priest.
 
 He stopped at their feet. "It's time to carry your mom outside." Steve got up first and rubbed his eyes.
-
