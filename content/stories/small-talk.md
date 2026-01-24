@@ -19,7 +19,7 @@ Steve tapped his black shoes together. "I'm hungry."
 
 Steve nodded. "So bad, soggy too."
 
-"I'll make you something tonight, maybe tortellini with that alfredo."
+"I'll make you something tonight, maybe tortellini."
 
 Steve smiled and closed his eyes. "So where's Mom now?"
 
