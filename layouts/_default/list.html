@@ -11,27 +11,12 @@
 
 {{- if and .IsHome $isFirstPage }}
 {{- with site.GetPage "/stories/small-talk" }}
-<a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">Trending</span>
-  <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }} · {{ .ReadingTime }} min</span>
-</a>
 {{- end }}
 {{- else if and (eq .Section "essays") $isFirstPage }}
 {{- with site.GetPage "/essays/test-essay-1" }}
-<a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">Trending</span>
-  <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">Essay · {{ .ReadingTime }} min</span>
-</a>
 {{- end }}
 {{- else if and (eq .Section "stories") $isFirstPage }}
 {{- with site.GetPage "/stories/small-talk" }}
-<a href="{{ .Permalink }}" class="pinned-banner">
-  <span class="pinned-type">Trending</span>
-  <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">Story · {{ .ReadingTime }} min</span>
-</a>
 {{- end }}
 {{- end }}
 
