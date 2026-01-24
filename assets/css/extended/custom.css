@@ -285,3 +285,8 @@ html[data-theme="light"] .entry-footer {
         height: 200px;
     }
 }
+
+/* Fix post entry width - remove max-width constraint */
+.post-entry {
+    max-width: none !important;
+}
