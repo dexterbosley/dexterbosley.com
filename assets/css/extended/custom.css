@@ -164,3 +164,43 @@ html[data-theme="light"] .entry-footer {
     padding: 2px 8px;
     border-radius: 3px;
 }
+
+/* Essay/Story type label boxes in metadata */
+.post-entry[data-type="essay"] .entry-footer::before {
+    content: "Essay";
+    color: #7a8fa3;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid #7a8fa3;
+    background: rgba(122, 143, 163, 0.1);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.post-entry[data-type="story"] .entry-footer::before {
+    content: "Story";
+    color: #937a8a;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid #937a8a;
+    background: rgba(147, 122, 138, 0.1);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+/* Trending label box - override default */
+.pinned-type {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    color: #a08050 !important;
+    border: 1px solid #a08050 !important;
+    background: rgba(160, 128, 80, 0.1) !important;
+    padding: 2px 8px !important;
+    border-radius: 3px !important;
+}
