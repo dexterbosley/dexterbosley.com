@@ -109,6 +109,10 @@
     <style>
         * { box-sizing: border-box; }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         body {
             margin: 0;
             font-family: 'DM Sans', -apple-system, sans-serif;
@@ -573,6 +577,20 @@ localStorage.setItem('pref-theme', 'light');
 .post-entry {
     padding: 24px !important;
     margin-bottom: 36px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+}
+
+.post-entry .entry-banner img {
+    transition: transform 0.3s ease !important;
+}
+
+.post-entry:hover .entry-banner img {
+    transform: scale(1.02) !important;
 }
 
  
