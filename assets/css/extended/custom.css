@@ -321,3 +321,48 @@ html[data-theme="light"] .entry-footer {
 .sidebar-nav a.active::before {
     display: none !important;
 }
+
+/* UNIFORM LIST PAGE STYLING - applies to homepage, essays, stories */
+main.main {
+    max-width: none !important;
+}
+
+/* Force all post entries to use same layout */
+article.post-entry {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 0 32px 0 !important;
+}
+
+/* Ensure entry-banner images are consistent */
+.entry-banner {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.entry-banner img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+
+/* Entry header consistency */
+.entry-header h2 {
+    font-size: 1.4rem !important;
+    margin: 12px 0 8px 0 !important;
+}
+
+/* Entry footer consistency */
+.entry-footer {
+    font-size: 0.9rem !important;
+    color: var(--secondary) !important;
+}
+
+/* Quote styling consistency */
+.entry-quote {
+    margin: 8px 0 !important;
+    padding: 0 0 0 14px !important;
+    border-left: 2px solid var(--border) !important;
+    font-style: italic !important;
+}
