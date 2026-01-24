@@ -25,7 +25,7 @@ Steve smiled and closed his eyes. "So where's Mom now?"
 
 Elliott shook his head. "I don't know."
 
-Steve looked at the road and back toward the tall oak doors. "Mom never liked this place."
+Steve looked from the road back toward the tall oak doors. "Mom never liked this place."
 
 "Yeah, she said it was better to sleep in the morning. Remember that study thing? The one in our group—?" A scream fell from above.
 
