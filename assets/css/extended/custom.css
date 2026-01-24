@@ -258,3 +258,30 @@ html[data-theme="light"] .entry-footer {
     font-size: 18px !important;
     letter-spacing: 16px !important;
 }
+
+/* Standard post banner dimensions */
+.post-banner {
+    margin: 0 0 32px 0;
+    overflow: hidden;
+    border-radius: 4px;
+    max-height: 280px;
+}
+
+.post-banner img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 700px) {
+    .post-banner {
+        margin: 0 -20px 24px -20px;
+        border-radius: 0;
+        max-height: 200px;
+    }
+    
+    .post-banner img {
+        height: 200px;
+    }
+}
