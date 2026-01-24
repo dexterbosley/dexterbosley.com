@@ -39,7 +39,7 @@ On the sidewalk to their right—a bit closer to the park than the Avenue—wate
 
 A woman ran across the street toward the scene. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve stared at the stained concrete.
 
-There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve eventually focused on the traffic again. The girl and her elbow slipped inside.
+There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve focused on the traffic again. The girl and her elbow slipped inside.
 
 ---
 
