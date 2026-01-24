@@ -35,7 +35,7 @@ On the sidewalk to their right—a bit closer to the park than the Avenue—wate
 
 "Did she… drop that?"
 
-"Had to… look at all that glass… I don't… Steve, he's not moving," Elliott whispered.
+"Had to… look at all… I don't… Stevey, he's not moving," Elliott whispered.
 
 A woman ran across the street toward the scene. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve stared at the stained concrete.
 
