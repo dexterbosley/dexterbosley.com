@@ -841,3 +841,43 @@ html {
         transition: transform 0.1s ease;
     }
 }
+
+/* Mobile card fixes */
+@media (max-width: 700px) {
+    /* Cards full width with breathing room */
+    .post-entry {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Pinned banner full width */
+    .pinned-banner {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Image fills card width */
+    .entry-banner {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        width: calc(100% + 40px) !important;
+    }
+    
+    .entry-banner img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: cover !important;
+    }
+    
+    /* Main content fills width */
+    .main-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
