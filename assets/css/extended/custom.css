@@ -654,3 +654,190 @@ html {
         font-size: 12pt;
     }
 }
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
+
+@media (max-width: 700px) {
+    /* Hide reading progress bar on mobile (can be distracting) */
+    .reading-progress {
+        display: none;
+    }
+    
+    /* Larger touch targets for pagination */
+    .pagination a,
+    .pagination-current {
+        padding: 12px 16px;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Better spacing for post cards */
+    .post-entry {
+        padding: 20px;
+        margin-bottom: 32px;
+    }
+    
+    .entry-banner {
+        margin: -20px -20px 16px -20px;
+    }
+    
+    .entry-banner img {
+        height: 160px;
+    }
+    
+    .entry-header h2 {
+        font-size: 18px;
+    }
+    
+    /* Trending banner mobile */
+    .pinned-banner {
+        padding: 12px 16px;
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+    
+    .pinned-title {
+        font-size: 14px;
+    }
+    
+    .pinned-meta {
+        display: none;
+    }
+    
+    /* Header mobile adjustments */
+    .site-header::before {
+        top: -12px;
+        width: 30px;
+    }
+    
+    .site-title {
+        font-size: 20px;
+    }
+    
+    .site-subtitle {
+        font-size: 10px !important;
+    }
+    
+    /* Post single page mobile */
+    .post-title {
+        font-size: 26px;
+    }
+    
+    .post-content {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    .post-content blockquote {
+        padding-left: 16px;
+        margin: 24px 0;
+    }
+    
+    .post-epigraph {
+        padding-left: 16px;
+        margin-bottom: 32px;
+    }
+    
+    /* Entry quote on cards */
+    .entry-quote {
+        padding-left: 12px;
+        margin: 12px 0;
+    }
+    
+    .entry-quote p {
+        font-size: 13px;
+    }
+    
+    /* Mobile nav active state improvement */
+    .mobile-nav a {
+        padding: 12px 14px;
+    }
+    
+    /* Prevent horizontal scroll */
+    .site-wrapper {
+        overflow-x: hidden;
+    }
+    
+    /* Better tap feedback */
+    .post-entry:active {
+        transform: scale(0.98);
+    }
+    
+    .mobile-nav a:active,
+    .pagination a:active {
+        opacity: 0.7;
+    }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+    .site-wrapper {
+        padding: 24px 16px 80px;
+    }
+    
+    .post-entry {
+        padding: 16px;
+    }
+    
+    .entry-banner {
+        margin: -16px -16px 14px -16px;
+    }
+    
+    .entry-header h2 {
+        font-size: 16px;
+    }
+    
+    .pagination {
+        gap: 4px;
+    }
+    
+    .pagination a,
+    .pagination-current {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 701px) and (max-width: 900px) {
+    .content-wrapper {
+        grid-template-columns: 120px 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .sidebar-nav a {
+        font-size: 14px;
+    }
+    
+    .popular-section a {
+        font-size: 12px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    /* Remove hover effects that don't work on touch */
+    .post-entry:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .post-entry:hover .entry-banner img {
+        transform: none;
+    }
+    
+    .site-title a::after {
+        display: none;
+    }
+    
+    /* Add active states instead */
+    .post-entry:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+}
