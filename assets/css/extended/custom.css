@@ -244,3 +244,9 @@ html[data-theme="light"] .entry-footer {
     letter-spacing: 8px;
     color: #a09080;
 }
+
+/* Bold section breaks */
+.post-content hr::before,
+.story-content hr::before {
+    font-weight: 700 !important;
+}
