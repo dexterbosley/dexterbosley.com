@@ -1,6 +1,8 @@
 ---
 title: "About Dexter Bosley"
 layout: "about"
+cover:
+  image: "/images/about-banner.jpg"
 ---
 
 **Currently**
