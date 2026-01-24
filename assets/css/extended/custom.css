@@ -204,3 +204,23 @@ html[data-theme="light"] .entry-footer {
     padding: 2px 8px !important;
     border-radius: 3px !important;
 }
+
+/* Top share button in meta */
+.post-meta {
+    flex-wrap: wrap;
+}
+
+.meta-spacer {
+    flex-grow: 1;
+}
+
+.share-btn-top {
+    margin-left: auto;
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.share-btn-top svg {
+    width: 14px;
+    height: 14px;
+}

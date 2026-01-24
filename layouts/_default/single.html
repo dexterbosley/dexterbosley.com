@@ -17,6 +17,15 @@
         <span>{{ .Date.Format "January 2, 2006" }}</span>
         <span>·</span>
         <span>{{ .ReadingTime }} min read</span>
+        <span class="meta-spacer"></span>
+        <button class="share-btn share-btn-top" aria-label="Share">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
     </div>
 
     {{- with .Params.epigraph }}
@@ -46,31 +55,33 @@
 </article>
 
 <script>
-document.querySelector('.share-btn').addEventListener('click', async function() {
-    const data = {
-        title: '{{ .Title }}',
-        url: window.location.href
-    };
-    
-    if (navigator.share) {
-        try {
-            await navigator.share(data);
-        } catch (err) {
-            if (err.name !== 'AbortError') {
-                copyToClipboard();
+document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const data = {
+            title: '{{ .Title }}',
+            url: window.location.href
+        };
+        
+        if (navigator.share) {
+            try {
+                await navigator.share(data);
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    copyToClipboard(this);
+                }
             }
+        } else {
+            copyToClipboard(this);
         }
-    } else {
-        copyToClipboard();
-    }
-    
-    function copyToClipboard() {
-        navigator.clipboard.writeText(window.location.href).then(function() {
-            const btn = document.querySelector('.share-btn span');
-            btn.textContent = 'Copied';
-            setTimeout(() => btn.textContent = 'Share', 2000);
-        });
-    }
+        
+        function copyToClipboard(button) {
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                const span = button.querySelector('span');
+                span.textContent = 'Copied';
+                setTimeout(() => span.textContent = 'Share', 2000);
+            });
+        }
+    });
 });
 </script>
 {{- end }}

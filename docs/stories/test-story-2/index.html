@@ -14,7 +14,7 @@
 <meta name="description" content="This is test story number 2 for pagination testing.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.dexterbosley.com/stories/test-story-2/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.3dfc6df2e09e9c7b3a23d71f13002d6261b4d4ae4f5d13793952a078363eb86e.css" integrity="sha256-Pfxt8uCenHs6I9cfEwAtYmG01K5PXRN5OVKgeDY&#43;uG4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b7c522f64452265fe6a8e0e4eea5181fff1c1a978c67a41e38a538ef95117406.css" integrity="sha256-t8Ui9kRSJl/mqODk7qUYH/8cGpeMZ6QeOKU475URdAY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.dexterbosley.com/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.dexterbosley.com/favicon.svg">
@@ -496,6 +496,15 @@
         <span>January 9, 2026</span>
         <span>·</span>
         <span>1 min read</span>
+        <span class="meta-spacer"></span>
+        <button class="share-btn share-btn-top" aria-label="Share">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
     </div>
 
     <div class="post-content story-content">
@@ -517,31 +526,33 @@
 </article>
 
 <script>
-document.querySelector('.share-btn').addEventListener('click', async function() {
-    const data = {
-        title: 'Test Story 2',
-        url: window.location.href
-    };
-    
-    if (navigator.share) {
-        try {
-            await navigator.share(data);
-        } catch (err) {
-            if (err.name !== 'AbortError') {
-                copyToClipboard();
+document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const data = {
+            title: 'Test Story 2',
+            url: window.location.href
+        };
+        
+        if (navigator.share) {
+            try {
+                await navigator.share(data);
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    copyToClipboard(this);
+                }
             }
+        } else {
+            copyToClipboard(this);
         }
-    } else {
-        copyToClipboard();
-    }
-    
-    function copyToClipboard() {
-        navigator.clipboard.writeText(window.location.href).then(function() {
-            const btn = document.querySelector('.share-btn span');
-            btn.textContent = 'Copied';
-            setTimeout(() => btn.textContent = 'Share', 2000);
-        });
-    }
+        
+        function copyToClipboard(button) {
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                const span = button.querySelector('span');
+                span.textContent = 'Copied';
+                setTimeout(() => span.textContent = 'Share', 2000);
+            });
+        }
+    });
 });
 </script>
             </main>
