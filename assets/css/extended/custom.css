@@ -427,3 +427,16 @@ article.post-entry .entry-header h2 {
     margin: 0 0 12px 0 !important;
     color: #2d2820 !important;
 }
+
+/* Force main-content to fill grid area */
+.content-wrapper {
+    display: grid !important;
+    grid-template-columns: 150px 1fr !important;
+    gap: 50px !important;
+}
+
+.main-content {
+    min-width: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+}
