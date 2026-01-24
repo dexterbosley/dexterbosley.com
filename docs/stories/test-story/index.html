@@ -482,6 +482,47 @@
         html[data-theme="light"] .theme-toggle .moon-icon {
             display: block;
         }
+        
+         
+        .mobile-popular {
+            display: none;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        
+        .mobile-popular-label {
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #a09080;
+            margin-right: 4px;
+        }
+        
+        .mobile-popular-item {
+            font-size: 12px;
+            font-weight: 400;
+            color: #706050;
+            text-decoration: none;
+            padding: 6px 12px;
+            background: #fcfaf6;
+            border: 1px solid #e8e0d4;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+        }
+        
+        .mobile-popular-item:hover {
+            background: #f5f0e8;
+            color: #2d2820;
+        }
+        
+        @media (max-width: 700px) {
+            .mobile-popular {
+                display: flex;
+            }
+        }
     </style>
 
 </head>
@@ -494,6 +535,13 @@
             </div>
             
         </header>
+        
+        <div class="mobile-popular">
+            <span class="mobile-popular-label">Popular</span>
+            <a href="/essays/test-essay/" class="mobile-popular-item">On Writing</a>
+            <a href="/essays/test-essay-1/" class="mobile-popular-item">The Craft</a>
+            <a href="/stories/test-story/" class="mobile-popular-item">First Light</a>
+        </div>
         
         <div class="content-wrapper">
             <aside class="sidebar">
@@ -514,7 +562,6 @@
                         <li><a href="/essays/test-essay/">On Writing</a></li>
                         <li><a href="/essays/test-essay-1/">The Craft</a></li>
                         <li><a href="/stories/test-story/">First Light</a></li>
-                        <li><a href="/stories/test-story-1/">The Waiting</a></li>
                     </ul>
                 </div>
             </aside>
