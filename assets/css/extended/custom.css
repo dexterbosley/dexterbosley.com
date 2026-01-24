@@ -286,16 +286,30 @@ html[data-theme="light"] .entry-footer {
     }
 }
 
-/* Fix post entry width - remove max-width constraint */
-.post-entry {
-    max-width: none !important;
-}
-
 /* Fix post entry and main content width */
 .post-entry {
     max-width: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+}
+
+.main-content {
+    max-width: none !important;
+}
+
+/* Remove sidebar nav decorations */
+.sidebar-nav a::after,
+.sidebar-nav a.active::before {
+    display: none !important;
+}
+
+
+/* Consistent feed layout - no max-width constraints */
+.post-entry {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
 }
 
 .main-content {
