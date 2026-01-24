@@ -388,3 +388,42 @@ article.post-entry {
 .entry-header h2 {
     font-size: 20px !important;
 }
+
+/* NUCLEAR OPTION - force consistent card sizing everywhere */
+.main-content .post-entry,
+main .post-entry,
+article.post-entry {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 24px !important;
+    margin-bottom: 48px !important;
+    background: #fcfaf6 !important;
+    border-radius: 4px !important;
+    position: relative !important;
+}
+
+.main-content .entry-banner,
+main .entry-banner,
+article.post-entry .entry-banner {
+    margin: -24px -24px 20px -24px !important;
+    overflow: hidden !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.main-content .entry-banner img,
+main .entry-banner img,
+article.post-entry .entry-banner img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    opacity: 1 !important;
+}
+
+.main-content .entry-header h2,
+main .entry-header h2,
+article.post-entry .entry-header h2 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    margin: 0 0 12px 0 !important;
+    color: #2d2820 !important;
+}
