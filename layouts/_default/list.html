@@ -10,7 +10,7 @@
 <a href="{{ .Permalink }}" class="pinned-banner">
   <span class="pinned-type">Trending</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
 </a>
 {{- end }}
 {{- else if eq .Title "Essays" }}
@@ -18,7 +18,7 @@
 <a href="{{ .Permalink }}" class="pinned-banner">
   <span class="pinned-type">Trending</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
 </a>
 {{- end }}
 {{- else if eq .Title "Stories" }}
@@ -26,7 +26,7 @@
 <a href="{{ .Permalink }}" class="pinned-banner">
   <span class="pinned-type">Trending</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min</span>
+  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
 </a>
 {{- end }}
 {{- end }}
