@@ -290,3 +290,20 @@ html[data-theme="light"] .entry-footer {
 .post-entry {
     max-width: none !important;
 }
+
+/* Fix post entry and main content width */
+.post-entry {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.main-content {
+    max-width: none !important;
+}
+
+/* Remove sidebar nav decorations */
+.sidebar-nav a::after,
+.sidebar-nav a.active::before {
+    display: none !important;
+}
