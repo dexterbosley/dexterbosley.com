@@ -224,3 +224,22 @@ html[data-theme="light"] .entry-footer {
     width: 14px;
     height: 14px;
 }
+
+/* Fix hr divider to show only *** */
+.post-content hr,
+.story-content hr {
+    border: none !important;
+    background: none !important;
+    height: auto !important;
+    text-align: center;
+    margin: 48px 0;
+}
+
+.post-content hr::before,
+.story-content hr::before {
+    content: "* * *" !important;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 8px;
+    color: #a09080;
+}
