@@ -440,3 +440,25 @@ article.post-entry .entry-header h2 {
     max-width: none !important;
     width: 100% !important;
 }
+
+/* Header accent line - charcoal + refined subtitle */
+.site-header {
+    position: relative;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #2d2820, transparent);
+}
+
+.site-subtitle {
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    margin-top: 8px !important;
+}
