@@ -462,3 +462,195 @@ article.post-entry .entry-header h2 {
     font-size: 11px !important;
     margin-top: 8px !important;
 }
+
+/* ========================================
+   POLISH & REFINEMENTS
+   ======================================== */
+
+/* 1. Title hover underline animation */
+.site-title a {
+    position: relative;
+    display: inline-block;
+}
+
+.site-title a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.4;
+    transition: width 0.3s ease;
+}
+
+.site-title a:hover::after {
+    width: 100%;
+}
+
+/* 2. Pagination polish */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid #e0d8c8;
+}
+
+.pagination a,
+.pagination-current {
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pagination a {
+    color: #706050;
+}
+
+.pagination a:hover {
+    background: rgba(0,0,0,0.04);
+    color: #2d2820;
+}
+
+.pagination-current {
+    background: #2d2820;
+    color: #f5f0e8;
+    font-weight: 400;
+}
+
+/* 3. Reading progress bar on single posts */
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #2d2820, #706050);
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
+
+/* 4. About page consistency */
+.about-page .post-content,
+.about-content {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #4a4438;
+}
+
+.about-page h1,
+.about-page .post-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #2d2820;
+}
+
+/* 5. Smooth page transitions */
+.main-content {
+    animation: contentFadeIn 0.4s ease;
+}
+
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 6. Better link styling in post content */
+.post-content a {
+    color: #2d2820;
+    text-decoration: underline;
+    text-decoration-color: #c8b898;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.post-content a:hover {
+    text-decoration-color: #2d2820;
+}
+
+/* 7. Blockquote refinement in posts */
+.post-content blockquote {
+    border-left: 2px solid #c8b898;
+    padding-left: 24px;
+    margin: 32px 0;
+    font-style: italic;
+    color: #706050;
+}
+
+/* 8. Image styling in posts */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 32px 0;
+}
+
+/* 9. Code styling (if needed) */
+.post-content code {
+    font-family: 'SF Mono', Monaco, monospace;
+    font-size: 0.9em;
+    background: rgba(0,0,0,0.04);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.post-content pre {
+    background: #2d2820;
+    color: #f5f0e8;
+    padding: 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 32px 0;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+/* 10. Selection color */
+::selection {
+    background: rgba(45, 40, 32, 0.15);
+}
+
+/* 11. Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #2d2820;
+    outline-offset: 2px;
+}
+
+/* 12. Smoother scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 13. Print styles */
+@media print {
+    .sidebar,
+    .mobile-nav,
+    .pagination,
+    .reading-progress {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        display: block !important;
+    }
+    
+    .post-content {
+        font-size: 12pt;
+    }
+}
