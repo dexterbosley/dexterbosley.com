@@ -366,3 +366,25 @@ article.post-entry {
     border-left: 2px solid var(--border) !important;
     font-style: italic !important;
 }
+
+/* FORCE consistent post-entry sizing on ALL pages */
+.post-entry {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 24px !important;
+    margin-bottom: 48px !important;
+}
+
+.entry-banner {
+    margin: -24px -24px 20px -24px !important;
+}
+
+.entry-banner img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+
+.entry-header h2 {
+    font-size: 20px !important;
+}
