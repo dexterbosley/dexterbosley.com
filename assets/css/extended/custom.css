@@ -334,18 +334,7 @@ article.post-entry {
     margin: 0 0 32px 0 !important;
 }
 
-/* Ensure entry-banner images are consistent */
-.entry-banner {
-    width: 100% !important;
-    max-width: none !important;
-}
 
-.entry-banner img {
-    width: 100% !important;
-    height: 200px !important;
-    object-fit: cover !important;
-    border-radius: 8px !important;
-}
 
 /* Entry header consistency */
 .entry-header h2 {
@@ -402,13 +391,7 @@ article.post-entry {
     position: relative !important;
 }
 
-.main-content .entry-banner,
-main .entry-banner,
-article.post-entry .entry-banner {
-    margin: -24px -24px 20px -24px !important;
-    overflow: hidden !important;
-    border-radius: 4px 4px 0 0 !important;
-}
+
 
 .main-content .entry-banner img,
 main .entry-banner img,
@@ -877,6 +860,29 @@ html {
     
     /* Main content fills width */
     .main-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* CLEAN ENTRY-BANNER STYLES */
+.entry-banner {
+    margin: -24px -24px 20px -24px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.entry-banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile: full-bleed cards */
+@media screen and (max-width: 700px) {
+    .post-entry,
+    .pinned-banner {
         width: 100% !important;
         max-width: 100% !important;
     }
