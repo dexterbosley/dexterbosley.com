@@ -10,17 +10,28 @@
     </figure>
     {{- end }}
 
-    <div class="about-intro">
-        <p>I'm Dexter — a product manager who writes to make sense of things.</p>
+    <p class="about-intro">I'm Dexter.</p>
+
+    <div class="about-details">
+        <div class="about-row">
+            <span class="about-label">Currently</span>
+            <span class="about-value">Product at Ramp, New York</span>
+        </div>
+        <div class="about-row">
+            <span class="about-label">Previously</span>
+            <span class="about-value">DoorDash, Uber, WeWork</span>
+        </div>
+        <div class="about-row">
+            <span class="about-label">Education</span>
+            <span class="about-value">Northwestern, Economics</span>
+        </div>
+        <div class="about-row">
+            <span class="about-label">Interests</span>
+            <span class="about-value">Skiing, writing, walking, sweaters</span>
+        </div>
     </div>
 
-    <div class="about-content post-content">
-        {{ .Content }}
-    </div>
-
-    <div class="about-connect">
-        <p>Say hello → <a href="mailto:dexter@dexterbosley.com">dexter@dexterbosley.com</a></p>
-    </div>
+    <p class="about-contact">Say hello → <a href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a></p>
 </article>
 
 <style>
@@ -34,6 +45,41 @@
     height: 200px;
     object-fit: cover;
     object-position: center 70%;
+}
+.about-intro {
+    font-size: 16px;
+    color: #2d2820;
+    margin: 0 0 32px 0;
+    line-height: 1.6;
+}
+.about-details {
+    margin-bottom: 32px;
+}
+.about-row {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.about-label {
+    width: 100px;
+    flex-shrink: 0;
+    color: #908070;
+}
+.about-value {
+    color: #2d2820;
+}
+.about-contact {
+    font-size: 15px;
+    color: #706050;
+}
+.about-contact a {
+    color: #2d2820;
+    text-decoration: none;
+    border-bottom: 1px solid #d0c8b8;
+}
+.about-contact a:hover {
+    color: #504030;
+    border-color: #a09080;
 }
 @media (max-width: 700px) {
     .about-banner img {
