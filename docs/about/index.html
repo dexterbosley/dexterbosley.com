@@ -355,11 +355,15 @@ Interests
                 display: flex !important;
             }
             
-            .post-entry {
-                width: 100% !important;
-                max-width: 100% !important;
+            .post-entry,
+            article.post-entry,
+            .post-entry.featured {
+                width: calc(100vw - 32px) !important;
+                max-width: calc(100vw - 32px) !important;
+                min-width: 0 !important;
                 margin-left: 0 !important;
                 margin-right: 0 !important;
+                box-sizing: border-box !important;
             }
             
             .entry-banner {
