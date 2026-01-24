@@ -461,6 +461,27 @@
         }
         
          
+        .mobile-subscribe {
+            display: none;
+            font-size: 13px;
+            font-weight: 400;
+            color: #504030;
+            text-decoration: none;
+            border-bottom: 1px solid #d0c8b8;
+        }
+        
+        .mobile-subscribe:hover {
+            color: #2d2820;
+            border-color: #a09080;
+        }
+        
+        @media (max-width: 700px) {
+            .mobile-subscribe {
+                display: inline-block;
+            }
+        }
+        
+         
         .mobile-popular {
             display: none;
             font-size: 13px;
@@ -499,7 +520,7 @@
                 <h1 class="site-title"><a href="/">Thinking in Public</a></h1>
                 <p class="site-subtitle">by Dexter Bosley</p>
             </div>
-            
+            <a href="https://secure.givewell.org/" target="_blank" class="mobile-subscribe">Subscribe</a>
         </header>
         
         <div class="mobile-popular">
