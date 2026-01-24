@@ -5,15 +5,15 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: #1a1a1a;
+    color: #f5f0e8;
     text-decoration: none;
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid #f5f0e8;
     padding-bottom: 1px;
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 .footer-subscribe a:hover {
-    color: #666666;
-    border-bottom-color: #666666;
+    color: #a09080666;
+    border-bottom-color: #a09080666;
 }
 @media (min-width: 800px) {
     .footer-subscribe {

@@ -7,20 +7,20 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #999999;
+    color: #706050999;
     margin-bottom: 0;
 }
 .page-header .section-name {
-    color: #1a1a1a;
+    color: #f5f0e8;
     font-weight: 500;
 }
 .page-header .section-sep {
-    color: #cccccc;
+    color: #4a4438ccc;
     margin: 0 6px;
     font-weight: 300;
 }
 .page-header .section-sub {
-    color: #999999;
+    color: #706050999;
     font-weight: 300;
 }
 
@@ -29,7 +29,7 @@
     align-items: center;
     gap: 12px;
     background: #f8f8f8;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #2d2820;
     border-radius: 6px;
     padding: 14px 18px;
     margin-bottom: 30px;
@@ -39,15 +39,15 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #666;
-    background: #e8e8e8;
+    color: #a09080;
+    background: #2d2820;
     padding: 3px 8px;
     border-radius: 3px;
     flex-shrink: 0;
 }
 .pinned-link {
     font-size: 15px;
-    color: #1a1a1a;
+    color: #f5f0e8;
     text-decoration: none;
     line-height: 1.4;
 }
@@ -64,23 +64,23 @@
     margin: 3rem 0 2rem;
     font-size: 13px;
     font-weight: 300;
-    color: #999;
+    color: #706050;
 }
 .pagination a {
     text-decoration: none;
-    color: #999;
+    color: #706050;
     transition: color 0.2s ease;
 }
 .pagination a:hover {
-    color: #1a1a1a;
+    color: #f5f0e8;
 }
 .pagination-current {
-    color: #1a1a1a;
+    color: #f5f0e8;
     font-weight: 400;
 }
 .pagination-prev,
 .pagination-next {
-    color: #999;
+    color: #706050;
 }
 
 /* Footer copyright */
@@ -88,8 +88,8 @@
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #2d2820;
     font-size: 12px;
     font-weight: 300;
-    color: #999;
+    color: #706050;
 }

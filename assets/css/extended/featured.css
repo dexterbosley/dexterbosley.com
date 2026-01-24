@@ -8,7 +8,7 @@
     margin-bottom: 30px;
     padding: 14px 18px;
     background: #fafafa;
-    border-left: 3px solid #1a1a1a;
+    border-left: 3px solid #f5f0e8;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -19,8 +19,8 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #1a1a1a;
-    background: #e8e8e8;
+    color: #f5f0e8;
+    background: #2d2820;
     padding: 3px 8px;
     border-radius: 3px;
 }
@@ -28,10 +28,10 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: #333;
+    color: #e0d8c8;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 .pinned-link:hover {
-    color: #666;
+    color: #a09080;
 }

@@ -26,7 +26,7 @@
     .nav-group {
         display: none;
         padding: 15px 0;
-        border-top: 1px solid #e0e0e0;
+        border-top: 1px solid #2d2820;
         margin-top: 15px;
     }
     .nav-group.show {
@@ -50,7 +50,7 @@
     .mobile-menu-trigger {
         display: flex !important;
         padding: 8px;
-        color: #1a1a1a;
+        color: #f5f0e8;
     }
     
     /* Pinned banner */

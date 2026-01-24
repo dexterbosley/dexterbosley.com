@@ -4,7 +4,7 @@
     text-decoration: none;
     padding: 28px 32px;
     margin-bottom: 48px;
-    background: #252525;
+    background: #fcfaf6;
     border-radius: 6px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -20,7 +20,7 @@
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #888;
+    color: #908070;
     margin-bottom: 8px;
 }
 
@@ -28,7 +28,7 @@
     display: block;
     font-size: 22px;
     font-weight: 400;
-    color: #e0e0e0;
+    color: #2d2820;
     letter-spacing: -0.01em;
     margin-bottom: 8px;
 }
@@ -36,18 +36,18 @@
 .pinned-meta {
     display: block;
     font-size: 13px;
-    color: #666;
+    color: #a09080;
     font-weight: 300;
 }
 
 /* ========== ENTRY FOOTER ========== */
 .entry-footer {
     font-size: 13px;
-    color: #888;
+    color: #908070;
     margin-top: 12px;
 }
 
-html[data-theme="dark"] .entry-footer {
+html[data-theme="light"] .entry-footer {
     color: #777;
 }
 

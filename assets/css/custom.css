@@ -1,7 +1,7 @@
 
 /* Popular section divider */
 .popular-box {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #2d2820;
     padding-top: 20px;
     margin-top: 20px;
     background: none;
@@ -9,8 +9,8 @@
     padding: 20px 0 0 0;
 }
 
-html[data-theme="dark"] .popular-box {
-    border-top-color: #333;
+html[data-theme="light"] .popular-box {
+    border-top-color: #e0d8c8;
     background: none;
 }
 
