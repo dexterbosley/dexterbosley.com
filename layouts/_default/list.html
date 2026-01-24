@@ -1,7 +1,9 @@
 {{- define "main" }}
 
-{{- $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
-{{- if not .IsHome }}
+{{- $paginator := "" }}
+{{- if .IsHome }}
+  {{- $paginator = .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
+{{- else }}
   {{- $paginator = .Paginate .Pages }}
 {{- end }}
 
@@ -15,27 +17,28 @@
   <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }} · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
-{{- else if and (eq .Title "Essays") $isFirstPage }}
+{{- else if and (eq .Section "essays") $isFirstPage }}
 {{- with site.GetPage "/essays/test-essay-1" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
   <span class="pinned-type">Trending</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }} · {{ .ReadingTime }} min</span>
+  <span class="pinned-meta">Essay · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
-{{- else if and (eq .Title "Stories") $isFirstPage }}
+{{- else if and (eq .Section "stories") $isFirstPage }}
 {{- with site.GetPage "/stories/small-talk" }}
 <a href="{{ .Permalink }}" class="pinned-banner">
   <span class="pinned-type">Trending</span>
   <span class="pinned-title">{{ .Title }}</span>
-  <span class="pinned-meta">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }} · {{ .ReadingTime }} min</span>
+  <span class="pinned-meta">Story · {{ .ReadingTime }} min</span>
 </a>
 {{- end }}
 {{- end }}
 
+{{- $first := true }}
 {{- range $paginator.Pages }}
 {{- $type := cond (eq .Section "essays") "essay" "story" }}
-<article class="post-entry" data-type="{{ $type }}">
+<article class="post-entry{{ if $first }} featured{{ end }}" data-type="{{ $type }}">
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
@@ -57,6 +60,7 @@
   </footer>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
+{{- $first = false }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
