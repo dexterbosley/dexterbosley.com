@@ -250,3 +250,11 @@ html[data-theme="light"] .entry-footer {
 .story-content hr::before {
     font-weight: 700 !important;
 }
+
+/* Darker, more visible section breaks */
+.post-content hr::before,
+.story-content hr::before {
+    color: #706050 !important;
+    font-size: 18px !important;
+    letter-spacing: 16px !important;
+}
