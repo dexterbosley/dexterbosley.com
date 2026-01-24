@@ -4,7 +4,8 @@ date: 2025-01-18
 draft: false
 quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
-banner: "/images/matisse-banner.jpg"
+cover:
+  image: "/images/matisse-banner.jpg"
 description: "Two brothers wait outside a church, watching the street."
 ---
 
