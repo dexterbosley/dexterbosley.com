@@ -4,6 +4,16 @@
         <h1 class="post-title">{{ .Title }}</h1>
     </header>
 
+    {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
+    {{- with $banner }}
+    <figure class="post-banner">
+        <img src="{{ . }}" alt="{{ $.Title }}">
+        {{- if $.Params.cover.credit }}
+        <figcaption class="banner-credit">{{ $.Params.cover.credit }}</figcaption>
+        {{- end }}
+    </figure>
+    {{- end }}
+
     <div class="post-meta">
         <span>{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
         <span>·</span>
@@ -20,16 +30,6 @@
             <span>Share</span>
         </button>
     </div>
-
-    {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
-    {{- with $banner }}
-    <figure class="post-banner">
-        <img src="{{ . }}" alt="{{ $.Title }}">
-        {{- if $.Params.cover.credit }}
-        <figcaption class="banner-credit">{{ $.Params.cover.credit }}</figcaption>
-        {{- end }}
-    </figure>
-    {{- end }}
 
     {{- with .Params.epigraph }}
     <div class="post-epigraph">
