@@ -6,7 +6,7 @@ quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
 cover:
   image: "/images/matisse-banner.jpg"
-  credit: "Henri Matisse, The Red Room, 1908"
+  credit: "Henri Matisse, Polynesia, the Sea, 1946"
 description: "Two brothers wait outside a church, watching the street."
 ---
 
