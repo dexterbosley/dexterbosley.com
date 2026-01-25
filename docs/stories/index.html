@@ -463,7 +463,6 @@ body {
 
  
 @media (max-width: 700px) {
-     
     .site-wrapper {
         padding: 24px 16px 80px;
     }
@@ -484,74 +483,29 @@ body {
         display: flex;
     }
     
-     
     .site-header {
         margin-bottom: 24px;
         padding-bottom: 20px;
     }
     
-     
-    .post-entry,
-    .post-entry.featured,
-    article.post-entry {
-        margin-bottom: 40px;
-        background: none !important;
-        border: none !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
-        padding: 0 !important;
-    }
-    
-    .post-entry .entry-banner {
-        margin: 0 0 8px 0;
-        border-radius: 0;
+    .post-entry {
+        margin-bottom: 32px;
     }
     
     .post-entry .entry-banner img {
-        height: 350px;
-        border-radius: 0;
-        width: calc(100% + 32px);
-        margin-left: -16px;
-    }
-    
-    .post-entry .banner-credit,
-    .post-entry .entry-banner .banner-credit,
-    .entry-banner .banner-credit {
-        padding: 8px 0 0 0 !important;
-        margin: 0 !important;
-    }
-    
-    .post-entry .entry-header,
-    .post-entry .entry-quote,
-    .post-entry .entry-footer {
-        padding: 0;
+        height: 300px;
     }
     
     .post-entry .entry-header h2 {
         font-size: 22px;
-        margin-top: 12px;
     }
     
-    .post-entry .entry-quote p {
-        font-size: 15px;
-    }
-    
-     
     .post-title {
         font-size: 28px;
     }
     
-    .post-banner {
-        margin: 0 -16px 8px -16px;
-    }
-    
     .post-banner img {
-        border-radius: 0;
-        max-height: 350px;
-    }
-    
-    .post-banner .banner-credit {
-        padding: 0;
+        max-height: 300px;
     }
 }
 </style>
@@ -626,7 +580,6 @@ body {
     </nav>
     
     <script>
-        
         (function() {
             const path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
             document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(link => {
