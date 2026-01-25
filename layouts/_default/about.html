@@ -7,6 +7,9 @@
     {{- if .Params.cover.image }}
     <figure class="about-banner">
         <img src="{{ .Params.cover.image | absURL }}" alt="About banner">
+        {{- if .Params.cover.credit }}
+        <figcaption class="banner-credit">{{ .Params.cover.credit }}</figcaption>
+        {{- end }}
     </figure>
     {{- end }}
 
