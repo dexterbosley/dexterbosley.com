@@ -1,9 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="light">
+<head>
+    <script>document.documentElement.setAttribute("data-theme","light");</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>On Agentic Software | Thinking in Public</title><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>On Agentic Software | Thinking in Public</title>
+<meta name="keywords" content="">
+<meta name="description" content="In the spirit of transparency, I&rsquo;ll admit: I need to squint to see how available &ldquo;agentic software&rdquo; is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.
+I start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of &ldquo;traditional software&rdquo; contrasted to the fundamentals of emerging &ldquo;agentic software&rdquo; is worthwhile.">
+<meta name="author" content="">
+<link rel="canonical" href="https://www.dexterbosley.com/essays/on-agentic-software/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f04f362033dc31c7f27763466ae573593ffd4d289087595ffac4fe103fc1f117.css" integrity="sha256-8E82IDPcMcfyd2NGauVzWT/9TSiQh1lf&#43;sT&#43;ED/B8Rc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.dexterbosley.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.dexterbosley.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.dexterbosley.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://www.dexterbosley.com/favicon.svg">
+<link rel="mask-icon" href="https://www.dexterbosley.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.dexterbosley.com/essays/on-agentic-software/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script>
+    localStorage.setItem("pref-theme", "light");
+    document.documentElement.dataset.theme = 'light';
+</script>
+<meta property="og:url" content="https://www.dexterbosley.com/essays/on-agentic-software/">
+  <meta property="og:site_name" content="Thinking in Public">
+  <meta property="og:title" content="On Agentic Software">
+  <meta property="og:description" content="In the spirit of transparency, I’ll admit: I need to squint to see how available “agentic software” is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.
+I start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of “traditional software” contrasted to the fundamentals of emerging “agentic software” is worthwhile.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="essays">
+    <meta property="article:published_time" content="2025-01-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-25T00:00:00+00:00">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800">
+<meta name="twitter:title" content="On Agentic Software">
+<meta name="twitter:description" content="In the spirit of transparency, I&rsquo;ll admit: I need to squint to see how available &ldquo;agentic software&rdquo; is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.
+I start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of &ldquo;traditional software&rdquo; contrasted to the fundamentals of emerging &ldquo;agentic software&rdquo; is worthwhile.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Essays",
+      "item": "https://www.dexterbosley.com/essays/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "On Agentic Software",
+      "item": "https://www.dexterbosley.com/essays/on-agentic-software/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "On Agentic Software",
+  "name": "On Agentic Software",
+  "description": "In the spirit of transparency, I\u0026rsquo;ll admit: I need to squint to see how available \u0026ldquo;agentic software\u0026rdquo; is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.\nI start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of \u0026ldquo;traditional software\u0026rdquo; contrasted to the fundamentals of emerging \u0026ldquo;agentic software\u0026rdquo; is worthwhile.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "In the spirit of transparency, I’ll admit: I need to squint to see how available “agentic software” is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.\nI start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of “traditional software” contrasted to the fundamentals of emerging “agentic software” is worthwhile.\nI define “traditional software” as a collection of digital tools that help end users complete a set of tasks. This means effectively all traditional software companies do some version of the following:\nlisten to users describe a bunch of things they need to do design intuitive digital solutions to help them do those things implement those digital solutions in a scalable and stable way rinse and repeat, bonus points for identifying adjacent growth verticals Every PED (‘Product, Engineering, and Design’) role at a traditional software company can be mapped to one of these four core actions or some combination thereof. By this definition, traditional software development is best understood as a repeating process of feature ideation, creation and distribution on top of an ever-expanding product surface.\nHaving more features has obvious benefits but there are also clear negative externalities. Chief among such negative externalities is that as a product surface combines more and more features, and as a result becomes more and more complex, the requirements of “design systems” and “context sharing” becomes more and more intrusive, which then demands more and more of the time of PED functions as a proportion of everything else they do.\nConsider how much time is spent thinking about relative feature prioritization, UI implementations, and UX testing at Ramp (hint: it’s a lot). To be clear, to create great traditional software, allocating time to these development pillars makes sense, which is why they are such a point of emphasis. They just take up a lot of time.\nAnd Ramp is best-in-class. Greener pastures are far and few between.\nSure, feature consolidation is possible, but it is often on the margin and it is rarely a consistent focus. For companies building traditional software at scale, ensuring “tasteful expansion” becomes the name of the game. Fail and you become Salesforce and its army of third-party implementation consultants. The only worse fate would be losing deals due to a lack of feature parity. “Agentic software” is primed to follow a very different development cycle.\nI define agentic software as a collection of tasks that can be successfully completed without human intervention given a set of defined digital inputs. The transition to successful task completion from feature availability has far-reaching implications. First, agentic software quality can be universally measured with only two questions:\ncan the software successfully complete tasks at an acceptable accuracy? what tasks are available within the software? In the maximalist sense, there is no user experience to consider. The best possible version of any agentic software is that which successfully completes the task it claims to be able to complete with perfect accuracy and no human intervention whatsoever. To that end, all that matters is the agent’s success rate and the agent’s accuracy with input quality held constant. Whether the interaction with the software is pleasant or intuitive or efficient is not material; the interaction itself is a failure. More simply, agentic software compresses the user experience to a single evaluation and that evaluation has nothing to do with the user’s interaction with said software. That’s weird! Users usually talk about their experience with software based on how they feel about it over time with consistent use.\nSecond, and in a similarly maximalist sense, product differentiation is achieved by diminishing interaction, not increasing interaction. Agentic software is fundamentally better if the way by which you collect inputs is somehow repeatable or predictable such that you do not have to do it often or even at all. Again that’s weird! Development teams are usually incentivized to create software experiences that users enjoy and come back to but now they are most successful if users do not interact with the software at all.\nThe implication is that agentic software is user experience agnostic; all that matters is outcome performance. A customer is no longer paying for the experience and ability to do things a certain way but instead paying for the things to simply be done so he or she can do other things.\n",
+  "wordCount" : "742",
+  "inLanguage": "en",
+  "image":"https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800","datePublished": "2025-01-25T00:00:00Z",
+  "dateModified": "2025-01-25T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.dexterbosley.com/essays/on-agentic-software/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thinking in Public",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.dexterbosley.com/favicon.svg"
+    }
+  }
+}
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.6;
+            background: #fff;
+            color: #f5f0e8;
+        }
+        
+        .site-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        
+         
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0d8c8;
+        }
+        
+        .site-branding {
+            text-align: left;
+        }
+        
+        .site-title {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 4px 0;
+            line-height: 1.2;
+        }
+        
+        .site-title a {
+            color: #f5f0e8;
+            text-decoration: none;
+        }
+        
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .site-logo {
+            width: 32px;
+            height: auto;
+        }
+        
+        .site-title-text {
+            display: block;
+            font-size: 24px;
+            font-weight: 400;
+            color: #2d2820;
+            line-height: 1.2;
+        }
+        
+        .site-subtitle {
+            font-size: 13px;
+            color: #908070;
+            font-weight: 300;
+            margin: 0;
+        }
+        
+         
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+        
+        .theme-toggle:hover {
+            opacity: 1;
+        }
+        
+        .theme-toggle .moon-icon {
+            display: none;
+        }
+        
+         
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 50px;
+        }
+        
+         
+        .sidebar {
+            position: sticky;
+            top: 40px;
+            align-self: start;
+        }
+        
+        .sidebar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+        
+        .sidebar-nav li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-nav a {
+            font-size: 15px;
+            font-weight: 300;
+            color: #a09080;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .sidebar-nav a:hover {
+            color: #f5f0e8;
+        }
+        
+        .sidebar-nav a.active {
+            color: #f5f0e8;
+            font-weight: 500;
+        }
+        
+        .subscribe-link {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 300;
+            color: #f5f0e8;
+            text-decoration: none;
+            border-bottom: 1px solid #f5f0e8;
+            margin-bottom: 24px;
+        }
+        
+        .subscribe-link:hover {
+            color: #a09080;
+            border-color: #a09080;
+        }
+        
+         
+        .popular-section {
+            padding: 0;
+            margin-top: 8px;
+        }
+        
+        .popular-section h4 {
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #908070;
+            margin: 0 0 12px 0;
+        }
+        
+        .popular-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .popular-section li {
+            margin-bottom: 8px;
+        }
+        
+        .popular-section li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .popular-section a {
+            font-size: 13px;
+            font-weight: 300;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .popular-section a:hover {
+            color: #f5f0e8;
+        }
+        
+         
+        .main-content {
+            min-width: 0;
+        }
+        
+         
+        .site-footer { display: none; }
+        
+         
+        .footer {
+            display: none;
+        }
+        
+         
+        
+        @media (max-width: 700px) {
+            .site-wrapper {
+                padding: 24px 16px 80px;
+                max-width: 100%;
+                width: 100%;
+            }
+            
+            .site-header {
+                margin-bottom: 32px;
+                padding-bottom: 24px;
+            }
+            
+            .site-title {
+                font-size: 28px;
+                margin-bottom: 6px;
+            }
+            
+            .site-subtitle {
+                font-size: 12px;
+            }
+            
+            .mobile-popular {
+                margin-bottom: 28px;
+            }
+            
+            .content-wrapper {
+                display: block !important;
+                grid-template-columns: none !important;
+            }
+            
+            .sidebar {
+                display: none;
+            }
+            
+            .mobile-nav {
+                display: flex !important;
+            }
+            
+            .post-entry,
+            article.post-entry,
+            .post-entry.featured {
+                width: calc(100vw - 32px) !important;
+                max-width: calc(100vw - 32px) !important;
+                min-width: 0 !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                box-sizing: border-box !important;
+            }
+            
+            .banner-credit {
+    font-size: 11px;
+    color: #a09080;
+    text-align: left;
+    margin-top: 6px;
+    font-style: italic;
+    padding: 0 24px;
+}
+.entry-banner {
+                margin-left: -20px !important;
+                margin-right: -20px !important;
+                width: calc(100% + 40px) !important;
+            }
+            
+            .entry-banner img {
+                width: 100% !important;
+                height: 180px !important;
+                object-fit: cover !important;
+            }
+            
+            .pinned-banner {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            
+            .main-content {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        
+         
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-top: 1px solid #e0d8c8;
+            padding: 12px 0;
+            justify-content: space-around;
+            z-index: 100;
+        }
+        
+        .mobile-nav a {
+            font-size: 12px;
+            color: #a09080;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        
+        .mobile-nav a.active {
+            color: #f5f0e8;
+            font-weight: 500;
+        }
+        
+         
+        html[data-theme="light"] body {
+            background: #f5f0e8;
+            color: #2d2820;
+        }
+        
+        html[data-theme="light"] .site-title a {
+            color: #2d2820;
+        }
+        
+        html[data-theme="light"] .site-header {
+            border-color: #e0d8c8;
+        }
+        
+        html[data-theme="light"] .sidebar-nav a {
+            color: #706050;
+        }
+        
+        html[data-theme="light"] .sidebar-nav a:hover,
+        html[data-theme="light"] .sidebar-nav a.active {
+            color: #2d2820;
+        }
+        
+        html[data-theme="light"] .subscribe-link {
+            color: #2d2820;
+            border-color: #2d2820;
+        }
+        
+        html[data-theme="light"] .subscribe-link:hover {
+            color: #786850;
+            border-color: #786850;
+        }
+        
+        html[data-theme="light"] .popular-section {
+             
+        }
+        
+        html[data-theme="light"] .popular-section h4 {
+            color: #a09080;
+        }
+        
+        html[data-theme="light"] .popular-section a {
+            color: #706050;
+        }
+        
+        html[data-theme="light"] .popular-section a:hover {
+            color: #2d2820;
+        }
+        
+        html[data-theme="light"] .site-footer {
+            color: #a09080;
+        }
+        
+        html[data-theme="light"] .mobile-nav {
+            background: #f5f0e8;
+            border-color: #e0d8c8;
+        }
+        
+        html[data-theme="light"] .mobile-nav a {
+            color: #908070;
+        }
+        
+        html[data-theme="light"] .mobile-nav a.active {
+            color: #2d2820;
+        }
+        
+        html[data-theme="light"] .theme-toggle .sun-icon {
+            display: none;
+        }
+        
+        html[data-theme="light"] .theme-toggle .moon-icon {
+            display: block;
+        }
+        
+         
+        .mobile-popular {
+            display: none;
+            font-size: 13px;
+            color: #908070;
+            margin-bottom: 24px;
+        }
+        
+        .mobile-popular a {
+            color: #504030;
+            text-decoration: none;
+            border-bottom: 1px solid #d0c8b8;
+        }
+        
+        .mobile-popular a:hover {
+            color: #2d2820;
+            border-color: #a09080;
+        }
+        
+        .mobile-popular .sep {
+            margin: 0 8px;
+            color: #c0b8a8;
+        }
+        
+        @media (max-width: 700px) {
+            .mobile-popular {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="site-branding"><a href="/" class="logo-link"><img src="/images/penguin-logo.svg" alt="" class="site-logo"><div>
+                <span class="site-title-text">Thinking in Public</span>
+                <span class="site-subtitle">by Dexter Bosley</span></div></a>
+            </div>
+        </header>
+        
+        <div class="mobile-popular">
+            Popular: <a href="/stories/small-talk/">Small Talk</a>
+        </div>
+        
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="/">All</a></li>
+                        <li><a href="/essays/">Essays</a></li>
+                        <li><a href="/stories/">Stories</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="https://secure.givewell.org/" target="_blank" class="subscribe-link">Subscribe</a>
+                
+                <div class="popular-section">
+                    <h4>Popular</h4>
+                    <ul>
+                        <li><a href="/stories/small-talk/">Small Talk</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <main class="main-content">
+                
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">On Agentic Software</h1>
+    </header>
+    <figure class="post-banner">
+        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800" alt="On Agentic Software">
+    </figure>
+
+    <div class="post-meta">
+        <span>Essay</span>
+        <span>·</span>
+        <span>January 25, 2025</span>
+        <span>·</span>
+        <span>4 min read</span>
+        <span class="meta-spacer"></span>
+        <button class="share-btn share-btn-top" aria-label="Share">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
+    </div>
+
+    <div class="post-content ">
+        <p>In the spirit of transparency, I&rsquo;ll admit: I need to squint to see how available &ldquo;agentic software&rdquo; is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.</p>
+<p>I start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of &ldquo;traditional software&rdquo; contrasted to the fundamentals of emerging &ldquo;agentic software&rdquo; is worthwhile.</p>
+<p>I define &ldquo;traditional software&rdquo; as a collection of digital tools that help end users complete a set of tasks. This means effectively all traditional software companies do some version of the following:</p>
+<ul>
+<li>listen to users describe a bunch of things they need to do</li>
+<li>design intuitive digital solutions to help them do those things</li>
+<li>implement those digital solutions in a scalable and stable way</li>
+<li>rinse and repeat, bonus points for identifying adjacent growth verticals</li>
+</ul>
+<p>Every PED (&lsquo;Product, Engineering, and Design&rsquo;) role at a traditional software company can be mapped to one of these four core actions or some combination thereof. By this definition, traditional software development is best understood as a repeating process of feature ideation, creation and distribution on top of an ever-expanding product surface.</p>
+<p>Having more features has obvious benefits but there are also clear negative externalities. Chief among such negative externalities is that as a product surface combines more and more features, and as a result becomes more and more complex, the requirements of &ldquo;design systems&rdquo; and &ldquo;context sharing&rdquo; becomes more and more intrusive, which then demands more and more of the time of PED functions as a proportion of everything else they do.</p>
+<p>Consider how much time is spent thinking about relative feature prioritization, UI implementations, and UX testing at Ramp (hint: it&rsquo;s a lot). To be clear, to create great traditional software, allocating time to these development pillars makes sense, which is why they are such a point of emphasis. They just take up a lot of time.</p>
+<p>And Ramp is best-in-class. Greener pastures are far and few between.</p>
+<p><img alt="Tasteful expansion graph" loading="lazy" src="/images/tasteful-expansion.png"></p>
+<p>Sure, feature consolidation is possible, but it is often on the margin and it is rarely a consistent focus. For companies building traditional software at scale, ensuring &ldquo;tasteful expansion&rdquo; becomes the name of the game. Fail and you become Salesforce and its army of third-party implementation consultants. The only worse fate would be losing deals due to a lack of feature parity. &ldquo;Agentic software&rdquo; is primed to follow a very different development cycle.</p>
+<p>I define agentic software as a collection of tasks that can be successfully completed without human intervention given a set of defined digital inputs. The transition to successful task completion from feature availability has far-reaching implications. First, agentic software quality can be universally measured with only two questions:</p>
+<ul>
+<li>can the software successfully complete tasks at an acceptable accuracy?</li>
+<li>what tasks are available within the software?</li>
+</ul>
+<p>In the maximalist sense, there is no user experience to consider. The best possible version of any agentic software is that which successfully completes the task it claims to be able to complete with perfect accuracy and no human intervention whatsoever. To that end, all that matters is the agent&rsquo;s success rate and the agent&rsquo;s accuracy with input quality held constant. Whether the interaction with the software is pleasant or intuitive or efficient is not material; the interaction itself is a failure. More simply, agentic software compresses the user experience to a single evaluation and that evaluation has nothing to do with the user&rsquo;s interaction with said software. That&rsquo;s weird! Users usually talk about their experience with software based on how they feel about it over time with consistent use.</p>
+<p>Second, and in a similarly maximalist sense, product differentiation is achieved by diminishing interaction, not increasing interaction. Agentic software is fundamentally better if the way by which you collect inputs is somehow repeatable or predictable such that you do not have to do it often or even at all. Again that&rsquo;s weird! Development teams are usually incentivized to create software experiences that users enjoy and come back to but now they are most successful if users do not interact with the software at all.</p>
+<p>The implication is that agentic software is user experience agnostic; all that matters is outcome performance. A customer is no longer paying for the experience and ability to do things a certain way but instead paying for the things to simply be done so he or she can do other things.</p>
+
+    </div>
+
+    <nav class="post-nav">
+        <a href="/essays/" class="back-link">← Essays</a>
+        <button class="share-btn" aria-label="Share">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
+    </nav>
+</article>
+
+<script>
+document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const data = {
+            title: 'On Agentic Software',
+            url: window.location.href
+        };
+        
+        if (navigator.share) {
+            try {
+                await navigator.share(data);
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    copyToClipboard(this);
+                }
+            }
+        } else {
+            copyToClipboard(this);
+        }
+        
+        function copyToClipboard(button) {
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                const span = button.querySelector('span');
+                span.textContent = 'Copied';
+                setTimeout(() => span.textContent = 'Share', 2000);
+            });
+        }
+    });
+});
+</script>
+            </main>
+        </div>
+        
+        
+    </div>
+    
+    <nav class="mobile-nav">
+        <a href="/">All</a>
+        <a href="/essays/">Essays</a>
+        <a href="/stories/">Stories</a>
+        <a href="/about/">About</a>
+    </nav>
+    
+    <script>
+        
+        (function() {
+            const path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
+            document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(link => {
+                const href = link.getAttribute('href').replace(/\/$/, '') || '/';
+                if (path === '/' && href === '/') link.classList.add('active');
+                else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
+            });
+        })();
+        
+        
+        
+    </script>
+
+<script>
+document.documentElement.setAttribute('data-theme', 'light');
+localStorage.setItem('pref-theme', 'light');
+</script>
+
 
 
 <style>
-.post-content img {
-    max-width: 70%;
-    display: block;
-    margin: 24px auto;
+ 
+
+ 
+.post-entry {
+    padding: 24px !important;
+    margin-bottom: 36px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+}
+
+.post-entry .entry-banner img {
+    transition: transform 0.3s ease !important;
+}
+
+.post-entry:hover .entry-banner img {
+    transform: scale(1.02) !important;
+}
+
+ 
+.entry-header h2 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    margin: 0 0 12px 0 !important;
+    line-height: 1.3 !important;
+}
+
+ 
+.entry-quote {
+    margin: 12px 0 !important;
+    padding-left: 14px !important;
+    border-left: 2px solid #d8d0c0 !important;
+}
+.entry-quote p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin: 0 0 5px 0 !important;
+    color: #706050 !important;
+}
+.entry-quote cite {
+    font-size: 12px !important;
+    color: #a09080 !important;
+}
+
+ 
+.entry-footer {
+    font-size: 13px !important;
+    color: #a09080 !important;
+    margin-top: 14px !important;
+}
+
+ 
+.banner-credit {
+    font-size: 11px;
+    color: #a09080;
+    text-align: left;
+    margin-top: 6px;
+    font-style: italic;
+    padding: 0 24px;
+}
+.entry-banner {
+    margin: -24px -24px 18px -24px !important;
+    border-radius: 4px 4px 0 0 !important;
+    overflow: hidden !important;
+}
+.entry-banner img {
+    height: 200px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+}
+
+ 
+.pinned-banner {
+    display: flex !important;
+    align-items: center !important;
+    padding: 16px 20px !important;
+    margin-bottom: 32px !important;
+    gap: 14px !important;
+    border: 1px solid #e8e0d4 !important;
+    border-radius: 6px !important;
+    background: #fcfaf6 !important;
+}
+.pinned-type {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+    border: 1px solid #c8b898 !important;
+    border-radius: 3px !important;
+    color: #a08860 !important;
+    background: transparent !important;
+}
+.pinned-title {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #2d2820 !important;
+    flex-grow: 1 !important;
+}
+.pinned-meta {
+    font-size: 13px !important;
+    color: #a09080 !important;
+    margin-left: auto !important;
+}
+
+ 
+@media screen and (max-width: 700px) {
+    .post-entry,
+    .post-entry.featured,
+    article.post-entry {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+        padding: 18px !important;
+        margin-bottom: 28px !important;
+    }
+    
+    .entry-header h2 {
+        font-size: 18px !important;
+    }
+    
+    .banner-credit {
+    font-size: 11px;
+    color: #a09080;
+    text-align: left;
+    margin-top: 6px;
+    font-style: italic;
+    padding: 0 24px;
+}
+.entry-banner {
+        margin: -18px -18px 14px -18px !important;
+    }
+    .entry-banner img {
+        height: 180px !important;
+    }
+    
+    .entry-quote p {
+        font-size: 13px !important;
+    }
+    
+    .pinned-banner {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 12px 16px !important;
+        margin-bottom: 24px !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+    .pinned-type {
+        flex-shrink: 0 !important;
+    }
+    .pinned-title {
+        font-size: 14px !important;
+        flex-grow: 1 !important;
+        text-align: left !important;
+    }
+    .pinned-meta {
+        font-size: 11px !important;
+        flex-shrink: 0 !important;
+        margin-left: auto !important;
+    }
+}
+
+ 
+.post-meta {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+}
+.post-meta .share-btn-top {
+    margin-left: auto !important;
+}
+.post-nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+ 
+.mobile-nav a.active {
+    font-weight: 600 !important;
+}
+
+ 
+span.pagination-current,
+.pagination span.pagination-current,
+.pagination .pagination-current {
+    font-weight: 600 !important;
+    color: #2d2820 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+    text-decoration-thickness: 1px !important;
+}
+
+ 
+.sidebar-nav a.active {
+    font-weight: 600 !important;
+    color: #2d2820 !important;
 }
 </style>
+
+</body>
+</html>
