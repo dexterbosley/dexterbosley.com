@@ -529,28 +529,45 @@ body {
     }
     
      
-    .post-entry {
-        margin-bottom: 32px;
+    .post-entry,
+    .post-entry.featured,
+    article.post-entry {
+        margin-bottom: 40px;
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
     }
     
     .post-entry .entry-banner {
-        margin: 0 -16px 0 -16px;
+        margin: 0 0 8px 0;
         border-radius: 0;
     }
     
     .post-entry .entry-banner img {
         height: 350px;
         border-radius: 0;
+        width: calc(100% + 32px);
+        margin-left: -16px;
     }
     
     .post-entry .banner-credit,
-    .post-entry .entry-banner .banner-credit {
-        padding: 8px 0 0 0;
-        margin: 0;
+    .post-entry .entry-banner .banner-credit,
+    .entry-banner .banner-credit {
+        padding: 8px 0 0 0 !important;
+        margin: 0 !important;
+    }
+    
+    .post-entry .entry-header,
+    .post-entry .entry-quote,
+    .post-entry .entry-footer {
+        padding: 0;
     }
     
     .post-entry .entry-header h2 {
         font-size: 22px;
+        margin-top: 12px;
     }
     
     .post-entry .entry-quote p {
