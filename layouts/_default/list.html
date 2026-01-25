@@ -27,6 +27,9 @@
   {{- if .Params.cover.image }}
   <figure class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+    {{- if .Params.cover.credit }}
+    <figcaption class="banner-credit">{{ .Params.cover.credit }}</figcaption>
+    {{- end }}
   </figure>
   {{- end }}
   <header class="entry-header">
