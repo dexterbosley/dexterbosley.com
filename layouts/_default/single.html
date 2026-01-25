@@ -8,6 +8,9 @@
     {{- with $banner }}
     <figure class="post-banner">
         <img src="{{ . }}" alt="{{ $.Title }}">
+        {{- if $.Params.cover.credit }}
+        <figcaption class="banner-credit">{{ $.Params.cover.credit }}</figcaption>
+        {{- end }}
     </figure>
     {{- end }}
 
