@@ -3,8 +3,9 @@ title: "On Agentic Software"
 date: 2025-01-25
 type: "essay"
 cover:
-  image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800"
-  alt: "Abstract lines and shapes"
+  image: "/images/about-banner.jpg"
+  credit: "Brévent/Flégère, France"
+  alt: "Mountain landscape"
 ---
 
 In the spirit of transparency, I'll admit: I need to squint to see how available "agentic software" is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.
