@@ -25,12 +25,12 @@
 {{- $type := cond (eq .Section "essays") "essay" "story" }}
 <article class="post-entry{{ if $first }} featured{{ end }}" data-type="{{ $type }}">
   {{- if .Params.cover.image }}
-  <figure class="entry-banner">
+  <div class="entry-banner">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-    {{- if .Params.cover.credit }}
-    <figcaption class="banner-credit">{{ .Params.cover.credit }}</figcaption>
-    {{- end }}
-  </figure>
+  </div>
+  {{- if .Params.cover.credit }}
+  <p class="banner-credit">{{ .Params.cover.credit }}</p>
+  {{- end }}
   {{- end }}
   <header class="entry-header">
     <h2>{{ .Title }}</h2>
