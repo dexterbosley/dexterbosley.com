@@ -447,8 +447,59 @@ p.banner-credit,
     margin-bottom: 32px;
 }
 
-.post-meta .share-btn-top {
+.post-meta .meta-spacer {
+    flex: 1;
+}
+
+.post-meta .share-btn-top,
+.post-meta .share-btn {
     margin-left: auto;
+}
+
+ 
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5ded0;
+}
+
+.post-nav .back-link {
+    font-size: 14px;
+    color: #706050;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-nav .back-link:hover {
+    color: #2d2820;
+}
+
+ 
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #706050;
+    background: transparent;
+    border: 1px solid #d8d0c0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.share-btn:hover {
+    color: #2d2820;
+    border-color: #a09080;
+}
+
+.share-btn svg {
+    width: 14px;
+    height: 14px;
 }
 
 .post-content {
