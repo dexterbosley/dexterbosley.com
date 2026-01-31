@@ -509,11 +509,133 @@ p.banner-credit,
 
 .post-content {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .post-content p {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.6em 0;
+}
+
+ 
+.post-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.2em;
+    line-height: 0.85;
+    padding-right: 10px;
+    padding-top: 4px;
+    font-weight: 400;
+    color: #2d2820;
+}
+
+ 
+.post-content hr {
+    border: none;
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+.post-content hr::before {
+    content: "· · ·";
+    color: #c0b8a8;
+    font-size: 18px;
+    letter-spacing: 0.5em;
+}
+
+ 
+.post-content blockquote {
+    margin: 2em 0;
+    padding: 0 0 0 24px;
+    border-left: 2px solid #d8d0c0;
+    font-style: italic;
+    color: #605040;
+}
+
+.post-content blockquote p {
+    margin: 0;
+}
+
+ 
+.post-content ul,
+.post-content ol {
+    margin: 1.5em 0;
+    padding-left: 1.5em;
+}
+
+.post-content li {
+    margin-bottom: 0.5em;
+}
+
+ 
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin: 2em 0;
+}
+
+ 
+.post-content a {
+    color: #2d2820;
+    text-decoration: underline;
+    text-decoration-color: #d0c8b8;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+}
+
+.post-content a:hover {
+    text-decoration-color: #2d2820;
+}
+
+ 
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5ded0;
+}
+
+.post-nav .back-link {
+    font-size: 14px;
+    color: #706050;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-nav .back-link:hover {
+    color: #2d2820;
+}
+
+ 
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #706050;
+    background: transparent;
+    border: 1px solid #d8d0c0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.share-btn:hover {
+    color: #2d2820;
+    border-color: #a09080;
+}
+
+.share-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+ 
+.post-meta .meta-spacer {
+    flex: 1;
 }
 
  
