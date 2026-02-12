@@ -29,6 +29,18 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
 
  
+::selection { background: rgba(139, 155, 181, 0.25); color: #d0d4dc; }
+::-moz-selection { background: rgba(139, 155, 181, 0.25); color: #d0d4dc; }
+
+ 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-content { animation: fadeIn 0.4s ease-out; }
+
+ 
 .site-container {
     max-width: 980px;
     margin: 0 auto;
@@ -56,6 +68,12 @@ img { max-width: 100%; height: auto; display: block; }
     width: 26px;
     height: auto;
     opacity: 0.8;
+    transition: opacity 0.3s, filter 0.3s;
+}
+
+.site-brand:hover img {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(139, 155, 181, 0.3));
 }
 
 .site-brand-text {
@@ -207,7 +225,17 @@ img { max-width: 100%; height: auto; display: block; }
     width: 100%;
     aspect-ratio: 2.5 / 1;
     object-fit: cover;
-    transition: opacity 0.4s, transform 0.4s;
+    transition: opacity 0.5s ease, transform 0.4s;
+}
+
+ 
+.lazy-reveal {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.lazy-reveal.loaded {
+    opacity: 1;
 }
 
 .post-entry:hover .entry-cover img {
@@ -462,6 +490,17 @@ img { max-width: 100%; height: auto; display: block; }
 
 .post-content a:hover {
     text-decoration-color: #8b9bb5;
+}
+
+ 
+.post-content::after {
+    content: '✦';
+    display: block;
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 12px;
+    color: #3a4050;
+    letter-spacing: 0.3em;
 }
 
  
@@ -845,6 +884,34 @@ img { max-width: 100%; height: auto; display: block; }
     margin: 0 auto;
     padding: 0;
 }
+
+ 
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #8b9bb5, #a8b5cc);
+    z-index: 200;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
+ 
+.site-footer {
+    padding: 48px 0 32px;
+    text-align: center;
+    font-size: 11px;
+    color: #3a4050;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width: 700px) {
+    .site-footer {
+        padding: 32px 0 80px;
+    }
+}
 </style>
 </head>
 <body>
@@ -889,6 +956,7 @@ img { max-width: 100%; height: auto; display: block; }
 
             <main class="main-content">
                 
+<div class="reading-progress"></div>
 <article class="post-single">
     <figure class="post-cover">
         <img src="/images/mountain-3.jpg" alt="Remote Work and the Loneliness Problem">
@@ -951,6 +1019,10 @@ document.querySelectorAll('.share-btn').forEach(function(btn) {
         </div>
     </div>
 
+    <footer class="site-footer">
+        <span>Thinking in Public · 2026</span>
+    </footer>
+
     <nav class="mobile-nav">
         <a href="/">All</a>
         <a href="/essays/">Essays</a>
@@ -960,12 +1032,32 @@ document.querySelectorAll('.share-btn').forEach(function(btn) {
 
     <script>
         (function() {
+            
             var path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
             document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(function(link) {
                 var href = link.getAttribute('href').replace(/\/$/, '') || '/';
                 if (path === '/' && href === '/') link.classList.add('active');
                 else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
             });
+
+            
+            document.querySelectorAll('.lazy-reveal').forEach(function(img) {
+                if (img.complete) { img.classList.add('loaded'); }
+                else { img.addEventListener('load', function() { img.classList.add('loaded'); }); }
+            });
+
+            
+            var progress = document.querySelector('.reading-progress');
+            var article = document.querySelector('.post-content');
+            if (progress && article) {
+                window.addEventListener('scroll', function() {
+                    var rect = article.getBoundingClientRect();
+                    var total = article.offsetHeight - window.innerHeight;
+                    var scrolled = -rect.top;
+                    var pct = Math.max(0, Math.min(100, (scrolled / total) * 100));
+                    progress.style.width = pct + '%';
+                }, { passive: true });
+            }
         })();
     </script>
 </body>
