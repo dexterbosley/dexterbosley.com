@@ -2,6 +2,7 @@
 title: "On Agentic Software"
 date: 2025-01-25
 type: "essay"
+quote: "The best software is the software you never have to use."
 cover:
   image: "/images/about-banner.jpg"
   credit: "Brévent/Flégère, France"

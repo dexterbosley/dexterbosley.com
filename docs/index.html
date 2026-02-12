@@ -453,46 +453,53 @@ img { max-width: 100%; height: auto; display: block; }
 
  
 .about-banner {
-    margin: 0 0 32px;
+    margin: 0 0 28px;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .about-banner img {
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
     object-position: center 70%;
 }
 
 .about-banner-credit {
-    font-size: 12px;
+    font-size: 11px;
     color: #9ca3af;
-    font-style: italic;
-    margin-top: 8px;
+    margin-top: 4px;
+}
+
+.about-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1d23;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
 }
 
 .about-intro {
     font-family: 'Lora', Georgia, serif;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
-    color: #1a1d23;
-    margin-bottom: 36px;
+    color: #6b7280;
+    margin-bottom: 32px;
 }
 
 .about-details {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .about-row {
     display: flex;
-    margin-bottom: 14px;
-    font-size: 15px;
+    margin-bottom: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 .about-label {
-    width: 110px;
+    width: 100px;
     flex-shrink: 0;
     color: #9ca3af;
     font-weight: 400;
@@ -502,18 +509,14 @@ img { max-width: 100%; height: auto; display: block; }
     color: #1a1d23;
 }
 
-.about-contact {
+.about-connect a {
     font-size: 14px;
-    color: #6b7280;
-}
-
-.about-contact a {
     color: #475569;
     border-bottom: 1px solid #d1d5db;
     transition: color 0.2s, border-color 0.2s;
 }
 
-.about-contact a:hover {
+.about-connect a:hover {
     color: #1a1d23;
     border-color: #9ca3af;
 }
@@ -668,7 +671,7 @@ img { max-width: 100%; height: auto; display: block; }
   <div class="entry-text">
     <div class="entry-meta">Story · Jan 24, 2026</div>
     <h2 class="entry-title">Small Talk</h2>
-    <p class="entry-desc">Two brothers wait outside a church, watching the street.</p>
+    <p class="entry-desc"><em>"Isn&#39;t it pretty to think so?"</em> — Ernest Hemingway</p>
   </div>
   <a class="entry-link" aria-label="post link to Small Talk" href="https://www.dexterbosley.com/stories/small-talk/"></a>
 </article>
@@ -680,6 +683,7 @@ img { max-width: 100%; height: auto; display: block; }
   <div class="entry-text">
     <div class="entry-meta">Essay · Jan 25, 2025</div>
     <h2 class="entry-title">On Agentic Software</h2>
+    <p class="entry-desc"><em>"The best software is the software you never have to use."</em></p>
   </div>
   <a class="entry-link" aria-label="post link to On Agentic Software" href="https://www.dexterbosley.com/essays/on-agentic-software/"></a>
 </article>

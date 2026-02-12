@@ -24,9 +24,7 @@
   <div class="entry-text">
     <div class="entry-meta">{{ $type }} · {{ .Date.Format "Jan 2, 2006" }}</div>
     <h2 class="entry-title">{{ .Title }}</h2>
-    {{- if .Description }}
-    <p class="entry-desc">{{ .Description }}</p>
-    {{- else if .Params.quote }}
+    {{- if .Params.quote }}
     <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }} — {{ . }}{{ end }}</p>
     {{- end }}
   </div>

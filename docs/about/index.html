@@ -452,46 +452,53 @@ img { max-width: 100%; height: auto; display: block; }
 
  
 .about-banner {
-    margin: 0 0 32px;
+    margin: 0 0 28px;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .about-banner img {
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
     object-position: center 70%;
 }
 
 .about-banner-credit {
-    font-size: 12px;
+    font-size: 11px;
     color: #9ca3af;
-    font-style: italic;
-    margin-top: 8px;
+    margin-top: 4px;
+}
+
+.about-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1d23;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
 }
 
 .about-intro {
     font-family: 'Lora', Georgia, serif;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
-    color: #1a1d23;
-    margin-bottom: 36px;
+    color: #6b7280;
+    margin-bottom: 32px;
 }
 
 .about-details {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .about-row {
     display: flex;
-    margin-bottom: 14px;
-    font-size: 15px;
+    margin-bottom: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 .about-label {
-    width: 110px;
+    width: 100px;
     flex-shrink: 0;
     color: #9ca3af;
     font-weight: 400;
@@ -501,18 +508,14 @@ img { max-width: 100%; height: auto; display: block; }
     color: #1a1d23;
 }
 
-.about-contact {
+.about-connect a {
     font-size: 14px;
-    color: #6b7280;
-}
-
-.about-contact a {
     color: #475569;
     border-bottom: 1px solid #d1d5db;
     transition: color 0.2s, border-color 0.2s;
 }
 
-.about-contact a:hover {
+.about-connect a:hover {
     color: #1a1d23;
     border-color: #9ca3af;
 }
@@ -660,15 +663,13 @@ img { max-width: 100%; height: auto; display: block; }
             <main class="main-content">
                 
 <article class="about-page">
-    <header class="post-header">
-        <h1 class="post-title">About</h1>
-    </header>
     <figure class="about-banner">
         <img src="https://www.dexterbosley.com/images/about-banner.png" alt="About">
         <figcaption class="about-banner-credit">Hilma af Klint, The Ten Largest, No. 5, 1907</figcaption>
     </figure>
 
-    <p class="about-intro">I'm Dexter. In NYC, from San Mateo. If I'm honest, I'm writing here so I have a quick place to show people stuff I want to talk about.</p>
+    <h1 class="about-name">Dexter Bosley</h1>
+    <p class="about-intro">In NYC, from San Mateo. Writing here so I have a quick place to show people stuff I want to talk about.</p>
 
     <div class="about-details">
         <div class="about-row">
@@ -689,7 +690,9 @@ img { max-width: 100%; height: auto; display: block; }
         </div>
     </div>
 
-    <p class="about-contact">Say hi → <a href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a></p>
+    <div class="about-connect">
+        <a href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a>
+    </div>
 </article>
             </main>
         </div>

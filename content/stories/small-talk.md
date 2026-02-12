@@ -7,7 +7,6 @@ quote_author: "Ernest Hemingway"
 cover:
   image: "/images/matisse-banner.jpg"
   credit: "Fra Angelico, St. Peter Martyr, 1442"
-description: "Two brothers wait outside a church, watching the street."
 ---
 
 It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
