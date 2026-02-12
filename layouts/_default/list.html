@@ -20,7 +20,8 @@
   {{- end }}
   <div class="entry-text">
     <div class="entry-meta">
-      <span class="entry-type {{ lower $type }}">{{ $type }}</span>
+      <span>{{ $type }}</span>
+      <span class="meta-sep">·</span>
       <span>{{ .Date.Format "Jan 2, 2006" }}</span>
       <span class="meta-sep">·</span>
       <span>{{ .ReadingTime }} min read</span>
