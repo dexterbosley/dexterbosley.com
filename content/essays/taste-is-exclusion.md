@@ -2,6 +2,7 @@
 title: "Taste Is Exclusion"
 date: 2025-05-18
 quote: "Taste is the ability to say no."
+quote_author: "Steve Jobs"
 cover:
   image: "/images/mountain-3.jpg"
   caption: "Joshua Earle / Unsplash"

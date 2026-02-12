@@ -2,6 +2,7 @@
 title: "Defaults Matter More Than Features"
 date: 2025-12-14
 quote: "The best interface is no interface."
+quote_author: "Golden Krishna"
 cover:
   image: "/images/mountain-2.jpg"
   caption: "Kalen Emsley / Unsplash"

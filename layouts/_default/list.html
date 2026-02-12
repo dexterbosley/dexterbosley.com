@@ -28,7 +28,7 @@
     </div>
     <h2 class="entry-title">{{ .Title }}</h2>
     {{- if .Params.quote }}
-    <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }} — {{ . }}{{ end }}</p>
+    <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }}<span class="entry-author">— {{ . }}</span>{{ end }}</p>
     {{- end }}
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>

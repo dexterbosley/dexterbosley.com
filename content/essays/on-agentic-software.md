@@ -3,6 +3,7 @@ title: "On Agentic Software"
 date: 2025-01-25
 type: "essay"
 quote: "The best software is the software you never have to use."
+quote_author: "Jensen Harris"
 cover:
   image: "/images/mountain-1.jpg"
   caption: "Benjamin Voros / Unsplash"
