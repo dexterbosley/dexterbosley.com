@@ -5,6 +5,7 @@ quote: "Mountains are not stadiums where I satisfy my ambition to achieve."
 quote_author: "Reinhold Messner"
 cover:
   image: "/images/story-banner.jpg"
+  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
 ---
 
 They had been climbing for four hours when Paul stopped and said he couldn't feel his hands.

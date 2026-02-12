@@ -3,7 +3,8 @@ title: "Defaults Matter More Than Features"
 date: 2025-12-14
 quote: "The best interface is no interface."
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-2.jpg"
+  caption: "Kalen Emsley / Unsplash"
 ---
 
 Most users never change their default settings. This is not because they are lazy or uninformed. It is because defaults represent a recommendation from someone who presumably knows more about the software than they do.

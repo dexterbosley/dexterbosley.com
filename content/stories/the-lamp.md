@@ -5,6 +5,7 @@ quote: "People are always shouting they want to create a better future. It's not
 quote_author: "Milan Kundera"
 cover:
   image: "/images/story-banner.jpg"
+  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
 ---
 
 The lamp had been in the window for as long as anyone on the block could remember. It was brass, or something like brass, with a shade the color of old paper.

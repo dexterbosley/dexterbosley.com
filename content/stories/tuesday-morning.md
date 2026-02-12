@@ -5,6 +5,7 @@ quote: "The world breaks everyone, and afterward, many are strong at the broken 
 quote_author: "Ernest Hemingway"
 cover:
   image: "/images/story-banner.jpg"
+  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
 ---
 
 The coffee shop on Seventh had exactly one good table. It was near the window but not against it, close enough to watch the street but far enough that you didn't feel watched. Daniel always sat there.

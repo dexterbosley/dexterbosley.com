@@ -5,6 +5,7 @@ quote: "In the water, I am beautiful."
 quote_author: "Kurt Vonnegut"
 cover:
   image: "/images/story-banner.jpg"
+  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
 ---
 
 The pool was heated but the air was not, and the distance between the two was the whole problem. Claire stood at the edge in her suit and counted.

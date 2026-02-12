@@ -4,7 +4,8 @@ date: 2026-01-08
 quote: "Simplicity is the ultimate sophistication."
 quote_author: "Leonardo da Vinci"
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-4.jpg"
+  caption: "Samuel Ferrara / Unsplash"
 ---
 
 Technical debt is a well-understood concept. Simplicity debt is not, but it should be. Simplicity debt accumulates every time you add a feature without removing one, every time you introduce a new concept without consolidating existing ones.

@@ -4,7 +4,8 @@ date: 2025-10-30
 quote: "We are all alone, born alone, die alone."
 quote_author: "Hunter S. Thompson"
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-3.jpg"
+  caption: "Joshua Earle / Unsplash"
 ---
 
 The remote work debate is usually framed as a productivity question. Can people do their jobs from home? The answer, by now, is obviously yes. But productivity was never the real question.

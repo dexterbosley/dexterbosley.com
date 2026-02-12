@@ -5,6 +5,7 @@ quote: "A good restaurant is like a vacation."
 quote_author: "Andrew Carmellini"
 cover:
   image: "/images/story-banner.jpg"
+  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
 ---
 
 The restaurant was closing for good on Sunday. Roberto had owned it for thirty-one years and his knees had owned it for about twenty-five.

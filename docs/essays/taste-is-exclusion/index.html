@@ -205,7 +205,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .entry-cover img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 2.5 / 1;
     object-fit: cover;
     transition: opacity 0.4s, transform 0.4s;
 }
@@ -322,14 +322,16 @@ img { max-width: 100%; height: auto; display: block; }
 
 .post-cover img {
     width: 100%;
-    max-height: 320px;
+    max-height: 420px;
     object-fit: cover;
 }
 
-.post-cover-credit {
-    font-size: 11px;
+.post-cover-caption {
+    font-size: 12px;
     color: #5a6170;
-    margin: 4px 0 0;
+    margin: 8px 0 0;
+    font-style: italic;
+    font-family: 'Lora', Georgia, serif;
 }
 
 .post-header {
@@ -670,7 +672,7 @@ img { max-width: 100%; height: auto; display: block; }
     }
 
     .entry-cover img {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 2.2 / 1;
     }
 
     .entry-text {
@@ -703,8 +705,12 @@ img { max-width: 100%; height: auto; display: block; }
     }
 
     .post-cover img {
-        max-height: 220px;
+        max-height: 280px;
         border-radius: 0;
+    }
+
+    .post-cover-caption {
+        padding: 0 16px;
     }
 
     .post-content {
@@ -876,9 +882,10 @@ img { max-width: 100%; height: auto; display: block; }
             <main class="main-content">
                 
 <article class="post-single">
-    <div class="post-cover">
-        <img src="/images/essay-banner.jpg" alt="Taste Is Exclusion">
-    </div>
+    <figure class="post-cover">
+        <img src="/images/mountain-3.jpg" alt="Taste Is Exclusion">
+        <figcaption class="post-cover-caption">Joshua Earle / Unsplash</figcaption>
+    </figure>
 
     <header class="post-header">
         <div class="post-meta">

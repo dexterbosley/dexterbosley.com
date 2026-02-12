@@ -3,7 +3,8 @@ title: "Taste Is Exclusion"
 date: 2025-05-18
 quote: "Taste is the ability to say no."
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-3.jpg"
+  caption: "Joshua Earle / Unsplash"
 ---
 
 The most underrated skill in product development is the willingness to exclude. Every feature request is someone's good idea. The hard part is recognizing that a product with every good idea is a bad product.

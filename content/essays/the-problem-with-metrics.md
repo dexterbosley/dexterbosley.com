@@ -4,7 +4,8 @@ date: 2025-09-05
 quote: "Not everything that counts can be counted."
 quote_author: "William Bruce Cameron"
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-1.jpg"
+  caption: "Benjamin Voros / Unsplash"
 ---
 
 Goodhart's Law states that when a measure becomes a target, it ceases to be a good measure. This is the central tension of running any data-driven organization: the metrics you optimize for inevitably become the metrics you game.

@@ -4,7 +4,8 @@ date: 2025-07-22
 quote: "Writing is thinking. To write well is to think clearly."
 quote_author: "David McCullough"
 cover:
-  image: "/images/essay-banner.jpg"
+  image: "/images/mountain-4.jpg"
+  caption: "Samuel Ferrara / Unsplash"
 ---
 
 In most organizations, the person who speaks the loudest in a meeting is presumed to have the best ideas. This is almost never true. Speaking rewards confidence, charisma, and quick thinking. Writing rewards clarity, depth, and precision.
