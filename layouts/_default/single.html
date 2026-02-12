@@ -3,12 +3,9 @@
 
     {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
     {{- with $banner }}
-    <figure class="post-cover">
+    <div class="post-cover">
         <img src="{{ . }}" alt="{{ $.Title }}">
-        {{- if $.Params.cover.credit }}
-        <figcaption class="post-cover-credit">{{ $.Params.cover.credit }}</figcaption>
-        {{- end }}
-    </figure>
+    </div>
     {{- end }}
 
     <header class="post-header">
