@@ -1,22 +1,25 @@
 <svg viewBox="0 0 40 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Gestural arcs behind figure -->
-  <path d="M6,14 C2,22 2,32 7,40" stroke="#7a8394" stroke-width="0.8" stroke-linecap="round"/>
-  <path d="M4,18 C1,24 1,30 4,36" stroke="#7a8394" stroke-width="0.5" stroke-linecap="round"/>
-  <!-- Penguin body with belly cutout -->
-  <path fill-rule="evenodd" fill="#7a8394" d="
-    M15,3 C18,0 24,0 27,3 L28,10 C32,14 34,22 33,30 L32,38 C30,43 26,46 22,46 L18,46 C14,46 10,43 8,38 L7,30 C6,22 8,14 12,10 Z
-    M14,16 C13,20 13,28 14,36 C15,39 17,40 20,40 C23,40 25,39 26,36 C27,28 27,20 26,16 C25,13 23,12 20,12 C17,12 15,13 14,16 Z
-  "/>
-  <!-- Eye -->
-  <circle cx="23" cy="7" r="1.5" fill="#191c24"/>
-  <!-- Wing -->
-  <path d="M7,20 L2,26 L2,34 L7,38" stroke="#7a8394" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Body (dark outer) -->
+  <ellipse cx="20" cy="30" rx="12" ry="16" fill="#7a8394"/>
+  <!-- Belly (light inner) -->
+  <ellipse cx="20" cy="32" rx="7" ry="12" fill="#191c24"/>
+  <!-- Head -->
+  <circle cx="20" cy="11" r="9" fill="#7a8394"/>
+  <!-- White face patch -->
+  <ellipse cx="20" cy="12" rx="5.5" ry="5" fill="#d0d4dc"/>
+  <!-- Eyes -->
+  <circle cx="17.5" cy="11" r="1.4" fill="#191c24"/>
+  <circle cx="22.5" cy="11" r="1.4" fill="#191c24"/>
+  <!-- Eye glints -->
+  <circle cx="18" cy="10.4" r="0.45" fill="#d0d4dc"/>
+  <circle cx="23" cy="10.4" r="0.45" fill="#d0d4dc"/>
+  <!-- Beak -->
+  <path d="M18.5,14 L20,17 L21.5,14 Z" fill="#c4956a"/>
+  <!-- Left flipper -->
+  <path d="M8,24 C5,28 4,33 6,38" stroke="#7a8394" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Right flipper -->
+  <path d="M32,24 C35,28 36,33 34,38" stroke="#7a8394" stroke-width="2.5" stroke-linecap="round" fill="none"/>
   <!-- Feet -->
-  <path d="M14,46 L11,51 L18,51 Z" fill="#7a8394"/>
-  <path d="M26,46 L22,51 L29,51 Z" fill="#7a8394"/>
-  <!-- Scratch lines at feet -->
-  <line x1="12" y1="51" x2="8" y2="52" stroke="#7a8394" stroke-width="0.6" stroke-linecap="round"/>
-  <line x1="28" y1="51" x2="32" y2="52" stroke="#7a8394" stroke-width="0.6" stroke-linecap="round"/>
-  <!-- Head accent line -->
-  <line x1="16" y1="2" x2="12" y2="0" stroke="#7a8394" stroke-width="0.6" stroke-linecap="round"/>
+  <ellipse cx="15" cy="46" rx="4" ry="1.8" fill="#c4956a"/>
+  <ellipse cx="25" cy="46" rx="4" ry="1.8" fill="#c4956a"/>
 </svg>
