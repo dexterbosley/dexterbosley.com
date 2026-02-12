@@ -16,6 +16,90 @@
       <description>&lt;p&gt;It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded. &amp;ldquo;So bad, soggy too.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Simplicity Debt</title>
+      <link>https://www.dexterbosley.com/essays/simplicity-debt/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/simplicity-debt/</guid>
+      <description>&lt;p&gt;Technical debt is a well-understood concept. Simplicity debt is not, but it should be. Simplicity debt accumulates every time you add a feature without removing one, every time you introduce a new concept without consolidating existing ones.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The cost of simplicity debt is invisible in the short term. Each individual addition seems harmless. But the cumulative effect is a product that requires a manual to understand, an onboarding process to navigate, and a support team to explain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Table</title>
+      <link>https://www.dexterbosley.com/stories/last-table/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/last-table/</guid>
+      <description>&lt;p&gt;The restaurant was closing for good on Sunday. Roberto had owned it for thirty-one years and his knees had owned it for about twenty-five.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&amp;ldquo;How many covers tonight?&amp;rdquo; asked his daughter, who did the books and worried about the things Roberto refused to worry about.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Forty-two. We could do sixty if we pushed the tables together.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;We&amp;rsquo;re not pushing the tables together.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I know.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;The last seating was at nine. Roberto had considered making it earlier but nine felt right. People should eat late on the last night. They should linger. They should order dessert even if they never order dessert.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Defaults Matter More Than Features</title>
+      <link>https://www.dexterbosley.com/essays/defaults-matter/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/defaults-matter/</guid>
+      <description>&lt;p&gt;Most users never change their default settings. This is not because they are lazy or uninformed. It is because defaults represent a recommendation from someone who presumably knows more about the software than they do.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This means the single most impactful product decision is often the least glamorous one: choosing the right default. A feature that is off by default might as well not exist for ninety percent of users. A setting buried three menus deep is functionally invisible.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Night Swim</title>
+      <link>https://www.dexterbosley.com/stories/night-swim/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/night-swim/</guid>
+      <description>&lt;p&gt;The pool was heated but the air was not, and the distance between the two was the whole problem. Claire stood at the edge in her suit and counted.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&amp;ldquo;Just jump,&amp;rdquo; said Marco from the water. His voice echoed off the concrete walls of the hotel courtyard. It was after midnight and they were not supposed to be here.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;m going to jump.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;You&amp;rsquo;ve been saying that.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;m building up to it.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Remote Work and the Loneliness Problem</title>
+      <link>https://www.dexterbosley.com/essays/remote-work-loneliness/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/remote-work-loneliness/</guid>
+      <description>&lt;p&gt;The remote work debate is usually framed as a productivity question. Can people do their jobs from home? The answer, by now, is obviously yes. But productivity was never the real question.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The real question is about loneliness. Office work, for all its inefficiencies, provided a social infrastructure that many people relied on without realizing it. The casual hallway conversation, the lunch with colleagues, the ambient presence of other humans — these were not productivity features. They were social ones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Problem with Metrics</title>
+      <link>https://www.dexterbosley.com/essays/the-problem-with-metrics/</link>
+      <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/the-problem-with-metrics/</guid>
+      <description>&lt;p&gt;Goodhart&amp;rsquo;s Law states that when a measure becomes a target, it ceases to be a good measure. This is the central tension of running any data-driven organization: the metrics you optimize for inevitably become the metrics you game.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Consider customer satisfaction scores. The moment you tie employee bonuses to CSAT, you create an incentive to optimize for the score rather than for actual satisfaction. Agents start asking customers to rate them highly. Difficult cases get escalated rather than resolved. The number goes up while the experience goes down.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Mountain</title>
+      <link>https://www.dexterbosley.com/stories/the-mountain/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/the-mountain/</guid>
+      <description>&lt;p&gt;They had been climbing for four hours when Paul stopped and said he couldn&amp;rsquo;t feel his hands.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&amp;ldquo;Wiggle your fingers,&amp;rdquo; said Ray, who was ahead by ten feet and did not turn around.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;m wiggling them.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Can you feel them wiggling?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Paul looked at his gloves. His fingers were moving inside them but the sensation was remote, like watching someone else&amp;rsquo;s hands. &amp;ldquo;Sort of.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Ray finally turned. His face was red from the wind and his goggles were pushed up on his forehead. He looked like a man who had just been told something he already knew.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Writing Matters More Than Speaking</title>
+      <link>https://www.dexterbosley.com/essays/why-writing-matters/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/why-writing-matters/</guid>
+      <description>&lt;p&gt;In most organizations, the person who speaks the loudest in a meeting is presumed to have the best ideas. This is almost never true. Speaking rewards confidence, charisma, and quick thinking. Writing rewards clarity, depth, and precision.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Amazon&amp;rsquo;s memo culture is instructive. Before any meeting of consequence, attendees read a six-page narrative memo in silence. The memo format forces the author to think through their argument completely — no bullet points to hide behind, no slides to distract from weak reasoning.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tuesday Morning</title>
+      <link>https://www.dexterbosley.com/stories/tuesday-morning/</link>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/tuesday-morning/</guid>
+      <description>&lt;p&gt;The coffee shop on Seventh had exactly one good table. It was near the window but not against it, close enough to watch the street but far enough that you didn&amp;rsquo;t feel watched. Daniel always sat there.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&amp;ldquo;You&amp;rsquo;re here early,&amp;rdquo; said the barista, whose name was either Amy or Annie. Daniel had never asked and it was now too late to ask.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Couldn&amp;rsquo;t sleep.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Bad dreams?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;No dreams at all. That&amp;rsquo;s worse, I think.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Taste Is Exclusion</title>
+      <link>https://www.dexterbosley.com/essays/taste-is-exclusion/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/taste-is-exclusion/</guid>
+      <description>&lt;p&gt;The most underrated skill in product development is the willingness to exclude. Every feature request is someone&amp;rsquo;s good idea. The hard part is recognizing that a product with every good idea is a bad product.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Taste, in the creative sense, is not about what you include. It is about what you leave out. A well-designed room is defined by the furniture that isn&amp;rsquo;t there. A great essay is shaped by the paragraphs that were cut.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Lamp</title>
+      <link>https://www.dexterbosley.com/stories/the-lamp/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/stories/the-lamp/</guid>
+      <description>&lt;p&gt;The lamp had been in the window for as long as anyone on the block could remember. It was brass, or something like brass, with a shade the color of old paper.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Margaret turned it on every evening at six and turned it off when she went to bed. She had done this since her husband died, which was eleven years ago, or maybe twelve. She could not remember the exact year anymore, only the season. It was fall.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Case for Boredom</title>
+      <link>https://www.dexterbosley.com/essays/the-case-for-boredom/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/the-case-for-boredom/</guid>
+      <description>&lt;p&gt;There is a growing body of evidence that boredom is not merely the absence of stimulation but a cognitive state with real utility. When we are bored, the default mode network activates — the same network responsible for autobiographical memory, future planning, and creative ideation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;We have engineered boredom out of modern life with remarkable efficiency. Every elevator ride, every waiting room, every moment between moments has been filled with a screen. The question is whether we have also engineered out the mental states that only boredom can produce.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>On Agentic Software</title>
       <link>https://www.dexterbosley.com/essays/on-agentic-software/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>

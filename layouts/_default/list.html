@@ -36,6 +36,14 @@
 {{- $first = false }}
 {{- end }}
 
+<div class="feed-subscribe">
+  <p class="feed-subscribe-text">Get new essays and stories by email</p>
+  <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">→</button>
+  </form>
+</div>
+
 {{- if gt $paginator.TotalPages 1 }}
 <nav class="pagination">
   {{- if .Paginator.HasPrev }}

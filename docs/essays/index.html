@@ -721,6 +721,16 @@ img { max-width: 100%; height: auto; display: block; }
         margin-top: 40px;
     }
 
+    .sidebar-subscribe {
+        display: none;
+    }
+
+    .feed-subscribe {
+        margin: 0 -16px;
+        padding: 28px 16px;
+        border-radius: 0;
+    }
+
      
     .about-banner {
         margin-left: -16px;
@@ -743,6 +753,83 @@ img { max-width: 100%; height: auto; display: block; }
     .about-label {
         width: 80px;
     }
+}
+
+ 
+.sidebar-subscribe h4 {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #5a6170;
+    margin: 0 0 10px 0;
+    padding-left: 10px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 6px;
+    padding: 0 10px;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    background: #191c24;
+    border: 1px solid #2a2f3a;
+    border-radius: 4px;
+    color: #d0d4dc;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+    color: #5a6170;
+}
+
+.subscribe-form input[type="email"]:focus {
+    border-color: #8b9bb5;
+}
+
+.subscribe-form button {
+    padding: 7px 12px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background: #2a2f3a;
+    border: 1px solid #2a2f3a;
+    border-radius: 4px;
+    color: #d0d4dc;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.subscribe-form button:hover {
+    background: #8b9bb5;
+    border-color: #8b9bb5;
+    color: #191c24;
+}
+
+.feed-subscribe {
+    margin-top: 40px;
+    padding: 28px 24px;
+    background: #21252e;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.feed-subscribe-text {
+    font-size: 14px;
+    color: #7a8394;
+    margin-bottom: 14px;
+}
+
+.feed-subscribe .subscribe-form {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
 }
 </style>
 </head>
@@ -775,12 +862,139 @@ img { max-width: 100%; height: auto; display: block; }
                     <ul>
                         <li><a href="/stories/small-talk/">Small Talk</a></li>
                     </ul>
+            </div>
+                <hr class="sidebar-divider">
+                <div class="sidebar-subscribe">
+                    <h4>Subscribe</h4>
+                    <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                        <button type="submit">→</button>
+                    </form>
                 </div>
             </aside>
 
             <main class="main-content">
                 
 <article class="post-entry featured">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="Simplicity Debt">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Jan 8, 2026</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">Simplicity Debt</h2>
+    <p class="entry-desc"><em>"Simplicity is the ultimate sophistication."</em> — Leonardo da Vinci</p>
+  </div>
+  <a class="entry-link" aria-label="post link to Simplicity Debt" href="https://www.dexterbosley.com/essays/simplicity-debt/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="Defaults Matter More Than Features">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Dec 14, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">Defaults Matter More Than Features</h2>
+    <p class="entry-desc"><em>"The best interface is no interface."</em></p>
+  </div>
+  <a class="entry-link" aria-label="post link to Defaults Matter More Than Features" href="https://www.dexterbosley.com/essays/defaults-matter/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="Remote Work and the Loneliness Problem">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Oct 30, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">Remote Work and the Loneliness Problem</h2>
+    <p class="entry-desc"><em>"We are all alone, born alone, die alone."</em> — Hunter S. Thompson</p>
+  </div>
+  <a class="entry-link" aria-label="post link to Remote Work and the Loneliness Problem" href="https://www.dexterbosley.com/essays/remote-work-loneliness/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="The Problem with Metrics">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Sep 5, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">The Problem with Metrics</h2>
+    <p class="entry-desc"><em>"Not everything that counts can be counted."</em> — William Bruce Cameron</p>
+  </div>
+  <a class="entry-link" aria-label="post link to The Problem with Metrics" href="https://www.dexterbosley.com/essays/the-problem-with-metrics/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="Why Writing Matters More Than Speaking">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Jul 22, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">Why Writing Matters More Than Speaking</h2>
+    <p class="entry-desc"><em>"Writing is thinking. To write well is to think clearly."</em> — David McCullough</p>
+  </div>
+  <a class="entry-link" aria-label="post link to Why Writing Matters More Than Speaking" href="https://www.dexterbosley.com/essays/why-writing-matters/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="Taste Is Exclusion">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>May 18, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">Taste Is Exclusion</h2>
+    <p class="entry-desc"><em>"Taste is the ability to say no."</em></p>
+  </div>
+  <a class="entry-link" aria-label="post link to Taste Is Exclusion" href="https://www.dexterbosley.com/essays/taste-is-exclusion/"></a>
+</article>
+<article class="post-entry">
+  <div class="entry-cover">
+    <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="The Case for Boredom">
+  </div>
+  <div class="entry-text">
+    <div class="entry-meta">
+      <span class="entry-type">Essay</span>
+      <span class="meta-sep">·</span>
+      <span>Mar 10, 2025</span>
+      <span class="meta-sep">·</span>
+      <span>1 min read</span>
+    </div>
+    <h2 class="entry-title">The Case for Boredom</h2>
+    <p class="entry-desc"><em>"All of humanity&#39;s problems stem from man&#39;s inability to sit quietly in a room alone."</em> — Blaise Pascal</p>
+  </div>
+  <a class="entry-link" aria-label="post link to The Case for Boredom" href="https://www.dexterbosley.com/essays/the-case-for-boredom/"></a>
+</article>
+<article class="post-entry">
   <div class="entry-cover">
     <img loading="lazy" src="https://www.dexterbosley.com/images/essay-banner.jpg" alt="On Agentic Software">
   </div>
@@ -797,6 +1011,14 @@ img { max-width: 100%; height: auto; display: block; }
   </div>
   <a class="entry-link" aria-label="post link to On Agentic Software" href="https://www.dexterbosley.com/essays/on-agentic-software/"></a>
 </article>
+
+<div class="feed-subscribe">
+  <p class="feed-subscribe-text">Get new essays and stories by email</p>
+  <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">→</button>
+  </form>
+</div>
             </main>
         </div>
     </div>

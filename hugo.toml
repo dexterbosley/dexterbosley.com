@@ -4,7 +4,7 @@ title = 'Thinking in Public'
 publishDir = "docs"
 
 [pagination]
-  pagerSize = 7
+  pagerSize = 10
 
 [params]
   mainSections = ["essays", "stories"]
