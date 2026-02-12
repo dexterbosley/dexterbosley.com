@@ -16,6 +16,9 @@
   {{- if .Params.cover.image }}
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+    {{- with .Params.cover.caption }}
+    <span class="entry-cover-caption">{{ . }}</span>
+    {{- end }}
   </div>
   {{- end }}
   <div class="entry-text">
