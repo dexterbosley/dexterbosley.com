@@ -275,35 +275,28 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
  
-.post-header {
-    margin-bottom: 8px;
-}
-
-.post-title {
-    font-size: 34px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: #1a1d23;
-}
-
 .post-cover {
-    margin: 0;
+    margin: 0 0 4px;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .post-cover img {
     width: 100%;
-    max-height: 420px;
+    max-height: 400px;
     object-fit: cover;
 }
 
 .post-cover-credit {
-    font-size: 12px;
+    font-size: 11px;
     color: #9ca3af;
-    font-style: italic;
-    margin: 3px 0 0;
+    margin: 4px 0 0;
+}
+
+.post-header {
+    margin: 28px 0 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .post-meta {
@@ -311,10 +304,9 @@ img { max-width: 100%; height: auto; display: block; }
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
-    font-size: 13px;
+    font-size: 12px;
     color: #9ca3af;
-    margin-top: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 12px;
 }
 
 .post-meta .type-tag {
@@ -325,41 +317,56 @@ img { max-width: 100%; height: auto; display: block; }
     color: #6b7280;
 }
 
-.post-meta .spacer { flex: 1; }
+.post-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: #1a1d23;
+}
+
+.post-quote {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16px;
+    color: #6b7280;
+    margin-top: 12px;
+    line-height: 1.6;
+}
 
 .post-content {
     font-family: 'Lora', Georgia, serif;
-    font-size: 18px;
-    line-height: 1.85;
+    font-size: 19px;
+    line-height: 1.9;
     color: #1a1d23;
     letter-spacing: 0.005em;
 }
 
 .post-content p {
-    margin: 0 0 1.6em;
+    margin: 0 0 1.5em;
 }
 
 .post-content > p:first-of-type::first-letter {
     float: left;
-    font-size: 3.2em;
-    line-height: 0.85;
-    padding-right: 10px;
-    padding-top: 4px;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.6em;
+    line-height: 0.82;
+    padding-right: 12px;
+    padding-top: 6px;
+    font-weight: 600;
     color: #1a1d23;
 }
 
 .post-content hr {
     border: none;
     text-align: center;
-    margin: 2.5em 0;
+    margin: 2.8em 0;
 }
 
 .post-content hr::before {
-    content: "· · ·";
+    content: "✦";
     color: #d1d5db;
-    font-size: 18px;
-    letter-spacing: 0.5em;
+    font-size: 14px;
+    letter-spacing: 1em;
 }
 
 .post-content blockquote {
@@ -381,8 +388,8 @@ img { max-width: 100%; height: auto; display: block; }
 .post-content li { margin-bottom: 0.5em; }
 
 .post-content img {
-    border-radius: 3px;
-    margin: 2em 0;
+    border-radius: 4px;
+    margin: 2.5em 0;
 }
 
 .post-content a {
@@ -398,8 +405,14 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
  
+.story-content {
+    font-size: 18px;
+    line-height: 2;
+}
+
+ 
 .post-epigraph {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     padding-left: 20px;
     border-left: 2px solid #d1d5db;
 }
@@ -426,7 +439,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 56px;
     padding-top: 24px;
     border-top: 1px solid #e5e7eb;
 }
@@ -676,30 +689,22 @@ img { max-width: 100%; height: auto; display: block; }
             <main class="main-content">
                 
 <article class="post-single">
-    <header class="post-header">
-        <h1 class="post-title">Small Talk</h1>
-    </header>
     <figure class="post-cover">
         <img src="/images/matisse-banner.jpg" alt="Small Talk">
         <figcaption class="post-cover-credit">Fra Angelico, St. Peter Martyr, 1442</figcaption>
     </figure>
 
-    <div class="post-meta">
-        <span class="type-tag">Story</span>
-        <span>·</span>
-        <span>January 24, 2026</span>
-        <span>·</span>
-        <span>2 min read</span>
-        <span class="spacer"></span>
-        <button class="share-btn" aria-label="Share">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                <polyline points="16 6 12 2 8 6"></polyline>
-                <line x1="12" y1="2" x2="12" y2="15"></line>
-            </svg>
-            <span>Share</span>
-        </button>
-    </div>
+    <header class="post-header">
+        <div class="post-meta">
+            <span class="type-tag">Story</span>
+            <span>·</span>
+            <span>January 24, 2026</span>
+            <span>·</span>
+            <span>2 min read</span>
+        </div>
+        <h1 class="post-title">Small Talk</h1>
+        <p class="post-quote"><em>"Isn&#39;t it pretty to think so?"</em> — Ernest Hemingway</p>
+    </header>
 
     <div class="post-content story-content">
         <p>It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.</p>
