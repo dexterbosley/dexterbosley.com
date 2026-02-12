@@ -9,12 +9,6 @@
 
 {{- $isFirstPage := not .Paginator.HasPrev }}
 
-{{- if and .IsHome $isFirstPage }}
-<div class="popular-bar">
-    Popular: <a href="/stories/small-talk/">Small Talk</a>
-</div>
-{{- end }}
-
 {{- $first := true }}
 {{- range $paginator.Pages }}
 {{- $type := cond (eq .Section "essays") "essay" "story" }}

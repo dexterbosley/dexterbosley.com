@@ -30,17 +30,20 @@ img { max-width: 100%; height: auto; display: block; }
 
  
 .site-container {
-    max-width: 680px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 40px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 48px;
 }
 
  
 .site-header {
-    padding: 48px 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    padding: 48px 0 32px;
 }
 
 .site-brand {
@@ -73,44 +76,82 @@ img { max-width: 100%; height: auto; display: block; }
     font-weight: 300;
 }
 
-.site-nav {
-    display: flex;
-    gap: 24px;
+.header-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 40px;
 }
 
-.site-nav a {
+ 
+.sidebar {
+    position: sticky;
+    top: 40px;
+    align-self: start;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
     font-size: 14px;
     font-weight: 400;
     color: #6b7280;
     transition: color 0.2s;
 }
 
-.site-nav a:hover {
+.sidebar-nav a:hover {
     color: #1a1d23;
 }
 
-.site-nav a.active {
+.sidebar-nav a.active {
     color: #1a1d23;
     font-weight: 500;
 }
 
- 
-.popular-bar {
-    font-size: 13px;
-    color: #9ca3af;
-    margin-bottom: 36px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid #e5e7eb;
+.sidebar-popular {
+    padding-top: 0;
 }
 
-.popular-bar a {
-    color: #475569;
+.sidebar-popular h4 {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+    margin: 0 0 10px 0;
+}
+
+.sidebar-popular ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-popular li {
+    margin-bottom: 6px;
+}
+
+.sidebar-popular a {
+    font-size: 13px;
+    color: #6b7280;
     transition: color 0.2s;
 }
 
-.popular-bar a:hover {
+.sidebar-popular a:hover {
     color: #1a1d23;
 }
+
+.main-content {
+    min-width: 0;
+}
+
 
  
 .post-entry {
@@ -533,12 +574,18 @@ img { max-width: 100%; height: auto; display: block; }
     }
 
     .site-header {
-        padding: 28px 0 24px;
-        flex-direction: column;
-        gap: 16px;
+        padding: 28px 0 20px;
     }
 
-    .site-nav {
+    .header-divider {
+        margin-bottom: 24px;
+    }
+
+    .content-grid {
+        display: block;
+    }
+
+    .sidebar {
         display: none;
     }
 
@@ -612,16 +659,30 @@ img { max-width: 100%; height: auto; display: block; }
                     <span class="site-tagline">by Dexter Bosley</span>
                 </div>
             </a>
-            <nav class="site-nav">
-                <a href="/">All</a>
-                <a href="/essays/">Essays</a>
-                <a href="/stories/">Stories</a>
-                <a href="/about/">About</a>
-            </nav>
         </header>
 
-        <main>
-            
+        <hr class="header-divider">
+
+        <div class="content-grid">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="/">All</a></li>
+                        <li><a href="/essays/">Essays</a></li>
+                        <li><a href="/stories/">Stories</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </nav>
+                <div class="sidebar-popular">
+                    <h4>Popular</h4>
+                    <ul>
+                        <li><a href="/stories/small-talk/">Small Talk</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                
 <article class="post-single">
     <header class="post-header">
         <h1 class="post-title">Small Talk</h1>
@@ -702,7 +763,8 @@ document.querySelectorAll('.share-btn').forEach(function(btn) {
     });
 });
 </script>
-        </main>
+            </main>
+        </div>
     </div>
 
     <nav class="mobile-nav">
@@ -715,7 +777,7 @@ document.querySelectorAll('.share-btn').forEach(function(btn) {
     <script>
         (function() {
             var path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
-            document.querySelectorAll('.site-nav a, .mobile-nav a').forEach(function(link) {
+            document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(function(link) {
                 var href = link.getAttribute('href').replace(/\/$/, '') || '/';
                 if (path === '/' && href === '/') link.classList.add('active');
                 else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
