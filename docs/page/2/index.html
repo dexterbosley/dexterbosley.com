@@ -155,6 +155,8 @@ img { max-width: 100%; height: auto; display: block; }
     background: #8b9bb5;
 }
 
+.sidebar-nav a.active[href*="stories"]::before { background: #c4956a; }
+
 .sidebar-divider {
     border: none;
     border-top: 1px solid #2a2f3a;
@@ -277,6 +279,10 @@ img { max-width: 100%; height: auto; display: block; }
     color: #7a8394;
 }
 
+ 
+.type-essays .entry-type { color: #8b9bb5; }
+.type-stories .entry-type { color: #c4956a; }
+
 
 .entry-title {
     font-size: 24px;
@@ -293,25 +299,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .post-entry.featured .entry-title {
     font-size: 28px;
-}
-
-.entry-desc {
-    font-size: 16px;
-    color: #7a8394;
-    margin-top: 5px;
-    line-height: 1.5;
-}
-
-.entry-desc em {
-    font-family: 'Lora', Georgia, serif;
-}
-
-.entry-author {
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    color: #5a6170;
-    margin-top: 4px;
 }
 
 .entry-link {
@@ -388,6 +375,8 @@ img { max-width: 100%; height: auto; display: block; }
     background: #8b9bb5;
 }
 
+.section-stories .post-header::after { background: #c4956a; }
+
 .post-meta {
     display: flex;
     align-items: center;
@@ -406,6 +395,9 @@ img { max-width: 100%; height: auto; display: block; }
     color: #7a8394;
 }
 
+.section-essays .type-tag { color: #8b9bb5; }
+.section-stories .type-tag { color: #c4956a; }
+
 .post-title {
     font-size: 40px;
     font-weight: 500;
@@ -414,13 +406,6 @@ img { max-width: 100%; height: auto; display: block; }
     color: #d0d4dc;
 }
 
-.post-quote {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    color: #7a8394;
-    margin-top: 12px;
-    line-height: 1.6;
-}
 
 .post-content {
     font-family: 'Lora', Georgia, serif;
@@ -464,6 +449,11 @@ img { max-width: 100%; height: auto; display: block; }
     border-left: 2px solid #3a4050;
     font-style: italic;
     color: #8b9bb5;
+}
+
+.section-stories .post-content blockquote {
+    border-left-color: rgba(196, 149, 106, 0.35);
+    color: #c4a882;
 }
 
 .post-content blockquote p { margin: 0; }
@@ -514,8 +504,10 @@ img { max-width: 100%; height: auto; display: block; }
 .post-epigraph {
     margin-bottom: 36px;
     padding-left: 20px;
-    border-left: 2px solid #2a2f3a;
+    border-left: 2px solid #3a4a5a;
 }
+
+.section-stories .post-epigraph { border-left-color: rgba(196, 149, 106, 0.35); }
 
 .post-epigraph p {
     font-family: 'Lora', Georgia, serif;
@@ -554,6 +546,8 @@ img { max-width: 100%; height: auto; display: block; }
     height: 2px;
     background: #8b9bb5;
 }
+
+.section-stories .post-nav::before { background: #c4956a; }
 
 .back-link {
     font-size: 14px;
@@ -899,6 +893,10 @@ img { max-width: 100%; height: auto; display: block; }
     pointer-events: none;
 }
 
+.section-stories .reading-progress {
+    background: linear-gradient(90deg, #c4956a, #d4ab84);
+}
+
  
 .site-footer {
     padding: 48px 0 32px;
@@ -957,7 +955,7 @@ img { max-width: 100%; height: auto; display: block; }
 
             <main class="main-content">
                 
-<article class="post-entry featured">
+<article class="post-entry featured type-essays">
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="https://www.dexterbosley.com/images/mountain-3.jpg" alt="Taste Is Exclusion">
   </div>
@@ -970,11 +968,10 @@ img { max-width: 100%; height: auto; display: block; }
       <span>1 min read</span>
     </div>
     <h2 class="entry-title">Taste Is Exclusion</h2>
-    <p class="entry-desc"><em>"Taste is the ability to say no."</em><span class="entry-author">— Steve Jobs</span></p>
   </div>
   <a class="entry-link" aria-label="post link to Taste Is Exclusion" href="https://www.dexterbosley.com/essays/taste-is-exclusion/"></a>
 </article>
-<article class="post-entry">
+<article class="post-entry type-stories">
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="https://www.dexterbosley.com/images/story-banner.jpg" alt="The Lamp">
   </div>
@@ -987,11 +984,10 @@ img { max-width: 100%; height: auto; display: block; }
       <span>1 min read</span>
     </div>
     <h2 class="entry-title">The Lamp</h2>
-    <p class="entry-desc"><em>"People are always shouting they want to create a better future. It&#39;s not true."</em><span class="entry-author">— Milan Kundera</span></p>
   </div>
   <a class="entry-link" aria-label="post link to The Lamp" href="https://www.dexterbosley.com/stories/the-lamp/"></a>
 </article>
-<article class="post-entry">
+<article class="post-entry type-essays">
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="https://www.dexterbosley.com/images/mountain-2.jpg" alt="The Case for Boredom">
   </div>
@@ -1004,11 +1000,10 @@ img { max-width: 100%; height: auto; display: block; }
       <span>1 min read</span>
     </div>
     <h2 class="entry-title">The Case for Boredom</h2>
-    <p class="entry-desc"><em>"All of humanity&#39;s problems stem from man&#39;s inability to sit quietly in a room alone."</em><span class="entry-author">— Blaise Pascal</span></p>
   </div>
   <a class="entry-link" aria-label="post link to The Case for Boredom" href="https://www.dexterbosley.com/essays/the-case-for-boredom/"></a>
 </article>
-<article class="post-entry">
+<article class="post-entry type-essays">
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="https://www.dexterbosley.com/images/mountain-1.jpg" alt="On Agentic Software">
   </div>
@@ -1021,7 +1016,6 @@ img { max-width: 100%; height: auto; display: block; }
       <span>4 min read</span>
     </div>
     <h2 class="entry-title">On Agentic Software</h2>
-    <p class="entry-desc"><em>"The best software is the software you never have to use."</em><span class="entry-author">— Jensen Harris</span></p>
   </div>
   <a class="entry-link" aria-label="post link to On Agentic Software" href="https://www.dexterbosley.com/essays/on-agentic-software/"></a>
 </article>

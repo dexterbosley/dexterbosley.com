@@ -12,7 +12,7 @@
 {{- $first := true }}
 {{- range $paginator.Pages }}
 {{- $type := cond (eq .Section "essays") "Essay" "Story" }}
-<article class="post-entry{{ if $first }} featured{{ end }}">
+<article class="post-entry{{ if $first }} featured{{ end }} type-{{ .Section }}">
   {{- if .Params.cover.image }}
   <div class="entry-cover">
     <img loading="lazy" class="lazy-reveal" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
@@ -27,9 +27,6 @@
       <span>{{ .ReadingTime }} min read</span>
     </div>
     <h2 class="entry-title">{{ .Title }}</h2>
-    {{- if .Params.quote }}
-    <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }}<span class="entry-author">— {{ . }}</span>{{ end }}</p>
-    {{- end }}
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>

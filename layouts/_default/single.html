@@ -1,6 +1,6 @@
 {{- define "main" }}
 <div class="reading-progress"></div>
-<article class="post-single">
+<article class="post-single section-{{ .Section }}">
 
     {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
     {{- with $banner }}
@@ -23,10 +23,10 @@
         <h1 class="post-title">{{ .Title }}</h1>
     </header>
 
-    {{- with .Params.epigraph }}
+    {{- with .Params.quote }}
     <div class="post-epigraph">
-        <p>{{ . | markdownify }}</p>
-        {{- with $.Params.epigraph_author }}
+        <p>{{ . }}</p>
+        {{- with $.Params.quote_author }}
         <cite>— {{ . }}</cite>
         {{- end }}
     </div>

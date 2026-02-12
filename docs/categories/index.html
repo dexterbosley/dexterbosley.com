@@ -154,6 +154,8 @@ img { max-width: 100%; height: auto; display: block; }
     background: #8b9bb5;
 }
 
+.sidebar-nav a.active[href*="stories"]::before { background: #c4956a; }
+
 .sidebar-divider {
     border: none;
     border-top: 1px solid #2a2f3a;
@@ -276,6 +278,10 @@ img { max-width: 100%; height: auto; display: block; }
     color: #7a8394;
 }
 
+ 
+.type-essays .entry-type { color: #8b9bb5; }
+.type-stories .entry-type { color: #c4956a; }
+
 
 .entry-title {
     font-size: 24px;
@@ -292,25 +298,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .post-entry.featured .entry-title {
     font-size: 28px;
-}
-
-.entry-desc {
-    font-size: 16px;
-    color: #7a8394;
-    margin-top: 5px;
-    line-height: 1.5;
-}
-
-.entry-desc em {
-    font-family: 'Lora', Georgia, serif;
-}
-
-.entry-author {
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    color: #5a6170;
-    margin-top: 4px;
 }
 
 .entry-link {
@@ -387,6 +374,8 @@ img { max-width: 100%; height: auto; display: block; }
     background: #8b9bb5;
 }
 
+.section-stories .post-header::after { background: #c4956a; }
+
 .post-meta {
     display: flex;
     align-items: center;
@@ -405,6 +394,9 @@ img { max-width: 100%; height: auto; display: block; }
     color: #7a8394;
 }
 
+.section-essays .type-tag { color: #8b9bb5; }
+.section-stories .type-tag { color: #c4956a; }
+
 .post-title {
     font-size: 40px;
     font-weight: 500;
@@ -413,13 +405,6 @@ img { max-width: 100%; height: auto; display: block; }
     color: #d0d4dc;
 }
 
-.post-quote {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    color: #7a8394;
-    margin-top: 12px;
-    line-height: 1.6;
-}
 
 .post-content {
     font-family: 'Lora', Georgia, serif;
@@ -463,6 +448,11 @@ img { max-width: 100%; height: auto; display: block; }
     border-left: 2px solid #3a4050;
     font-style: italic;
     color: #8b9bb5;
+}
+
+.section-stories .post-content blockquote {
+    border-left-color: rgba(196, 149, 106, 0.35);
+    color: #c4a882;
 }
 
 .post-content blockquote p { margin: 0; }
@@ -513,8 +503,10 @@ img { max-width: 100%; height: auto; display: block; }
 .post-epigraph {
     margin-bottom: 36px;
     padding-left: 20px;
-    border-left: 2px solid #2a2f3a;
+    border-left: 2px solid #3a4a5a;
 }
+
+.section-stories .post-epigraph { border-left-color: rgba(196, 149, 106, 0.35); }
 
 .post-epigraph p {
     font-family: 'Lora', Georgia, serif;
@@ -553,6 +545,8 @@ img { max-width: 100%; height: auto; display: block; }
     height: 2px;
     background: #8b9bb5;
 }
+
+.section-stories .post-nav::before { background: #c4956a; }
 
 .back-link {
     font-size: 14px;
@@ -896,6 +890,10 @@ img { max-width: 100%; height: auto; display: block; }
     z-index: 200;
     transition: width 0.1s linear;
     pointer-events: none;
+}
+
+.section-stories .reading-progress {
+    background: linear-gradient(90deg, #c4956a, #d4ab84);
 }
 
  
