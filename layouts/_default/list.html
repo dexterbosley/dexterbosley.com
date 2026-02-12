@@ -27,6 +27,8 @@
   <p class="entry-cover-credit">{{ .Params.cover.credit }}</p>
   {{- end }}
   {{- end }}
+  <div class="entry-body">
+  <span class="entry-type">{{ $type }}</span>
   <h2 class="entry-title">{{ .Title }}</h2>
   {{- with .Description }}
   <p class="entry-description">{{ . }}</p>
@@ -41,6 +43,7 @@
   {{- end }}
   <div class="entry-meta">
     {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min
+  </div>
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
