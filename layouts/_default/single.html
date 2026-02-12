@@ -20,9 +20,6 @@
             <span>{{ .ReadingTime }} min read</span>
         </div>
         <h1 class="post-title">{{ .Title }}</h1>
-        {{- if .Params.quote }}
-        <p class="post-quote"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }} — {{ . }}{{ end }}</p>
-        {{- end }}
     </header>
 
     {{- with .Params.epigraph }}

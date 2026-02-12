@@ -16,9 +16,6 @@
   {{- if .Params.cover.image }}
   <div class="entry-cover">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-    {{- if .Params.cover.credit }}
-    <span class="entry-credit">{{ .Params.cover.credit }}</span>
-    {{- end }}
   </div>
   {{- end }}
   <div class="entry-text">
