@@ -108,43 +108,72 @@ img { max-width: 100%; height: auto; display: block; }
     align-self: start;
 }
 
+.sidebar-label {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #5a6170;
+    margin-bottom: 14px;
+}
+
 .sidebar-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 28px 0;
+    margin: 0 0 32px 0;
 }
 
 .sidebar-nav li {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .sidebar-nav a {
+    display: block;
     font-size: 14px;
     font-weight: 400;
     color: #7a8394;
-    transition: color 0.2s;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
 }
 
 .sidebar-nav a:hover {
     color: #d0d4dc;
+    background: #21252e;
 }
 
 .sidebar-nav a.active {
     color: #d0d4dc;
     font-weight: 500;
+    background: #21252e;
+    position: relative;
 }
 
-.sidebar-popular {
-    padding-top: 0;
+.sidebar-nav a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    border-radius: 1px;
+    background: #8b9bb5;
+}
+
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid #2a2f3a;
+    margin: 0 10px 20px;
 }
 
 .sidebar-popular h4 {
     font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: #5a6170;
     margin: 0 0 10px 0;
+    padding-left: 10px;
 }
 
 .sidebar-popular ul {
@@ -154,17 +183,21 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .sidebar-popular li {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 }
 
 .sidebar-popular a {
+    display: block;
     font-size: 13px;
-    color: #7a8394;
-    transition: color 0.2s;
+    color: #5a6170;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
 }
 
 .sidebar-popular a:hover {
     color: #d0d4dc;
+    background: #21252e;
 }
 
 .main-content {
@@ -727,6 +760,7 @@ img { max-width: 100%; height: auto; display: block; }
 
         <div class="content-grid">
             <aside class="sidebar">
+                <div class="sidebar-label">Navigate</div>
                 <nav class="sidebar-nav">
                     <ul>
                         <li><a href="/">All</a></li>
@@ -735,6 +769,7 @@ img { max-width: 100%; height: auto; display: block; }
                         <li><a href="/about/">About</a></li>
                     </ul>
                 </nav>
+                <hr class="sidebar-divider">
                 <div class="sidebar-popular">
                     <h4>Popular</h4>
                     <ul>
