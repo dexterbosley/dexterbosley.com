@@ -1,12 +1,18 @@
-<svg viewBox="0 0 40 48" fill="none" stroke="#2a2a2a" stroke-width="0.7" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="6,6 18,1 28,8 26,20 14,24 4,18" />
-  <line x1="18" y1="1" x2="15" y2="13" />
-  <line x1="6" y1="6" x2="15" y2="13" />
-  <line x1="28" y1="8" x2="26" y2="20" />
-  <line x1="15" y1="13" x2="14" y2="24" />
-  <polygon points="4,18 0,14 6,6" />
-  <polygon points="14,24 6,34 10,46 22,48 32,44 36,32 26,20" />
-  <line x1="14" y1="24" x2="18" y2="40" />
-  <line x1="26" y1="20" x2="18" y2="40" />
-  <line x1="6" y1="34" x2="10" y2="46" />
+<svg viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body: tall rectangle -->
+  <rect x="6" y="8" width="20" height="28" rx="0" fill="#d0d4dc"/>
+  <!-- Belly: inner lighter rectangle -->
+  <rect x="10" y="14" width="12" height="18" fill="#8b9bb5"/>
+  <!-- Head: square block -->
+  <rect x="8" y="0" width="16" height="12" fill="#d0d4dc"/>
+  <!-- Eyes: two small squares -->
+  <rect x="12" y="4" width="3" height="3" fill="#191c24"/>
+  <rect x="17" y="4" width="3" height="3" fill="#191c24"/>
+  <!-- Left wing -->
+  <rect x="0" y="12" width="6" height="16" fill="#7a8394"/>
+  <!-- Right wing -->
+  <rect x="26" y="12" width="6" height="16" fill="#7a8394"/>
+  <!-- Feet -->
+  <rect x="8" y="36" width="6" height="4" fill="#7a8394"/>
+  <rect x="18" y="36" width="6" height="4" fill="#7a8394"/>
 </svg>
