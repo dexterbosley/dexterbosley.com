@@ -6,10 +6,10 @@
 
     {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
     {{- with $banner }}
-    <figure class="post-banner">
+    <figure class="post-cover">
         <img src="{{ . }}" alt="{{ $.Title }}">
         {{- if $.Params.cover.credit }}
-        <figcaption class="banner-credit">{{ $.Params.cover.credit }}</figcaption>
+        <figcaption class="post-cover-credit">{{ $.Params.cover.credit }}</figcaption>
         {{- end }}
     </figure>
     {{- end }}
@@ -20,9 +20,9 @@
         <span>{{ .Date.Format "January 2, 2006" }}</span>
         <span>·</span>
         <span>{{ .ReadingTime }} min read</span>
-        <span class="meta-spacer"></span>
-        <button class="share-btn share-btn-top" aria-label="Share">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <span class="spacer"></span>
+        <button class="share-btn" aria-label="Share">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
                 <polyline points="16 6 12 2 8 6"></polyline>
                 <line x1="12" y1="2" x2="12" y2="15"></line>
@@ -40,14 +40,14 @@
     </div>
     {{- end }}
 
-    <div class="post-content {{ if eq $.Section "stories" }}story-content{{ end }}">
+    <div class="post-content{{ if eq $.Section "stories" }} story-content{{ end }}">
         {{ .Content }}
     </div>
 
     <nav class="post-nav">
         <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← {{ if eq .Section "stories" }}Stories{{ else if eq .Section "essays" }}Essays{{ else }}All{{ end }}</a>
         <button class="share-btn" aria-label="Share">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
                 <polyline points="16 6 12 2 8 6"></polyline>
                 <line x1="12" y1="2" x2="12" y2="15"></line>
@@ -58,30 +58,18 @@
 </article>
 
 <script>
-document.querySelectorAll('.share-btn').forEach(btn => {
+document.querySelectorAll('.share-btn').forEach(function(btn) {
     btn.addEventListener('click', async function() {
-        const data = {
-            title: '{{ .Title }}',
-            url: window.location.href
-        };
-        
+        var data = { title: '{{ .Title }}', url: window.location.href };
         if (navigator.share) {
-            try {
-                await navigator.share(data);
-            } catch (err) {
-                if (err.name !== 'AbortError') {
-                    copyToClipboard(this);
-                }
-            }
-        } else {
-            copyToClipboard(this);
-        }
-        
-        function copyToClipboard(button) {
+            try { await navigator.share(data); }
+            catch (err) { if (err.name !== 'AbortError') copyLink(this); }
+        } else { copyLink(this); }
+        function copyLink(button) {
             navigator.clipboard.writeText(window.location.href).then(function() {
-                const span = button.querySelector('span');
+                var span = button.querySelector('span');
                 span.textContent = 'Copied';
-                setTimeout(() => span.textContent = 'Share', 2000);
+                setTimeout(function() { span.textContent = 'Share'; }, 2000);
             });
         }
     });

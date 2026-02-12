@@ -10,31 +10,27 @@
 {{- $isFirstPage := not .Paginator.HasPrev }}
 
 {{- if and .IsHome $isFirstPage }}
-{{- with site.GetPage "/stories/small-talk" }}
-{{- end }}
-{{- else if and (eq .Section "essays") $isFirstPage }}
-{{- with site.GetPage "/essays/test-essay-1" }}
-{{- end }}
-{{- else if and (eq .Section "stories") $isFirstPage }}
-{{- with site.GetPage "/stories/small-talk" }}
-{{- end }}
+<div class="popular-bar">
+    Popular: <a href="/stories/small-talk/">Small Talk</a>
+</div>
 {{- end }}
 
 {{- $first := true }}
 {{- range $paginator.Pages }}
 {{- $type := cond (eq .Section "essays") "essay" "story" }}
-<article class="post-entry{{ if $first }} featured{{ end }}" data-type="{{ $type }}">
+<article class="post-entry{{ if $first }} featured{{ end }}">
   {{- if .Params.cover.image }}
-  <div class="entry-banner">
+  <div class="entry-cover">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
   </div>
   {{- if .Params.cover.credit }}
-  <p class="banner-credit">{{ .Params.cover.credit }}</p>
+  <p class="entry-cover-credit">{{ .Params.cover.credit }}</p>
   {{- end }}
   {{- end }}
-  <header class="entry-header">
-    <h2>{{ .Title }}</h2>
-  </header>
+  <h2 class="entry-title">{{ .Title }}</h2>
+  {{- with .Description }}
+  <p class="entry-description">{{ . }}</p>
+  {{- end }}
   {{- if .Params.quote }}
   <blockquote class="entry-quote">
     <p>"{{ .Params.quote }}"</p>
@@ -43,20 +39,19 @@
     {{- end }}
   </blockquote>
   {{- end }}
-  <footer class="entry-footer">
+  <div class="entry-meta">
     {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min
-  </footer>
+  </div>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
 {{- $first = false }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
-<nav class="pagination pagination-bottom">
+<nav class="pagination">
   {{- if .Paginator.HasPrev }}
   <a href="{{ .Paginator.Prev.URL }}">Prev</a>
   {{- end }}
-  
   {{- range .Paginator.Pagers }}
   {{- if eq . $.Paginator }}
   <span class="pagination-current">{{ .PageNumber }}</span>
@@ -64,7 +59,6 @@
   <a href="{{ .URL }}">{{ .PageNumber }}</a>
   {{- end }}
   {{- end }}
-  
   {{- if .Paginator.HasNext }}
   <a href="{{ .Paginator.Next.URL }}">Next</a>
   {{- end }}
