@@ -19,7 +19,12 @@
   </div>
   {{- end }}
   <div class="entry-text">
-    <div class="entry-meta">{{ $type }} · {{ .Date.Format "Jan 2, 2006" }}</div>
+    <div class="entry-meta">
+      <span class="entry-type-bubble {{ lower $type }}">{{ $type }}</span>
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+      <span class="meta-sep">·</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
     <h2 class="entry-title">{{ .Title }}</h2>
     {{- if .Params.quote }}
     <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }} — {{ . }}{{ end }}</p>
