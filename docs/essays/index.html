@@ -156,7 +156,7 @@ img { max-width: 100%; height: auto; display: block; }
  
 .post-entry {
     position: relative;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
 }
 
 .post-entry:last-child {
@@ -164,14 +164,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .entry-cover {
-    margin-bottom: 0;
     border-radius: 3px;
     overflow: hidden;
 }
 
 .entry-cover img {
     width: 100%;
-    height: 260px;
+    height: 240px;
     object-fit: cover;
     transition: opacity 0.3s;
 }
@@ -181,27 +180,27 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .post-entry.featured .entry-cover img {
-    height: 300px;
+    height: 280px;
 }
 
-.entry-cover-credit {
+.entry-credit {
+    display: block;
     font-size: 11px;
     color: #9ca3af;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
-.entry-body {
-    margin-top: 16px;
+.entry-text {
+    margin-top: 14px;
 }
 
-.entry-type {
-    display: inline-block;
-    font-size: 11px;
+.entry-meta {
+    font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #6b7280;
-    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+    color: #9ca3af;
+    margin-bottom: 4px;
 }
 
 .entry-title {
@@ -221,38 +220,15 @@ img { max-width: 100%; height: auto; display: block; }
     font-size: 24px;
 }
 
-.entry-description {
+.entry-desc {
     font-size: 15px;
     color: #6b7280;
-    margin-top: 6px;
+    margin-top: 5px;
     line-height: 1.5;
 }
 
-.entry-quote {
-    margin-top: 10px;
-    padding: 0;
-    border: none;
-}
-
-.entry-quote p {
+.entry-desc em {
     font-family: 'Lora', Georgia, serif;
-    font-size: 15px;
-    font-style: italic;
-    color: #6b7280;
-    line-height: 1.5;
-}
-
-.entry-quote cite {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    color: #9ca3af;
-}
-
-.entry-meta {
-    font-size: 13px;
-    color: #9ca3af;
-    margin-top: 10px;
 }
 
 .entry-link {
@@ -686,14 +662,11 @@ img { max-width: 100%; height: auto; display: block; }
 <article class="post-entry featured">
   <div class="entry-cover">
     <img loading="lazy" src="https://www.dexterbosley.com/images/about-banner.jpg" alt="Mountain landscape">
+    <span class="entry-credit">Brévent/Flégère, France</span>
   </div>
-  <p class="entry-cover-credit">Brévent/Flégère, France</p>
-  <div class="entry-body">
-  <span class="entry-type">essay</span>
-  <h2 class="entry-title">On Agentic Software</h2>
-  <div class="entry-meta">
-    January 25, 2025 · 4 min
-  </div>
+  <div class="entry-text">
+    <div class="entry-meta">Essay · Jan 25, 2025</div>
+    <h2 class="entry-title">On Agentic Software</h2>
   </div>
   <a class="entry-link" aria-label="post link to On Agentic Software" href="https://www.dexterbosley.com/essays/on-agentic-software/"></a>
 </article>

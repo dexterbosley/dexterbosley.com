@@ -11,33 +11,24 @@
 
 {{- $first := true }}
 {{- range $paginator.Pages }}
-{{- $type := cond (eq .Section "essays") "essay" "story" }}
+{{- $type := cond (eq .Section "essays") "Essay" "Story" }}
 <article class="post-entry{{ if $first }} featured{{ end }}">
   {{- if .Params.cover.image }}
   <div class="entry-cover">
     <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-  </div>
-  {{- if .Params.cover.credit }}
-  <p class="entry-cover-credit">{{ .Params.cover.credit }}</p>
-  {{- end }}
-  {{- end }}
-  <div class="entry-body">
-  <span class="entry-type">{{ $type }}</span>
-  <h2 class="entry-title">{{ .Title }}</h2>
-  {{- with .Description }}
-  <p class="entry-description">{{ . }}</p>
-  {{- end }}
-  {{- if .Params.quote }}
-  <blockquote class="entry-quote">
-    <p>"{{ .Params.quote }}"</p>
-    {{- if .Params.quote_author }}
-    <cite>— {{ .Params.quote_author }}</cite>
+    {{- if .Params.cover.credit }}
+    <span class="entry-credit">{{ .Params.cover.credit }}</span>
     {{- end }}
-  </blockquote>
-  {{- end }}
-  <div class="entry-meta">
-    {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min
   </div>
+  {{- end }}
+  <div class="entry-text">
+    <div class="entry-meta">{{ $type }} · {{ .Date.Format "Jan 2, 2006" }}</div>
+    <h2 class="entry-title">{{ .Title }}</h2>
+    {{- if .Description }}
+    <p class="entry-desc">{{ .Description }}</p>
+    {{- else if .Params.quote }}
+    <p class="entry-desc"><em>"{{ .Params.quote }}"</em>{{ with .Params.quote_author }} — {{ . }}{{ end }}</p>
+    {{- end }}
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
 </article>
