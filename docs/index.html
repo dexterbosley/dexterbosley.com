@@ -157,7 +157,15 @@ img { max-width: 100%; height: auto; display: block; }
  
 .post-entry {
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.post-entry:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .post-entry:last-child {
@@ -165,7 +173,6 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .entry-cover {
-    border-radius: 3px;
     overflow: hidden;
 }
 
@@ -187,12 +194,12 @@ img { max-width: 100%; height: auto; display: block; }
 .entry-credit {
     display: block;
     font-size: 11px;
-    color: #9ca3af;
-    margin-top: 4px;
+    color: #b0b6c0;
+    padding: 4px 20px 0;
 }
 
 .entry-text {
-    margin-top: 14px;
+    padding: 14px 20px 18px;
 }
 
 .entry-meta {
@@ -579,10 +586,7 @@ img { max-width: 100%; height: auto; display: block; }
 
      
     .post-entry {
-        margin-bottom: 40px;
-    }
-
-    .entry-cover {
+        margin-bottom: 20px;
         margin-left: -20px;
         margin-right: -20px;
         border-radius: 0;
@@ -590,11 +594,20 @@ img { max-width: 100%; height: auto; display: block; }
 
     .entry-cover img {
         height: 200px;
-        border-radius: 0;
     }
 
     .post-entry.featured .entry-cover img {
         height: 220px;
+    }
+
+    .entry-credit {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .entry-text {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .entry-title { font-size: 20px; }
