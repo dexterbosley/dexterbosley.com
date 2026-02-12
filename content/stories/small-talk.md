@@ -5,8 +5,7 @@ draft: false
 quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
 cover:
-  image: "/images/matisse-banner.jpg"
-  credit: "Fra Angelico, St. Peter Martyr, 1442"
+  image: "/images/story-banner.jpg"
 ---
 
 It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.

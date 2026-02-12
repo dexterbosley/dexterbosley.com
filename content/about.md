@@ -3,7 +3,6 @@ title: "About Dexter Bosley"
 layout: "about"
 cover:
   image: "/images/about-banner.png"
-  credit: "Hilma af Klint, The Ten Largest, No. 5, 1907"
 ---
 
 **Currently**

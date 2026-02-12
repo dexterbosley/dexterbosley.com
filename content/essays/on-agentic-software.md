@@ -4,9 +4,7 @@ date: 2025-01-25
 type: "essay"
 quote: "The best software is the software you never have to use."
 cover:
-  image: "/images/about-banner.jpg"
-  credit: "Brévent/Flégère, France"
-  alt: "Mountain landscape"
+  image: "/images/essay-banner.jpg"
 ---
 
 In the spirit of transparency, I'll admit: I need to squint to see how available "agentic software" is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.
