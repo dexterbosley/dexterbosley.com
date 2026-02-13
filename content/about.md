@@ -3,7 +3,7 @@ title: "About Dexter Bosley"
 layout: "about"
 cover:
   image: "/images/palisades-banner.jpg"
-  credit: "Palisades, Lake Tahoe"
+  credit: "KT-22, Lake Tahoe"
 ---
 
 **Currently**
