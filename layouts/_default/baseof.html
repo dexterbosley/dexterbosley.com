@@ -92,6 +92,10 @@ img { max-width: 100%; height: auto; display: block; }
     font-weight: 500;
     color: #d0d4dc;
     letter-spacing: -0.01em;
+    background: linear-gradient(135deg, #d0d4dc 0%, #8b9bb5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .site-tagline {
@@ -169,40 +173,6 @@ img { max-width: 100%; height: auto; display: block; }
     margin: 20px 10px 20px;
 }
 
-.sidebar-popular h4 {
-    font-size: 10px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #5a6170;
-    margin: 0 0 12px 0;
-    padding-left: 10px;
-}
-
-.sidebar-popular ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-popular li {
-    margin-bottom: 1px;
-}
-
-.sidebar-popular a {
-    display: block;
-    font-size: 13px;
-    color: #7a8394;
-    padding: 5px 10px;
-    border-radius: 4px;
-    line-height: 1.4;
-    transition: color 0.2s, background 0.2s;
-}
-
-.sidebar-popular a:hover {
-    color: #d0d4dc;
-    background: #21252e;
-}
 
 .main-content {
     min-width: 0;
@@ -321,6 +291,13 @@ img { max-width: 100%; height: auto; display: block; }
 .post-entry.featured .entry-title {
     font-size: 28px;
 }
+
+/* Subtle top accent on featured card */
+.post-entry.featured {
+    border-top: 2px solid #2a2f3a;
+}
+.post-entry.featured.type-essays { border-top-color: rgba(139, 155, 181, 0.3); }
+.post-entry.featured.type-stories { border-top-color: rgba(183, 154, 215, 0.3); }
 
 .entry-link {
     position: absolute;
@@ -518,6 +495,9 @@ img { max-width: 100%; height: auto; display: block; }
     color: #3a4050;
     letter-spacing: 0.3em;
 }
+
+.section-essays .post-content::after { color: rgba(139, 155, 181, 0.25); }
+.section-stories .post-content::after { color: rgba(183, 154, 215, 0.25); }
 
 /* Story-specific: slightly more intimate reading feel */
 .story-content {
@@ -908,6 +888,7 @@ img { max-width: 100%; height: auto; display: block; }
     background: #21252e;
     border-radius: 6px;
     text-align: center;
+    border-top: 1px solid rgba(139, 155, 181, 0.12);
 }
 
 .feed-subscribe-text {
@@ -964,17 +945,6 @@ img { max-width: 100%; height: auto; display: block; }
                         <li><a href="/about/">About</a></li>
                     </ul>
                 </nav>
-                <hr class="sidebar-divider">
-                <div class="sidebar-popular">
-                    <h4>Popular</h4>
-                    <ul>
-                        <li><a href="/stories/small-talk/">Small Talk</a></li>
-                        <li><a href="/essays/taste-is-exclusion/">Taste Is Exclusion</a></li>
-                        <li><a href="/stories/the-mountain/">The Mountain</a></li>
-                        <li><a href="/essays/the-case-for-boredom/">The Case for Boredom</a></li>
-                        <li><a href="/essays/simplicity-debt/">Simplicity Debt</a></li>
-                    </ul>
-                </div>
                 <hr class="sidebar-divider">
                 <div class="sidebar-subscribe">
                     <h4>Subscribe</h4>
