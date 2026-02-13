@@ -66,24 +66,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .site-brand {
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.site-brand img {
-    width: 26px;
-    height: auto;
-    opacity: 0.8;
-    transition: opacity 0.3s, filter 0.3s;
-}
-
-.site-brand:hover img {
-    opacity: 1;
-    filter: drop-shadow(0 0 6px rgba(138, 157, 181, 0.3));
-}
-
-.site-brand-text {
-    display: flex;
     flex-direction: column;
 }
 
@@ -926,11 +908,8 @@ img { max-width: 100%; height: auto; display: block; }
     <div class="site-container">
         <header class="site-header">
             <a href="/" class="site-brand">
-                <img src="/images/penguin-logo.svg" alt="">
-                <div class="site-brand-text">
-                    <span class="site-name">Thinking in Public</span>
-                    <span class="site-tagline">by Dexter Bosley</span>
-                </div>
+                <span class="site-name">Thinking in Public</span>
+                <span class="site-tagline">by Dexter Bosley</span>
             </a>
         </header>
 
