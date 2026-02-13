@@ -3,7 +3,7 @@
 
     {{- if .Params.cover.image }}
     <figure class="about-banner">
-        <img src="{{ .Params.cover.image | absURL }}" alt="About">
+        <img loading="lazy" decoding="async" src="{{ .Params.cover.image | absURL }}" alt="About">
         {{- if .Params.cover.credit }}
         <figcaption class="about-banner-credit">{{ .Params.cover.credit }}</figcaption>
         {{- end }}

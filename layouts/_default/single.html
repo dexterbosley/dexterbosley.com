@@ -5,7 +5,7 @@
     {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
     {{- with $banner }}
     <figure class="post-cover">
-        <img src="{{ . }}" alt="{{ $.Title }}">
+        <img loading="lazy" decoding="async" src="{{ . }}" alt="{{ $.Title }}">
         {{- with $.Params.cover.caption }}
         <figcaption class="post-cover-caption">{{ . }}</figcaption>
         {{- end }}
