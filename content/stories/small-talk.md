@@ -5,8 +5,8 @@ draft: false
 quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
 cover:
-  image: "/images/story-banner.jpg"
-  caption: "Hilma af Klint, The Ten Largest No. 3, Youth, 1907"
+  image: "/images/chamonix-banner.jpg"
+  caption: "Le Brévent, Chamonix"
 ---
 
 It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
