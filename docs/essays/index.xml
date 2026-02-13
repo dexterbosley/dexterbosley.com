@@ -6,63 +6,6 @@
     <description>Recent content in Essays on Thinking in Public</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/essays/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Simplicity Debt</title>
-      <link>https://www.dexterbosley.com/essays/simplicity-debt/</link>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/simplicity-debt/</guid>
-      <description>&lt;p&gt;Technical debt is a well-understood concept. Simplicity debt is not, but it should be. Simplicity debt accumulates every time you add a feature without removing one, every time you introduce a new concept without consolidating existing ones.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The cost of simplicity debt is invisible in the short term. Each individual addition seems harmless. But the cumulative effect is a product that requires a manual to understand, an onboarding process to navigate, and a support team to explain.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Defaults Matter More Than Features</title>
-      <link>https://www.dexterbosley.com/essays/defaults-matter/</link>
-      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/defaults-matter/</guid>
-      <description>&lt;p&gt;Most users never change their default settings. This is not because they are lazy or uninformed. It is because defaults represent a recommendation from someone who presumably knows more about the software than they do.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This means the single most impactful product decision is often the least glamorous one: choosing the right default. A feature that is off by default might as well not exist for ninety percent of users. A setting buried three menus deep is functionally invisible.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Remote Work and the Loneliness Problem</title>
-      <link>https://www.dexterbosley.com/essays/remote-work-loneliness/</link>
-      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/remote-work-loneliness/</guid>
-      <description>&lt;p&gt;The remote work debate is usually framed as a productivity question. Can people do their jobs from home? The answer, by now, is obviously yes. But productivity was never the real question.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The real question is about loneliness. Office work, for all its inefficiencies, provided a social infrastructure that many people relied on without realizing it. The casual hallway conversation, the lunch with colleagues, the ambient presence of other humans — these were not productivity features. They were social ones.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Problem with Metrics</title>
-      <link>https://www.dexterbosley.com/essays/the-problem-with-metrics/</link>
-      <pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/the-problem-with-metrics/</guid>
-      <description>&lt;p&gt;Goodhart&amp;rsquo;s Law states that when a measure becomes a target, it ceases to be a good measure. This is the central tension of running any data-driven organization: the metrics you optimize for inevitably become the metrics you game.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Consider customer satisfaction scores. The moment you tie employee bonuses to CSAT, you create an incentive to optimize for the score rather than for actual satisfaction. Agents start asking customers to rate them highly. Difficult cases get escalated rather than resolved. The number goes up while the experience goes down.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Writing Matters More Than Speaking</title>
-      <link>https://www.dexterbosley.com/essays/why-writing-matters/</link>
-      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/why-writing-matters/</guid>
-      <description>&lt;p&gt;In most organizations, the person who speaks the loudest in a meeting is presumed to have the best ideas. This is almost never true. Speaking rewards confidence, charisma, and quick thinking. Writing rewards clarity, depth, and precision.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Amazon&amp;rsquo;s memo culture is instructive. Before any meeting of consequence, attendees read a six-page narrative memo in silence. The memo format forces the author to think through their argument completely — no bullet points to hide behind, no slides to distract from weak reasoning.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Taste Is Exclusion</title>
-      <link>https://www.dexterbosley.com/essays/taste-is-exclusion/</link>
-      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/taste-is-exclusion/</guid>
-      <description>&lt;p&gt;The most underrated skill in product development is the willingness to exclude. Every feature request is someone&amp;rsquo;s good idea. The hard part is recognizing that a product with every good idea is a bad product.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Taste, in the creative sense, is not about what you include. It is about what you leave out. A well-designed room is defined by the furniture that isn&amp;rsquo;t there. A great essay is shaped by the paragraphs that were cut.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Case for Boredom</title>
-      <link>https://www.dexterbosley.com/essays/the-case-for-boredom/</link>
-      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/the-case-for-boredom/</guid>
-      <description>&lt;p&gt;There is a growing body of evidence that boredom is not merely the absence of stimulation but a cognitive state with real utility. When we are bored, the default mode network activates — the same network responsible for autobiographical memory, future planning, and creative ideation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;We have engineered boredom out of modern life with remarkable efficiency. Every elevator ride, every waiting room, every moment between moments has been filled with a screen. The question is whether we have also engineered out the mental states that only boredom can produce.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>On Agentic Software</title>
-      <link>https://www.dexterbosley.com/essays/on-agentic-software/</link>
-      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/on-agentic-software/</guid>
-      <description>&lt;p&gt;In the spirit of transparency, I&amp;rsquo;ll admit: I need to squint to see how available &amp;ldquo;agentic software&amp;rdquo; is anything more than an industry-wide pivot to a text-based UX pattern with some promising functionality that catastrophically fails about ~5% of the time.&lt;/p&gt;&#xA;&lt;p&gt;I start here because I know others share this skepticism in some form or another, so a discussion of the fundamentals of &amp;ldquo;traditional software&amp;rdquo; contrasted to the fundamentals of emerging &amp;ldquo;agentic software&amp;rdquo; is worthwhile.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
