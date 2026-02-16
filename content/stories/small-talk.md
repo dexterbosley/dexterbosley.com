@@ -33,7 +33,7 @@ Then a crash.
 
 On the sidewalk to their right—a bit closer to the park than the Avenue—water and glass. Free from a cheap vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl gripped the balcony rail.
 
-"Did she… drop that?"
+"Did she drop that?"
 
 "Had to… look at all… I don't… Stevey, he's not moving," Elliott whispered.
 
