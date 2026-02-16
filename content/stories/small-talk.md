@@ -29,7 +29,7 @@ Steve turned towards the tall oak doors. "Mom never liked this place."
 
 "Yeah, she said it was better to sleep in the morning. Remember that Lucille-Packard thing? The one in our group—?" A scream fell from above.
 
-Then a crash.
+Then there was a crash.
 
 On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Free from a cheap vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl gripped the balcony rail.
 
