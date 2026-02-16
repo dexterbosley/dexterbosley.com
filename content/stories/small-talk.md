@@ -9,7 +9,7 @@ cover:
   caption: "Le Brévent, Chamonix"
 ---
 
-It was sticky outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
+It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
 
 ---
 
