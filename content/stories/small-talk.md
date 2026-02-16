@@ -27,7 +27,7 @@ Elliott shook his head. "I don't know."
 
 Steve turned towards the tall oak doors. "Mom never liked this place."
 
-"Yeah, she said it was better to sleep in the morning. Remember that Lucille-Packard thing? The one in our group—?" A scream fell from above.
+"Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group—?" A scream fell from above.
 
 Then there was a crash.
 
