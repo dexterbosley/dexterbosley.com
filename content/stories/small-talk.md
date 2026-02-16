@@ -9,7 +9,7 @@ cover:
   caption: "Le Brévent, Chamonix"
 ---
 
-It was a sticky day outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
+It was sticky outside the church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
 
 ---
 
@@ -17,7 +17,7 @@ Steve tapped his black shoes together. "I'm hungry."
 
 "Yeah, it was a lousy lunch. Those sandwiches were like the ones from school."
 
-Steve nodded. "So bad, soggy too."
+Steve nodded.
 
 "I'll make you something tonight, maybe tortellini."
 
@@ -31,7 +31,7 @@ Steve turned towards the tall oak doors. "Mom never liked this place."
 
 Then a crash.
 
-On the sidewalk to their right—a bit closer to the park than the Avenue—water and glass danced. Free from a cheap vase: cut flowers, white and pink. A man and his cheek were pressed into the pavement. Steve looked up. A girl gripped the balcony rail, eyes like plates.
+On the sidewalk to their right—a bit closer to the park than the Avenue—water and glass danced. Free from a cheap vase: cut flowers, white and pink. A man and his cheek were pressed into the pavement. Steve looked up. A girl gripped the balcony rail.
 
 "Did she… drop that?"
 
