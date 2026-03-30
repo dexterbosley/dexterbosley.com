@@ -32,7 +32,7 @@ To generalize: "traditional software" takes raw inputs (a table), transforms the
 
 I define "agentic software" as a collection of tasks that can be completed at an acceptable accuracy without human intervention, given a set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
 
-When developing agentic software, product differentiation is to articulate 'successful task completion.' I define "successful task completion" as:
+When developing agentic software, product differentiation is to articulate "successful task completion." I define "successful task completion" as:
 
 - *At minimum*, the expected outcome had someone done the task themselves
 - *At best*, the ideal outcome without considering what someone would do themselves
@@ -58,5 +58,7 @@ Useful agentic software will not:
 - assume input fidelity and provenance (i.e., five minute old radar signals can justify action)
 
 Instead, useful agentic software will articulate successful outputs as a function of variable inputs. User interaction will concentrate on the integration and articulation of inputs because their transformation is assumed to achieve successful outputs.
+
+## V.
 
 Traditional software treats inputs as things to be operated on to complete a task. Agentic software treats inputs as things that shape the task itself. Inputs now both define the boundaries of what software can do and underwrite its outputs. Useful agentic software defines input rails to facilitate decision making, that is all and little more.
