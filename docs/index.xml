@@ -6,8 +6,15 @@
     <description>Recent content on Thinking in Public</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Useful Digital Tools</title>
+      <link>https://www.dexterbosley.com/essays/on-useful-digital-tools/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.dexterbosley.com/essays/on-useful-digital-tools/</guid>
+      <description>&lt;p&gt;Everyone keeps saying that everything has changed for software now that AI is here. This essay discusses:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;why is agentic software different?&lt;/li&gt;&#xA;&lt;li&gt;what will differentiate agentic software?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;i&#34;&gt;I&lt;/h2&gt;&#xA;&lt;p&gt;I define &amp;ldquo;traditional software&amp;rdquo; as a set of digital tools that help users complete tasks. To develop such software, teams generally:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;listen to users describe a bunch of things they need to do&lt;/li&gt;&#xA;&lt;li&gt;design intuitive digital solutions to help them do those things&lt;/li&gt;&#xA;&lt;li&gt;implement those digital solutions in a scalable and stable way&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve &amp;ldquo;tasteful expansion,&amp;rdquo; yielding product differentiation.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Small Talk</title>
       <link>https://www.dexterbosley.com/stories/small-talk/</link>

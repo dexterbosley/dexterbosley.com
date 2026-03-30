@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ if .IsHome }}Thinking in Public{{ else }}{{ .Title }} · Thinking in Public{{ end }}</title>
+    <title>On Useful Digital Tools · Thinking in Public</title>
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <style>
-/* ============================================
-   RESET & BASE
-   ============================================ */
+ 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -30,11 +28,11 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
 
-/* Selection */
+ 
 ::selection { background: rgba(138, 157, 181, 0.25); color: #dce2ea; }
 ::-moz-selection { background: rgba(138, 157, 181, 0.25); color: #dce2ea; }
 
-/* Page fade-in */
+ 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(6px); }
     to { opacity: 1; transform: translateY(0); }
@@ -42,9 +40,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .main-content { animation: fadeIn 0.4s ease-out; }
 
-/* ============================================
-   LAYOUT
-   ============================================ */
+ 
 .site-container {
     max-width: 980px;
     margin: 0 auto;
@@ -57,9 +53,7 @@ img { max-width: 100%; height: auto; display: block; }
     gap: 48px;
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
+ 
 .site-header {
     padding: 48px 0 44px;
 }
@@ -87,9 +81,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 
-/* ============================================
-   SIDEBAR
-   ============================================ */
+ 
 .sidebar {
     position: sticky;
     top: 40px;
@@ -161,9 +153,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 
-/* ============================================
-   FEED ENTRIES
-   ============================================ */
+ 
 .post-entry {
     position: relative;
     margin-bottom: 28px;
@@ -193,7 +183,7 @@ img { max-width: 100%; height: auto; display: block; }
     transition: opacity 0.5s ease, transform 0.4s;
 }
 
-/* Lazy-load image reveal */
+ 
 .lazy-reveal {
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -252,7 +242,7 @@ img { max-width: 100%; height: auto; display: block; }
     letter-spacing: 0.01em;
 }
 
-/* Type accent colors */
+ 
 .type-essays .entry-type { color: #8a9db5; }
 .type-stories .entry-type { color: #b79ad7; }
 
@@ -274,7 +264,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-size: 28px;
 }
 
-/* Subtle top accent on featured card */
+ 
 .post-entry.featured {
     border-top: 2px solid #3a4554;
 }
@@ -287,9 +277,7 @@ img { max-width: 100%; height: auto; display: block; }
     z-index: 1;
 }
 
-/* ============================================
-   PAGINATION
-   ============================================ */
+ 
 .pagination {
     display: flex;
     align-items: center;
@@ -318,9 +306,7 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 4px 10px;
 }
 
-/* ============================================
-   SINGLE POST
-   ============================================ */
+ 
 .post-cover {
     margin: 0 0 4px;
     border-radius: 4px;
@@ -467,7 +453,7 @@ img { max-width: 100%; height: auto; display: block; }
     text-decoration-color: #8a9db5;
 }
 
-/* End-of-article ornament */
+ 
 .post-content::after {
     content: '✦';
     display: block;
@@ -481,13 +467,13 @@ img { max-width: 100%; height: auto; display: block; }
 .section-essays .post-content::after { color: rgba(138, 157, 181, 0.25); }
 .section-stories .post-content::after { color: rgba(183, 154, 215, 0.25); }
 
-/* Story-specific: slightly more intimate reading feel */
+ 
 .story-content {
     font-size: 19px;
     line-height: 2;
 }
 
-/* Essay section numerals (I, II, III…) */
+ 
 .section-essays .post-content h2 {
     text-align: center;
     font-family: 'Lora', Georgia, serif;
@@ -500,7 +486,7 @@ img { max-width: 100%; height: auto; display: block; }
     border: none;
 }
 
-/* Epigraph */
+ 
 .post-epigraph {
     margin-bottom: 36px;
     padding-left: 20px;
@@ -526,7 +512,7 @@ img { max-width: 100%; height: auto; display: block; }
     margin-top: 6px;
 }
 
-/* Post navigation */
+ 
 .post-nav {
     display: flex;
     justify-content: space-between;
@@ -560,7 +546,7 @@ img { max-width: 100%; height: auto; display: block; }
     letter-spacing: 0.02em;
 }
 
-/* Share button */
+ 
 .share-btn {
     display: inline-flex;
     align-items: center;
@@ -578,9 +564,7 @@ img { max-width: 100%; height: auto; display: block; }
 .share-btn:hover { color: #dce2ea; }
 .share-btn svg { width: 14px; height: 14px; }
 
-/* ============================================
-   ABOUT PAGE
-   ============================================ */
+ 
 .about-banner {
     margin: 0 0 28px;
     border-radius: 4px;
@@ -657,9 +641,7 @@ img { max-width: 100%; height: auto; display: block; }
     color: #475464;
 }
 
-/* ============================================
-   MOBILE NAV (bottom bar)
-   ============================================ */
+ 
 .mobile-nav {
     display: none;
     position: fixed;
@@ -690,9 +672,7 @@ img { max-width: 100%; height: auto; display: block; }
     background: #2b3442;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+ 
 @media (max-width: 700px) {
     .site-container {
         padding: 0 16px;
@@ -718,7 +698,7 @@ img { max-width: 100%; height: auto; display: block; }
         padding-bottom: calc(84px + env(safe-area-inset-bottom));
     }
 
-    /* Feed */
+     
     .post-entry {
         margin-bottom: 16px;
         margin-left: -16px;
@@ -749,7 +729,7 @@ img { max-width: 100%; height: auto; display: block; }
 
     .entry-desc { font-size: 14px; }
 
-    /* Single post */
+     
     .post-title { font-size: 26px; }
 
     .post-header {
@@ -800,7 +780,7 @@ img { max-width: 100%; height: auto; display: block; }
         margin-bottom: 48px;
     }
 
-    /* About */
+     
     .about-banner {
         margin-left: -16px;
         margin-right: -16px;
@@ -824,9 +804,7 @@ img { max-width: 100%; height: auto; display: block; }
     }
 }
 
-/* ============================================
-   SUBSCRIBE
-   ============================================ */
+ 
 .sidebar-subscribe h4 {
     font-size: 10px;
     font-weight: 500;
@@ -904,7 +882,7 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 0;
 }
 
-/* Reading progress bar */
+ 
 .reading-progress {
     position: fixed;
     top: 0;
@@ -954,7 +932,99 @@ img { max-width: 100%; height: auto; display: block; }
             </aside>
 
             <main class="main-content">
-                {{ block "main" . }}{{ end }}
+                
+<div class="reading-progress"></div>
+<article class="post-single section-essays">
+    <figure class="post-cover">
+        <img loading="lazy" decoding="async" src="/images/hillsborough-banner.jpg" alt="On Useful Digital Tools">
+        <figcaption class="post-cover-caption">Hillsborough, California</figcaption>
+    </figure>
+
+    <header class="post-header">
+        <div class="post-meta">
+            <span class="type-tag">Essay</span>
+            <span>·</span>
+            <span>March 30, 2026</span>
+            <span>·</span>
+            <span>3 min read</span>
+        </div>
+        <h1 class="post-title">On Useful Digital Tools</h1>
+    </header>
+
+    <div class="post-content">
+        <p>Everyone keeps saying that everything has changed for software now that AI is here. This essay discusses:</p>
+<ul>
+<li>why is agentic software different?</li>
+<li>what will differentiate agentic software?</li>
+</ul>
+<h2 id="i">I</h2>
+<p>I define &ldquo;traditional software&rdquo; as a set of digital tools that help users complete tasks. To develop such software, teams generally:</p>
+<ul>
+<li>listen to users describe a bunch of things they need to do</li>
+<li>design intuitive digital solutions to help them do those things</li>
+<li>implement those digital solutions in a scalable and stable way</li>
+</ul>
+<p>Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve &ldquo;tasteful expansion,&rdquo; yielding product differentiation.</p>
+<p><img src="/images/useful-digital-tools-1-0.png" alt="Tasteful expansion: User Complexity vs # of Product Features"></p>
+<p>To generalize: &ldquo;traditional software&rdquo; takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table.</p>
+<h2 id="ii">II</h2>
+<p>I define &ldquo;agentic software&rdquo; as a collection of tasks that can be completed at an acceptable accuracy without human intervention, given a set of defined inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.</p>
+<p>When developing agentic software, product differentiation is to define &lsquo;successful task completion.&rsquo; I define &ldquo;successful task completion&rdquo; as:</p>
+<ul>
+<li><em>At minimum</em>, the expected outcome had someone done the task themselves</li>
+<li><em>At best</em>, the ideal outcome without considering what someone would do themselves</li>
+</ul>
+<p>Two things worth underscoring here. First, the minimum can be observed by user actions; the best is a point of view and may conflict with user actions. Second, the minimum can be evaluated immediately with shadow testing; the best can only be evaluated through a combination of domain expertise and available context.</p>
+<p><img src="/images/useful-digital-tools-2-0.png" alt="Model Feature Depth and success rates"></p>
+<p>Critically, there is no user experience to consider (i.e., feature depth). All that matters is that the task success rate with input quality held constant is acceptable to the customer.</p>
+<h2 id="iii">III</h2>
+<p>Consider a professional monitoring a radar screen. Given object speed, altitude, and heading, an observer can correctly model the decision space for a commercial air traffic controller to route planes safely. Yet with the same inputs a military operator might scramble jets while a meteorologist might log a data point while checking their phone.</p>
+<p>Now consider the same scenario but with radar data delayed by five minutes. The air traffic controller communicates proactively but is otherwise calm; the military operator is paralyzed;. the meteorologist does not notice.</p>
+<h2 id="iv">IV</h2>
+<p>Useful agentic software will not:</p>
+<ul>
+<li>define a universal approximation of user intent (i.e., those using radar are landing planes)</li>
+<li>evaluate success via a single output (i.e., proper radar use implies safe routing)</li>
+<li>assume input fidelity and reverence (i.e., five minute old radar signals can justify action)</li>
+</ul>
+<p>Instead, useful agentic software will articulate successful outputs as a function of variable inputs. User interaction will concentrate on the integration and articulation of inputs because their transformation is assumed to achieve successful outputs.</p>
+<h2 id="v">V</h2>
+<p>This is the fundamental inversion. Traditional software treats inputs as things to be operated on. Agentic software treats inputs as things that shape the operation itself. Inputs now both define the boundaries of what software can do and underwrite its outputs.</p>
+<p>Can we reasonably and reliably compress a person or persona to a bounded set of inputs?</p>
+
+    </div>
+
+    <nav class="post-nav">
+        <a href="/essays/" class="back-link">← Essays</a>
+        <button class="share-btn" aria-label="Share">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                <polyline points="16 6 12 2 8 6"></polyline>
+                <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+        </button>
+    </nav>
+</article>
+
+<script>
+document.querySelectorAll('.share-btn').forEach(function(btn) {
+    btn.addEventListener('click', async function() {
+        var data = { title: 'On Useful Digital Tools', url: window.location.href };
+        if (navigator.share) {
+            try { await navigator.share(data); }
+            catch (err) { if (err.name !== 'AbortError') copyLink(this); }
+        } else { copyLink(this); }
+        function copyLink(button) {
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                var span = button.querySelector('span');
+                span.textContent = 'Copied';
+                setTimeout(function() { span.textContent = 'Share'; }, 2000);
+            });
+        }
+    });
+});
+</script>
             </main>
         </div>
     </div>
@@ -968,7 +1038,7 @@ img { max-width: 100%; height: auto; display: block; }
 
     <script>
         (function() {
-            // Active nav
+            
             var path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
             document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(function(link) {
                 var href = link.getAttribute('href').replace(/\/$/, '') || '/';
@@ -976,13 +1046,13 @@ img { max-width: 100%; height: auto; display: block; }
                 else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
             });
 
-            // Lazy-load image reveal
+            
             document.querySelectorAll('.lazy-reveal').forEach(function(img) {
                 if (img.complete) { img.classList.add('loaded'); }
                 else { img.addEventListener('load', function() { img.classList.add('loaded'); }); }
             });
 
-            // Reading progress bar (single posts only)
+            
             var progress = document.querySelector('.reading-progress');
             var article = document.querySelector('.post-content');
             if (progress && article) {
