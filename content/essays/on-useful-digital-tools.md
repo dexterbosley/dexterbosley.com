@@ -8,12 +8,13 @@ cover:
   caption: "Sugar Bowl, California"
 ---
 
-Everyone keeps saying that everything has changed. This essay discusses:
+This essay discusses:
 
+- what is traditional software?
 - why is agentic software different?
-- what differentiates agentic software?
+- how will agentic software differentiate?
 
-***
+## I.
 
 I define "traditional software" as a set of digital tools that help users complete tasks. To develop such software, teams generally:
 
@@ -26,7 +27,8 @@ Rinse and repeat: feature ideation, creation and distribution on top of an ever-
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
 To generalize: "traditional software" takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table.
-***
+
+## II.
 
 I define "agentic software" as a collection of tasks that can be completed at an acceptable accuracy without human intervention, given a set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
 
@@ -40,13 +42,14 @@ Two things worth underscoring here. First, the minimum can be observed by user a
 ![Model Feature Depth and success rates](/images/useful-digital-tools-2-0.png)
 
 Critically, there is no user experience to consider (i.e., feature depth). All that matters is that the task success rate with input quality held constant is acceptable to the customer.
-***
+
+## III.
 
 Consider a professional monitoring a radar screen. Given object speed, altitude, and heading, an observer can correctly model the decision space for a commercial air traffic controller to route planes safely. Yet with the same inputs a military operator might scramble jets while a meteorologist might log a data point while checking their phone.
 
 Now consider the same scenario but with radar data delayed by five minutes. The air traffic controller communicates proactively but is otherwise calm; the military operator is paralyzed;. the meteorologist does not notice.
 
-***
+## IV.
 
 Useful agentic software will not:
 
@@ -56,4 +59,4 @@ Useful agentic software will not:
 
 Instead, useful agentic software will articulate successful outputs as a function of variable inputs. User interaction will concentrate on the integration and articulation of inputs because their transformation is assumed to achieve successful outputs.
 
-"Traditional software" treats inputs as things to be operated on to complete a task. Agentic software treats inputs as things that shape the task itself. Inputs now both define the boundaries of what software can do and underwrite its outputs. Useful agentic software defines input rails to facilitate decision making, that is all and little more.
+Traditional software treats inputs as things to be operated on to complete a task. Agentic software treats inputs as things that shape the task itself. Inputs now both define the boundaries of what software can do and underwrite its outputs. Useful agentic software defines input rails to facilitate decision making, that is all and little more.
