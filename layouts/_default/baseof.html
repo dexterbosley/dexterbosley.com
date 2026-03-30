@@ -548,6 +548,31 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--essay-accent-link);
 }
 
+@media (min-width: 701px) {
+    .section-essays .post-header,
+    .section-essays .post-content,
+    .section-essays .post-nav {
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-essays .post-content {
+        font-size: 21px;
+        line-height: 1.95;
+    }
+
+    .section-essays .post-content img {
+        width: min(88%, 560px);
+        margin: 2.4em auto;
+    }
+
+    .section-essays .post-content ul,
+    .section-essays .post-content ol {
+        max-width: 34em;
+    }
+}
+
 /* Epigraph */
 .post-epigraph {
     margin-bottom: 36px;
@@ -849,6 +874,12 @@ img { max-width: 100%; height: auto; display: block; }
     .post-content {
         font-size: 17px;
         line-height: 1.8;
+    }
+
+    .section-essays .post-content img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .post-content > p:first-of-type::first-letter {
