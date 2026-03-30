@@ -2,6 +2,7 @@ baseURL = 'https://www.dexterbosley.com/'
 languageCode = 'en-us'
 title = 'Thinking in Public'
 publishDir = "docs"
+disableKinds = ["taxonomy", "term"]
 
 [pagination]
   pagerSize = 10

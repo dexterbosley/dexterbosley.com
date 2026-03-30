@@ -39,8 +39,9 @@
 <div class="feed-subscribe">
   <p class="feed-subscribe-text">Get new essays and stories by email</p>
   <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
-    <input type="email" name="email" placeholder="Email" required>
-    <button type="submit">→</button>
+    <label class="sr-only" for="feed-subscribe-email">Email address</label>
+    <input id="feed-subscribe-email" type="email" name="email" placeholder="Email" autocomplete="email" inputmode="email" enterkeyhint="send" required>
+    <button type="submit">Subscribe</button>
   </form>
 </div>
 
