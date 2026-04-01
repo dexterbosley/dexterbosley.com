@@ -536,17 +536,15 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .section-essays .post-content > blockquote:first-child {
-    margin: 0 0 2.6em;
+    margin: 0 0 36px;
     padding-left: 20px;
     border-left-color: var(--essay-accent-border);
-    font-style: normal;
-    color: #dce2ea;
 }
 
 .section-essays .post-content > blockquote:first-child p {
-    margin: 0 0 0.75em;
+    margin: 0 0 0.65em;
     font-family: 'Lora', Georgia, serif;
-    font-size: 0.98em;
+    font-size: 16px;
     font-style: italic;
     color: var(--essay-accent-link);
     line-height: 1.6;
@@ -558,7 +556,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .section-essays .post-content > blockquote:first-child li {
-    margin-bottom: 0.35em;
+    margin-bottom: 0.3em;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--essay-accent-link);
+    line-height: 1.6;
 }
 
 .section-essays .post-content > blockquote:first-child li:last-child {
@@ -595,13 +598,15 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Epigraph */
-.post-epigraph {
+.post-epigraph,
+.section-essays .post-content > blockquote:first-child {
     margin-bottom: 36px;
     padding-left: 20px;
     border-left: 2px solid #3a4a5a;
 }
 
 .section-stories .post-epigraph { border-left-color: var(--story-accent-border); }
+.section-essays .post-content > blockquote:first-child { border-left-color: var(--essay-accent-border); }
 
 .post-epigraph p {
     font-family: 'Lora', Georgia, serif;

@@ -8,60 +8,63 @@ cover:
   caption: "Sugar Bowl, California"
 ---
 
-> This essay discusses:
->
-> - what is "traditional software"?
-> - what is "agentic software"?
-> - what will differentiate agentic software?
+This essay discusses:
+
+- what is “traditional software”?
+- what is “agentic software”?
+- what makes agentic software useful?
 
 ## I.
 
-I define traditional software as a set of digital tools that help users complete tasks. To develop such software, teams generally:
+I define “traditional software” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).
 
-- listen to users describe a bunch of things they need to do
-- design intuitive digital solutions to help them do those things
-- implement those digital solutions in a scalable and stable way
-
-Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve "tasteful expansion" and thus product differentiation.
+Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.
 
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
-To generalize: traditional software takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table. More tables, more transformations, more customers.
+More tables, more transformations, more customers.
 
 ## II.
 
-I define agentic software as a collection of tasks that can be completed at an acceptable accuracy without human intervention given a defined set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
+I define “agentic software” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.
 
-When developing agentic software, product differentiation is to achieve "task completion." I define task completion as:
+Also worth making explicit is my working definition of successful “task completion”:
 
-- *At minimum*, the expected outcome had someone done the task themselves
-- *At best*, the ideal outcome without considering what someone would do themselves
+- At minimum, the expected outcome had someone done the task themselves
+- At best, the ideal outcome without considering what someone would do themselves
 
-Two things worth underscoring:
+A successful team must be intentional here. The minimum is observable by logging existing user actions and can be empirically validated in production. The best is an ambiguous function of domain expertise and context awareness that is admittedly difficult to define. My sense is targeting the minimum risks normalizing careless patterns rather than delivering productive automations. That said, the best requires conviction and is liable to fail catastrophically.
 
-1. The minimum can be observed by user actions; the best is a point of view and may conflict with user actions
-2. The minimum can be evaluated with shadow testing; the best requires domain expertise and context awareness
+***
 
-![Model Feature Depth and success rates](/images/useful-digital-tools-2-0.png)
+Consider someone monitoring a radar screen. Given object speed, altitude, and heading, an observer can model the decision space for an air traffic controller routing planes safely. Yet with the same inputs, a meteorologist using the same console can log a data point while checking their phone. Both are valid applications.
 
-Critically, there is no user experience to consider (i.e., feature depth). All that matters is that the task success rate with input quality held constant is acceptable to the customer.
+Now consider if radar data is delayed by five minutes. The controller now compensates by cross-referencing other instruments, communicating proactively, and adjusting every decision for the lag. The meteorologist neither notices nor cares. Both are valid responses.
 
-## III.
+***
 
-Consider a professional monitoring a radar screen. Given object speed, altitude, and heading, an observer can correctly model the decision space for a commercial air traffic controller to route planes safely. Yet with the same inputs a military operator might scramble jets while a meteorologist might log a data point while checking their phone.
+Intuitively, success is defined very differently depending on the user persona, and different user personas have very different definitions for valid data. Less obvious is how traditional and agentic systems adapt.
 
-Now consider the same scenario but with radar data delayed by five minutes. The air traffic controller communicates proactively but is otherwise calm; the military operator is paralyzed;. the meteorologist does not notice.
+Back to the radar screen.
 
-## IV.
+Traditional software optimizes the display and interpretation layer.. A team might build a live graph of pipeline freshness that each persona can interpret differently. Over time, a team might iterate on said graph, adding customizations for different personas as needed.
+
+Conversely, agentic software is entirely agnostic to the console and its display; the focus is on task completion. The challenge, then, is to reliably distinguish between tasks where stale data is catastrophic and tasks where it is irrelevant. That is hard to do for at least two reasons.
+
+First, traditional software trains users to interpret and transform information within an opinionated and variable UI. Thus, to build agentic software, a team must understand 1/ what information is relevant to a given task and 2/ how users transform, filter and interpret said information for a given task. Second, traditional software relies on user discretion to parse a surface and ignore features surfacing irrelevant information.
+
+Taken together: traditional software guarantees a bounded set of inputs and facilitates their transformation but does not promise outputs (i.e., user action). Agentic software inverts this. Inputs are variable, but given any set of them, agentic software will produce an output. Traditional software is constrained by inaction while agentic software is constrained by overreaction.
+
+***
 
 Useful agentic software will not:
 
-- dictate a universal approximation of user intent (i.e., those using radar are landing planes)
-- evaluate success via a single output (i.e., proper radar use implies safe routing)
-- assume input fidelity and provenance (i.e., five minute old radar signals can justify action)
+- dictate a universal approximation of user intent
+- evaluate success with an opinionated benchmark
+- assume input relevance and fidelity
 
-Instead, useful agentic software will articulate successful outputs as a function of variable inputs. User interaction will concentrate on the integration and articulation of inputs because their transformation is assumed to achieve successful outputs.
+Useful agentic software will:
 
-## V.
-
-Traditional software treats inputs as things to be operated on to complete a task. Agentic software treats inputs as things that shape the task itself. Inputs now both define the boundaries of what software can do and underwrite its outputs. Useful agentic software defines input rails to facilitate decision making, that is all and little more.
+- collapse interaction to only input configuration
+- structure inputs to accommodate any task
+- obsess over input validation and ignore output customization
