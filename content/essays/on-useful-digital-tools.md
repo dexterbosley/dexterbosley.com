@@ -11,8 +11,8 @@ cover:
 This essay discusses:
 
 - what is traditional software?
-- why is agentic software different?
-- how will agentic software differentiate?
+- what is agentic software?
+- what will differentiate agentic software?
 
 ## I.
 
@@ -22,7 +22,7 @@ I define "traditional software" as a set of digital tools that help users comple
 - design intuitive digital solutions to help them do those things
 - implement those digital solutions in a scalable and stable way
 
-Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve "tasteful expansion," yielding product differentiation.
+Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve "tasteful expansion" and thus product differentiation.
 
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
@@ -30,9 +30,9 @@ To generalize: "traditional software" takes raw inputs (a table), transforms the
 
 ## II.
 
-I define "agentic software" as a collection of tasks that can be completed at an acceptable accuracy without human intervention, given a set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
+I define "agentic software" as a collection of tasks that can be completed at an acceptable accuracy without human intervention given a defined set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
 
-When developing agentic software, product differentiation is to articulate "successful task completion." I define "successful task completion" as:
+When developing agentic software, product differentiation is to achieve successful task completion. I define successful task completion as:
 
 - *At minimum*, the expected outcome had someone done the task themselves
 - *At best*, the ideal outcome without considering what someone would do themselves
