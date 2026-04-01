@@ -8,11 +8,11 @@ cover:
   caption: "Sugar Bowl, California"
 ---
 
-This essay discusses:
-
-- what is traditional software?
-- what is agentic software?
-- what will differentiate agentic software?
+> This essay discusses:
+>
+> - what is traditional software?
+> - what is agentic software?
+> - what will differentiate agentic software?
 
 ## I.
 
@@ -26,7 +26,7 @@ Rinse and repeat: feature ideation, creation and distribution on top of an ever-
 
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
-To generalize: "traditional software" takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table.
+To generalize: "traditional software" takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table. More tables, more transformations, more customers.
 
 ## II.
 

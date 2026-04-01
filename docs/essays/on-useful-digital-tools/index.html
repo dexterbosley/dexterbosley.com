@@ -521,6 +521,40 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--essay-accent-link);
 }
 
+.section-essays .post-content > blockquote:first-child {
+    margin: 0 0 2.6em;
+    padding-left: 20px;
+    border-left-color: var(--essay-accent-border);
+    font-style: normal;
+    color: #dce2ea;
+}
+
+.section-essays .post-content > blockquote:first-child p {
+    margin: 0 0 0.75em;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.98em;
+    font-style: italic;
+    color: var(--essay-accent-link);
+    line-height: 1.6;
+}
+
+.section-essays .post-content > blockquote:first-child ul {
+    margin: 0;
+    padding-left: 1.15em;
+}
+
+.section-essays .post-content > blockquote:first-child li {
+    margin-bottom: 0.35em;
+}
+
+.section-essays .post-content > blockquote:first-child li:last-child {
+    margin-bottom: 0;
+}
+
+.section-essays .post-content > blockquote:first-child li::marker {
+    color: var(--essay-accent);
+}
+
 @media (min-width: 701px) {
     .section-essays .post-header,
     .section-essays .post-content,
@@ -1073,12 +1107,14 @@ img { max-width: 100%; height: auto; display: block; }
     </header>
 
     <div class="post-content">
-        <p>This essay discusses:</p>
+        <blockquote>
+<p>This essay discusses:</p>
 <ul>
 <li>what is traditional software?</li>
 <li>what is agentic software?</li>
 <li>what will differentiate agentic software?</li>
 </ul>
+</blockquote>
 <h2 id="i">I.</h2>
 <p>I define &ldquo;traditional software&rdquo; as a set of digital tools that help users complete tasks. To develop such software, teams generally:</p>
 <ul>
@@ -1088,7 +1124,7 @@ img { max-width: 100%; height: auto; display: block; }
 </ul>
 <p>Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve &ldquo;tasteful expansion&rdquo; and thus product differentiation.</p>
 <p><img src="/images/useful-digital-tools-1-0.png" alt="Tasteful expansion: User Complexity vs # of Product Features"></p>
-<p>To generalize: &ldquo;traditional software&rdquo; takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table.</p>
+<p>To generalize: &ldquo;traditional software&rdquo; takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table. More tables, more transformations, more customers.</p>
 <h2 id="ii">II.</h2>
 <p>I define &ldquo;agentic software&rdquo; as a collection of tasks that can be completed at an acceptable accuracy without human intervention given a defined set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.</p>
 <p>When developing agentic software, product differentiation is to achieve successful task completion. I define successful task completion as:</p>

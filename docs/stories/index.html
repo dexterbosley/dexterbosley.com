@@ -521,6 +521,40 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--essay-accent-link);
 }
 
+.section-essays .post-content > blockquote:first-child {
+    margin: 0 0 2.6em;
+    padding-left: 20px;
+    border-left-color: var(--essay-accent-border);
+    font-style: normal;
+    color: #dce2ea;
+}
+
+.section-essays .post-content > blockquote:first-child p {
+    margin: 0 0 0.75em;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.98em;
+    font-style: italic;
+    color: var(--essay-accent-link);
+    line-height: 1.6;
+}
+
+.section-essays .post-content > blockquote:first-child ul {
+    margin: 0;
+    padding-left: 1.15em;
+}
+
+.section-essays .post-content > blockquote:first-child li {
+    margin-bottom: 0.35em;
+}
+
+.section-essays .post-content > blockquote:first-child li:last-child {
+    margin-bottom: 0;
+}
+
+.section-essays .post-content > blockquote:first-child li::marker {
+    color: var(--essay-accent);
+}
+
 @media (min-width: 701px) {
     .section-essays .post-header,
     .section-essays .post-content,
