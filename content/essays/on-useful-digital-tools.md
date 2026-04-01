@@ -10,13 +10,13 @@ cover:
 
 > This essay discusses:
 >
-> - what is traditional software?
-> - what is agentic software?
+> - what is "traditional software"?
+> - what is "agentic software"?
 > - what will differentiate agentic software?
 
 ## I.
 
-I define "traditional software" as a set of digital tools that help users complete tasks. To develop such software, teams generally:
+I define traditional software as a set of digital tools that help users complete tasks. To develop such software, teams generally:
 
 - listen to users describe a bunch of things they need to do
 - design intuitive digital solutions to help them do those things
@@ -26,18 +26,21 @@ Rinse and repeat: feature ideation, creation and distribution on top of an ever-
 
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
-To generalize: "traditional software" takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table. More tables, more transformations, more customers.
+To generalize: traditional software takes raw inputs (a table), transforms them into an interactive surface (a UI), lets a user act on those inputs (a series of transformations), and then saves the result as a new table. More tables, more transformations, more customers.
 
 ## II.
 
-I define "agentic software" as a collection of tasks that can be completed at an acceptable accuracy without human intervention given a defined set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
+I define agentic software as a collection of tasks that can be completed at an acceptable accuracy without human intervention given a defined set of inputs. Quality is measured along three dimensions: what tasks are completed, what inputs are required, and what accuracy is expected.
 
-When developing agentic software, product differentiation is to achieve successful task completion. I define successful task completion as:
+When developing agentic software, product differentiation is to achieve "task completion." I define task completion as:
 
 - *At minimum*, the expected outcome had someone done the task themselves
 - *At best*, the ideal outcome without considering what someone would do themselves
 
-Two things worth underscoring here. First, the minimum can be observed by user actions; the best is a point of view and may conflict with user actions. Second, the minimum can be evaluated immediately with shadow testing; the best can only be evaluated through a combination of domain expertise and available context.
+Two things worth underscoring:
+
+1. The minimum can be observed by user actions; the best is a point of view and may conflict with user actions
+2. The minimum can be evaluated with shadow testing; the best requires domain expertise and context awareness
 
 ![Model Feature Depth and success rates](/images/useful-digital-tools-2-0.png)
 
