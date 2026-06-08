@@ -14,7 +14,7 @@ It was sticky. Wet air wrapped around and between the leaves and the boys watche
 
 Steve tapped his black shoes together. "I'm hungry."
 
-"Yeah, it was a lousy lunch. Those sandwiches were like the ones from school."
+"Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer."
 
 Steve nodded.
 
@@ -30,13 +30,13 @@ Steve turned towards the tall oak doors. "Mom never liked this place."
 
 Then there was a crash.
 
-On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Free from a cheap vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl gripped the balcony rail.
+On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Free from a cheap vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl and a balcony rail.
 
 "Did she drop that?"
 
 "Had to… look at all… I don't… Stevey, he's not moving," Elliott whispered.
 
-A woman ran across the street toward the scene. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve stared at the stained concrete.
+A woman ran across the street. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve watched the concrete stain.
 
 There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.
 
