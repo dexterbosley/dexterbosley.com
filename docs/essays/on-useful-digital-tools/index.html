@@ -217,8 +217,35 @@
             line-height: 1.4;
         }
 
-        .post-template-stories .post-content {
+        .post-template-essay .post-content p:has(> img) {
+            max-width: 580px;
+            margin: 3rem auto 0.75rem;
+        }
+
+        .post-template-essay .post-content p:has(> img) + p em {
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post-template-essay .post-content hr {
+            display: none;
+        }
+
+        .post-template-story .post-content {
             max-width: var(--measure);
+        }
+
+        .post-template-story .post-content hr {
+            border: 0;
+            margin: 2.4rem 0;
+            text-align: center;
+        }
+
+        .post-template-story .post-content hr::before {
+            content: "***";
+            color: var(--ink);
+            letter-spacing: 0.08em;
         }
 
         .post-content {
@@ -378,17 +405,17 @@
 <li>At best, the ideal outcome without considering what someone would do themselves</li>
 </ul>
 <p>A successful team must be intentional here. The minimum is observable by logging existing user actions and can be empirically validated in production. The best is an ambiguous function of domain expertise and context awareness that is admittedly difficult to define. My sense is targeting the minimum risks normalizing careless patterns rather than delivering productive automations. That said, the best requires conviction and is liable to fail catastrophically.</p>
-<hr>
+<h2 id="iii">III.</h2>
 <p>Consider someone monitoring a radar screen. Given object speed, altitude, and heading, an observer can model the decision space for an air traffic controller routing planes safely. Yet with the same inputs, a meteorologist using the same console can log a data point while checking their phone. Both are valid applications.</p>
 <p>Now consider if radar data is delayed by five minutes. The controller now compensates by cross-referencing other instruments, communicating proactively, and adjusting every decision for the lag. The meteorologist neither notices nor cares. Both are valid responses.</p>
-<hr>
+<h2 id="iv">IV.</h2>
 <p>Intuitively, success is defined very differently depending on the user persona, and different user personas have very different definitions for valid data. Less obvious is how traditional and agentic systems adapt.</p>
 <p>Back to the radar screen.</p>
 <p>Traditional software optimizes the display and interpretation layer.. A team might build a live graph of pipeline freshness that each persona can interpret differently. Over time, a team might iterate on said graph, adding customizations for different personas as needed.</p>
 <p>Conversely, agentic software is entirely agnostic to the console and its display; the focus is on task completion. The challenge, then, is to reliably distinguish between tasks where stale data is catastrophic and tasks where it is irrelevant. That is hard to do for at least two reasons.</p>
 <p>First, traditional software trains users to interpret and transform information within an opinionated and variable UI. Thus, to build agentic software, a team must understand 1/ what information is relevant to a given task and 2/ how users transform, filter and interpret said information for a given task. Second, traditional software relies on user discretion to parse a surface and ignore features surfacing irrelevant information.</p>
 <p>Taken together: traditional software guarantees a bounded set of inputs and facilitates their transformation but does not promise outputs (i.e., user action). Agentic software inverts this. Inputs are variable, but given any set of them, agentic software will produce an output. Traditional software is constrained by inaction while agentic software is constrained by overreaction.</p>
-<hr>
+<h2 id="v">V.</h2>
 <p>Useful agentic software will not:</p>
 <ul>
 <li>dictate a universal approximation of user intent</li>

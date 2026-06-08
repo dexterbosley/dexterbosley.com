@@ -11,7 +11,7 @@ cover:
 
 It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.
 
----
+***
 
 Steve tapped his black shoes together. "I'm hungry."
 
@@ -41,7 +41,7 @@ A woman ran across the street toward the scene. More faces followed. A delivery 
 
 There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.
 
----
+***
 
 A man approached, not a priest.
 

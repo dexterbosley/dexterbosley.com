@@ -14,6 +14,6 @@ cover:
 
 Opening paragraph.
 
----
+***
 
 Next scene.

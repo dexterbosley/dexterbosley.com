@@ -14,10 +14,14 @@ cover:
 
 Opening paragraph.
 
-## Section heading
+## I.
 
 Body text with optional <mark>highlighted phrase</mark>.
 
 ![Image description](/images/example.jpg)
 
 *Image caption.*
+
+## II.
+
+Next section.

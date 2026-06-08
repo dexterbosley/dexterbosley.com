@@ -218,8 +218,35 @@
             line-height: 1.4;
         }
 
-        .post-template-stories .post-content {
+        .post-template-essay .post-content p:has(> img) {
+            max-width: 580px;
+            margin: 3rem auto 0.75rem;
+        }
+
+        .post-template-essay .post-content p:has(> img) + p em {
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post-template-essay .post-content hr {
+            display: none;
+        }
+
+        .post-template-story .post-content {
             max-width: var(--measure);
+        }
+
+        .post-template-story .post-content hr {
+            border: 0;
+            margin: 2.4rem 0;
+            text-align: center;
+        }
+
+        .post-template-story .post-content hr::before {
+            content: "***";
+            color: var(--ink);
+            letter-spacing: 0.08em;
         }
 
         .post-content {

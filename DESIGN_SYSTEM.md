@@ -69,6 +69,19 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - line-height `1.55`
   - paragraph margin-bottom `1.55rem`
 
+## Essay Structure
+
+- Essays use Roman numeral section headings as the only divider system.
+- Section headings should be `## I.`, `## II.`, `## III.`, and so on.
+- Do not use `---`, `***`, horizontal rules, ornaments, or centered asterisks in essays.
+- The stylesheet hides accidental essay `<hr>` output, but authors should still write Roman section headings.
+
+## Story Structure
+
+- Stories use centered `***` scene dividers.
+- In markdown, write a divider line as `***` between scenes.
+- Story dividers render as centered text, not horizontal lines.
+
 ## Highlights
 
 - Highlight primitive is native HTML: `<mark>highlighted phrase</mark>`.
@@ -83,7 +96,8 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - `![Alt text](/images/file.jpg)`
   - blank line
   - `*Caption text.*`
-- In post pages, image paragraphs are full width.
+- In post pages, image paragraphs are centered.
+- Essay images and graphs should not run full width by default; they use `max-width: 580px` inside the `700px` column.
 - Image margin starts at `3rem` above image and `0.75rem` below.
 - Captions are plain monospace, not italic visually:
   - `font-style: normal`
@@ -96,13 +110,13 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Essay archetype includes:
   - frontmatter with `cover.image`, `cover.alt`, `cover.caption`
   - opening paragraph
-  - heading
+  - Roman numeral headings
   - body text with optional `<mark>`
   - image and caption pattern
 - Story archetype includes:
   - frontmatter with `quote`, `quote_author`, and cover fields
   - opening paragraph
-  - scene break using `---`
+  - scene break using `***`
   - next scene
 
 ## What Not To Add
