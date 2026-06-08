@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stories | Dexter Bosley</title>
@@ -11,7 +11,7 @@
         }
 
         :root {
-            --paper: #f7f7f7;
+            --paper: #fff;
             --ink: #080808;
             --muted: #777;
             --red: #d40000;
@@ -22,7 +22,7 @@
             background: var(--paper);
             color: var(--ink);
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 20px;
+            font-size: 14px;
             line-height: 1.55;
         }
 
@@ -77,21 +77,6 @@
             font-size: 0.9rem;
         }
 
-        .site-nav {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-top: 84px;
-            color: var(--red);
-            font-size: 1rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-
-        .site-nav a.is-active {
-            font-weight: 800;
-        }
-
         .home-intro {
             max-width: var(--measure);
             margin: 0 0 96px;
@@ -135,13 +120,13 @@
 
         .post-entry {
             display: grid;
-            grid-template-columns: 3.5ch minmax(80px, 1fr) auto;
+            grid-template-columns: 10ch minmax(80px, 1fr) auto;
             align-items: center;
             gap: 1.1rem;
             min-width: 0;
         }
 
-        .entry-number,
+        .entry-date,
         .entry-title {
             font-size: 1rem;
             line-height: 1.2;
@@ -256,18 +241,12 @@
                 margin-bottom: 56px;
             }
 
-            .site-nav {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.9rem 1.5rem;
-                margin-top: 48px;
-            }
-
             .home-intro {
                 margin-bottom: 72px;
             }
 
             .post-entry {
-                grid-template-columns: 3.5ch 1fr;
+                grid-template-columns: 10ch 1fr;
                 gap: 0.55rem 0.9rem;
             }
 
@@ -286,12 +265,6 @@
         <header class="site-header">
             <a class="site-title" href="/">HI, I AM TRYING TO THINK MORE.</a>
             <a class="site-email" href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a>
-            <nav class="site-nav" aria-label="Primary navigation">
-                <a href="/">All</a>
-                <a href="/essays/">Essays</a>
-                <a class="is-active" href="/stories/">Stories</a>
-                <a href="/about/">About</a>
-            </nav>
         </header>
 
         
@@ -301,9 +274,9 @@
 
 <ol class="post-list">
     <li class="post-entry">
-        <span class="entry-number">01.</span>
+        <span class="entry-date">2026-01-24</span>
         <span class="entry-rule" aria-hidden="true"></span>
-        <a class="entry-title" href="/stories/small-talk/">Small Talk</a>
+        <a class="entry-title" href="/stories/small-talk/">Small Talk (STORY)</a>
     </li>
 </ol>
     </main>

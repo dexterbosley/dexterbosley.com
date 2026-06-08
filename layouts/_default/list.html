@@ -13,15 +13,14 @@
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
-{{- $total := len $paginator.Pages }}
 
 <ol class="post-list">
-    {{- range $index, $page := $paginator.Pages }}
-    {{- $number := sub $total $index }}
+    {{- range $page := $paginator.Pages }}
+    {{- $type := cond (eq $page.Section "stories") "STORY" "ESSAY" }}
     <li class="post-entry">
-        <span class="entry-number">{{ printf "%02d." $number }}</span>
+        <span class="entry-date">{{ $page.Date.Format "2006-01-02" }}</span>
         <span class="entry-rule" aria-hidden="true"></span>
-        <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+        <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }} ({{ $type }})</a>
     </li>
     {{- end }}
 </ol>
