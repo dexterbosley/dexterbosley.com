@@ -8,7 +8,7 @@ cover:
   caption: "Le Brévent, Chamonix"
 ---
 
-It was sticky. The wet air wrapped around and between the leaves and the boys while they sat together and watched cars grind north on Third Avenue outside the downtown church.
+Wet air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
 
 ***
 
