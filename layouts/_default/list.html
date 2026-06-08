@@ -14,6 +14,7 @@
     </header>
 {{- end }}
 
+{{- $pages = sort $pages "Date" "desc" }}
 {{- $paginator := .Paginate $pages }}
 
 <ol class="post-list">
@@ -25,7 +26,6 @@
         {{- $type = "NOTES" }}
     {{- end }}
     <li class="post-entry">
-        <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
         <span class="entry-rule" aria-hidden="true"></span>
         <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }} ({{ $type }})</a>
     </li>

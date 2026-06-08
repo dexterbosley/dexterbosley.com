@@ -121,13 +121,12 @@
 
         .post-entry {
             display: grid;
-            grid-template-columns: 13ch minmax(80px, 1fr) auto;
+            grid-template-columns: minmax(80px, 1fr) auto;
             align-items: center;
             gap: 1.1rem;
             min-width: 0;
         }
 
-        .entry-date,
         .entry-title {
             font-size: 1rem;
             line-height: 1.2;
@@ -401,16 +400,12 @@
             }
 
             .post-entry {
-                grid-template-columns: 1fr;
+                grid-template-columns: minmax(40px, 1fr) auto;
                 gap: 0.55rem 0.9rem;
             }
 
-            .entry-rule {
-                display: none;
-            }
-
             .entry-title {
-                white-space: normal;
+                max-width: min(58vw, 52ch);
             }
 
             .post-opener img {

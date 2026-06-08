@@ -37,14 +37,14 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Index Rows
 
-- The homepage and section pages use a numbered-line-inspired index, but the left label is the publish date.
+- The homepage index uses a line/title row and is sorted newest-first.
 - Do not generate or link to Essays-only or Stories-only index pages.
-- Row grid: date, black horizontal rule, title.
-- Date format in index is compact uppercase: `MAR 30, 2026`.
+- Row grid: black horizontal rule, title.
+- Dates do not appear in the homepage index.
 - Title suffix must include post kind: `(ESSAY)`, `(STORY)`, or `(NOTES)`.
 - Text is uppercase with `0.04em` letter spacing.
 - The black rule is `2px` high.
-- On mobile, hide the rule and let the title wrap.
+- On mobile, keep the rule visible and keep the same line/title treatment.
 
 ## Post Templates
 
