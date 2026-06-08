@@ -2,13 +2,12 @@
 title: "On Useful Software"
 date: 2026-03-30
 draft: false
+summary_title: "This essay discusses:"
+summary_items:
+  - "what is “traditional software”?"
+  - "what is “agentic software”?"
+  - "what makes agentic software useful?"
 ---
-
-This essay discusses:
-
-- what is “traditional software”?
-- what is “agentic software”?
-- what makes agentic software useful?
 
 ## I.
 

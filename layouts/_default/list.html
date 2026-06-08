@@ -20,7 +20,7 @@
     {{- range $page := $paginator.Pages }}
     {{- $type := cond (eq $page.Section "stories") "STORY" "ESSAY" }}
     <li class="post-entry">
-        <span class="entry-date">{{ $page.Date.Format "2006-01-02" }}</span>
+        <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
         <span class="entry-rule" aria-hidden="true"></span>
         <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }} ({{ $type }})</a>
     </li>

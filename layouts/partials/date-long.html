@@ -1,0 +1,13 @@
+{{- $date := . -}}
+{{- $day := $date.Day -}}
+{{- $suffix := "TH" -}}
+{{- if not (and (ge $day 11) (le $day 13)) -}}
+  {{- if eq (mod $day 10) 1 -}}
+    {{- $suffix = "ST" -}}
+  {{- else if eq (mod $day 10) 2 -}}
+    {{- $suffix = "ND" -}}
+  {{- else if eq (mod $day 10) 3 -}}
+    {{- $suffix = "RD" -}}
+  {{- end -}}
+{{- end -}}
+{{- printf "%s %d%s, %d" (upper ($date.Format "January")) $day $suffix $date.Year -}}

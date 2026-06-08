@@ -40,7 +40,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - The homepage and section pages use a numbered-line-inspired index, but the left label is the publish date.
 - Do not generate or link to Essays-only or Stories-only index pages.
 - Row grid: date, black horizontal rule, title.
-- Date format in index: `YYYY-MM-DD`.
+- Date format in index is long uppercase with ordinal day: `MARCH 30TH, 2026`.
 - Title suffix must include post kind: `(ESSAY)` or `(STORY)`.
 - Text is uppercase with `0.04em` letter spacing.
 - The black rule is `2px` high.
@@ -56,7 +56,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
 - Post header contains title then date only.
-- Post date format: `DD.MM.YYYY`.
+- Post date format is long uppercase with ordinal day: `MARCH 30TH, 2026`.
 - Post title:
   - uppercase
   - font-size `1.08rem`
@@ -78,6 +78,10 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Essay Structure
 
+- Essays must define `summary_title` and `summary_items` in frontmatter.
+- The summary renders between the title/date and `## I.`.
+- Summary text uses the blue highlight primitive and bracket styling.
+- Keep the summary short: one title line plus 2-4 bullets.
 - Essays use Roman numeral section headings as the only divider system.
 - Section headings should be `## I.`, `## II.`, `## III.`, and so on.
 - Do not use `---`, `***`, horizontal rules, ornaments, or centered asterisks in essays.
@@ -85,6 +89,9 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Story Structure
 
+- Stories must define `cover.image`, `cover.alt`, `cover.caption`, `quote`, and `quote_author` in frontmatter.
+- The story opener renders between the title/date and the first paragraph.
+- Story opener order is banner image, caption, then quote/author.
 - Stories use centered `***` scene dividers.
 - In markdown, write a divider line as `***` between scenes.
 - Story dividers render as centered text, not horizontal lines.
@@ -100,7 +107,8 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Images And Captions
 
 - Current live content should not include decorative or placeholder images.
-- Add images only when they are intentional essay figures, diagrams, or graphs.
+- Stories require a banner image with caption.
+- Essays should add images only when they are intentional figures, diagrams, or graphs.
 - Image markdown pattern:
   - `![Alt text](/images/file.jpg)`
   - blank line

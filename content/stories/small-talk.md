@@ -4,6 +4,10 @@ date: 2026-01-24
 draft: false
 quote: "Isn't it pretty to think so?"
 quote_author: "Ernest Hemingway"
+cover:
+  image: "/images/chamonix-banner.jpg"
+  alt: "Mountain ridge in Chamonix"
+  caption: "Le Brévent, Chamonix"
 ---
 
 It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.

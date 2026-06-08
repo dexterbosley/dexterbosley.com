@@ -6,17 +6,16 @@ type: essay
 quote: ""
 quote_author: ""
 description: ""
+summary_title: "This essay discusses:"
+summary_items:
+  - ""
+  - ""
+  - ""
 ---
-
-Opening paragraph.
 
 ## I.
 
 Body text with optional <mark>highlighted phrase</mark>.
-
-![Image description](/images/example.jpg)
-
-*Image caption.*
 
 ## II.
 
