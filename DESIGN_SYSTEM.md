@@ -51,23 +51,23 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - `layouts/stories/single.html`
   - shared renderer: `layouts/partials/post-single.html`
 - Post pages do not show the homepage header.
-- Post canvas width is `min(calc(100% - 96px), 1000px)` desktop and `min(calc(100% - 32px), 1000px)` mobile.
-- Post top padding is `42px`.
+- Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
+- Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
 - Post header contains title then date only.
 - Post date format: `DD.MM.YYYY`.
 - Post title:
   - uppercase
-  - font-size `1.55rem` desktop
+  - font-size `1.08rem`
   - font-weight `800`
-  - line-height `1.25`
+  - line-height `1.35`
 - Post date:
   - muted `#777`
-  - font-size `1.22rem` desktop
-- Gap from post header to body: `5rem` desktop, `3.5rem` mobile.
+  - font-size `0.86rem`
+- Gap from post header to body: `3rem`.
 - Post body:
-  - font-size `1.55rem` desktop, `1.25rem` mobile
+  - font-size `1rem`
   - line-height `1.55`
-  - paragraph margin-bottom `2rem`
+  - paragraph margin-bottom `1.55rem`
 
 ## Highlights
 
