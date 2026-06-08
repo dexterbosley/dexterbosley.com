@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stories on Thinking in Public</title>
-    <link>https://www.dexterbosley.com/stories/</link>
-    <description>Recent content in Stories on Thinking in Public</description>
+    <title>Stories on Dexter Bosley</title>
+    <link>http://127.0.0.1:1313/stories/</link>
+    <description>Recent content in Stories on Dexter Bosley</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/stories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:1313/stories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Small Talk</title>
-      <link>https://www.dexterbosley.com/stories/small-talk/</link>
+      <link>http://127.0.0.1:1313/stories/small-talk/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
+      <guid>http://127.0.0.1:1313/stories/small-talk/</guid>
       <description>&lt;p&gt;It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Elliott shook his head. &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>

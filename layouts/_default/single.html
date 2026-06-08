@@ -1,91 +1,17 @@
 {{- define "main" }}
-<div class="reading-progress"></div>
-<article class="post-single section-{{ .Section }}">
-
-    {{- $banner := .Params.banner | default .Params.image | default .Params.cover.image }}
-    {{- with $banner }}
-    <figure class="post-cover">
-        <img loading="lazy" decoding="async" src="{{ . }}" alt="{{ $.Params.cover.alt | default $.Title }}">
-        {{- with $.Params.cover.caption }}
-        <figcaption class="post-cover-caption">{{ . }}</figcaption>
-        {{- end }}
-    </figure>
-    {{- end }}
-
+{{- $type := cond (eq .Section "stories") "Story" "Essay" }}
+<article class="post-single">
     <header class="post-header">
-        <div class="post-meta">
-            <span class="type-tag">{{ if eq .Section "stories" }}Story{{ else }}Essay{{ end }}</span>
-            <span>·</span>
-            <span>{{ .Date.Format "January 2, 2006" }}</span>
-            <span>·</span>
-            <span>{{ .ReadingTime }} min read</span>
-        </div>
         <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta">{{ .Date.Format "2006-01-02" }} / {{ $type }}</div>
     </header>
 
-    {{- with .Params.quote }}
-    <div class="post-epigraph">
-        <p>{{ . }}</p>
-        {{- with $.Params.quote_author }}
-        <cite>— {{ . }}</cite>
-        {{- end }}
-    </div>
-    {{- end }}
-
-    <div class="post-content{{ if eq $.Section "stories" }} story-content{{ end }}">
+    <div class="post-content">
         {{ .Content }}
     </div>
 
-    <nav class="post-nav">
-        <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}" class="back-link">← {{ if eq .Section "stories" }}Stories{{ else if eq .Section "essays" }}Essays{{ else }}All{{ end }}</a>
-        <button class="share-btn" type="button" aria-label="Share this post">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                <polyline points="16 6 12 2 8 6"></polyline>
-                <line x1="12" y1="2" x2="12" y2="15"></line>
-            </svg>
-            <span>Share</span>
-        </button>
+    <nav class="post-nav" aria-label="Post navigation">
+        <a href="{{ if eq .Section "stories" }}/stories/{{ else if eq .Section "essays" }}/essays/{{ else }}/{{ end }}">Back to {{ if eq .Section "stories" }}Stories{{ else if eq .Section "essays" }}Essays{{ else }}All{{ end }}</a>
     </nav>
 </article>
-
-<script>
-document.querySelectorAll('.share-btn').forEach(function(btn) {
-    var label = btn.querySelector('span');
-    var defaultText = label ? label.textContent : 'Share';
-    var resetTimer;
-    function setLabel(text) {
-        if (!label) return;
-        label.textContent = text;
-        window.clearTimeout(resetTimer);
-        resetTimer = window.setTimeout(function() {
-            label.textContent = defaultText;
-        }, 2200);
-    }
-    function fallbackShare() {
-        window.prompt('Copy this link:', window.location.href);
-        setLabel('Link ready');
-    }
-    btn.addEventListener('click', async function() {
-        var data = { title: '{{ .Title }}', url: window.location.href };
-        if (navigator.share) {
-            try {
-                await navigator.share(data);
-                setLabel('Shared');
-                return;
-            } catch (err) {
-                if (err.name === 'AbortError') return;
-            }
-        }
-        if (navigator.clipboard && window.isSecureContext) {
-            try {
-                await navigator.clipboard.writeText(window.location.href);
-                setLabel('Copied');
-                return;
-            } catch (err) {}
-        }
-        fallbackShare();
-    });
-});
-</script>
 {{- end }}

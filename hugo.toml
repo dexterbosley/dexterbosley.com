@@ -1,6 +1,6 @@
 baseURL = 'https://www.dexterbosley.com/'
 languageCode = 'en-us'
-title = 'Thinking in Public'
+title = 'Dexter Bosley'
 publishDir = "docs"
 disableKinds = ["taxonomy", "term"]
 
@@ -9,35 +9,3 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   mainSections = ["essays", "stories"]
-
-[params.assets]
-  favicon = "/favicon.svg"
-  favicon16x16 = "/favicon.svg"
-  favicon32x32 = "/favicon.svg"
-  apple_touch_icon = "/favicon.svg"
-
-[menus]
-
-[[menus.main]]
-  identifier = "all"
-  name = "All"
-  url = "/"
-  weight = 10
-
-[[menus.main]]
-  identifier = "essays"
-  name = "Essays"
-  url = "/essays/"
-  weight = 20
-
-[[menus.main]]
-  identifier = "stories"
-  name = "Stories"
-  url = "/stories/"
-  weight = 30
-
-[[menus.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = 40

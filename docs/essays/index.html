@@ -1,1164 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Essays · Thinking in Public</title>
-
+    <title>Essays | Dexter Bosley</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-
-<style>
- 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-:root {
-    --essay-accent: #9eb7be;
-    --essay-accent-soft: rgba(158, 183, 190, 0.32);
-    --essay-accent-border: rgba(158, 183, 190, 0.35);
-    --essay-accent-link: #b8ced4;
-    --story-accent: #b79ad7;
-    --story-accent-soft: rgba(183, 154, 215, 0.3);
-    --story-accent-border: rgba(183, 154, 215, 0.35);
-    --story-accent-ornament: rgba(183, 154, 215, 0.25);
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.6;
-    background: #232a37;
-    color: #dce2ea;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-}
-
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; height: auto; display: block; }
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
- 
-::selection { background: rgba(138, 157, 181, 0.25); color: #dce2ea; }
-::-moz-selection { background: rgba(138, 157, 181, 0.25); color: #dce2ea; }
-
-
- 
-.site-container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-.content-grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 48px;
-}
-
- 
-.site-header {
-    padding: 48px 0 44px;
-}
-
-.site-brand {
-    display: flex;
-    flex-direction: column;
-}
-
-.site-name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #dce2ea;
-    letter-spacing: -0.01em;
-    background: linear-gradient(135deg, #dce2ea 0%, #8a9db5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.site-tagline {
-    font-size: 12px;
-    color: #687888;
-    font-weight: 300;
-}
-
-
- 
-.sidebar {
-    position: sticky;
-    top: 40px;
-    align-self: start;
-}
-
-.sidebar-label {
-    font-size: 10px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #687888;
-    margin-bottom: 12px;
-    padding-left: 10px;
-}
-
-.sidebar-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-nav li {
-    margin-bottom: 2px;
-}
-
-.sidebar-nav a {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #95a5b8;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: color 0.2s, background 0.2s;
-}
-
-.sidebar-nav a:hover {
-    color: #dce2ea;
-    background: #2b3442;
-}
-
-.sidebar-nav a.active {
-    color: #dce2ea;
-    font-weight: 500;
-    background: #2b3442;
-    position: relative;
-}
-
-.sidebar-nav a.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 2px;
-    border-radius: 1px;
-    background: #687888;
-}
-
-
-.main-content {
-    min-width: 0;
-}
-
-
- 
-.post-entry {
-    position: relative;
-    margin-bottom: 28px;
-    background: #2b3442;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: box-shadow 0.2s;
-}
-
-.post-entry:hover {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
-}
-
-.post-entry:last-child {
-    margin-bottom: 0;
-}
-
-.entry-cover {
-    overflow: hidden;
-}
-
-.entry-cover img {
-    width: 100%;
-    aspect-ratio: 2.5 / 1;
-    object-fit: cover;
-    object-position: center 55%;
-    transition: opacity 0.5s ease, transform 0.4s;
-}
-
- 
-.lazy-reveal {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.lazy-reveal.loaded {
-    opacity: 1;
-}
-
-.post-entry:hover .entry-cover img {
-    opacity: 0.88;
-    transform: scale(1.02);
-}
-
-.entry-credit {
-    display: block;
-    font-size: 11px;
-    color: #586878;
-    padding: 4px 20px 0;
-}
-
-.entry-text {
-    padding: 14px 20px 18px;
-}
-
-.entry-meta {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    row-gap: 4px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #687888;
-    margin-bottom: 6px;
-}
-
-.meta-sep {
-    color: #475464;
-}
-
-.entry-type {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    color: #95a5b8;
-}
-
-.entry-cover-caption {
-    display: block;
-    font-size: 11px;
-    color: #586878;
-    font-style: italic;
-    font-family: 'Lora', Georgia, serif;
-    margin: 6px 0 0;
-    padding: 0 20px;
-    letter-spacing: 0.01em;
-}
-
- 
-.type-essays .entry-type { color: var(--essay-accent); }
-.type-stories .entry-type { color: var(--story-accent); }
-
-
-.entry-title {
-    font-size: 24px;
-    font-weight: 500;
-    color: #dce2ea;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    transition: color 0.2s;
-}
-
-.post-entry:hover .entry-title {
-    color: #a3b5c6;
-}
-
-.post-entry.featured .entry-title {
-    font-size: 28px;
-}
-
- 
-.post-entry.featured {
-    border-top: 2px solid #3a4554;
-}
-.post-entry.featured.type-essays { border-top-color: var(--essay-accent-soft); }
-.post-entry.featured.type-stories { border-top-color: var(--story-accent-soft); }
-
-.entry-link {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
-
- 
-.pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 48px;
-    margin-bottom: 64px;
-    font-size: 14px;
-}
-
-.pagination a {
-    color: #95a5b8;
-    padding: 4px 10px;
-    border-radius: 4px;
-    transition: color 0.2s, background 0.2s;
-}
-
-.pagination a:hover {
-    color: #dce2ea;
-    background: #3a4554;
-}
-
-.pagination-current {
-    color: #dce2ea;
-    font-weight: 500;
-    padding: 4px 10px;
-}
-
- 
-.post-cover {
-    margin: 0 0 4px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.post-cover img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    object-position: center 55%;
-}
-
-.post-cover-caption {
-    font-size: 12px;
-    color: #687888;
-    margin: 8px 0 0;
-    font-style: italic;
-    font-family: 'Lora', Georgia, serif;
-}
-
-.post-header {
-    margin: 28px 0 40px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid #3a4554;
-    position: relative;
-}
-
-.post-header::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: var(--essay-accent);
-}
-.section-stories .post-header::after { background: var(--story-accent); }
-
-.post-meta {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6px;
-    font-size: 12px;
-    color: #687888;
-    margin-bottom: 12px;
-}
-
-.post-meta .type-tag {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    color: #95a5b8;
-}
-
-.section-essays .type-tag { color: var(--essay-accent); }
-.section-stories .type-tag { color: var(--story-accent); }
-
-.post-title {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1.15;
-    letter-spacing: -0.025em;
-    color: #dce2ea;
-}
-
-
-.post-content {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 20px;
-    line-height: 1.9;
-    color: #dce2ea;
-    letter-spacing: 0.005em;
-    overflow-wrap: break-word;
-}
-
-.post-content p {
-    margin: 0 0 1.5em;
-}
-
-.post-content > p:first-of-type::first-letter {
-    float: left;
-    font-family: 'Inter', sans-serif;
-    font-size: 3.6em;
-    line-height: 0.82;
-    padding-right: 12px;
-    padding-top: 6px;
-    font-weight: 600;
-    color: #dce2ea;
-}
-
-.post-content hr {
-    border: none;
-    text-align: center;
-    margin: 2.8em 0;
-}
-
-.post-content hr::before {
-    content: "✦  ✦  ✦";
-    color: #687888;
-    font-size: 10px;
-    letter-spacing: 0.6em;
-}
-
-.post-content blockquote {
-    margin: 2em 0;
-    padding: 0 0 0 24px;
-    border-left: 2px solid #475464;
-    font-style: italic;
-    color: #8a9db5;
-}
-
-.section-stories .post-content blockquote {
-    border-left-color: rgba(183, 154, 215, 0.35);
-    color: #ccb8e6;
-}
-
-.post-content blockquote p { margin: 0; }
-
-.post-content ul,
-.post-content ol {
-    margin: 1.5em 0;
-    padding-left: 1.5em;
-}
-
-.post-content li { margin-bottom: 0.5em; }
-
-.post-content img {
-    border-radius: 4px;
-    margin: 2.5em 0;
-}
-
-.post-content a {
-    color: #8a9db5;
-    text-decoration: underline;
-    text-decoration-color: #475464;
-    text-underline-offset: 3px;
-    transition: text-decoration-color 0.2s;
-}
-
-.post-content a:hover {
-    text-decoration-color: #8a9db5;
-}
-
-.section-essays .post-content a {
-    color: var(--essay-accent-link);
-    text-decoration-color: var(--essay-accent-border);
-}
-
-.section-essays .post-content a:hover {
-    text-decoration-color: var(--essay-accent);
-}
-
- 
-.post-content::after {
-    content: '✦';
-    display: block;
-    text-align: center;
-    margin-top: 2.5em;
-    font-size: 12px;
-    color: #475464;
-    letter-spacing: 0.3em;
-}
-
-.section-essays .post-content::after { content: none; }
-.section-stories .post-content::after { color: var(--story-accent-ornament); }
-
- 
-.story-content {
-    font-size: 19px;
-    line-height: 2;
-}
-
- 
-.section-essays .post-content > p:first-of-type::first-letter {
-    float: none;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    padding-right: 0;
-    padding-top: 0;
-    font-weight: inherit;
-    color: inherit;
-}
-.section-essays .post-content h2 {
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    font-style: normal;
-    color: var(--essay-accent-link);
-    margin: 2.8em 0 0.9em;
-    letter-spacing: 0.04em;
-    border: none;
-}
-
-.section-essays .post-content blockquote {
-    border-left-color: var(--essay-accent-border);
-    color: var(--essay-accent-link);
-}
-
-.section-essays .post-content > blockquote:first-child {
-    margin: 0 0 36px;
-    padding-left: 20px;
-    border-left-color: var(--essay-accent-border);
-}
-
-.section-essays .post-content > blockquote:first-child p {
-    margin: 0 0 0.65em;
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    font-style: italic;
-    color: var(--essay-accent-link);
-    line-height: 1.6;
-}
-
-.section-essays .post-content > blockquote:first-child ul {
-    margin: 0;
-    padding-left: 1.15em;
-}
-
-.section-essays .post-content > blockquote:first-child li {
-    margin-bottom: 0.3em;
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    font-style: italic;
-    color: var(--essay-accent-link);
-    line-height: 1.6;
-}
-
-.section-essays .post-content > blockquote:first-child li:last-child {
-    margin-bottom: 0;
-}
-
-.section-essays .post-content > blockquote:first-child li::marker {
-    color: var(--essay-accent);
-}
-
-@media (min-width: 701px) {
-    .section-essays .post-header,
-    .section-essays .post-content,
-    .section-essays .post-nav {
-        max-width: 680px;
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .section-essays .post-content {
-        font-size: 21px;
-        line-height: 1.95;
-    }
-
-    .section-essays .post-content img {
-        width: min(88%, 560px);
-        margin: 2.4em auto;
-    }
-
-    .section-essays .post-content ul,
-    .section-essays .post-content ol {
-        max-width: 34em;
-    }
-}
-
- 
-.post-epigraph,
-.section-essays .post-content > blockquote:first-child {
-    margin-bottom: 36px;
-    padding-left: 20px;
-    border-left: 2px solid #3a4a5a;
-}
-
-.section-stories .post-epigraph { border-left-color: var(--story-accent-border); }
-.section-essays .post-content > blockquote:first-child { border-left-color: var(--essay-accent-border); }
-
-.post-epigraph p {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    font-style: italic;
-    color: #95a5b8;
-    line-height: 1.6;
-}
-
-.post-epigraph cite {
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    color: #687888;
-    display: block;
-    margin-top: 6px;
-}
-
- 
-.post-single {
-    padding-bottom: 72px;
-}
-.post-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 56px;
-    padding-top: 24px;
-    border-top: 1px solid #3a4554;
-    position: relative;
-}
-
-.post-nav::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: var(--essay-accent);
-}
-
-.section-stories .post-nav::before { background: var(--story-accent); }
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-    font-size: 14px;
-    color: #95a5b8;
-    transition: color 0.2s, letter-spacing 0.2s;
-}
-
-.back-link:hover {
-    color: #dce2ea;
-    letter-spacing: 0.02em;
-}
-
- 
-.share-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    min-height: 44px;
-    padding: 8px 0;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    color: #687888;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-
-.share-btn:hover { color: #dce2ea; }
-.share-btn svg { width: 14px; height: 14px; }
-
- 
-.about-banner {
-    margin: 0 0 28px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.about-banner img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    object-position: center 55%;
-}
-
-.about-banner-credit {
-    font-size: 11px;
-    color: #687888;
-    margin-top: 4px;
-    font-style: italic;
-    font-family: 'Lora', Georgia, serif;
-}
-
-.about-name {
-    font-size: 28px;
-    font-weight: 500;
-    color: #dce2ea;
-    letter-spacing: -0.02em;
-    margin-bottom: 8px;
-}
-
-.about-intro {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #95a5b8;
-    margin-bottom: 32px;
-}
-
-.about-details {
-    margin-bottom: 32px;
-}
-
-.about-row {
-    display: flex;
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.about-label {
-    width: 100px;
-    flex-shrink: 0;
-    color: #687888;
-    font-weight: 400;
-}
-
-.about-value {
-    color: #dce2ea;
-}
-
-.about-connect {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 12px;
-}
-
-.about-connect a {
-    font-size: 14px;
-    color: var(--essay-accent);
-    border-bottom: 1px solid #3a4554;
-    transition: color 0.2s, border-color 0.2s;
-}
-
-.about-connect a:hover {
-    color: #dce2ea;
-    border-color: #687888;
-}
-
-.connect-sep {
-    margin: 0;
-    color: #475464;
-}
-
- 
-.mobile-nav {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(35, 42, 55, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-top: 1px solid #3a4554;
-    padding: 10px 0;
-    padding-bottom: max(10px, env(safe-area-inset-bottom));
-    gap: 8px;
-    justify-content: space-around;
-    z-index: 100;
-}
-
-.mobile-nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    min-width: 0;
-    min-height: 44px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-    color: #687888;
-    padding: 10px 8px;
-    border-radius: 6px;
-    transition: color 0.2s, background 0.2s;
-}
-
-.mobile-nav a.active {
-    color: #dce2ea;
-    background: #2b3442;
-}
-
- 
-@media (max-width: 700px) {
-    .site-container {
-        padding: 0 16px;
-    }
-
-    .site-header {
-        padding: 20px 0 32px;
-    }
-
-    .content-grid {
-        display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .mobile-nav {
-        display: flex;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    body {
-        padding-bottom: calc(112px + env(safe-area-inset-bottom));
-    }
-
-    .main-content {
-        padding-bottom: 24px;
-    }
-
-     
-    .post-entry {
-        margin-bottom: 16px;
-        margin-left: -16px;
-        margin-right: -16px;
-        border-radius: 0;
-    }
-
-    .entry-cover img {
-        aspect-ratio: 2.2 / 1;
-    }
-
-    .entry-text {
-        padding: 12px 16px 16px;
-    }
-
-    .entry-cover-caption {
-        padding: 0 16px;
-    }
-
-    .entry-meta {
-        gap: 6px;
-        font-size: 11px;
-    }
-
-
-    .entry-title { font-size: 19px; }
-    .post-entry.featured .entry-title { font-size: 21px; }
-
-    .entry-desc { font-size: 14px; }
-
-     
-    .post-title { font-size: 26px; }
-
-    .post-header {
-        margin: 20px 0 28px;
-        padding-bottom: 24px;
-    }
-
-    .post-cover {
-        margin-left: -16px;
-        margin-right: -16px;
-        border-radius: 0;
-    }
-
-    .post-cover img {
-        max-height: 280px;
-        border-radius: 0;
-    }
-
-    .post-cover-caption {
-        padding: 0 16px;
-    }
-
-    .post-content {
-        font-size: 17px;
-        line-height: 1.8;
-    }
-
-    .section-essays .post-content img {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .post-content > p:first-of-type::first-letter {
-        font-size: 3.2em;
-        padding-right: 10px;
-    }
-
-    .post-nav {
-        margin-top: 40px;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-    }
-
-    .share-btn {
-        justify-content: flex-start;
-    }
-
-
-    .feed-subscribe {
-        margin: 0 -16px;
-        padding: 28px 16px;
-        border-radius: 0;
-    }
-
-    .pagination {
-        margin-bottom: 48px;
-    }
-
-     
-    .about-banner {
-        margin-left: -16px;
-        margin-right: -16px;
-        border-radius: 0;
-    }
-
-    .about-banner img {
-        max-height: 280px;
-    }
-
-    .about-banner-credit {
-        padding: 0 16px;
-    }
-
-    .about-name {
-        font-size: 24px;
-    }
-
-    .about-row {
-        display: grid;
-        gap: 4px;
-        margin-bottom: 16px;
-        font-size: 13px;
-    }
-
-    .about-label {
-        width: auto;
-    }
-
-    .about-connect {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .connect-sep {
-        display: none;
-    }
-
-    .post-single {
-        padding-bottom: 24px;
-    }
-}
-
- 
-
-.subscribe-form {
-    display: flex;
-    gap: 6px;
-    padding: 0 10px;
-}
-
-.subscribe-form input[type="email"] {
-    flex: 1;
-    min-width: 0;
-    min-height: 44px;
-    padding: 7px 10px;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    background: #232a37;
-    border: 1px solid #3a4554;
-    border-radius: 4px;
-    color: #dce2ea;
-    outline: none;
-    transition: border-color 0.2s;
-}
-
-.subscribe-form input[type="email"]::placeholder {
-    color: #687888;
-}
-
-.subscribe-form input[type="email"]:focus {
-    border-color: var(--essay-accent);
-}
-
-.subscribe-form button {
-    min-height: 44px;
-    padding: 7px 12px;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    background: #3a4554;
-    border: 1px solid #3a4554;
-    border-radius: 4px;
-    color: #dce2ea;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-
-.subscribe-form button:hover {
-    background: var(--essay-accent);
-    border-color: var(--essay-accent);
-    color: #232a37;
-}
-
-.feed-subscribe {
-    margin-top: 32px;
-    padding: 24px 24px;
-    background: #2b3442;
-    border-radius: 6px;
-    text-align: center;
-    border-top: 1px solid rgba(158, 183, 190, 0.18);
-}
-
-.feed-subscribe-text {
-    font-size: 14px;
-    color: #95a5b8;
-    margin-bottom: 14px;
-}
-
-.feed-subscribe .subscribe-form {
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 0;
-    align-items: stretch;
-}
-
-.feed-subscribe .subscribe-form button {
-    padding-inline: 18px;
-}
-
-@media (max-width: 700px) {
-    .feed-subscribe .subscribe-form {
-        flex-direction: column;
-    }
-
-    .feed-subscribe .subscribe-form button {
-        width: 100%;
-    }
-}
-
- 
-.reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, var(--essay-accent), var(--essay-accent-link));
-    z-index: 200;
-    transition: width 0.1s linear;
-    pointer-events: none;
-}
-
-.section-stories .reading-progress {
-    background: linear-gradient(90deg, var(--story-accent), #d0bfee);
-}
-
-</style>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            background: #fff;
+            color: #000;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 16px;
+            line-height: 1.65;
+        }
+
+        body {
+            margin: 0;
+            background: #fff;
+            color: #000;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.18em;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+
+        .site {
+            width: min(100% - 96px, 700px);
+            margin: 0 auto;
+            padding: 96px 0 120px;
+        }
+
+        .home-heading {
+            margin: 0 0 72px;
+            text-align: center;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 400;
+            line-height: 1.35;
+            letter-spacing: 0;
+        }
+
+        .page-title,
+        .post-title {
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: inherit;
+        }
+
+        .page-header,
+        .post-header {
+            margin-bottom: 3rem;
+        }
+
+        .post-meta,
+        .entry-meta {
+            color: #555;
+            font-size: 0.875rem;
+        }
+
+        .post-list {
+            display: grid;
+            gap: 1.25rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .post-entry {
+            display: grid;
+            gap: 0.15rem;
+        }
+
+        .entry-title {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: inherit;
+        }
+
+        .post-content {
+            overflow-wrap: break-word;
+        }
+
+        .post-content > *:first-child {
+            margin-top: 0;
+        }
+
+        .post-content p,
+        .post-content ul,
+        .post-content ol,
+        .post-content blockquote,
+        .post-content pre,
+        .post-content hr {
+            margin: 0 0 1.5rem;
+        }
+
+        .post-content h2,
+        .post-content h3,
+        .post-content h4 {
+            margin: 2.5rem 0 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            padding-left: 1.5rem;
+        }
+
+        .post-content li {
+            margin: 0 0 0.5rem;
+        }
+
+        .post-content blockquote {
+            padding-left: 1rem;
+            border-left: 1px solid #000;
+            color: #333;
+        }
+
+        .post-content hr {
+            border: 0;
+            border-top: 1px solid #000;
+        }
+
+        .post-content pre {
+            overflow-x: auto;
+            padding: 1rem;
+            border: 1px solid #000;
+        }
+
+        .post-nav,
+        .pagination {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 4rem;
+            color: #555;
+            font-size: 0.875rem;
+        }
+
+        .pagination-current {
+            color: #000;
+        }
+
+        @media (max-width: 700px) {
+            html {
+                font-size: 15px;
+            }
+
+            .site {
+                width: min(100% - 32px, 700px);
+                padding: 48px 0 72px;
+            }
+
+            .home-heading {
+                margin-bottom: 48px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="site-container">
-        <header class="site-header">
-            <a href="/" class="site-brand">
-                <span class="site-name">Thinking in Public</span>
-                <span class="site-tagline">by Dexter Bosley</span>
-            </a>
-        </header>
+    <main class="site">
+        
+    <header class="page-header">
+        <h1 class="page-title">Essays</h1>
+    </header>
 
-        <div class="content-grid">
-            <aside class="sidebar">
-                <div class="sidebar-label">Navigate</div>
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="/">All</a></li>
-                        <li><a href="/essays/">Essays</a></li>
-                        <li><a href="/stories/">Stories</a></li>
-                        <li><a href="/about/">About</a></li>
-                    </ul>
-                </nav>
-            </aside>
-
-            <main class="main-content">
-                
-<article class="post-entry featured type-essays">
-  <div class="entry-cover">
-    <img loading="lazy" decoding="async" class="lazy-reveal" src="https://www.dexterbosley.com/images/sugar-bowl-banner.jpg" alt="Snow-covered trees and ridge at Sugar Bowl">
-    <span class="entry-cover-caption">Sugar Bowl, California</span>
-  </div>
-  <div class="entry-text">
-    <div class="entry-meta">
-      <span class="entry-type">Essay</span>
-      <span class="meta-sep">·</span>
-      <span>Mar 30, 2026</span>
-      <span class="meta-sep">·</span>
-      <span>3 min read</span>
-    </div>
-    <h2 class="entry-title">On Useful Software</h2>
-  </div>
-  <a class="entry-link" aria-label="post link to On Useful Software" href="https://www.dexterbosley.com/essays/on-useful-digital-tools/"></a>
-</article>
-
-<div class="feed-subscribe">
-  <p class="feed-subscribe-text">Get new essays and stories by email</p>
-  <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
-    <label class="sr-only" for="feed-subscribe-email">Email address</label>
-    <input id="feed-subscribe-email" type="email" name="email" placeholder="Email" autocomplete="email" inputmode="email" enterkeyhint="send" required>
-    <button type="submit">Subscribe</button>
-  </form>
-</div>
-            </main>
-        </div>
-    </div>
-
-    <nav class="mobile-nav">
-        <a href="/">All</a>
-        <a href="/essays/">Essays</a>
-        <a href="/stories/">Stories</a>
-        <a href="/about/">About</a>
-    </nav>
-
-    <script>
-        (function() {
-            
-            var path = window.location.pathname.replace(/\/page\/\d+\/?$/, '').replace(/\/$/, '') || '/';
-            document.querySelectorAll('.sidebar-nav a, .mobile-nav a').forEach(function(link) {
-                var href = link.getAttribute('href').replace(/\/$/, '') || '/';
-                if (path === '/' && href === '/') link.classList.add('active');
-                else if (href !== '/' && path.startsWith(href)) link.classList.add('active');
-            });
-
-            
-            document.querySelectorAll('.lazy-reveal').forEach(function(img) {
-                if (img.complete) { img.classList.add('loaded'); }
-                else { img.addEventListener('load', function() { img.classList.add('loaded'); }); }
-            });
-
-            
-            var progress = document.querySelector('.reading-progress');
-            var article = document.querySelector('.post-content');
-            if (progress && article) {
-                window.addEventListener('scroll', function() {
-                    var rect = article.getBoundingClientRect();
-                    var total = article.offsetHeight - window.innerHeight;
-                    var scrolled = -rect.top;
-                    var pct = Math.max(0, Math.min(100, (scrolled / total) * 100));
-                    progress.style.width = pct + '%';
-                }, { passive: true });
-            }
-        })();
-    </script>
+<ol class="post-list">
+    <li class="post-entry">
+        <a class="entry-title" href="/essays/on-useful-digital-tools/">On Useful Software</a>
+        <div class="entry-meta">2026-03-30 / Essay</div>
+    </li>
+</ol>
+    </main>
 </body>
 </html>

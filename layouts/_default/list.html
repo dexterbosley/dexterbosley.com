@@ -1,66 +1,41 @@
 {{- define "main" }}
-
-{{- $paginator := "" }}
+{{- $pages := .Pages }}
 {{- if .IsHome }}
-  {{- $paginator = .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
+    {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
+    <h1 class="home-heading">HI, I AM TRYING TO THINK MORE.</h1>
 {{- else }}
-  {{- $paginator = .Paginate .Pages }}
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+    </header>
 {{- end }}
 
-{{- $isFirstPage := not .Paginator.HasPrev }}
+{{- $paginator := .Paginate $pages }}
 
-{{- $first := true }}
-{{- range $paginator.Pages }}
-{{- $type := cond (eq .Section "essays") "Essay" "Story" }}
-<article class="post-entry{{ if $first }} featured{{ end }} type-{{ .Section }}">
-  {{- if .Params.cover.image }}
-  <div class="entry-cover">
-    <img loading="lazy" decoding="async" class="lazy-reveal" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-    {{- with .Params.cover.caption }}
-    <span class="entry-cover-caption">{{ . }}</span>
+<ol class="post-list">
+    {{- range $paginator.Pages }}
+    {{- $type := cond (eq .Section "stories") "Story" "Essay" }}
+    <li class="post-entry">
+        <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <div class="entry-meta">{{ .Date.Format "2006-01-02" }} / {{ $type }}</div>
+    </li>
     {{- end }}
-  </div>
-  {{- end }}
-  <div class="entry-text">
-    <div class="entry-meta">
-      <span class="entry-type">{{ $type }}</span>
-      <span class="meta-sep">·</span>
-      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-      <span class="meta-sep">·</span>
-      <span>{{ .ReadingTime }} min read</span>
-    </div>
-    <h2 class="entry-title">{{ .Title }}</h2>
-  </div>
-  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
-</article>
-{{- $first = false }}
-{{- end }}
-
-<div class="feed-subscribe">
-  <p class="feed-subscribe-text">Get new essays and stories by email</p>
-  <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/dexterbosley" method="post" target="popupwindow">
-    <label class="sr-only" for="feed-subscribe-email">Email address</label>
-    <input id="feed-subscribe-email" type="email" name="email" placeholder="Email" autocomplete="email" inputmode="email" enterkeyhint="send" required>
-    <button type="submit">Subscribe</button>
-  </form>
-</div>
+</ol>
 
 {{- if gt $paginator.TotalPages 1 }}
-<nav class="pagination">
-  {{- if .Paginator.HasPrev }}
-  <a href="{{ .Paginator.Prev.URL }}">Prev</a>
-  {{- end }}
-  {{- range .Paginator.Pagers }}
-  {{- if eq . $.Paginator }}
-  <span class="pagination-current">{{ .PageNumber }}</span>
-  {{- else }}
-  <a href="{{ .URL }}">{{ .PageNumber }}</a>
-  {{- end }}
-  {{- end }}
-  {{- if .Paginator.HasNext }}
-  <a href="{{ .Paginator.Next.URL }}">Next</a>
-  {{- end }}
+<nav class="pagination" aria-label="Pagination">
+    {{- if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">Previous</a>
+    {{- end }}
+    {{- range $paginator.Pagers }}
+        {{- if eq . $paginator }}
+        <span class="pagination-current">{{ .PageNumber }}</span>
+        {{- else }}
+        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{- end }}
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Next</a>
+    {{- end }}
 </nav>
 {{- end }}
-
 {{- end }}

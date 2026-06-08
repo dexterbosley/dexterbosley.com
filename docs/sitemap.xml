@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.dexterbosley.com/essays/</loc>
+    <loc>http://127.0.0.1:1313/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/essays/on-useful-digital-tools/</loc>
+    <loc>http://127.0.0.1:1313/essays/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/</loc>
+    <loc>http://127.0.0.1:1313/essays/on-useful-digital-tools/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/stories/small-talk/</loc>
+    <loc>http://127.0.0.1:1313/stories/small-talk/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/stories/</loc>
+    <loc>http://127.0.0.1:1313/stories/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/about/</loc>
+    <loc>http://127.0.0.1:1313/about/</loc>
   </url>
 </urlset>

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thinking in Public</title>
-    <link>https://www.dexterbosley.com/</link>
-    <description>Recent content on Thinking in Public</description>
+    <title>Dexter Bosley</title>
+    <link>http://127.0.0.1:1313/</link>
+    <description>Recent content on Dexter Bosley</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Useful Software</title>
-      <link>https://www.dexterbosley.com/essays/on-useful-digital-tools/</link>
+      <link>http://127.0.0.1:1313/essays/on-useful-digital-tools/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/on-useful-digital-tools/</guid>
+      <guid>http://127.0.0.1:1313/essays/on-useful-digital-tools/</guid>
       <description>&lt;p&gt;This essay discusses:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;what is “traditional software”?&lt;/li&gt;&#xA;&lt;li&gt;what is “agentic software”?&lt;/li&gt;&#xA;&lt;li&gt;what makes agentic software useful?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;i&#34;&gt;I.&lt;/h2&gt;&#xA;&lt;p&gt;I define “traditional software” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).&lt;/p&gt;&#xA;&lt;p&gt;Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Small Talk</title>
-      <link>https://www.dexterbosley.com/stories/small-talk/</link>
+      <link>http://127.0.0.1:1313/stories/small-talk/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
+      <guid>http://127.0.0.1:1313/stories/small-talk/</guid>
       <description>&lt;p&gt;It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Elliott shook his head. &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Dexter Bosley</title>
-      <link>https://www.dexterbosley.com/about/</link>
+      <link>http://127.0.0.1:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/about/</guid>
+      <guid>http://127.0.0.1:1313/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Currently&lt;/strong&gt;&#xA;Product at Ramp · New York, NY&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Previously&lt;/strong&gt;&#xA;· DoorDash – Strategy &amp;amp; Operations&#xA;· Uber – Strategy &amp;amp; Operations&#xA;· WeWork – Finance &amp;amp; Business Operations&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Education&lt;/strong&gt;&#xA;· Northwestern University – Economics&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interests&lt;/strong&gt;&#xA;· Skiing, Writing, Walking, and Talking&lt;/p&gt;</description>
     </item>
   </channel>
