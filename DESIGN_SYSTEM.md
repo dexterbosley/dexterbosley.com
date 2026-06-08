@@ -80,7 +80,12 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 - Essays must define `summary_title` and `summary_items` in frontmatter.
 - The summary renders between the title/date and `## I.`.
-- Summary text uses the blue highlight primitive and bracket styling.
+- Summary text is distinct from the essay body, but it is not a blue highlight.
+- Summary treatment:
+  - max-width `620px`
+  - left border `2px solid #080808`
+  - left padding `1rem`
+  - no background color
 - Keep the summary short: one title line plus 2-4 bullets.
 - Essays use Roman numeral section headings as the only divider system.
 - Section headings should be `## I.`, `## II.`, `## III.`, and so on.
@@ -92,6 +97,17 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Stories must define `cover.image`, `cover.alt`, `cover.caption`, `quote`, and `quote_author` in frontmatter.
 - The story opener renders between the title/date and the first paragraph.
 - Story opener order is banner image, caption, then quote/author.
+- Story banner images:
+  - width `100%`
+  - height `250px` desktop
+  - height `190px` mobile
+  - `object-fit: cover`
+  - `object-position: center`
+- Story quotes are styled as a slim epigraph:
+  - left border `2px solid #080808`
+  - left padding `1rem`
+  - quote text max-width `52ch`
+  - cite is muted, uppercase, and prefixed with `- `
 - Stories use centered `***` scene dividers.
 - In markdown, write a divider line as `***` between scenes.
 - Story dividers render as centered text, not horizontal lines.
@@ -125,8 +141,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Future Post Starter Shapes
 
 - Essay archetype includes:
-  - frontmatter with `cover.image`, `cover.alt`, `cover.caption`
-  - opening paragraph
+  - frontmatter with `summary_title` and `summary_items`
   - Roman numeral headings
   - body text with optional `<mark>`
   - image and caption pattern
@@ -146,3 +161,18 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - No email/byline under the homepage title unless explicitly requested.
 - No external fonts.
 - No complex JavaScript for reading behavior.
+
+## Obsidian Editing Workflow
+
+- The active vault is `/Users/dexterbosley/Desktop/dexter-ai/`.
+- The vault contains a `dexterbosley.com/` folder with symlinked markdown folders to the real Hugo source.
+- Edit or create posts in:
+  - `dexterbosley.com/posts/essays/`
+  - `dexterbosley.com/posts/stories/`
+- Use starter shapes in:
+  - `dexterbosley.com/templates/essay.md`
+  - `dexterbosley.com/templates/story.md`
+- Publish from Terminal:
+  - `cd /Users/dexterbosley/projects/dexterbosley.com`
+  - `./publish.sh "Update journal"`
+- Publishing rebuilds `docs/`, commits all site changes, and pushes to GitHub Pages.

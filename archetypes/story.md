@@ -7,9 +7,9 @@ quote: ""
 quote_author: ""
 description: ""
 cover:
-  image: ""
-  alt: ""
-  caption: ""
+  image: "/images/your-banner.jpg"
+  alt: "Short description of the banner image"
+  caption: "Short caption for the banner"
 ---
 
 Opening paragraph.

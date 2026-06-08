@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dexter Bosley</title>
-    <link>https://www.dexterbosley.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Dexter Bosley</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Useful Software</title>
-      <link>https://www.dexterbosley.com/essays/on-useful-digital-tools/</link>
+      <link>http://localhost:1313/essays/on-useful-digital-tools/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/on-useful-digital-tools/</guid>
+      <guid>http://localhost:1313/essays/on-useful-digital-tools/</guid>
       <description>&lt;h2 id=&#34;i&#34;&gt;I.&lt;/h2&gt;&#xA;&lt;p&gt;I define “&lt;mark&gt;traditional software&lt;/mark&gt;” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).&lt;/p&gt;&#xA;&lt;p&gt;Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.&lt;/p&gt;&#xA;&lt;p&gt;More tables, more transformations, more customers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii&#34;&gt;II.&lt;/h2&gt;&#xA;&lt;p&gt;I define “&lt;mark&gt;agentic software&lt;/mark&gt;” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Small Talk</title>
-      <link>https://www.dexterbosley.com/stories/small-talk/</link>
+      <link>http://localhost:1313/stories/small-talk/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
+      <guid>http://localhost:1313/stories/small-talk/</guid>
       <description>&lt;p&gt;It was sticky outside the downtown church. The air wrapped around and between the leaves while the boys sat together and watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from school.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Elliott shook his head. &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>

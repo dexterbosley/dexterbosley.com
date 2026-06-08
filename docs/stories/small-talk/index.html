@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Small Talk | Dexter Bosley</title>
@@ -248,7 +248,11 @@
         }
 
         .essay-summary {
+            max-width: 620px;
             margin: 0 0 3rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--ink);
+            color: var(--ink);
         }
 
         .essay-summary p,
@@ -265,18 +269,21 @@
         }
 
         .essay-summary mark {
-            background: #bdd8ff;
+            background: transparent;
             color: inherit;
-            padding: 0 0.15em;
+            padding: 0;
         }
 
         .story-opener {
-            margin: 0 0 2.2rem;
+            margin: 0 0 2rem;
         }
 
         .story-opener img {
             width: 100%;
+            height: 250px;
             margin: 0;
+            object-fit: cover;
+            object-position: center;
         }
 
         .story-opener figcaption {
@@ -288,19 +295,27 @@
 
         .story-quote {
             margin: 0 0 3rem;
-            padding: 0;
-            border: 0;
+            padding: 0.1rem 0 0.1rem 1rem;
+            border-left: 2px solid var(--ink);
             color: var(--ink);
         }
 
         .story-quote p {
             margin: 0 0 0.5rem;
+            max-width: 52ch;
         }
 
         .story-quote cite {
             display: block;
             color: var(--muted);
             font-style: normal;
+            font-size: 0.86rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .story-quote cite::before {
+            content: "- ";
         }
 
         .post-content {
@@ -448,6 +463,10 @@
             .entry-title {
                 white-space: normal;
             }
+
+            .story-opener img {
+                height: 190px;
+            }
         }
     </style>
 </head>
@@ -495,7 +514,7 @@
 
     <nav class="post-actions" aria-label="Post actions">
         <a href="/">Back</a>
-        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/stories/small-talk/">Share</button>
+        <button class="share-link" type="button" data-share-url="http://localhost:1313/stories/small-talk/">Share</button>
     </nav>
 </article>
 

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.dexterbosley.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/essays/on-useful-digital-tools/</loc>
+    <loc>http://localhost:1313/essays/on-useful-digital-tools/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.dexterbosley.com/stories/small-talk/</loc>
+    <loc>http://localhost:1313/stories/small-talk/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url>
 </urlset>

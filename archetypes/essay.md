@@ -3,19 +3,17 @@ title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 type: essay
-quote: ""
-quote_author: ""
 description: ""
 summary_title: "This essay discusses:"
 summary_items:
-  - ""
-  - ""
-  - ""
+  - "first thing this essay helps clarify"
+  - "second thing this essay helps clarify"
+  - "third thing this essay helps clarify"
 ---
 
 ## I.
 
-Body text with optional <mark>highlighted phrase</mark>.
+Start the essay here. Use short paragraphs. Use optional <mark>yellow highlights</mark> only for small phrases.
 
 ## II.
 
