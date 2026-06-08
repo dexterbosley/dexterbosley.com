@@ -10,25 +10,37 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --paper: #f7f7f7;
+            --ink: #080808;
+            --muted: #777;
+            --red: #d40000;
+            --measure: 700px;
+        }
+
         html {
-            background: #fff;
-            color: #000;
+            background: var(--paper);
+            color: var(--ink);
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 16px;
-            line-height: 1.65;
+            font-size: 20px;
+            line-height: 1.55;
         }
 
         body {
             margin: 0;
-            background: #fff;
-            color: #000;
+            background: var(--paper);
+            color: var(--ink);
             -webkit-font-smoothing: antialiased;
         }
 
         a {
             color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
             text-decoration: underline;
-            text-decoration-thickness: 1px;
+            text-decoration-thickness: 2px;
             text-underline-offset: 0.18em;
         }
 
@@ -40,42 +52,82 @@
         }
 
         .site {
-            width: min(100% - 96px, 700px);
+            width: min(calc(100% - 96px), var(--measure));
             margin: 0 auto;
-            padding: 96px 0 120px;
+            padding: 64px 0 88px;
         }
 
-        .home-heading {
-            margin: 0 0 72px;
-            text-align: center;
-            font-size: clamp(1.4rem, 3vw, 2rem);
-            font-weight: 400;
-            line-height: 1.35;
-            letter-spacing: 0;
+        .site-header {
+            margin-bottom: 88px;
+        }
+
+        .site-title {
+            display: inline-block;
+            font-size: 1.08rem;
+            font-weight: 800;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .site-email {
+            display: block;
+            margin-top: 0.55rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .site-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 84px;
+            color: var(--red);
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .site-nav a.is-active {
+            font-weight: 800;
+        }
+
+        .home-intro {
+            max-width: var(--measure);
+            margin: 0 0 96px;
+            font-size: 1.02rem;
+            line-height: 1.55;
+        }
+
+        .home-intro p {
+            margin: 0 0 2rem;
+        }
+
+        .page-header,
+        .post-header {
+            max-width: var(--measure);
+            margin-bottom: 3rem;
         }
 
         .page-title,
         .post-title {
             margin: 0 0 0.5rem;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: inherit;
+            font-size: 1.08rem;
+            font-weight: 800;
+            line-height: 1.35;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
         }
 
-        .page-header,
-        .post-header {
-            margin-bottom: 3rem;
-        }
-
-        .post-meta,
-        .entry-meta {
-            color: #555;
-            font-size: 0.875rem;
+        .post-meta {
+            color: var(--muted);
+            font-size: 0.86rem;
+            text-transform: uppercase;
         }
 
         .post-list {
             display: grid;
-            gap: 1.25rem;
+            gap: 0.8rem;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -83,13 +135,35 @@
 
         .post-entry {
             display: grid;
-            gap: 0.15rem;
+            grid-template-columns: 3.5ch minmax(80px, 1fr) auto;
+            align-items: center;
+            gap: 1.1rem;
+            min-width: 0;
+        }
+
+        .entry-number,
+        .entry-title {
+            font-size: 1rem;
+            line-height: 1.2;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .entry-rule {
+            height: 2px;
+            background: var(--ink);
         }
 
         .entry-title {
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: inherit;
+            max-width: 52ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .post-single,
+        .about-page {
+            max-width: var(--measure);
         }
 
         .post-content {
@@ -106,20 +180,22 @@
         .post-content blockquote,
         .post-content pre,
         .post-content hr {
-            margin: 0 0 1.5rem;
+            margin: 0 0 1.55rem;
         }
 
         .post-content h2,
         .post-content h3,
         .post-content h4 {
-            margin: 2.5rem 0 1rem;
+            margin: 2.6rem 0 1rem;
             font-size: 1rem;
-            font-weight: 400;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
         }
 
         .post-content ul,
         .post-content ol {
-            padding-left: 1.5rem;
+            padding-left: 1.4rem;
         }
 
         .post-content li {
@@ -128,19 +204,25 @@
 
         .post-content blockquote {
             padding-left: 1rem;
-            border-left: 1px solid #000;
+            border-left: 2px solid var(--ink);
             color: #333;
         }
 
         .post-content hr {
             border: 0;
-            border-top: 1px solid #000;
+            border-top: 2px solid var(--ink);
         }
 
         .post-content pre {
             overflow-x: auto;
             padding: 1rem;
-            border: 1px solid #000;
+            border: 2px solid var(--ink);
+        }
+
+        .post-content a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.18em;
         }
 
         .post-nav,
@@ -149,32 +231,69 @@
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 4rem;
-            color: #555;
-            font-size: 0.875rem;
+            color: var(--red);
+            font-size: 0.86rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
 
         .pagination-current {
-            color: #000;
+            color: var(--ink);
+            font-weight: 800;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 760px) {
             html {
-                font-size: 15px;
+                font-size: 16px;
             }
 
             .site {
-                width: min(100% - 32px, 700px);
-                padding: 48px 0 72px;
+                width: min(calc(100% - 32px), var(--measure));
+                padding: 36px 0 64px;
             }
 
-            .home-heading {
-                margin-bottom: 48px;
+            .site-header {
+                margin-bottom: 56px;
+            }
+
+            .site-nav {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.9rem 1.5rem;
+                margin-top: 48px;
+            }
+
+            .home-intro {
+                margin-bottom: 72px;
+            }
+
+            .post-entry {
+                grid-template-columns: 3.5ch 1fr;
+                gap: 0.55rem 0.9rem;
+            }
+
+            .entry-rule {
+                display: none;
+            }
+
+            .entry-title {
+                white-space: normal;
             }
         }
     </style>
 </head>
 <body>
     <main class="site">
+        <header class="site-header">
+            <a class="site-title" href="/">HI, I AM TRYING TO THINK MORE.</a>
+            <a class="site-email" href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="/">All</a>
+                <a class="is-active" href="/essays/">Essays</a>
+                <a href="/stories/">Stories</a>
+                <a href="/about/">About</a>
+            </nav>
+        </header>
+
         
     <header class="page-header">
         <h1 class="page-title">Essays</h1>
@@ -182,8 +301,9 @@
 
 <ol class="post-list">
     <li class="post-entry">
+        <span class="entry-number">01.</span>
+        <span class="entry-rule" aria-hidden="true"></span>
         <a class="entry-title" href="/essays/on-useful-digital-tools/">On Useful Software</a>
-        <div class="entry-meta">2026-03-30 / Essay</div>
     </li>
 </ol>
     </main>

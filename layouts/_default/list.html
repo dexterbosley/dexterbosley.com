@@ -2,7 +2,10 @@
 {{- $pages := .Pages }}
 {{- if .IsHome }}
     {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
-    <h1 class="home-heading">HI, I AM TRYING TO THINK MORE.</h1>
+    <section class="home-intro" aria-label="Introduction">
+        <p>I write to make better contact with what I think, what I notice, and what keeps changing.</p>
+        <p>This is a small place for essays, stories, and notes in public.</p>
+    </section>
 {{- else }}
     <header class="page-header">
         <h1 class="page-title">{{ .Title }}</h1>
@@ -10,13 +13,15 @@
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
+{{- $total := len $paginator.Pages }}
 
 <ol class="post-list">
-    {{- range $paginator.Pages }}
-    {{- $type := cond (eq .Section "stories") "Story" "Essay" }}
+    {{- range $index, $page := $paginator.Pages }}
+    {{- $number := sub $total $index }}
     <li class="post-entry">
-        <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <div class="entry-meta">{{ .Date.Format "2006-01-02" }} / {{ $type }}</div>
+        <span class="entry-number">{{ printf "%02d." $number }}</span>
+        <span class="entry-rule" aria-hidden="true"></span>
+        <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
     </li>
     {{- end }}
 </ol>
