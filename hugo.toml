@@ -8,7 +8,7 @@ disableKinds = ["section", "taxonomy", "term"]
   pagerSize = 10
 
 [params]
-  mainSections = ["essays", "stories"]
+  mainSections = ["essays", "stories", "notes"]
 
 [markup.goldmark.renderer]
   unsafe = true

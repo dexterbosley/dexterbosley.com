@@ -18,7 +18,12 @@
 
 <ol class="post-list">
     {{- range $page := $paginator.Pages }}
-    {{- $type := cond (eq $page.Section "stories") "STORY" "ESSAY" }}
+    {{- $type := "ESSAY" }}
+    {{- if eq $page.Section "stories" }}
+        {{- $type = "STORY" }}
+    {{- else if eq $page.Section "notes" }}
+        {{- $type = "NOTES" }}
+    {{- end }}
     <li class="post-entry">
         <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
         <span class="entry-rule" aria-hidden="true"></span>

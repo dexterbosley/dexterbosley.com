@@ -1,8 +1,16 @@
-{{- $kind := cond (eq .Section "stories") "story" "essay" }}
+{{- $kind := "essay" }}
+{{- if eq .Section "stories" }}
+    {{- $kind = "story" }}
+{{- else if eq .Section "notes" }}
+    {{- $kind = "note" }}
+{{- end }}
 <article class="post-single post-template-{{ $kind }}">
     <header class="post-header">
         <h1 class="post-title">{{ .Title }}</h1>
-        <div class="post-meta">{{ partial "date-long.html" .Date }}</div>
+        <div class="post-meta">
+            <div>{{ partial "date-long.html" .Date }}</div>
+            <div>{{ .ReadingTime }} min read</div>
+        </div>
     </header>
 
     {{- with .Params.cover.image }}

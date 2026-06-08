@@ -41,22 +41,24 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Do not generate or link to Essays-only or Stories-only index pages.
 - Row grid: date, black horizontal rule, title.
 - Date format in index is compact uppercase: `MAR 30, 2026`.
-- Title suffix must include post kind: `(ESSAY)` or `(STORY)`.
+- Title suffix must include post kind: `(ESSAY)`, `(STORY)`, or `(NOTES)`.
 - Text is uppercase with `0.04em` letter spacing.
 - The black rule is `2px` high.
 - On mobile, hide the rule and let the title wrap.
 
 ## Post Templates
 
-- Essays and stories have explicit templates:
+- Essays, stories, and notes have explicit templates:
   - `layouts/essays/single.html`
   - `layouts/stories/single.html`
+  - `layouts/notes/single.html`
   - shared renderer: `layouts/partials/post-single.html`
 - Post pages do not show the homepage header.
 - Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
-- Post header contains title then date only.
+- Post header contains title, date, then read estimate.
 - Post date format is compact uppercase: `MAR 30, 2026`.
+- Read estimate is required on every click-in post and renders like `2 min read`.
 - Post title:
   - uppercase
   - font-size `1.08rem`
@@ -101,6 +103,14 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - In markdown, write a divider line as `***` between scenes.
 - Story dividers render as centered bold text, not horizontal lines.
 
+## Notes Structure
+
+- Notes are the third public post type.
+- Notes live in `content/notes/`.
+- Notes follow a simple blog format: title, date, read estimate, then body.
+- Notes should not require banners, Roman numeral essay sections, or story scene breaks.
+- Use notes for short public journal entries, working observations, and quick updates.
+
 ## Highlights
 
 - Highlight primitive is native HTML: `<mark>highlighted phrase</mark>`.
@@ -139,6 +149,9 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - opening paragraph
   - scene break using `***`
   - next scene
+- Note archetype includes:
+  - minimal frontmatter
+  - short body text
 
 ## What Not To Add
 
@@ -158,9 +171,11 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Edit or create posts in:
   - `dexterbosley.com/posts/essays/`
   - `dexterbosley.com/posts/stories/`
+  - `dexterbosley.com/posts/notes/`
 - Use starter shapes in:
   - `dexterbosley.com/templates/essay.md`
   - `dexterbosley.com/templates/story.md`
+  - `dexterbosley.com/templates/note.md`
 - Publish from Terminal:
   - `cd /Users/dexterbosley/projects/dexterbosley.com`
   - `./publish.sh "Update journal"`
