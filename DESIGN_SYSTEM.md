@@ -40,7 +40,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - The homepage and section pages use a numbered-line-inspired index, but the left label is the publish date.
 - Do not generate or link to Essays-only or Stories-only index pages.
 - Row grid: date, black horizontal rule, title.
-- Date format in index is long uppercase with ordinal day: `MARCH 30TH, 2026`.
+- Date format in index is compact uppercase: `MAR 30, 2026`.
 - Title suffix must include post kind: `(ESSAY)` or `(STORY)`.
 - Text is uppercase with `0.04em` letter spacing.
 - The black rule is `2px` high.
@@ -56,7 +56,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
 - Post header contains title then date only.
-- Post date format is long uppercase with ordinal day: `MARCH 30TH, 2026`.
+- Post date format is compact uppercase: `MAR 30, 2026`.
 - Post title:
   - uppercase
   - font-size `1.08rem`
@@ -78,15 +78,9 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Essay Structure
 
-- Essays must define `summary_title` and `summary_items` in frontmatter.
-- The summary renders between the title/date and `## I.`.
-- Summary text is distinct from the essay body, but it is not a blue highlight.
-- Summary treatment:
-  - max-width `620px`
-  - left border `2px solid #080808`
-  - left padding `1rem`
-  - no background color
-- Keep the summary short: one title line plus 2-4 bullets.
+- Essays may define `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
+- If present, the cover renders between the title/date and `## I.`.
+- Essay summaries are not required and should not be used as a default post primitive.
 - Essays use Roman numeral section headings as the only divider system.
 - Section headings should be `## I.`, `## II.`, `## III.`, and so on.
 - Do not use `---`, `***`, horizontal rules, ornaments, or centered asterisks in essays.
@@ -94,23 +88,18 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Story Structure
 
-- Stories must define `cover.image`, `cover.alt`, `cover.caption`, `quote`, and `quote_author` in frontmatter.
-- The story opener renders between the title/date and the first paragraph.
-- Story opener order is banner image, caption, then quote/author.
-- Story banner images:
+- Stories may define `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
+- If present, the cover renders between the title/date and the first paragraph.
+- Story quotes/epigraphs are not part of the current template.
+- Story and essay banner images share the same treatment:
   - width `100%`
   - height `250px` desktop
   - height `190px` mobile
   - `object-fit: cover`
   - `object-position: center`
-- Story quotes are styled as a slim epigraph:
-  - left border `2px solid #080808`
-  - left padding `1rem`
-  - quote text max-width `52ch`
-  - cite is muted, uppercase, and prefixed with `- `
 - Stories use centered `***` scene dividers.
 - In markdown, write a divider line as `***` between scenes.
-- Story dividers render as centered text, not horizontal lines.
+- Story dividers render as centered bold text, not horizontal lines.
 
 ## Highlights
 
@@ -123,7 +112,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Images And Captions
 
 - Current live content should not include decorative or placeholder images.
-- Stories require a banner image with caption.
+- Essays and stories may use a banner image with caption.
 - Essays should add images only when they are intentional figures, diagrams, or graphs.
 - Image markdown pattern:
   - `![Alt text](/images/file.jpg)`
@@ -141,12 +130,12 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Future Post Starter Shapes
 
 - Essay archetype includes:
-  - frontmatter with `summary_title` and `summary_items`
+  - frontmatter with optional cover fields
   - Roman numeral headings
   - body text with optional `<mark>`
   - image and caption pattern
 - Story archetype includes:
-  - frontmatter with `quote`, `quote_author`, and cover fields
+  - frontmatter with optional cover fields
   - opening paragraph
   - scene break using `***`
   - next scene

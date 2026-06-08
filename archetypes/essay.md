@@ -4,11 +4,10 @@ date: {{ .Date }}
 draft: true
 type: essay
 description: ""
-summary_title: "This essay discusses:"
-summary_items:
-  - "first thing this essay helps clarify"
-  - "second thing this essay helps clarify"
-  - "third thing this essay helps clarify"
+cover:
+  image: "/images/your-banner.jpg"
+  alt: "Short description of the banner image"
+  caption: "Short caption for the banner"
 ---
 
 ## I.

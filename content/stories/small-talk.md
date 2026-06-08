@@ -2,8 +2,6 @@
 title: "Small Talk"
 date: 2026-01-24
 draft: false
-quote: "Isn't it pretty to think so?"
-quote_author: "Ernest Hemingway"
 cover:
   image: "/images/chamonix-banner.jpg"
   alt: "Mountain ridge in Chamonix"

@@ -2,11 +2,10 @@
 title: "On Useful Software"
 date: 2026-03-30
 draft: false
-summary_title: "This essay discusses:"
-summary_items:
-  - "what is “traditional software”?"
-  - "what is “agentic software”?"
-  - "what makes agentic software useful?"
+cover:
+  image: "/images/chamonix-banner.jpg"
+  alt: "Mountain ridge in Chamonix"
+  caption: "Le Brévent, Chamonix"
 ---
 
 ## I.

@@ -32,15 +32,14 @@ date: 2026-03-30
 draft: false
 type: essay
 description: ""
-summary_title: "This essay discusses:"
-summary_items:
-  - "first thing this essay helps clarify"
-  - "second thing this essay helps clarify"
-  - "third thing this essay helps clarify"
+cover:
+  image: "/images/your-banner.jpg"
+  alt: "Short description of the banner image"
+  caption: "Short caption for the banner"
 ---
 ```
 
-Essays start after the summary with Roman numeral headings:
+Essays start after the optional banner with Roman numeral headings:
 
 ```md
 ## I.
@@ -63,8 +62,6 @@ date: 2026-01-24
 draft: false
 type: story
 description: ""
-quote: "Short epigraph or line that frames the story."
-quote_author: "Author Name"
 cover:
   image: "/images/your-banner.jpg"
   alt: "Short description of the banner image"
@@ -72,7 +69,7 @@ cover:
 ---
 ```
 
-Stories start after the banner and quote:
+Stories start after the optional banner:
 
 ```md
 Opening paragraph.
