@@ -58,7 +58,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
 - Post header contains title, date, then read estimate.
 - Post date format is compact uppercase: `MAR 30, 2026`.
-- Read estimate is required on every click-in post and renders like `2 min read`.
+- Read estimate is required on every click-in post and renders like `2 min`.
 - Post title:
   - uppercase
   - font-size `1.08rem`
