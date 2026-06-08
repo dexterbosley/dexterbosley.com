@@ -14,6 +14,7 @@
             --paper: #fff;
             --ink: #080808;
             --muted: #777;
+            --blue: #0000ff;
             --red: #d40000;
             --measure: 700px;
         }
@@ -65,12 +66,12 @@
             display: inline-block;
             font-size: 1.08rem;
             font-weight: 800;
+            color: var(--blue);
             line-height: 1.25;
             letter-spacing: 0.02em;
-            text-transform: uppercase;
         }
 
-        .site-email {
+        .site-byline {
             display: block;
             margin-top: 0.55rem;
             color: var(--muted);
@@ -78,7 +79,7 @@
         }
 
         .home-intro {
-            max-width: var(--measure);
+            max-width: calc(var(--measure) - 140px);
             margin: 0 0 96px;
             font-size: 1.02rem;
             line-height: 1.55;
@@ -263,8 +264,8 @@
 <body>
     <main class="site">
         <header class="site-header">
-            <a class="site-title" href="/">HI, I AM TRYING TO THINK MORE.</a>
-            <a class="site-email" href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a>
+            <a class="site-title" href="/">Welcome, I am trying to think in public.</a>
+            <span class="site-byline">by Dexter Bosley</span>
         </header>
 
         
