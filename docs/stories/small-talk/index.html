@@ -15,7 +15,6 @@
             --ink: #080808;
             --muted: #777;
             --blue: #0000ff;
-            --red: #d40000;
             --measure: 700px;
         }
 
@@ -307,16 +306,41 @@
             text-underline-offset: 0.18em;
         }
 
-        .post-nav,
+        .post-actions,
         .pagination {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 4rem;
-            color: var(--red);
+            color: var(--ink);
             font-size: 0.86rem;
             letter-spacing: 0.04em;
             text-transform: uppercase;
+        }
+
+        .post-actions {
+            justify-content: space-between;
+            border-top: 2px solid var(--ink);
+            padding-top: 0.85rem;
+        }
+
+        .share-link {
+            appearance: none;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            color: inherit;
+            font: inherit;
+            letter-spacing: inherit;
+            text-transform: inherit;
+            cursor: pointer;
+        }
+
+        .share-link:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 0.18em;
         }
 
         .pagination-current {
@@ -405,10 +429,44 @@
 
     </div>
 
-    <nav class="post-nav" aria-label="Post navigation">
-        <a href="/stories/">Back</a>
+    <nav class="post-actions" aria-label="Post actions">
+        <a href="/">Back</a>
+        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/stories/small-talk/">Share</button>
     </nav>
 </article>
+
+<script>
+document.querySelectorAll('.share-link').forEach(function(button) {
+    button.addEventListener('click', async function() {
+        var url = button.getAttribute('data-share-url') || window.location.href;
+        var original = button.textContent;
+
+        async function copyLink() {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(url);
+            } else {
+                window.prompt('Copy this link:', url);
+            }
+        }
+
+        try {
+            if (navigator.share) {
+                await navigator.share({ title: document.title, url: url });
+                return;
+            }
+            await copyLink();
+            button.textContent = 'Copied';
+        } catch (error) {
+            if (error && error.name === 'AbortError') return;
+            window.prompt('Copy this link:', url);
+        }
+
+        window.setTimeout(function() {
+            button.textContent = original;
+        }, 1600);
+    });
+});
+</script>
 
     </main>
 </body>

@@ -16,7 +16,6 @@
             --ink: #080808;
             --muted: #777;
             --blue: #0000ff;
-            --red: #d40000;
             --measure: 700px;
         }
 
@@ -308,16 +307,41 @@
             text-underline-offset: 0.18em;
         }
 
-        .post-nav,
+        .post-actions,
         .pagination {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 4rem;
-            color: var(--red);
+            color: var(--ink);
             font-size: 0.86rem;
             letter-spacing: 0.04em;
             text-transform: uppercase;
+        }
+
+        .post-actions {
+            justify-content: space-between;
+            border-top: 2px solid var(--ink);
+            padding-top: 0.85rem;
+        }
+
+        .share-link {
+            appearance: none;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            color: inherit;
+            font: inherit;
+            letter-spacing: inherit;
+            text-transform: inherit;
+            cursor: pointer;
+        }
+
+        .share-link:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 0.18em;
         }
 
         .pagination-current {

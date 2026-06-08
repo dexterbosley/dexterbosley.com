@@ -6,10 +6,6 @@ type: essay
 quote: ""
 quote_author: ""
 description: ""
-cover:
-  image: ""
-  alt: ""
-  caption: ""
 ---
 
 Opening paragraph.

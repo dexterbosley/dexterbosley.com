@@ -12,6 +12,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Main page width is `min(calc(100% - 96px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
+- Public navigation is intentionally minimal: homepage plus click-in posts. There is no About page and no section-only browsing page.
 
 ## Homepage Template
 
@@ -37,6 +38,7 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Index Rows
 
 - The homepage and section pages use a numbered-line-inspired index, but the left label is the publish date.
+- Do not generate or link to Essays-only or Stories-only index pages.
 - Row grid: date, black horizontal rule, title.
 - Date format in index: `YYYY-MM-DD`.
 - Title suffix must include post kind: `(ESSAY)` or `(STORY)`.
@@ -68,6 +70,11 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - font-size `1rem`
   - line-height `1.55`
   - paragraph margin-bottom `1.55rem`
+- Post footer actions:
+  - Use a black, in-theme action row.
+  - Left action is `Back` and always points to `/`.
+  - Right action is `Share` and should use native share when available, otherwise copy/prompt the current post URL.
+  - Do not use red for post actions.
 
 ## Essay Structure
 
@@ -92,6 +99,8 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 ## Images And Captions
 
+- Current live content should not include decorative or placeholder images.
+- Add images only when they are intentional essay figures, diagrams, or graphs.
 - Image markdown pattern:
   - `![Alt text](/images/file.jpg)`
   - blank line
