@@ -14,19 +14,25 @@ This essay discusses:
 - what is “agentic software”?
 - what makes agentic software useful?
 
+![Snow-covered trees and ridge at Sugar Bowl](/images/sugar-bowl-banner.jpg)
+
+*Sugar Bowl, California.*
+
 ## I.
 
-I define “traditional software” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).
+I define “<mark>traditional software</mark>” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).
 
 Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.
 
 ![Tasteful expansion: User Complexity vs # of Product Features](/images/useful-digital-tools-1-0.png)
 
+*Tasteful expansion: user complexity vs. number of product features.*
+
 More tables, more transformations, more customers.
 
 ## II.
 
-I define “agentic software” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.
+I define “<mark>agentic software</mark>” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.
 
 Also worth making explicit is my working definition of successful “task completion”:
 
@@ -68,3 +74,7 @@ Useful agentic software will:
 - collapse interaction to only input configuration
 - structure inputs to accommodate any task
 - obsess over input validation and ignore output customization
+
+![Agentic software task surface](/images/useful-digital-tools-2-0.png)
+
+*Agentic software: tasks, inputs, and accuracy.*

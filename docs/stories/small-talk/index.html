@@ -152,6 +152,80 @@
             max-width: var(--measure);
         }
 
+        .site-post {
+            width: min(calc(100% - 96px), 1000px);
+            padding-top: 42px;
+        }
+
+        .site-post .post-single {
+            max-width: none;
+        }
+
+        .site-post .post-header {
+            margin-bottom: 5rem;
+        }
+
+        .site-post .post-title {
+            font-size: 1.55rem;
+            line-height: 1.25;
+        }
+
+        .site-post .post-meta {
+            font-size: 1.22rem;
+            letter-spacing: 0.02em;
+        }
+
+        .site-post .post-content {
+            font-size: 1.55rem;
+            line-height: 1.55;
+        }
+
+        .site-post .post-content p,
+        .site-post .post-content ul,
+        .site-post .post-content ol,
+        .site-post .post-content blockquote,
+        .site-post .post-content pre,
+        .site-post .post-content hr {
+            margin-bottom: 2rem;
+        }
+
+        .site-post .post-content h2,
+        .site-post .post-content h3 {
+            margin: 2.7rem 0 0.25rem;
+            font-size: 1em;
+            font-weight: 800;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        .site-post .post-content mark {
+            background: #ffeaa3;
+            color: inherit;
+            padding: 0 0.15em;
+        }
+
+        .site-post .post-content p:has(> img) {
+            margin: 3rem 0 0.75rem;
+        }
+
+        .site-post .post-content p:has(> img) img {
+            width: 100%;
+            margin: 0;
+        }
+
+        .site-post .post-content p:has(> img) + p em {
+            display: block;
+            margin-top: -0.15rem;
+            color: var(--ink);
+            font-size: 0.82em;
+            font-style: normal;
+            line-height: 1.4;
+        }
+
+        .post-template-stories .post-content {
+            max-width: 820px;
+        }
+
         .post-content {
             overflow-wrap: break-word;
         }
@@ -238,8 +312,25 @@
                 padding: 36px 0 64px;
             }
 
+            .site-post {
+                width: min(calc(100% - 32px), 1000px);
+            }
+
             .site-header {
                 margin-bottom: 56px;
+            }
+
+            .site-post .post-header {
+                margin-bottom: 3.5rem;
+            }
+
+            .site-post .post-title,
+            .site-post .post-content {
+                font-size: 1.25rem;
+            }
+
+            .site-post .post-meta {
+                font-size: 1rem;
             }
 
             .home-intro {
@@ -262,17 +353,14 @@
     </style>
 </head>
 <body>
-    <main class="site">
-        <header class="site-header">
-            <span class="site-title">Hi, this is my public journal.</span>
-            <span class="site-byline">by Dexter Bosley</span>
-        </header>
+    <main class="site site-post">
 
         
-<article class="post-single">
+
+<article class="post-single post-template-story">
     <header class="post-header">
         <h1 class="post-title">Small Talk</h1>
-        <div class="post-meta">2026-01-24 / Story</div>
+        <div class="post-meta">24.01.2026</div>
     </header>
 
     <div class="post-content">
@@ -299,9 +387,10 @@
     </div>
 
     <nav class="post-nav" aria-label="Post navigation">
-        <a href="/stories/">Back to Stories</a>
+        <a href="/stories/">Back</a>
     </nav>
 </article>
+
     </main>
 </body>
 </html>

@@ -9,3 +9,6 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   mainSections = ["essays", "stories"]
+
+[markup.goldmark.renderer]
+  unsafe = true
