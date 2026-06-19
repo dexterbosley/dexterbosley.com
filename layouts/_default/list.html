@@ -1,53 +1,48 @@
 {{- define "main" }}
 {{- $pages := .Pages }}
 {{- if .IsHome }}
-    {{- $pages = where site.RegularPages "Section" "in" site.Params.mainSections }}
     <section class="home-intro" aria-label="Introduction">
-        <p>I write to make better contact with what I think, what I notice, and what keeps changing.</p>
-        <p>This is a public journal for essays, stories, and notes while I try to understand what I mean.</p>
-        <p>The useful part is the pressure of <mark>thinking in public</mark>: leaving a record before the thought gets too polished.</p>
-        <p>New pieces are below.</p>
+        <p>Welcome to <mark class="highlight-inline">thinking in public</mark>. I never could journal so I'm trying this. After all, it doesn’t really count unless you write it down.</p>
+        <figure class="home-banner" aria-label="Lake and mountains at dusk">
+            <img src="/images/homepage-lake-annecy.jpeg" alt="People on a lawn beside a lake with mountains in the distance">
+        </figure>
+        <p>You can read more about me <a href="/about/">here</a>. Subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">Thoughts below.</mark></p>
     </section>
+    {{ partial "home-index.html" . }}
 {{- else }}
     <header class="page-header">
         <h1 class="page-title">{{ .Title }}</h1>
     </header>
-{{- end }}
 
-{{- $pages = sort $pages "Date" "desc" }}
-{{- $paginator := .Paginate $pages }}
+    {{- $pages = sort $pages "Date" "desc" }}
+    {{- $paginator := .Paginate $pages }}
 
-<ol class="post-list">
-    {{- range $page := $paginator.Pages }}
-    {{- $type := "ESSAY" }}
-    {{- if eq $page.Section "stories" }}
-        {{- $type = "STORY" }}
-    {{- else if eq $page.Section "notes" }}
-        {{- $type = "NOTES" }}
-    {{- end }}
-    <li class="post-entry">
-        <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
-        <span class="entry-rule" aria-hidden="true"></span>
-        <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }} ({{ $type }})</a>
-    </li>
-    {{- end }}
-</ol>
-
-{{- if gt $paginator.TotalPages 1 }}
-<nav class="pagination" aria-label="Pagination">
-    {{- if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL }}">Previous</a>
-    {{- end }}
-    {{- range $paginator.Pagers }}
-        {{- if eq . $paginator }}
-        <span class="pagination-current">{{ .PageNumber }}</span>
-        {{- else }}
-        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+    <ol class="post-list">
+        {{- range $page := $paginator.Pages }}
+        <li class="post-entry">
+            <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
+            <span class="entry-rule" aria-hidden="true"></span>
+            <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+        </li>
         {{- end }}
+    </ol>
+
+    {{- if gt $paginator.TotalPages 1 }}
+    <nav class="pagination" aria-label="Pagination">
+        {{- if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}">Previous</a>
+        {{- end }}
+        {{- range $paginator.Pagers }}
+            {{- if eq . $paginator }}
+            <span class="pagination-current">{{ .PageNumber }}</span>
+            {{- else }}
+            <a href="{{ .URL }}">{{ .PageNumber }}</a>
+            {{- end }}
+        {{- end }}
+        {{- if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}">Next</a>
+        {{- end }}
+    </nav>
     {{- end }}
-    {{- if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL }}">Next</a>
-    {{- end }}
-</nav>
 {{- end }}
 {{- end }}

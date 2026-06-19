@@ -10,10 +10,10 @@ cover:
   caption: "Short caption for the banner"
 ---
 
-## I.
+## **I.** ***First***
 
 Start the essay here. Use short paragraphs. Use optional <mark>yellow highlights</mark> only for small phrases.
 
-## II.
+## **II.** ***Next***
 
 Next section.

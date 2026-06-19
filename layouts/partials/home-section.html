@@ -1,0 +1,41 @@
+{{- $pages := .pages }}
+<section class="home-section" id="{{ .id }}" aria-labelledby="{{ .id }}-title">
+    <div class="section-head">
+        <h2 class="section-title" id="{{ .id }}-title">{{ .title }}</h2>
+        <span class="section-count">{{ len $pages }} pieces</span>
+    </div>
+    <p class="section-deck">{{ .deck }}</p>
+
+    {{- with index $pages 0 }}
+        {{- with .Params.cover }}
+            {{- if .image }}
+            <figure class="feature-image">
+                <img src="{{ .image }}" alt="{{ .alt | default "" }}">
+                {{- with .caption }}
+                <figcaption>{{ . }}</figcaption>
+                {{- end }}
+            </figure>
+            {{- end }}
+        {{- end }}
+    {{- end }}
+
+    <ol class="entry-list">
+        {{- range $index, $page := $pages }}
+        <li>
+            <a class="entry-link" href="{{ $page.RelPermalink }}">
+                <span>
+                    {{- if eq $index 0 }}
+                    <span class="entry-kicker">Start here</span>
+                    {{- else if eq $index 1 }}
+                    <span class="entry-kicker">Recent</span>
+                    {{- end }}
+                    <span class="entry-title">{{ $page.Title }}</span>
+                </span>
+                <time class="entry-date" datetime="{{ $page.Date.Format "2006-01-02" }}">{{ partial "date-short.html" $page.Date }}</time>
+            </a>
+        </li>
+        {{- end }}
+    </ol>
+
+    <a class="all-link" href="{{ .allURL }}">{{ .allLabel }} -></a>
+</section>

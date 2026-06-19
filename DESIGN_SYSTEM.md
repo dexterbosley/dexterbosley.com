@@ -1,50 +1,89 @@
 # DexterBosley.com Design System
 
-This site is a public journal. The visual language is plain, monospaced, quiet, and intentionally document-like. Do not make it feel like a product landing page, portfolio, magazine, or theme demo.
+This site is a public journal. The visual language is plain, quiet, editorial, and intentionally document-like. It can borrow typographic restraint from newspaper sites such as the Financial Times, but it must not copy or embed proprietary typefaces. Do not make it feel like a product landing page, portfolio, magazine, or theme demo.
 
 ## Core Surface
 
-- Background is true white: `#fff`.
-- Text is near-black: `#080808`.
-- Font is system monospace only: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`.
-- Base font size is `14px`.
+- Light mode background is true white: `#fff`.
+- Light mode text is near-black: `#080808`.
+- Dark mode background is lake-black: `#11161A`.
+- Dark mode body text is pale blue-white: `#E8EDF2`.
+- Fonts are self-hosted open-source fonts only:
+  - Serif/prose: `Source Serif 4`, fallback `Georgia, serif`.
+  - Sans/meta: `IBM Plex Sans`, fallback `Arial, sans-serif`.
+  - Both families are stored under `static/fonts/` with their SIL OFL license files.
+- Do not load fonts from Google Fonts, Adobe Fonts, or another runtime service.
+- Do not use proprietary FT fonts such as Financier or Metric.
+- Base font size is `16px` desktop and `15.5px` mobile.
 - Primary page measure is `700px`.
-- Main page width is `min(calc(100% - 96px), 700px)`.
+- Homepage prose measure is narrower than the page: `420px`, roughly 60% of the full banner and index measure.
+- Main page width is `min(calc(100% - 128px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
 - Public navigation is intentionally minimal: homepage plus click-in posts. There is no About page and no section-only browsing page.
+- Theme defaults to the visitor's `prefers-color-scheme`, then persists manual light/dark selection in `localStorage`.
 
 ## Homepage Template
 
 - Top padding: `64px` desktop, `36px` mobile.
-- Header contains only: `HI, I'M DEXTER BOSLEY`.
+- Homepage title contains only: `BY DEXTER BOSLEY`.
 - No byline, email, nav, logo, button, or top hyperlink.
+- Header stacks the site title and the quiet theme toggle.
 - Header title:
-  - font-size `1.08rem`
-  - font-weight `800`
+  - font-family `IBM Plex Sans`
+  - font-size `0.86rem`
+  - font-weight `700`
   - uppercase
-  - letter-spacing `0.02em`
+  - letter-spacing `0.04em`
   - color `#080808`
-- Gap from header to intro: `126px` desktop, `84px` mobile.
-- Intro:
-  - max-width `620px` desktop
-  - max-width `100%` mobile
-  - font-size `1rem`
-  - line-height `1.55`
-  - paragraph margin-bottom `1.65rem`
-  - margin-bottom before index `154px` desktop, `96px` mobile
-- Use yellow `<mark>` highlights sparingly for one phrase per surface, not whole sentences.
+- Theme toggle labels are exactly `(*)` and `(o)`, visually hushed, and placed directly underneath `BY DEXTER BOSLEY`.
+- Gap from header to intro: `80px` desktop, `72px` mobile.
+- Intro copy uses `Source Serif 4` at the prose scale and is constrained to the narrower homepage prose measure.
+- Homepage image is `/images/homepage-lake-annecy.jpeg`, placed between the second and third intro paragraphs.
+- Homepage intro copy is two paragraphs around the banner:
+  - before image: `Welcome to thinking in public. I never could journal so I'm trying this. After all, it doesn’t really count unless you write it down.`
+  - after image: `You can read more about me here. Subscribe to free updates here. Thoughts below.`
+- Keep `thinking in public` highlighted in the first paragraph.
+- Keep the first `here` linked to `/about/`, the second `here` linked to `/subscribe/`, and both visibly underlined.
+- Keep `Thoughts below.` highlighted.
+- Homepage image has no caption.
+- Homepage image crop:
+  - width matches the homepage prose measure, so its right edge aligns with the text column
+  - height `265px` desktop
+  - height `210px` mobile
+  - `object-fit: cover`
+  - `object-position: center 78%`
+- Homepage sections are `POPULAR` followed by `RECENT`.
+- Popular contains three placeholder best-of slots until real selections are chosen.
+- Recent contains the curated public set plus static placeholders. The first real rows are `Placeholder`, `Useful Tools`, and `Small Talk`.
+- Recent flips in place after 10 visible rows using component-level `Previous`/`Next` controls plus numbered page buttons. Do not navigate to `/page/2/` for homepage or About Recent rows.
+- Use blue highlights sparingly for one phrase per surface, not whole sentences.
+
+## About Template
+
+- About is a quick flip from the homepage, not a separate branded page.
+- Do not show an `About` page title.
+- Render about text in the same narrow homepage prose measure.
+- Include `/images/about-snow-banner.jpg` immediately after the first about paragraph, using the same banner dimensions as the homepage.
+- Crop the About banner around the upper-middle of the photo so it balances sky with snow and trees.
+- Render the remaining about copy below the banner in the same narrow text measure.
+- End the About copy with highlighted `Thoughts below.`.
+- Do not include an `Elsewhere` heading or link cluster.
+- Render the same `POPULAR` and `RECENT` index tables below the banner.
 
 ## Index Rows
 
-- The homepage index uses a date/line/title row and is sorted newest-first.
+- The homepage index is curated, not automatically all posts.
 - Do not generate or link to Essays-only or Stories-only index pages.
-- Row grid: date, black horizontal rule, title.
-- Dates appear in the homepage index using compact uppercase format: `MAR 30, 2026`.
-- Title suffix must include post kind: `(ESSAY)`, `(STORY)`, or `(NOTES)`.
-- Text is uppercase with `0.04em` letter spacing.
-- The black rule is `2px` high.
-- On mobile, stack date, rule, and title so each post reads as a distinct list item.
+- Popular row grid: read time, black horizontal rule, right-aligned title.
+- Popular placeholder read time is `1 MIN`.
+- Recent row grid: date, black horizontal rule, right-aligned title.
+- Dates appear in compact uppercase format: `MAR 30, 2026`.
+- Homepage titles do not include post kind suffixes.
+- Index row text uses `IBM Plex Sans`, uppercase, `0.07em` letter spacing.
+- Homepage titles align right on desktop.
+- Dates and read times are muted and lighter weight.
+- On mobile, stack row fields so each post reads as a distinct list item.
 
 ## Post Templates
 
@@ -60,17 +99,20 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - Post date format is compact uppercase: `MAR 30, 2026`.
 - Read estimate is required on every click-in post and renders like `2 min`.
 - Post title:
-  - uppercase
-  - font-size `1.08rem`
-  - font-weight `800`
-  - line-height `1.35`
+  - font-family `Source Serif 4`
+  - font-size `1.28rem`
+  - font-weight `600`
+  - line-height `1.18`
+  - no forced uppercase
 - Post date:
   - muted `#777`
-  - font-size `0.86rem`
+  - font-family `IBM Plex Sans`
+  - font-size `0.78rem`
 - Gap from post header to body: `3rem`.
 - Post body:
-  - font-size `1rem`
-  - line-height `1.55`
+  - font-family `Source Serif 4`
+  - font-size `1.04rem`
+  - line-height `1.52`
   - paragraph margin-bottom `1.55rem`
 - Post footer actions:
   - Use a black, in-theme action row.
@@ -81,10 +123,10 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Essay Structure
 
 - Essays may define `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
-- If present, the cover renders between the title/date and `## I.`.
+- If present, the cover renders between the title/date and `## **I.** ***Title***`.
 - Essay summaries are not required and should not be used as a default post primitive.
-- Essays use Roman numeral section headings as the only divider system.
-- Section headings should be `## I.`, `## II.`, `## III.`, and so on.
+- Essays use Roman numeral section headings with bold numerals and bold italic section titles as the only divider system.
+- Section headings should be `## **I.** ***First***`, `## **II.** ***Next***`, `## **III.** ***Last***`, and so on.
 - Do not use `---`, `***`, horizontal rules, ornaments, or centered asterisks in essays.
 - The stylesheet hides accidental essay `<hr>` output, but authors should still write Roman section headings.
 
@@ -99,9 +141,9 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
   - height `190px` mobile
   - `object-fit: cover`
   - `object-position: center`
-- Stories use centered `***` scene dividers.
-- In markdown, write a divider line as `***` between scenes.
-- Story dividers render as centered bold text, not horizontal lines.
+- Stories use Roman numeral section headings with bold numerals and bold italic section titles, matching essays.
+- Section headings should be `## **I.** ***First***`, `## **II.** ***Next***`, and so on.
+- Do not use `***` story dividers.
 
 ## Notes Structure
 
@@ -114,8 +156,17 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 ## Highlights
 
 - Highlight primitive is native HTML: `<mark>highlighted phrase</mark>`.
-- Highlight color is `#ffeaa3`.
-- Padding is `0 0.15em`.
+- Highlight colors:
+  - Light mode best: `#1F4E67`
+  - Light mode popular/recent: `#2F6F8F`
+  - Light mode inline: `#DBE6F1`
+  - Dark mode best: `#6FA9C7`
+  - Dark mode popular/recent: `#4F88A8`
+  - Dark mode inline: `#2A3E4C`
+- Inline highlights use `.highlight-inline`.
+- Section highlights use `.section-highlight` plus the relevant palette class.
+- Section highlights use white text in both light and dark mode.
+- Padding is `0.02em 0.2em 0.06em`.
 - Highlights should feel like a soft annotation, not a callout. Use on short phrases only.
 - Hugo allows raw HTML via `[markup.goldmark.renderer] unsafe = true` for this primitive.
 
@@ -131,9 +182,9 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 - In post pages, image paragraphs are centered.
 - Essay images and graphs should not run full width by default; they use `max-width: 580px` inside the `700px` column.
 - Image margin starts at `3rem` above image and `0.75rem` below.
-- Captions are plain monospace, not italic visually:
+- Captions use `IBM Plex Sans`, not italic visually:
   - `font-style: normal`
-  - font-size `0.82em`
+  - font-size `0.78rem`
   - line-height `1.4`
 - Keep captions short and descriptive.
 
@@ -141,14 +192,13 @@ This site is a public journal. The visual language is plain, monospaced, quiet, 
 
 - Essay archetype includes:
   - frontmatter with optional cover fields
-  - Roman numeral headings
+  - Roman numeral headings with bold numerals and bold italic section titles
   - body text with optional `<mark>`
   - image and caption pattern
 - Story archetype includes:
   - frontmatter with optional cover fields
-  - opening paragraph
-  - scene break using `***`
-  - next scene
+  - Roman numeral headings with bold numerals and bold italic section titles
+  - prose sections
 - Note archetype includes:
   - minimal frontmatter
   - short body text

@@ -10,8 +10,10 @@ cover:
   caption: "Short caption for the banner"
 ---
 
+## **I.** ***First***
+
 Opening paragraph.
 
-***
+## **II.** ***Next***
 
-Next scene.
+Next section.

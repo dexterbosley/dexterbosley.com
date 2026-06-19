@@ -1,14 +1,15 @@
 ---
-title: "On Useful Software"
+title: "Useful Tools"
 date: 2026-03-30
 draft: false
+home_recent: true
 cover:
   image: "/images/chamonix-banner.jpg"
   alt: "Mountain ridge in Chamonix"
   caption: "Le Brévent, Chamonix"
 ---
 
-## I.
+## **I.** ***Traditional Software***
 
 I define “<mark>traditional software</mark>” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).
 
@@ -16,7 +17,7 @@ Rinse and repeat: feature ideation, creation and distribution on top of an ever-
 
 More tables, more transformations, more customers.
 
-## II.
+## **II.** ***Agentic Software***
 
 I define “<mark>agentic software</mark>” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.
 
@@ -27,13 +28,13 @@ Also worth making explicit is my working definition of successful “task comple
 
 A successful team must be intentional here. The minimum is observable by logging existing user actions and can be empirically validated in production. The best is an ambiguous function of domain expertise and context awareness that is admittedly difficult to define. My sense is targeting the minimum risks normalizing careless patterns rather than delivering productive automations. That said, the best requires conviction and is liable to fail catastrophically.
 
-## III.
+## **III.** ***Inputs in Context***
 
 Consider someone monitoring a radar screen. Given object speed, altitude, and heading, an observer can model the decision space for an air traffic controller routing planes safely. Yet with the same inputs, a meteorologist using the same console can log a data point while checking their phone. Both are valid applications.
 
 Now consider if radar data is delayed by five minutes. The controller now compensates by cross-referencing other instruments, communicating proactively, and adjusting every decision for the lag. The meteorologist neither notices nor cares. Both are valid responses.
 
-## IV.
+## **IV.** ***Relevance and Overreaction***
 
 Intuitively, success is defined very differently depending on the user persona, and different user personas have very different definitions for valid data. Less obvious is how traditional and agentic systems adapt.
 
@@ -47,7 +48,7 @@ First, traditional software trains users to interpret and transform information 
 
 Taken together: traditional software guarantees a bounded set of inputs and facilitates their transformation but does not promise outputs (i.e., user action). Agentic software inverts this. Inputs are variable, but given any set of them, agentic software will produce an output. Traditional software is constrained by inaction while agentic software is constrained by overreaction.
 
-## V.
+## **V.** ***Useful Agentic Software***
 
 Useful agentic software will not:
 

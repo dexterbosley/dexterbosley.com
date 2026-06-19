@@ -1,11 +1,20 @@
 {{- define "main" }}
-<article class="post-single">
-    <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
-    </header>
-
-    <div class="post-content">
-        {{ .Content }}
+{{- $paragraphs := split .RawContent "\n\n" }}
+<section class="home-intro about-intro" aria-label="About Dexter">
+    <div class="about-copy">
+        {{- with index $paragraphs 0 }}
+            {{ . | $.RenderString }}
+        {{- end }}
     </div>
-</article>
+    <figure class="home-banner" aria-label="Lake and mountains at dusk">
+        <img src="/images/about-snow-banner.jpg" alt="Snow-covered trees and slope under a pale blue sky">
+    </figure>
+    <div class="about-copy">
+        {{- range after 1 $paragraphs }}
+            {{ . | $.RenderString }}
+        {{- end }}
+    </div>
+</section>
+
+{{ partial "home-index.html" . }}
 {{- end }}

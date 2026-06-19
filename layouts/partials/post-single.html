@@ -11,6 +11,10 @@
             <div>{{ partial "date-long.html" .Date }}</div>
             <div>{{ .ReadingTime }} min</div>
         </div>
+        <nav class="post-actions post-actions-top" aria-label="Post actions">
+            <a href="/">Back</a>
+            <button class="share-link" type="button" data-share-url="{{ .Permalink }}">Share</button>
+        </nav>
     </header>
 
     {{- with .Params.cover.image }}

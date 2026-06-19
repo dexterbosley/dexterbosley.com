@@ -41,14 +41,14 @@ cover:
 ---
 ```
 
-Essays start after the optional banner with Roman numeral headings:
+Essays start after the optional banner with Roman numeral headings and italic section titles:
 
 ```md
-## I.
+## I. *First*
 
 First section.
 
-## II.
+## II. *Next*
 
 Second section.
 ```
@@ -71,17 +71,19 @@ cover:
 ---
 ```
 
-Stories start after the optional banner:
+Stories start after the optional banner with Roman numeral headings and italic section titles:
 
 ```md
+## I. *First*
+
 Opening paragraph.
 
-***
+## II. *Next*
 
-Next scene.
+Next section.
 ```
 
-Use `***` only for story scene breaks.
+Use the same `## I. *Section Title*` pattern for essays and stories. Do not use `***` as a story divider.
 
 ## Note Shape
 

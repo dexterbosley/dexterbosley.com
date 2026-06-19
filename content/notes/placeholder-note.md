@@ -1,9 +1,10 @@
 ---
-title: "Placeholder Note"
+title: "Placeholder"
 date: 2026-06-08
 draft: false
 type: note
 description: ""
+home_recent: true
 ---
 
 This is a placeholder note. Notes are for shorter, blog-style entries that do not need essay sections, story scene breaks, or a banner image.

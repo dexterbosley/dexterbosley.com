@@ -2,15 +2,18 @@
 title: "Small Talk"
 date: 2026-01-24
 draft: false
+home_recent: true
 cover:
   image: "/images/chamonix-banner.jpg"
   alt: "Mountain ridge in Chamonix"
   caption: "Le Brévent, Chamonix"
 ---
 
+## **I.** ***First***
+
 It was sticky. Wet air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
 
-***
+## **II.** ***Next***
 
 Steve tapped his black shoes together. "I'm hungry."
 
@@ -40,7 +43,7 @@ A woman ran across the street. More faces followed. A delivery worker shook the 
 
 There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.
 
-***
+## **III.** ***Last***
 
 A man approached, not a priest.
 
