@@ -569,17 +569,18 @@
         .post-content blockquote {
             max-width: 580px;
             margin: 2.1rem 0 2.35rem;
-            padding: 0;
+            padding: 0.95rem 1rem 1rem;
             border: 0;
+            border-top: 2px solid var(--highlight-popular);
+            background: var(--highlight-inline);
             color: var(--ink);
             font-size: 1.04rem;
             font-weight: 400;
             line-height: 1.5;
-            opacity: 0.86;
         }
 
         .post-content blockquote p {
-            margin-bottom: 0.45rem;
+            margin-bottom: 0.55rem;
         }
 
         .post-content blockquote ul {
@@ -676,6 +677,10 @@
             justify-content: space-between;
             border-top: 2px solid var(--ink);
             padding-top: 0.85rem;
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
         }
 
         .post-actions-compact {
@@ -758,12 +763,13 @@
             }
 
             .home-intro {
-                max-width: var(--home-copy-measure);
+                max-width: min(var(--home-copy-measure), calc(100% - 28px));
                 margin-bottom: 4rem;
             }
 
             .home-banner {
                 width: 100%;
+                max-width: min(var(--home-copy-measure), calc(100% - 28px));
                 margin: 2rem 0 2rem;
             }
 
@@ -773,9 +779,9 @@
             }
 
             .post-entry {
-                grid-template-columns: 1fr;
-                gap: 0.45rem;
-                padding-bottom: 0.9rem;
+                grid-template-columns: auto minmax(0, 1fr);
+                gap: 0.75rem;
+                padding-bottom: 0.55rem;
             }
 
             .entry-rule {
@@ -784,13 +790,14 @@
 
             .post-list-popular .post-entry,
             .post-list-recent .post-entry {
-                grid-template-columns: 1fr;
+                grid-template-columns: auto minmax(0, 1fr);
             }
 
             .entry-title {
                 max-width: none;
-                text-align: left;
-                white-space: normal;
+                min-width: 0;
+                text-align: right;
+                white-space: nowrap;
             }
 
             .post-opener img {
@@ -799,6 +806,11 @@
 
             .post-template-note .post-opener img {
                 height: 175px;
+            }
+
+            .post-template-note .post-opener,
+            .post-template-note .post-content {
+                max-width: min(var(--home-copy-measure), calc(100% - 28px));
             }
         }
     </style>
@@ -838,8 +850,8 @@
     </div>
 
     <nav class="post-actions" aria-label="Post actions">
-        <a href="/">Back</a>
-        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/notes/recent-placeholder-26/" data-share-title="Placeholder XXVI">Share</button>
+        <a href="/">&lt;- BACK</a>
+        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/notes/recent-placeholder-26/" data-share-title="Placeholder XXVI">^ SHARE</button>
     </nav>
 </article>
 

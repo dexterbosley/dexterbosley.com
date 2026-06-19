@@ -17,6 +17,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Base font size is `16px` desktop and `15.5px` mobile.
 - Primary page measure is `700px`.
 - Homepage prose measure is narrower than the page: `420px`, roughly 60% of the full banner and index measure.
+- On mobile, homepage/About/note prose and small banners stay slightly narrower than the page column so they keep right-side breathing room.
 - Main page width is `min(calc(100% - 128px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
@@ -47,10 +48,10 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Homepage image is `/images/homepage-lake-annecy.jpeg`, placed between the second and third intro paragraphs.
 - Homepage intro copy is two paragraphs around the banner:
   - before image: `Welcome to thinking in public. I never could journal so I'm trying this. After all, it doesn’t really count unless you write it down.`
-  - after image: `You can read more about me here. Subscribe to free updates here. Thoughts below.`
+  - after image: `You can read more about me here. Subscribe to free updates here. My thoughts below.`
 - Keep `thinking in public` highlighted in the first paragraph.
 - Keep the first `here` linked to `/about/`, the second `here` linked to `/subscribe/`, and both visibly underlined.
-- Keep `Thoughts below.` highlighted.
+- Keep `My thoughts below.` highlighted.
 - Homepage image has no caption.
 - Homepage image crop:
   - width matches the homepage prose measure, so its right edge aligns with the text column
@@ -73,7 +74,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Include `/images/about-snow-banner.jpg` immediately after the first about paragraph, using the same banner dimensions as the homepage.
 - Crop the About banner around the upper-middle of the photo so it balances sky with snow and trees.
 - Render the remaining about copy below the banner in the same narrow text measure.
-- End the About copy with highlighted `Thoughts below.`.
+- End the About copy with highlighted `My thoughts below.`.
 - Do not include an `Elsewhere` heading or link cluster.
 - Render the same `POPULAR` and `RECENT` index tables below the banner.
 
@@ -89,7 +90,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Index row text uses `IBM Plex Sans`, uppercase, `0.07em` letter spacing.
 - Homepage titles align right on desktop.
 - Dates and read times are muted and lighter weight.
-- On mobile, stack row fields so each post reads as a distinct list item.
+- On mobile, hide the horizontal rule and keep date/read time left with title right-aligned on the same row.
 
 ## Post Templates
 
@@ -123,8 +124,8 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - paragraph margin-bottom `1.55rem`
 - Post footer actions:
   - Use a black, in-theme action row.
-  - Left action is `Back` and always points to `/`.
-  - Right action is `Share` and should use native share when available, otherwise copy/prompt the current post URL.
+  - Left action is `<- BACK` and always points to `/`.
+  - Right action is `^ SHARE` and should use native share when available, otherwise copy/prompt the current post URL.
   - Do not use red for post actions.
 - Top post actions are left-aligned on separate lines, caption-scaled, more restrained than the footer, and should not reuse the heavy bordered footer treatment.
 - Native share uses the post title rather than the browser tab title.
@@ -223,7 +224,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   > - Quote Person (year)
   ```
 - Quotes may appear after a banner and before `## **I.** ***First***`.
-- Quotes render left-aligned with the prose column and should feel quieter than section headings without changing the standard prose font size.
+- Quotes render left-aligned with the prose column as a quiet highlight component with a top rule, not a classical vertical quote bar.
 - Keep quote attributions short and use the year only when it is known or useful.
 
 ## Future Post Starter Shapes
