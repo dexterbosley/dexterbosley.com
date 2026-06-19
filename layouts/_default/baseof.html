@@ -3,8 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ if .IsHome }}Dexter Bosley{{ else }}{{ .Title }} | Dexter Bosley{{ end }}</title>
+    {{- $shareTitle := cond .IsHome "public thoughts" (cond (eq .Layout "about") "About Dexter Bosley" .Title) }}
+    {{- $summaryDescription := cond .IsHome "Thinking in public by Dexter Bosley." (.Summary | plainify) }}
+    {{- $shareDescription := .Params.description | default $summaryDescription | plainify | replaceRE "\\s+" " " | truncate 160 }}
+    {{- $shareImage := "/images/homepage-lake-annecy.jpeg" }}
+    {{- $shareImageAlt := "People on a lawn beside a lake with mountains in the distance" }}
+    {{- if eq .Layout "about" }}
+        {{- $shareImage = "/images/about-snow-banner.jpg" }}
+        {{- $shareImageAlt = "Snow-covered trees and slope under a pale blue sky" }}
+    {{- end }}
+    {{- with .Params.cover }}
+        {{- with .image }}{{- $shareImage = . }}{{- end }}
+        {{- with .alt }}{{- $shareImageAlt = . }}{{- end }}
+    {{- end }}
+    {{- $shareImageResolved := partial "resolve-image.html" (dict "page" . "src" $shareImage) }}
+    {{- $shareImageAbs := absURL $shareImageResolved }}
+    <title>public thoughts</title>
+    <link rel="canonical" href="{{ .Permalink }}">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="{{ $shareDescription }}">
+    <meta property="og:site_name" content="public thoughts">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ $shareTitle }}">
+    <meta property="og:description" content="{{ $shareDescription }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $shareImageAbs }}">
+    <meta property="og:image:secure_url" content="{{ $shareImageAbs }}">
+    <meta property="og:image:alt" content="{{ $shareImageAlt }}">
+    {{- if and .IsPage (not .Date.IsZero) }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{- end }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $shareTitle }}">
+    <meta name="twitter:description" content="{{ $shareDescription }}">
+    <meta name="twitter:image" content="{{ $shareImageAbs }}">
+    <meta name="twitter:image:alt" content="{{ $shareImageAlt }}">
     <script>
         (function() {
             try {
@@ -292,7 +325,7 @@
             font-weight: 600;
             line-height: 1.18;
             letter-spacing: 0;
-            text-transform: none;
+            text-transform: uppercase;
         }
 
         .post-meta {
@@ -363,7 +396,7 @@
         }
 
         .site-post .post-header {
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         .site-post .post-title {
@@ -372,8 +405,33 @@
         }
 
         .site-post .post-meta {
-            font-size: var(--type-meta);
-            letter-spacing: 0.04em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.12rem;
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            text-transform: none;
+        }
+
+        .post-header .theme-toggle {
+            margin-top: 0.35rem;
+        }
+
+        .post-utility {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0.12rem;
+            align-items: flex-start;
+            margin-top: 1.35rem;
+            font-family: var(--font-sans);
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            text-transform: none;
         }
 
         .site-post .post-content {
@@ -429,12 +487,14 @@
             line-height: 1.4;
         }
 
-        .post-template-essay .post-content p:has(> img) {
+        .post-template-essay .post-content p:has(> img),
+        .post-template-story .post-content p:has(> img) {
             max-width: 580px;
             margin: 3rem auto 0.75rem;
         }
 
-        .post-template-essay .post-content p:has(> img) + p em {
+        .post-template-essay .post-content p:has(> img) + p em,
+        .post-template-story .post-content p:has(> img) + p em {
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
@@ -449,16 +509,7 @@
         }
 
         .post-template-story .post-content hr {
-            border: 0;
-            margin: 2.4rem 0;
-            text-align: center;
-        }
-
-        .post-template-story .post-content hr::before {
-            content: "***";
-            color: var(--ink);
-            font-weight: 800;
-            letter-spacing: 0.08em;
+            display: none;
         }
 
         .post-opener {
@@ -479,6 +530,20 @@
             color: var(--muted);
             font-size: 0.78rem;
             line-height: 1.4;
+        }
+
+        .post-template-note .post-opener {
+            width: 100%;
+            max-width: var(--home-copy-measure);
+            margin: 0 0 2rem;
+        }
+
+        .post-template-note .post-opener img {
+            height: 210px;
+        }
+
+        .post-template-note .post-content {
+            max-width: var(--home-copy-measure);
         }
 
         .post-content {
@@ -519,9 +584,34 @@
         }
 
         .post-content blockquote {
-            padding-left: 1rem;
-            border-left: 2px solid var(--ink);
-            color: #333;
+            max-width: 580px;
+            margin: 2.1rem 0 2.35rem;
+            padding: 0;
+            border: 0;
+            color: var(--ink);
+            font-size: 1.04rem;
+            font-weight: 400;
+            line-height: 1.5;
+            opacity: 0.86;
+        }
+
+        .post-content blockquote p {
+            margin-bottom: 0.45rem;
+        }
+
+        .post-content blockquote ul {
+            margin: 0;
+            padding: 0;
+            color: var(--muted);
+            font-family: var(--font-sans);
+            font-size: var(--type-meta);
+            letter-spacing: 0.02em;
+            list-style: none;
+            text-transform: none;
+        }
+
+        .post-content blockquote li {
+            margin: 0;
         }
 
         .post-content hr {
@@ -542,6 +632,7 @@
         }
 
         .post-actions,
+        .post-actions-compact,
         .pagination {
             display: flex;
             flex-wrap: wrap;
@@ -578,7 +669,18 @@
             gap: 0.5rem;
         }
 
+        .pagination-pages button[hidden],
+        .pagination-ellipsis[hidden],
+        .post-entry[hidden],
+        [data-recent-row][hidden] {
+            display: none !important;
+        }
+
         .pagination-pages button {
+            color: var(--muted);
+        }
+
+        .pagination-ellipsis {
             color: var(--muted);
         }
 
@@ -593,8 +695,16 @@
             padding-top: 0.85rem;
         }
 
-        .post-actions-top {
-            margin-top: 1.1rem;
+        .post-actions-compact {
+            flex-direction: column;
+            gap: 0.12rem;
+            margin-top: 0;
+            justify-content: flex-start;
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            text-transform: none;
         }
 
         .pagination-home {
@@ -652,11 +762,16 @@
             }
 
             .site-post .post-header {
-                margin-bottom: 3rem;
+                margin-bottom: 2.25rem;
             }
 
             .site-post .post-meta {
-                font-size: 0.86rem;
+                font-size: 0.78rem;
+            }
+
+            .post-utility {
+                gap: 0.14rem;
+                font-size: 0.78rem;
             }
 
             .home-intro {
@@ -698,6 +813,10 @@
             .post-opener img {
                 height: 190px;
             }
+
+            .post-template-note .post-opener img {
+                height: 175px;
+            }
         }
     </style>
 </head>
@@ -706,11 +825,8 @@
     <main class="site{{ if $isPost }} site-post{{ end }}">
         {{- if not $isPost }}
         <header class="site-header">
-            <span class="site-title">BY DEXTER BOSLEY</span>
-            <div class="theme-toggle" aria-label="Color theme">
-                <button type="button" data-theme-choice="light" aria-label="Use light mode" aria-pressed="false">(*)</button>
-                <button type="button" data-theme-choice="dark" aria-label="Use dark mode" aria-pressed="false">(o)</button>
-            </div>
+            <span class="site-title">{{ if eq .Layout "about" }}ABOUT DEXTER BOSLEY{{ else }}BY DEXTER BOSLEY{{ end }}</span>
+            {{ partial "theme-toggle.html" . }}
         </header>
         {{- end }}
 
@@ -763,11 +879,41 @@
                 var rows = Array.prototype.slice.call(component.querySelectorAll("[data-recent-row]"));
                 var previous = component.querySelector("[data-recent-prev]");
                 var next = component.querySelector("[data-recent-next]");
+                var pageList = component.querySelector("[data-recent-page-list]");
                 var pageButtons = Array.prototype.slice.call(component.querySelectorAll("[data-recent-page-button]"));
                 var page = 0;
                 var maxPage = rows.reduce(function(max, row) {
                     return Math.max(max, Number(row.dataset.page) || 0);
                 }, 0);
+
+                function renderPageButtons() {
+                    if (!pageList) return;
+                    pageList.querySelectorAll("[data-recent-ellipsis]").forEach(function(ellipsis) {
+                        ellipsis.remove();
+                    });
+
+                    var previousVisible = -1;
+                    pageButtons.forEach(function(button) {
+                        var buttonPage = Number(button.dataset.recentPageButton) || 0;
+                        var visible = pageButtons.length <= 7 ||
+                            buttonPage === 0 ||
+                            buttonPage === maxPage ||
+                            Math.abs(buttonPage - page) <= 1;
+
+                        button.hidden = !visible;
+                        if (visible) {
+                            if (previousVisible >= 0 && buttonPage - previousVisible > 1) {
+                                var ellipsis = document.createElement("span");
+                                ellipsis.className = "pagination-ellipsis";
+                                ellipsis.setAttribute("aria-hidden", "true");
+                                ellipsis.setAttribute("data-recent-ellipsis", "");
+                                ellipsis.textContent = "...";
+                                pageList.insertBefore(ellipsis, button);
+                            }
+                            previousVisible = buttonPage;
+                        }
+                    });
+                }
 
                 function render() {
                     rows.forEach(function(row) {
@@ -776,8 +922,13 @@
                     if (previous) previous.hidden = page === 0;
                     if (next) next.hidden = page === maxPage;
                     pageButtons.forEach(function(button) {
-                        button.toggleAttribute("aria-current", Number(button.dataset.recentPageButton) === page);
+                        if (Number(button.dataset.recentPageButton) === page) {
+                            button.setAttribute("aria-current", "page");
+                        } else {
+                            button.removeAttribute("aria-current");
+                        }
                     });
+                    renderPageButtons();
                 }
 
                 component.addEventListener("click", function(event) {

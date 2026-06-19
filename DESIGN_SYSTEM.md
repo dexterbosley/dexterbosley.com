@@ -20,8 +20,13 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Main page width is `min(calc(100% - 128px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
-- Public navigation is intentionally minimal: homepage plus click-in posts. There is no About page and no section-only browsing page.
+- Public navigation is intentionally minimal: homepage, About link from intro copy, and click-in posts. There is no top nav and no section-only browsing page.
 - Theme defaults to the visitor's `prefers-color-scheme`, then persists manual light/dark selection in `localStorage`.
+- Browser tab title is always lowercase `public thoughts`.
+- Favicon uses lowercase `db` on a bright on-theme blue background so it stays visible in crowded tab stacks.
+- Share previews use Open Graph and Twitter Card metadata with absolute URLs. Post pages use the post title, single-line description/summary, publish time, and required cover image. About uses the About banner; home uses the homepage banner.
+- Prefer a concise `description` in frontmatter when the automatic summary would start with a quote, list, or placeholder text.
+- Post cover images can be static `/images/...` files or bundle-local files such as `banner.jpg`; both resolve for page display and share metadata.
 
 ## Homepage Template
 
@@ -56,12 +61,13 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Homepage sections are `POPULAR` followed by `RECENT`.
 - Popular contains three placeholder best-of slots until real selections are chosen.
 - Recent contains the curated public set plus static placeholders. The first real rows are `Placeholder`, `Useful Tools`, and `Small Talk`.
-- Recent flips in place after 10 visible rows using component-level `Previous`/`Next` controls plus numbered page buttons. Do not navigate to `/page/2/` for homepage or About Recent rows.
+- Recent flips in place after 15 visible rows using component-level `Previous`/`Next` controls plus numbered page buttons. Use ellipses in the page controls when there are too many pages to show comfortably. Do not navigate to `/page/2/` for homepage or About Recent rows.
 - Use blue highlights sparingly for one phrase per surface, not whole sentences.
 
 ## About Template
 
 - About is a quick flip from the homepage, not a separate branded page.
+- About header title is `ABOUT DEXTER BOSLEY`; the homepage header title remains `BY DEXTER BOSLEY`.
 - Do not show an `About` page title.
 - Render about text in the same narrow homepage prose measure.
 - Include `/images/about-snow-banner.jpg` immediately after the first about paragraph, using the same banner dimensions as the homepage.
@@ -95,9 +101,10 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Post pages do not show the homepage header.
 - Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
-- Post header contains title, date, then read estimate.
+- Post header contains title, the quiet `(*)` / `(o)` theme toggle, then a compact left-aligned utility stack: date, read estimate, Back, and Share on separate tight lines.
+- The top utility stack uses caption-like treatment: muted, sans, `0.78rem`, light letter spacing, uppercase `MIN`, and compact actions formatted as `<- BACK` and `^ SHARE`.
 - Post date format is compact uppercase: `MAR 30, 2026`.
-- Read estimate is required on every click-in post and renders like `2 min`.
+- Read estimate is required on every click-in post and renders like `= 2 MIN`.
 - Post title:
   - font-family `Source Serif 4`
   - font-size `1.28rem`
@@ -108,7 +115,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - muted `#777`
   - font-family `IBM Plex Sans`
   - font-size `0.78rem`
-- Gap from post header to body: `3rem`.
+- Gap from post header to body: roughly `2.5rem`.
 - Post body:
   - font-family `Source Serif 4`
   - font-size `1.04rem`
@@ -119,11 +126,13 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - Left action is `Back` and always points to `/`.
   - Right action is `Share` and should use native share when available, otherwise copy/prompt the current post URL.
   - Do not use red for post actions.
+- Top post actions are left-aligned on separate lines, caption-scaled, more restrained than the footer, and should not reuse the heavy bordered footer treatment.
+- Native share uses the post title rather than the browser tab title.
 
 ## Essay Structure
 
-- Essays may define `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
-- If present, the cover renders between the title/date and `## **I.** ***Title***`.
+- Essays require `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
+- The cover renders between the compact header actions and `## **I.** ***Title***`.
 - Essay summaries are not required and should not be used as a default post primitive.
 - Essays use Roman numeral section headings with bold numerals and bold italic section titles as the only divider system.
 - Section headings should be `## **I.** ***First***`, `## **II.** ***Next***`, `## **III.** ***Last***`, and so on.
@@ -132,9 +141,9 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 
 ## Story Structure
 
-- Stories may define `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
-- If present, the cover renders between the title/date and the first paragraph.
-- Story quotes/epigraphs are not part of the current template.
+- Stories require `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
+- The cover renders between the compact header actions and `## **I.** ***Title***`.
+- Stories may include a quote after the banner and before `## **I.** ***First***`.
 - Story and essay banner images share the same treatment:
   - width `100%`
   - height `250px` desktop
@@ -149,8 +158,15 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 
 - Notes are the third public post type.
 - Notes live in `content/notes/`.
-- Notes follow a simple blog format: title, date, read estimate, then body.
-- Notes should not require banners, Roman numeral essay sections, or story scene breaks.
+- Notes follow a short, tweet-like format: title, quiet theme toggle, compact utility row, small banner, then body.
+- Notes require `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
+- Note body text uses the same narrow measure as the homepage and About copy.
+- Note banners use the homepage/About banner treatment:
+  - max-width `420px`
+  - height `210px` desktop
+  - height `175px` mobile
+  - `object-fit: cover`
+- Notes should not require Roman numeral essay sections or story scene breaks.
 - Use notes for short public journal entries, working observations, and quick updates.
 
 ## Highlights
@@ -172,15 +188,25 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 
 ## Images And Captions
 
-- Current live content should not include decorative or placeholder images.
-- Essays and stories may use a banner image with caption.
+- Placeholder images may live under `static/images/placeholders/` while layout is being reviewed; replace them with real images before final publication when possible.
+- Essays, stories, and notes use a banner image with caption.
+- Hugo build validation fails click-in posts that are missing `cover.image`, `cover.alt`, or `cover.caption`.
+- Preferred post storage is a Hugo leaf bundle: `content/<section>/<post-slug>/index.md` plus local image files.
+- Bundle image names:
+  - `banner.jpg` or `banner.png` for the required top/share image
+  - `figure-01.png`, `figure-02.jpg` for graphs, screenshots, and inline figures
+  - `book-cover-01.jpg` and `album-cover-01.jpg` for cover references
 - Essays should add images only when they are intentional figures, diagrams, or graphs.
 - Image markdown pattern:
   - `![Alt text](/images/file.jpg)`
   - blank line
   - `*Caption text.*`
+- Banner and figure caption formats:
+  - Location/photo/painting: `City/Place, Country - photo` or `City/Place, Country - painting`
+  - Artwork/book/album cover: `Name (year), Artist`
+  - Graph/screenshot/report: `Source: Source name (year). Note: short context.`
 - In post pages, image paragraphs are centered.
-- Essay images and graphs should not run full width by default; they use `max-width: 580px` inside the `700px` column.
+- Essay and story images, graphs, and screenshots should not run full width by default; they use `max-width: 580px` inside the `700px` column.
 - Image margin starts at `3rem` above image and `0.75rem` below.
 - Captions use `IBM Plex Sans`, not italic visually:
   - `font-style: normal`
@@ -188,20 +214,35 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - line-height `1.4`
 - Keep captions short and descriptive.
 
+## Quotes
+
+- Standard quote markdown:
+  ```md
+  > "Quote."
+  >
+  > - Quote Person (year)
+  ```
+- Quotes may appear after a banner and before `## **I.** ***First***`.
+- Quotes render left-aligned with the prose column and should feel quieter than section headings without changing the standard prose font size.
+- Keep quote attributions short and use the year only when it is known or useful.
+
 ## Future Post Starter Shapes
 
 - Essay archetype includes:
-  - frontmatter with optional cover fields
+  - frontmatter with required cover fields
   - Roman numeral headings with bold numerals and bold italic section titles
   - body text with optional `<mark>`
   - image and caption pattern
+  - bundle starter at `archetypes/essay-bundle/index.md`
 - Story archetype includes:
-  - frontmatter with optional cover fields
+  - frontmatter with required cover fields
   - Roman numeral headings with bold numerals and bold italic section titles
   - prose sections
+  - bundle starter at `archetypes/story-bundle/index.md`
 - Note archetype includes:
-  - minimal frontmatter
+  - frontmatter with required small banner cover fields
   - short body text
+  - bundle starter at `archetypes/note-bundle/index.md`
 
 ## What Not To Add
 
@@ -226,6 +267,9 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - `dexterbosley.com/templates/essay.md`
   - `dexterbosley.com/templates/story.md`
   - `dexterbosley.com/templates/note.md`
+  - `dexterbosley.com/templates/essay-bundle/index.md`
+  - `dexterbosley.com/templates/story-bundle/index.md`
+  - `dexterbosley.com/templates/note-bundle/index.md`
 - Publish from Terminal:
   - `cd /Users/dexterbosley/projects/dexterbosley.com`
   - `./publish.sh "Update journal"`

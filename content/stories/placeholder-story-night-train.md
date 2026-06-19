@@ -2,14 +2,17 @@
 title: "Placeholder Story: Night Train"
 date: 2026-06-04
 draft: false
+type: story
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Mountain ridge in Chamonix"
-  caption: "Placeholder image"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
+  alt: "Soft placeholder ridgeline under pale sky"
+  caption: "White Mountains, United States - painting"
 ---
+
+## **I.** ***First***
 
 The platform clock blinked twice and then gave up.
 
-***
+## **II.** ***Next***
 
 This is placeholder fiction for testing the story section.

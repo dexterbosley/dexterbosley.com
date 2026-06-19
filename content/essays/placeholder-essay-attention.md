@@ -2,10 +2,11 @@
 title: "Placeholder Essay: Attention Debt"
 date: 2026-04-12
 draft: false
+type: essay
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Mountain ridge in Chamonix"
-  caption: "Placeholder image"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
+  alt: "Soft placeholder ridgeline under pale sky"
+  caption: "White Mountains, United States - painting"
 ---
 
 This is a placeholder essay for the fifth slot in the essay section.

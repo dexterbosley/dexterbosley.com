@@ -2,12 +2,18 @@
 title: "Small Talk"
 date: 2026-01-24
 draft: false
+type: story
+description: "It was sticky. Wet air wrapped around and between the leaves."
 home_recent: true
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Mountain ridge in Chamonix"
-  caption: "Le Brévent, Chamonix"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
+  alt: "Soft placeholder ridgeline under pale sky"
+  caption: "White Mountains, United States - painting"
 ---
+
+> "A room tells you what kind of silence it wants."
+>
+> - Placeholder Speaker (2026)
 
 ## **I.** ***First***
 

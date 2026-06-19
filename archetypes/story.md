@@ -5,10 +5,14 @@ draft: true
 type: story
 description: ""
 cover:
-  image: "/images/your-banner.jpg"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
   alt: "Short description of the banner image"
-  caption: "Short caption for the banner"
+  caption: "City/Place, Country - photo"
 ---
+
+> "Quote."
+>
+> - Quote Person (year)
 
 ## **I.** ***First***
 

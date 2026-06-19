@@ -2,10 +2,11 @@
 title: "Placeholder Essay: Field Notes"
 date: 2026-06-06
 draft: false
+type: essay
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Mountain ridge in Chamonix"
-  caption: "Placeholder image"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
+  alt: "Soft placeholder ridgeline under pale sky"
+  caption: "White Mountains, United States - painting"
 ---
 
 This is a placeholder essay for testing the home page section layout.

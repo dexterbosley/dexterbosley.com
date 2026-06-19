@@ -2,11 +2,12 @@
 title: "Useful Tools"
 date: 2026-03-30
 draft: false
+type: essay
 home_recent: true
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Mountain ridge in Chamonix"
-  caption: "Le Brévent, Chamonix"
+  image: "/images/placeholders/essay-story-banner-placeholder.jpg"
+  alt: "Soft placeholder ridgeline under pale sky"
+  caption: "White Mountains, United States - painting"
 ---
 
 ## **I.** ***Traditional Software***
@@ -27,6 +28,10 @@ Also worth making explicit is my working definition of successful “task comple
 - At best, the ideal outcome without considering what someone would do themselves
 
 A successful team must be intentional here. The minimum is observable by logging existing user actions and can be empirically validated in production. The best is an ambiguous function of domain expertise and context awareness that is admittedly difficult to define. My sense is targeting the minimum risks normalizing careless patterns rather than delivering productive automations. That said, the best requires conviction and is liable to fail catastrophically.
+
+![Placeholder graph showing a rising line over a quiet grid](/images/placeholders/useful-tools-figure-placeholder.png)
+
+*Source: Placeholder dataset (2026). Note: example centered figure for graphs, screenshots, and diagrams.*
 
 ## **III.** ***Inputs in Context***
 

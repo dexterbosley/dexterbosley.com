@@ -1,6 +1,6 @@
 {{- $recentPages := where site.RegularPages "Params.home_recent" true }}
 {{- $recentPages = sort $recentPages "Date" "desc" }}
-{{- $pageSize := 10 }}
+{{- $pageSize := 15 }}
 {{- $pageCount := div (add (len $recentPages) (sub $pageSize 1)) $pageSize }}
 
 <section class="home-section" aria-labelledby="popular-title">
@@ -38,7 +38,7 @@
     {{- if gt (len $recentPages) $pageSize }}
     <nav class="pagination pagination-home" aria-label="Recent pagination" data-recent-pagination>
         <button type="button" data-recent-prev hidden>Previous</button>
-        <span class="pagination-pages" aria-label="Recent pages">
+        <span class="pagination-pages" aria-label="Recent pages" data-recent-page-list>
             {{- range $pageNumber := seq $pageCount }}
             {{- $pageIndex := sub $pageNumber 1 }}
             <button type="button" data-recent-page-button="{{ $pageIndex }}"{{ if eq $pageIndex 0 }} aria-current="page"{{ end }}>{{ add $pageIndex 1 }}</button>

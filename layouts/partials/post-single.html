@@ -4,22 +4,35 @@
 {{- else if eq .Section "notes" }}
     {{- $kind = "note" }}
 {{- end }}
+{{- if not .Params.cover.image }}
+    {{- errorf "%s is missing required cover.image" .File.Path }}
+{{- end }}
+{{- if not .Params.cover.alt }}
+    {{- errorf "%s is missing required cover.alt" .File.Path }}
+{{- end }}
+{{- if not .Params.cover.caption }}
+    {{- errorf "%s is missing required cover.caption" .File.Path }}
+{{- end }}
 <article class="post-single post-template-{{ $kind }}">
     <header class="post-header">
         <h1 class="post-title">{{ .Title }}</h1>
-        <div class="post-meta">
-            <div>{{ partial "date-long.html" .Date }}</div>
-            <div>{{ .ReadingTime }} min</div>
+        {{ partial "theme-toggle.html" . }}
+        <div class="post-utility">
+            <div class="post-meta">
+                <span>{{ partial "date-long.html" .Date }}</span>
+                <span>= {{ .ReadingTime }} MIN</span>
+            </div>
+            <nav class="post-actions-compact" aria-label="Post actions">
+                <a href="/">&lt;- BACK</a>
+                <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">^ SHARE</button>
+            </nav>
         </div>
-        <nav class="post-actions post-actions-top" aria-label="Post actions">
-            <a href="/">Back</a>
-            <button class="share-link" type="button" data-share-url="{{ .Permalink }}">Share</button>
-        </nav>
     </header>
 
     {{- with .Params.cover.image }}
+    {{- $coverImage := partial "resolve-image.html" (dict "page" $ "src" .) }}
     <figure class="post-opener">
-        <img src="{{ . }}" alt="{{ $.Params.cover.alt | default $.Title }}">
+        <img src="{{ $coverImage }}" alt="{{ $.Params.cover.alt | default $.Title }}">
         {{- with $.Params.cover.caption }}
         <figcaption>{{ . }}</figcaption>
         {{- end }}
@@ -32,7 +45,7 @@
 
     <nav class="post-actions" aria-label="Post actions">
         <a href="/">Back</a>
-        <button class="share-link" type="button" data-share-url="{{ .Permalink }}">Share</button>
+        <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">Share</button>
     </nav>
 </article>
 
@@ -40,6 +53,7 @@
 document.querySelectorAll('.share-link').forEach(function(button) {
     button.addEventListener('click', async function() {
         var url = button.getAttribute('data-share-url') || window.location.href;
+        var title = button.getAttribute('data-share-title') || document.title;
         var original = button.textContent;
 
         async function copyLink() {
@@ -52,7 +66,7 @@ document.querySelectorAll('.share-link').forEach(function(button) {
 
         try {
             if (navigator.share) {
-                await navigator.share({ title: document.title, url: url });
+                await navigator.share({ title: title, url: url });
                 return;
             }
             await copyLink();

@@ -1,0 +1,9 @@
+{{- $page := .page -}}
+{{- $src := .src -}}
+{{- $resolved := $src -}}
+{{- if and $page $src (not (findRE "^(/|https?://)" $src)) -}}
+    {{- with $page.Resources.GetMatch $src -}}
+        {{- $resolved = .RelPermalink -}}
+    {{- end -}}
+{{- end -}}
+{{- return $resolved -}}
