@@ -7,7 +7,7 @@ description: "One clean sentence for link previews."
 cover:
   image: "note-title_city-place-country-photo_photo.jpg"
   alt: "Short description of the note banner image"
-  caption: "City/Place, Country - photo"
+  caption: "City/Place, Country"
 ---
 
 Short note body. Keep it compact, direct, and tweet-like.

@@ -7,8 +7,8 @@ description: "It was a sticky Thursday afternoon."
 home_recent: true
 cover:
   image: "/images/chamonix-banner.jpg"
-  alt: "Snowy Brevent and Chamonix mountain slope beneath a pale winter sky"
-  caption: "Chamonix, France - photo"
+  alt: "Snowy Le Brévent mountain slope beneath a pale winter sky"
+  caption: "Le Brévent, France"
 ---
 
 ## **I.** ***First***

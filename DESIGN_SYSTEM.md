@@ -46,7 +46,8 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 - Bundle convention: `index.md`, a descriptive cover image, optional descriptive figure or review images.
 - Markdown figure pattern: image line, blank line, italic caption line.
 - Markdown review-image pattern: image line with title `"review"`, blank line, italic caption line.
-- Caption examples: `City, Country - photo`; `Name (year), Artist`; `Source: Name (year). Note: context.`
+- Caption examples: `City, Country`; `Name (year), Artist`; `Source: Name (year). Note: context.`
+- Captions use the formal title/place/source structure only; do not append media-type suffixes such as `- photo` or `- painting`.
 
 ## Highlights
 

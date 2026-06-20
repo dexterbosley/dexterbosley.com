@@ -7,7 +7,7 @@ description: ""
 cover:
   image: "/images/placeholders/essay-story-banner-placeholder.jpg"
   alt: "Short description of the banner image"
-  caption: "City/Place, Country - photo"
+  caption: "City/Place, Country"
 ---
 
 ## **I.** ***First***

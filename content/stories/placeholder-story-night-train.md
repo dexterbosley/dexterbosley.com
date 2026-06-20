@@ -6,7 +6,7 @@ type: story
 cover:
   image: "/images/placeholders/essay-story-banner-placeholder.jpg"
   alt: "Soft placeholder ridgeline under pale sky"
-  caption: "White Mountains, United States - painting"
+  caption: "White Mountains, United States"
 ---
 
 ## **I.** ***First***

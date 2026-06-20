@@ -50,7 +50,7 @@ description: ""
 cover:
   image: "post-title_city-country-photo_photo.jpg"
   alt: "Short description"
-  caption: "City, Country - photo"
+  caption: "City, Country"
 ---
 ```
 
@@ -72,4 +72,4 @@ Review images for books, albums, and movies use the Markdown title `"review"`:
 *Name (year), Artist.*
 ```
 
-Keep captions short. Do not use `***` or horizontal rules as dividers.
+Keep captions short and formal. Do not append media-type suffixes such as `- photo` or `- painting`. Do not use `***` or horizontal rules as dividers.

@@ -7,7 +7,7 @@ description: ""
 cover:
   image: "/images/placeholders/note-banner-placeholder.jpg"
   alt: "Pale path through quiet hills"
-  caption: "Quiet Hills, United States - painting"
+  caption: "Quiet Hills, United States"
 ---
 
 Placeholder note for the fifth notes slot.
