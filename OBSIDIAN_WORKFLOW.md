@@ -45,6 +45,14 @@ Before publishing newsletter or tracking changes:
 4. Open `https://newsletter.dexterbosley.com/subscription/form` and confirm the public form loads.
 5. For end-to-end signup checks, submit a test address and confirm the opt-in email from `updates@dexterbosley.com`.
 
+To send a post as an email:
+
+1. Run `hugo --cleanDestinationDir`.
+2. Export the post HTML, for example `python3 scripts/export_email.py notes/tatie`.
+3. Open the generated file under `email/`, copy the full HTML, and paste it into a listmonk campaign using the raw HTML editor.
+4. Use a listmonk campaign template whose body is only `{{ template "content" . }}` so listmonk does not wrap the exported page in a second design.
+5. Send a test to yourself before sending to `Free Updates`.
+
 ## Post Bundles
 
 Use a bundle when a post has local images:
