@@ -10,10 +10,6 @@ cover:
   caption: "City/Place, Country - photo"
 ---
 
-> "Quote."
->
-> - Quote Person (year)
-
 ## **I.** ***First***
 
 Opening paragraph.

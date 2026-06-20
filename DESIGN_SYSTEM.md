@@ -17,7 +17,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Base font size is `16px` desktop and `15.5px` mobile.
 - Primary page measure is `700px`.
 - Homepage prose measure is narrower than the page: `420px`, roughly 60% of the full banner and index measure.
-- On mobile, homepage/About/note prose and small banners stay slightly narrower than the page column so they keep right-side breathing room.
+- On mobile, homepage/About/note prose and small banners stop about `48px` before the right page edge so they keep visible right-side breathing room.
 - Main page width is `min(calc(100% - 128px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
@@ -26,7 +26,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Browser tab title is always lowercase `public thoughts`.
 - Favicon uses lowercase `db` on a bright on-theme blue background so it stays visible in crowded tab stacks.
 - Share previews use Open Graph and Twitter Card metadata with absolute URLs. Post pages use the post title, single-line description/summary, publish time, and required cover image. About uses the About banner; home uses the homepage banner.
-- Prefer a concise `description` in frontmatter when the automatic summary would start with a quote, list, or placeholder text.
+- Prefer a concise `description` in frontmatter when the automatic summary would start with a list, formatting artifact, or placeholder text.
 - Post cover images can be static `/images/...` files or bundle-local files such as `banner.jpg`; both resolve for page display and share metadata.
 
 ## Homepage Template
@@ -51,7 +51,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - after image: `You can read more about me here. Subscribe to free updates here. My thoughts below.`
 - Keep `thinking in public` highlighted in the first paragraph.
 - Keep the first `here` linked to `/about/`, the second `here` linked to `/subscribe/`, and both visibly underlined.
-- Keep `My thoughts below.` highlighted.
+- Keep `My thoughts below` highlighted, with the period outside the highlight.
 - Homepage image has no caption.
 - Homepage image crop:
   - width matches the homepage prose measure, so its right edge aligns with the text column
@@ -59,8 +59,8 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - height `210px` mobile
   - `object-fit: cover`
   - `object-position: center 78%`
-- Homepage sections are `POPULAR` followed by `RECENT`.
-- Popular contains three placeholder best-of slots until real selections are chosen.
+- Homepage sections are `START HERE` followed by `RECENT`.
+- Start Here contains three placeholder best-of slots until real selections are chosen.
 - Recent contains the curated public set plus static placeholders. The first real rows are `Placeholder`, `Useful Tools`, and `Small Talk`.
 - Recent flips in place after 15 visible rows using component-level `Previous`/`Next` controls plus numbered page buttons. Use ellipses in the page controls when there are too many pages to show comfortably. Do not navigate to `/page/2/` for homepage or About Recent rows.
 - Use blue highlights sparingly for one phrase per surface, not whole sentences.
@@ -74,16 +74,16 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Include `/images/about-snow-banner.jpg` immediately after the first about paragraph, using the same banner dimensions as the homepage.
 - Crop the About banner around the upper-middle of the photo so it balances sky with snow and trees.
 - Render the remaining about copy below the banner in the same narrow text measure.
-- End the About copy with highlighted `My thoughts below.`.
+- End the About copy with highlighted `My thoughts below`, with the period outside the highlight.
 - Do not include an `Elsewhere` heading or link cluster.
-- Render the same `POPULAR` and `RECENT` index tables below the banner.
+- Render the same `START HERE` and `RECENT` index tables below the banner.
 
 ## Index Rows
 
 - The homepage index is curated, not automatically all posts.
 - Do not generate or link to Essays-only or Stories-only index pages.
-- Popular row grid: read time, black horizontal rule, right-aligned title.
-- Popular placeholder read time is `1 MIN`.
+- Start Here row grid: read time, black horizontal rule, right-aligned title.
+- Start Here placeholder read time is `1 MIN`.
 - Recent row grid: date, black horizontal rule, right-aligned title.
 - Dates appear in compact uppercase format: `MAR 30, 2026`.
 - Homepage titles do not include post kind suffixes.
@@ -102,10 +102,12 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Post pages do not show the homepage header.
 - Post canvas width matches the homepage: `min(calc(100% - 96px), 700px)` desktop and `min(calc(100% - 32px), 700px)` mobile.
 - Post padding matches the homepage: `64px 0 88px` desktop and `36px 0 64px` mobile.
-- Post header contains title, the quiet `(*)` / `(o)` theme toggle, then a compact left-aligned utility stack: date, read estimate, Back, and Share on separate tight lines.
-- The top utility stack uses caption-like treatment: muted, sans, `0.78rem`, light letter spacing, uppercase `MIN`, and compact actions formatted as `<- BACK` and `^ SHARE`.
+- Post header contains title, the quiet `(*)` / `(o)` theme toggle, then the date, Back, and Share utilities.
+- On desktop widths of `1100px` and up, those utilities move into a quiet left rail beside the reading column.
+- Below `1100px`, the utilities stay as a compact left-aligned stack under the title/toggle.
+- The utility stack uses caption-like treatment: muted, sans, about `0.76rem`, light letter spacing, and compact actions formatted as `<- BACK` and `^ SHARE`.
 - Post date format is compact uppercase: `MAR 30, 2026`.
-- Read estimate is required on every click-in post and renders like `= 2 MIN`.
+- Read estimate is not shown in click-in post headers.
 - Post title:
   - font-family `Source Serif 4`
   - font-size `1.28rem`
@@ -115,19 +117,19 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Post date:
   - muted `#777`
   - font-family `IBM Plex Sans`
-  - font-size `0.78rem`
+  - font-size about `0.76rem`
 - Gap from post header to body: roughly `2.5rem`.
 - Post body:
   - font-family `Source Serif 4`
   - font-size `1.04rem`
-  - line-height `1.52`
-  - paragraph margin-bottom `1.55rem`
+  - line-height about `1.66`
+  - paragraph margin-bottom about `1.65rem`
 - Post footer actions:
   - Use a black, in-theme action row.
   - Left action is `<- BACK` and always points to `/`.
   - Right action is `^ SHARE` and should use native share when available, otherwise copy/prompt the current post URL.
   - Do not use red for post actions.
-- Top post actions are left-aligned on separate lines, caption-scaled, more restrained than the footer, and should not reuse the heavy bordered footer treatment.
+- Top post actions are caption-scaled, more restrained than the footer, and should not reuse the heavy bordered footer treatment.
 - Native share uses the post title rather than the browser tab title.
 
 ## Essay Structure
@@ -144,13 +146,14 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 
 - Stories require `cover.image`, `cover.alt`, and `cover.caption` in frontmatter.
 - The cover renders between the compact header actions and `## **I.** ***Title***`.
-- Stories may include a quote after the banner and before `## **I.** ***First***`.
+- Stories start directly after the banner pause with `## **I.** ***First***`.
 - Story and essay banner images share the same treatment:
   - width `100%`
   - height `250px` desktop
   - height `190px` mobile
   - `object-fit: cover`
   - `object-position: center`
+- Essays and stories use a larger gap after the banner so the first section does not crowd the image.
 - Stories use Roman numeral section headings with bold numerals and bold italic section titles, matching essays.
 - Section headings should be `## **I.** ***First***`, `## **II.** ***Next***`, and so on.
 - Do not use `***` story dividers.
@@ -206,26 +209,14 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
   - Location/photo/painting: `City/Place, Country - photo` or `City/Place, Country - painting`
   - Artwork/book/album cover: `Name (year), Artist`
   - Graph/screenshot/report: `Source: Source name (year). Note: short context.`
-- In post pages, image paragraphs are centered.
-- Essay and story images, graphs, and screenshots should not run full width by default; they use `max-width: 580px` inside the `700px` column.
+- In post pages, Markdown image paragraphs are centered.
+- Essay and story images, graphs, and screenshots should not run full width by default; they use `max-width: 580px` inside the `700px` column. Do not add per-kind shortcodes or raw HTML figure systems unless explicitly requested.
 - Image margin starts at `3rem` above image and `0.75rem` below.
 - Captions use `IBM Plex Sans`, not italic visually:
   - `font-style: normal`
-  - font-size `0.78rem`
-  - line-height `1.4`
+  - font-size about `0.76rem`
+  - line-height about `1.45`
 - Keep captions short and descriptive.
-
-## Quotes
-
-- Standard quote markdown:
-  ```md
-  > "Quote."
-  >
-  > - Quote Person (year)
-  ```
-- Quotes may appear after a banner and before `## **I.** ***First***`.
-- Quotes render left-aligned with the prose column as a quiet highlight component with a top rule, not a classical vertical quote bar.
-- Keep quote attributions short and use the year only when it is known or useful.
 
 ## Future Post Starter Shapes
 
@@ -254,7 +245,8 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - No nav unless explicitly requested.
 - No email/byline under the homepage title unless explicitly requested.
 - No external fonts.
-- No complex JavaScript for reading behavior.
+- No complex JavaScript for reading behavior: no progress bar, sticky mini reader header, toast, or scroll chrome.
+- No standard quote component; quotes are not part of the default essay/story/note system.
 
 ## Obsidian Editing Workflow
 

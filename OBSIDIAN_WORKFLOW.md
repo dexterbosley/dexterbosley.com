@@ -29,6 +29,14 @@ cd /Users/dexterbosley/projects/dexterbosley.com
 
 That command rebuilds the `docs/` folder, commits everything, and pushes to GitHub Pages.
 
+
+## Article Layout Rules
+
+- Click-in essays, stories, and notes use a quiet article layout with a desktop metadata rail for date, `<- BACK`, and `^ SHARE`.
+- Mobile keeps those utilities as a compact left-aligned stack below the title and theme toggle.
+- Do not add progress bars, sticky reader headers, toast interactions, or standard quote blocks.
+- Keep figures Markdown-only: image line, blank line, italic caption line.
+
 ## Caption Rules
 
 - Location/photo/painting: `City/Place, Country - photo` or `City/Place, Country - painting`
@@ -121,13 +129,9 @@ cover:
 ---
 ```
 
-Stories start after the required banner with Roman numeral headings and italic section titles:
+Stories start after the required banner pause with Roman numeral headings and italic section titles:
 
 ```md
-> "Quote."
->
-> - Quote Person (year)
-
 ## **I.** ***First***
 
 Opening paragraph.
@@ -165,14 +169,6 @@ Inline figure:
 ![Alt text](figure-01.png)
 
 *Source: Source name (year). Note: short descriptive caption.*
-```
-
-Quote:
-
-```md
-> "Quote."
->
-> - Quote Person (year)
 ```
 
 Publish after saving:

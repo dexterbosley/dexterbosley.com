@@ -11,10 +11,6 @@ cover:
   caption: "White Mountains, United States - painting"
 ---
 
-> "A room tells you what kind of silence it wants."
->
-> - Placeholder Speaker (2026)
-
 ## **I.** ***First***
 
 It was sticky. Wet air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
