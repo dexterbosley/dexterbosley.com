@@ -478,6 +478,19 @@
             margin: 0;
         }
 
+        .site-post .post-content p:has(img.review-image) {
+            max-width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .site-post .post-content img.review-image {
+            width: 180px;
+            height: 270px;
+            object-fit: cover;
+            object-position: center;
+        }
+
         .site-post .post-content p:has(> img) + p em,
         .site-post .post-content p:has(> picture) + p em {
             display: block;
@@ -486,6 +499,12 @@
             font-size: 0.82em;
             font-style: normal;
             line-height: 1.4;
+        }
+
+        .site-post .post-content p:has(img.review-image) + p em {
+            max-width: 180px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .post-template-essay .post-content p:has(> img),
@@ -503,6 +522,16 @@
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .post-template-essay .post-content p:has(img.review-image),
+        .post-template-story .post-content p:has(img.review-image) {
+            max-width: 180px;
+        }
+
+        .post-template-essay .post-content p:has(img.review-image) + p em,
+        .post-template-story .post-content p:has(img.review-image) + p em {
+            max-width: 180px;
         }
 
         .post-template-essay .post-content hr {
@@ -861,30 +890,30 @@
     <h2 class="home-section-title" id="popular-title"><span class="section-highlight highlight-popular">Start Here</span></h2>
     <ol class="post-list post-list-popular">
         <li class="post-entry">
-            <span class="entry-date">1 MIN</span>
+            <span class="entry-date">2 MIN</span>
             <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder I</span>
+            <a class="entry-title" href="/stories/small-talk/">Small Talk</a>
+        </li>
+        <li class="post-entry">
+            <span class="entry-date">3 MIN</span>
+            <span class="entry-rule" aria-hidden="true"></span>
+            <a class="entry-title" href="/essays/on-useful-digital-tools/">Useful Tools</a>
         </li>
         <li class="post-entry">
             <span class="entry-date">1 MIN</span>
             <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder II</span>
-        </li>
-        <li class="post-entry">
-            <span class="entry-date">1 MIN</span>
-            <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder III</span>
+            <a class="entry-title" href="/notes/tatie/">Tatie</a>
         </li>
     </ol>
 </section>
 
-<section class="home-section" aria-labelledby="recent-title" data-recent-component data-page-size="15">
+<section class="home-section" aria-labelledby="recent-title" data-recent-component data-page-size="10">
     <h2 class="home-section-title" id="recent-title"><span class="section-highlight highlight-popular">Recent</span></h2>
     <ol class="post-list post-list-recent">
         <li class="post-entry" data-recent-row data-page="0">
-            <span class="entry-date">JUN 8, 2026</span>
+            <span class="entry-date">JUN 20, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
-            <a class="entry-title" href="/notes/placeholder-note/">Placeholder</a>
+            <a class="entry-title" href="/notes/tatie/">Tatie</a>
         </li>
         <li class="post-entry" data-recent-row data-page="0">
             <span class="entry-date">MAR 30, 2026</span>
@@ -895,6 +924,11 @@
             <span class="entry-date">JAN 24, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/stories/small-talk/">Small Talk</a>
+        </li>
+        <li class="post-entry" data-recent-row data-page="0">
+            <span class="entry-date">JUN 8, 2026</span>
+            <span class="entry-rule" aria-hidden="true"></span>
+            <a class="entry-title" href="/notes/placeholder-note/">Placeholder</a>
         </li>
         <li class="post-entry" data-recent-row data-page="0">
             <span class="entry-date">JAN 23, 2026</span>
@@ -926,32 +960,32 @@
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-06/">Placeholder VI</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 17, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-07/">Placeholder VII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 16, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-08/">Placeholder VIII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 15, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-09/">Placeholder IX</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 14, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-10/">Placeholder X</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 13, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-11/">Placeholder XI</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="0">
+        <li class="post-entry" data-recent-row data-page="1" hidden>
             <span class="entry-date">JAN 12, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-12/">Placeholder XII</a>
@@ -976,57 +1010,57 @@
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-16/">Placeholder XVI</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 7, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-17/">Placeholder XVII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 6, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-18/">Placeholder XVIII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 5, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-19/">Placeholder XIX</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 4, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-20/">Placeholder XX</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 3, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-21/">Placeholder XXI</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 2, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-22/">Placeholder XXII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">JAN 1, 2026</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-23/">Placeholder XXIII</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">DEC 31, 2025</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-24/">Placeholder XXIV</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">DEC 30, 2025</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-25/">Placeholder XXV</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="2" hidden>
             <span class="entry-date">DEC 29, 2025</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-26/">Placeholder XXVI</a>
         </li>
-        <li class="post-entry" data-recent-row data-page="1" hidden>
+        <li class="post-entry" data-recent-row data-page="3" hidden>
             <span class="entry-date">DEC 28, 2025</span>
             <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="/notes/recent-placeholder-27/">Placeholder XXVII</a>
@@ -1037,13 +1071,15 @@
         <span class="pagination-pages" aria-label="Recent pages" data-recent-page-list>
             <button type="button" data-recent-page-button="0" aria-current="page">1</button>
             <button type="button" data-recent-page-button="1">2</button>
+            <button type="button" data-recent-page-button="2">3</button>
+            <button type="button" data-recent-page-button="3">4</button>
         </span>
         <button type="button" data-recent-next>Next</button>
     </nav>
 </section>
 
     </main>
-    <script type="application/json" id="home-prefetch-data">[{"image":"/images/optimized/about-snow-banner-420.webp","url":"/about/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/placeholder-note/"},{"image":"/images/optimized/placeholders/essay-story-banner-placeholder-700.webp","url":"/essays/on-useful-digital-tools/"},{"image":"/images/optimized/placeholders/essay-story-banner-placeholder-700.webp","url":"/stories/small-talk/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-01/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-02/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-03/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-04/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-05/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-06/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-07/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-08/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-09/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-10/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-11/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-12/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-13/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-14/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-15/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-16/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-17/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-18/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-19/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-20/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-21/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-22/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-23/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-24/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-25/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-26/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-27/"}]</script>
+    <script type="application/json" id="home-prefetch-data">[{"image":"/images/optimized/about-snow-banner-420.webp","url":"/about/"},{"image":"tatie_a-moveable-feast-1964-ernest-hemingway_review.jpg","url":"/notes/tatie/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/placeholder-note/"},{"image":"/images/optimized/placeholders/essay-story-banner-placeholder-700.webp","url":"/essays/on-useful-digital-tools/"},{"image":"/images/chamonix-banner.jpg","url":"/stories/small-talk/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-01/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-02/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-03/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-04/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-05/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-06/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-07/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-08/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-09/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-10/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-11/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-12/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-13/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-14/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-15/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-16/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-17/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-18/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-19/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-20/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-21/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-22/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-23/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-24/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-25/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-26/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-27/"}]</script>
 
         <script>
         (function() {

@@ -5,7 +5,7 @@ draft: true
 type: story
 description: "One clean sentence for link previews."
 cover:
-  image: "banner.jpg"
+  image: "story-title_city-place-country-photo_photo.jpg"
   alt: "Short description of the banner image"
   caption: "City/Place, Country - photo"
 ---

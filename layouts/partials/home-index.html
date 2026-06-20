@@ -1,26 +1,39 @@
-{{- $recentPages := where site.RegularPages "Params.home_recent" true }}
-{{- $recentPages = sort $recentPages "Date" "desc" }}
-{{- $pageSize := 15 }}
+{{- $recentAll := where site.RegularPages "Params.home_recent" true }}
+{{- $startHerePages := slice }}
+{{- range $path := slice "/stories/small-talk" "/essays/on-useful-digital-tools" "/notes/tatie" }}
+    {{- with site.GetPage $path }}
+        {{- $startHerePages = $startHerePages | append . }}
+    {{- end }}
+{{- end }}
+{{- $recentPinnedPages := slice }}
+{{- range $path := slice "/notes/tatie" "/essays/on-useful-digital-tools" "/stories/small-talk" }}
+    {{- with site.GetPage $path }}
+        {{- $recentPinnedPages = $recentPinnedPages | append . }}
+    {{- end }}
+{{- end }}
+{{- $pinnedPermalinks := slice }}
+{{- range $recentPinnedPages }}
+    {{- $pinnedPermalinks = $pinnedPermalinks | append .RelPermalink }}
+{{- end }}
+{{- $recentPages := $recentPinnedPages }}
+{{- range sort $recentAll "Date" "desc" }}
+    {{- if not (in $pinnedPermalinks .RelPermalink) }}
+        {{- $recentPages = $recentPages | append . }}
+    {{- end }}
+{{- end }}
+{{- $pageSize := 10 }}
 {{- $pageCount := div (add (len $recentPages) (sub $pageSize 1)) $pageSize }}
 
 <section class="home-section" aria-labelledby="popular-title">
     <h2 class="home-section-title" id="popular-title"><span class="section-highlight highlight-popular">Start Here</span></h2>
     <ol class="post-list post-list-popular">
+        {{- range $startHerePages }}
         <li class="post-entry">
-            <span class="entry-date">1 MIN</span>
+            <span class="entry-date">{{ .ReadingTime }} MIN</span>
             <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder I</span>
+            <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
-        <li class="post-entry">
-            <span class="entry-date">1 MIN</span>
-            <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder II</span>
-        </li>
-        <li class="post-entry">
-            <span class="entry-date">1 MIN</span>
-            <span class="entry-rule" aria-hidden="true"></span>
-            <span class="entry-title">Best Placeholder III</span>
-        </li>
+        {{- end }}
     </ol>
 </section>
 

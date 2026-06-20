@@ -5,7 +5,7 @@ draft: true
 type: essay
 description: "One clean sentence for link previews."
 cover:
-  image: "banner.jpg"
+  image: "essay-title_city-place-country-photo_photo.jpg"
   alt: "Short description of the banner image"
   caption: "City/Place, Country - photo"
 ---
@@ -14,7 +14,7 @@ cover:
 
 Start the essay here. Use short paragraphs. Use optional <mark>yellow highlights</mark> only for small phrases.
 
-![Alt text for a graph or screenshot](figure-01.png)
+![Alt text for a graph or screenshot](essay-title_source-name-2026-note-short-context_graph.png)
 
 *Source: Source name (year). Note: short descriptive caption.*
 

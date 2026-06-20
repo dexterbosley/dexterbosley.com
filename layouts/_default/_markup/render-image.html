@@ -1,1 +1,7 @@
-{{ partial "responsive-image.html" (dict "page" .Page "src" .Destination "alt" .Text "title" .Title "sizes" "(max-width: 760px) calc(100vw - 32px), 580px" "widths" (slice 360 420 580 700 960 1160) "loading" "lazy" "decoding" "async") }}
+{{- $title := .Title -}}
+{{- $class := "" -}}
+{{- if in (slice "review" "book" "album" "movie") (lower $title) -}}
+    {{- $class = "review-image" -}}
+    {{- $title = "" -}}
+{{- end -}}
+{{ partial "responsive-image.html" (dict "page" .Page "src" .Destination "alt" .Text "title" $title "class" $class "sizes" "(max-width: 760px) calc(100vw - 32px), 580px" "widths" (slice 360 420 580 700 960 1160) "loading" "lazy" "decoding" "async") }}

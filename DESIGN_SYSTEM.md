@@ -22,7 +22,9 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 - Home intro uses the lake banner; About uses the snow banner after the first paragraph.
 - Banners align with the narrow text column and crop with `object-fit: cover`.
 - Sections are `START HERE` then `RECENT`.
-- Recent is curated with `home_recent: true` and paginates in place, not with `/page/2/` navigation.
+- Start Here links to `Small Talk`, `Useful Tools`, and `Tatie`.
+- Recent pins `Tatie`, `Useful Tools`, and `Small Talk` first, then shows the remaining `home_recent: true` posts by date.
+- Recent paginates in place after 10 rows, not with `/page/2/` navigation.
 
 ## Posts
 
@@ -38,8 +40,12 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 
 - Templates use Hugo responsive image partials for WebP, fallback formats, dimensions, and load priority.
 - Source images should live in page bundles or `assets/images/`; legacy `/static/images/` paths may remain for compatibility.
-- Bundle convention: `index.md`, `banner.jpg`, optional `figure-01.png`, `book-cover-01.jpg`, `album-cover-01.jpg`.
+- New source image filenames use `post-title_full-caption-title_media-type.ext`, with lowercase kebab case in each segment.
+- Valid media types are `image`, `graph`, `painting`, `photo`, and `review`.
+- Use `review` for book, album, and movie collateral; review images share fixed `180px` by `270px` dimensions in post bodies.
+- Bundle convention: `index.md`, a descriptive cover image, optional descriptive figure or review images.
 - Markdown figure pattern: image line, blank line, italic caption line.
+- Markdown review-image pattern: image line with title `"review"`, blank line, italic caption line.
 - Caption examples: `City, Country - photo`; `Name (year), Artist`; `Source: Name (year). Note: context.`
 
 ## Highlights
