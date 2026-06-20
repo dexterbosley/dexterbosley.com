@@ -34,6 +34,7 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 - At `1100px+`, utilities sit in the left rail; below that, they sit under the title.
 - Essays and stories use Roman section headings: `## **I.** ***Title***`.
 - Notes are short and do not need Roman sections.
+- Notes do not render a visible cover banner; `cover` fields are still required for metadata and share images.
 - All posts require `cover.image`, `cover.alt`, and `cover.caption`.
 
 ## Images
@@ -43,6 +44,9 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 - New source image filenames use `post-title_full-caption-title_media-type.ext`, with lowercase kebab case in each segment.
 - Valid media types are `image`, `graph`, `painting`, `photo`, and `review`.
 - Use `review` for book, album, and movie collateral; review images share fixed `180px` by `270px` dimensions in post bodies.
+- In notes, book, album, and movie review images use the fixed review treatment.
+- In notes, all other images use the same left-aligned width treatment as Home/About text.
+- Note body text also follows the Home/About text width.
 - Bundle convention: `index.md`, a descriptive cover image, optional descriptive figure or review images.
 - Markdown figure pattern: image line, blank line, italic caption line.
 - Markdown review-image pattern: image line with title `"review"`, blank line, italic caption line.
@@ -54,6 +58,12 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 - Use native `<mark>` for short phrases only.
 - Inline highlights use `.highlight-inline`; section labels use `.section-highlight`.
 - Keep highlights sparse: one phrase per surface is usually enough.
+
+## Subscribe And Analytics
+
+- `/subscribe/` stays a plain editorial page, not a product landing page.
+- Send visitors to the hosted listmonk signup form instead of embedding a custom form on the static site.
+- Analytics should remain invisible and lowkey. GoatCounter is the only traffic script.
 
 ## Do Not Add
 

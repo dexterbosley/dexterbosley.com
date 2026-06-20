@@ -22,6 +22,29 @@ hugo --cleanDestinationDir
 
 Only publish when Dexter explicitly asks. Publishing rebuilds `docs/`, commits, and pushes to GitHub Pages.
 
+## Newsletter And Analytics
+
+- Subscribe page: `/subscribe/`
+- Newsletter control panel: `https://newsletter.dexterbosley.com`
+- Public signup form: `https://newsletter.dexterbosley.com/subscription/form`
+- listmonk list: `Free Updates`
+- list UUID: `853dabc3-3d14-4070-92d6-95f37ad85ae9`
+- Sender: `Dexter Bosley <updates@dexterbosley.com>`
+- Newsletter host: PikaPods pod `dexter-newsletter`
+- Email sender: Resend, verified domain `dexterbosley.com`
+- DNS provider: Squarespace
+- Analytics dashboard: `https://dexterbosley.goatcounter.com`
+
+Keep secrets out of this repo. Resend API keys, listmonk admin passwords, and PikaPods credentials should stay in their dashboards or a private password manager.
+
+Before publishing newsletter or tracking changes:
+
+1. Run `hugo --cleanDestinationDir`.
+2. Confirm `docs/subscribe/index.html` exists.
+3. Confirm generated pages include `https://dexterbosley.goatcounter.com/count`.
+4. Open `https://newsletter.dexterbosley.com/subscription/form` and confirm the public form loads.
+5. For end-to-end signup checks, submit a test address and confirm the opt-in email from `updates@dexterbosley.com`.
+
 ## Post Bundles
 
 Use a bundle when a post has local images:
@@ -54,7 +77,7 @@ cover:
 ---
 ```
 
-Use `type: essay`, `type: story`, or `type: note`. Essays and stories start with Roman headings like `## **I.** ***First***`; notes can start directly.
+Use `type: essay`, `type: story`, or `type: note`. Essays and stories start with Roman headings like `## **I.** ***First***`; notes can start directly. Notes still require `cover` fields for metadata/share images, but do not render a visible cover banner.
 
 ## Figures
 
@@ -71,5 +94,7 @@ Review images for books, albums, and movies use the Markdown title `"review"`:
 
 *Name (year), Artist.*
 ```
+
+For notes, put the review image and caption first, then body text after a blank line. Book, album, and movie review images use the fixed review treatment. Any other note image should use the same left-aligned width treatment as Home/About text, and note body text follows that same width.
 
 Keep captions short and formal. Do not append media-type suffixes such as `- photo` or `- painting`. Do not use `***` or horizontal rules as dividers.

@@ -28,6 +28,7 @@
         </div>
     </header>
 
+    {{- if ne $kind "note" }}
     {{- with .Params.cover.image }}
     {{- $coverSizes := cond (eq $kind "note") "(max-width: 760px) min(420px, calc(100vw - 80px)), 420px" "(max-width: 760px) calc(100vw - 32px), 700px" }}
     <figure class="post-opener">
@@ -36,6 +37,7 @@
         <figcaption>{{ . }}</figcaption>
         {{- end }}
     </figure>
+    {{- end }}
     {{- end }}
 
     <div class="post-content">
