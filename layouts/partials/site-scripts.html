@@ -1,0 +1,169 @@
+    <script>
+        (function() {
+            var root = document.documentElement;
+            var buttons = document.querySelectorAll("[data-theme-choice]");
+
+            function preferredTheme() {
+                if (root.dataset.theme === "light" || root.dataset.theme === "dark") {
+                    return root.dataset.theme;
+                }
+                if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    return "dark";
+                }
+                return "light";
+            }
+
+            function updateButtons() {
+                var activeTheme = preferredTheme();
+                buttons.forEach(function(button) {
+                    button.setAttribute("aria-pressed", button.dataset.themeChoice === activeTheme ? "true" : "false");
+                });
+            }
+
+            buttons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var theme = button.dataset.themeChoice;
+                    if (theme !== "light" && theme !== "dark") return;
+                    root.dataset.theme = theme;
+                    try {
+                        window.localStorage.setItem("theme", theme);
+                    } catch (error) {}
+                    updateButtons();
+                });
+            });
+
+            if (window.matchMedia) {
+                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateButtons);
+            }
+
+            updateButtons();
+        })();
+    </script>
+    <script>
+        (function() {
+            document.querySelectorAll("[data-recent-component]").forEach(function(component) {
+                var rows = Array.prototype.slice.call(component.querySelectorAll("[data-recent-row]"));
+                var previous = component.querySelector("[data-recent-prev]");
+                var next = component.querySelector("[data-recent-next]");
+                var pageList = component.querySelector("[data-recent-page-list]");
+                var pageButtons = Array.prototype.slice.call(component.querySelectorAll("[data-recent-page-button]"));
+                var page = 0;
+                var maxPage = rows.reduce(function(max, row) {
+                    return Math.max(max, Number(row.dataset.page) || 0);
+                }, 0);
+
+                function renderPageButtons() {
+                    if (!pageList) return;
+                    pageList.querySelectorAll("[data-recent-ellipsis]").forEach(function(ellipsis) {
+                        ellipsis.remove();
+                    });
+
+                    var previousVisible = -1;
+                    pageButtons.forEach(function(button) {
+                        var buttonPage = Number(button.dataset.recentPageButton) || 0;
+                        var visible = pageButtons.length <= 7 ||
+                            buttonPage === 0 ||
+                            buttonPage === maxPage ||
+                            Math.abs(buttonPage - page) <= 1;
+
+                        button.hidden = !visible;
+                        if (visible) {
+                            if (previousVisible >= 0 && buttonPage - previousVisible > 1) {
+                                var ellipsis = document.createElement("span");
+                                ellipsis.className = "pagination-ellipsis";
+                                ellipsis.setAttribute("aria-hidden", "true");
+                                ellipsis.setAttribute("data-recent-ellipsis", "");
+                                ellipsis.textContent = "...";
+                                pageList.insertBefore(ellipsis, button);
+                            }
+                            previousVisible = buttonPage;
+                        }
+                    });
+                }
+
+                function render() {
+                    rows.forEach(function(row) {
+                        row.hidden = (Number(row.dataset.page) || 0) !== page;
+                    });
+                    if (previous) previous.hidden = page === 0;
+                    if (next) next.hidden = page === maxPage;
+                    pageButtons.forEach(function(button) {
+                        if (Number(button.dataset.recentPageButton) === page) {
+                            button.setAttribute("aria-current", "page");
+                        } else {
+                            button.removeAttribute("aria-current");
+                        }
+                    });
+                    renderPageButtons();
+                }
+
+                component.addEventListener("click", function(event) {
+                    var target = event.target.closest("button");
+                    if (!target || !component.contains(target)) return;
+
+                    if (target.matches("[data-recent-prev]")) {
+                        page = Math.max(0, page - 1);
+                        render();
+                    } else if (target.matches("[data-recent-next]")) {
+                        page = Math.min(maxPage, page + 1);
+                        render();
+                    } else if (target.matches("[data-recent-page-button]")) {
+                        page = Math.max(0, Math.min(maxPage, Number(target.dataset.recentPageButton) || 0));
+                        render();
+                    }
+                });
+
+                render();
+            });
+        })();
+    </script>
+
+    <script>
+        (function() {
+            var data = document.getElementById("home-prefetch-data");
+            if (!data) return;
+
+            var items;
+            try {
+                items = JSON.parse(data.textContent || "[]");
+            } catch (error) {
+                return;
+            }
+
+            var seen = Object.create(null);
+            var queue = [];
+
+            function add(url, as) {
+                if (!url || seen[url]) return;
+                seen[url] = true;
+                queue.push({ url: url, as: as });
+            }
+
+            items.forEach(function(item) {
+                add(item.url, "document");
+                add(item.image, "image");
+            });
+
+            function prefetchNext() {
+                var item = queue.shift();
+                if (!item) return;
+
+                var link = document.createElement("link");
+                link.rel = "prefetch";
+                link.href = item.url;
+                link.as = item.as;
+                document.head.appendChild(link);
+
+                window.setTimeout(prefetchNext, 90);
+            }
+
+            function start() {
+                var starters = Math.min(3, queue.length);
+                for (var index = 0; index < starters; index += 1) {
+                    prefetchNext();
+                }
+            }
+
+            window.requestIdleCallback ? window.requestIdleCallback(start, { timeout: 1200 }) : window.setTimeout(start, 350);
+        })();
+    </script>

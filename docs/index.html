@@ -7,21 +7,23 @@
     <title>public thoughts</title>
     <link rel="canonical" href="https://www.dexterbosley.com/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/fonts/source-serif-4/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="description" content="Thinking in public by Dexter Bosley.">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="website">
     <meta property="og:title" content="public thoughts">
     <meta property="og:description" content="Thinking in public by Dexter Bosley.">
     <meta property="og:url" content="https://www.dexterbosley.com/">
-    <meta property="og:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy.jpeg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/homepage-lake-annecy.jpeg">
+    <meta property="og:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
+    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
     <meta property="og:image:alt" content="People on a lawn beside a lake with mountains in the distance">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="public thoughts">
     <meta name="twitter:description" content="Thinking in public by Dexter Bosley.">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy.jpeg">
+    <meta name="twitter:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
     <meta name="twitter:image:alt" content="People on a lawn beside a lake with mountains in the distance">
-    <script>
+        <script>
         (function() {
             try {
                 var theme = window.localStorage.getItem("theme");
@@ -31,7 +33,8 @@
             } catch (error) {}
         })();
     </script>
-    <style>
+
+        <style>
         @font-face {
             font-family: "Source Serif 4";
             font-style: normal;
@@ -143,8 +146,12 @@
             text-underline-offset: 0.18em;
         }
 
+        picture,
         img {
             display: block;
+        }
+
+        img {
             max-width: 100%;
             height: auto;
             margin: 2rem 0;
@@ -460,16 +467,19 @@
             font-weight: 700;
         }
 
-        .site-post .post-content p:has(> img) {
+        .site-post .post-content p:has(> img),
+        .site-post .post-content p:has(> picture) {
             margin: 3rem 0 0.75rem;
         }
 
-        .site-post .post-content p:has(> img) img {
+        .site-post .post-content p:has(> img) img,
+        .site-post .post-content p:has(> picture) img {
             width: 100%;
             margin: 0;
         }
 
-        .site-post .post-content p:has(> img) + p em {
+        .site-post .post-content p:has(> img) + p em,
+        .site-post .post-content p:has(> picture) + p em {
             display: block;
             margin-top: -0.15rem;
             color: var(--ink);
@@ -479,13 +489,17 @@
         }
 
         .post-template-essay .post-content p:has(> img),
-        .post-template-story .post-content p:has(> img) {
+        .post-template-essay .post-content p:has(> picture),
+        .post-template-story .post-content p:has(> img),
+        .post-template-story .post-content p:has(> picture) {
             max-width: 580px;
             margin: 3rem auto 0.75rem;
         }
 
         .post-template-essay .post-content p:has(> img) + p em,
-        .post-template-story .post-content p:has(> img) + p em {
+        .post-template-essay .post-content p:has(> picture) + p em,
+        .post-template-story .post-content p:has(> img) + p em,
+        .post-template-story .post-content p:has(> picture) + p em {
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
@@ -817,6 +831,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <main class="site">
@@ -833,7 +848,10 @@
     <section class="home-intro" aria-label="Introduction">
         <p>Welcome to <mark class="highlight-inline">thinking in public</mark>. I never could journal so I'm trying this. After all, it doesn’t really count unless you write it down.</p>
         <figure class="home-banner" aria-label="Lake and mountains at dusk">
-            <img src="/images/homepage-lake-annecy.jpeg" alt="People on a lawn beside a lake with mountains in the distance">
+            <picture>
+    <source type="image/webp" srcset="/images/optimized/homepage-lake-annecy-320.webp 320w, /images/optimized/homepage-lake-annecy-420.webp 420w, /images/optimized/homepage-lake-annecy-640.webp 640w, /images/optimized/homepage-lake-annecy-880.webp 880w" sizes="(max-width: 760px) min(440px, calc(100vw - 72px)), 440px">
+    <img src="/images/homepage-lake-annecy_hu_2437e2da395fecc7.jpeg" srcset="/images/homepage-lake-annecy_hu_2ebb42a150c4668e.jpeg 320w, /images/homepage-lake-annecy_hu_bdf82f5022df4746.jpeg 420w, /images/homepage-lake-annecy_hu_c48b41303ebe0812.jpeg 640w, /images/homepage-lake-annecy_hu_2437e2da395fecc7.jpeg 880w" sizes="(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" width="880" height="660" alt="People on a lawn beside a lake with mountains in the distance" loading="eager" decoding="async" fetchpriority="high">
+</picture>
         </figure>
         <p>You can read more about me <a href="/about/">here</a>. You can subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">My thoughts below</mark>.</p>
     </section>
@@ -1025,7 +1043,9 @@
 </section>
 
     </main>
-    <script>
+    <script type="application/json" id="home-prefetch-data">[{"image":"/images/optimized/about-snow-banner-420.webp","url":"/about/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/placeholder-note/"},{"image":"/images/optimized/placeholders/essay-story-banner-placeholder-700.webp","url":"/essays/on-useful-digital-tools/"},{"image":"/images/optimized/placeholders/essay-story-banner-placeholder-700.webp","url":"/stories/small-talk/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-01/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-02/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-03/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-04/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-05/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-06/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-07/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-08/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-09/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-10/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-11/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-12/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-13/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-14/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-15/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-16/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-17/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-18/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-19/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-20/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-21/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-22/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-23/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-24/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-25/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-26/"},{"image":"/images/optimized/placeholders/note-banner-placeholder-700.webp","url":"/notes/recent-placeholder-27/"}]</script>
+
+        <script>
         (function() {
             var root = document.documentElement;
             var buttons = document.querySelectorAll("[data-theme-choice]");
@@ -1144,5 +1164,56 @@
             });
         })();
     </script>
+
+    <script>
+        (function() {
+            var data = document.getElementById("home-prefetch-data");
+            if (!data) return;
+
+            var items;
+            try {
+                items = JSON.parse(data.textContent || "[]");
+            } catch (error) {
+                return;
+            }
+
+            var seen = Object.create(null);
+            var queue = [];
+
+            function add(url, as) {
+                if (!url || seen[url]) return;
+                seen[url] = true;
+                queue.push({ url: url, as: as });
+            }
+
+            items.forEach(function(item) {
+                add(item.url, "document");
+                add(item.image, "image");
+            });
+
+            function prefetchNext() {
+                var item = queue.shift();
+                if (!item) return;
+
+                var link = document.createElement("link");
+                link.rel = "prefetch";
+                link.href = item.url;
+                link.as = item.as;
+                document.head.appendChild(link);
+
+                window.setTimeout(prefetchNext, 90);
+            }
+
+            function start() {
+                var starters = Math.min(3, queue.length);
+                for (var index = 0; index < starters; index += 1) {
+                    prefetchNext();
+                }
+            }
+
+            window.requestIdleCallback ? window.requestIdleCallback(start, { timeout: 1200 }) : window.setTimeout(start, 350);
+        })();
+    </script>
+
 </body>
 </html>

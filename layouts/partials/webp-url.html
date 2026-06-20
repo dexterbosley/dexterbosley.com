@@ -1,0 +1,11 @@
+{{- $src := .src -}}
+{{- $width := .width -}}
+{{- $url := "" -}}
+{{- if and $src $width (hasPrefix $src "/images/") -}}
+    {{- $path := replaceRE "^/images/(.*)\\.[^.]+$" "$1" $src -}}
+    {{- $webpPath := printf "images/optimized/%s-%d.webp" $path $width -}}
+    {{- if fileExists (printf "static/%s" $webpPath) -}}
+        {{- $url = printf "/%s" $webpPath -}}
+    {{- end -}}
+{{- end -}}
+{{- return $url -}}

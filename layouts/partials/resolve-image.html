@@ -1,7 +1,11 @@
 {{- $page := .page -}}
 {{- $src := .src -}}
 {{- $resolved := $src -}}
-{{- if and $page $src (not (findRE "^(/|https?://)" $src)) -}}
+{{- $image := partial "image-resource.html" (dict "page" $page "src" $src) -}}
+{{- if $image -}}
+    {{- $width := cond (gt $image.Width 1200) 1200 $image.Width -}}
+    {{- $resolved = ($image.Resize (printf "%dx q82" $width)).RelPermalink -}}
+{{- else if and $page $src (not (findRE "^(/|https?://)" $src)) -}}
     {{- with $page.Resources.GetMatch $src -}}
         {{- $resolved = .RelPermalink -}}
     {{- end -}}

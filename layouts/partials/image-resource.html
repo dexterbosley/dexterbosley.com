@@ -1,0 +1,14 @@
+{{- $page := .page -}}
+{{- $src := .src -}}
+{{- $image := false -}}
+{{- if and $page $src (not (findRE "^(/|https?://|mailto:|#)" $src)) -}}
+    {{- with $page.Resources.GetMatch $src -}}
+        {{- $image = . -}}
+    {{- end -}}
+{{- end -}}
+{{- if and (not $image) $src (hasPrefix $src "/") -}}
+    {{- with resources.Get (strings.TrimPrefix "/" $src) -}}
+        {{- $image = . -}}
+    {{- end -}}
+{{- end -}}
+{{- return $image -}}

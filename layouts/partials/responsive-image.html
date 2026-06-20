@@ -1,0 +1,47 @@
+{{- $page := .page -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $title := .title | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "(max-width: 760px) calc(100vw - 32px), 700px" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $decoding := .decoding | default "async" -}}
+{{- $fetchpriority := .fetchpriority | default "" -}}
+{{- $widths := .widths | default (slice 420 700 960 1200) -}}
+{{- $image := partial "image-resource.html" (dict "page" $page "src" $src) -}}
+{{- if $image -}}
+    {{- $webpSet := slice -}}
+    {{- $fallbackSet := slice -}}
+    {{- range $widths -}}
+        {{- if le . $image.Width -}}
+            {{- $webp := partial "webp-url.html" (dict "src" $src "width" .) -}}
+            {{- if $webp -}}
+                {{- $webpSet = $webpSet | append (printf "%s %dw" $webp .) -}}
+            {{- end -}}
+            {{- $fallback := $image.Resize (printf "%dx q82" .) -}}
+            {{- $fallbackSet = $fallbackSet | append (printf "%s %dw" $fallback.RelPermalink $fallback.Width) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if eq (len $fallbackSet) 0 -}}
+        {{- $fallback := $image.Resize (printf "%dx q82" $image.Width) -}}
+        {{- $fallbackSet = $fallbackSet | append (printf "%s %dw" $fallback.RelPermalink $fallback.Width) -}}
+    {{- end -}}
+    {{- $fallbackWidth := index $widths 0 -}}
+    {{- range $widths -}}
+        {{- if and (le . $image.Width) (gt . $fallbackWidth) -}}
+            {{- $fallbackWidth = . -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if gt $fallbackWidth $image.Width -}}
+        {{- $fallbackWidth = $image.Width -}}
+    {{- end -}}
+    {{- $fallback := $image.Resize (printf "%dx q82" $fallbackWidth) -}}
+<picture>
+    {{- if gt (len $webpSet) 0 }}
+    <source type="image/webp" srcset="{{ delimit $webpSet ", " }}" sizes="{{ $sizes }}">
+    {{- end }}
+    <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $fallbackSet ", " }}" sizes="{{ $sizes }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="{{ $decoding }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+</picture>
+{{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="{{ $decoding }}"{{ with $fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+{{- end -}}

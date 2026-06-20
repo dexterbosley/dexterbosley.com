@@ -4,7 +4,7 @@
     <section class="home-intro" aria-label="Introduction">
         <p>Welcome to <mark class="highlight-inline">thinking in public</mark>. I never could journal so I'm trying this. After all, it doesn’t really count unless you write it down.</p>
         <figure class="home-banner" aria-label="Lake and mountains at dusk">
-            <img src="/images/homepage-lake-annecy.jpeg" alt="People on a lawn beside a lake with mountains in the distance">
+            {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
         </figure>
         <p>You can read more about me <a href="/about/">here</a>. You can subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">My thoughts below</mark>.</p>
     </section>

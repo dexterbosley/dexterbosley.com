@@ -29,9 +29,9 @@
     </header>
 
     {{- with .Params.cover.image }}
-    {{- $coverImage := partial "resolve-image.html" (dict "page" $ "src" .) }}
+    {{- $coverSizes := cond (eq $kind "note") "(max-width: 760px) min(420px, calc(100vw - 80px)), 420px" "(max-width: 760px) calc(100vw - 32px), 700px" }}
     <figure class="post-opener">
-        <img src="{{ $coverImage }}" alt="{{ $.Params.cover.alt | default $.Title }}">
+        {{ partial "responsive-image.html" (dict "page" $ "src" . "alt" ($.Params.cover.alt | default $.Title) "sizes" $coverSizes "widths" (slice 360 420 580 700 960 1200) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
         {{- with $.Params.cover.caption }}
         <figcaption>{{ . }}</figcaption>
         {{- end }}

@@ -1,0 +1,15 @@
+{{- $items := slice -}}
+{{- with site.GetPage "/about" -}}
+    {{- $items = $items | append (dict "url" .RelPermalink "image" (partial "image-url.html" (dict "page" . "src" "/images/about-snow-banner.jpg" "width" 420))) -}}
+{{- end -}}
+{{- $recentPages := where site.RegularPages "Params.home_recent" true -}}
+{{- range sort $recentPages "Date" "desc" -}}
+    {{- $image := "" -}}
+    {{- with .Params.cover -}}
+        {{- with .image -}}
+            {{- $image = partial "image-url.html" (dict "page" $ "src" . "width" 700) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- $items = $items | append (dict "url" .RelPermalink "image" $image) -}}
+{{- end -}}
+<script type="application/json" id="home-prefetch-data">{{ $items | jsonify | safeJS }}</script>

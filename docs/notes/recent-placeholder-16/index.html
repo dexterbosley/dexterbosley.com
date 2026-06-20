@@ -6,22 +6,24 @@
     <title>public thoughts</title>
     <link rel="canonical" href="https://www.dexterbosley.com/notes/recent-placeholder-16/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/fonts/source-serif-4/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="description" content="Placeholder. ">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Placeholder XVI">
     <meta property="og:description" content="Placeholder. ">
     <meta property="og:url" content="https://www.dexterbosley.com/notes/recent-placeholder-16/">
-    <meta property="og:image" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder.jpg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder.jpg">
+    <meta property="og:image" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder_hu_c7f20757582ab925.jpg">
+    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder_hu_c7f20757582ab925.jpg">
     <meta property="og:image:alt" content="Pale path through quiet hills">
     <meta property="article:published_time" content="2026-01-08T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Placeholder XVI">
     <meta name="twitter:description" content="Placeholder. ">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder.jpg">
+    <meta name="twitter:image" content="https://www.dexterbosley.com/images/placeholders/note-banner-placeholder_hu_c7f20757582ab925.jpg">
     <meta name="twitter:image:alt" content="Pale path through quiet hills">
-    <script>
+        <script>
         (function() {
             try {
                 var theme = window.localStorage.getItem("theme");
@@ -31,7 +33,8 @@
             } catch (error) {}
         })();
     </script>
-    <style>
+
+        <style>
         @font-face {
             font-family: "Source Serif 4";
             font-style: normal;
@@ -143,8 +146,12 @@
             text-underline-offset: 0.18em;
         }
 
+        picture,
         img {
             display: block;
+        }
+
+        img {
             max-width: 100%;
             height: auto;
             margin: 2rem 0;
@@ -460,16 +467,19 @@
             font-weight: 700;
         }
 
-        .site-post .post-content p:has(> img) {
+        .site-post .post-content p:has(> img),
+        .site-post .post-content p:has(> picture) {
             margin: 3rem 0 0.75rem;
         }
 
-        .site-post .post-content p:has(> img) img {
+        .site-post .post-content p:has(> img) img,
+        .site-post .post-content p:has(> picture) img {
             width: 100%;
             margin: 0;
         }
 
-        .site-post .post-content p:has(> img) + p em {
+        .site-post .post-content p:has(> img) + p em,
+        .site-post .post-content p:has(> picture) + p em {
             display: block;
             margin-top: -0.15rem;
             color: var(--ink);
@@ -479,13 +489,17 @@
         }
 
         .post-template-essay .post-content p:has(> img),
-        .post-template-story .post-content p:has(> img) {
+        .post-template-essay .post-content p:has(> picture),
+        .post-template-story .post-content p:has(> img),
+        .post-template-story .post-content p:has(> picture) {
             max-width: 580px;
             margin: 3rem auto 0.75rem;
         }
 
         .post-template-essay .post-content p:has(> img) + p em,
-        .post-template-story .post-content p:has(> img) + p em {
+        .post-template-essay .post-content p:has(> picture) + p em,
+        .post-template-story .post-content p:has(> img) + p em,
+        .post-template-story .post-content p:has(> picture) + p em {
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
@@ -817,6 +831,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <main class="site site-post">
@@ -842,7 +857,10 @@
         </div>
     </header>
     <figure class="post-opener">
-        <img src="/images/placeholders/note-banner-placeholder.jpg" alt="Pale path through quiet hills">
+        <picture>
+    <source type="image/webp" srcset="/images/optimized/placeholders/note-banner-placeholder-360.webp 360w, /images/optimized/placeholders/note-banner-placeholder-420.webp 420w, /images/optimized/placeholders/note-banner-placeholder-580.webp 580w, /images/optimized/placeholders/note-banner-placeholder-700.webp 700w" sizes="(max-width: 760px) min(420px, calc(100vw - 80px)), 420px">
+    <img src="/images/placeholders/note-banner-placeholder_hu_177e2a0364e5697c.jpg" srcset="/images/placeholders/note-banner-placeholder_hu_7c6f6321ef0240d8.jpg 360w, /images/placeholders/note-banner-placeholder_hu_c5f2a3c097f6ec63.jpg 420w, /images/placeholders/note-banner-placeholder_hu_813b2521bb59ecb3.jpg 580w, /images/placeholders/note-banner-placeholder_hu_177e2a0364e5697c.jpg 700w" sizes="(max-width: 760px) min(420px, calc(100vw - 80px)), 420px" width="700" height="350" alt="Pale path through quiet hills" loading="eager" decoding="async" fetchpriority="high">
+</picture>
         <figcaption>Quiet Hills, United States - painting</figcaption>
     </figure>
 
@@ -892,7 +910,7 @@ document.querySelectorAll('.share-link').forEach(function(button) {
 </script>
 
     </main>
-    <script>
+        <script>
         (function() {
             var root = document.documentElement;
             var buttons = document.querySelectorAll("[data-theme-choice]");
@@ -1011,5 +1029,56 @@ document.querySelectorAll('.share-link').forEach(function(button) {
             });
         })();
     </script>
+
+    <script>
+        (function() {
+            var data = document.getElementById("home-prefetch-data");
+            if (!data) return;
+
+            var items;
+            try {
+                items = JSON.parse(data.textContent || "[]");
+            } catch (error) {
+                return;
+            }
+
+            var seen = Object.create(null);
+            var queue = [];
+
+            function add(url, as) {
+                if (!url || seen[url]) return;
+                seen[url] = true;
+                queue.push({ url: url, as: as });
+            }
+
+            items.forEach(function(item) {
+                add(item.url, "document");
+                add(item.image, "image");
+            });
+
+            function prefetchNext() {
+                var item = queue.shift();
+                if (!item) return;
+
+                var link = document.createElement("link");
+                link.rel = "prefetch";
+                link.href = item.url;
+                link.as = item.as;
+                document.head.appendChild(link);
+
+                window.setTimeout(prefetchNext, 90);
+            }
+
+            function start() {
+                var starters = Math.min(3, queue.length);
+                for (var index = 0; index < starters; index += 1) {
+                    prefetchNext();
+                }
+            }
+
+            window.requestIdleCallback ? window.requestIdleCallback(start, { timeout: 1200 }) : window.setTimeout(start, 350);
+        })();
+    </script>
+
 </body>
 </html>

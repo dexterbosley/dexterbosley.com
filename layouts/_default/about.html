@@ -7,7 +7,7 @@
         {{- end }}
     </div>
     <figure class="home-banner" aria-label="Lake and mountains at dusk">
-        <img src="/images/about-snow-banner.jpg" alt="Snow-covered trees and slope under a pale blue sky">
+        {{ partial "responsive-image.html" (dict "page" . "src" "/images/about-snow-banner.jpg" "alt" "Snow-covered trees and slope under a pale blue sky" "sizes" "(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
     </figure>
     <div class="about-copy">
         {{- range after 1 $paragraphs }}

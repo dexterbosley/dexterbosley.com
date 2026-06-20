@@ -6,21 +6,23 @@
     <title>public thoughts</title>
     <link rel="canonical" href="https://www.dexterbosley.com/about/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/fonts/source-serif-4/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="description" content="About Dexter Bosley.">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="article">
     <meta property="og:title" content="About Dexter Bosley">
     <meta property="og:description" content="About Dexter Bosley.">
     <meta property="og:url" content="https://www.dexterbosley.com/about/">
-    <meta property="og:image" content="https://www.dexterbosley.com/images/about-snow-banner.jpg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/about-snow-banner.jpg">
+    <meta property="og:image" content="https://www.dexterbosley.com/images/about-snow-banner_hu_8c22aef07bf0df90.jpg">
+    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/about-snow-banner_hu_8c22aef07bf0df90.jpg">
     <meta property="og:image:alt" content="Snow-covered trees and slope under a pale blue sky">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Dexter Bosley">
     <meta name="twitter:description" content="About Dexter Bosley.">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/images/about-snow-banner.jpg">
+    <meta name="twitter:image" content="https://www.dexterbosley.com/images/about-snow-banner_hu_8c22aef07bf0df90.jpg">
     <meta name="twitter:image:alt" content="Snow-covered trees and slope under a pale blue sky">
-    <script>
+        <script>
         (function() {
             try {
                 var theme = window.localStorage.getItem("theme");
@@ -30,7 +32,8 @@
             } catch (error) {}
         })();
     </script>
-    <style>
+
+        <style>
         @font-face {
             font-family: "Source Serif 4";
             font-style: normal;
@@ -142,8 +145,12 @@
             text-underline-offset: 0.18em;
         }
 
+        picture,
         img {
             display: block;
+        }
+
+        img {
             max-width: 100%;
             height: auto;
             margin: 2rem 0;
@@ -459,16 +466,19 @@
             font-weight: 700;
         }
 
-        .site-post .post-content p:has(> img) {
+        .site-post .post-content p:has(> img),
+        .site-post .post-content p:has(> picture) {
             margin: 3rem 0 0.75rem;
         }
 
-        .site-post .post-content p:has(> img) img {
+        .site-post .post-content p:has(> img) img,
+        .site-post .post-content p:has(> picture) img {
             width: 100%;
             margin: 0;
         }
 
-        .site-post .post-content p:has(> img) + p em {
+        .site-post .post-content p:has(> img) + p em,
+        .site-post .post-content p:has(> picture) + p em {
             display: block;
             margin-top: -0.15rem;
             color: var(--ink);
@@ -478,13 +488,17 @@
         }
 
         .post-template-essay .post-content p:has(> img),
-        .post-template-story .post-content p:has(> img) {
+        .post-template-essay .post-content p:has(> picture),
+        .post-template-story .post-content p:has(> img),
+        .post-template-story .post-content p:has(> picture) {
             max-width: 580px;
             margin: 3rem auto 0.75rem;
         }
 
         .post-template-essay .post-content p:has(> img) + p em,
-        .post-template-story .post-content p:has(> img) + p em {
+        .post-template-essay .post-content p:has(> picture) + p em,
+        .post-template-story .post-content p:has(> img) + p em,
+        .post-template-story .post-content p:has(> picture) + p em {
             max-width: 580px;
             margin-left: auto;
             margin-right: auto;
@@ -816,6 +830,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <main class="site">
@@ -834,7 +849,10 @@
             Born in San Francisco and raised in San Mateo. Currently in NYC. Contact me via email at <a href="mailto:dexterbosley@gmail.com">dexterbosley@gmail.com</a>.
     </div>
     <figure class="home-banner" aria-label="Lake and mountains at dusk">
-        <img src="/images/about-snow-banner.jpg" alt="Snow-covered trees and slope under a pale blue sky">
+        <picture>
+    <source type="image/webp" srcset="/images/optimized/about-snow-banner-320.webp 320w, /images/optimized/about-snow-banner-420.webp 420w, /images/optimized/about-snow-banner-640.webp 640w, /images/optimized/about-snow-banner-880.webp 880w" sizes="(max-width: 760px) min(440px, calc(100vw - 72px)), 440px">
+    <img src="/images/about-snow-banner_hu_c41fc46c603c4126.jpg" srcset="/images/about-snow-banner_hu_e1f621bc0f42dbc7.jpg 320w, /images/about-snow-banner_hu_c676b59d61d48f49.jpg 420w, /images/about-snow-banner_hu_b596efd25c9b3929.jpg 640w, /images/about-snow-banner_hu_c41fc46c603c4126.jpg 880w" sizes="(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" width="880" height="1015" alt="Snow-covered trees and slope under a pale blue sky" loading="eager" decoding="async" fetchpriority="high">
+</picture>
     </figure>
     <div class="about-copy">
             You can see my work experience <a href="https://www.linkedin.com/in/dexterbosley/">here</a>. I feel best on a twenty-minute walk. <mark class="highlight-inline">My thoughts below</mark>.
@@ -1029,7 +1047,7 @@
 </section>
 
     </main>
-    <script>
+        <script>
         (function() {
             var root = document.documentElement;
             var buttons = document.querySelectorAll("[data-theme-choice]");
@@ -1148,5 +1166,56 @@
             });
         })();
     </script>
+
+    <script>
+        (function() {
+            var data = document.getElementById("home-prefetch-data");
+            if (!data) return;
+
+            var items;
+            try {
+                items = JSON.parse(data.textContent || "[]");
+            } catch (error) {
+                return;
+            }
+
+            var seen = Object.create(null);
+            var queue = [];
+
+            function add(url, as) {
+                if (!url || seen[url]) return;
+                seen[url] = true;
+                queue.push({ url: url, as: as });
+            }
+
+            items.forEach(function(item) {
+                add(item.url, "document");
+                add(item.image, "image");
+            });
+
+            function prefetchNext() {
+                var item = queue.shift();
+                if (!item) return;
+
+                var link = document.createElement("link");
+                link.rel = "prefetch";
+                link.href = item.url;
+                link.as = item.as;
+                document.head.appendChild(link);
+
+                window.setTimeout(prefetchNext, 90);
+            }
+
+            function start() {
+                var starters = Math.min(3, queue.length);
+                for (var index = 0; index < starters; index += 1) {
+                    prefetchNext();
+                }
+            }
+
+            window.requestIdleCallback ? window.requestIdleCallback(start, { timeout: 1200 }) : window.setTimeout(start, 350);
+        })();
+    </script>
+
 </body>
 </html>

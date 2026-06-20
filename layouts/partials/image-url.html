@@ -1,0 +1,15 @@
+{{- $src := .src -}}
+{{- $width := .width | default 700 -}}
+{{- $url := $src -}}
+{{- $webp := partial "webp-url.html" (dict "src" $src "width" $width) -}}
+{{- if $webp -}}
+    {{- $url = $webp -}}
+{{- else -}}
+    {{- $image := partial "image-resource.html" . -}}
+    {{- if $image -}}
+        {{- $targetWidth := cond (gt $image.Width $width) $width $image.Width -}}
+        {{- $optimized := $image.Resize (printf "%dx q82" $targetWidth) -}}
+        {{- $url = $optimized.RelPermalink -}}
+    {{- end -}}
+{{- end -}}
+{{- return $url -}}
