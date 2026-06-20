@@ -66,6 +66,7 @@
             --muted: #777;
             --measure: 700px;
             --home-copy-measure: 420px;
+            --home-banner-measure: 440px;
             --font-serif: "Source Serif 4", Georgia, serif;
             --font-sans: "IBM Plex Sans", Arial, sans-serif;
             --highlight-best: #1F4E67;
@@ -221,7 +222,7 @@
         .about-copy,
         .home-banner {
             width: 100%;
-            max-width: var(--home-copy-measure);
+            max-width: var(--home-banner-measure);
         }
 
         .home-intro p {
@@ -767,7 +768,7 @@
             .home-intro > p,
             .about-copy,
             .home-banner {
-                max-width: min(var(--home-copy-measure), calc(100% - 48px));
+                max-width: min(var(--home-banner-measure), calc(100% - 40px));
             }
 
             .home-banner {

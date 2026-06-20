@@ -67,6 +67,7 @@
             --muted: #777;
             --measure: 700px;
             --home-copy-measure: 420px;
+            --home-banner-measure: 440px;
             --font-serif: "Source Serif 4", Georgia, serif;
             --font-sans: "IBM Plex Sans", Arial, sans-serif;
             --highlight-best: #1F4E67;
@@ -222,7 +223,7 @@
         .about-copy,
         .home-banner {
             width: 100%;
-            max-width: var(--home-copy-measure);
+            max-width: var(--home-banner-measure);
         }
 
         .home-intro p {
@@ -768,7 +769,7 @@
             .home-intro > p,
             .about-copy,
             .home-banner {
-                max-width: min(var(--home-copy-measure), calc(100% - 48px));
+                max-width: min(var(--home-banner-measure), calc(100% - 40px));
             }
 
             .home-banner {
@@ -834,7 +835,7 @@
         <figure class="home-banner" aria-label="Lake and mountains at dusk">
             <img src="/images/homepage-lake-annecy.jpeg" alt="People on a lawn beside a lake with mountains in the distance">
         </figure>
-        <p>You can read more about me <a href="/about/">here</a>. Subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">My thoughts below</mark>.</p>
+        <p>You can read more about me <a href="/about/">here</a>. You can subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">My thoughts below</mark>.</p>
     </section>
     
 

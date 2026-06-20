@@ -16,8 +16,8 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Do not use proprietary FT fonts such as Financier or Metric.
 - Base font size is `16px` desktop and `15.5px` mobile.
 - Primary page measure is `700px`.
-- Homepage prose and banner measure is narrower than the page: `420px`, so home/About text and banner right edges share the same bound.
-- On mobile, homepage/About/note prose and small banners stop about `48px` before the right page edge; home/About text and banner use the same bound on both desktop and mobile.
+- Homepage/About prose and banner measure is narrower than the page: `440px`, so home/About text and banner right edges share the same bound and keep matching line rhythm.
+- On mobile, home/About prose and banners stop about `40px` before the right page edge; note prose and small banners keep the narrower `48px` right-side breathing room.
 - Main page width is `min(calc(100% - 128px), 700px)`.
 - Mobile page width is `min(calc(100% - 32px), 700px)`.
 - Links are visually plain until hover. Do not add blue link styling except if a future design explicitly asks for it.
@@ -54,7 +54,7 @@ This site is a public journal. The visual language is plain, quiet, editorial, a
 - Keep `My thoughts below` highlighted, with the period outside the highlight.
 - Homepage image has no caption.
 - Homepage image crop:
-  - width matches the homepage prose measure, so its right edge aligns with the text column on desktop and mobile
+  - width matches the homepage/About prose measure, so its right edge aligns with the text column on desktop and mobile
   - height `265px` desktop
   - height `210px` mobile
   - `object-fit: cover`
