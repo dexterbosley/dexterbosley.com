@@ -218,6 +218,13 @@
             line-height: 1.52;
         }
 
+        .home-intro > p,
+        .about-copy,
+        .home-banner {
+            width: 100%;
+            max-width: var(--home-copy-measure);
+        }
+
         .home-intro p {
             margin: 0 0 1.35rem;
         }
@@ -237,8 +244,6 @@
         }
 
         .home-banner {
-            width: 100%;
-            max-width: var(--home-copy-measure);
             margin: 2.2rem 0 2.2rem;
         }
 
@@ -756,13 +761,17 @@
             }
 
             .home-intro {
-                max-width: min(var(--home-copy-measure), calc(100% - 48px));
+                max-width: 100%;
                 margin-bottom: 4rem;
             }
 
+            .home-intro > p,
+            .about-copy,
             .home-banner {
-                width: 100%;
                 max-width: min(var(--home-copy-measure), calc(100% - 48px));
+            }
+
+            .home-banner {
                 margin: 2rem 0 2rem;
             }
 

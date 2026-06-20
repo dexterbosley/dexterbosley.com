@@ -218,6 +218,13 @@
             line-height: 1.52;
         }
 
+        .home-intro > p,
+        .about-copy,
+        .home-banner {
+            width: 100%;
+            max-width: var(--home-copy-measure);
+        }
+
         .home-intro p {
             margin: 0 0 1.35rem;
         }
@@ -237,8 +244,6 @@
         }
 
         .home-banner {
-            width: 100%;
-            max-width: var(--home-copy-measure);
             margin: 2.2rem 0 2.2rem;
         }
 
@@ -756,13 +761,17 @@
             }
 
             .home-intro {
-                max-width: min(var(--home-copy-measure), calc(100% - 48px));
+                max-width: 100%;
                 margin-bottom: 4rem;
             }
 
+            .home-intro > p,
+            .about-copy,
             .home-banner {
-                width: 100%;
                 max-width: min(var(--home-copy-measure), calc(100% - 48px));
+            }
+
+            .home-banner {
                 margin: 2rem 0 2rem;
             }
 
@@ -855,7 +864,7 @@
 <p>A woman ran across the street. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve watched the concrete stain.</p>
 <p>There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.</p>
 <h2 id="iii-last"><strong>III.</strong> <em><strong>Last</strong></em></h2>
-<p>A man approached, not a priest.</p>
+<p>A man approached, not the priest.</p>
 <p>He stopped at their feet. &ldquo;It&rsquo;s time to carry your mom outside.&rdquo; Steve got up first and rubbed his eyes.</p>
 
     </div>

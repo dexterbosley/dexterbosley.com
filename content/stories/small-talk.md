@@ -47,6 +47,6 @@ There were sirens and flashes and uniforms. Elliott sank back into the shade. St
 
 ## **III.** ***Last***
 
-A man approached, not a priest.
+A man approached, not the priest.
 
 He stopped at their feet. "It's time to carry your mom outside." Steve got up first and rubbed his eyes.
