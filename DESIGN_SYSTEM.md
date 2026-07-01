@@ -62,7 +62,8 @@ A plain public journal: quiet, editorial, document-like. Do not make it feel lik
 ## Subscribe And Analytics
 
 - `/subscribe/` stays a plain editorial page, not a product landing page.
-- Send visitors to the hosted listmonk signup form instead of embedding a custom form on the static site.
+- `/subscribe/` embeds a compact themed form that posts to listmonk's public subscription API.
+- Keep subscribe fields plain: first name, last name, email, and a simple uppercase submit control.
 - Analytics should remain invisible and lowkey. GoatCounter is the only traffic script.
 
 ## Do Not Add

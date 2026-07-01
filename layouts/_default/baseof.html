@@ -50,8 +50,14 @@
     {{- $isPost := and .IsPage (in site.Params.mainSections .Section) }}
     <main class="site{{ if $isPost }} site-post{{ end }}">
         {{- if not $isPost }}
+        {{- $siteTitle := "BY DEXTER BOSLEY" }}
+        {{- if eq .Layout "about" }}
+            {{- $siteTitle = "ABOUT DEXTER BOSLEY" }}
+        {{- else if eq .Layout "subscribe" }}
+            {{- $siteTitle = "SUBSCRIBE TO DEXTER BOSLEY" }}
+        {{- end }}
         <header class="site-header">
-            <span class="site-title">{{ if eq .Layout "about" }}ABOUT DEXTER BOSLEY{{ else }}BY DEXTER BOSLEY{{ end }}</span>
+            <span class="site-title">{{ $siteTitle }}</span>
             {{ partial "theme-toggle.html" . }}
         </header>
         {{- end }}

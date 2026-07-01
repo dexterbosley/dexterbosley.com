@@ -26,7 +26,7 @@ Only publish when Dexter explicitly asks. Publishing rebuilds `docs/`, commits, 
 
 - Subscribe page: `/subscribe/`
 - Newsletter control panel: `https://newsletter.dexterbosley.com`
-- Public signup form: `https://newsletter.dexterbosley.com/subscription/form`
+- Public subscription API: `https://newsletter.dexterbosley.com/api/public/subscription`
 - listmonk list: `Free Updates`
 - list UUID: `853dabc3-3d14-4070-92d6-95f37ad85ae9`
 - Sender: `Dexter Bosley <updates@dexterbosley.com>`
@@ -42,8 +42,8 @@ Before publishing newsletter or tracking changes:
 1. Run `hugo --cleanDestinationDir`.
 2. Confirm `docs/subscribe/index.html` exists.
 3. Confirm generated pages include `https://dexterbosley.goatcounter.com/count`.
-4. Open `https://newsletter.dexterbosley.com/subscription/form` and confirm the public form loads.
-5. For end-to-end signup checks, submit a test address and confirm the opt-in email from `updates@dexterbosley.com`.
+4. Open `/subscribe/` and confirm the public form points to `https://newsletter.dexterbosley.com/api/public/subscription`.
+5. For end-to-end signup checks, submit a test address through `/subscribe/` and confirm the opt-in email from `updates@dexterbosley.com`.
 
 To send a post as an email:
 

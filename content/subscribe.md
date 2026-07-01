@@ -7,5 +7,3 @@ build:
 ---
 
 Get free email updates when I publish new posts.
-
-[Subscribe through the mailing list](https://newsletter.dexterbosley.com/subscription/form).

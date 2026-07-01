@@ -1,11 +1,28 @@
 {{- define "main" }}
-<header class="page-header">
-    <h1 class="page-title">{{ .Title }}</h1>
-</header>
-
 <section class="home-intro subscribe-intro" aria-label="Subscribe">
-    <div class="about-copy">
+    <figure class="home-banner" aria-label="Lake and mountains at dusk">
+        {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
+    </figure>
+    <div class="about-copy subscribe-copy">
         {{ .Content }}
     </div>
+    <form class="subscribe-form" action="https://newsletter.dexterbosley.com/api/public/subscription" method="post" data-subscribe-form>
+        <input type="hidden" name="l" value="853dabc3-3d14-4070-92d6-95f37ad85ae9">
+        <input type="hidden" name="name" value="" data-subscribe-name>
+        <div class="subscribe-field">
+            <label for="subscribe-first-name">First name</label>
+            <input id="subscribe-first-name" type="text" autocomplete="given-name" required data-subscribe-first>
+        </div>
+        <div class="subscribe-field">
+            <label for="subscribe-last-name">Last name</label>
+            <input id="subscribe-last-name" type="text" autocomplete="family-name" required data-subscribe-last>
+        </div>
+        <div class="subscribe-field">
+            <label for="subscribe-email">Email</label>
+            <input id="subscribe-email" type="email" name="email" autocomplete="email" required data-subscribe-email>
+        </div>
+        <button class="subscribe-submit" type="submit" data-subscribe-submit>Subscribe</button>
+        <p class="subscribe-message" role="status" aria-live="polite" hidden data-subscribe-message></p>
+    </form>
 </section>
 {{- end }}

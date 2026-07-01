@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>public thoughts</title>
-    <link rel="canonical" href="https://www.dexterbosley.com/essays/placeholder-essay-systems/">
+    <link rel="canonical" href="http://127.0.0.1:1313/essays/placeholder-essay-systems/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="/fonts/source-serif-4/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,15 +13,15 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Placeholder Essay: Small Systems">
     <meta property="og:description" content="This is a placeholder essay for testing the rhythm of five essay entries. I. First Argument section placeholder. Keep, rename, or delete once the real essay …">
-    <meta property="og:url" content="https://www.dexterbosley.com/essays/placeholder-essay-systems/">
-    <meta property="og:image" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
+    <meta property="og:url" content="http://127.0.0.1:1313/essays/placeholder-essay-systems/">
+    <meta property="og:image" content="http://127.0.0.1:1313/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1313/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
     <meta property="og:image:alt" content="Soft placeholder ridgeline under pale sky">
     <meta property="article:published_time" content="2026-05-20T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Placeholder Essay: Small Systems">
     <meta name="twitter:description" content="This is a placeholder essay for testing the rhythm of five essay entries. I. First Argument section placeholder. Keep, rename, or delete once the real essay …">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
+    <meta name="twitter:image" content="http://127.0.0.1:1313/images/placeholders/essay-story-banner-placeholder_hu_4bc9d4f37ab59d6e.jpg">
     <meta name="twitter:image:alt" content="Soft placeholder ridgeline under pale sky">
         <script>
         (function() {
@@ -228,6 +228,7 @@
 
         .home-intro > p,
         .about-copy,
+        .subscribe-form,
         .home-banner {
             width: 100%;
             max-width: var(--home-banner-measure);
@@ -265,6 +266,104 @@
 
         .about-intro .home-banner img {
             object-position: center 48%;
+        }
+
+        .subscribe-intro {
+            margin-bottom: 0;
+        }
+
+        .subscribe-copy {
+            margin-bottom: 1.55rem;
+        }
+
+        .subscribe-form {
+            display: grid;
+            gap: 1.1rem;
+            margin-top: 1.7rem;
+            font-family: var(--font-sans);
+        }
+
+        .subscribe-field {
+            display: grid;
+            gap: 0.32rem;
+        }
+
+        .subscribe-field label {
+            color: var(--muted);
+            font-family: var(--font-sans);
+            font-size: var(--type-meta);
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .subscribe-field input {
+            appearance: none;
+            width: 100%;
+            min-height: 2.28rem;
+            padding: 0.12rem 0 0.38rem;
+            border: 0;
+            border-bottom: 2px solid var(--ink);
+            border-radius: 0;
+            background: transparent;
+            color: var(--ink);
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            line-height: 1.35;
+            letter-spacing: 0;
+        }
+
+        .subscribe-field input:focus {
+            outline: 0;
+            border-bottom-color: var(--highlight-popular);
+        }
+
+        .subscribe-submit {
+            appearance: none;
+            justify-self: start;
+            padding: 0.28rem 0 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: var(--type-meta);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            line-height: 1.2;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .subscribe-submit:hover,
+        .subscribe-submit:focus {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 0.18em;
+        }
+
+        .subscribe-submit:focus-visible {
+            outline: 2px solid var(--ink);
+            outline-offset: 0.24rem;
+        }
+
+        .subscribe-submit[disabled] {
+            color: var(--muted);
+            cursor: default;
+            text-decoration: none;
+        }
+
+        .subscribe-message {
+            margin: 0.2rem 0 0;
+            color: var(--muted);
+            font-family: var(--font-sans);
+            font-size: var(--type-meta);
+            line-height: 1.35;
+        }
+
+        .subscribe-message[data-state="success"] {
+            color: var(--ink);
         }
 
         .home-section {
@@ -840,6 +939,7 @@
 
             .home-intro > p,
             .about-copy,
+            .subscribe-form,
             .home-banner {
                 max-width: min(var(--home-banner-measure), calc(100% - 40px));
             }
@@ -890,7 +990,6 @@
         }
     </style>
 
-    <script data-goatcounter="https://dexterbosley.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <main class="site site-post">
@@ -911,7 +1010,7 @@
             </div>
             <nav class="post-actions-compact" aria-label="Post actions">
                 <a href="/">&lt;- BACK</a>
-                <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/essays/placeholder-essay-systems/" data-share-title="Placeholder Essay: Small Systems">^ SHARE</button>
+                <button class="share-link" type="button" data-share-url="http://127.0.0.1:1313/essays/placeholder-essay-systems/" data-share-title="Placeholder Essay: Small Systems">^ SHARE</button>
             </nav>
         </div>
     </header>
@@ -932,7 +1031,7 @@
 
     <nav class="post-actions" aria-label="Post actions">
         <a href="/">&lt;- BACK</a>
-        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/essays/placeholder-essay-systems/" data-share-title="Placeholder Essay: Small Systems">^ SHARE</button>
+        <button class="share-link" type="button" data-share-url="http://127.0.0.1:1313/essays/placeholder-essay-systems/" data-share-title="Placeholder Essay: Small Systems">^ SHARE</button>
     </nav>
 </article>
 
@@ -1010,6 +1109,71 @@ document.querySelectorAll('.share-link').forEach(function(button) {
             }
 
             updateButtons();
+        })();
+    </script>
+    <script>
+        (function() {
+            var form = document.querySelector("[data-subscribe-form]");
+            if (!form) return;
+
+            var first = form.querySelector("[data-subscribe-first]");
+            var last = form.querySelector("[data-subscribe-last]");
+            var name = form.querySelector("[data-subscribe-name]");
+            var message = form.querySelector("[data-subscribe-message]");
+            var submit = form.querySelector("[data-subscribe-submit]");
+            var submitText = submit ? submit.textContent : "";
+
+            function trimmedValue(input) {
+                return input && input.value ? input.value.trim() : "";
+            }
+
+            function syncName() {
+                if (!name) return;
+                name.value = [trimmedValue(first), trimmedValue(last)].filter(Boolean).join(" ");
+            }
+
+            function showMessage(text, state) {
+                if (!message) return;
+                message.textContent = text;
+                message.dataset.state = state;
+                message.hidden = false;
+            }
+
+            form.addEventListener("submit", function(event) {
+                syncName();
+
+                if (!window.fetch || !window.FormData) return;
+                event.preventDefault();
+
+                if (message) {
+                    message.hidden = true;
+                    message.textContent = "";
+                    delete message.dataset.state;
+                }
+
+                if (submit) {
+                    submit.disabled = true;
+                    submit.textContent = "Subscribing";
+                }
+
+                window.fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(form),
+                    credentials: "omit"
+                }).then(function(response) {
+                    if (!response.ok) throw new Error("Subscription failed");
+                    form.reset();
+                    syncName();
+                    showMessage("Check your inbox to confirm.", "success");
+                }).catch(function() {
+                    showMessage("Couldn\u2019t subscribe right now. Try again in a moment.", "error");
+                }).finally(function() {
+                    if (submit) {
+                        submit.disabled = false;
+                        submit.textContent = submitText;
+                    }
+                });
+            });
         })();
     </script>
     <script>

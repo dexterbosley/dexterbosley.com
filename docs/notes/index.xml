@@ -2,241 +2,241 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Dexter Bosley</title>
-    <link>https://www.dexterbosley.com/notes/</link>
+    <link>http://127.0.0.1:1313/notes/</link>
     <description>Recent content in Notes on Dexter Bosley</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tatie</title>
-      <link>https://www.dexterbosley.com/notes/tatie/</link>
+      <link>http://127.0.0.1:1313/notes/tatie/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/tatie/</guid>
-      <description>&lt;p&gt;&lt;picture&gt;&#xA;    &lt;img src=&#34;https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg&#34; srcset=&#34;https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w&#34; sizes=&#34;(max-width: 760px) calc(100vw - 32px), 580px&#34; width=&#34;257&#34; height=&#34;385&#34; alt=&#34;Book cover of A Moveable Feast by Ernest Hemingway&#34; class=&#34;review-image&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xA;&lt;/picture&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;A Moveable Feast (1964), Ernest Hemingway.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tatie: I really just love this nickname. Think about it a lot.&lt;/p&gt;</description>
+      <guid>http://127.0.0.1:1313/notes/tatie/</guid>
+      <description>&lt;p&gt;&lt;picture&gt;&#xA;    &lt;img src=&#34;http://127.0.0.1:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg&#34; srcset=&#34;http://127.0.0.1:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w&#34; sizes=&#34;(max-width: 760px) calc(100vw - 32px), 580px&#34; width=&#34;257&#34; height=&#34;385&#34; alt=&#34;Book cover of A Moveable Feast by Ernest Hemingway&#34; class=&#34;review-image&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xA;&lt;/picture&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;A Moveable Feast (1964), Ernest Hemingway.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tatie: I really just love this nickname. Think about it a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder</title>
-      <link>https://www.dexterbosley.com/notes/placeholder-note/</link>
+      <link>http://127.0.0.1:1313/notes/placeholder-note/</link>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/placeholder-note/</guid>
+      <guid>http://127.0.0.1:1313/notes/placeholder-note/</guid>
       <description>&lt;p&gt;This is a placeholder note. Notes are for shorter, tweet-like entries with a small banner image.&lt;/p&gt;&#xA;&lt;p&gt;Use this format for a quick thought, working observation, or small update that should still appear in the public journal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What The Treadmill Taught Me</title>
-      <link>https://www.dexterbosley.com/notes/what-the-treadmill-taught-me/</link>
+      <link>http://127.0.0.1:1313/notes/what-the-treadmill-taught-me/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/what-the-treadmill-taught-me/</guid>
+      <guid>http://127.0.0.1:1313/notes/what-the-treadmill-taught-me/</guid>
       <description>&lt;p&gt;Placeholder note. Short, direct, and easy to replace.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cold Start</title>
-      <link>https://www.dexterbosley.com/notes/cold-start/</link>
+      <link>http://127.0.0.1:1313/notes/cold-start/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/cold-start/</guid>
+      <guid>http://127.0.0.1:1313/notes/cold-start/</guid>
       <description>&lt;p&gt;Placeholder note for the notes index.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Desk Notes, Week 11</title>
-      <link>https://www.dexterbosley.com/notes/desk-notes-week-11/</link>
+      <link>http://127.0.0.1:1313/notes/desk-notes-week-11/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/desk-notes-week-11/</guid>
+      <guid>http://127.0.0.1:1313/notes/desk-notes-week-11/</guid>
       <description>&lt;p&gt;Placeholder note for testing a slightly longer title.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Last Car On The 6</title>
-      <link>https://www.dexterbosley.com/notes/the-last-car-on-the-6/</link>
+      <link>http://127.0.0.1:1313/notes/the-last-car-on-the-6/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/the-last-car-on-the-6/</guid>
+      <guid>http://127.0.0.1:1313/notes/the-last-car-on-the-6/</guid>
       <description>&lt;p&gt;Placeholder note for the fifth notes slot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder I</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-01/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-01/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-01/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-01/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder II</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-02/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-02/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-02/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-02/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder III</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-03/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-03/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-03/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-03/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder IV</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-04/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-04/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-04/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-04/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder V</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-05/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-05/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-05/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-05/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder VI</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-06/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-06/</link>
       <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-06/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-06/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder VII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-07/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-07/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-07/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-07/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder VIII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-08/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-08/</link>
       <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-08/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-08/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder IX</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-09/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-09/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-09/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-09/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder X</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-10/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-10/</link>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-10/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-10/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XI</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-11/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-11/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-11/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-11/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-12/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-12/</link>
       <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-12/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-12/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XIII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-13/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-13/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-13/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-13/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XIV</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-14/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-14/</link>
       <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-14/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-14/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XV</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-15/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-15/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-15/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-15/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XVI</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-16/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-16/</link>
       <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-16/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-16/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XVII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-17/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-17/</link>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-17/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-17/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XVIII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-18/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-18/</link>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-18/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-18/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XIX</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-19/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-19/</link>
       <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-19/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-19/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XX</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-20/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-20/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-20/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-20/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXI</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-21/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-21/</link>
       <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-21/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-21/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-22/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-22/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-22/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-22/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXIII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-23/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-23/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-23/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-23/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXIV</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-24/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-24/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-24/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-24/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXV</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-25/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-25/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-25/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-25/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXVI</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-26/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-26/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-26/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-26/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder XXVII</title>
-      <link>https://www.dexterbosley.com/notes/recent-placeholder-27/</link>
+      <link>http://127.0.0.1:1313/notes/recent-placeholder-27/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/recent-placeholder-27/</guid>
+      <guid>http://127.0.0.1:1313/notes/recent-placeholder-27/</guid>
       <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
     </item>
   </channel>
