@@ -4,6 +4,6 @@ layout: "about"
 description: "About Dexter Bosley."
 ---
 
-Born in San Francisco and raised in San Mateo. Currently in NYC. Contact me via email at [dexterbosley@gmail.com](mailto:dexterbosley@gmail.com).
+From San Mateo and currently in NYC. Contact me via email at [dexterbosley@gmail.com](mailto:dexterbosley@gmail.com).
 
-You can see my work experience [here](https://www.linkedin.com/in/dexterbosley/). I feel best on a twenty-minute walk. <mark class="highlight-inline">My thoughts below</mark>.
+You can see my work experience [here](https://www.linkedin.com/in/dexterbosley/). I feel best on a twenty-minute walk.

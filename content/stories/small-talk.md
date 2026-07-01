@@ -3,7 +3,7 @@ title: "Small Talk"
 date: 2026-01-24
 draft: false
 type: story
-description: "It was a sticky Thursday afternoon."
+description: "It was a sticky Thursday."
 home_recent: true
 cover:
   image: "/images/chamonix-banner.jpg"
@@ -13,7 +13,7 @@ cover:
 
 ## **I.** ***First***
 
-It was a sticky Thursday afternoon. Wet air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
+It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
 
 ## **II.** ***Next***
 
@@ -29,13 +29,13 @@ Steve smiled and closed his eyes. "So where's Mom now?"
 
 Elliott shook his head. "I don't know."
 
-Steve turned towards the tall oak doors. "Mom never liked this place."
+Steve turned towards the tall oak doors. "She never liked this place."
 
-"Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group—?" A scream fell from above.
+"Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group—?" A scream fell.
 
 Then there was a crash.
 
-On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Free from a cheap vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl and a balcony rail.
+On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Finally free from a vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl and a balcony rail.
 
 "Did she drop that?"
 
