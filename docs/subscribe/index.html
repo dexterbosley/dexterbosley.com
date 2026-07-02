@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>public thoughts</title>
-    <link rel="canonical" href="http://127.0.0.1:1313/subscribe/">
+    <link rel="canonical" href="https://www.dexterbosley.com/subscribe/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="/fonts/source-serif-4/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,14 +13,14 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Subscribe">
     <meta property="og:description" content="Free email updates when Dexter publishes new posts.">
-    <meta property="og:url" content="http://127.0.0.1:1313/subscribe/">
-    <meta property="og:image" content="http://127.0.0.1:1313/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
-    <meta property="og:image:secure_url" content="http://127.0.0.1:1313/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
+    <meta property="og:url" content="https://www.dexterbosley.com/subscribe/">
+    <meta property="og:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
+    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
     <meta property="og:image:alt" content="People on a lawn beside a lake with mountains in the distance">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Subscribe">
     <meta name="twitter:description" content="Free email updates when Dexter publishes new posts.">
-    <meta name="twitter:image" content="http://127.0.0.1:1313/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
+    <meta name="twitter:image" content="https://www.dexterbosley.com/images/homepage-lake-annecy_hu_7ee1c575a48caaa3.jpeg">
     <meta name="twitter:image:alt" content="People on a lawn beside a lake with mountains in the distance">
         <script>
         (function() {
@@ -989,6 +989,7 @@
         }
     </style>
 
+    <script data-goatcounter="https://dexterbosley.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <main class="site">
@@ -1122,9 +1123,9 @@
                 window.fetch(form.action, {
                     method: "POST",
                     body: new FormData(form),
-                    credentials: "omit"
+                    credentials: "omit",
+                    mode: "no-cors"
                 }).then(function(response) {
-                    if (!response.ok) throw new Error("Subscription failed");
                     form.reset();
                     syncName();
                     showMessage("Check your inbox to confirm.", "success");

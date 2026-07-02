@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Essays on Dexter Bosley</title>
-    <link>http://127.0.0.1:1313/essays/</link>
+    <link>https://www.dexterbosley.com/essays/</link>
     <description>Recent content in Essays on Dexter Bosley</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://127.0.0.1:1313/essays/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.dexterbosley.com/essays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Essay: Field Notes</title>
-      <link>http://127.0.0.1:1313/essays/placeholder-essay-field-notes/</link>
+      <link>https://www.dexterbosley.com/essays/placeholder-essay-field-notes/</link>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://127.0.0.1:1313/essays/placeholder-essay-field-notes/</guid>
+      <guid>https://www.dexterbosley.com/essays/placeholder-essay-field-notes/</guid>
       <description>&lt;p&gt;This is a placeholder essay for testing the home page section layout.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Longer argument placeholder. Replace with the real piece when it is ready.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder Essay: Small Systems</title>
-      <link>http://127.0.0.1:1313/essays/placeholder-essay-systems/</link>
+      <link>https://www.dexterbosley.com/essays/placeholder-essay-systems/</link>
       <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://127.0.0.1:1313/essays/placeholder-essay-systems/</guid>
+      <guid>https://www.dexterbosley.com/essays/placeholder-essay-systems/</guid>
       <description>&lt;p&gt;This is a placeholder essay for testing the rhythm of five essay entries.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Argument section placeholder. Keep, rename, or delete once the real essay exists.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder Essay: The Ledger</title>
-      <link>http://127.0.0.1:1313/essays/placeholder-essay-ledger/</link>
+      <link>https://www.dexterbosley.com/essays/placeholder-essay-ledger/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://127.0.0.1:1313/essays/placeholder-essay-ledger/</guid>
+      <guid>https://www.dexterbosley.com/essays/placeholder-essay-ledger/</guid>
       <description>&lt;p&gt;This is a placeholder essay for testing title length, dates, and spacing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Replace this with the body of the essay.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder Essay: Attention Debt</title>
-      <link>http://127.0.0.1:1313/essays/placeholder-essay-attention/</link>
+      <link>https://www.dexterbosley.com/essays/placeholder-essay-attention/</link>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://127.0.0.1:1313/essays/placeholder-essay-attention/</guid>
+      <guid>https://www.dexterbosley.com/essays/placeholder-essay-attention/</guid>
       <description>&lt;p&gt;This is a placeholder essay for the fifth slot in the essay section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Use this file as a temporary stand-in for a future long-form piece.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Useful Tools</title>
-      <link>http://127.0.0.1:1313/essays/on-useful-digital-tools/</link>
+      <link>https://www.dexterbosley.com/essays/on-useful-digital-tools/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://127.0.0.1:1313/essays/on-useful-digital-tools/</guid>
+      <guid>https://www.dexterbosley.com/essays/on-useful-digital-tools/</guid>
       <description>&lt;h2 id=&#34;i-traditional-software&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Traditional Software&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I define “&lt;mark&gt;traditional software&lt;/mark&gt;” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).&lt;/p&gt;&#xA;&lt;p&gt;Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.&lt;/p&gt;&#xA;&lt;p&gt;More tables, more transformations, more customers.&lt;/p&gt;</description>
     </item>
   </channel>

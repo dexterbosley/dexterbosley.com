@@ -87,9 +87,9 @@
                 window.fetch(form.action, {
                     method: "POST",
                     body: new FormData(form),
-                    credentials: "omit"
+                    credentials: "omit",
+                    mode: "no-cors"
                 }).then(function(response) {
-                    if (!response.ok) throw new Error("Subscription failed");
                     form.reset();
                     syncName();
                     showMessage("Check your inbox to confirm.", "success");
