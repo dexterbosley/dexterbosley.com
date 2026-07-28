@@ -1,234 +1,170 @@
     <script>
         (function() {
             var root = document.documentElement;
-            var buttons = document.querySelectorAll("[data-theme-choice]");
+            var themeButtons = document.querySelectorAll("[data-theme-choice]");
+            var sizeToggle = document.querySelector("[data-text-size-toggle]");
+            var sizeStrip = document.querySelector("[data-text-size-strip]");
+            var sizeButtons = document.querySelectorAll("[data-text-size-choice]");
 
-            function preferredTheme() {
-                if (root.dataset.theme === "light" || root.dataset.theme === "dark") {
-                    return root.dataset.theme;
-                }
-                if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                    return "dark";
-                }
-                return "light";
+            function activeTheme() {
+                if (root.dataset.theme === "light" || root.dataset.theme === "dark") return root.dataset.theme;
+                return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
             }
 
-            function updateButtons() {
-                var activeTheme = preferredTheme();
-                buttons.forEach(function(button) {
-                    button.setAttribute("aria-pressed", button.dataset.themeChoice === activeTheme ? "true" : "false");
+            function activeSize() {
+                return root.dataset.size === "small" || root.dataset.size === "large" ? root.dataset.size : "standard";
+            }
+
+            function persist(key, value) {
+                try {
+                    window.localStorage.setItem(key, value);
+                } catch (error) {}
+            }
+
+            function track(name) {
+                if (!name || !window.goatcounter || typeof window.goatcounter.count !== "function") return;
+                window.goatcounter.count({ path: "event/" + name, title: name, event: true });
+            }
+
+            function syncControls() {
+                var theme = activeTheme();
+                var size = activeSize();
+                themeButtons.forEach(function(button) {
+                    button.setAttribute("aria-pressed", button.dataset.themeChoice === theme ? "true" : "false");
                 });
+                sizeButtons.forEach(function(button) {
+                    button.setAttribute("aria-pressed", button.dataset.textSizeChoice === size ? "true" : "false");
+                });
+                if (sizeToggle) sizeToggle.textContent = size === "large" ? "(^)" : size === "small" ? "(v)" : "(-)";
             }
 
-            buttons.forEach(function(button) {
+            themeButtons.forEach(function(button) {
                 button.addEventListener("click", function() {
                     var theme = button.dataset.themeChoice;
                     if (theme !== "light" && theme !== "dark") return;
                     root.dataset.theme = theme;
-                    try {
-                        window.localStorage.setItem("theme", theme);
-                    } catch (error) {}
-                    updateButtons();
+                    persist("theme", theme);
+                    syncControls();
+                });
+            });
+
+            if (sizeToggle && sizeStrip) {
+                sizeToggle.addEventListener("click", function() {
+                    var open = sizeStrip.hasAttribute("hidden");
+                    if (open) {
+                        sizeStrip.removeAttribute("hidden");
+                    } else {
+                        sizeStrip.setAttribute("hidden", "");
+                    }
+                    sizeToggle.setAttribute("aria-expanded", open ? "true" : "false");
+                });
+            }
+
+            sizeButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var size = button.dataset.textSizeChoice;
+                    if (size !== "small" && size !== "standard" && size !== "large") return;
+                    root.dataset.size = size;
+                    persist("textSize", size);
+                    syncControls();
                 });
             });
 
             if (window.matchMedia) {
-                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateButtons);
+                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncControls);
             }
 
-            updateButtons();
-        })();
-    </script>
-    <script>
-        (function() {
-            var form = document.querySelector("[data-subscribe-form]");
-            if (!form) return;
+            document.querySelectorAll("[data-goat-event]").forEach(function(link) {
+                link.addEventListener("click", function() {
+                    track(link.dataset.goatEvent);
+                });
+            });
 
-            var first = form.querySelector("[data-subscribe-first]");
-            var last = form.querySelector("[data-subscribe-last]");
-            var name = form.querySelector("[data-subscribe-name]");
-            var message = form.querySelector("[data-subscribe-message]");
-            var submit = form.querySelector("[data-subscribe-submit]");
-            var submitText = submit ? submit.textContent : "";
+            document.querySelectorAll("[data-subscribe-form]").forEach(function(form) {
+                var message = form.parentElement ? form.parentElement.querySelector("[data-subscribe-message]") : null;
+                var submit = form.querySelector("[data-subscribe-submit]");
+                var originalText = submit ? submit.textContent : "";
 
-            function trimmedValue(input) {
-                return input && input.value ? input.value.trim() : "";
-            }
-
-            function syncName() {
-                if (!name) return;
-                name.value = [trimmedValue(first), trimmedValue(last)].filter(Boolean).join(" ");
-            }
-
-            function showMessage(text, state) {
-                if (!message) return;
-                message.textContent = text;
-                message.dataset.state = state;
-                message.hidden = false;
-            }
-
-            form.addEventListener("submit", function(event) {
-                syncName();
-
-                if (!window.fetch || !window.FormData) return;
-                event.preventDefault();
-
-                if (message) {
-                    message.hidden = true;
-                    message.textContent = "";
-                    delete message.dataset.state;
+                function showMessage(text, state) {
+                    if (!message) return;
+                    message.textContent = text;
+                    message.dataset.state = state;
+                    message.hidden = false;
                 }
 
-                if (submit) {
-                    submit.disabled = true;
-                    submit.textContent = "Subscribing";
-                }
-
-                window.fetch(form.action, {
-                    method: "POST",
-                    body: new FormData(form),
-                    credentials: "omit",
-                    mode: "no-cors"
-                }).then(function(response) {
-                    form.reset();
-                    syncName();
-                    showMessage("Check your inbox to confirm.", "success");
-                }).catch(function() {
-                    showMessage("Couldn\u2019t subscribe right now. Try again in a moment.", "error");
-                }).finally(function() {
+                form.addEventListener("submit", function(event) {
+                    if (!window.fetch || !window.FormData) return;
+                    event.preventDefault();
+                    track("subscribe-attempt");
+                    if (message) {
+                        message.hidden = true;
+                        message.textContent = "";
+                        delete message.dataset.state;
+                    }
                     if (submit) {
-                        submit.disabled = false;
-                        submit.textContent = submitText;
+                        submit.disabled = true;
+                        submit.textContent = "receiving";
+                    }
+
+                    window.fetch(form.dataset.fetchAction || form.action, {
+                        method: "POST",
+                        body: new FormData(form),
+                        credentials: "omit",
+                        mode: "no-cors"
+                    }).then(function() {
+                        form.reset();
+                        showMessage("Check your email.", "success");
+                        track("subscribe-success");
+                        if (submit) {
+                            submit.textContent = "received";
+                            window.setTimeout(function() {
+                                submit.textContent = originalText;
+                            }, 1800);
+                        }
+                    }).catch(function() {
+                        showMessage("Could not subscribe right now.", "error");
+                        track("subscribe-error");
+                    }).finally(function() {
+                        if (submit) {
+                            submit.disabled = false;
+                            if (submit.textContent === "receiving") submit.textContent = originalText;
+                        }
+                    });
+                });
+            });
+
+            document.querySelectorAll("[data-share-url]").forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var url = button.getAttribute("data-share-url") || window.location.href;
+                    var title = button.getAttribute("data-share-title") || document.title;
+                    var original = button.textContent;
+
+                    function copied() {
+                        button.textContent = "COPIED";
+                        window.setTimeout(function() {
+                            button.textContent = original;
+                        }, 1600);
+                    }
+
+                    function fallbackCopy() {
+                        if (navigator.clipboard && window.isSecureContext) {
+                            return navigator.clipboard.writeText(url).then(copied);
+                        }
+                        window.prompt("Copy this link:", url);
+                        copied();
+                        return Promise.resolve();
+                    }
+
+                    if (navigator.share) {
+                        navigator.share({ title: title, url: url }).catch(function(error) {
+                            if (!error || error.name !== "AbortError") fallbackCopy();
+                        });
+                    } else {
+                        fallbackCopy();
                     }
                 });
             });
-        })();
-    </script>
-    <script>
-        (function() {
-            document.querySelectorAll("[data-recent-component]").forEach(function(component) {
-                var rows = Array.prototype.slice.call(component.querySelectorAll("[data-recent-row]"));
-                var previous = component.querySelector("[data-recent-prev]");
-                var next = component.querySelector("[data-recent-next]");
-                var pageList = component.querySelector("[data-recent-page-list]");
-                var pageButtons = Array.prototype.slice.call(component.querySelectorAll("[data-recent-page-button]"));
-                var page = 0;
-                var maxPage = rows.reduce(function(max, row) {
-                    return Math.max(max, Number(row.dataset.page) || 0);
-                }, 0);
 
-                function renderPageButtons() {
-                    if (!pageList) return;
-                    pageList.querySelectorAll("[data-recent-ellipsis]").forEach(function(ellipsis) {
-                        ellipsis.remove();
-                    });
-
-                    var previousVisible = -1;
-                    pageButtons.forEach(function(button) {
-                        var buttonPage = Number(button.dataset.recentPageButton) || 0;
-                        var visible = pageButtons.length <= 7 ||
-                            buttonPage === 0 ||
-                            buttonPage === maxPage ||
-                            Math.abs(buttonPage - page) <= 1;
-
-                        button.hidden = !visible;
-                        if (visible) {
-                            if (previousVisible >= 0 && buttonPage - previousVisible > 1) {
-                                var ellipsis = document.createElement("span");
-                                ellipsis.className = "pagination-ellipsis";
-                                ellipsis.setAttribute("aria-hidden", "true");
-                                ellipsis.setAttribute("data-recent-ellipsis", "");
-                                ellipsis.textContent = "...";
-                                pageList.insertBefore(ellipsis, button);
-                            }
-                            previousVisible = buttonPage;
-                        }
-                    });
-                }
-
-                function render() {
-                    rows.forEach(function(row) {
-                        row.hidden = (Number(row.dataset.page) || 0) !== page;
-                    });
-                    if (previous) previous.hidden = page === 0;
-                    if (next) next.hidden = page === maxPage;
-                    pageButtons.forEach(function(button) {
-                        if (Number(button.dataset.recentPageButton) === page) {
-                            button.setAttribute("aria-current", "page");
-                        } else {
-                            button.removeAttribute("aria-current");
-                        }
-                    });
-                    renderPageButtons();
-                }
-
-                component.addEventListener("click", function(event) {
-                    var target = event.target.closest("button");
-                    if (!target || !component.contains(target)) return;
-
-                    if (target.matches("[data-recent-prev]")) {
-                        page = Math.max(0, page - 1);
-                        render();
-                    } else if (target.matches("[data-recent-next]")) {
-                        page = Math.min(maxPage, page + 1);
-                        render();
-                    } else if (target.matches("[data-recent-page-button]")) {
-                        page = Math.max(0, Math.min(maxPage, Number(target.dataset.recentPageButton) || 0));
-                        render();
-                    }
-                });
-
-                render();
-            });
-        })();
-    </script>
-
-    <script>
-        (function() {
-            var data = document.getElementById("home-prefetch-data");
-            if (!data) return;
-
-            var items;
-            try {
-                items = JSON.parse(data.textContent || "[]");
-            } catch (error) {
-                return;
-            }
-
-            var seen = Object.create(null);
-            var queue = [];
-
-            function add(url, as) {
-                if (!url || seen[url]) return;
-                seen[url] = true;
-                queue.push({ url: url, as: as });
-            }
-
-            items.forEach(function(item) {
-                add(item.url, "document");
-                add(item.image, "image");
-            });
-
-            function prefetchNext() {
-                var item = queue.shift();
-                if (!item) return;
-
-                var link = document.createElement("link");
-                link.rel = "prefetch";
-                link.href = item.url;
-                link.as = item.as;
-                document.head.appendChild(link);
-
-                window.setTimeout(prefetchNext, 90);
-            }
-
-            function start() {
-                var starters = Math.min(3, queue.length);
-                for (var index = 0; index < starters; index += 1) {
-                    prefetchNext();
-                }
-            }
-
-            window.requestIdleCallback ? window.requestIdleCallback(start, { timeout: 1200 }) : window.setTimeout(start, 350);
+            syncControls();
         })();
     </script>

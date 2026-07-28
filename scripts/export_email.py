@@ -5,20 +5,27 @@ Export a generated Hugo post page as email-safe HTML for listmonk.
 Usage:
   python3 scripts/export_email.py notes/tatie
   python3 scripts/export_email.py --all
+  python3 scripts/export_email.py notes/tatie --create-campaign
 """
 
 from __future__ import annotations
 
 import argparse
+import base64
 import html
+import json
+import os
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote, urljoin
+from urllib.request import Request, urlopen
 
 
 BASE_URL = "https://www.dexterbosley.com/"
 OUTPUT_DIR = Path("email")
 POST_SECTIONS = {"essays", "stories", "notes"}
+REQUIRED_CAMPAIGN_ENVS = ("LISTMONK_URL", "LISTMONK_LIST_ID")
 
 
 class Node:
@@ -302,12 +309,111 @@ def output_for_source(source: Path) -> Path:
     return OUTPUT_DIR / relative.with_suffix(".html")
 
 
-def export_one(source: Path) -> Path:
-    _, document = render_email(source)
+def slug_for_source(source: Path) -> str:
+    return source.relative_to("docs").parent.as_posix()
+
+
+def export_one(source: Path) -> tuple[Path, str, str]:
+    subject, document = render_email(source)
     destination = output_for_source(source)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(document, encoding="utf-8")
-    return destination
+    return destination, subject, document
+
+
+def listmonk_auth_header() -> str | None:
+    token = os.environ.get("LISTMONK_API_TOKEN")
+    if token:
+        return f"token {token}"
+    username = os.environ.get("LISTMONK_USERNAME")
+    password = os.environ.get("LISTMONK_PASSWORD")
+    if username and password:
+        encoded = base64.b64encode(f"{username}:{password}".encode()).decode()
+        return f"Basic {encoded}"
+    return None
+
+
+def listmonk_ready() -> tuple[bool, str]:
+    missing = [name for name in REQUIRED_CAMPAIGN_ENVS if not os.environ.get(name)]
+    if not listmonk_auth_header():
+        missing.append("LISTMONK_API_TOKEN or LISTMONK_USERNAME/LISTMONK_PASSWORD")
+    if missing:
+        return False, "Missing listmonk setup: " + ", ".join(missing)
+    return True, ""
+
+
+def listmonk_request(path: str, *, method: str = "GET", payload: dict | None = None) -> dict:
+    base = os.environ["LISTMONK_URL"].rstrip("/")
+    data = None
+    headers = {
+        "Accept": "application/json",
+        "Authorization": listmonk_auth_header() or "",
+    }
+    if payload is not None:
+        data = json.dumps(payload).encode()
+        headers["Content-Type"] = "application/json"
+    request = Request(f"{base}{path}", data=data, headers=headers, method=method)
+    with urlopen(request, timeout=20) as response:
+        body = response.read().decode("utf-8")
+    return json.loads(body) if body else {}
+
+
+def campaign_results(response: dict) -> list[dict]:
+    data = response.get("data", response)
+    if isinstance(data, dict):
+        results = data.get("results", data.get("campaigns", []))
+        return results if isinstance(results, list) else []
+    return data if isinstance(data, list) else []
+
+
+def find_existing_draft(slug: str, subject: str) -> dict | None:
+    query = quote(slug.replace("/", " "))
+    response = listmonk_request(f"/api/campaigns?status=draft&query={query}")
+    for campaign in campaign_results(response):
+        name = str(campaign.get("name", ""))
+        existing_subject = str(campaign.get("subject", ""))
+        status = str(campaign.get("status", "")).lower()
+        if status and status != "draft":
+            continue
+        if slug in name or existing_subject == subject:
+            return campaign
+    return None
+
+
+def create_draft_campaign(source: Path, subject: str, document: str) -> None:
+    if "{{ UnsubscribeURL }}" not in document:
+        raise SystemExit("Refusing to create a campaign: rendered email is missing {{ UnsubscribeURL }}.")
+
+    ready, message = listmonk_ready()
+    if not ready:
+        print(message)
+        print("Local email export completed; campaign draft was not created.")
+        return
+
+    slug = slug_for_source(source)
+    try:
+        existing = find_existing_draft(slug, subject)
+        if existing:
+            print(f"Existing draft campaign found for {slug}: {existing.get('name') or existing.get('subject')}")
+            return
+
+        payload = {
+            "name": f"{slug}: {subject}",
+            "subject": subject,
+            "lists": [int(os.environ["LISTMONK_LIST_ID"])],
+            "type": "regular",
+            "content_type": "html",
+            "body": document,
+            "status": "draft",
+        }
+        template_id = os.environ.get("LISTMONK_TEMPLATE_ID")
+        if template_id:
+            payload["template_id"] = int(template_id)
+        response = listmonk_request("/api/campaigns", method="POST", payload=payload)
+        campaign = response.get("data", response)
+        print(f"Created draft campaign for {slug}: {campaign.get('name', subject) if isinstance(campaign, dict) else subject}")
+    except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        raise SystemExit(f"Could not create listmonk draft campaign: {error}") from error
 
 
 def post_sources() -> list[Path]:
@@ -327,6 +433,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Export Hugo post pages as listmonk-ready email HTML.")
     parser.add_argument("slug", nargs="?", help="Post slug, for example notes/tatie")
     parser.add_argument("--all", action="store_true", help="Export all generated posts")
+    parser.add_argument("--create-campaign", action="store_true", help="Create an idempotent draft listmonk campaign when LISTMONK_* env vars are set")
     args = parser.parse_args()
 
     if args.all:
@@ -337,8 +444,10 @@ def main() -> None:
         parser.error("provide a post slug or --all")
 
     for source in sources:
-        destination = export_one(source)
+        destination, subject, document = export_one(source)
         print(destination)
+        if args.create_campaign:
+            create_draft_campaign(source, subject, document)
 
 
 if __name__ == "__main__":

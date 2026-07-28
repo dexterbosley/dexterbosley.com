@@ -1,59 +1,50 @@
-# DexterBosley.com Obsidian Workflow
+# DexterBosley.com Workflow
 
-The Obsidian folder `dexterbosley.com/` is a doorway into the real Hugo repo at `/Users/dexterbosley/projects/dexterbosley.com`. Edits there are live source edits.
+The Hugo repo lives at `/Users/dexterbosley/Desktop/dexter-ai/projects/dexterbosley-com`. Edit source files here, then rebuild `docs/` before publishing.
 
-## Edit Here
-
-- Essays: `dexterbosley.com/posts/essays/`
-- Stories: `dexterbosley.com/posts/stories/`
-- Notes: `dexterbosley.com/posts/notes/`
-- Starters: `dexterbosley.com/templates/`
-- Design rules: `dexterbosley.com/design-system.md`
-
-## Preview And Publish
-
-From `/Users/dexterbosley/projects/dexterbosley.com`:
+## Preview And Build
 
 ```sh
 hugo server -D
 hugo --cleanDestinationDir
+```
+
+Only publish when Dexter explicitly asks. Publishing rebuilds `docs/`, commits, and pushes:
+
+```sh
 ./publish.sh "Update journal"
 ```
 
-Only publish when Dexter explicitly asks. Publishing rebuilds `docs/`, commits, and pushes to GitHub Pages.
+## Design Source Of Truth
 
-## Newsletter And Analytics
+`DESIGN_SYSTEM.md` is the current source of truth. It supersedes older Reverso prototypes and previous rules about Source Serif, filled section labels, boxed subscribe forms, old Start Here/Recent behavior, and hidden top contact links.
 
-- Subscribe page: `/subscribe/`
-- Newsletter control panel: `https://newsletter.dexterbosley.com`
-- Public subscription API: `https://newsletter.dexterbosley.com/api/public/subscription`
-- listmonk list: `Free Updates`
-- list UUID: `853dabc3-3d14-4070-92d6-95f37ad85ae9`
-- Sender: `Dexter Bosley <updates@dexterbosley.com>`
-- Newsletter host: PikaPods pod `dexter-newsletter`
-- Email sender: Resend, verified domain `dexterbosley.com`
-- DNS provider: Squarespace
-- Analytics dashboard: `https://dexterbosley.goatcounter.com`
+## Required Frontmatter
 
-Keep secrets out of this repo. Resend API keys, listmonk admin passwords, and PikaPods credentials should stay in their dashboards or a private password manager.
+```yaml
+---
+title: "Post Title"
+date: 2026-06-08
+draft: false
+type: essay
+description: "One clean sentence for link previews."
+deck: ""
+cover:
+  image: "post-title_city-country-photo_photo.jpg"
+  alt: "Short description"
+  caption: "City, Country"
+home_recent: true
+---
+```
 
-Before publishing newsletter or tracking changes:
+- Use `type: essay`, `type: story`, or `type: note`.
+- `description` is required for link previews and can be used as a homepage deck.
+- `deck` is optional and only affects homepage rows.
+- If neither `deck` nor `description` exists, the homepage row shows no deck.
+- Essays and stories usually start with Roman headings like `## **I.** ***First***`; notes can start directly.
+- Notes still require cover fields for metadata/share images, but do not render a visible cover banner.
 
-1. Run `hugo --cleanDestinationDir`.
-2. Confirm `docs/subscribe/index.html` exists.
-3. Confirm generated pages include `https://dexterbosley.goatcounter.com/count`.
-4. Open `/subscribe/` and confirm the public form points to `https://newsletter.dexterbosley.com/api/public/subscription`.
-5. For end-to-end signup checks, submit a test address through `/subscribe/` and confirm the opt-in email from `updates@dexterbosley.com`.
-
-To send a post as an email:
-
-1. Run `hugo --cleanDestinationDir`.
-2. Export the post HTML, for example `python3 scripts/export_email.py notes/tatie`.
-3. Open the generated file under `email/`, copy the full HTML, and paste it into a listmonk campaign using the raw HTML editor.
-4. Use a listmonk campaign template whose body is only `{{ template "content" . }}` so listmonk does not wrap the exported page in a second design.
-5. Send a test to yourself before sending to `Free Updates`.
-
-## Post Bundles
+## Images
 
 Use a bundle when a post has local images:
 
@@ -65,44 +56,74 @@ posts/essays/post-slug/
   post-slug_caption-title_review.jpg
 ```
 
-Use source image filenames in the format `post-title_full-caption-title_media-type.ext`, with lowercase kebab case in each segment. Valid media types are `image`, `graph`, `painting`, `photo`, and `review`. Use `review` for book, album, and movie collateral; review images share the same post-body dimensions.
+Use source image filenames in the format `post-title_full-caption-title_media-type.ext`, with lowercase kebab case in each segment. Valid media types are `image`, `graph`, `painting`, `photo`, and `review`.
 
-Set `cover.image` to the descriptive cover image filename. Static `/images/...` paths still work, but page bundles or `assets/images/` are preferred for optimized output.
-
-## Required Frontmatter
-
-```yaml
----
-title: "Post Title"
-date: 2026-06-08
-draft: false
-type: essay
-description: ""
-cover:
-  image: "post-title_city-country-photo_photo.jpg"
-  alt: "Short description"
-  caption: "City, Country"
----
-```
-
-Use `type: essay`, `type: story`, or `type: note`. Essays and stories start with Roman headings like `## **I.** ***First***`; notes can start directly. Notes still require `cover` fields for metadata/share images, but do not render a visible cover banner.
-
-## Figures
+Markdown figure pattern:
 
 ```md
-![Alt text](post-title_source-name-2026-note-short-caption_graph.png)
+![Alt text](post-title_source-name-2026-note-short-context_graph.png)
 
-*Source: Source name (year). Note: short caption.*
+*Source: Source name (year). Note: short descriptive caption.*
 ```
 
-Review images for books, albums, and movies use the Markdown title `"review"`:
+Markdown review-image pattern:
 
 ```md
-![Book cover alt text](post-title_name-year-artist_review.jpg "review")
+![Review item alt text](post-title_name-year-artist_review.jpg "review")
 
 *Name (year), Artist.*
 ```
 
-For notes, put the review image and caption first, then body text after a blank line. Book, album, and movie review images use the fixed review treatment. Any other note image should use the same left-aligned width treatment as Home/About text, and note body text follows that same width.
+## Newsletter And Analytics
 
-Keep captions short and formal. Do not append media-type suffixes such as `- photo` or `- painting`. Do not use `***` or horizontal rules as dividers.
+- Subscribe form endpoint: `https://newsletter.dexterbosley.com/subscription/form`
+- Fetch endpoint for enhanced subscribe: `https://newsletter.dexterbosley.com/api/public/subscription`
+- listmonk list UUID: `853dabc3-3d14-4070-92d6-95f37ad85ae9`
+- Sender: `Dexter Bosley <updates@dexterbosley.com>`
+- Analytics dashboard: `https://dexterbosley.goatcounter.com`
+- GoatCounter is the only analytics script.
+
+Keep secrets out of the repo. Resend API keys, listmonk credentials, and PikaPods credentials stay in their dashboards or a private password manager.
+
+## Pre-Publish Checklist
+
+1. Run `hugo --cleanDestinationDir`.
+2. Open the homepage at desktop and mobile widths.
+3. Confirm header order: `BY DEXTER BOSLEY`, controls, stacked `email`/`linkedin`.
+4. Confirm footer-only `rss` links to `/index.xml`, with `archive` beside it.
+5. Confirm the subscribe form works with JavaScript and has a real no-JS `action`/`method`.
+6. Confirm `POPULAR` and `POSTS` have `UPDATED <MONTH YYYY>` lines.
+7. Confirm generated `/index.xml` contains full post bodies, `content:encoded`, absolute image/link URLs, and `atom:link rel="self"`.
+8. Confirm generated pages include canonical URLs, RSS alternate link, OG/Twitter metadata, 1200x630 image dimensions, favicon, apple touch icon, and theme-color meta.
+9. Confirm `/robots.txt`, `/sitemap.xml`, `/404.html`, and `/archive/` exist.
+10. Confirm GoatCounter production script appears only in production output.
+
+## Email Export And Campaign Drafts
+
+Export a post after building:
+
+```sh
+python3 scripts/export_email.py notes/tatie
+```
+
+Optionally create an idempotent draft listmonk campaign:
+
+```sh
+LISTMONK_URL="https://newsletter.dexterbosley.com" \
+LISTMONK_USERNAME="..." \
+LISTMONK_PASSWORD="..." \
+LISTMONK_LIST_ID="..." \
+python3 scripts/export_email.py notes/tatie --create-campaign
+```
+
+`LISTMONK_API_TOKEN` may be used instead of username/password if the server supports it. `LISTMONK_TEMPLATE_ID` is optional. If required env vars are missing, the script still exports local HTML and prints the missing setup.
+
+The script refuses campaign creation when the rendered email lacks `{{ UnsubscribeURL }}`.
+
+## External Follow-Ups
+
+- Submit `https://www.dexterbosley.com/sitemap.xml` in Google Search Console.
+- Verify SPF, DKIM, and DMARC pass for Resend/domain mail.
+- Style the listmonk confirm-opt-in email in listmonk admin: plain, serif, no branding.
+- Validate `https://www.dexterbosley.com/index.xml` with the W3C feed validator after deploy.
+- Cross-post short excerpts to LinkedIn with canonical links back to the site.

@@ -35,7 +35,7 @@ Steve turned towards the tall oak doors. "She never liked this place."
 
 Then there was a crash.
 
-On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass. Finally free from a vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement. Steve looked up. A girl and a balcony rail.
+On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, finally free from a vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement, a girl and a balcony rail.
 
 "Did she drop that?"
 

@@ -1,0 +1,17 @@
+{{- define "main" }}
+<header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+</header>
+
+{{- $pages := sort site.RegularPages "Date" "desc" }}
+<ol class="post-list archive-list">
+    {{- range $page := $pages }}
+    {{- if in site.Params.mainSections $page.Section }}
+    <li class="post-entry">
+        <span class="entry-date">{{ upper ($page.Date.Format "Jan 2006") }}</span>
+        <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+    </li>
+    {{- end }}
+    {{- end }}
+</ol>
+{{- end }}

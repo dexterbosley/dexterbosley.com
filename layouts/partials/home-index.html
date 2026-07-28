@@ -1,63 +1,12 @@
-{{- $recentAll := where site.RegularPages "Params.home_recent" true }}
-{{- $startHerePages := slice }}
-{{- range $path := slice "/stories/small-talk" "/essays/on-useful-digital-tools" "/notes/tatie" }}
-    {{- with site.GetPage $path }}
-        {{- $startHerePages = $startHerePages | append . }}
-    {{- end }}
-{{- end }}
-{{- $recentPinnedPages := slice }}
-{{- range $path := slice "/notes/tatie" "/essays/on-useful-digital-tools" "/stories/small-talk" }}
-    {{- with site.GetPage $path }}
-        {{- $recentPinnedPages = $recentPinnedPages | append . }}
-    {{- end }}
-{{- end }}
-{{- $pinnedPermalinks := slice }}
-{{- range $recentPinnedPages }}
-    {{- $pinnedPermalinks = $pinnedPermalinks | append .RelPermalink }}
-{{- end }}
-{{- $recentPages := $recentPinnedPages }}
-{{- range sort $recentAll "Date" "desc" }}
-    {{- if not (in $pinnedPermalinks .RelPermalink) }}
-        {{- $recentPages = $recentPages | append . }}
-    {{- end }}
-{{- end }}
-{{- $pageSize := 10 }}
-{{- $pageCount := div (add (len $recentPages) (sub $pageSize 1)) $pageSize }}
+{{- $popularPages := slice -}}
+{{- range $path := slice "/stories/small-talk" "/essays/on-useful-digital-tools" "/notes/tatie" -}}
+    {{- with site.GetPage $path -}}
+        {{- $popularPages = $popularPages | append . -}}
+    {{- end -}}
+{{- end -}}
 
-<section class="home-section" aria-labelledby="popular-title">
-    <h2 class="home-section-title" id="popular-title"><span class="section-highlight highlight-popular">Start Here</span></h2>
-    <ol class="post-list post-list-popular">
-        {{- range $startHerePages }}
-        <li class="post-entry">
-            <span class="entry-date">{{ .ReadingTime }} MIN</span>
-            <span class="entry-rule" aria-hidden="true"></span>
-            <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-        {{- end }}
-    </ol>
-</section>
+{{- $postPages := where site.RegularPages "Params.home_recent" true -}}
+{{- $postPages = sort $postPages "Date" "desc" -}}
 
-<section class="home-section" aria-labelledby="recent-title" data-recent-component data-page-size="{{ $pageSize }}">
-    <h2 class="home-section-title" id="recent-title"><span class="section-highlight highlight-popular">Recent</span></h2>
-    <ol class="post-list post-list-recent">
-        {{- range $index, $page := $recentPages }}
-        <li class="post-entry" data-recent-row data-page="{{ div $index $pageSize }}"{{ if ge $index $pageSize }} hidden{{ end }}>
-            <span class="entry-date">{{ partial "date-long.html" .Date }}</span>
-            <span class="entry-rule" aria-hidden="true"></span>
-            <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-        {{- end }}
-    </ol>
-    {{- if gt (len $recentPages) $pageSize }}
-    <nav class="pagination pagination-home" aria-label="Recent pagination" data-recent-pagination>
-        <button type="button" data-recent-prev hidden>Previous</button>
-        <span class="pagination-pages" aria-label="Recent pages" data-recent-page-list>
-            {{- range $pageNumber := seq $pageCount }}
-            {{- $pageIndex := sub $pageNumber 1 }}
-            <button type="button" data-recent-page-button="{{ $pageIndex }}"{{ if eq $pageIndex 0 }} aria-current="page"{{ end }}>{{ add $pageIndex 1 }}</button>
-            {{- end }}
-        </span>
-        <button type="button" data-recent-next>Next</button>
-    </nav>
-    {{- end }}
-</section>
+{{- partial "home-section.html" (dict "id" "popular-title" "label" "Popular" "pages" $popularPages) -}}
+{{- partial "home-section.html" (dict "id" "posts-title" "label" "Posts" "pages" $postPages) -}}

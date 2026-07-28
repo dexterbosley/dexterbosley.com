@@ -1,47 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Stories on Dexter Bosley</title>
-    <link>https://www.dexterbosley.com/stories/</link>
-    <description>Recent content in Stories on Dexter Bosley</description>
+    <title>Dexter Bosley</title>
+    <link>https://www.dexterbosley.com/</link>
+    <description>Full posts from Dexter Bosley.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/stories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 &#43;0000</lastBuildDate>
+    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Story: Night Train</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-night-train/</link>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-night-train/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The platform clock blinked twice and then gave up.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for testing the story section.&lt;/p&gt;</description>
+      <description>I. First The platform clock blinked twice and then gave up.
+II. Next This is placeholder fiction for testing the story section.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The platform clock blinked twice and then gave up.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for testing the story section.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: The Last Car</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-last-car/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 May 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-last-car/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Nobody sat in the last car after midnight.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for testing five story entries.&lt;/p&gt;</description>
+      <description>I. First Nobody sat in the last car after midnight.
+II. Next This is placeholder fiction for testing five story entries.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Nobody sat in the last car after midnight.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for testing five story entries.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: Cold Start</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-cold-start/</link>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-cold-start/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The engine turned once, coughed, and held.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for the story archive preview.&lt;/p&gt;</description>
+      <description>I. First The engine turned once, coughed, and held.
+II. Next This is placeholder fiction for the story archive preview.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The engine turned once, coughed, and held.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for the story archive preview.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: Desk Light</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-desk-light/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-desk-light/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The lamp made a small island of the room.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for the fifth story slot.&lt;/p&gt;</description>
+      <description>I. First The lamp made a small island of the room.
+II. Next This is placeholder fiction for the fifth story slot.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The lamp made a small island of the room.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for the fifth story slot.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Small Talk</title>
       <link>https://www.dexterbosley.com/stories/small-talk/</link>
-      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Elliott shook his head. &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;</description>
+      <description>It was a sticky Thursday.</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>Steve tapped his black shoes together. &ldquo;I&rsquo;m hungry.&rdquo;</p>
+<p>&ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer.&rdquo;</p>
+<p>Steve nodded.</p>
+<p>&ldquo;I&rsquo;ll make you something tonight, maybe tortellini.&rdquo;</p>
+<p>Steve smiled and closed his eyes. &ldquo;So where&rsquo;s Mom now?&rdquo;</p>
+<p>Elliott shook his head. &ldquo;I don&rsquo;t know.&rdquo;</p>
+<p>Steve turned towards the tall oak doors. &ldquo;She never liked this place.&rdquo;</p>
+<p>&ldquo;Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group—?&rdquo; A scream fell.</p>
+<p>Then there was a crash.</p>
+<p>On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, finally free from a vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement, a girl and a balcony rail.</p>
+<p>&ldquo;Did she drop that?&rdquo;</p>
+<p>&ldquo;Had to… look at all… I don&rsquo;t… Stevey, he&rsquo;s not moving,&rdquo; Elliott whispered.</p>
+<p>A woman ran across the street. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve watched the concrete stain.</p>
+<p>There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.</p>
+<h2 id="iii-last"><strong>III.</strong> <em><strong>Last</strong></em></h2>
+<p>A man approached, not the priest.</p>
+<p>He stopped at their feet. &ldquo;It&rsquo;s time to carry your mom outside.&rdquo; Steve got up first and rubbed his eyes.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

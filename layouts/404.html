@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found</title>
+    <link rel="canonical" href="{{ "/" | absURL }}">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    {{ partial "theme-init.html" . }}
+    {{ partial "critical-styles.html" . }}
+</head>
+<body>
+    <main class="site">
+        <header class="site-header">
+            <span class="site-title">BY DEXTER BOSLEY</span>
+            {{ partial "theme-toggle.html" . }}
+        </header>
+        {{ partial "text-size-strip.html" . }}
+        <section class="home-section" aria-labelledby="missing-title">
+            <h1 class="home-section-title" id="missing-title">Not Found</h1>
+            <p class="home-row-deck">The page is not here.</p>
+            <p class="home-row-meta"><a href="/">HOME</a><span><a href="/archive/">ARCHIVE</a></span></p>
+        </section>
+    </main>
+    {{ partial "site-scripts.html" . }}
+</body>
+</html>

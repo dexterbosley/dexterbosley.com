@@ -4,6 +4,7 @@ date: 2026-06-19
 draft: true
 type: essay
 description: "One clean sentence for link previews."
+deck: ""
 cover:
   image: "essay-title_city-place-country-photo_photo.jpg"
   alt: "Short description of the banner image"

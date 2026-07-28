@@ -1,320 +1,536 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dexter Bosley</title>
     <link>https://www.dexterbosley.com/</link>
-    <description>Recent content on Dexter Bosley</description>
+    <description>Full posts from Dexter Bosley.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 &#43;0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tatie</title>
       <link>https://www.dexterbosley.com/notes/tatie/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/tatie/</guid>
-      <description>&lt;p&gt;&lt;picture&gt;&#xA;    &lt;img src=&#34;https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg&#34; srcset=&#34;https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w&#34; sizes=&#34;(max-width: 760px) calc(100vw - 32px), 580px&#34; width=&#34;257&#34; height=&#34;385&#34; alt=&#34;Book cover of A Moveable Feast by Ernest Hemingway&#34; class=&#34;review-image&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&#xA;&lt;/picture&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;A Moveable Feast (1964), Ernest Hemingway.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tatie: I really just love this nickname. Think about it a lot.&lt;/p&gt;</description>
+      <description>Tatie: I really just love this nickname. Think about it a lot.</description>
+      <content:encoded><![CDATA[<p><picture>
+    <img src="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg" srcset="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w" sizes="(max-width: 760px) calc(100vw - 32px), 580px" width="257" height="385" alt="Book cover of A Moveable Feast by Ernest Hemingway" class="review-image" loading="lazy" decoding="async">
+</picture>
+</p>
+<p><em>A Moveable Feast (1964), Ernest Hemingway.</em></p>
+<p>Tatie: I really just love this nickname. Think about it a lot.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder</title>
       <link>https://www.dexterbosley.com/notes/placeholder-note/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/placeholder-note/</guid>
-      <description>&lt;p&gt;This is a placeholder note. Notes are for shorter, tweet-like entries with a small banner image.&lt;/p&gt;&#xA;&lt;p&gt;Use this format for a quick thought, working observation, or small update that should still appear in the public journal.&lt;/p&gt;</description>
+      <description>This is a placeholder note. Notes are for shorter, tweet-like entries with a small banner image.
+Use this format for a quick thought, working observation, or small update that should still appear in the public journal.
+</description>
+      <content:encoded><![CDATA[<p>This is a placeholder note. Notes are for shorter, tweet-like entries with a small banner image.</p>
+<p>Use this format for a quick thought, working observation, or small update that should still appear in the public journal.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Essay: Field Notes</title>
       <link>https://www.dexterbosley.com/essays/placeholder-essay-field-notes/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/placeholder-essay-field-notes/</guid>
-      <description>&lt;p&gt;This is a placeholder essay for testing the home page section layout.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Longer argument placeholder. Replace with the real piece when it is ready.&lt;/p&gt;</description>
+      <description>This is a placeholder essay for testing the home page section layout.
+I. First Longer argument placeholder. Replace with the real piece when it is ready.
+</description>
+      <content:encoded><![CDATA[<p>This is a placeholder essay for testing the home page section layout.</p>
+<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Longer argument placeholder. Replace with the real piece when it is ready.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: Night Train</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-night-train/</link>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-night-train/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The platform clock blinked twice and then gave up.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for testing the story section.&lt;/p&gt;</description>
+      <description>I. First The platform clock blinked twice and then gave up.
+II. Next This is placeholder fiction for testing the story section.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The platform clock blinked twice and then gave up.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for testing the story section.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>What The Treadmill Taught Me</title>
       <link>https://www.dexterbosley.com/notes/what-the-treadmill-taught-me/</link>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/what-the-treadmill-taught-me/</guid>
-      <description>&lt;p&gt;Placeholder note. Short, direct, and easy to replace.&lt;/p&gt;</description>
+      <description>Placeholder note. Short, direct, and easy to replace.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder note. Short, direct, and easy to replace.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Essay: Small Systems</title>
       <link>https://www.dexterbosley.com/essays/placeholder-essay-systems/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 May 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/placeholder-essay-systems/</guid>
-      <description>&lt;p&gt;This is a placeholder essay for testing the rhythm of five essay entries.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Argument section placeholder. Keep, rename, or delete once the real essay exists.&lt;/p&gt;</description>
+      <description>This is a placeholder essay for testing the rhythm of five essay entries.
+I. First Argument section placeholder. Keep, rename, or delete once the real essay exists.
+</description>
+      <content:encoded><![CDATA[<p>This is a placeholder essay for testing the rhythm of five essay entries.</p>
+<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Argument section placeholder. Keep, rename, or delete once the real essay exists.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: The Last Car</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-last-car/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 May 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-last-car/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Nobody sat in the last car after midnight.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for testing five story entries.&lt;/p&gt;</description>
+      <description>I. First Nobody sat in the last car after midnight.
+II. Next This is placeholder fiction for testing five story entries.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Nobody sat in the last car after midnight.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for testing five story entries.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Essay: The Ledger</title>
       <link>https://www.dexterbosley.com/essays/placeholder-essay-ledger/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/placeholder-essay-ledger/</guid>
-      <description>&lt;p&gt;This is a placeholder essay for testing title length, dates, and spacing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Replace this with the body of the essay.&lt;/p&gt;</description>
+      <description>This is a placeholder essay for testing title length, dates, and spacing.
+I. First Replace this with the body of the essay.
+</description>
+      <content:encoded><![CDATA[<p>This is a placeholder essay for testing title length, dates, and spacing.</p>
+<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Replace this with the body of the essay.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: Cold Start</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-cold-start/</link>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-cold-start/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The engine turned once, coughed, and held.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for the story archive preview.&lt;/p&gt;</description>
+      <description>I. First The engine turned once, coughed, and held.
+II. Next This is placeholder fiction for the story archive preview.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The engine turned once, coughed, and held.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for the story archive preview.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Essay: Attention Debt</title>
       <link>https://www.dexterbosley.com/essays/placeholder-essay-attention/</link>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/placeholder-essay-attention/</guid>
-      <description>&lt;p&gt;This is a placeholder essay for the fifth slot in the essay section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Use this file as a temporary stand-in for a future long-form piece.&lt;/p&gt;</description>
+      <description>This is a placeholder essay for the fifth slot in the essay section.
+I. First Use this file as a temporary stand-in for a future long-form piece.
+</description>
+      <content:encoded><![CDATA[<p>This is a placeholder essay for the fifth slot in the essay section.</p>
+<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>Use this file as a temporary stand-in for a future long-form piece.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Cold Start</title>
       <link>https://www.dexterbosley.com/notes/cold-start/</link>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/cold-start/</guid>
-      <description>&lt;p&gt;Placeholder note for the notes index.&lt;/p&gt;</description>
+      <description>Placeholder note for the notes index.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder note for the notes index.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Useful Tools</title>
       <link>https://www.dexterbosley.com/essays/on-useful-digital-tools/</link>
-      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/on-useful-digital-tools/</guid>
-      <description>&lt;h2 id=&#34;i-traditional-software&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Traditional Software&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I define “&lt;mark&gt;traditional software&lt;/mark&gt;” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).&lt;/p&gt;&#xA;&lt;p&gt;Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.&lt;/p&gt;&#xA;&lt;p&gt;More tables, more transformations, more customers.&lt;/p&gt;</description>
+      <description>I. Traditional Software I define “traditional software” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).
+Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.
+More tables, more transformations, more customers.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-traditional-software"><strong>I.</strong> <em><strong>Traditional Software</strong></em></h2>
+<p>I define “<mark>traditional software</mark>” as a collection of digital tools that takes structured inputs (a table), transforms them into an interactive surface (a UI), lets a user act on them (features), and saves the result (another table).</p>
+<p>Rinse and repeat: feature ideation, creation and distribution on top of an ever-expanding product surface. The best teams achieve “tasteful expansion” and product differentiation.</p>
+<p>More tables, more transformations, more customers.</p>
+<h2 id="ii-agentic-software"><strong>II.</strong> <em><strong>Agentic Software</strong></em></h2>
+<p>I define “<mark>agentic software</mark>” as a system that completes a series of tasks at a specified accuracy given a defined set of inputs. Three dimensions can effectively differentiate such products: what tasks, what inputs, what accuracy.</p>
+<p>Also worth making explicit is my working definition of successful “task completion”:</p>
+<ul>
+<li>At minimum, the expected outcome had someone done the task themselves</li>
+<li>At best, the ideal outcome without considering what someone would do themselves</li>
+</ul>
+<p>A successful team must be intentional here. The minimum is observable by logging existing user actions and can be empirically validated in production. The best is an ambiguous function of domain expertise and context awareness that is admittedly difficult to define. My sense is targeting the minimum risks normalizing careless patterns rather than delivering productive automations. That said, the best requires conviction and is liable to fail catastrophically.</p>
+<p><picture>
+    <source type="image/webp" srcset="https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-360.webp 360w, https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-420.webp 420w, https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-580.webp 580w, https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-700.webp 700w, https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-960.webp 960w, https://www.dexterbosley.com/images/optimized/placeholders/useful-tools-figure-placeholder-1160.webp 1160w" sizes="(max-width: 760px) calc(100vw - 32px), 580px">
+    <img src="https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_c92bb3bec410a44.png" srcset="https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_fcebef193723a65b.png 360w, https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_553638056c052e99.png 420w, https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_a43b240a9dd5f504.png 580w, https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_a610cb7d1decb5a9.png 700w, https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_d8ef0d9700f3680e.png 960w, https://www.dexterbosley.com/images/placeholders/useful-tools-figure-placeholder_hu_c92bb3bec410a44.png 1160w" sizes="(max-width: 760px) calc(100vw - 32px), 580px" width="1160" height="680" alt="Placeholder graph showing a rising line over a quiet grid" loading="lazy" decoding="async">
+</picture>
+</p>
+<p><em>Source: Placeholder dataset (2026). Note: example centered figure for graphs, screenshots, and diagrams.</em></p>
+<h2 id="iii-inputs-in-context"><strong>III.</strong> <em><strong>Inputs in Context</strong></em></h2>
+<p>Consider someone monitoring a radar screen. Given object speed, altitude, and heading, an observer can model the decision space for an air traffic controller routing planes safely. Yet with the same inputs, a meteorologist using the same console can log a data point while checking their phone. Both are valid applications.</p>
+<p>Now consider if radar data is delayed by five minutes. The controller now compensates by cross-referencing other instruments, communicating proactively, and adjusting every decision for the lag. The meteorologist neither notices nor cares. Both are valid responses.</p>
+<h2 id="iv-relevance-and-overreaction"><strong>IV.</strong> <em><strong>Relevance and Overreaction</strong></em></h2>
+<p>Intuitively, success is defined very differently depending on the user persona, and different user personas have very different definitions for valid data. Less obvious is how traditional and agentic systems adapt.</p>
+<p>Back to the radar screen.</p>
+<p>Traditional software optimizes the display and interpretation layer.. A team might build a live graph of pipeline freshness that each persona can interpret differently. Over time, a team might iterate on said graph, adding customizations for different personas as needed.</p>
+<p>Conversely, agentic software is entirely agnostic to the console and its display; the focus is on task completion. The challenge, then, is to reliably distinguish between tasks where stale data is catastrophic and tasks where it is irrelevant. That is hard to do for at least two reasons.</p>
+<p>First, traditional software trains users to interpret and transform information within an opinionated and variable UI. Thus, to build agentic software, a team must understand 1/ what information is relevant to a given task and 2/ how users transform, filter and interpret said information for a given task. Second, traditional software relies on user discretion to parse a surface and ignore features surfacing irrelevant information.</p>
+<p>Taken together: traditional software guarantees a bounded set of inputs and facilitates their transformation but does not promise outputs (i.e., user action). Agentic software inverts this. Inputs are variable, but given any set of them, agentic software will produce an output. Traditional software is constrained by inaction while agentic software is constrained by overreaction.</p>
+<h2 id="v-useful-agentic-software"><strong>V.</strong> <em><strong>Useful Agentic Software</strong></em></h2>
+<p>Useful agentic software will not:</p>
+<ul>
+<li>dictate a universal approximation of user intent</li>
+<li>evaluate success with an opinionated benchmark</li>
+<li>assume input relevance and fidelity</li>
+</ul>
+<p>Useful agentic software will:</p>
+<ul>
+<li>collapse interaction to only input configuration</li>
+<li>structure inputs to accommodate any task</li>
+<li>obsess over input validation and ignore output customization</li>
+</ul>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder Story: Desk Light</title>
       <link>https://www.dexterbosley.com/stories/placeholder-story-desk-light/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/placeholder-story-desk-light/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The lamp made a small island of the room.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is placeholder fiction for the fifth story slot.&lt;/p&gt;</description>
+      <description>I. First The lamp made a small island of the room.
+II. Next This is placeholder fiction for the fifth story slot.
+</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>The lamp made a small island of the room.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>This is placeholder fiction for the fifth story slot.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Desk Notes, Week 11</title>
       <link>https://www.dexterbosley.com/notes/desk-notes-week-11/</link>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/desk-notes-week-11/</guid>
-      <description>&lt;p&gt;Placeholder note for testing a slightly longer title.&lt;/p&gt;</description>
+      <description>Placeholder note for testing a slightly longer title.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder note for testing a slightly longer title.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>The Last Car On The 6</title>
       <link>https://www.dexterbosley.com/notes/the-last-car-on-the-6/</link>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/the-last-car-on-the-6/</guid>
-      <description>&lt;p&gt;Placeholder note for the fifth notes slot.&lt;/p&gt;</description>
+      <description>Placeholder note for the fifth notes slot.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder note for the fifth notes slot.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Small Talk</title>
       <link>https://www.dexterbosley.com/stories/small-talk/</link>
-      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
-      <description>&lt;h2 id=&#34;i-first&#34;&gt;&lt;strong&gt;I.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;First&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ii-next&#34;&gt;&lt;strong&gt;II.&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;Next&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Steve tapped his black shoes together. &amp;ldquo;I&amp;rsquo;m hungry.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve nodded.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I&amp;rsquo;ll make you something tonight, maybe tortellini.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Steve smiled and closed his eyes. &amp;ldquo;So where&amp;rsquo;s Mom now?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Elliott shook his head. &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;</description>
+      <description>It was a sticky Thursday.</description>
+      <content:encoded><![CDATA[<h2 id="i-first"><strong>I.</strong> <em><strong>First</strong></em></h2>
+<p>It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.</p>
+<h2 id="ii-next"><strong>II.</strong> <em><strong>Next</strong></em></h2>
+<p>Steve tapped his black shoes together. &ldquo;I&rsquo;m hungry.&rdquo;</p>
+<p>&ldquo;Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer.&rdquo;</p>
+<p>Steve nodded.</p>
+<p>&ldquo;I&rsquo;ll make you something tonight, maybe tortellini.&rdquo;</p>
+<p>Steve smiled and closed his eyes. &ldquo;So where&rsquo;s Mom now?&rdquo;</p>
+<p>Elliott shook his head. &ldquo;I don&rsquo;t know.&rdquo;</p>
+<p>Steve turned towards the tall oak doors. &ldquo;She never liked this place.&rdquo;</p>
+<p>&ldquo;Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group—?&rdquo; A scream fell.</p>
+<p>Then there was a crash.</p>
+<p>On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, finally free from a vase: cut flowers, white and pink, a kind man, his cheek pressed into pavement, a girl and a balcony rail.</p>
+<p>&ldquo;Did she drop that?&rdquo;</p>
+<p>&ldquo;Had to… look at all… I don&rsquo;t… Stevey, he&rsquo;s not moving,&rdquo; Elliott whispered.</p>
+<p>A woman ran across the street. More faces followed. A delivery worker shook the man; another stabbed at his phone. Steve watched the concrete stain.</p>
+<p>There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.</p>
+<h2 id="iii-last"><strong>III.</strong> <em><strong>Last</strong></em></h2>
+<p>A man approached, not the priest.</p>
+<p>He stopped at their feet. &ldquo;It&rsquo;s time to carry your mom outside.&rdquo; Steve got up first and rubbed his eyes.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder I</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-01/</link>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-01/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder II</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-02/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-02/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder III</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-03/</link>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-03/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder IV</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-04/</link>
-      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-04/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder V</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-05/</link>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-05/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder VI</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-06/</link>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-06/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder VII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-07/</link>
-      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-07/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder VIII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-08/</link>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-08/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder IX</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-09/</link>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-09/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder X</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-10/</link>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-10/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XI</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-11/</link>
-      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-11/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-12/</link>
-      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-12/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XIII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-13/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-13/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XIV</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-14/</link>
-      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-14/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XV</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-15/</link>
-      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-15/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XVI</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-16/</link>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-16/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XVII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-17/</link>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-17/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XVIII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-18/</link>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-18/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XIX</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-19/</link>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-19/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XX</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-20/</link>
-      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-20/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXI</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-21/</link>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-21/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-22/</link>
-      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-22/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXIII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-23/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-23/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXIV</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-24/</link>
-      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-24/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXV</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-25/</link>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-25/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXVI</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-26/</link>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-26/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Placeholder XXVII</title>
       <link>https://www.dexterbosley.com/notes/recent-placeholder-27/</link>
-      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/notes/recent-placeholder-27/</guid>
-      <description>&lt;p&gt;Placeholder.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://www.dexterbosley.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.dexterbosley.com/about/</guid>
-      <description>&lt;p&gt;From San Mateo and currently in NYC. Contact me via email at &lt;a href=&#34;mailto:dexterbosley@gmail.com&#34;&gt;dexterbosley@gmail.com&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can see my work experience &lt;a href=&#34;https://www.linkedin.com/in/dexterbosley/&#34;&gt;here&lt;/a&gt;. I feel best on a twenty-minute walk.&lt;/p&gt;</description>
+      <description>Placeholder.
+</description>
+      <content:encoded><![CDATA[<p>Placeholder.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

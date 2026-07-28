@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: true
 type: note
 description: ""
+deck: ""
 cover:
   image: "/images/placeholders/note-banner-placeholder.jpg"
   alt: "Short description of the note banner image"

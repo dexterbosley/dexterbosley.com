@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: true
 type: essay
 description: ""
+deck: ""
 cover:
   image: "/images/placeholders/essay-story-banner-placeholder.jpg"
   alt: "Short description of the banner image"

@@ -1,74 +1,76 @@
 # DexterBosley.com Design System
 
-A plain public journal: quiet, editorial, document-like. Do not make it feel like a product page, portfolio, magazine, or theme demo.
+A public journal for essays, stories, notes, and small observations. The site should feel like a careful index and reading surface: plain, literary, quiet, slightly terminal-adjacent, and self-contained.
 
 ## Surface
 
-- Light: background `#fff`, text `#080808`.
-- Dark: background `#11161A`, text `#E8EDF2`.
-- Serif/prose: self-hosted `Source Serif 4`, then `Georgia, serif`.
-- Sans/meta: self-hosted `IBM Plex Sans`, then `Arial, sans-serif`.
-- No Google Fonts, Adobe Fonts, or proprietary FT fonts.
-- Measure: `700px`; homepage/About prose and banners: about `440px`.
-- Main width: `min(calc(100% - 128px), 700px)` desktop, `min(calc(100% - 32px), 700px)` mobile.
-- Browser title stays `public thoughts`.
-- Theme follows system preference until the visitor chooses light/dark.
+- Light tokens: `--bg #fdfdfb`, `--ink #151412`, `--muted #76746f`, `--wash #e4e9f1`, `--accent #23456e`, `--frame #151412`.
+- Dark tokens: `--bg #0c0c0e`, `--ink #e6e4de`, `--muted #9a9993`, `--wash #1c2536`, `--accent #7d9cce`, `--frame #e6e4de`.
+- Link tokens: light `#0000EE`, visited `#551A8B`, active `#FF0000`, hover `#0000C4`; dark link `#7d9cce`, visited `#a493c4`, active `#d08a8a`, hover `#9db8e0`.
+- The light muted token is slightly darker than the original mockup so the 9px `UPDATED` line clears contrast.
+- Blue means an unread writing link; purple means already read; muted grey means interface furniture.
+- Nothing on the page should be blue unless clicking it gives the reader something to read.
+- No cards, rounded corners, shadows, decorative rules, gradient decoration, section fills, or dot separators.
+- Use spacing, line breaks, and parentheses for hierarchy.
 
-## Home And About
+## Typography
 
-- Header text: Home `BY DEXTER BOSLEY`; About `ABOUT DEXTER BOSLEY`.
-- Theme toggle labels stay `(*)` and `(o)`.
-- No top nav, byline, logo, or button.
-- Home intro uses the lake banner; About uses the snow banner after the first paragraph.
-- Banners align with the narrow text column and crop with `object-fit: cover`.
-- Sections are `START HERE` then `RECENT`.
-- Start Here links to `Small Talk`, `Useful Tools`, and `Tatie`.
-- Recent pins `Tatie`, `Useful Tools`, and `Small Talk` first, then shows the remaining `home_recent: true` posts by date.
-- Recent paginates in place after 10 rows, not with `/page/2/` navigation.
+- Serif: self-hosted Newsreader variable `opsz,wght`, then `Georgia`, `"Times New Roman"`, serif.
+- Sans/interface: self-hosted IBM Plex Sans, then Arial, Helvetica, sans-serif.
+- Body size is controlled by `--body`: standard `17px`, small `15px`, large `21px`.
+- Type size does not scale with viewport width.
+- Post row titles are serif bold at `calc(var(--body) + 1px)`.
+- Decks are serif italic muted at `calc(var(--body) - 2px)`.
+- Interface text is IBM Plex Sans: masthead `13px`, labels `13px`, updated line `9px`, metadata/footer/contact `11px`.
+- Prose letter spacing is zero. Uppercase sans labels use modest positive tracking.
 
-## Posts
+## Home
+
+- Header order: `BY DEXTER BOSLEY`, display controls `(*) (o) (-)`, then `email` and `linkedin` stacked.
+- Header contact links are hushed: muted, uppercase, no underline until hover, and no visited color.
+- `rss` never appears in the header.
+- Text-size button glyphs: standard `(-)`, large `(^)`, small `(v)`.
+- The text-size strip reads `TEXT SIZE: SMALL STANDARD LARGE`; selected option is bold ink.
+- Home image is object-width, left-aligned, 11:7 crop, no visible caption, meaningful alt text.
+- Object width is `min(60%, 384px)` and relaxes to `min(72%, 384px)` at `480px` and below.
+- Subscribe is unboxed: one email input and the filled `receive` button. It is the only filled element on the page.
+- `POPULAR` uses the curated starter pages; `POSTS` uses `home_recent: true` sorted newest first.
+- Section labels are bold ink uppercase, followed by `UPDATED <MONTH YYYY>` from the newest date in that section.
+- Row deck policy is `deck`, then `description`, then no deck. Never generate a truncated summary deck.
+- Footer is hushed and includes `email`, `linkedin`, `rss`, `archive`, and `© 2026`; `rss` links to `/index.xml`.
+
+## Posts And Content
 
 - Essays, stories, and notes render through `layouts/partials/post-single.html`.
-- Post pages hide the homepage header.
-- Header includes title, theme toggle, date, `<- BACK`, and `^ SHARE`.
-- At `1100px+`, utilities sit in the left rail; below that, they sit under the title.
-- Essays and stories use Roman section headings: `## **I.** ***Title***`.
-- Notes are short and do not need Roman sections.
-- Notes do not render a visible cover banner; `cover` fields are still required for metadata and share images.
-- All posts require `cover.image`, `cover.alt`, and `cover.caption`.
+- Post pages include title, display controls, date, `<- BACK`, and `^ SHARE`.
+- `^ SHARE` uses the native share sheet where available and copies the URL otherwise.
+- All posts require `description`, `cover.image`, `cover.alt`, and `cover.caption`.
+- `deck` is optional and only affects homepage rows.
+- Essays and stories use Roman section headings such as `## **I.** ***First***`.
+- Notes may start directly.
+- Notes do not render a visible cover banner, but cover fields still drive metadata and link cards.
+- Use native `<mark>` only for short inline prose highlights; `--wash` is for highlights and selection, not labels or section backgrounds.
 
-## Images
+## Distribution Infrastructure
 
-- Templates use Hugo responsive image partials for WebP, fallback formats, dimensions, and load priority.
-- Source images should live in page bundles or `assets/images/`; legacy `/static/images/` paths may remain for compatibility.
-- New source image filenames use `post-title_full-caption-title_media-type.ext`, with lowercase kebab case in each segment.
-- Valid media types are `image`, `graph`, `painting`, `photo`, and `review`.
-- Use `review` for book, album, and movie collateral; review images share fixed `180px` by `270px` dimensions in post bodies.
-- In notes, book, album, and movie review images use the fixed review treatment.
-- In notes, all other images use the same left-aligned width treatment as Home/About text.
-- Note body text also follows the Home/About text width.
-- Bundle convention: `index.md`, a descriptive cover image, optional descriptive figure or review images.
-- Markdown figure pattern: image line, blank line, italic caption line.
-- Markdown review-image pattern: image line with title `"review"`, blank line, italic caption line.
-- Caption examples: `City, Country`; `Name (year), Artist`; `Source: Name (year). Note: context.`
-- Captions use the formal title/place/source structure only; do not append media-type suffixes such as `- photo` or `- painting`.
+- Canonical feed URL is `/index.xml`; do not add `/rss.xml`.
+- RSS is full-content and must use absolute URLs inside `content:encoded`.
+- Pages emit canonical URLs, RSS alternate link, Open Graph, Twitter card metadata, `theme-color`, favicon, and apple touch icon.
+- Share images are 1200x630. Use post cover art when available and the default ink-on-paper `BY DEXTER BOSLEY` card otherwise.
+- Keep `robots.txt`, `sitemap.xml`, `/404.html`, and `/archive/` working.
+- GoatCounter is the only analytics script. Track subscribe attempts/results and outbound email/linkedin/rss/archive clicks.
 
-## Highlights
+## Newsletter
 
-- Use native `<mark>` for short phrases only.
-- Inline highlights use `.highlight-inline`; section labels use `.section-highlight`.
-- Keep highlights sparse: one phrase per surface is usually enough.
-
-## Subscribe And Analytics
-
-- `/subscribe/` stays a plain editorial page, not a product landing page.
-- `/subscribe/` embeds a compact themed form that posts to listmonk's public subscription API.
-- Keep subscribe fields plain: first name, last name, email, and a simple uppercase submit control.
-- Analytics should remain invisible and lowkey. GoatCounter is the only traffic script.
+- Homepage subscribe must work without JavaScript via listmonk's plain form endpoint.
+- JavaScript may intercept the form for inline success/error messaging and should avoid listmonk's default confirmation page when available.
+- Email export writes local HTML by default.
+- Draft listmonk campaign creation is opt-in via environment variables and must remain idempotent by slug/title.
+- Never commit listmonk credentials or sender secrets.
 
 ## Do Not Add
 
-- Cards, hero layouts, decorative gradients, rounded UI, or extra nav.
-- External fonts.
-- Reading progress bars, sticky reader chrome, toasts, or quote components.
-- Scheduled publishing, monitors, notifications, or background agents.
+- Marketing hero layouts, product-page framing, cards, badges, filled labels, decorative horizontal rules, sticky reader chrome, progress bars, toasts, or frameworks.
+- Third-party font requests.
+- Machine-generated homepage decks.
+- A second feed URL.

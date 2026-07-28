@@ -1,13 +1,29 @@
 {{- define "main" }}
 {{- $pages := .Pages }}
 {{- if .IsHome }}
-    <section class="home-intro" aria-label="Introduction">
-        <figure class="home-banner" aria-label="Lake and mountains at dusk">
-            {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 760px) min(440px, calc(100vw - 72px)), 440px" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
-        </figure>
-        <p>You can read more about me <a href="/about/">here</a> and subscribe to free updates <a href="/subscribe/">here</a>. <mark class="highlight-inline">My thoughts below</mark>.</p>
+    <figure class="home-image object-width">
+        {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 480px) min(72vw, 384px), min(60vw, 384px)" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
+    </figure>
+
+    <section class="home-subscribe object-width" aria-label="Subscribe">
+        <form action="https://newsletter.dexterbosley.com/subscription/form" method="post" data-subscribe-form data-fetch-action="https://newsletter.dexterbosley.com/api/public/subscription">
+            <input type="hidden" name="l" value="853dabc3-3d14-4070-92d6-95f37ad85ae9">
+            <input type="hidden" name="name" value="">
+            <input type="email" name="email" autocomplete="email" placeholder="free updates via email" aria-label="Email address" required>
+            <button type="submit" data-subscribe-submit>receive</button>
+        </form>
+        <p class="subscribe-message" role="status" aria-live="polite" hidden data-subscribe-message></p>
     </section>
+
     {{ partial "home-index.html" . }}
+
+    <footer class="site-footer hushed" aria-label="Footer">
+        <a href="mailto:hello@dexterbosley.com" data-goat-event="outbound-email">email</a>
+        <a href="https://www.linkedin.com/in/dexterbosley/" data-goat-event="outbound-linkedin">linkedin</a>
+        <a href="/index.xml" data-goat-event="outbound-rss">rss</a>
+        <a href="/archive/" data-goat-event="outbound-archive">archive</a>
+        <span>&copy; 2026</span>
+    </footer>
 {{- else }}
     <header class="page-header">
         <h1 class="page-title">{{ .Title }}</h1>
@@ -20,7 +36,6 @@
         {{- range $page := $paginator.Pages }}
         <li class="post-entry">
             <span class="entry-date">{{ partial "date-long.html" $page.Date }}</span>
-            <span class="entry-rule" aria-hidden="true"></span>
             <a class="entry-title" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
         </li>
         {{- end }}
