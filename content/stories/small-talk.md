@@ -13,7 +13,7 @@ cover:
 
 ## **I.**
 
-It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
+It was a sticky Thursday. The afternoon air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.
 
 ## **II.**
 
