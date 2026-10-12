@@ -73,24 +73,6 @@ There is nothing wrong with buying that signal. The mistake is booking it as del
 
 Human mathematics has always contained work that few people can verify. The difference is the ratio. Human production was limited by human effort; the author was also the first checker. AI breaks that link. Claims become cheap while proof remains expensive.
 
-## Ramp
-
-The same problem appears in expense memos. If AI writes every memo, the employee saves time, but the admin gets fluent text that may carry no information.
-
-| Party | Before | After |
-| --- | --- | --- |
-| Employee | Writes a justification | Writes nothing |
-| Admin | Reads a human reason | Audits generated prose |
-| Company | Writing deters marginal spend | The deterrent disappears |
-
-The memo was a costly signal. Writing it made the employee explain the purchase and discouraged weak ones. Automating the prose removes the effort and the information together. The admin either ignores memos, adds friction elsewhere, or decides the product weakened control.
-
-Automate what the memo represented instead. Fill merchant, attendees, trip context, and policy status from data. Ask the employee only for the irreducible reason. Flag exceptions so the admin reviews the cases that matter. The goal is not perfect prose; it is correct spend decisions at the lowest total cost.
-
-Ramp's pricing creates a related blind spot. The [pricing page](https://ramp.com/pricing) sells AI inside seats: Plus is $15 per user per month plus a platform fee, while Enterprise is custom. An agent that codes 10,000 invoices and one that codes ten earn the same software price. If automation reduces the number of people touching Ramp, delivering more value can even shrink the seat base.
-
-Ramp already earns usage revenue through interchange, so the problem is narrower than the whole business. But seat pricing cannot tell us which AI actions are worth anything. The company should keep a shadow price for invoices coded correctly, memos accepted without edits, and policy exceptions caught. If customers would not pay for an action on its own, the seat should not hide that fact.
-
 ## Keep a fare ledger
 
 Narrative value is not fake. It funds work whose value does not exist yet. Rufus shows agents can pay. The verified math releases show labs can produce checked work. A railroad can lose its shareholders and still transform a country.
