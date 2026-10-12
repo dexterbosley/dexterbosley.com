@@ -6,16 +6,16 @@ type: story
 description: "It was a sticky Thursday."
 home_recent: true
 cover:
-  image: "/images/chamonix-banner.jpg"
-  alt: "Snowy Le Brévent mountain slope beneath a pale winter sky"
-  caption: "Le Brévent, France"
+  image: "/images/homepage-lake-annecy.jpeg"
+  alt: "People on a lawn beside a lake with mountains in the distance"
+  caption: "Lake Annecy, France"
 ---
 
-## **I.** ***First***
+## **I.**
 
 It was a sticky Thursday. The afternoon air wrapped around and between the leaves and the boys watched cars grind north on Third Avenue.
 
-## **II.** ***Next***
+## **II.**
 
 Steve tapped his black shoes together. "I'm hungry."
 
@@ -45,7 +45,7 @@ A woman ran across the street. More faces followed. A delivery worker shook the 
 
 There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic. The girl and her elbow slipped inside.
 
-## **III.** ***Last***
+## **III.**
 
 A man approached, not the priest.
 
