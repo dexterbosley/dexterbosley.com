@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>On Unserious Thinking</title>
-    <link rel="canonical" href="https://www.dexterbosley.com/essays/on-unserious-thinking/">
-    <link rel="alternate" type="application/rss+xml" title="Dexter Bosley" href="https://www.dexterbosley.com/index.xml">
+    <link rel="canonical" href="http://localhost:1313/essays/on-unserious-thinking/">
+    <link rel="alternate" type="application/rss+xml" title="Dexter Bosley" href="http://localhost:1313/index.xml">
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="/fonts/newsreader/Newsreader%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,9 +17,9 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="On Unserious Thinking">
     <meta property="og:description" content="A price paid is the general form of verification.">
-    <meta property="og:url" content="https://www.dexterbosley.com/essays/on-unserious-thinking/">
-    <meta property="og:image" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
+    <meta property="og:url" content="http://localhost:1313/essays/on-unserious-thinking/">
+    <meta property="og:image" content="http://localhost:1313/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Soft ridgeline under a pale sky">
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="On Unserious Thinking">
     <meta name="twitter:description" content="A price paid is the general form of verification.">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
+    <meta name="twitter:image" content="http://localhost:1313/images/placeholders/essay-story-banner-placeholder_hu_25f2935a9343b3d.jpg">
     <meta name="twitter:image:alt" content="Soft ridgeline under a pale sky">
         <style>
         @font-face {
@@ -75,6 +75,7 @@
             --body: 17px;
             --measure: 640px;
             --object-width: min(60%, 384px);
+            --content-object-width: min(100%, 580px);
         }
 
         @media (max-width: 480px) {
@@ -452,17 +453,62 @@
         }
 
         .post-content p:has(> img),
-        .post-content p:has(> picture) {
-            margin: 3rem 0 .75rem;
+        .post-content p:has(> picture),
+        .post-content > figure,
+        .post-content > svg,
+        .post-content > canvas,
+        .post-content .content-table {
+            width: var(--content-object-width);
+            margin: 3rem auto .75rem;
         }
 
         .post-content p:has(> img) img,
-        .post-content p:has(> picture) img {
+        .post-content p:has(> picture) img,
+        .post-content > figure img,
+        .post-content > svg,
+        .post-content > canvas {
             width: 100%;
             margin: 0;
         }
 
+        .post-content .content-table {
+            max-width: 100%;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+
+        .post-content .content-table:focus-visible {
+            outline: 2px solid var(--link);
+            outline-offset: 3px;
+        }
+
+        .post-content table {
+            width: 100%;
+            min-width: 520px;
+            border-collapse: collapse;
+            border: 1px solid color-mix(in srgb, var(--frame) 24%, transparent);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .post-content th,
+        .post-content td {
+            padding: 8px 10px;
+            border: 1px solid color-mix(in srgb, var(--frame) 24%, transparent);
+            text-align: left;
+            vertical-align: top;
+            overflow-wrap: break-word;
+        }
+
+        .post-content thead th {
+            background: color-mix(in srgb, var(--frame) 6%, var(--bg));
+            font-weight: 600;
+        }
+
         .post-content p:has(img.review-image) {
+            width: 180px;
             max-width: 180px;
         }
 
@@ -613,7 +659,6 @@
         }
     </style>
 
-    <script data-goatcounter="https://dexterbosley.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <main class="site site-post">
@@ -628,7 +673,7 @@
                 <span>OCT 9, 2026</span>
             </div>
             <nav class="post-actions-compact" aria-label="Post actions">
-                <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/essays/on-unserious-thinking/" data-share-title="On Unserious Thinking">^ SHARE</button>
+                <button class="share-link" type="button" data-share-url="http://localhost:1313/essays/on-unserious-thinking/" data-share-title="On Unserious Thinking">^ SHARE</button>
             </nav>
         </div>
     </header>
@@ -643,27 +688,29 @@
     <div class="post-content">
         <h2 id="thesis-and-definitions">Thesis and definitions</h2>
 <p><strong>Claim:</strong> A price paid is the general form of verification. Paying means someone checked the thing well enough to give up money for it, and paying again checks it twice. Unserious thinking substitutes a forecast of that price for the price itself.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Term</th>
-          <th>What it is</th>
-          <th>How you measure it</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Narrative value</td>
-          <td>A signal to capital that you will capture a future market</td>
-          <td>Valuation, attention, fundraising</td>
-      </tr>
-      <tr>
-          <td>Net user value</td>
-          <td>Benefit minus everything it costs the user: price, effort, verification, risk</td>
-          <td>Retention, repeat purchase, willingness to pay</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>What it is</th>
+                <th>How you measure it</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Narrative value</td>
+                <td>A signal to capital that you will capture a future market</td>
+                <td>Valuation, attention, fundraising</td>
+            </tr>
+            <tr>
+                <td>Net user value</td>
+                <td>Benefit minus everything it costs the user: price, effort, verification, risk</td>
+                <td>Retention, repeat purchase, willingness to pay</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <ul>
 <li><strong>Why price is the arbiter:</strong> Lean verifies a proof; payment verifies everything else. Prices aggregate millions of private &ldquo;was this worth it?&rdquo; checks that no single opinion, including an investor&rsquo;s, can match.</li>
 <li><strong>Not every price verifies the same thing.</strong> A repeat purchase verifies experienced value. An equity price is also a price paid, but for a forecast: it verifies what investors expect other investors to believe. Section 2 explains that gap.</li>
@@ -712,36 +759,38 @@
 </ul>
 <h2 id="3-precedent-railroads-where-the-debt-and-the-fares-diverged">3. Precedent: railroads, where the debt and the fares diverged</h2>
 <p>Railroads are the cleanest historical test of the thesis. Capital priced the story of the network; fares priced its use. The track was real and still runs, but many who financed it on the story lost, and the value went to users and to whoever bought the assets cheap.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Episode</th>
-          <th>What capital did</th>
-          <th>What the fares said</th>
-          <th>Outcome</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Railway_Mania">Britain, 1840s</a></td>
-          <td>263 Acts for new railway companies in 1846 alone, proposing 9,500 miles; shares bought on a 10% deposit</td>
-          <td>Many lines proved unviable once running</td>
-          <td>About a third of authorized lines never built; many middle-class families lost their savings</td>
-      </tr>
-      <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Panic_of_1873">US, 1873</a></td>
-          <td>33,000 miles laid from 1868 to 1873, much of it bond-financed with land grants; most capital in projects with no early returns</td>
-          <td>Jay Cooke &amp; Co. could not sell Northern Pacific bonds</td>
-          <td>Cooke failed Sept. 18, 1873; 55 railroads failed by November and 60 more within a year; construction fell from 7,500 miles in 1872 to 1,600 in 1875</td>
-      </tr>
-      <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Panic_of_1893">US, 1893</a></td>
-          <td>An 1880s railroad bubble left the network overbuilt</td>
-          <td>Rates kept falling: the rail rate for a bushel of wheat went from 14.70¢ in 1893 to 9.92¢ by 1901</td>
-          <td>A quarter of all US rail mileage went into receivership; Northern Pacific, Union Pacific and Santa Fe failed</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Episode</th>
+                <th>What capital did</th>
+                <th>What the fares said</th>
+                <th>Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Railway_Mania">Britain, 1840s</a></td>
+                <td>263 Acts for new railway companies in 1846 alone, proposing 9,500 miles; shares bought on a 10% deposit</td>
+                <td>Many lines proved unviable once running</td>
+                <td>About a third of authorized lines never built; many middle-class families lost their savings</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Panic_of_1873">US, 1873</a></td>
+                <td>33,000 miles laid from 1868 to 1873, much of it bond-financed with land grants; most capital in projects with no early returns</td>
+                <td>Jay Cooke &amp; Co. could not sell Northern Pacific bonds</td>
+                <td>Cooke failed Sept. 18, 1873; 55 railroads failed by November and 60 more within a year; construction fell from 7,500 miles in 1872 to 1,600 in 1875</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Panic_of_1893">US, 1893</a></td>
+                <td>An 1880s railroad bubble left the network overbuilt</td>
+                <td>Rates kept falling: the rail rate for a bushel of wheat went from 14.70¢ in 1893 to 9.92¢ by 1901</td>
+                <td>A quarter of all US rail mileage went into receivership; Northern Pacific, Union Pacific and Santa Fe failed</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <p><strong>Who lost, who won:</strong></p>
 <ul>
 <li><strong>Lost: those who financed the story.</strong> Shareholders and bondholders, including British savers and European buyers of American railroad bonds.</li>
@@ -777,42 +826,44 @@
 <li>Amazon&rsquo;s own agent is the counterexample to &ldquo;nobody wants this.&rdquo; It reports Rufus drove nearly $12 billion in incremental annualized sales in 2025 across 300 million users, roughly $40 per user per year. <a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a></li>
 </ul>
 <p><strong>Run the net-value test.</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Use case</th>
-          <th>Is intent specified?</th>
-          <th>Who bears the risk?</th>
-          <th>Verdict</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>&ldquo;Buy me a good jacket&rdquo;</td>
-          <td>No; browsing is part of the utility</td>
-          <td>User, via returns</td>
-          <td>Unpriced</td>
-      </tr>
-      <tr>
-          <td>Rufus price alert: buy this item at this price</td>
-          <td>Yes</td>
-          <td>Low; 24-hour cancel window</td>
-          <td>Works: users average 20% savings (<a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a>)</td>
-      </tr>
-      <tr>
-          <td>Third-party agent on Amazon</td>
-          <td>Varies</td>
-          <td>Platform, which blocks it</td>
-          <td>Blocked by the party that owns the relationship</td>
-      </tr>
-      <tr>
-          <td>Policy-bound business purchasing</td>
-          <td>Yes: specs, budgets, approvers</td>
-          <td>Company, with controls</td>
-          <td>Hypothesis to test (the Ramp angle)</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Use case</th>
+                <th>Is intent specified?</th>
+                <th>Who bears the risk?</th>
+                <th>Verdict</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&ldquo;Buy me a good jacket&rdquo;</td>
+                <td>No; browsing is part of the utility</td>
+                <td>User, via returns</td>
+                <td>Unpriced</td>
+            </tr>
+            <tr>
+                <td>Rufus price alert: buy this item at this price</td>
+                <td>Yes</td>
+                <td>Low; 24-hour cancel window</td>
+                <td>Works: users average 20% savings (<a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a>)</td>
+            </tr>
+            <tr>
+                <td>Third-party agent on Amazon</td>
+                <td>Varies</td>
+                <td>Platform, which blocks it</td>
+                <td>Blocked by the party that owns the relationship</td>
+            </tr>
+            <tr>
+                <td>Policy-bound business purchasing</td>
+                <td>Yes: specs, budgets, approvers</td>
+                <td>Company, with controls</td>
+                <td>Hypothesis to test (the Ramp angle)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <p><strong>What it proves.</strong></p>
 <ul>
 <li>Even the $12 billion is narrative-shaped. It is Amazon&rsquo;s own counterfactual attribution, and PPC Land notes the method rests on behavioral assumptions. Use it to show that the &ldquo;real&rdquo; number also needs the net-value test.</li>
@@ -823,32 +874,34 @@
 <p>The math releases are a clean case study because verification is measurable. When volume went up, the verified share went down, and the checking cost moved to everyone else.</p>
 <p><strong>Why labs do it (Weisenthal&rsquo;s read).</strong> Theoretical math is mostly an intellectual pursuit. Its function is a signal: a lab that solves open problems can beat others to commercially valuable breakthroughs in pharma or chip design. Read that way, the &ldquo;pre-IPO hype&rdquo; critics and Weisenthal agree on what the math is for. It is narrative value, and a legitimate investment thesis.</p>
 <p><strong>What the record shows:</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Release</th>
-          <th>What shipped</th>
-          <th>Verified share</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances</a>, Aug. 1, 2026</td>
-          <td>10 results</td>
-          <td>All 10 shipped with Lean certificates</td>
-      </tr>
-      <tr>
-          <td><a href="https://openai.com/index/navier-stokes-solution/">Navier–Stokes</a>, Sep. 8, 2026</td>
-          <td>1 Millennium Prize claim</td>
-          <td>Lean-formalized; whether the formal statement matches the Clay problem is still being checked (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>)</td>
-      </tr>
-      <tr>
-          <td><a href="https://github.com/openai/math">openai/math</a>, Oct. 6, 2026</td>
-          <td>719 manuscripts in 372 families, from ~4,000 problems posed</td>
-          <td>~42% of top-line results formalized</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Release</th>
+                <th>What shipped</th>
+                <th>Verified share</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances</a>, Aug. 1, 2026</td>
+                <td>10 results</td>
+                <td>All 10 shipped with Lean certificates</td>
+            </tr>
+            <tr>
+                <td><a href="https://openai.com/index/navier-stokes-solution/">Navier–Stokes</a>, Sep. 8, 2026</td>
+                <td>1 Millennium Prize claim</td>
+                <td>Lean-formalized; whether the formal statement matches the Clay problem is still being checked (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>)</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/openai/math">openai/math</a>, Oct. 6, 2026</td>
+                <td>719 manuscripts in 372 families, from ~4,000 problems posed</td>
+                <td>~42% of top-line results formalized</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <ul>
 <li>The repo&rsquo;s own README says not all results have Lean formalizations and some unformalized ones could have issues. <a href="https://github.com/openai/math">GitHub</a></li>
 <li>Each result cost about three hours of ChatGPT Pro-equivalent compute. <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI</a> Producing a claim is now cheap; checking one is not. Navier–Stokes is the outlier; see the crude version below (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>).</li>
@@ -873,32 +926,34 @@
 <p>Memo automation is the same pattern inside our own product: it creates value for the employee and destroys it for the admin who pays us. The two external examples make the pattern easy to see from a distance; this one shows the audience it applies to them.</p>
 <p><strong>The hypothetical.</strong> AI writes every expense memo. The employee does less work, a clear win. The admin, who buys Ramp and advocates for it internally, now gets memos that say nothing.</p>
 <p><strong>Why it breaks.</strong> The memo was never the product. It was a costly signal: the effort of writing one deterred marginal purchases and carried information to the reviewer. Automate the writing and the cost drops to zero, and the signal goes with it.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Party</th>
-          <th>Before</th>
-          <th>After automating the prose</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Employee</td>
-          <td>Writes a short justification</td>
-          <td>Writes nothing: gain</td>
-      </tr>
-      <tr>
-          <td>Admin (the payer)</td>
-          <td>Reads a human reason</td>
-          <td>Audits fluent text that may be wrong: verification cost moves to them</td>
-      </tr>
-      <tr>
-          <td>Company spend</td>
-          <td>Writing deters marginal purchases</td>
-          <td>Deterrent gone</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Party</th>
+                <th>Before</th>
+                <th>After automating the prose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Employee</td>
+                <td>Writes a short justification</td>
+                <td>Writes nothing: gain</td>
+            </tr>
+            <tr>
+                <td>Admin (the payer)</td>
+                <td>Reads a human reason</td>
+                <td>Audits fluent text that may be wrong: verification cost moves to them</td>
+            </tr>
+            <tr>
+                <td>Company spend</td>
+                <td>Writing deters marginal purchases</td>
+                <td>Deterrent gone</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <p><strong>What happens next.</strong> The admin does one of three things:</p>
 <ol>
 <li>Ignores memos and loses control.</li>
@@ -917,32 +972,34 @@
 <h2 id="7-at-ramp-for-real-how-we-price-ai">7. At Ramp, for real: how we price AI</h2>
 <p>Ramp prices its AI per seat, so the price we charge cannot verify the AI we ship. By this essay&rsquo;s own thesis, we have switched off our best instrument.</p>
 <p><strong>What the pricing page says</strong> (<a href="https://ramp.com/pricing">ramp.com/pricing</a>, accessed Oct. 9, 2026):</p>
-<table>
-  <thead>
-      <tr>
-          <th>Tier</th>
-          <th>Label on the page</th>
-          <th>Price unit</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Free</td>
-          <td>&ldquo;AI-assisted&rdquo;</td>
-          <td>$0 per user per month</td>
-      </tr>
-      <tr>
-          <td>Plus</td>
-          <td>&ldquo;AI-powered&rdquo;</td>
-          <td>$15 per user per month, plus a platform fee based on team size</td>
-      </tr>
-      <tr>
-          <td>Enterprise</td>
-          <td>&ldquo;AI-tailored&rdquo;</td>
-          <td>Custom, billed annually</td>
-      </tr>
-  </tbody>
-</table>
+<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+    <table>
+        <thead>
+            <tr>
+                <th>Tier</th>
+                <th>Label on the page</th>
+                <th>Price unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Free</td>
+                <td>&ldquo;AI-assisted&rdquo;</td>
+                <td>$0 per user per month</td>
+            </tr>
+            <tr>
+                <td>Plus</td>
+                <td>&ldquo;AI-powered&rdquo;</td>
+                <td>$15 per user per month, plus a platform fee based on team size</td>
+            </tr>
+            <tr>
+                <td>Enterprise</td>
+                <td>&ldquo;AI-tailored&rdquo;</td>
+                <td>Custom, billed annually</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <ul>
 <li>The AI ships inside the seat. AI-driven expense reviews, AI coding for every field, and AP-agent approval recommendations and line-item coding are all listed as Plus features.</li>
 <li>The labels are narrative; the unit is a seat. Almost nothing is metered beyond small items like $0.65 per IRS 1099 filing.</li>
@@ -1037,7 +1094,7 @@
 
     <nav class="post-actions" aria-label="Post actions">
         <a href="/">&lt;- BACK</a>
-        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/essays/on-unserious-thinking/" data-share-title="On Unserious Thinking">^ SHARE</button>
+        <button class="share-link" type="button" data-share-url="http://localhost:1313/essays/on-unserious-thinking/" data-share-title="On Unserious Thinking">^ SHARE</button>
     </nav>
 </article>
 

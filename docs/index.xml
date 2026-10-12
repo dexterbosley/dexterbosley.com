@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dexter Bosley</title>
-    <link>https://www.dexterbosley.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Full posts from Dexter Bosley.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</lastBuildDate>
-    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Unserious Thinking</title>
-      <link>https://www.dexterbosley.com/essays/on-unserious-thinking/</link>
+      <link>http://localhost:1313/essays/on-unserious-thinking/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/on-unserious-thinking/</guid>
+      <guid>http://localhost:1313/essays/on-unserious-thinking/</guid>
       <description>A price paid is the general form of verification.</description>
       <content:encoded><![CDATA[<h2 id="thesis-and-definitions">Thesis and definitions</h2>
 <p><strong>Claim:</strong> A price paid is the general form of verification. Paying means someone checked the thing well enough to give up money for it, and paying again checks it twice. Unserious thinking substitutes a forecast of that price for the price itself.</p>
@@ -409,12 +409,12 @@
     </item>
     <item>
       <title>Tatie</title>
-      <link>https://www.dexterbosley.com/notes/tatie/</link>
+      <link>http://localhost:1313/notes/tatie/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 &#43;0000</pubDate>
-      <guid>https://www.dexterbosley.com/notes/tatie/</guid>
+      <guid>http://localhost:1313/notes/tatie/</guid>
       <description>Tatie: I really just love this nickname. Think about it a lot.</description>
       <content:encoded><![CDATA[<p><picture>
-    <img src="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg" srcset="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w" sizes="(max-width: 760px) calc(100vw - 32px), 580px" width="257" height="385" alt="Book cover of A Moveable Feast by Ernest Hemingway" class="review-image" loading="lazy" decoding="async">
+    <img src="http://localhost:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg" srcset="http://localhost:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_c9a7277097b1092a.jpg 257w" sizes="(max-width: 760px) calc(100vw - 32px), 580px" width="257" height="385" alt="Book cover of A Moveable Feast by Ernest Hemingway" class="review-image" loading="lazy" decoding="async">
 </picture>
 </p>
 <p><em>A Moveable Feast (1964), Ernest Hemingway.</em></p>
@@ -423,9 +423,9 @@
     </item>
     <item>
       <title>Small Talk</title>
-      <link>https://www.dexterbosley.com/stories/small-talk/</link>
+      <link>http://localhost:1313/stories/small-talk/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 &#43;0000</pubDate>
-      <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
+      <guid>http://localhost:1313/stories/small-talk/</guid>
       <description>It was a sticky Thursday afternoon.</description>
       <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
 <p>It was a sticky Thursday afternoon. The air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.</p>

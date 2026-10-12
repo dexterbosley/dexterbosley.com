@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tatie</title>
-    <link rel="canonical" href="https://www.dexterbosley.com/notes/tatie/">
-    <link rel="alternate" type="application/rss+xml" title="Dexter Bosley" href="https://www.dexterbosley.com/index.xml">
+    <link rel="canonical" href="http://localhost:1313/notes/tatie/">
+    <link rel="alternate" type="application/rss+xml" title="Dexter Bosley" href="http://localhost:1313/index.xml">
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="/fonts/newsreader/Newsreader%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,9 +17,9 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Tatie">
     <meta property="og:description" content="Tatie: I really just love this nickname. Think about it a lot.">
-    <meta property="og:url" content="https://www.dexterbosley.com/notes/tatie/">
-    <meta property="og:image" content="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
-    <meta property="og:image:secure_url" content="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
+    <meta property="og:url" content="http://localhost:1313/notes/tatie/">
+    <meta property="og:image" content="http://localhost:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Book cover of A Moveable Feast by Ernest Hemingway with a painting of a bridge over water.">
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tatie">
     <meta name="twitter:description" content="Tatie: I really just love this nickname. Think about it a lot.">
-    <meta name="twitter:image" content="https://www.dexterbosley.com/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
+    <meta name="twitter:image" content="http://localhost:1313/notes/tatie/tatie_a-moveable-feast-1964-ernest-hemingway_review_hu_6dd800d32a24fd59.jpg">
     <meta name="twitter:image:alt" content="Book cover of A Moveable Feast by Ernest Hemingway with a painting of a bridge over water.">
         <style>
         @font-face {
@@ -75,6 +75,7 @@
             --body: 17px;
             --measure: 640px;
             --object-width: min(60%, 384px);
+            --content-object-width: min(100%, 580px);
         }
 
         @media (max-width: 480px) {
@@ -452,17 +453,62 @@
         }
 
         .post-content p:has(> img),
-        .post-content p:has(> picture) {
-            margin: 3rem 0 .75rem;
+        .post-content p:has(> picture),
+        .post-content > figure,
+        .post-content > svg,
+        .post-content > canvas,
+        .post-content .content-table {
+            width: var(--content-object-width);
+            margin: 3rem auto .75rem;
         }
 
         .post-content p:has(> img) img,
-        .post-content p:has(> picture) img {
+        .post-content p:has(> picture) img,
+        .post-content > figure img,
+        .post-content > svg,
+        .post-content > canvas {
             width: 100%;
             margin: 0;
         }
 
+        .post-content .content-table {
+            max-width: 100%;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+
+        .post-content .content-table:focus-visible {
+            outline: 2px solid var(--link);
+            outline-offset: 3px;
+        }
+
+        .post-content table {
+            width: 100%;
+            min-width: 520px;
+            border-collapse: collapse;
+            border: 1px solid color-mix(in srgb, var(--frame) 24%, transparent);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .post-content th,
+        .post-content td {
+            padding: 8px 10px;
+            border: 1px solid color-mix(in srgb, var(--frame) 24%, transparent);
+            text-align: left;
+            vertical-align: top;
+            overflow-wrap: break-word;
+        }
+
+        .post-content thead th {
+            background: color-mix(in srgb, var(--frame) 6%, var(--bg));
+            font-weight: 600;
+        }
+
         .post-content p:has(img.review-image) {
+            width: 180px;
             max-width: 180px;
         }
 
@@ -613,7 +659,6 @@
         }
     </style>
 
-    <script data-goatcounter="https://dexterbosley.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <main class="site site-post">
@@ -628,7 +673,7 @@
                 <span>JUN 20, 2026</span>
             </div>
             <nav class="post-actions-compact" aria-label="Post actions">
-                <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/notes/tatie/" data-share-title="Tatie">^ SHARE</button>
+                <button class="share-link" type="button" data-share-url="http://localhost:1313/notes/tatie/" data-share-title="Tatie">^ SHARE</button>
             </nav>
         </div>
     </header>
@@ -645,7 +690,7 @@
 
     <nav class="post-actions" aria-label="Post actions">
         <a href="/">&lt;- BACK</a>
-        <button class="share-link" type="button" data-share-url="https://www.dexterbosley.com/notes/tatie/" data-share-title="Tatie">^ SHARE</button>
+        <button class="share-link" type="button" data-share-url="http://localhost:1313/notes/tatie/" data-share-title="Tatie">^ SHARE</button>
     </nav>
 </article>
 
