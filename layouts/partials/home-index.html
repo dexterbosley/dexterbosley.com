@@ -1,5 +1,5 @@
 {{- $popularPages := slice -}}
-{{- range $path := slice "/stories/small-talk" "/essays/on-useful-digital-tools" "/notes/tatie" -}}
+{{- range $path := slice "/stories/small-talk" "/essays/on-unserious-thinking" "/notes/tatie" -}}
     {{- with site.GetPage $path -}}
         {{- $popularPages = $popularPages | append . -}}
     {{- end -}}
