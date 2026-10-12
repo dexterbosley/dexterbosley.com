@@ -3,7 +3,7 @@ title: "Small Talk"
 date: 2026-01-24
 draft: false
 type: story
-description: "It was a sticky Thursday."
+description: "It was a sticky Thursday afternoon."
 home_recent: true
 cover:
   image: "/images/homepage-lake-annecy.jpeg"
@@ -13,7 +13,7 @@ cover:
 
 ## **I.**
 
-It was a sticky Thursday. The afternoon air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.
+It was a sticky Thursday afternoon. The air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.
 
 ## **II.**
 
