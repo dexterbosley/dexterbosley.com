@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{- $shareTitle := cond .IsHome "By Dexter Bosley" (cond (eq .Layout "about") "About Dexter Bosley" .Title) }}
-    {{- $summaryDescription := cond .IsHome "Thinking in public by Dexter Bosley." (.Summary | plainify) }}
+    {{- $summaryDescription := cond .IsHome "" (.Summary | plainify) }}
     {{- $shareDescription := .Params.description | default $summaryDescription | plainify | replaceRE "\\s+" " " | truncate 160 }}
     {{- $shareImage := "/images/og-default.png" }}
     {{- $shareImageAlt := "BY DEXTER BOSLEY set in dark text on a warm white field" }}
@@ -36,13 +36,17 @@
     <link rel="preload" href="/fonts/newsreader/Newsreader%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <meta name="description" content="{{ $shareDescription }}">
+    {{- with $shareDescription }}
+    <meta name="description" content="{{ . }}">
+    {{- end }}
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfb">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:title" content="{{ $shareTitle }}">
-    <meta property="og:description" content="{{ $shareDescription }}">
+    {{- with $shareDescription }}
+    <meta property="og:description" content="{{ . }}">
+    {{- end }}
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:image" content="{{ $shareImageAbs }}">
     <meta property="og:image:secure_url" content="{{ $shareImageAbs }}">
@@ -54,7 +58,9 @@
     {{- end }}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $shareTitle }}">
-    <meta name="twitter:description" content="{{ $shareDescription }}">
+    {{- with $shareDescription }}
+    <meta name="twitter:description" content="{{ . }}">
+    {{- end }}
     <meta name="twitter:image" content="{{ $shareImageAbs }}">
     <meta name="twitter:image:alt" content="{{ $shareImageAlt }}">
     {{ partial "theme-init.html" . }}

@@ -12,13 +12,11 @@
     <link rel="preload" href="/fonts/newsreader/Newsreader%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <meta name="description" content="Thinking in public by Dexter Bosley.">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfb">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="website">
     <meta property="og:title" content="By Dexter Bosley">
-    <meta property="og:description" content="Thinking in public by Dexter Bosley.">
     <meta property="og:url" content="https://www.dexterbosley.com/">
     <meta property="og:image" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
     <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
@@ -27,16 +25,11 @@
     <meta property="og:image:alt" content="BY DEXTER BOSLEY set in dark text on a warm white field">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="By Dexter Bosley">
-    <meta name="twitter:description" content="Thinking in public by Dexter Bosley.">
     <meta name="twitter:image" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
     <meta name="twitter:image:alt" content="BY DEXTER BOSLEY set in dark text on a warm white field">
         <script>
         (function() {
             try {
-                var theme = window.localStorage.getItem("theme");
-                if (theme === "light" || theme === "dark") {
-                    document.documentElement.dataset.theme = theme;
-                }
                 var textSize = window.localStorage.getItem("textSize");
                 if (textSize === "small" || textSize === "standard" || textSize === "large") {
                     document.documentElement.dataset.size = textSize;
@@ -102,7 +95,7 @@
         }
 
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
+            :root {
                 color-scheme: dark;
                 --bg: #0c0c0e;
                 --ink: #e6e4de;
@@ -115,34 +108,6 @@
                 --linkhover: #9db8e0;
                 --frame: #e6e4de;
             }
-        }
-
-        :root[data-theme="dark"] {
-            color-scheme: dark;
-            --bg: #0c0c0e;
-            --ink: #e6e4de;
-            --muted: #9a9993;
-            --wash: #1c2536;
-            --accent: #7d9cce;
-            --link: #7d9cce;
-            --visited: #a493c4;
-            --active: #d08a8a;
-            --linkhover: #9db8e0;
-            --frame: #e6e4de;
-        }
-
-        :root[data-theme="light"] {
-            color-scheme: light;
-            --bg: #fdfdfb;
-            --ink: #151412;
-            --muted: #76746f;
-            --wash: #e4e9f1;
-            --accent: #23456e;
-            --link: #0000EE;
-            --visited: #551A8B;
-            --active: #FF0000;
-            --linkhover: #0000C4;
-            --frame: #151412;
         }
 
         @media (max-width: 480px) {
@@ -212,12 +177,8 @@
             height: auto;
         }
 
-        :root[data-theme="dark"] img {
-            filter: brightness(.82) saturate(.9);
-        }
-
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) img {
+            img {
                 filter: brightness(.82) saturate(.9);
             }
         }
@@ -252,7 +213,7 @@
             text-transform: uppercase;
         }
 
-        .theme-toggle {
+        .display-controls {
             display: flex;
             gap: 12px;
             margin-top: 8px;
@@ -262,7 +223,7 @@
             line-height: 1.25;
         }
 
-        .theme-toggle button,
+        .display-controls button,
         .text-size-strip button,
         .share-link {
             appearance: none;
@@ -277,19 +238,14 @@
             text-transform: inherit;
         }
 
-        .theme-toggle button {
+        .display-controls button {
             color: var(--muted);
             min-width: 32px;
             min-height: 32px;
         }
 
-        .theme-toggle button:hover {
+        .display-controls button:hover {
             color: var(--ink);
-        }
-
-        .theme-toggle button[aria-pressed="true"] {
-            color: var(--ink);
-            font-weight: 700;
         }
 
         .hushed {
@@ -419,8 +375,10 @@
             background: var(--linkhover);
         }
 
-        :root[data-theme="dark"] .home-subscribe button {
-            color: #0c0c0e;
+        @media (prefers-color-scheme: dark) {
+            .home-subscribe button {
+                color: #0c0c0e;
+            }
         }
 
         .subscribe-message {
@@ -781,9 +739,7 @@
     <main class="site">
         <header class="site-header">
             <span class="site-title">BY DEXTER BOSLEY</span>
-            <div class="theme-toggle" aria-label="Display controls">
-    <button type="button" data-theme-choice="light" aria-label="Use light mode" aria-pressed="false">(*)</button>
-    <button type="button" data-theme-choice="dark" aria-label="Use dark mode" aria-pressed="false">(o)</button>
+            <div class="display-controls" aria-label="Display controls">
     <button type="button" data-text-size-toggle aria-label="Text size" aria-expanded="false" aria-controls="text-size-strip">(-)</button>
 </div>
 
@@ -843,96 +799,12 @@
             <p class="home-row-deck">Tatie: I really just love this nickname. Think about it a lot.</p>
             <p class="home-row-meta"><time datetime="2026-06-20">JUN 2026</time><span>1 MIN</span></p>
         </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/placeholder-note/">Placeholder</a></h3>
-            <p class="home-row-meta"><time datetime="2026-06-08">JUN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
             <h3 class="home-row-title"><a href="/essays/on-useful-digital-tools/">Useful Tools</a></h3>
             <p class="home-row-meta"><time datetime="2026-03-30">MAR 2026</time><span>3 MIN</span></p>
         </article><article class="home-row">
             <h3 class="home-row-title"><a href="/stories/small-talk/">Small Talk</a></h3>
             <p class="home-row-deck">It was a sticky Thursday.</p>
             <p class="home-row-meta"><time datetime="2026-01-24">JAN 2026</time><span>2 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-01/">Placeholder I</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-23">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-02/">Placeholder II</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-22">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-03/">Placeholder III</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-21">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-04/">Placeholder IV</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-20">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-05/">Placeholder V</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-19">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-06/">Placeholder VI</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-18">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-07/">Placeholder VII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-17">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-08/">Placeholder VIII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-16">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-09/">Placeholder IX</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-15">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-10/">Placeholder X</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-14">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-11/">Placeholder XI</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-13">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-12/">Placeholder XII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-12">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-13/">Placeholder XIII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-11">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-14/">Placeholder XIV</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-10">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-15/">Placeholder XV</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-09">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-16/">Placeholder XVI</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-08">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-17/">Placeholder XVII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-07">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-18/">Placeholder XVIII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-06">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-19/">Placeholder XIX</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-05">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-20/">Placeholder XX</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-04">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-21/">Placeholder XXI</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-03">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-22/">Placeholder XXII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-02">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-23/">Placeholder XXIII</a></h3>
-            <p class="home-row-meta"><time datetime="2026-01-01">JAN 2026</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-24/">Placeholder XXIV</a></h3>
-            <p class="home-row-meta"><time datetime="2025-12-31">DEC 2025</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-25/">Placeholder XXV</a></h3>
-            <p class="home-row-meta"><time datetime="2025-12-30">DEC 2025</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-26/">Placeholder XXVI</a></h3>
-            <p class="home-row-meta"><time datetime="2025-12-29">DEC 2025</time><span>1 MIN</span></p>
-        </article><article class="home-row">
-            <h3 class="home-row-title"><a href="/notes/recent-placeholder-27/">Placeholder XXVII</a></h3>
-            <p class="home-row-meta"><time datetime="2025-12-28">DEC 2025</time><span>1 MIN</span></p>
         </article>
     </div>
 </section>
@@ -949,15 +821,9 @@
         <script>
         (function() {
             var root = document.documentElement;
-            var themeButtons = document.querySelectorAll("[data-theme-choice]");
             var sizeToggle = document.querySelector("[data-text-size-toggle]");
             var sizeStrip = document.querySelector("[data-text-size-strip]");
             var sizeButtons = document.querySelectorAll("[data-text-size-choice]");
-
-            function activeTheme() {
-                if (root.dataset.theme === "light" || root.dataset.theme === "dark") return root.dataset.theme;
-                return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
 
             function activeSize() {
                 return root.dataset.size === "small" || root.dataset.size === "large" ? root.dataset.size : "standard";
@@ -975,26 +841,12 @@
             }
 
             function syncControls() {
-                var theme = activeTheme();
                 var size = activeSize();
-                themeButtons.forEach(function(button) {
-                    button.setAttribute("aria-pressed", button.dataset.themeChoice === theme ? "true" : "false");
-                });
                 sizeButtons.forEach(function(button) {
                     button.setAttribute("aria-pressed", button.dataset.textSizeChoice === size ? "true" : "false");
                 });
                 if (sizeToggle) sizeToggle.textContent = size === "large" ? "(^)" : size === "small" ? "(v)" : "(-)";
             }
-
-            themeButtons.forEach(function(button) {
-                button.addEventListener("click", function() {
-                    var theme = button.dataset.themeChoice;
-                    if (theme !== "light" && theme !== "dark") return;
-                    root.dataset.theme = theme;
-                    persist("theme", theme);
-                    syncControls();
-                });
-            });
 
             if (sizeToggle && sizeStrip) {
                 sizeToggle.addEventListener("click", function() {
@@ -1017,10 +869,6 @@
                     syncControls();
                 });
             });
-
-            if (window.matchMedia) {
-                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncControls);
-            }
 
             document.querySelectorAll("[data-goat-event]").forEach(function(link) {
                 link.addEventListener("click", function() {

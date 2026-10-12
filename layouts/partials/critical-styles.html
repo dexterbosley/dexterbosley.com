@@ -55,7 +55,7 @@
         }
 
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
+            :root {
                 color-scheme: dark;
                 --bg: #0c0c0e;
                 --ink: #e6e4de;
@@ -68,34 +68,6 @@
                 --linkhover: #9db8e0;
                 --frame: #e6e4de;
             }
-        }
-
-        :root[data-theme="dark"] {
-            color-scheme: dark;
-            --bg: #0c0c0e;
-            --ink: #e6e4de;
-            --muted: #9a9993;
-            --wash: #1c2536;
-            --accent: #7d9cce;
-            --link: #7d9cce;
-            --visited: #a493c4;
-            --active: #d08a8a;
-            --linkhover: #9db8e0;
-            --frame: #e6e4de;
-        }
-
-        :root[data-theme="light"] {
-            color-scheme: light;
-            --bg: #fdfdfb;
-            --ink: #151412;
-            --muted: #76746f;
-            --wash: #e4e9f1;
-            --accent: #23456e;
-            --link: #0000EE;
-            --visited: #551A8B;
-            --active: #FF0000;
-            --linkhover: #0000C4;
-            --frame: #151412;
         }
 
         @media (max-width: 480px) {
@@ -165,12 +137,8 @@
             height: auto;
         }
 
-        :root[data-theme="dark"] img {
-            filter: brightness(.82) saturate(.9);
-        }
-
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) img {
+            img {
                 filter: brightness(.82) saturate(.9);
             }
         }
@@ -205,7 +173,7 @@
             text-transform: uppercase;
         }
 
-        .theme-toggle {
+        .display-controls {
             display: flex;
             gap: 12px;
             margin-top: 8px;
@@ -215,7 +183,7 @@
             line-height: 1.25;
         }
 
-        .theme-toggle button,
+        .display-controls button,
         .text-size-strip button,
         .share-link {
             appearance: none;
@@ -230,19 +198,14 @@
             text-transform: inherit;
         }
 
-        .theme-toggle button {
+        .display-controls button {
             color: var(--muted);
             min-width: 32px;
             min-height: 32px;
         }
 
-        .theme-toggle button:hover {
+        .display-controls button:hover {
             color: var(--ink);
-        }
-
-        .theme-toggle button[aria-pressed="true"] {
-            color: var(--ink);
-            font-weight: 700;
         }
 
         .hushed {
@@ -372,8 +335,10 @@
             background: var(--linkhover);
         }
 
-        :root[data-theme="dark"] .home-subscribe button {
-            color: #0c0c0e;
+        @media (prefers-color-scheme: dark) {
+            .home-subscribe button {
+                color: #0c0c0e;
+            }
         }
 
         .subscribe-message {

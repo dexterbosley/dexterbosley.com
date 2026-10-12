@@ -11,13 +11,11 @@
     <link rel="preload" href="/fonts/newsreader/Newsreader%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <meta name="description" content="">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfb">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Stories">
-    <meta property="og:description" content="">
     <meta property="og:url" content="https://www.dexterbosley.com/stories/">
     <meta property="og:image" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
     <meta property="og:image:secure_url" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
@@ -26,16 +24,11 @@
     <meta property="og:image:alt" content="BY DEXTER BOSLEY set in dark text on a warm white field">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Stories">
-    <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
     <meta name="twitter:image:alt" content="BY DEXTER BOSLEY set in dark text on a warm white field">
         <script>
         (function() {
             try {
-                var theme = window.localStorage.getItem("theme");
-                if (theme === "light" || theme === "dark") {
-                    document.documentElement.dataset.theme = theme;
-                }
                 var textSize = window.localStorage.getItem("textSize");
                 if (textSize === "small" || textSize === "standard" || textSize === "large") {
                     document.documentElement.dataset.size = textSize;
@@ -101,7 +94,7 @@
         }
 
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
+            :root {
                 color-scheme: dark;
                 --bg: #0c0c0e;
                 --ink: #e6e4de;
@@ -114,34 +107,6 @@
                 --linkhover: #9db8e0;
                 --frame: #e6e4de;
             }
-        }
-
-        :root[data-theme="dark"] {
-            color-scheme: dark;
-            --bg: #0c0c0e;
-            --ink: #e6e4de;
-            --muted: #9a9993;
-            --wash: #1c2536;
-            --accent: #7d9cce;
-            --link: #7d9cce;
-            --visited: #a493c4;
-            --active: #d08a8a;
-            --linkhover: #9db8e0;
-            --frame: #e6e4de;
-        }
-
-        :root[data-theme="light"] {
-            color-scheme: light;
-            --bg: #fdfdfb;
-            --ink: #151412;
-            --muted: #76746f;
-            --wash: #e4e9f1;
-            --accent: #23456e;
-            --link: #0000EE;
-            --visited: #551A8B;
-            --active: #FF0000;
-            --linkhover: #0000C4;
-            --frame: #151412;
         }
 
         @media (max-width: 480px) {
@@ -211,12 +176,8 @@
             height: auto;
         }
 
-        :root[data-theme="dark"] img {
-            filter: brightness(.82) saturate(.9);
-        }
-
         @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) img {
+            img {
                 filter: brightness(.82) saturate(.9);
             }
         }
@@ -251,7 +212,7 @@
             text-transform: uppercase;
         }
 
-        .theme-toggle {
+        .display-controls {
             display: flex;
             gap: 12px;
             margin-top: 8px;
@@ -261,7 +222,7 @@
             line-height: 1.25;
         }
 
-        .theme-toggle button,
+        .display-controls button,
         .text-size-strip button,
         .share-link {
             appearance: none;
@@ -276,19 +237,14 @@
             text-transform: inherit;
         }
 
-        .theme-toggle button {
+        .display-controls button {
             color: var(--muted);
             min-width: 32px;
             min-height: 32px;
         }
 
-        .theme-toggle button:hover {
+        .display-controls button:hover {
             color: var(--ink);
-        }
-
-        .theme-toggle button[aria-pressed="true"] {
-            color: var(--ink);
-            font-weight: 700;
         }
 
         .hushed {
@@ -418,8 +374,10 @@
             background: var(--linkhover);
         }
 
-        :root[data-theme="dark"] .home-subscribe button {
-            color: #0c0c0e;
+        @media (prefers-color-scheme: dark) {
+            .home-subscribe button {
+                color: #0c0c0e;
+            }
         }
 
         .subscribe-message {
@@ -780,9 +738,7 @@
     <main class="site">
         <header class="site-header">
             <span class="site-title">BY DEXTER BOSLEY</span>
-            <div class="theme-toggle" aria-label="Display controls">
-    <button type="button" data-theme-choice="light" aria-label="Use light mode" aria-pressed="false">(*)</button>
-    <button type="button" data-theme-choice="dark" aria-label="Use dark mode" aria-pressed="false">(o)</button>
+            <div class="display-controls" aria-label="Display controls">
     <button type="button" data-text-size-toggle aria-label="Text size" aria-expanded="false" aria-controls="text-size-strip">(-)</button>
 </div>
 
@@ -802,22 +758,6 @@
 
     <ol class="post-list">
         <li class="post-entry">
-            <span class="entry-date">JUN 4, 2026</span>
-            <a class="entry-title" href="/stories/placeholder-story-night-train/">Placeholder Story: Night Train</a>
-        </li>
-        <li class="post-entry">
-            <span class="entry-date">MAY 18, 2026</span>
-            <a class="entry-title" href="/stories/placeholder-story-last-car/">Placeholder Story: The Last Car</a>
-        </li>
-        <li class="post-entry">
-            <span class="entry-date">APR 22, 2026</span>
-            <a class="entry-title" href="/stories/placeholder-story-cold-start/">Placeholder Story: Cold Start</a>
-        </li>
-        <li class="post-entry">
-            <span class="entry-date">MAR 16, 2026</span>
-            <a class="entry-title" href="/stories/placeholder-story-desk-light/">Placeholder Story: Desk Light</a>
-        </li>
-        <li class="post-entry">
             <span class="entry-date">JAN 24, 2026</span>
             <a class="entry-title" href="/stories/small-talk/">Small Talk</a>
         </li>
@@ -826,15 +766,9 @@
         <script>
         (function() {
             var root = document.documentElement;
-            var themeButtons = document.querySelectorAll("[data-theme-choice]");
             var sizeToggle = document.querySelector("[data-text-size-toggle]");
             var sizeStrip = document.querySelector("[data-text-size-strip]");
             var sizeButtons = document.querySelectorAll("[data-text-size-choice]");
-
-            function activeTheme() {
-                if (root.dataset.theme === "light" || root.dataset.theme === "dark") return root.dataset.theme;
-                return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
 
             function activeSize() {
                 return root.dataset.size === "small" || root.dataset.size === "large" ? root.dataset.size : "standard";
@@ -852,26 +786,12 @@
             }
 
             function syncControls() {
-                var theme = activeTheme();
                 var size = activeSize();
-                themeButtons.forEach(function(button) {
-                    button.setAttribute("aria-pressed", button.dataset.themeChoice === theme ? "true" : "false");
-                });
                 sizeButtons.forEach(function(button) {
                     button.setAttribute("aria-pressed", button.dataset.textSizeChoice === size ? "true" : "false");
                 });
                 if (sizeToggle) sizeToggle.textContent = size === "large" ? "(^)" : size === "small" ? "(v)" : "(-)";
             }
-
-            themeButtons.forEach(function(button) {
-                button.addEventListener("click", function() {
-                    var theme = button.dataset.themeChoice;
-                    if (theme !== "light" && theme !== "dark") return;
-                    root.dataset.theme = theme;
-                    persist("theme", theme);
-                    syncControls();
-                });
-            });
 
             if (sizeToggle && sizeStrip) {
                 sizeToggle.addEventListener("click", function() {
@@ -894,10 +814,6 @@
                     syncControls();
                 });
             });
-
-            if (window.matchMedia) {
-                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncControls);
-            }
 
             document.querySelectorAll("[data-goat-event]").forEach(function(link) {
                 link.addEventListener("click", function() {

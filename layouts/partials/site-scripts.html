@@ -1,15 +1,9 @@
     <script>
         (function() {
             var root = document.documentElement;
-            var themeButtons = document.querySelectorAll("[data-theme-choice]");
             var sizeToggle = document.querySelector("[data-text-size-toggle]");
             var sizeStrip = document.querySelector("[data-text-size-strip]");
             var sizeButtons = document.querySelectorAll("[data-text-size-choice]");
-
-            function activeTheme() {
-                if (root.dataset.theme === "light" || root.dataset.theme === "dark") return root.dataset.theme;
-                return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
 
             function activeSize() {
                 return root.dataset.size === "small" || root.dataset.size === "large" ? root.dataset.size : "standard";
@@ -27,26 +21,12 @@
             }
 
             function syncControls() {
-                var theme = activeTheme();
                 var size = activeSize();
-                themeButtons.forEach(function(button) {
-                    button.setAttribute("aria-pressed", button.dataset.themeChoice === theme ? "true" : "false");
-                });
                 sizeButtons.forEach(function(button) {
                     button.setAttribute("aria-pressed", button.dataset.textSizeChoice === size ? "true" : "false");
                 });
                 if (sizeToggle) sizeToggle.textContent = size === "large" ? "(^)" : size === "small" ? "(v)" : "(-)";
             }
-
-            themeButtons.forEach(function(button) {
-                button.addEventListener("click", function() {
-                    var theme = button.dataset.themeChoice;
-                    if (theme !== "light" && theme !== "dark") return;
-                    root.dataset.theme = theme;
-                    persist("theme", theme);
-                    syncControls();
-                });
-            });
 
             if (sizeToggle && sizeStrip) {
                 sizeToggle.addEventListener("click", function() {
@@ -69,10 +49,6 @@
                     syncControls();
                 });
             });
-
-            if (window.matchMedia) {
-                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", syncControls);
-            }
 
             document.querySelectorAll("[data-goat-event]").forEach(function(link) {
                 link.addEventListener("click", function() {

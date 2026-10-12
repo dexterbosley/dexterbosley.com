@@ -1,10 +1,6 @@
     <script>
         (function() {
             try {
-                var theme = window.localStorage.getItem("theme");
-                if (theme === "light" || theme === "dark") {
-                    document.documentElement.dataset.theme = theme;
-                }
                 var textSize = window.localStorage.getItem("textSize");
                 if (textSize === "small" || textSize === "standard" || textSize === "large") {
                     document.documentElement.dataset.size = textSize;
