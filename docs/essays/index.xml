@@ -14,397 +14,122 @@
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/on-unserious-thinking/</guid>
       <description>A price paid is the general form of verification.</description>
-      <content:encoded><![CDATA[<h2 id="thesis-and-definitions">Thesis and definitions</h2>
-<p><strong>Claim:</strong> A price paid is the general form of verification. Paying means someone checked the thing well enough to give up money for it, and paying again checks it twice. Unserious thinking substitutes a forecast of that price for the price itself.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Term</th>
-          <th>What it is</th>
-          <th>How you measure it</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Narrative value</td>
-          <td>A signal to capital that you will capture a future market</td>
-          <td>Valuation, attention, fundraising</td>
-      </tr>
-      <tr>
-          <td>Net user value</td>
-          <td>Benefit minus everything it costs the user: price, effort, verification, risk</td>
-          <td>Retention, repeat purchase, willingness to pay</td>
-      </tr>
-  </tbody>
-</table>
-<ul>
-<li><strong>Why price is the arbiter:</strong> Lean verifies a proof; payment verifies everything else. Prices aggregate millions of private &ldquo;was this worth it?&rdquo; checks that no single opinion, including an investor&rsquo;s, can match.</li>
-<li><strong>Not every price verifies the same thing.</strong> A repeat purchase verifies experienced value. An equity price is also a price paid, but for a forecast: it verifies what investors expect other investors to believe. Section 2 explains that gap.</li>
-<li><strong>A price only verifies what the payer can check.</strong> In B2B the user and payer differ, so ask whose payment is doing the verifying. The memo example turns on this.</li>
-<li><strong>Watch for counterfeit prices:</strong> attributed revenue, compute spent, demos shipped. They look like prices, but nobody chose to pay.</li>
-<li><strong>The verification term matters most for AI.</strong> Output the user must check is not free output. If checking costs more than doing, net value is negative even when the demo is impressive.</li>
-<li><strong>The operating rule: keep a fare ledger.</strong> Track what customers chose to pay for, repeatedly, net of the checking cost they carried, separately from what the story is worth. The rest of the essay explains why.</li>
-</ul>
-<h2 id="1-the-confusion-and-its-tell">1. The confusion and its tell</h2>
-<p>Capital and customers run on different clocks, and the vocabulary of the slower one leaks into the faster one.</p>
-<ul>
-<li>Capital rewards a credible story about a future market today. That is fine for capital.</li>
-<li>The failure is when roadmaps start citing &ldquo;this is where things are going&rdquo; instead of &ldquo;this saves X hours for Y team.&rdquo;</li>
-<li><strong>The tell: the argument has no subject.</strong> Eric Seufert&rsquo;s critique of agentic commerce is the cleanest diagnostic: who are the &ldquo;people,&rdquo; what is the &ldquo;stuff,&rdquo; and why won&rsquo;t &ldquo;they&rdquo; use the incumbent&rsquo;s agent? Steal its shape for the whole essay.</li>
-<li>Beat to land: inevitability claims skip the step where someone decides it was worth it.</li>
-</ul>
-<h2 id="2-the-mechanism-equity-sets-the-agenda">2. The mechanism: equity sets the agenda</h2>
-<p>Equity value is a forecast priced today, so leaders are rewarded for moving the forecast rather than the thing it forecasts. That makes chasing the narrative rational for every individual and unserious for the system.</p>
-<p><strong>The transmission chain (top down):</strong></p>
-<ol>
-<li>A company&rsquo;s equity value is the present value of expected future cash flows. In a platform shift, most of that value sits in the future, so the story about future markets moves the number more than this quarter&rsquo;s user value does.</li>
-<li>Equity is the currency for everything leadership needs: capital, recruiting, retention and acquisitions. A higher mark makes all of it cheaper. For a private company the mark is set at funding rounds and tenders.</li>
-<li>So leadership allocates toward what moves the mark: positioning, launches and demos that investors recognize as the winning theme.</li>
-<li>That flows down as roadmap priority. Teams get measured on shipping the theme, and net value at the payer becomes a secondary check.</li>
-<li>The feedback loops run at different speeds. The mark responds to a story within one round; net value shows up in retention and expansion over quarters or years. The fast loop wins the planning meeting.</li>
-</ol>
-<p><strong>Why it&rsquo;s rational (say this plainly; the audience will respect it):</strong></p>
-<ul>
-<li><strong>Reflexivity.</strong> If investors believe the AI-positioned company wins, it gets cheaper capital and better talent, which helps it win. The narrative partly fulfills itself.</li>
-<li><strong>Competition.</strong> If rivals are rewarded for the story and you aren&rsquo;t, you lose the capital and talent race before the product race starts. Investors are pricing what other investors will believe.</li>
-<li><strong>Asymmetric blame.</strong> No executive is faulted for chasing the consensus theme. Missing it is the career risk.</li>
-<li><strong>Everyone holds equity.</strong> Employees are paid partly in the same mark, so the incentive runs all the way down the org chart.</li>
-</ul>
-<p><strong>Why it&rsquo;s still unserious:</strong></p>
-<ul>
-<li><strong>Goodhart.</strong> The mark is a forecast of net user value. Optimizing the forecast instead of the thing it forecasts breaks the measure.</li>
-<li><strong>It&rsquo;s borrowed against the future.</strong> Multiples eventually converge on cash flows. Narrative without delivered value is a loan the company repays later, at the next round or at the public-market reckoning.</li>
-<li><strong>The cost lands on someone else.</strong> The memo example is this chain in miniature: the theme ships, the employee is happy, and the payer inherits the verification cost.</li>
-<li><strong>Weisenthal said the quiet part out loud.</strong> Reading the math results as a signal to investors is this mechanism described honestly.</li>
-</ul>
-<p><strong>The serious version is not to ignore equity.</strong> That would be naive. Instead:</p>
-<ul>
-<li>Label narrative bets as options: size them, cap them, and don&rsquo;t grade them on user value.</li>
-<li>Grade product work on net value at the payer.</li>
-<li>Look for the overlap. Memo automation done right (facts from data, humans only for the why) is a better story for a finance buyer than prose generation, because it reads as stronger controls.</li>
-</ul>
-<h2 id="3-precedent-railroads-where-the-debt-and-the-fares-diverged">3. Precedent: railroads, where the debt and the fares diverged</h2>
-<p>Railroads are the cleanest historical test of the thesis. Capital priced the story of the network; fares priced its use. The track was real and still runs, but many who financed it on the story lost, and the value went to users and to whoever bought the assets cheap.</p>
+      <content:encoded><![CDATA[<p>A price paid is the general form of verification. Someone checked the thing well enough to give up money for it. Paying again checks it twice.</p>
+<p>Unserious thinking substitutes a forecast of that price for the price itself. AI makes this easy because it makes production cheap while leaving verification expensive. A demo ships, the output looks plausible, and someone else inherits the work of deciding whether it is any good.</p>
+<h2 id="price-and-prediction">Price and prediction</h2>
+<p>An equity price is a price paid, but for a forecast. It measures what investors expect other investors to believe about future cash flows. A repeat purchase measures experienced value. Confusing the two is the mistake.</p>
+<p>Chasing the forecast is rational. A higher mark makes capital, recruiting, retention, and acquisitions cheaper. If competitors are rewarded for the AI story, declining to tell one can cost the company before the product contest begins. Employees hold the same equity, so the incentive reaches the whole company.</p>
+<p>The error begins when the forecast becomes evidence about the product. Roadmaps cite where the world is going instead of what a product saves. Demos shipped, compute spent, and attributed revenue look like prices, but nobody chose to pay them.</p>
+<p>Net user value is the benefit left after price, effort, risk, and verification. Output the user must check is not free output. If checking costs more than doing, the demo can be impressive while the product is worthless.</p>
+<p>Keep two ledgers. The mark ledger records the value of the story. The fare ledger records what customers pay for repeatedly, net of the checking cost they carry. Narrative bets belong on the first. Product work has to clear the second.</p>
+<h2 id="railroads">Railroads</h2>
+<p>Railroads make the distinction visible. Capital priced the future network; fares priced its use. The track was real, but much of the financing was not supported by what passengers and shippers would pay.</p>
 <table>
   <thead>
       <tr>
           <th>Episode</th>
-          <th>What capital did</th>
-          <th>What the fares said</th>
-          <th>Outcome</th>
+          <th>Capital</th>
+          <th>Fares</th>
+          <th>Result</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><a href="https://en.wikipedia.org/wiki/Railway_Mania">Britain, 1840s</a></td>
-          <td>263 Acts for new railway companies in 1846 alone, proposing 9,500 miles; shares bought on a 10% deposit</td>
-          <td>Many lines proved unviable once running</td>
-          <td>About a third of authorized lines never built; many middle-class families lost their savings</td>
+          <td>263 railway acts in 1846; 9,500 miles proposed</td>
+          <td>Many lines were not viable</td>
+          <td>About a third of authorized lines were never built</td>
       </tr>
       <tr>
           <td><a href="https://en.wikipedia.org/wiki/Panic_of_1873">US, 1873</a></td>
-          <td>33,000 miles laid from 1868 to 1873, much of it bond-financed with land grants; most capital in projects with no early returns</td>
-          <td>Jay Cooke &amp; Co. could not sell Northern Pacific bonds</td>
-          <td>Cooke failed Sept. 18, 1873; 55 railroads failed by November and 60 more within a year; construction fell from 7,500 miles in 1872 to 1,600 in 1875</td>
+          <td>33,000 miles laid in five years, much of it debt-financed</td>
+          <td>Northern Pacific bonds stopped selling</td>
+          <td>Jay Cooke failed; more than 100 railroads failed within a year</td>
       </tr>
       <tr>
           <td><a href="https://en.wikipedia.org/wiki/Panic_of_1893">US, 1893</a></td>
-          <td>An 1880s railroad bubble left the network overbuilt</td>
-          <td>Rates kept falling: the rail rate for a bushel of wheat went from 14.70¢ in 1893 to 9.92¢ by 1901</td>
-          <td>A quarter of all US rail mileage went into receivership; Northern Pacific, Union Pacific and Santa Fe failed</td>
+          <td>An overbuilt network remained from the 1880s</td>
+          <td>Rates kept falling</td>
+          <td>A quarter of US rail mileage entered receivership</td>
       </tr>
   </tbody>
 </table>
-<p><strong>Who lost, who won:</strong></p>
-<ul>
-<li><strong>Lost: those who financed the story.</strong> Shareholders and bondholders, including British savers and European buyers of American railroad bonds.</li>
-<li><strong>Won: users.</strong> Falling rates passed the network&rsquo;s value to shippers. The fare is where value is verified, and it went to the people paying it.</li>
-<li><strong>Won: whoever bought after the reset.</strong> In Britain, Great Western and Midland bought failed lines for a fraction of their value, and many became viable inside the larger network.</li>
-<li><strong>Won: builders who built against fares.</strong> <a href="https://en.wikipedia.org/wiki/Great_Northern_Railway_(U.S.)">Great Northern</a> was built in stages, profitable lines first. It took no land grants, bought land from the government and resold it to settlers, recruiting the traffic it would carry.</li>
-</ul>
-<p><strong>The sharper cut: the people running the railroads got rich on the raise, not the fares.</strong> Raising was rational for them and operating was unserious, because the two paid out separately.</p>
-<ul>
-<li><strong><a href="https://en.wikipedia.org/wiki/Cr%C3%A9dit_Mobilier_scandal">Crédit Mobilier</a>.</strong> Union Pacific insiders set up their own construction company and sat on both sides of every contract. Congress paid Union Pacific about $94.7 million against roughly $50.7 million paid to Crédit Mobilier, leaving about $43.9 million in profit for the same directors.</li>
-<li><strong>Why they built it that way.</strong> The insiders didn&rsquo;t expect profits from operating the railroad, so they took them in the construction phase. After the 1872 exposé, Union Pacific and other investors were left nearly bankrupt.</li>
-<li><strong><a href="https://en.wikipedia.org/wiki/Railway_Mania">George Hudson</a>, the British &ldquo;Railway King,&rdquo;</strong> paid dividends out of capital: returns to earlier investors funded by new money rather than by fares.</li>
-<li><strong>Keep it fair.</strong> Historian Maury Klein concluded the builders did not defraud the government, though bribery was a qualified yes. The point isn&rsquo;t the crime; it&rsquo;s where the profit sat.</li>
-</ul>
-<p><strong>The mechanism with the mask off.</strong> When the raise itself pays the people running the enterprise, the fares stop mattering to them. That is section 2&rsquo;s logic taken to its end: rational for the insider, unserious for the enterprise.</p>
-<p><strong>The question for any AI plan, including ours:</strong> who gets paid on the raise, and who only gets paid on the fare? Aim this at the mechanism, not at people. Every company paid partly in marks has the same exposure, and the defense is to keep a fare ledger.</p>
-<p><strong>What still exists.</strong> The track. About 6,220 miles were built from projects authorized in 1844–46, against roughly 11,000 miles in the UK network today. In the US, <a href="https://en.wikipedia.org/wiki/BNSF_Railway">BNSF</a> descends from Great Northern, Northern Pacific, Burlington and Santa Fe; Berkshire Hathaway bought it in 2010 in a deal valued at $44 billion including debt. BNSF and Union Pacific share a duopoly on western transcontinental freight. Two of the railroads that failed in 1893 now sit inside the survivor. Infrastructure outlives its financing.</p>
-<p><strong>Map it to now.</strong></p>
-<ul>
-<li>Debt raised is narrative value: priced on the network&rsquo;s future. Fares are the price paid per use. When fares couldn&rsquo;t service the debt, the debt reset to what fares could carry.</li>
-<li>AI&rsquo;s version: compute built on the story, with token prices as the fares. The open question is whether fares can service what was raised.</li>
-<li><strong>The prediction the essay can make:</strong> the AI is probably real, like the track. That doesn&rsquo;t mean everyone who financed it on the story gets paid. Value flows to users through falling prices, and to whoever owns the assets after the reset.</li>
-<li><strong>Ramp&rsquo;s position:</strong> closer to the shipper than the railroad. Falling token prices are our falling freight rates, but only if we pass the value to customers and price it in a way they can verify (section 7).</li>
-</ul>
-<h2 id="4-example-1-external-agentic-commerce">4. Example 1, external: agentic commerce</h2>
-<p>The evidence says agents create value when intent is fully specified, and that the platform owning the relationship captures it. Neither supports &ldquo;a startup builds the next Amazon with agents.&rdquo;</p>
-<p><strong>The specimen.</strong> Paul Graham: Amazon banning agents is the first opening for an Amazon competitor since its founding, because people will want agents to buy stuff for them. It is asserted as inevitable. Seufert&rsquo;s rebuttal asks the missing questions: who, what stuff, and why not Amazon&rsquo;s own agent?</p>
-<p><strong>What actually happened (the facts the essay can lean on):</strong></p>
-<ul>
-<li>Amazon blocked Meta&rsquo;s Muse agent in September 2026. Its stated reasons: Meta never notified it, the agent doesn&rsquo;t identify itself, and it appears to store customer credentials. <a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR</a></li>
-<li>The legal route narrowed first. The Ninth Circuit ruled on Aug. 4, 2026 that the user, not the AI company, is the one accessing Amazon under anti-hacking law, so Amazon now enforces through its Conditions of Use. <a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR</a></li>
-<li>The motive is the ad business: more than $68 billion last year, which depends on people browsing sponsored pages. <a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR</a></li>
-<li>Amazon&rsquo;s own agent is the counterexample to &ldquo;nobody wants this.&rdquo; It reports Rufus drove nearly $12 billion in incremental annualized sales in 2025 across 300 million users, roughly $40 per user per year. <a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a></li>
-</ul>
-<p><strong>Run the net-value test.</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Use case</th>
-          <th>Is intent specified?</th>
-          <th>Who bears the risk?</th>
-          <th>Verdict</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>&ldquo;Buy me a good jacket&rdquo;</td>
-          <td>No; browsing is part of the utility</td>
-          <td>User, via returns</td>
-          <td>Unpriced</td>
-      </tr>
-      <tr>
-          <td>Rufus price alert: buy this item at this price</td>
-          <td>Yes</td>
-          <td>Low; 24-hour cancel window</td>
-          <td>Works: users average 20% savings (<a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a>)</td>
-      </tr>
-      <tr>
-          <td>Third-party agent on Amazon</td>
-          <td>Varies</td>
-          <td>Platform, which blocks it</td>
-          <td>Blocked by the party that owns the relationship</td>
-      </tr>
-      <tr>
-          <td>Policy-bound business purchasing</td>
-          <td>Yes: specs, budgets, approvers</td>
-          <td>Company, with controls</td>
-          <td>Hypothesis to test (the Ramp angle)</td>
-      </tr>
-  </tbody>
-</table>
-<p><strong>What it proves.</strong></p>
-<ul>
-<li>Even the $12 billion is narrative-shaped. It is Amazon&rsquo;s own counterfactual attribution, and PPC Land notes the method rests on behavioral assumptions. Use it to show that the &ldquo;real&rdquo; number also needs the net-value test.</li>
-<li>The agent ↔ retailer plumbing commoditizes while fulfillment, returns and support costs stay with the retailer. That is Seufert&rsquo;s point and it holds.</li>
-<li>Flip, don&rsquo;t dunk: name where the test passes. Delegation pays when the buyer can fully specify what they want, which describes most of business spend better than most of consumer shopping.</li>
-</ul>
-<h2 id="5-example-2-external-theoretical-math">5. Example 2, external: theoretical math</h2>
-<p>The math releases are a clean case study because verification is measurable. When volume went up, the verified share went down, and the checking cost moved to everyone else.</p>
-<p><strong>Why labs do it (Weisenthal&rsquo;s read).</strong> Theoretical math is mostly an intellectual pursuit. Its function is a signal: a lab that solves open problems can beat others to commercially valuable breakthroughs in pharma or chip design. Read that way, the &ldquo;pre-IPO hype&rdquo; critics and Weisenthal agree on what the math is for. It is narrative value, and a legitimate investment thesis.</p>
-<p><strong>What the record shows:</strong></p>
+<p>Users won through falling freight rates. Buyers of failed lines won by acquiring useful track after the financing reset. <a href="https://en.wikipedia.org/wiki/Great_Northern_Railway_(U.S.)">Great Northern</a> built in stages, starting with profitable routes and cultivating the traffic it expected to carry.</p>
+<p>Some insiders did not need fares at all. <a href="https://en.wikipedia.org/wiki/Cr%C3%A9dit_Mobilier_scandal">Crédit Mobilier</a> let Union Pacific directors profit from construction contracts with their own company. George Hudson paid dividends from new capital rather than operating income. The raise paid; the railroad did not have to.</p>
+<p>Infrastructure can survive bad financing. Northern Pacific and Santa Fe failed in 1893 and now sit inside BNSF. The AI may be real in the same way the track was real. That does not mean everyone who financed it on the story gets paid. Falling token prices may give most of the value to users and to whoever owns the assets after a reset.</p>
+<h2 id="agents">Agents</h2>
+<p>Agentic commerce works when intent is specific and the checking cost is low. It does not follow that a new agent becomes the next Amazon.</p>
+<p>Amazon blocked Meta&rsquo;s Muse agent in September 2026, citing identification, notification, and credential concerns. The deeper conflict is economic: a third-party agent bypasses the browsing and advertising system while leaving fulfillment, returns, and support with Amazon. The platform that owns the customer relationship can refuse that bargain. (<a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR</a>)</p>
+<p>Amazon&rsquo;s own Rufus is the counterexample. Amazon says it drove nearly $12 billion in incremental annualized sales in 2025 across 300 million users. Its price-alert feature works because the instruction is exact: buy this item at this price, with a cancellation window. (<a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a>)</p>
+<p>“Buy me a good jacket” is different. Browsing is part of the value, taste is underspecified, and the buyer bears the cost of a bad choice. Business purchasing is a better fit because specifications, budgets, policies, and approvers make intent legible. Delegation pays when the buyer can say what success is before the agent acts.</p>
+<h2 id="proofs">Proofs</h2>
+<p>Theoretical math is useful because verification is visible.</p>
 <table>
   <thead>
       <tr>
           <th>Release</th>
-          <th>What shipped</th>
-          <th>Verified share</th>
+          <th>Output</th>
+          <th>Verification</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances</a>, Aug. 1, 2026</td>
+          <td><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances</a>, Aug. 2026</td>
           <td>10 results</td>
-          <td>All 10 shipped with Lean certificates</td>
+          <td>10 Lean certificates</td>
       </tr>
       <tr>
-          <td><a href="https://openai.com/index/navier-stokes-solution/">Navier–Stokes</a>, Sep. 8, 2026</td>
+          <td><a href="https://openai.com/index/navier-stokes-solution/">Navier–Stokes</a>, Sep. 2026</td>
           <td>1 Millennium Prize claim</td>
-          <td>Lean-formalized; whether the formal statement matches the Clay problem is still being checked (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>)</td>
+          <td>Formalized, but the match to the Clay problem remains disputed</td>
       </tr>
       <tr>
-          <td><a href="https://github.com/openai/math">openai/math</a>, Oct. 6, 2026</td>
-          <td>719 manuscripts in 372 families, from ~4,000 problems posed</td>
-          <td>~42% of top-line results formalized</td>
+          <td><a href="https://github.com/openai/math">openai/math</a>, Oct. 2026</td>
+          <td>719 manuscripts in 372 families</td>
+          <td>About 42% of top-line results formalized</td>
       </tr>
   </tbody>
 </table>
-<ul>
-<li>The repo&rsquo;s own README says not all results have Lean formalizations and some unformalized ones could have issues. <a href="https://github.com/openai/math">GitHub</a></li>
-<li>Each result cost about three hours of ChatGPT Pro-equivalent compute. <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI</a> Producing a claim is now cheap; checking one is not. Navier–Stokes is the outlier; see the crude version below (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>).</li>
-<li>Dan Roberts&rsquo; Oct. 8 update: 6 new formalizations, 19 modifications, 3 withdrawals. Lucas Beyer&rsquo;s reaction: why ship the batch and check half afterward?</li>
-</ul>
-<p><strong>The crude version: Navier–Stokes.</strong> The prize is $1 million. The final run used about 10,000 agents over 88 hours, at compute OpenAI put in the millions of dollars, and that figure excludes training the model. OpenAI then said it won&rsquo;t claim the prize. (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>)</p>
-<ul>
-<li><strong>Read as a product, it&rsquo;s absurd.</strong> They spent more than the only posted price for the result, then declined the payment. Nobody else is a buyer for the proof itself.</li>
-<li><strong>Read as marketing, it&rsquo;s cheap.</strong> Millions in compute is a rounding error against the equity value it signals. This is section 2 in one transaction: the spend is rational because the return is booked in the valuation, not in anyone&rsquo;s use of the result.</li>
-<li><strong>The unserious part is the framing.</strong> Calling it a math breakthrough is fine. Implying the proof is where the value lies is the confusion. The value bought is a narrative, and the bill for checking it goes to the fluid-dynamics community.</li>
-<li><strong>Keep the claim honest.</strong> The sourced figures show compute at a multiple of the prize, not orders of magnitude. Training costs would widen the gap, but no public number covers them, so don&rsquo;t assert one.</li>
-</ul>
-<p><strong>The causal insight.</strong> &ldquo;42% formalized&rdquo; is a ledger of net value delivered. The unformalized 58% is a liability moved onto mathematicians, who now carry the verification cost. That is the net-value equation from the definitions, with real numbers.</p>
-<p><strong>Where it goes if nobody prices verification.</strong> Steven Glinert&rsquo;s joke is the extrapolation: billions in tokens produce far more mathematics than humanity has ever written, an unknown share of it is wrong, and checking can&rsquo;t keep up. A reply says the AIs will verify it for us, which is the 42% in the repo, still trailing.</p>
-<ul>
-<li><strong>The fair counter (Noah Smith):</strong> this already existed. Humans have long produced math nobody else understands that might be wrong.</li>
-<li><strong>The answer:</strong> the difference is the cost ratio. Human output was rate-limited by human effort, so production and checking scaled together. The author was the first verifier, and reputation priced the rest. AI breaks that link: production gets near-free while verification stays expensive and human.</li>
-<li><strong>The theme to carry forward:</strong> when production gets cheap, verification becomes the price. Unserious thinking is ignoring who pays it.</li>
-</ul>
-<p><strong>What it proves.</strong> A capability demo is an option on future value, not value. Building it is fine. Booking it as delivered is the unserious move. Note the fair counterpoint: the August release showed the lab can ship fully verified work, so the October batch was a choice about speed, not a limit of the method.</p>
-<h2 id="6-example-3-at-ramp-memo-automation-hypothetical">6. Example 3, at Ramp: memo automation (hypothetical)</h2>
-<p>Memo automation is the same pattern inside our own product: it creates value for the employee and destroys it for the admin who pays us. The two external examples make the pattern easy to see from a distance; this one shows the audience it applies to them.</p>
-<p><strong>The hypothetical.</strong> AI writes every expense memo. The employee does less work, a clear win. The admin, who buys Ramp and advocates for it internally, now gets memos that say nothing.</p>
-<p><strong>Why it breaks.</strong> The memo was never the product. It was a costly signal: the effort of writing one deterred marginal purchases and carried information to the reviewer. Automate the writing and the cost drops to zero, and the signal goes with it.</p>
+<p>The repository says some unformalized results may have issues. That is not a footnote. The unformalized 58% is a verification bill handed to mathematicians.</p>
+<p>The Navier–Stokes run makes the accounting plain. The prize is $1 million. OpenAI used roughly 10,000 agents over 88 hours and put the compute cost in the millions, excluding training, then said it would not claim the prize. (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>) As a product sold for the posted price, the economics fail. As a signal of technical power, the same spend may be cheap.</p>
+<p>There is nothing wrong with buying that signal. The mistake is booking it as delivered user value. A capability demo is an option on future value. It becomes a product when someone accepts the output and the cost of checking it.</p>
+<p>Human mathematics has always contained work that few people can verify. The difference is the ratio. Human production was limited by human effort; the author was also the first checker. AI breaks that link. Claims become cheap while proof remains expensive.</p>
+<h2 id="ramp">Ramp</h2>
+<p>The same problem appears in expense memos. If AI writes every memo, the employee saves time, but the admin gets fluent text that may carry no information.</p>
 <table>
   <thead>
       <tr>
           <th>Party</th>
           <th>Before</th>
-          <th>After automating the prose</th>
+          <th>After</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>Employee</td>
-          <td>Writes a short justification</td>
-          <td>Writes nothing: gain</td>
+          <td>Writes a justification</td>
+          <td>Writes nothing</td>
       </tr>
       <tr>
-          <td>Admin (the payer)</td>
+          <td>Admin</td>
           <td>Reads a human reason</td>
-          <td>Audits fluent text that may be wrong: verification cost moves to them</td>
+          <td>Audits generated prose</td>
       </tr>
       <tr>
-          <td>Company spend</td>
-          <td>Writing deters marginal purchases</td>
-          <td>Deterrent gone</td>
+          <td>Company</td>
+          <td>Writing deters marginal spend</td>
+          <td>The deterrent disappears</td>
       </tr>
   </tbody>
 </table>
-<p><strong>What happens next.</strong> The admin does one of three things:</p>
-<ol>
-<li>Ignores memos and loses control.</li>
-<li>Adds friction back through approvals or receipt rules, which undoes the employee&rsquo;s gain.</li>
-<li>Concludes Ramp weakened their controls, which is churn risk at the person who signs the contract.</li>
-</ol>
-<p><strong>What it proves.</strong> In B2B the user and the payer are different people. Net value has to clear at the payer, not just the user.</p>
-<p><strong>Tie it to the math example.</strong> Generated prose is the unformalized 58%: plausible, unchecked, and someone else&rsquo;s problem. Facts drawn from data are the Lean-verified 42%.</p>
-<p><strong>The serious version.</strong> Automate what the memo stood in for, not the prose.</p>
-<ul>
-<li>Fill the facts from data: merchant, attendees from the calendar, trip context, policy match. These are grounded and checkable.</li>
-<li>Ask a human only for the irreducible &ldquo;why,&rdquo; and only when the data can&rsquo;t explain the spend.</li>
-<li>Flag exceptions loudly, so the admin reviews the few cases that matter instead of skimming many plausible ones.</li>
-</ul>
-<p><strong>Correct the premise.</strong> Perfect memos are not the goal. Correct spend decisions at the lowest total cost are, and memos were one means to that.</p>
-<h2 id="7-at-ramp-for-real-how-we-price-ai">7. At Ramp, for real: how we price AI</h2>
-<p>Ramp prices its AI per seat, so the price we charge cannot verify the AI we ship. By this essay&rsquo;s own thesis, we have switched off our best instrument.</p>
-<p><strong>What the pricing page says</strong> (<a href="https://ramp.com/pricing">ramp.com/pricing</a>, accessed Oct. 9, 2026):</p>
-<table>
-  <thead>
-      <tr>
-          <th>Tier</th>
-          <th>Label on the page</th>
-          <th>Price unit</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Free</td>
-          <td>&ldquo;AI-assisted&rdquo;</td>
-          <td>$0 per user per month</td>
-      </tr>
-      <tr>
-          <td>Plus</td>
-          <td>&ldquo;AI-powered&rdquo;</td>
-          <td>$15 per user per month, plus a platform fee based on team size</td>
-      </tr>
-      <tr>
-          <td>Enterprise</td>
-          <td>&ldquo;AI-tailored&rdquo;</td>
-          <td>Custom, billed annually</td>
-      </tr>
-  </tbody>
-</table>
-<ul>
-<li>The AI ships inside the seat. AI-driven expense reviews, AI coding for every field, and AP-agent approval recommendations and line-item coding are all listed as Plus features.</li>
-<li>The labels are narrative; the unit is a seat. Almost nothing is metered beyond small items like $0.65 per IRS 1099 filing.</li>
-<li><strong>Keep the critique precise.</strong> The card business already earns per transaction through interchange, so Ramp does run on a usage price where most of the money is. The gap is narrower: software and AI are priced per seat.</li>
-</ul>
-<p><strong>Why a seat price can&rsquo;t verify AI:</strong></p>
-<ul>
-<li>An AP agent that codes 10,000 invoices and one that codes 10 earn the same. The price doesn&rsquo;t move when value does, so it can&rsquo;t tell us which agent work is worth anything.</li>
-<li>It can run backwards. AI that removes work reduces the number of people who need to touch Ramp. If seats track people, delivering the value shrinks the base we price on.</li>
-<li>It hides the memo problem. If generated memos made the admin&rsquo;s job worse, no line item would show it until renewal.</li>
-</ul>
-<p><strong>Why it&rsquo;s rational (section 2 again):</strong></p>
-<ul>
-<li>Seat revenue is predictable and recurring, the revenue shape investors reward most. Usage revenue swings with customer activity.</li>
-<li>Usage pricing forces a hard question every month: did this unit of work earn its price? Seat pricing defers that question to renewal.</li>
-<li>So staying on seats is rational, and it is also the choice not to be verified.</li>
-</ul>
-<p><strong>The serious version:</strong></p>
-<ul>
-<li>Meter what the AI does where the payer can check it: invoices coded correctly, memos accepted without edits, policy exceptions caught.</li>
-<li>If the price stays per seat, instrument as if it weren&rsquo;t. Keep an internal shadow price per agent action and watch which ones customers would pay for on their own.</li>
-<li>Make the ask small. The essay doesn&rsquo;t need to win the pricing argument; it needs leadership to agree to measure as if the price were real.</li>
-</ul>
-<h2 id="8-steelman-what-we-concede">8. Steelman: what we concede</h2>
-<p>Narrative value is not fake value; it funds the work that later becomes real value. The essay has to concede this to be credible.</p>
-<ul>
-<li><strong>The strongest objection:</strong> some things look worthless until they suddenly don&rsquo;t. The math demos may well be the R&amp;D that produces the pharma result Weisenthal describes.</li>
-<li><strong>Amazon proves agents can pay.</strong> Rufus is real usage at real scale, so &ldquo;agentic commerce is fake&rdquo; is simply wrong.</li>
-<li><strong>Response:</strong> agreed on both. The essay is not anti-AI and not anti-investor. Its claim is narrower: keep two ledgers, and never let the narrative ledger pay the product ledger&rsquo;s bills.</li>
-<li><strong>Where operators slip:</strong> they ship the demo and count it as the outcome. Ask which ledger a project is on before it starts, not after.</li>
-</ul>
-<h2 id="conclusion-keep-a-fare-ledger">Conclusion: keep a fare ledger</h2>
-<p>You don&rsquo;t have to settle whether AI is fundamentally worth it. Economics only asks about the change: did someone end up better off by more than it cost them, and will they come back?</p>
-<p><strong>Rational is not the same as serious.</strong> Rational means the incentives pay the person deciding. Serious means the outcome is verified by what customers pay. Every example in this essay sits somewhere on those two axes.</p>
-<p>[embedded content: rational vs serious · four quadrants]</p>
-<p>Most AI work drifts to the bottom right: rational for the decider, priced on narrative. The essay argues for the top right, and that it beats the bottom right on the bottom right&rsquo;s own terms.</p>
-<p><strong>Why serious and rational wins on its own terms:</strong></p>
-<ul>
-<li><strong>Marks converge to fares.</strong> Multiples eventually meet cash flows, so the fare ledger is the forecast the mark will be judged against (section 2).</li>
-<li><strong>Fares compound; raises don&rsquo;t.</strong> Repeat purchase funds the next unit of work without anyone&rsquo;s permission. A raise has to be won again every round.</li>
-<li><strong>The assets go to whoever can carry them on fares.</strong> After every railroad reset, operators who could run the lines on fares bought them cheap, and Berkshire later paid $44 billion for the survivor (section 3).</li>
-<li><strong>A fare ledger is the best story you can tell capital.</strong> It&rsquo;s the one story that has already been checked, so serious is also the most rational pitch.</li>
-</ul>
-<p><strong>Why it&rsquo;s the human thing:</strong></p>
-<ul>
-<li><strong>A price paid is a person&rsquo;s judgment.</strong> Keeping a fare ledger treats customers as judges, not as an audience for a story.</li>
-<li><strong>Unserious work moves the checking cost onto people who never agreed to carry it:</strong> mathematicians auditing unformalized proofs, admins auditing generated memos. Serious work carries its own verification.</li>
-<li><strong>It respects the team&rsquo;s time.</strong> Work graded on fares outlasts the theme it launched under.</li>
-</ul>
-<ul>
-<li>That debate about fundamental worth is unwinnable and beside the point. Prices settle the marginal question without anyone having to win it.</li>
-<li>All three examples resolve the same way. Agents pay where intent is specified, math pays where it is verified, and memo automation pays where the payer still gets a signal. Everywhere else, the value is still a promise or a cost moved onto someone else.</li>
-</ul>
-<p><strong>The through-line.</strong> In every example, AI made production cheap and left verification expensive. The math community checks the 58%, the retailer absorbs the agent&rsquo;s returns, the admin audits the generated memo. The serious question is always who now holds the checking cost, and whether they agreed to.</p>
-<p><strong>The fare ledger, as four questions anyone can run on an AI feature:</strong></p>
-<ol>
-<li>Who, specifically, uses it?</li>
-<li>What do they stop doing or paying for?</li>
-<li>Who bears the verification cost, and what does it cost them?</li>
-<li>Would they pay for it if &ldquo;AI&rdquo; weren&rsquo;t in the name?</li>
-</ol>
-<h2 id="open-items-and-sources">Open items and sources</h2>
-<ul>
-<li><input disabled="" type="checkbox"> Link the original posts by Weisenthal, Seufert, Graham, Roberts, Beyer, Glinert and Smith. They are quoted here from your screenshots, not opened.</li>
-<li><input disabled="" type="checkbox"> Find Weisenthal&rsquo;s full newsletter piece on the math breakthroughs if you want his argument beyond the posts.</li>
-<li><input disabled="" type="checkbox"> Decide whether to use independent research claiming Rufus favors Amazon&rsquo;s own products. It surfaced in search but couldn&rsquo;t be opened, so it stays out until verified.</li>
-<li><input disabled="" type="checkbox"> Pull internal evidence for the business-purchasing hypothesis before presenting it as the flip.</li>
-<li><input disabled="" type="checkbox"> Check whether any in-flight agent-payments work reads the agentic commerce section as criticism.</li>
-<li><input disabled="" type="checkbox"> Confirm with finance how much of revenue is interchange versus software before publishing the pricing section.</li>
-<li><input disabled="" type="checkbox"> Pull internal counts of AI actions per seat (invoices coded, memos generated) to make the seat-versus-value gap concrete.</li>
-<li><input disabled="" type="checkbox"> Confirm Great Northern avoided receivership in 1893; it would make the strongest contrast with Northern Pacific, but the opened sources don&rsquo;t state it.</li>
-<li><input disabled="" type="checkbox"> Decide whether to add current AI data-center debt figures to the railroad section; they aren&rsquo;t sourced here yet.</li>
-</ul>
-<p><strong>Sources (pages opened):</strong></p>
-<ul>
-<li><a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR: Amazon blocks Meta&rsquo;s Muse AI agent</a> (Sep. 22, 2026)</li>
-<li><a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land: Amazon&rsquo;s AI shopping assistant drove $12 billion in sales for 2025</a> (Feb. 7, 2026)</li>
-<li><a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI: Sharing AI progress in mathematics</a> (Oct. 6, 2026)</li>
-<li><a href="https://github.com/openai/math">GitHub: openai/math README</a></li>
-<li><a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS: OpenAI claims a Navier–Stokes proof, amid a dispute over credit</a> (Sep. 9, 2026)</li>
-<li><a href="https://cryptobriefing.com/openai-solved-math-problems-github-release/">Crypto Briefing: OpenAI releases new mathematical results</a> (Oct. 6, 2026)</li>
-<li><a href="https://ramp.com/pricing">Ramp: Pricing and plans</a> (accessed Oct. 9, 2026)</li>
-<li><a href="https://en.wikipedia.org/wiki/Railway_Mania">Wikipedia: Railway Mania</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Panic_of_1873">Wikipedia: Panic of 1873</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Panic_of_1893">Wikipedia: Panic of 1893</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Great_Northern_Railway_(U.S.)">Wikipedia: Great Northern Railway (U.S.)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/BNSF_Railway">Wikipedia: BNSF Railway</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Cr%C3%A9dit_Mobilier_scandal">Wikipedia: Crédit Mobilier scandal</a></li>
-</ul>
+<p>The memo was a costly signal. Writing it made the employee explain the purchase and discouraged weak ones. Automating the prose removes the effort and the information together. The admin either ignores memos, adds friction elsewhere, or decides the product weakened control.</p>
+<p>Automate what the memo represented instead. Fill merchant, attendees, trip context, and policy status from data. Ask the employee only for the irreducible reason. Flag exceptions so the admin reviews the cases that matter. The goal is not perfect prose; it is correct spend decisions at the lowest total cost.</p>
+<p>Ramp&rsquo;s pricing creates a related blind spot. The <a href="https://ramp.com/pricing">pricing page</a> sells AI inside seats: Plus is $15 per user per month plus a platform fee, while Enterprise is custom. An agent that codes 10,000 invoices and one that codes ten earn the same software price. If automation reduces the number of people touching Ramp, delivering more value can even shrink the seat base.</p>
+<p>Ramp already earns usage revenue through interchange, so the problem is narrower than the whole business. But seat pricing cannot tell us which AI actions are worth anything. The company should keep a shadow price for invoices coded correctly, memos accepted without edits, and policy exceptions caught. If customers would not pay for an action on its own, the seat should not hide that fact.</p>
+<h2 id="keep-a-fare-ledger">Keep a fare ledger</h2>
+<p>Narrative value is not fake. It funds work whose value does not exist yet. Rufus shows agents can pay. The verified math releases show labs can produce checked work. A railroad can lose its shareholders and still transform a country.</p>
+<p>The bookkeeping still matters. Mark narrative bets as options. Grade products on value at the payer. Record the named user, the cost displaced, the person carrying verification, and willingness to pay without “AI” in the name.</p>
+<p>The point is not that AI is worthless. It is that production is becoming cheap while verification is not. When that happens, verification becomes the price.</p>
 ]]></content:encoded>
     </item>
   </channel>
