@@ -1,15 +1,8 @@
 {{- $pages := .pages -}}
 {{- $label := .label -}}
 {{- $id := .id -}}
-{{- $updated := "" -}}
-{{- with index (sort $pages "Date" "desc") 0 -}}
-    {{- $updated = printf "Updated %s" (.Date.Format "January 2006") -}}
-{{- end -}}
 <section class="home-section" aria-labelledby="{{ $id }}">
     <h2 class="home-section-title" id="{{ $id }}">{{ $label }}</h2>
-    {{- with $updated }}
-    <p class="home-updated">{{ upper . }}</p>
-    {{- end }}
     <div class="home-rows">
         {{- range $pages }}
         {{- $deck := .Params.deck | default .Params.description -}}
