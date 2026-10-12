@@ -12,8 +12,7 @@
     <link rel="preload" href="/fonts/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="description" content="All posts by Dexter Bosley.">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfb">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
+    <meta name="theme-color" content="#fdfdfb">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Archive">
@@ -77,22 +76,6 @@
             --object-width: min(60%, 384px);
         }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                color-scheme: dark;
-                --bg: #0c0c0e;
-                --ink: #e6e4de;
-                --muted: #9a9993;
-                --wash: #1c2536;
-                --accent: #7d9cce;
-                --link: #7d9cce;
-                --visited: #a493c4;
-                --active: #d08a8a;
-                --linkhover: #9db8e0;
-                --frame: #e6e4de;
-            }
-        }
-
         @media (max-width: 480px) {
             :root {
                 --object-width: min(72%, 384px);
@@ -114,7 +97,6 @@
             color: var(--ink);
             font-family: var(--serif);
             -webkit-font-smoothing: antialiased;
-            transition: background 150ms ease, color 150ms ease;
         }
 
         ::selection {
@@ -158,12 +140,6 @@
         img {
             max-width: 100%;
             height: auto;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            img {
-                filter: brightness(.82) saturate(.9);
-            }
         }
 
         .site {
@@ -303,12 +279,6 @@
         .home-subscribe button:hover {
             border-color: var(--linkhover);
             background: var(--linkhover);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .home-subscribe button {
-                color: #0c0c0e;
-            }
         }
 
         .subscribe-message {

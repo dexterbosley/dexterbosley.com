@@ -39,8 +39,7 @@
     {{- with $shareDescription }}
     <meta name="description" content="{{ . }}">
     {{- end }}
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfb">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
+    <meta name="theme-color" content="#fdfdfb">
     <meta property="og:site_name" content="public thoughts">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:title" content="{{ $shareTitle }}">
