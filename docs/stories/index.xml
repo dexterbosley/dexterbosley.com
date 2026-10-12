@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dexter Bosley</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.dexterbosley.com/</link>
     <description>Full posts from Dexter Bosley.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Small Talk</title>
-      <link>http://localhost:1313/stories/small-talk/</link>
+      <link>https://www.dexterbosley.com/stories/small-talk/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 &#43;0000</pubDate>
-      <guid>http://localhost:1313/stories/small-talk/</guid>
+      <guid>https://www.dexterbosley.com/stories/small-talk/</guid>
       <description>It was a sticky Thursday afternoon.</description>
       <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
 <p>It was a sticky Thursday afternoon. The air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.</p>

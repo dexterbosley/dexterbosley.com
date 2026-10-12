@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.dexterbosley.com/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/essays/</loc>
+    <loc>https://www.dexterbosley.com/essays/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/essays/on-unserious-thinking/</loc>
+    <loc>https://www.dexterbosley.com/essays/on-unserious-thinking/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>https://www.dexterbosley.com/notes/</loc>
     <lastmod>2026-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/tatie/</loc>
+    <loc>https://www.dexterbosley.com/notes/tatie/</loc>
     <lastmod>2026-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/stories/small-talk/</loc>
+    <loc>https://www.dexterbosley.com/stories/small-talk/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/stories/</loc>
+    <loc>https://www.dexterbosley.com/stories/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://www.dexterbosley.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/archive/</loc>
+    <loc>https://www.dexterbosley.com/archive/</loc>
   </url>
 </urlset>
