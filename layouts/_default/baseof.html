@@ -63,7 +63,6 @@
     {{- end }}
     <meta name="twitter:image" content="{{ $shareImageAbs }}">
     <meta name="twitter:image:alt" content="{{ $shareImageAlt }}">
-    {{ partial "theme-init.html" . }}
     {{ partial "critical-styles.html" . }}
     {{- if hugo.IsProduction }}
     <script data-goatcounter="https://dexterbosley.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -81,15 +80,7 @@
         {{- end }}
         <header class="site-header">
             <span class="site-title">{{ $siteTitle }}</span>
-            {{ partial "theme-toggle.html" . }}
-            {{- if .IsHome }}
-            <nav class="hushed hushed-stack" aria-label="Contact">
-                <a href="mailto:hello@dexterbosley.com" data-goat-event="outbound-email">email</a>
-                <a href="https://www.linkedin.com/in/dexterbosley/" data-goat-event="outbound-linkedin">linkedin</a>
-            </nav>
-            {{- end }}
         </header>
-        {{ partial "text-size-strip.html" . }}
         {{- end }}
 
         {{ block "main" . }}{{ end }}

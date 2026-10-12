@@ -26,17 +26,6 @@
     <meta name="twitter:title" content="Essays">
     <meta name="twitter:image" content="https://www.dexterbosley.com/images/og-default_hu_7365572e6ec81abe.png">
     <meta name="twitter:image:alt" content="BY DEXTER BOSLEY set in dark text on a warm white field">
-        <script>
-        (function() {
-            try {
-                var textSize = window.localStorage.getItem("textSize");
-                if (textSize === "small" || textSize === "standard" || textSize === "large") {
-                    document.documentElement.dataset.size = textSize;
-                }
-            } catch (error) {}
-        })();
-    </script>
-
         <style>
         @font-face {
             font-family: "Newsreader";
@@ -83,14 +72,6 @@
             --body: 17px;
             --measure: 640px;
             --object-width: min(60%, 384px);
-        }
-
-        :root[data-size="small"] {
-            --body: 15px;
-        }
-
-        :root[data-size="large"] {
-            --body: 21px;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -212,18 +193,6 @@
             text-transform: uppercase;
         }
 
-        .display-controls {
-            display: flex;
-            gap: 12px;
-            margin-top: 8px;
-            color: var(--muted);
-            font-family: var(--sans);
-            font-size: 13px;
-            line-height: 1.25;
-        }
-
-        .display-controls button,
-        .text-size-strip button,
         .share-link {
             appearance: none;
             border: 0;
@@ -235,16 +204,6 @@
             letter-spacing: inherit;
             padding: 2px;
             text-transform: inherit;
-        }
-
-        .display-controls button {
-            color: var(--muted);
-            min-width: 32px;
-            min-height: 32px;
-        }
-
-        .display-controls button:hover {
-            color: var(--ink);
         }
 
         .hushed {
@@ -270,37 +229,6 @@
 
         .hushed a:focus-visible {
             outline-color: var(--muted);
-        }
-
-        .hushed-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-top: 10px;
-        }
-
-        .text-size-strip {
-            margin: -34px 0 44px;
-            color: var(--muted);
-            font-family: var(--sans);
-            font-size: 12px;
-            letter-spacing: .1em;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-
-        .text-size-strip[hidden] {
-            display: none;
-        }
-
-        .text-size-strip button {
-            color: var(--muted);
-            margin-left: 2px;
-        }
-
-        .text-size-strip button[aria-pressed="true"] {
-            color: var(--ink);
-            font-weight: 700;
         }
 
         .object-width {
@@ -738,18 +666,7 @@
     <main class="site">
         <header class="site-header">
             <span class="site-title">BY DEXTER BOSLEY</span>
-            <div class="display-controls" aria-label="Display controls">
-    <button type="button" data-text-size-toggle aria-label="Text size" aria-expanded="false" aria-controls="text-size-strip">(-)</button>
-</div>
-
         </header>
-        <div class="text-size-strip" id="text-size-strip" hidden data-text-size-strip>
-    <span>TEXT SIZE:</span>
-    <button type="button" data-text-size-choice="small" aria-pressed="false">SMALL</button>
-    <button type="button" data-text-size-choice="standard" aria-pressed="false">STANDARD</button>
-    <button type="button" data-text-size-choice="large" aria-pressed="false">LARGE</button>
-</div>
-
 
         
     <header class="page-header">
@@ -765,55 +682,10 @@
     </main>
         <script>
         (function() {
-            var root = document.documentElement;
-            var sizeToggle = document.querySelector("[data-text-size-toggle]");
-            var sizeStrip = document.querySelector("[data-text-size-strip]");
-            var sizeButtons = document.querySelectorAll("[data-text-size-choice]");
-
-            function activeSize() {
-                return root.dataset.size === "small" || root.dataset.size === "large" ? root.dataset.size : "standard";
-            }
-
-            function persist(key, value) {
-                try {
-                    window.localStorage.setItem(key, value);
-                } catch (error) {}
-            }
-
             function track(name) {
                 if (!name || !window.goatcounter || typeof window.goatcounter.count !== "function") return;
                 window.goatcounter.count({ path: "event/" + name, title: name, event: true });
             }
-
-            function syncControls() {
-                var size = activeSize();
-                sizeButtons.forEach(function(button) {
-                    button.setAttribute("aria-pressed", button.dataset.textSizeChoice === size ? "true" : "false");
-                });
-                if (sizeToggle) sizeToggle.textContent = size === "large" ? "(^)" : size === "small" ? "(v)" : "(-)";
-            }
-
-            if (sizeToggle && sizeStrip) {
-                sizeToggle.addEventListener("click", function() {
-                    var open = sizeStrip.hasAttribute("hidden");
-                    if (open) {
-                        sizeStrip.removeAttribute("hidden");
-                    } else {
-                        sizeStrip.setAttribute("hidden", "");
-                    }
-                    sizeToggle.setAttribute("aria-expanded", open ? "true" : "false");
-                });
-            }
-
-            sizeButtons.forEach(function(button) {
-                button.addEventListener("click", function() {
-                    var size = button.dataset.textSizeChoice;
-                    if (size !== "small" && size !== "standard" && size !== "large") return;
-                    root.dataset.size = size;
-                    persist("textSize", size);
-                    syncControls();
-                });
-            });
 
             document.querySelectorAll("[data-goat-event]").forEach(function(link) {
                 link.addEventListener("click", function() {
@@ -905,8 +777,6 @@
                     }
                 });
             });
-
-            syncControls();
         })();
     </script>
 

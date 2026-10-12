@@ -46,14 +46,6 @@
             --object-width: min(60%, 384px);
         }
 
-        :root[data-size="small"] {
-            --body: 15px;
-        }
-
-        :root[data-size="large"] {
-            --body: 21px;
-        }
-
         @media (prefers-color-scheme: dark) {
             :root {
                 color-scheme: dark;
@@ -173,18 +165,6 @@
             text-transform: uppercase;
         }
 
-        .display-controls {
-            display: flex;
-            gap: 12px;
-            margin-top: 8px;
-            color: var(--muted);
-            font-family: var(--sans);
-            font-size: 13px;
-            line-height: 1.25;
-        }
-
-        .display-controls button,
-        .text-size-strip button,
         .share-link {
             appearance: none;
             border: 0;
@@ -196,16 +176,6 @@
             letter-spacing: inherit;
             padding: 2px;
             text-transform: inherit;
-        }
-
-        .display-controls button {
-            color: var(--muted);
-            min-width: 32px;
-            min-height: 32px;
-        }
-
-        .display-controls button:hover {
-            color: var(--ink);
         }
 
         .hushed {
@@ -231,37 +201,6 @@
 
         .hushed a:focus-visible {
             outline-color: var(--muted);
-        }
-
-        .hushed-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-top: 10px;
-        }
-
-        .text-size-strip {
-            margin: -34px 0 44px;
-            color: var(--muted);
-            font-family: var(--sans);
-            font-size: 12px;
-            letter-spacing: .1em;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-
-        .text-size-strip[hidden] {
-            display: none;
-        }
-
-        .text-size-strip button {
-            color: var(--muted);
-            margin-left: 2px;
-        }
-
-        .text-size-strip button[aria-pressed="true"] {
-            color: var(--ink);
-            font-weight: 700;
         }
 
         .object-width {
