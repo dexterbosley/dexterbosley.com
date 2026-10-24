@@ -41,7 +41,7 @@ In year three:
 - Base, roughly [early Snapchat](https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm) pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → **$1.5bn annual gross fees**.
 - Bull, roughly [ChatGPT](https://openai.com/index/gpt-5-new-era-of-work/) pace (weekly users grew from 200m to nearly 700m in a year): 200m weekly users × 50% buying twice monthly → **$24bn annual gross fees**.
 
-The bull case requires $480bn in annual purchases, or $4,800 per shopper. Let's even let Muse keep the entire 5%, including the processing share, and assume zero costs:
+The bull case requires $480bn in annual purchases or $4,800 per shopper. At a 5% take (roughly 3% for Stripe's full processing fee + 2% convenience fee) and zero assumed costs:
 
 | Annual figures | Muse bull case, year three | [Meta Family of Apps, 2025 actuals](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm) |
 | --- | ---: | ---: |
