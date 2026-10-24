@@ -13,91 +13,91 @@
       <link>https://www.dexterbosley.com/essays/on-unserious-thinking/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/on-unserious-thinking/</guid>
-      <description>A price paid is the general form of verification.</description>
-      <content:encoded><![CDATA[<p>A price paid is the general form of verification. Someone checked the thing well enough to give up money for it. Paying again checks it twice.</p>
-<p>Unserious thinking substitutes a forecast of that price for the price itself. AI makes this easy because it makes production cheap while leaving verification expensive. A demo ships, the output looks plausible, and someone else inherits the work of deciding whether it is any good.</p>
-<h2 id="price-and-prediction">Price and prediction</h2>
-<p>An equity price is a price paid, but for a forecast. It measures what investors expect other investors to believe about future cash flows. A repeat purchase measures experienced value. Confusing the two is the mistake.</p>
-<p>Chasing the forecast is rational. A higher mark makes capital, recruiting, retention, and acquisitions cheaper. If competitors are rewarded for the AI story, declining to tell one can cost the company before the product contest begins. Employees hold the same equity, so the incentive reaches the whole company.</p>
-<p>The error begins when the forecast becomes evidence about the product. Roadmaps cite where the world is going instead of what a product saves. Demos shipped, compute spent, and attributed revenue look like prices, but nobody chose to pay them.</p>
-<p>Net user value is the benefit left after price, effort, risk, and verification. Output the user must check is not free output. If checking costs more than doing, the demo can be impressive while the product is worthless.</p>
-<p>Keep two ledgers. The mark ledger records the value of the story. The fare ledger records what customers pay for repeatedly, net of the checking cost they carry. Narrative bets belong on the first. Product work has to clear the second.</p>
-<h2 id="railroads">Railroads</h2>
-<p>Railroads make the distinction visible. Capital priced the future network; fares priced its use. The track was real, but much of the financing was not supported by what passengers and shippers would pay.</p>
+      <description>Expecting b2c agents to take over commerce feels unserious.</description>
+      <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
+<p>Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones.</p>
+<h2 id="ii"><strong>II.</strong></h2>
+<p>Consider ecommerce, all the rage these days with agents like Muse and Instinct. On its <a href="https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/">Q3 2026 earnings call</a> Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.</p>
+<p>Let&rsquo;s assume:</p>
+<ul>
+<li>Twice as many weekly users as daily users: <strong>2.5m daily → 5m weekly</strong>.</li>
+<li>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</li>
+<li>A 5% total take: roughly 3% for <a href="https://stripe.com/us/pricing">card processing including interchange</a> plus 2% for the agent → <strong>$150m in annual gross fees</strong>.</li>
+</ul>
+<p><a href="https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410">ChatGPT doubled weekly users in roughly nine months</a>. The dashed line applies that pace to the same assumed 5m starting point:</p>
+<p><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Three-year weekly-user growth from 5m: bear 10m, base 50m and bull 200m. ChatGPT&rsquo;s nine-month doubling pace extrapolated from the same starting point reaches 80m." loading="lazy" decoding="async">
+</p>
+<h2 id="iii"><strong>III.</strong></h2>
+<p>In year three:</p>
+<ul>
+<li>Bear, roughly <a href="https://www.sec.gov/Archives/edgar/data/1562088/000162828021014753/duolingo424b4.htm">pre-IPO Duolingo</a> pace (20% annual growth in monthly users): 10m weekly users × 25% buying monthly → <strong>$300m annual gross fees</strong>.</li>
+<li>Base, roughly <a href="https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm">early Snapchat</a> pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → <strong>$1.5bn annual gross fees</strong>.</li>
+<li>Bull, roughly <a href="https://openai.com/index/gpt-5-new-era-of-work/">ChatGPT</a> pace (weekly users grew from 200m to nearly 700m in a year): 200m weekly users × 50% buying twice monthly → <strong>$24bn annual gross fees</strong>.</li>
+</ul>
+<p>The bull case requires $480bn in annual purchases, or $4,800 per shopper. Let&rsquo;s even let Muse keep the entire 5%, including the processing share, and assume zero costs:</p>
 <table>
   <thead>
       <tr>
-          <th>Episode</th>
-          <th>Capital</th>
-          <th>Fares</th>
-          <th>Result</th>
+          <th>Annual figures</th>
+          <th style="text-align: right">Muse bull case, year three</th>
+          <th style="text-align: right"><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta Family of Apps, 2025 actuals</a></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Railway_Mania">Britain, 1840s</a></td>
-          <td>263 railway acts in 1846; 9,500 miles proposed</td>
-          <td>Many lines were not viable</td>
-          <td>About a third of authorized lines were never built</td>
+          <td>Revenue</td>
+          <td style="text-align: right">$24bn</td>
+          <td style="text-align: right">$198.8bn</td>
       </tr>
       <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Panic_of_1873">US, 1873</a></td>
-          <td>33,000 miles laid in five years, much of it debt-financed</td>
-          <td>Northern Pacific bonds stopped selling</td>
-          <td>Jay Cooke failed; more than 100 railroads failed within a year</td>
+          <td>Operating profit</td>
+          <td style="text-align: right">$24bn</td>
+          <td style="text-align: right">$102.5bn</td>
       </tr>
       <tr>
-          <td><a href="https://en.wikipedia.org/wiki/Panic_of_1893">US, 1893</a></td>
-          <td>An overbuilt network remained from the 1880s</td>
-          <td>Rates kept falling</td>
-          <td>A quarter of US rail mileage entered receivership</td>
+          <td>Operating margin</td>
+          <td style="text-align: right">100% assumed</td>
+          <td style="text-align: right">51.6% actual</td>
       </tr>
   </tbody>
 </table>
-<p>Users won through falling freight rates. Buyers of failed lines won by acquiring useful track after the financing reset. <a href="https://en.wikipedia.org/wiki/Great_Northern_Railway_(U.S.)">Great Northern</a> built in stages, starting with profitable routes and cultivating the traffic it expected to carry.</p>
-<p>Some insiders did not need fares at all. <a href="https://en.wikipedia.org/wiki/Cr%C3%A9dit_Mobilier_scandal">Crédit Mobilier</a> let Union Pacific directors profit from construction contracts with their own company. George Hudson paid dividends from new capital rather than operating income. The raise paid; the railroad did not have to.</p>
-<p>Infrastructure can survive bad financing. Northern Pacific and Santa Fe failed in 1893 and now sit inside BNSF. The AI may be real in the same way the track was real. That does not mean everyone who financed it on the story gets paid. Falling token prices may give most of the value to users and to whoever owns the assets after a reset.</p>
-<h2 id="agents">Agents</h2>
-<p>Agentic commerce works when intent is specific and the checking cost is low. It does not follow that a new agent becomes the next Amazon.</p>
-<p>Amazon blocked Meta&rsquo;s Muse agent in September 2026, citing identification, notification, and credential concerns. The deeper conflict is economic: a third-party agent bypasses the browsing and advertising system while leaving fulfillment, returns, and support with Amazon. The platform that owns the customer relationship can refuse that bargain. (<a href="https://www.vktr.com/ai-platforms/amazon-blocks-metas-muse-ai-agent-from-shopping-on-its-platform/">VKTR</a>)</p>
-<p>Amazon&rsquo;s own Rufus is the counterexample. Amazon says it drove nearly $12 billion in incremental annualized sales in 2025 across 300 million users. Its price-alert feature works because the instruction is exact: buy this item at this price, with a cancellation window. (<a href="https://ppc.land/amazons-ai-shopping-assistant-drove-12-billion-in-sales-for-2025/">PPC Land</a>)</p>
-<p>“Buy me a good jacket” is different. Browsing is part of the value, taste is underspecified, and the buyer bears the cost of a bad choice. Business purchasing is a better fit because specifications, budgets, policies, and approvers make intent legible. Delegation pays when the buyer can say what success is before the agent acts.</p>
-<h2 id="proofs">Proofs</h2>
-<p>Theoretical math is useful because verification is visible.</p>
+<h2 id="iv"><strong>IV.</strong></h2>
+<p>Self-discovery can subsidize the price paid by the customer through advertising. I expect businesses to use agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them.</p>
+<p>Consider <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon&rsquo;s advertising business</a> and <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta&rsquo;s own ad business</a>. These totals include brand and video ads too:</p>
 <table>
   <thead>
       <tr>
-          <th>Release</th>
-          <th>Output</th>
-          <th>Verification</th>
+          <th></th>
+          <th style="text-align: right">Revenue / increase</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances</a>, Aug. 2026</td>
-          <td>10 results</td>
-          <td>10 Lean certificates</td>
+          <td>Muse bull case, year three (5% total take)</td>
+          <td style="text-align: right">$24bn</td>
       </tr>
       <tr>
-          <td><a href="https://openai.com/index/navier-stokes-solution/">Navier–Stokes</a>, Sep. 2026</td>
-          <td>1 Millennium Prize claim</td>
-          <td>Formalized, but the match to the Clay problem remains disputed</td>
+          <td>Amazon ad revenue increase, 2025 vs. 2024</td>
+          <td style="text-align: right">$12.4bn</td>
       </tr>
       <tr>
-          <td><a href="https://github.com/openai/math">openai/math</a>, Oct. 2026</td>
-          <td>719 manuscripts in 372 families</td>
-          <td>About 42% of top-line results formalized</td>
+          <td>Amazon total ad revenue, 2025</td>
+          <td style="text-align: right">$68.6bn</td>
+      </tr>
+      <tr>
+          <td>Meta ad revenue increase, 2025 vs. 2024</td>
+          <td style="text-align: right">$35.5bn</td>
+      </tr>
+      <tr>
+          <td>Meta total ad revenue, 2025</td>
+          <td style="text-align: right">$196.2bn</td>
       </tr>
   </tbody>
 </table>
-<p>The repository says some unformalized results may have issues. That is not a footnote. The unformalized 58% is a verification bill handed to mathematicians.</p>
-<p>The Navier–Stokes run makes the accounting plain. The prize is $1 million. OpenAI used roughly 10,000 agents over 88 hours and put the compute cost in the millions, excluding training, then said it would not claim the prize. (<a href="https://rits.shanghai.nyu.edu/ai/openai-navier-stokes-proof-credit-dispute/">NYU Shanghai RITS</a>) As a product sold for the posted price, the economics fail. As a signal of technical power, the same spend may be cheap.</p>
-<p>There is nothing wrong with buying that signal. The mistake is booking it as delivered user value. A capability demo is an option on future value. It becomes a product when someone accepts the output and the cost of checking it.</p>
-<p>Human mathematics has always contained work that few people can verify. The difference is the ratio. Human production was limited by human effort; the author was also the first checker. AI breaks that link. Claims become cheap while proof remains expensive.</p>
-<h2 id="keep-a-fare-ledger">Keep a fare ledger</h2>
-<p>Narrative value is not fake. It funds work whose value does not exist yet. Rufus shows agents can pay. The verified math releases show labs can produce checked work. A railroad can lose its shareholders and still transform a country.</p>
-<p>The bookkeeping still matters. Mark narrative bets as options. Grade products on value at the payer. Record the named user, the cost displaced, the person carrying verification, and willingness to pay without “AI” in the name.</p>
-<p>The point is not that AI is worthless. It is that production is becoming cheap while verification is not. When that happens, verification becomes the price.</p>
+<p>A 12.2% lift in Meta&rsquo;s ad revenue would add about $24bn a year, matching Muse&rsquo;s bull case. If advertiser spending rises proportionally with conversion, that could mean going from a 2% conversion rate to about 2.24%. Meta probably gets more from its constrained inference capacity by improving ad targeting than by putting it into Muse.</p>
+<h2 id="v"><strong>V.</strong></h2>
+<p>Consumer productivity agents feel like a shortsighted grasp at use cases to me. Travel makes sense when people already have a destination and dates and want help booking. Beyond that I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.</p>
+<p>Digital performance advertising may be the best business model ever. Amazon has already <a href="https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping">blocked Muse</a> and <a href="https://www.investing.com/news/stock-market-news/perplexity-receives-legal-threat-from-amazon-over-agentic-ai-shopping-tool-4331628">sued to stop Perplexity&rsquo;s Comet from shopping on its site</a>. It handles an estimated <a href="https://www.emarketer.com/content/amazon-still-out-draws-its-three-closest-rivals">39.7% of US retail ecommerce sales in 2026</a>. It&rsquo;s hard to square the expected success of independent shopping agents with a retailer that large already blocking them.</p>
 ]]></content:encoded>
     </item>
     <item>

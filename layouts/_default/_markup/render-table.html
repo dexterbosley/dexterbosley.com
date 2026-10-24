@@ -11,7 +11,14 @@
         </thead>
         <tbody>
             {{- range .TBody }}
-            <tr>
+            {{- $rowClass := "" }}
+            {{- if eq $.Page.RelPermalink "/essays/on-unserious-thinking/" }}
+                {{- $label := (index . 0).Text | plainify }}
+                {{- if hasPrefix $label "Muse" }}{{ $rowClass = "comparison-muse" }}{{ end }}
+                {{- if hasPrefix $label "Amazon" }}{{ $rowClass = "comparison-amazon" }}{{ end }}
+                {{- if hasPrefix $label "Meta" }}{{ $rowClass = "comparison-meta" }}{{ end }}
+            {{- end }}
+            <tr{{ with $rowClass }} class="{{ . }}"{{ end }}>
                 {{- range . }}
                 <td{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</td>
                 {{- end }}

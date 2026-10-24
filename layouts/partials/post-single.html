@@ -32,7 +32,7 @@
     <figure class="post-opener">
         {{ partial "responsive-image.html" (dict "page" $ "src" . "alt" ($.Params.cover.alt | default $.Title) "sizes" $coverSizes "widths" (slice 360 420 580 700 960 1200) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
         {{- with $.Params.cover.caption }}
-        <figcaption>{{ . }}</figcaption>
+        <figcaption>{{ . }}{{ with $.Params.cover.credit }}<br>{{ . | markdownify }}{{ end }}</figcaption>
         {{- end }}
     </figure>
     {{- end }}
