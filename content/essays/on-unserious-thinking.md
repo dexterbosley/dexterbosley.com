@@ -51,7 +51,7 @@ The bull case assumes ChatGPT-like user growth plus twice the shopping rate and 
 
 ## **IV.**
 
-Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm) and [Meta's own ad business](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). These totals include brand and video ads too:
+Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm) and [Meta's own ad business](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm):
 
 | | Revenue / increase |
 | --- | ---: |
