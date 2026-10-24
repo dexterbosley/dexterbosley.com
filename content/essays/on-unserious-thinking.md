@@ -63,7 +63,7 @@ Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/
 
 A 12.2% lift in Meta's ad revenue would add about $24bn a year, matching Muse's bull case. If advertiser spending rises proportionally with conversion, that could mean going from a 2% conversion rate to about 2.24%. Meta probably gets more from its constrained inference capacity by improving ad targeting than by putting it into Muse.
 
-Self-discovery can subsidize the price paid by the customer through advertising. I expect Amazon to use its own agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them. Amazon can use ad income to defend prices and keep investing in fulfillment and compute. A price war against that looks doomed for an upstart like Instinct.
+Self-discovery can subsidize the price paid by the customer through advertising. Assume Amazon can put 25% of its ad revenue toward price cuts after ad costs. That's $17.2bn a year or about 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025), roughly $4 on a $200 purchase. I expect Amazon to use its own agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them. That subsidy and Amazon's investment in fulfillment and compute make a price war look doomed for an upstart like Instinct.
 
 ## **V.**
 
