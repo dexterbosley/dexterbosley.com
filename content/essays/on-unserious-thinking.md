@@ -17,7 +17,7 @@ cover:
 
 ## **I.**
 
-Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones.
+Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
 
 ## **II.**
 
@@ -67,10 +67,8 @@ A 12.2% lift in Meta's ad revenue would add about $24bn a year, matching Muse's 
 
 ## **V.**
 
-Consider ecommerce, all the rage these days with agents like Muse and Instinct.
+Digital performance advertising may be the best business model ever. Amazon has already [blocked Muse](https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping) and [sued to stop Perplexity's Comet from shopping on its site](https://www.investing.com/news/stock-market-news/perplexity-receives-legal-threat-from-amazon-over-agentic-ai-shopping-tool-4331628). It handles an estimated [39.7% of US retail ecommerce sales in 2026](https://www.emarketer.com/content/amazon-still-out-draws-its-three-closest-rivals).
 
 Consumer productivity agents feel like a shortsighted grasp at use cases to me. Travel makes sense when people already have a destination and dates and want help booking. Beyond that I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.
-
-Digital performance advertising may be the best business model ever. Amazon has already [blocked Muse](https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping) and [sued to stop Perplexity's Comet from shopping on its site](https://www.investing.com/news/stock-market-news/perplexity-receives-legal-threat-from-amazon-over-agentic-ai-shopping-tool-4331628). It handles an estimated [39.7% of US retail ecommerce sales in 2026](https://www.emarketer.com/content/amazon-still-out-draws-its-three-closest-rivals).
 
 Amazon has the same incentive as Meta: use inference to improve its own agents and ad engine and keep shoppers in its walled garden. The businesses independent agents need access to have more reason to protect that model than to help outsiders bypass it.
