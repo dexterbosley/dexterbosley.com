@@ -35,7 +35,7 @@ Let's assume:
 
 ## **III.**
 
-In year three:
+In year three (so 2029-ish):
 
 - Bear, roughly [pre-IPO Duolingo](https://www.sec.gov/Archives/edgar/data/1562088/000162828021014753/duolingo424b4.htm) pace (20% annual growth in monthly users): 10m weekly users × 25% buying monthly → **$300m annual gross fees**.
 - Base, roughly [early Snapchat](https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm) pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → **$1.5bn annual gross fees**.
