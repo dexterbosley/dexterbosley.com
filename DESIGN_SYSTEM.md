@@ -42,7 +42,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Notes may start directly.
 - Notes do not render a visible cover banner, but cover fields still drive metadata and link cards.
 - Body images, graphs, figures, and tables share a centered `min(100%, 580px)` content-object width inside the `640px` reading column.
-- Tables use a compact spreadsheet treatment: sans-serif type, square edges, a quiet gray header, thin gridlines around every cell, equal `2.25rem` spacing before and after, and horizontal scrolling when the viewport is narrower than their readable width.
+- Tables use a plain reading treatment like Codex tables: 14px sans-serif type, semibold headers, light horizontal row separators, no outer or vertical borders, no header fill, and comfortable cell padding. Keep equal `2.25rem` spacing before and after and horizontal scrolling on narrow screens. Comparison colors belong in row labels rather than filled rows.
 - Use native `<mark>` only for short inline prose highlights; `--wash` is for highlights and selection, not labels or section backgrounds.
 
 ## Distribution Infrastructure
