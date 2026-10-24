@@ -17,7 +17,7 @@ cover:
 
 ## **I.**
 
-Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
+Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones.
 
 ## **II.**
 
@@ -66,6 +66,8 @@ Consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data
 A 12.2% lift in Meta's ad revenue would add about $24bn a year, matching Muse's bull case. If advertiser spending rises proportionally with conversion, that could mean going from a 2% conversion rate to about 2.24%. Meta probably gets more from its constrained inference capacity by improving ad targeting than by putting it into Muse.
 
 ## **V.**
+
+Consider ecommerce, all the rage these days with agents like Muse and Instinct.
 
 Consumer productivity agents feel like a shortsighted grasp at use cases to me. Travel makes sense when people already have a destination and dates and want help booking. Beyond that I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.
 
