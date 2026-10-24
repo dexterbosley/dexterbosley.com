@@ -4,7 +4,7 @@ date: 2026-10-09
 lastmod: 2026-10-23
 draft: false
 type: essay
-description: "Expecting b2c agents to take over commerce feels unserious."
+description: "b2c shopping agents feel unserious."
 home_recent: true
 aliases:
   - "/essays/on-useful-digital-tools/"
@@ -17,7 +17,7 @@ cover:
 
 ## **I.**
 
-Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
+b2c shopping agents feel unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
 
 ## **II.**
 
