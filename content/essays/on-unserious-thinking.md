@@ -17,11 +17,11 @@ cover:
 
 ## **I.**
 
-Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones.
+Expecting b2c agents to take over commerce feels unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
 
 ## **II.**
 
-Consider ecommerce, all the rage these days with agents like Muse and Instinct. On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
+On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
 
 Let's assume:
 
