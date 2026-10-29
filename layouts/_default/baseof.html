@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{- $shareTitle := cond .IsHome "By Dexter Bosley" (cond (eq .Layout "about") "About Dexter Bosley" .Title) }}
+    {{- $shareTitle := cond .IsHome "BY DEXTER BOSLEY" (cond (eq .Layout "about") "About Dexter Bosley" .Title) }}
     {{- $summaryDescription := cond .IsHome "" (.Summary | plainify) }}
     {{- $shareDescription := .Params.description | default $summaryDescription | plainify | replaceRE "\\s+" " " | truncate 160 }}
     {{- $shareImage := "/images/og-default.png" }}
