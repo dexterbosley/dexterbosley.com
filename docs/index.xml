@@ -9,20 +9,20 @@
     <lastBuildDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>On Unserious Thinking</title>
+      <title>On Shopping Agents</title>
       <link>https://www.dexterbosley.com/essays/on-unserious-thinking/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/on-unserious-thinking/</guid>
-      <description>b2c shopping agents feel unserious.</description>
+      <description>Shopping agents, advertising subsidies and the cost of convenience.</description>
       <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
-<p>b2c shopping agents feel unserious. Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.</p>
+<p>Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.</p>
 <h2 id="ii"><strong>II.</strong></h2>
 <p>On its <a href="https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/">Q3 2026 earnings call</a> Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.</p>
 <p>Let&rsquo;s assume:</p>
 <ul>
 <li>Twice as many weekly users as daily users: <strong>2.5m daily → 5m weekly</strong>.</li>
 <li>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</li>
-<li>A 5% take for Muse: equivalent to <a href="https://stripe.com/us/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus another 2 percentage points → <strong>$150m in annual gross fees</strong>.</li>
+<li>A 5% take for Muse: equivalent to <a href="https://stripe.com/us/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee → <strong>$150m in annual gross fees</strong>.</li>
 </ul>
 <p><a href="https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410">ChatGPT doubled weekly users in roughly nine months</a>. The dashed line applies that pace to the same assumed 5m starting point:</p>
 <p><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Three-year weekly-user growth from 5m: bear 10m, base 50m and bull 200m. ChatGPT&rsquo;s nine-month doubling pace extrapolated from the same starting point reaches 80m." loading="lazy" decoding="async">
@@ -34,7 +34,10 @@
 <li>Base, roughly <a href="https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm">early Snapchat</a> pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → <strong>$1.5bn annual gross fees</strong>.</li>
 <li>Bull, roughly <a href="https://openai.com/index/gpt-5-new-era-of-work/">ChatGPT</a> pace (weekly users grew from 200m to nearly 700m in a year): 200m weekly users × 50% buying twice monthly → <strong>$24bn annual gross fees</strong>.</li>
 </ul>
-<p>The bull case assumes ChatGPT-like user growth plus twice the shopping rate and purchase frequency. By year three that means $480bn in annual purchases (about 5× <a href="https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm">DoorDash&rsquo;s 2025 order volume</a>) or $4,800 per shopper. At a generous 5% take (Stripe&rsquo;s entire processing charge plus another 2 percentage points) and zero assumed costs:</p>
+<p>The bull case assumes ChatGPT-like user growth plus twice the shopping rate and purchase frequency. By year three that means 100m shoppers spending $4,800 each annually through Muse: <strong>$480bn in gross merchandise value (GMV)</strong>.</p>
+<p>That&rsquo;s about 5× <a href="https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm">DoorDash&rsquo;s $102bn in 2025 marketplace gross order value</a>. Both measure purchases flowing through the platform rather than its revenue. DoorDash&rsquo;s figure includes taxes, tips and fees. Muse would need to reach nearly five times that scale in three years.</p>
+<p>The $4,800 per shopper also exceeds the <a href="https://landmarkglobal.com/uploads/26-CFS/Factssheet-US-2026.pdf">$4,280 average annual US ecommerce spend per shopper in Landmark Global&rsquo;s 2026 factsheet</a>. Muse includes travel so the categories differ, but this assumes a shopping budget comparable to an average shopper&rsquo;s entire online retail spend going through one agent.</p>
+<p>At a generous 5% take (Stripe&rsquo;s entire processing charge plus a 2% convenience fee) and zero assumed costs:</p>
 <table>
   <thead>
       <tr>
@@ -94,7 +97,7 @@
   </tbody>
 </table>
 <p>A 12.2% lift in Meta&rsquo;s ad revenue would add about $24bn a year, matching Muse&rsquo;s bull case. If advertiser spending rises proportionally with conversion, that could mean going from a 2% conversion rate to about 2.24%. Meta probably gets more from its constrained inference capacity by improving ad targeting than by putting it into Muse.</p>
-<p>Self-discovery can subsidize the price paid by the customer through advertising. Assume Amazon can put 25% of its ad revenue toward price cuts after ad costs. That&rsquo;s $17.2bn a year or about 2% of <a href="https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025">its estimated $830bn in 2025 merchandise sales</a>, roughly $4 on a $200 purchase. Matching that subsidy would use about 40% of this generous 5% take before inference costs. I expect Amazon to use its own agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them. That subsidy and Amazon&rsquo;s investment in fulfillment and compute make a price war look doomed for an upstart like Instinct.</p>
+<p>Self-discovery can subsidize the price paid by the customer through advertising. Assume Amazon can put 25% of its ad revenue toward price cuts after ad costs. That&rsquo;s $17.2bn a year or about 2% of <a href="https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025">its estimated $830bn in 2025 merchandise sales</a>, roughly $4 on a $200 purchase. The 2% convenience fee is also $4 on a $200 purchase. Matching the estimated ad subsidy would absorb that entire fee before inference costs. The full 5% take above still gives Muse the processing share too. I expect Amazon to use its own agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them. That subsidy and Amazon&rsquo;s investment in fulfillment and compute make a price war look doomed for an upstart like Instinct.</p>
 <h2 id="v"><strong>V.</strong></h2>
 <p>Digital performance advertising may be the best business model ever. Amazon has already <a href="https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping">blocked Muse</a> and <a href="https://www.investing.com/news/stock-market-news/perplexity-receives-legal-threat-from-amazon-over-agentic-ai-shopping-tool-4331628">sued to stop Perplexity&rsquo;s Comet from shopping on its site</a>. It handles an estimated <a href="https://www.emarketer.com/content/amazon-still-out-draws-its-three-closest-rivals">39.7% of US retail ecommerce sales in 2026</a>.</p>
 <p>Consumer productivity agents feel like a shortsighted grasp at use cases to me. Travel makes sense when people already have a destination and dates and want help booking. Beyond that I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.</p>
