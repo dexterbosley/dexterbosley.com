@@ -36,7 +36,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 
 - Essays, stories, and notes render through `layouts/partials/post-single.html`.
 - Post headers include title, date, and `< BACK` stacked above `^ SHARE`. The bottom navigation includes `<- BACK` and `^ SHARE`.
-- Covers with `cover.portrait: true` display at up to 320px wide, aligned with the text's left edge. The portrait image treatment hides the reproduction's narrow white border.
+- Essay and story covers use the same full-column width and 11:7 aspect ratio, aligned with the text's left edge.
 - `^ SHARE` uses the native share sheet where available and copies the URL otherwise.
 - All posts require `description`, `cover.image`, `cover.alt`, and `cover.caption`.
 - Essays and stories use Roman section headings such as `## **I.**`.

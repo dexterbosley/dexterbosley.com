@@ -9,10 +9,9 @@ home_recent: true
 aliases:
   - "/essays/on-useful-digital-tools/"
 cover:
-  image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-altarpiece-no-1-1915_painting.jpg"
-  alt: "Hilma af Klint's Altarpiece No. 1, with a rainbow triangle rising toward a golden disc against a dark background"
-  caption: "Hilma af Klint, Altarpiece No. 1, 1915"
-  portrait: true
+  image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-the-swan-no-10-1915_painting.jpg"
+  alt: "Hilma af Klint's The Swan, No. 10, with a multicolored circular diagram against swirling black and white bands"
+  caption: "Hilma af Klint, The Swan, No. 10, 1915"
 ---
 
 ## **I.**
