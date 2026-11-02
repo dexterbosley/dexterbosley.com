@@ -1,7 +1,7 @@
 ---
 title: "On Shopping Agents"
 date: 2026-10-09
-lastmod: 2026-10-29
+lastmod: 2026-11-01
 draft: false
 type: essay
 description: "Shopping agents, advertising subsidies and the cost of convenience."
@@ -67,14 +67,10 @@ Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/
 | Meta ad revenue increase, 2025 vs. 2024 | $35.5bn |
 | Meta total ad revenue, 2025 | $196.2bn |
 
-A 12.2% lift in Meta's ad revenue would add about $24bn a year, matching Muse's bull case. If advertiser spending rises proportionally with conversion, that could mean going from a 2% conversion rate to about 2.24%. Meta probably gets more from its constrained inference capacity by improving ad targeting than by putting it into Muse.
+A 12.2% lift in Meta's ad revenue would add about $24bn annually, matching Muse's bull case. If advertiser spending scales with conversion, moving from 2% to about 2.24% would suffice. Meta's constrained inference capacity likely earns more improving ad targeting than powering Muse.
 
-Self-discovery can subsidize the price paid by the customer through advertising. Assume Amazon can put 25% of its ad revenue toward price cuts after ad costs. That's $17.2bn a year or about 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025), roughly $4 on a $200 purchase. The 2% convenience fee is also $4 on a $200 purchase. Matching the estimated ad subsidy would absorb that entire fee before inference costs. The full 5% take above still gives Muse the processing share too. I expect Amazon to use its own agents to improve algorithmically targeted performance ads and keep the eyeballs viewing them. That subsidy and Amazon's investment in fulfillment and compute make a price war look doomed for an upstart like Instinct.
+Advertising can subsidize the customer's purchase. If Amazon put 25% of ad revenue toward discounts after ad costs, that would fund $17.2bn annually, roughly 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025). Matching that $4 subsidy on a $200 purchase would consume Muse's entire 2% convenience fee before inference costs. The 5% take assumed above also credits Muse with the processing share. I expect Amazon to use its own agents to improve ad targeting and keep shoppers browsing. That subsidy, alongside Amazon's investment in fulfillment and compute, makes a price war look doomed for upstarts like Instinct. Meta looks temporarily distracted. I expect it will find better uses for its compute.
 
 ## **V.**
 
-Digital performance advertising may be the best business model ever. Amazon has already [blocked Muse](https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping) and [sued to stop Perplexity's Comet from shopping on its site](https://www.investing.com/news/stock-market-news/perplexity-receives-legal-threat-from-amazon-over-agentic-ai-shopping-tool-4331628). It handles an estimated [39.7% of US retail ecommerce sales in 2026](https://www.emarketer.com/content/amazon-still-out-draws-its-three-closest-rivals).
-
-Consumer productivity agents feel like a shortsighted grasp at use cases to me. Travel makes sense when people already have a destination and dates and want help booking. Beyond that I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.
-
-Muse looks like poor capital allocation for Meta and upstarts like Instinct have to compete with a platform that can undercut them or shut them out.
+B2C shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking. Beyond that, I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.
