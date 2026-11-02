@@ -22,7 +22,7 @@ Businesses will protect their margins with their own agents or block outside one
 
 On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
 
-Let's assume:
+So let's assume:
 
 - Twice as many weekly users as daily users: **2.5m daily → 5m weekly**.
 - A quarter of those weekly users buy once a month at $200: **$3bn in annual purchases**.
