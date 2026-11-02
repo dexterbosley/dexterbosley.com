@@ -91,7 +91,7 @@ The site uses the native form endpoint. Do not restore an inline success message
 1. Run `hugo --cleanDestinationDir`.
 2. Run `python3 scripts/check_site.py` for local links, asset integrity, feeds, forms, and loading budgets.
 3. Review home, essay, story, note, archive, about, subscribe, and 404 at desktop and mobile widths. Check for horizontal page overflow and unreadable text.
-4. Confirm the home header is `BY DEXTER BOSLEY`, followed by the photo, subscribe form, `POPULAR`, and `POSTS`. Footer contains About, email, LinkedIn, and copyright.
+4. Confirm the home header shows `BY DEXTER BOSLEY` above hushed About, email, and LinkedIn links, followed by the photo, subscribe form, `POPULAR`, and `POSTS`. Footer contains About, email, LinkedIn, and copyright.
 5. Confirm titles and browser tabs are uppercase. Post navigation has `< BACK` above `^ SHARE`.
 6. Confirm the photo is responsive, has intrinsic dimensions, and uses a generated WebP instead of the full source JPEG. Confirm CSS and JavaScript are shared fingerprinted assets.
 7. Confirm forms have a real no-JS `action` and `method`, and invalid email input is rejected before submission.

@@ -25,7 +25,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 
 ## Home
 
-- The header contains only `BY DEXTER BOSLEY`.
+- Place a hushed row of `about`, `email`, and `linkedin` directly under `BY DEXTER BOSLEY`.
 - Home image is object-width, left-aligned, 11:7 crop, no visible caption, meaningful alt text.
 - Object width is `min(60%, 384px)` and relaxes to `min(72%, 384px)` at `480px` and below.
 - Subscribe is unboxed: one email input and the filled `receive` button. It is the only filled element on the page.

@@ -10,4 +10,6 @@ cover:
   license: "Public domain"
 ---
 
-Product manager at [Ramp](https://ramp.com/), based in New York.
+Product manager at [Ramp](https://ramp.com/), based in New York. Previously at DoorDash, Uber, and WeWork.
+
+I went to Crystal Springs Uplands School, then studied economics at Northwestern University.
