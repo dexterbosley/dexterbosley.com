@@ -28,7 +28,7 @@
         {{- $shareImageResolved := partial "resolve-image.html" (dict "page" . "src" $shareImage) }}
         {{- $shareImageAbs = absURL $shareImageResolved }}
     {{- end }}
-    <title>{{ $shareTitle }}</title>
+    <title>{{ $shareTitle | upper }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="alternate" type="application/rss+xml" title="Dexter Bosley" href="{{ "/index.xml" | absURL }}">
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">

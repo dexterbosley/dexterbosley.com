@@ -17,7 +17,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Sans/interface: self-hosted IBM Plex Sans, then Arial, Helvetica, sans-serif.
 - Body size is controlled by `--body` at `17px`.
 - Type size does not scale with viewport width.
-- Post row titles are uppercase serif bold at `calc(var(--body) + 1px)`. Page and post titles also display in uppercase.
+- Post row titles are uppercase serif bold at `calc(var(--body) + 1px)`. Page and post titles also display in uppercase. Browser tab titles are uppercase across the site.
 - Interface text is IBM Plex Sans: masthead and labels `13px`, metadata and footer `11px`.
 - Prose letter spacing is zero. Uppercase sans labels use modest positive tracking.
 
