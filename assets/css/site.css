@@ -142,7 +142,7 @@ img {
     margin: 0;
     color: var(--ink);
     font-family: var(--sans);
-    font-size: var(--type-ui);
+    font-size: var(--type-entry);
     font-weight: 600;
     letter-spacing: .14em;
     line-height: 1.25;

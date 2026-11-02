@@ -20,6 +20,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Type size does not scale with viewport width.
 - Home and archive row titles are uppercase serif bold at `--type-entry`. Page and post titles use `--type-title`. Browser tab titles are uppercase across the site.
 - Interface text is IBM Plex Sans, using `--type-ui` and `--type-small`.
+- The masthead uses IBM Plex Sans at `--type-entry` (18px), matching the home row title size.
 - Prose letter spacing is zero. Uppercase sans labels use modest positive tracking.
 
 ## Home
