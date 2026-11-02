@@ -43,9 +43,7 @@ In year three (so 2029-ish):
 
 The bull case assumes ChatGPT-like user growth plus twice the shopping rate and purchase frequency. By year three that means 100m shoppers spending $4,800 each annually through Muse: **$480bn in gross merchandise value (GMV)**.
 
-That's about 5× [DoorDash's $102bn in 2025 marketplace gross order value](https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm). Both measure purchases flowing through the platform rather than its revenue. DoorDash's figure includes taxes, tips and fees. Muse would need to reach nearly five times that scale in three years.
-
-The $4,800 per shopper also exceeds the [$4,280 average annual US ecommerce spend per shopper in Landmark Global's 2026 factsheet](https://landmarkglobal.com/uploads/26-CFS/Factssheet-US-2026.pdf). Muse includes travel so the categories differ, but this assumes a shopping budget comparable to an average shopper's entire online retail spend going through one agent.
+That's about 5× [DoorDash's $102bn in 2025 marketplace gross order value](https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm). The $4,800 per shopper also exceeds the [$4,280 average annual US ecommerce spend per shopper in Landmark Global's 2026 factsheet](https://landmarkglobal.com/uploads/26-CFS/Factssheet-US-2026.pdf).
 
 At a generous 5% take (Stripe's entire processing charge plus a 2% convenience fee) and zero assumed costs:
 
@@ -69,7 +67,7 @@ Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/
 
 A 12.2% lift in Meta's ad revenue would add about $24bn annually, matching Muse's bull case. If advertiser spending scales with conversion, moving from 2% to about 2.24% would suffice. Meta's constrained inference capacity likely earns more improving ad targeting than powering Muse.
 
-Advertising can subsidize the customer's purchase. If Amazon put 25% of ad revenue toward discounts after ad costs, that would fund $17.2bn annually, roughly 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025). Matching that $4 subsidy on a $200 purchase would consume Muse's entire 2% convenience fee before inference costs. The 5% take assumed above also credits Muse with the processing share. I expect Amazon to use its own agents to improve ad targeting and keep shoppers browsing. That subsidy, alongside Amazon's investment in fulfillment and compute, makes a price war look doomed for upstarts like Instinct. Meta looks temporarily distracted. I expect it will find better uses for its compute.
+If Amazon put 25% of ad revenue toward discounts after ad costs, that would fund $17.2bn annually, roughly 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025). Matching that $4 subsidy on a $200 purchase would consume Muse's entire 2% convenience fee before inference costs. The 5% take assumed above also credits Muse with the processing share. I expect Amazon to use its own agents to improve ad targeting and keep shoppers browsing.
 
 ## **V.**
 
