@@ -58,6 +58,7 @@
 }
 
 html {
+    scrollbar-gutter: stable;
     background: var(--bg);
     color: var(--ink);
     font-family: var(--serif);
@@ -212,6 +213,14 @@ img {
 .home-subscribe {
     width: min(100%, 384px);
     margin: 0 0 64px;
+}
+
+.about-intro {
+    margin-bottom: 64px;
+}
+
+.about-image img {
+    object-position: center 90%;
 }
 
 .home-subscribe form {

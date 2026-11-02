@@ -8,10 +8,6 @@
     {{- $shareDescription := .Params.description | default $summaryDescription | plainify | replaceRE "\\s+" " " | truncate 160 }}
     {{- $shareImage := "/images/og-default.png" }}
     {{- $shareImageAlt := "BY DEXTER BOSLEY set in dark text on a warm white field" }}
-    {{- if eq .Layout "about" }}
-        {{- $shareImage = "/images/about-snow-banner.jpg" }}
-        {{- $shareImageAlt = "Snow-covered trees and slope under a pale blue sky" }}
-    {{- end }}
     {{- with .Params.cover }}
         {{- with .image }}{{- $shareImage = . }}{{- end }}
         {{- with .alt }}{{- $shareImageAlt = . }}{{- end }}
@@ -20,7 +16,8 @@
     {{- $shareImageWidth := 1200 }}
     {{- $shareImageHeight := 630 }}
     {{- with partial "image-resource.html" (dict "page" . "src" $shareImage) }}
-        {{- $shareImageProcessed := .Fill "1200x630 Center q82" }}
+        {{- $anchor := $.Params.cover.anchor | default "Center" }}
+        {{- $shareImageProcessed := .Fill (printf "1200x630 %s q82" $anchor) }}
         {{- $shareImageAbs = absURL $shareImageProcessed.RelPermalink }}
         {{- $shareImageWidth = $shareImageProcessed.Width }}
         {{- $shareImageHeight = $shareImageProcessed.Height }}
@@ -77,7 +74,7 @@
             {{- $siteTitle = "SUBSCRIBE TO DEXTER BOSLEY" }}
         {{- end }}
         <header class="site-header">
-            {{ if .IsHome }}<h1 class="site-title">{{ $siteTitle }}</h1>{{ else }}<span class="site-title">{{ $siteTitle }}</span>{{ end }}
+            {{ if or .IsHome (eq .Layout "about") }}<h1 class="site-title">{{ $siteTitle }}</h1>{{ else }}<span class="site-title">{{ $siteTitle }}</span>{{ end }}
         </header>
         {{- end }}
 

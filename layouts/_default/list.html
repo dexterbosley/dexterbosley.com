@@ -16,11 +16,7 @@
 
     {{ partial "home-index.html" . }}
 
-    <footer class="site-footer hushed" aria-label="Footer">
-        <a href="mailto:hello@dexterbosley.com" data-goat-event="outbound-email">email</a>
-        <a href="https://www.linkedin.com/in/dexterbosley/" data-goat-event="outbound-linkedin">linkedin</a>
-        <span>&copy; 2026</span>
-    </footer>
+    {{ partial "site-footer.html" . }}
 {{- else }}
     <header class="page-header">
         <h1 class="page-title">{{ .Title }}</h1>
