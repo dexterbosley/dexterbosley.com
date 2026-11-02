@@ -1,7 +1,7 @@
 ---
 title: "On Shopping Agents"
 date: 2026-10-09
-lastmod: 2026-11-01
+lastmod: 2026-11-02
 draft: false
 type: essay
 description: "Shopping agents, advertising subsidies and the cost of convenience."
@@ -64,7 +64,9 @@ Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/
 | Meta ad revenue increase, 2025 vs. 2024 | $35.5bn |
 | Meta total ad revenue, 2025 | $196.2bn |
 
-A 12.2% lift in Meta's ad revenue would add about $24bn annually, matching Muse's bull case. If advertiser spending scales with conversion, moving from 2% to about 2.24% would suffice. Meta's constrained inference capacity likely earns more improving ad targeting than powering Muse. If Amazon put 25% of ad revenue toward discounts after ad costs, that would fund $17.2bn annually, roughly 2% of [its estimated $830bn in 2025 merchandise sales](https://www.marketplacepulse.com/articles/amazon-gmv-surpassed-800-billion-in-2025). Matching that $4 subsidy on a $200 purchase would consume Muse's entire 2% convenience fee before inference costs.
+A 12.2% increase in Meta's ad revenue would bring in $24bn a year, matching Muse's most optimistic forecast. Improving ad targeting may be a better use of its scarce computing capacity than building Muse.
+
+Amazon has a similar investment choice. It can put compute into agents that improve product discovery and ad targeting within its existing store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of that revenue to discounts after ad costs, it could cut prices by roughly 2%. An upstart must fund its computing costs and customer acquisition from the fees shoppers will pay for convenience.
 
 ## **V.**
 
