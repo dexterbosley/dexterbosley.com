@@ -21,6 +21,7 @@
                 <span>{{ partial "date-long.html" .Date }}</span>
             </div>
             <nav class="post-actions-compact" aria-label="Post actions">
+                <a href="/">&lt; BACK</a>
                 <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">^ SHARE</button>
             </nav>
         </div>
@@ -29,7 +30,8 @@
     {{- if ne $kind "note" }}
     {{- with .Params.cover.image }}
     {{- $coverSizes := cond (eq $kind "note") "(max-width: 760px) min(420px, calc(100vw - 80px)), 420px" "(max-width: 760px) calc(100vw - 32px), 700px" }}
-    <figure class="post-opener">
+    {{- if $.Params.cover.portrait }}{{ $coverSizes = "(max-width: 352px) calc(100vw - 32px), 320px" }}{{ end }}
+    <figure class="post-opener{{ if $.Params.cover.portrait }} post-opener-portrait{{ end }}">
         {{ partial "responsive-image.html" (dict "page" $ "src" . "alt" ($.Params.cover.alt | default $.Title) "sizes" $coverSizes "widths" (slice 360 420 580 700 960 1200) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
         {{- with $.Params.cover.caption }}
         <figcaption>{{ . }}{{ with $.Params.cover.credit }}<br>{{ . | markdownify }}{{ end }}</figcaption>

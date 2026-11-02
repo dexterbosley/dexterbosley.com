@@ -17,7 +17,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Sans/interface: self-hosted IBM Plex Sans, then Arial, Helvetica, sans-serif.
 - Body size is controlled by `--body` at `17px`.
 - Type size does not scale with viewport width.
-- Post row titles are serif bold at `calc(var(--body) + 1px)`.
+- Post row titles are uppercase serif bold at `calc(var(--body) + 1px)`. Page and post titles also display in uppercase.
 - Interface text is IBM Plex Sans: masthead and labels `13px`, metadata and footer `11px`.
 - Prose letter spacing is zero. Uppercase sans labels use modest positive tracking.
 
@@ -35,7 +35,8 @@ A public journal for essays, stories, notes, and small observations. The site sh
 ## Posts And Content
 
 - Essays, stories, and notes render through `layouts/partials/post-single.html`.
-- Post headers include title, date, and `^ SHARE`. The bottom navigation includes `<- BACK` and `^ SHARE`.
+- Post headers include title, date, and `< BACK` stacked above `^ SHARE`. The bottom navigation includes `<- BACK` and `^ SHARE`.
+- Covers with `cover.portrait: true` display at up to 320px wide, aligned with the text's left edge. The portrait image treatment hides the reproduction's narrow white border.
 - `^ SHARE` uses the native share sheet where available and copies the URL otherwise.
 - All posts require `description`, `cover.image`, `cover.alt`, and `cover.caption`.
 - Essays and stories use Roman section headings such as `## **I.**`.

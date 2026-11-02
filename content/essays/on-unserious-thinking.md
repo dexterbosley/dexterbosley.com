@@ -9,9 +9,10 @@ home_recent: true
 aliases:
   - "/essays/on-useful-digital-tools/"
 cover:
-  image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-the-ten-largest-no-7-adulthood-1907_painting.jpg"
-  alt: "Detail of Hilma af Klint's The Ten Largest, No. 7, Adulthood, with yellow, green and red abstract forms on a lilac ground"
-  caption: "Hilma af Klint, The Ten Largest, No. 7, Adulthood, 1907"
+  image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-altarpiece-no-1-1915_painting.jpg"
+  alt: "Hilma af Klint's Altarpiece No. 1, with a rainbow triangle rising toward a golden disc against a dark background"
+  caption: "Hilma af Klint, Altarpiece No. 1, 1915"
+  portrait: true
 ---
 
 ## **I.**
