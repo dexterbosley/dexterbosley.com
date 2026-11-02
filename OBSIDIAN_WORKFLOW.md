@@ -1,12 +1,13 @@
 # DexterBosley.com Workflow
 
-The Hugo repo lives at `/Users/dexterbosley/Desktop/dexter-ai/projects/dexterbosley-com`. Edit source files here, then rebuild `docs/` before publishing.
+Run commands from the root of the `dexterbosley.com` repository. Edit source files, then rebuild `docs/` before publishing. Use Hugo 0.157.0 to keep generated output consistent.
 
 ## Preview And Build
 
 ```sh
 hugo server -D
 hugo --cleanDestinationDir
+python3 scripts/check_site.py
 ```
 
 Only publish when Dexter explicitly asks. Publishing rebuilds `docs/`, commits, and pushes:
@@ -38,9 +39,7 @@ home_recent: true
 ```
 
 - Use `type: essay`, `type: story`, or `type: note`.
-- `description` is required for link previews and can be used as a homepage deck.
-- `deck` is optional and only affects homepage rows.
-- If neither `deck` nor `description` exists, the homepage row shows no deck.
+- `description` is required for link previews. Home rows show title and metadata without a deck.
 - Essays and stories usually start with Roman headings like `## **I.** ***First***`; notes can start directly.
 - Notes still require cover fields for metadata/share images, but do not render a visible cover banner.
 
@@ -85,18 +84,20 @@ Markdown review-image pattern:
 
 Keep secrets out of the repo. Resend API keys, listmonk credentials, and PikaPods credentials stay in their dashboards or a private password manager.
 
+The site uses the native form endpoint. Do not restore an inline success message with `no-cors` fetch. An opaque response cannot confirm a subscription. Test the form structure and validation without subscribing real addresses.
+
 ## Pre-Publish Checklist
 
 1. Run `hugo --cleanDestinationDir`.
-2. Open the homepage at desktop and mobile widths.
-3. Confirm header order: `BY DEXTER BOSLEY`, controls, stacked `email`/`linkedin`.
-4. Confirm footer-only `rss` links to `/index.xml`, with `archive` beside it.
-5. Confirm the subscribe form works with JavaScript and has a real no-JS `action`/`method`.
-6. Confirm `POPULAR` and `POSTS` have `UPDATED <MONTH YYYY>` lines.
-7. Confirm generated `/index.xml` contains full post bodies, `content:encoded`, absolute image/link URLs, and `atom:link rel="self"`.
-8. Confirm generated pages include canonical URLs, RSS alternate link, OG/Twitter metadata, 1200x630 image dimensions, favicon, apple touch icon, and theme-color meta.
-9. Confirm `/robots.txt`, `/sitemap.xml`, `/404.html`, and `/archive/` exist.
-10. Confirm GoatCounter production script appears only in production output.
+2. Run `python3 scripts/check_site.py` for local links, asset integrity, feeds, forms, and loading budgets.
+3. Review home, essay, story, note, archive, about, subscribe, and 404 at desktop and mobile widths. Check for horizontal page overflow and unreadable text.
+4. Confirm the home header is `BY DEXTER BOSLEY`, followed by the photo, subscribe form, `POPULAR`, and `POSTS`. Footer contains email, LinkedIn, and copyright.
+5. Confirm titles and browser tabs are uppercase. Post navigation has `< BACK` above `^ SHARE`.
+6. Confirm the photo is responsive, has intrinsic dimensions, and uses a generated WebP instead of the full source JPEG. Confirm CSS and JavaScript are shared fingerprinted assets.
+7. Confirm forms have a real no-JS `action` and `method`, and invalid email input is rejected before submission.
+8. Confirm `/index.xml` contains full post bodies, absolute image/link URLs, and `atom:link rel="self"`.
+9. Confirm canonical URLs, RSS alternate links, OG/Twitter metadata, favicon, apple touch icon, and theme-color metadata. Check `/robots.txt`, `/sitemap.xml`, `/404.html`, and `/archive/`.
+10. Confirm GoatCounter appears only in production output. After pushing, verify the live HTML and assets.
 
 ## Email Export And Campaign Drafts
 

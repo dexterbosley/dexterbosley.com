@@ -4,4 +4,8 @@
     {{- $class = "review-image" -}}
     {{- $title = "" -}}
 {{- end -}}
-{{ partial "responsive-image.html" (dict "page" .Page "src" .Destination "alt" .Text "title" $title "class" $class "sizes" "(max-width: 760px) calc(100vw - 32px), 580px" "widths" (slice 360 420 580 700 960 1160) "loading" "lazy" "decoding" "async") }}
+{{- $sizes := cond (eq $class "review-image") "180px" "(max-width: 612px) calc(100vw - 32px), 580px" -}}
+{{- $isChart := strings.HasSuffix (lower .Destination) ".svg" -}}
+{{- if $isChart }}<span class="content-chart" role="region" aria-label="Chart, scroll horizontally on small screens" tabindex="0">{{ end -}}
+{{ partial "responsive-image.html" (dict "page" .Page "src" .Destination "alt" .Text "title" $title "class" $class "sizes" $sizes "widths" (slice 360 420 580 700 960 1160) "loading" "lazy" "decoding" "async") }}
+{{- if $isChart }}</span>{{ end -}}

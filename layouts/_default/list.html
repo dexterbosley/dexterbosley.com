@@ -2,17 +2,16 @@
 {{- $pages := .Pages }}
 {{- if .IsHome }}
     <figure class="home-image object-width">
-        {{ partial "responsive-image.html" (dict "page" . "src" "/images/chamonix-banner.jpg" "alt" "Snowy Le Brévent mountain slope beneath a pale winter sky" "sizes" "(max-width: 480px) min(72vw, 384px), min(60vw, 384px)" "widths" (slice 320 420 640 880) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
+        {{ partial "responsive-image.html" (dict "page" . "src" "/images/chamonix-banner.jpg" "alt" "Snowy Le Brévent mountain slope beneath a pale winter sky" "sizes" "(max-width: 480px) calc((100vw - 32px) * .72), (max-width: 672px) calc((100vw - 32px) * .6), 384px" "widths" (slice 320 384 640 768) "loading" "eager" "decoding" "auto" "fetchpriority" "high") }}
     </figure>
 
     <section class="home-subscribe object-width" aria-label="Subscribe">
-        <form action="https://newsletter.dexterbosley.com/subscription/form" method="post" data-subscribe-form data-fetch-action="https://newsletter.dexterbosley.com/api/public/subscription">
+        <form action="https://newsletter.dexterbosley.com/subscription/form" method="post" data-subscribe-form>
             <input type="hidden" name="l" value="853dabc3-3d14-4070-92d6-95f37ad85ae9">
             <input type="hidden" name="name" value="">
             <input type="email" name="email" autocomplete="email" placeholder="free updates via email" aria-label="Email address" required>
             <button type="submit" data-subscribe-submit>receive</button>
         </form>
-        <p class="subscribe-message" role="status" aria-live="polite" hidden data-subscribe-message></p>
     </section>
 
     {{ partial "home-index.html" . }}
