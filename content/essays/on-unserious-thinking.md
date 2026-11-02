@@ -69,4 +69,4 @@ A 12.2% lift in Meta's ad revenue would add about $24bn annually, matching Muse'
 
 ## **V.**
 
-b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking. Beyond that, I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem.
+b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking. Beyond that, I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem. In 2026, we're still in search of a consumer case.
