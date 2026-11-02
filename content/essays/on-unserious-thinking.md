@@ -11,8 +11,7 @@ aliases:
 cover:
   image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-the-ten-largest-no-7-adulthood-1907_painting.jpg"
   alt: "Detail of Hilma af Klint's The Ten Largest, No. 7, Adulthood, with yellow, green and red abstract forms on a lilac ground"
-  caption: "Hilma af Klint, The Ten Largest, No. 7, Adulthood, 1907 (detail)"
-  credit: "[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hilma_af_Klint_-_The_Ten_Largest_No._7_-_Adulthood_-_1907.jpg) · Public domain"
+  caption: "Hilma af Klint, The Ten Largest, No. 7, Adulthood, 1907"
 ---
 
 ## **I.**
