@@ -9,10 +9,10 @@ home_recent: true
 aliases:
   - "/essays/on-useful-digital-tools/"
 cover:
-  image: "/images/on-unserious-thinking/on-unserious-thinking_mont-blanc-france_photo.jpg"
-  alt: "Snow-covered peaks of the Mont Blanc massif beneath a blue sky and wispy clouds"
-  caption: "Mont Blanc, France"
-  credit: "Photo: [Rkuipers](https://commons.wikimedia.org/wiki/File:Montblanc_snow.jpg) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) (cropped)"
+  image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-the-ten-largest-no-7-adulthood-1907_painting.jpg"
+  alt: "Detail of Hilma af Klint's The Ten Largest, No. 7, Adulthood, with yellow, green and red abstract forms on a lilac ground"
+  caption: "Hilma af Klint, The Ten Largest, No. 7, Adulthood, 1907 (detail)"
+  credit: "[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hilma_af_Klint_-_The_Ten_Largest_No._7_-_Adulthood_-_1907.jpg) · Public domain"
 ---
 
 ## **I.**
