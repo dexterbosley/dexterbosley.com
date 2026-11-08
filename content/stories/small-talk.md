@@ -45,7 +45,7 @@ Steve turned toward the oak doors. “She never liked coming here.”
 
 “She sends everything twice.”
 
-A crash. On the sidewalk to their right, water and glass, cut flowers from a vase, white and pink, a man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
+A crash. On the sidewalk to their right, water and glass, cut flowers, white and pink, a man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
 
 “Did she drop that?”
 
@@ -57,6 +57,8 @@ Steve watched the concrete stain while Elliott sank further into the shade and t
 
 ## **III.**
 
-He stopped at their feet. “It’s time to carry your sister outside.”
+A man approached, not the priest.
+
+“It’s time to carry your sister outside.”
 
 Steve got up and rubbed his eyes. He waited for his brother.
