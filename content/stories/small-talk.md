@@ -3,7 +3,7 @@ title: "Small Talk"
 date: 2026-01-24
 draft: false
 type: story
-description: "It was a sticky Thursday afternoon."
+description: "It was Thursday."
 home_recent: true
 cover:
   image: "/images/homepage-lake-annecy.jpeg"
@@ -11,27 +11,43 @@ cover:
   caption: "Lake Annecy, France"
 ---
 
-## **I.**
+It was Thursday. The boys watched traffic grind north uptown.
 
-It was a sticky Thursday afternoon. The air wrapped around and between the leaves while the boys watched cars grind north on Third Avenue.
+Steve tapped his black shoes together.
 
-## **II.**
+“Don’t,” Elliott said.
 
-Steve tapped his black shoes together. "I'm hungry."
+“What?”
 
-"Yeah, it was a lousy lunch. Those sandwiches were like the ones from soccer."
+“You’ll scuff them.”
+
+Steve held his feet apart.
+
+“I’m hungry.”
+
+“Those sandwiches were lousy.”
+
+“Like the soccer ones.”
+
+“Same ones, probably.”
 
 Steve nodded.
 
-"I'll make you something tonight, maybe tortellini."
+“I’ll make you something tonight,” Elliott said. “There’s tortellini.”
 
-Steve smiled and closed his eyes. "So where's Mom now?"
+“Where’s Mom?”
 
-Elliott shook his head. "I don't know."
+“Still inside, I think.”
 
-Steve turned towards the tall oak doors. "She never liked this place."
+Steve turned toward the oak doors.
 
-"Yeah, she said it was better to sleep in the morning. Remember that science study thing? The one in our group chat only with Mo--?"
+“She never liked coming here.”
+
+“Remember that thing she sent us? About how kids should sleep in?”
+
+“She sent it twice.”
+
+“She sent everything twice.”
 
 On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, cut flowers from a vase, white and pink, a kind man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
 
