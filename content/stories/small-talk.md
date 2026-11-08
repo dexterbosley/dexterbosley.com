@@ -41,7 +41,9 @@ On the sidewalk to their right, a bit closer to the park than the Avenue, water 
 
 Someone ran across the street. Faces followed and a delivery worker shook the man and a different man stabbed at his phone. Steve watched the concrete stain.
 
-There were sirens and flashes and uniforms. Elliott sank back into the shade. Steve listened to the traffic and the girl and her elbow slipped inside.
+There were sirens and flashes and uniforms. What to think, nothing to do, black.
+
+Elliott sank back into the shade. Steve listened to the traffic and the girl and her elbow slipped inside.
 
 ## **III.**
 
