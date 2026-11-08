@@ -53,12 +53,10 @@ A crash. On the sidewalk to their right, water and glass, cut flowers, white and
 
 Someone ran across the street. Faces followed. A delivery worker shook the man and a different man stabbed at his phone. There were sirens and flashes and uniforms.
 
-Steve watched the concrete stain while Elliott sank further into the shade and the girl and her elbow slipped inside.
+Steve watched the concrete stain and Elliott sank into the shade and the girl and her elbow slipped inside.
 
 ## **III.**
 
-A man approached, not the priest.
-
-“It’s time to carry your sister outside.”
+A man approached, not the priest. “It’s time to carry your sister outside.”
 
 Steve got up and rubbed his eyes. He waited for his brother.
