@@ -11,7 +11,11 @@ cover:
   caption: "Lake Annecy, France"
 ---
 
+## **I.**
+
 It was Thursday. The boys watched traffic grind north uptown.
+
+## **II.**
 
 Steve tapped his black shoes together.
 
@@ -34,6 +38,8 @@ Steve held his feet apart.
 Steve nodded.
 
 “I’ll make you something tonight,” Elliott said. “There’s tortellini.”
+
+Steve nodded.
 
 “Where’s Mom?”
 
