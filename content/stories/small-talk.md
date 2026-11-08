@@ -23,31 +23,21 @@ Steve tapped his black shoes together.
 
 “What?”
 
-“You’ll scuff them.”
+“You’ll scuff 'em.”
 
-Steve held his feet apart.
+Steve held his feet apart. “I’m hungry.”
 
-“I’m hungry.”
-
-“Those sandwiches were lousy.”
+“Those sandwiches sucked.”
 
 “Like the soccer ones.”
 
-“Same ones, probably.”
-
-Steve nodded.
-
 “I’ll make you something tonight,” Elliott said. “There’s tortellini.”
 
-Steve nodded.
+Steve smiled and listened to the traffic. “Where’s Mom?”
 
-“Where’s Mom?”
+“Still inside, I think."
 
-“Still inside, I think.”
-
-Steve turned toward the oak doors.
-
-“She never liked coming here.”
+Steve turned toward the oak doors. “She never liked coming here.”
 
 “Remember that thing she sent us? About how kids should sleep in?”
 
@@ -55,20 +45,20 @@ Steve turned toward the oak doors.
 
 “She sent everything twice.”
 
-On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, cut flowers from a vase, white and pink, a kind man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
+A crash. On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, cut flowers from a vase, white and pink, a kind man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
 
-"Did she drop that?"
+“Did she drop that?”
 
-"Had to… look at all… I don't… Stevey, he's not moving," Elliott whispered.
+“Had to… look at all… I don’t… Stevey, he’s not moving,” Elliott whispered.
 
-Someone ran across the street. Faces followed and a delivery worker shook the man and a different man stabbed at his phone. Steve watched the concrete stain.
+Someone ran across the street. Faces followed and a delivery worker shook the man and a different man stabbed at his phone.
 
 There were sirens and flashes and uniforms. What to think, nothing to do, black.
 
-Elliott sank back into the shade. Steve listened to the traffic and the girl and her elbow slipped inside.
+Steve watched the concrete stain. Elliott sank further back into the shade and the girl and her elbow slipped inside.
 
 ## **III.**
 
 A man approached, not the priest.
 
-He stopped at their feet. "It's time to carry your sister outside." Steve got up first and rubbed his eyes.
+He stopped at their feet. “It’s time to carry your sister outside.” Steve got up and rubbed his eyes. He waited for his brother to do the same.
