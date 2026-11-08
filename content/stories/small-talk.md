@@ -33,7 +33,7 @@ Steve held his feet apart. “I’m hungry.”
 
 “I’ll make you something tonight,” Elliott said. “There’s tortellini.”
 
-Steve smiled and listened to the traffic. “Where’s Mom?”
+Steve smiled. “Where’s Mom?”
 
 “Still inside, I think."
 
@@ -43,19 +43,17 @@ Steve turned toward the oak doors. “She never liked coming here.”
 
 “She sent it twice.”
 
-“She sent everything twice.”
+“She sends everything twice.”
 
-A crash. On the sidewalk to their right, a bit closer to the park than the Avenue, water and glass, cut flowers from a vase, white and pink, a kind man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
+A crash. On the sidewalk to their right, a bit closer to the park than Third Avenue, water and glass, cut flowers from a vase, white and pink, a kind man, his cheek pressed into pavement, above, a girl and a balcony rail. A scream.
 
 “Did she drop that?”
 
 “Had to… look at all… I don’t… Stevey, he’s not moving,” Elliott whispered.
 
-Someone ran across the street. Faces followed and a delivery worker shook the man and a different man stabbed at his phone.
+Someone ran across the street. Faces followed and a delivery worker shook the man and a different man stabbed at his phone. There were sirens and flashes and uniforms. What to think, nothing to do, black.
 
-There were sirens and flashes and uniforms. What to think, nothing to do, black.
-
-Steve watched the concrete stain. Elliott sank further back into the shade and the girl and her elbow slipped inside.
+Steve watched the concrete stain and Elliott sank further into the shade and the girl and her elbow slipped inside.
 
 ## **III.**
 
