@@ -68,7 +68,7 @@ Now consider [Amazon's advertising business](https://www.sec.gov/Archives/edgar/
 | Meta ad revenue increase, 2025 vs. 2024 | $35.5bn |
 | Meta total ad revenue, 2025 | $196.2bn |
 
-A 26.2% increase in Meta's ad revenue would bring in $51.5bn a year, matching Muse's most optimistic forecast. Improving ad targeting may be a better use of its scarce computing capacity than building Muse.
+A 26.2% increase on Meta's 2025 ad revenue would bring in $51.5bn a year, matching Muse's most optimistic forecast. In 2025, Meta actually grew ad revenue by [22.1%, or $35.5bn](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). Matching Muse would require growth 4.1 percentage points faster on that larger revenue base. Improving ad targeting may be a better use of its scarce computing capacity than building Muse.
 
 Amazon has a similar investment choice. It can put compute into agents that improve product discovery and ad targeting within its existing store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of that revenue to discounts after ad costs, it could cut prices by roughly 2%. An upstart must fund its computing costs and customer acquisition from the fees shoppers will pay for convenience.
 
