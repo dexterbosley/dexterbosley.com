@@ -72,6 +72,15 @@ for path in pages:
                   f"Form has no native newsletter destination: {path}")
             check(attrs.get("method") == "post", f"Form must use POST: {path}")
 
+# Markdown tables must render as tables, not paragraphs of literal pipes.
+article_source = (ROOT / "essays/on-shopping-agents/index.html").read_text(encoding="utf-8")
+article = Page(article_source)
+check(sum(tag == "table" for tag, _ in article.tags) == 2,
+      "Shopping agents article must render both comparison tables")
+check(sum(tag == "tr" for tag, _ in article.tags) == 10,
+      "Shopping agents comparison tables must retain all headers and rows")
+check(not re.search(r"<p>\s*\|", article_source), "Unrendered Markdown table in article")
+
 home = Page((ROOT / "index.html").read_text(encoding="utf-8"))
 hero = next(attrs for tag, attrs in home.tags if tag == "img")
 check(hero.get("loading") == "eager" and hero.get("fetchpriority") == "high", "Home photo loads late")
