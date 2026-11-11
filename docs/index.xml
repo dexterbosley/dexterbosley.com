@@ -9,96 +9,64 @@
     <lastBuildDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</lastBuildDate>
     <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>On Shopping Agents</title>
+      <title>On B2C Shopping Agents</title>
       <link>https://www.dexterbosley.com/essays/on-shopping-agents/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
       <guid>https://www.dexterbosley.com/essays/on-shopping-agents/</guid>
-      <description>Shopping agents, advertising subsidies and the cost of convenience.</description>
+      <description>B2C b2c shopping agents, advertising subsidies and the cost of convenience.</description>
       <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
-<p>Much ado about whether shopping agents are the new paradigm. I&rsquo;m skeptical. Even if consumer demand for agents materializes, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer&rsquo;s behalf. They will protect their margins with their own agents or block outside ones.</p>
+<p>Much ado about whether b2c shopping agents are the new paradigm. I&rsquo;m skeptical. Even if consumer demand for agents materializes, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer&rsquo;s behalf. They will protect their margins with their own agents or block outside ones.</p>
 <h2 id="ii"><strong>II.</strong></h2>
 <p>On its <a href="https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/">Q3 2026 earnings call</a> Meta reported <a href="https://apnews.com/article/13ecd6c459e39a3602f302bcc2412fe9">over 10m Muse setups in the US and Canada with about 25% active daily</a>. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.</p>
 <p>To model three-year business outcomes, let&rsquo;s assume:</p>
 <ul>
-<li>Twice as many weekly users as daily users: <strong>2.5m daily → 5m weekly</strong>.</li>
-<li>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</li>
-<li>A 5% take for Muse: equivalent to <a href="https://stripe.com/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee → <strong>$150m in annual gross fees</strong>.</li>
+<li>
+<p>Twice as many weekly users as daily users: <strong>2.5m daily → 5m weekly</strong>.</p>
+</li>
+<li>
+<p>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</p>
+</li>
+<li>
+<p>A 5% take for Muse: equivalent to <a href="https://stripe.com/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee → <strong>$150m in annual gross fees</strong>.</p>
+</li>
 </ul>
 <p>For a historical benchmark, ChatGPT grew from <a href="https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf#page=11">more than 100m weekly users in late 2023 to almost 350m in late 2024</a>. Round that to 3.5× in a year, or 250% growth. Repeating that pace for three years would take Muse from 5m to about 214m weekly users: <strong>5m × 3.5³</strong>. The bull case doubles that year-three user count to <strong>429m</strong>; it does not double the annual growth rate.</p>
 <p><span class="content-chart" role="region" aria-label="Chart, scroll horizontally on small screens" tabindex="0"><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Modeled Muse weekly users from a shared 5m starting point: bear 10m at 26% annual growth, base 50m at 115%, dashed reference repeating ChatGPT’s 2023–2024 growth pace reaches 214m at 250%, and bull 429m at 341%. Bull reaches twice the reference user count at year three." loading="lazy" decoding="async"></span></p>
 <h2 id="iii"><strong>III.</strong></h2>
 <p>In year three (so 2029-ish):</p>
 <ul>
-<li><strong>Bear: 5m → 10m weekly users</strong>, approximately <strong>26% annual growth</strong>. At 25% buying once a month, $200 per purchase and a 5% take: <strong>$300m annual gross fees</strong>.</li>
-<li><strong>Base: 5m → 50m weekly users</strong>, approximately <strong>115% annual growth</strong>. At 25% buying once a month, $200 per purchase and a 5% take: <strong>$1.5bn annual gross fees</strong>.</li>
-<li><strong>Bull (2× the ChatGPT projection): 5m → 429m weekly users</strong>, approximately <strong>341% annual growth</strong>. At 50% buying twice a month, $200 per purchase and a 5% take: <strong>$51.5bn annual gross fees</strong>.</li>
+<li>
+<p><strong>Bear: 5m → 10m weekly users</strong>, approximately <strong>26% annual growth</strong>. At 25% buying once a month, $200 per purchase and a 5% take: <strong>$300m annual gross fees</strong>.</p>
+</li>
+<li>
+<p><strong>Base: 5m → 50m weekly users</strong>, approximately <strong>115% annual growth</strong>. At 25% buying once a month, $200 per purchase and a 5% take: <strong>$1.5bn annual gross fees</strong>.</p>
+</li>
+<li>
+<p><strong>Bull (2× the ChatGPT projection): 5m → 429m weekly users</strong>, approximately <strong>341% annual growth</strong>. At 50% buying twice a month, $200 per purchase and a 5% take: <strong>$51.5bn annual gross fees</strong>.</p>
+</li>
 </ul>
 <p>The bull case requires roughly 214m shoppers spending $4,800 each a year through Muse: <strong>$1.03tn in gross merchandise value (GMV)</strong>.</p>
 <p>That&rsquo;s about 10× <a href="https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm">DoorDash&rsquo;s $102bn in 2025 marketplace gross order value</a>. The $4,800 per shopper also exceeds the <a href="https://landmarkglobal.com/uploads/26-CFS/Factssheet-US-2026.pdf">$4,280 average annual US ecommerce spend per shopper in Landmark Global&rsquo;s 2026 factsheet</a>.</p>
 <p>At a 5% take and zero costs:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Annual figures</th>
-          <th style="text-align: right">Muse bull case, year three</th>
-          <th style="text-align: right"><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta Family of Apps, 2025 actuals</a></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Revenue</td>
-          <td style="text-align: right">$51.5bn</td>
-          <td style="text-align: right">$198.8bn</td>
-      </tr>
-      <tr>
-          <td>Operating profit</td>
-          <td style="text-align: right">$51.5bn</td>
-          <td style="text-align: right">$102.5bn</td>
-      </tr>
-      <tr>
-          <td>Operating margin</td>
-          <td style="text-align: right">100% assumed</td>
-          <td style="text-align: right">51.6% actual</td>
-      </tr>
-  </tbody>
-</table>
+<p>| Annual figures | Muse bull case, year three | <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta Family of Apps, 2025 actuals</a> |</p>
+<p>| &mdash; | &mdash;: | &mdash;: |</p>
+<p>| Revenue | $51.5bn | $198.8bn |</p>
+<p>| Operating profit | $51.5bn | $102.5bn |</p>
+<p>| Operating margin | 100% assumed | 51.6% actual |</p>
 <h2 id="iv"><strong>IV.</strong></h2>
 <p>Compare <a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm">Amazon&rsquo;s advertising business</a> and <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">Meta&rsquo;s</a>:</p>
-<table>
-  <thead>
-      <tr>
-          <th></th>
-          <th style="text-align: right">Revenue / increase</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Muse bull case, year three (5% total take)</td>
-          <td style="text-align: right">$51.5bn</td>
-      </tr>
-      <tr>
-          <td>Amazon ad revenue increase, 2025 vs. 2024</td>
-          <td style="text-align: right">$12.4bn</td>
-      </tr>
-      <tr>
-          <td>Amazon total ad revenue, 2025</td>
-          <td style="text-align: right">$68.6bn</td>
-      </tr>
-      <tr>
-          <td>Meta ad revenue increase, 2025 vs. 2024</td>
-          <td style="text-align: right">$35.5bn</td>
-      </tr>
-      <tr>
-          <td>Meta total ad revenue, 2025</td>
-          <td style="text-align: right">$196.2bn</td>
-      </tr>
-  </tbody>
-</table>
+<p>| | Revenue / increase |</p>
+<p>| &mdash; | &mdash;: |</p>
+<p>| Muse bull case, year three (5% total take) | $51.5bn |</p>
+<p>| Amazon ad revenue increase, 2025 vs. 2024 | $12.4bn |</p>
+<p>| Amazon total ad revenue, 2025 | $68.6bn |</p>
+<p>| Meta ad revenue increase, 2025 vs. 2024 | $35.5bn |</p>
+<p>| Meta total ad revenue, 2025 | $196.2bn |</p>
 <p>Growing Meta&rsquo;s 2025 ad revenue by 26.2% would add $51.5bn a year, matching the Muse bull case. In 2025, ad revenue grew by <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm">22.1%, or $35.5bn</a>. The required growth rate is 4.1 percentage points higher, from a larger base. Putting that compute into better ad targeting feels more sensible.</p>
 <p>In a similar vein, on the supply side, Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of its ad revenue to discounts after covering ad costs, it could cut prices by roughly 2% and swamp an agent&rsquo;s entire convenience fee. An upstart has to pay for compute and customer acquisition out of that fee. Without it, agents are left as a pure processing play, battling giants that have invested trillions in delivery, returns, and the rest of the retail infrastructure, with processing schemes of their own.</p>
 <h2 id="v"><strong>V.</strong></h2>
 <p>Travel is a legitimate consumer use case. Beyond that, b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense.</p>
-<p>The businesses that matter at scale have little reason to support an independent agent serving the shopper. And if refusing to serve shopping agents supposedly makes you a second-tier retailer, the hypothetical mom-and-pop insurgency can look at <a href="https://www.ft.com/content/64f01bfe-39b9-49f6-86eb-be96374539cf">Amazon to see who ends up in control</a>.</p>
+<p>The businesses that matter at scale have little reason to support an independent agent serving the shopper. And if refusing to serve b2c shopping agents supposedly makes you a second-tier retailer, the hypothetical mom-and-pop insurgency can look at <a href="https://www.ft.com/content/64f01bfe-39b9-49f6-86eb-be96374539cf">Amazon to see who ends up in control</a>.</p>
 <p>In 2026, we&rsquo;re still in search of a broader consumer case.</p>
 ]]></content:encoded>
     </item>
