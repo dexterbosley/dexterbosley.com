@@ -72,8 +72,8 @@ Amazon has a similar investment choice. It can put compute into agents that impr
 
 ## **V.**
 
-b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking.
+Travel is a legitimate consumer use case: people have a destination and dates and want help booking. Beyond that, b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense.
 
 But even granting consumer demand, the businesses that matter at scale have little reason to support an independent agent serving the shopper. And the promised mom-and-pop insurgency need only look at Amazon to see who ends up in control.
 
-The business incentives already make this a nonstarter to me. In 2026, we're still in search of a consumer case.
+The business incentives already make this a nonstarter to me. In 2026, we're still in search of a broader consumer case.
