@@ -418,7 +418,8 @@ img {
 .post-content ul,
 .post-content ol,
 .post-content pre,
-.about-copy p {
+.about-copy p,
+.about-copy ul {
     margin: 0 0 1.65rem;
 }
 
@@ -435,11 +436,13 @@ img {
 }
 
 .post-content ul,
-.post-content ol {
+.post-content ol,
+.about-copy ul {
     padding-left: 1.35rem;
 }
 
-.post-content li {
+.post-content li,
+.about-copy li {
     margin: 0 0 .5rem;
 }
 

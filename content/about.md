@@ -10,6 +10,8 @@ cover:
   license: "Public domain"
 ---
 
-Product manager at [Ramp](https://ramp.com/), based in New York. Previously at DoorDash, Uber, and WeWork.
-
-I went to Crystal Springs Uplands School, then studied economics at Northwestern University.
+- Product manager at Ramp
+- Previously DoorDash, Uber, and WeWork
+- Economics at Northwestern University
+- Crystal Springs Uplands School
+- Based in New York

@@ -25,7 +25,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 
 ## Home
 
-- Place a hushed row of `about`, `email`, and `linkedin` directly under `BY DEXTER BOSLEY`.
+- Keep the masthead free of navigation links. About, email, and LinkedIn remain in the footer.
 - Home image is object-width, left-aligned, 11:7 crop, no visible caption, meaningful alt text.
 - Object width is `min(60%, 384px)` and relaxes to `min(72%, 384px)` at `480px` and below.
 - Subscribe is unboxed: one email input and the filled `receive` button. It is the only filled element on the page.
@@ -34,7 +34,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Section labels are bold ink uppercase with no updated-date line.
 - Rows show title, type, date, and read time with spacing and no separators. Notes are labeled `comment`.
 - Footer is hushed and includes `about`, `email`, `linkedin`, and `© 2026`, in that order.
-- About uses a short professional bio and Goya's public-domain *The Dog*, with the same object width and 11:7 crop as the home photo. Position the crop to keep the dog visible. Its footer replaces `about` with `< back`.
+- About uses a simple bulleted bio with plain-text employer names and Goya's public-domain *The Dog*, with the same object width and 11:7 crop as the home photo. Position the crop to keep the dog visible. Its footer replaces `about` with `< back`.
 
 ## Posts And Content
 

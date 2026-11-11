@@ -75,9 +75,6 @@
         {{- end }}
         <header class="site-header">
             {{ if or .IsHome (eq .Layout "about") }}<h1 class="site-title">{{ $siteTitle }}</h1>{{ else }}<span class="site-title">{{ $siteTitle }}</span>{{ end }}
-            {{- if eq $siteTitle "BY DEXTER BOSLEY" }}
-            {{ partial "site-links.html" . }}
-            {{- end }}
         </header>
         {{- end }}
 
