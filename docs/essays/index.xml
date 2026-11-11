@@ -24,7 +24,8 @@
 <li>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</li>
 <li>A 5% take for Muse: equivalent to <a href="https://stripe.com/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee â†’ <strong>$150m in annual gross fees</strong>.</li>
 </ul>
-<p><span class="content-chart" role="region" aria-label="Chart, scroll horizontally on small screens" tabindex="0"><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Modeled Muse weekly users from a shared 5m starting point: bear 10m at 26% annual growth, base 50m at 115%, dashed ChatGPT-pace reference 214m at 250%, and bull 429m at 341%. Bull reaches twice the reference user count at year three." loading="lazy" decoding="async"></span></p>
+<p>For a historical benchmark, ChatGPT grew from <a href="https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf#page=11">more than 100m weekly users in late 2023 to almost 350m in late 2024</a>. Round that to 3.5× in a year, or 250% growth. Repeating that pace for three years would take Muse from 5m to about 214m weekly users: <strong>5m × 3.5³</strong>. The bull case doubles that year-three user count to <strong>429m</strong>; it does not double the annual growth rate.</p>
+<p><span class="content-chart" role="region" aria-label="Chart, scroll horizontally on small screens" tabindex="0"><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Modeled Muse weekly users from a shared 5m starting point: bear 10m at 26% annual growth, base 50m at 115%, dashed reference repeating ChatGPT’s 2023–2024 growth pace reaches 214m at 250%, and bull 429m at 341%. Bull reaches twice the reference user count at year three." loading="lazy" decoding="async"></span></p>
 <h2 id="iii"><strong>III.</strong></h2>
 <p>In year three (so 2029-ish):</p>
 <ul>
