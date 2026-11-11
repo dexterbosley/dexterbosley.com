@@ -39,7 +39,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 ## Posts And Content
 
 - Essays, stories, and notes render through `layouts/partials/post-single.html`.
-- All interior pages use `layouts/partials/page-header.html`: title, semantic date when available, and `< BACK` stacked above `^ SHARE`. At 1100px and above the date/actions sit in the left margin; narrower views stack them below the title. Utility-page dates come from their original Git history; error pages have no invented date. Every interior page has a separate `< BACK` / `^ SHARE` row above the shared about, email, LinkedIn, and copyright footer.
+- All interior pages use `layouts/partials/page-header.html`: title, semantic date when available, and `< BACK` stacked above `^ SHARE`. At 1100px and above the date/actions sit in the left margin; narrower views stack them below the title. Utility-page dates come from their original Git history; error pages have no invented date. Back and Share appear only in the top header. Every page ends with the shared about, email, LinkedIn, and copyright footer.
 - Non-book title images on all pages use the home object width and 11:7 aspect ratio, aligned with the text's left edge. Book/review images remain 180px wide, left-aligned, with their natural portrait proportions.
 - `^ SHARE` uses the native share sheet where available and copies the URL otherwise.
 - All posts require `description`, `cover.image`, `cover.alt`, and `cover.caption`.

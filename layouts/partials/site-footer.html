@@ -1,10 +1,4 @@
 <footer class="site-footer" aria-label="Footer">
-    {{- if not .IsHome }}
-    <nav class="post-actions" aria-label="Page actions">
-        <a href="/">&lt; BACK</a>
-        <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">^ SHARE</button>
-    </nav>
-    {{- end }}
     <div class="footer-links hushed">
         {{ partial "site-links.html" . }}
         <span>&copy; 2026</span>
