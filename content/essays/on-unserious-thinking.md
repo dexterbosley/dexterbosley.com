@@ -66,12 +66,12 @@ Compare [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data/
 
 Growing Meta's 2025 ad revenue by 26.2% would add $51.5bn a year, matching the Muse bull case. In 2025, ad revenue grew by [22.1%, or $35.5bn](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). The required growth rate is 4.1 percentage points higher, from a larger base. Putting that compute into better ad targeting feels more sensible.
 
-Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of that revenue to discounts after ad costs, it could cut prices by roughly 2%. An upstart has to pay for compute and customer acquisition out of convenience fees.
+In a similar vein, on the supply side, Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of that revenue to discounts after ad costs, it could cut prices by roughly 2%. An upstart has to pay for compute and customer acquisition out of convenience fees.
 
 ## **V.**
 
 Travel is a legitimate consumer use case. Beyond that, b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense.
 
-The businesses that matter at scale have little reason to support an independent agent serving the shopper. The mom-and-pop insurgency can look at [Amazon to see who ends up in control](https://www.ft.com/content/64f01bfe-39b9-49f6-86eb-be96374539cf).
+The businesses that matter at scale have little reason to support an independent agent serving the shopper. And if refusing to serve shopping agents supposedly makes you a second-tier retailer, the hypothetical mom-and-pop insurgency can look at [Amazon to see who ends up in control](https://www.ft.com/content/64f01bfe-39b9-49f6-86eb-be96374539cf).
 
 In 2026, we're still in search of a broader consumer case.
