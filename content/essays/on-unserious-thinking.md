@@ -18,7 +18,7 @@ cover:
 
 ## **I.**
 
-Much ado about whether consumers want shopping agents. I'm skeptical. Even if the demand materializes, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
+Much ado about whether consumers want shopping agents. I'm skeptical. Even if consumer demand for agents materializes, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
 
 ## **II.**
 
