@@ -1,4 +1,5 @@
 ---
+date: 2026-06-20
 title: "Subscribe"
 layout: "subscribe"
 description: "Free email updates when Dexter publishes new posts."

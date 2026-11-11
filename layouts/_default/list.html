@@ -16,11 +16,8 @@
 
     {{ partial "home-index.html" . }}
 
-    {{ partial "site-footer.html" . }}
+
 {{- else }}
-    <header class="page-header">
-        <h1 class="page-title">{{ .Title }}</h1>
-    </header>
 
     {{- $pages = sort $pages "Date" "desc" }}
     {{- $paginator := .Paginate $pages }}

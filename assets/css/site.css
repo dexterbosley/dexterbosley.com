@@ -216,10 +216,6 @@ img {
     margin: 0 0 64px;
 }
 
-.about-intro {
-    margin-bottom: 64px;
-}
-
 .about-image img {
     object-position: center 90%;
 }
@@ -331,7 +327,7 @@ img {
     text-transform: uppercase;
 }
 
-.site-footer,
+.footer-links,
 .site-links {
     display: flex;
     flex-wrap: wrap;
@@ -475,8 +471,6 @@ mark {
 .post-content .content-table {
     max-width: 100%;
     margin-block: 2.25rem;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
 }
 
 .post-content .content-table:focus-visible,
@@ -502,7 +496,7 @@ mark {
 
 .post-content table {
     width: 100%;
-    min-width: 480px;
+    table-layout: fixed;
     border-collapse: collapse;
     color: var(--ink);
     font-family: var(--sans);
@@ -517,7 +511,7 @@ mark {
     border-bottom: 1px solid color-mix(in srgb, var(--frame) 12%, transparent);
     text-align: left;
     vertical-align: top;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 .post-content thead th {
@@ -540,14 +534,15 @@ mark {
 }
 
 .post-content p:has(img.review-image) {
-    width: 180px;
-    max-width: 180px;
+    width: min(100%, 180px);
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .post-content img.review-image {
     width: 180px;
-    height: 270px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -649,7 +644,7 @@ mark {
 }
 
 @media (min-width: 1100px) {
-    .site-post .post-single {
+    .post-header {
         position: relative;
     }
 
@@ -690,4 +685,27 @@ mark {
 .share-link:hover {
     color: var(--ink);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .post-content th,
+    .post-content td {
+        padding: 10px 6px;
+    }
+}
+
+@media (pointer: coarse) {
+    .post-actions a,
+    .post-actions-compact a,
+    .share-link {
+        min-height: 44px;
+    }
+}
+
+.site-footer {
+    margin-top: 56px;
+}
+
+.site-footer .post-actions {
+    margin: 0 0 24px;
 }

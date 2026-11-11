@@ -1,12 +1,12 @@
-{{- $popularPages := slice -}}
+{{- $pinnedPages := slice -}}
 {{- range $path := slice "/stories/small-talk" "/essays/on-unserious-thinking" "/notes/tatie" -}}
     {{- with site.GetPage $path -}}
-        {{- $popularPages = $popularPages | append . -}}
+        {{- $pinnedPages = $pinnedPages | append . -}}
     {{- end -}}
 {{- end -}}
 
 {{- $postPages := where site.RegularPages "Params.home_recent" true -}}
 {{- $postPages = sort $postPages "Date" "desc" -}}
 
-{{- partial "home-section.html" (dict "id" "popular-title" "label" "Popular" "pages" $popularPages) -}}
+{{- partial "home-section.html" (dict "id" "pinned-title" "label" "Pinned" "pages" $pinnedPages) -}}
 {{- partial "home-section.html" (dict "id" "posts-title" "label" "Posts" "pages" $postPages) -}}

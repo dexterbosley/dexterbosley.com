@@ -30,25 +30,25 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Object width is `min(60%, 384px)` and relaxes to `min(72%, 384px)` at `480px` and below.
 - Subscribe is unboxed: one email input and the filled `receive` button. It is the only filled element on the page.
 - The subscribe form is up to 384px wide and can use the full mobile column so the email field remains usable.
-- `POPULAR` uses the curated starter pages; `POSTS` uses `home_recent: true` sorted newest first.
+- `PINNED` uses the curated starter pages; `POSTS` uses `home_recent: true` sorted newest first.
 - Section labels are bold ink uppercase with no updated-date line.
 - Rows show title, type, date, and read time with spacing and no separators. Notes are labeled `comment`.
 - Footer is hushed and includes `about`, `email`, `linkedin`, and `© 2026`, in that order.
-- About uses a simple bulleted bio with plain-text employer names and Goya's public-domain *The Dog*, with the same object width and 11:7 crop as the home photo. Position the crop to keep the dog visible. Its footer replaces `about` with `< back`.
+- About uses a simple bulleted bio with plain-text employer names and Goya's public-domain *The Dog*, with the same object width and 11:7 crop as the home photo. Position the crop to keep the dog visible. It uses the same footer as every interior page.
 
 ## Posts And Content
 
 - Essays, stories, and notes render through `layouts/partials/post-single.html`.
-- Post headers include title, date, and `< BACK` stacked above `^ SHARE`. The bottom navigation includes `<- BACK` and `^ SHARE`.
-- Essay and story covers use the same full-column width and 11:7 aspect ratio, aligned with the text's left edge.
+- All interior pages use `layouts/partials/page-header.html`: title, semantic date when available, and `< BACK` stacked above `^ SHARE`. At 1100px and above the date/actions sit in the left margin; narrower views stack them below the title. Utility-page dates come from their original Git history; error pages have no invented date. Every interior page has a separate `< BACK` / `^ SHARE` row above the shared about, email, LinkedIn, and copyright footer.
+- Non-book title images on all pages use the home object width and 11:7 aspect ratio, aligned with the text's left edge. Book/review images remain 180px wide, left-aligned, with their natural portrait proportions.
 - `^ SHARE` uses the native share sheet where available and copies the URL otherwise.
 - All posts require `description`, `cover.image`, `cover.alt`, and `cover.caption`.
 - Essays and stories use Roman section headings such as `## **I.**`.
 - Notes may start directly.
 - Notes do not render a visible cover banner, but cover fields still drive metadata and link cards.
 - Body images, graphs, figures, and tables share a centered `min(100%, 580px)` content-object width inside the `640px` reading column.
-- Charts and tables scroll within their own container on narrow screens. Keep chart labels at their desktop reading size instead of shrinking them to fit a phone.
-- Tables use a plain reading treatment like Codex tables: 14px sans-serif type, semibold headers, light horizontal row separators, no outer or vertical borders, no header fill, and comfortable cell padding. Keep equal `2.25rem` spacing before and after and horizontal scrolling on narrow screens. Keep table labels in the standard ink color. Charts use ink and muted grey, direct labels and line patterns; no outer frame or colored series.
+- Tables fit the reading column at every viewport width without horizontal scrolling. Use fixed table layout, wrapping cell text, and reduced cell padding on mobile. Charts retain their own scroll container and desktop-size labels.
+- Tables use a plain reading treatment like Codex tables: 14px sans-serif type, semibold headers, light horizontal row separators, no outer or vertical borders, no header fill, and comfortable cell padding. Keep equal `2.25rem` spacing before and after and wrap cells on narrow screens. Keep table labels in the standard ink color. Charts use ink and muted grey, direct labels and line patterns; no outer frame or colored series.
 - Use native `<mark>` only for short inline prose highlights; `--wash` is for highlights and selection, not labels or section backgrounds.
 
 ## Distribution Infrastructure

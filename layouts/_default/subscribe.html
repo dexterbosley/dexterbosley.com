@@ -1,7 +1,7 @@
 {{- define "main" }}
 <section class="home-intro subscribe-intro" aria-label="Subscribe">
-    <figure class="home-banner">
-        {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 472px) calc(100vw - 32px), 440px" "widths" (slice 320 440 640 880) "loading" "eager" "fetchpriority" "high") }}
+    <figure class="home-image object-width">
+        {{ partial "responsive-image.html" (dict "page" . "src" "/images/homepage-lake-annecy.jpeg" "alt" "People on a lawn beside a lake with mountains in the distance" "sizes" "(max-width: 480px) calc((100vw - 32px) * .72), (max-width: 672px) calc((100vw - 32px) * .6), 384px" "widths" (slice 320 384 640 768) "loading" "eager" "fetchpriority" "high") }}
     </figure>
     <div class="about-copy subscribe-copy">
         {{ .Content }}

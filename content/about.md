@@ -1,4 +1,5 @@
 ---
+date: 2025-12-21
 title: "About"
 layout: "about"
 description: "Product manager at Ramp. Previously DoorDash, Uber, and WeWork."

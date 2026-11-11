@@ -1,10 +1,10 @@
-<div class="content-table" role="region" aria-label="Scrollable table" tabindex="0">
+<div class="content-table">
     <table>
         <thead>
             {{- range .THead }}
             <tr>
                 {{- range . }}
-                <th{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</th>
+                <th scope="col"{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</th>
                 {{- end }}
             </tr>
             {{- end }}

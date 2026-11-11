@@ -14,24 +14,11 @@
     {{- errorf "%s is missing required cover.caption" .File.Path }}
 {{- end }}
 <article class="post-single post-template-{{ $kind }}">
-    <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
-        <div class="post-utility">
-            <div class="post-meta">
-                <span>{{ partial "date-long.html" .Date }}</span>
-            </div>
-            <nav class="post-actions-compact" aria-label="Post actions">
-                <a href="/">&lt; BACK</a>
-                <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">^ SHARE</button>
-            </nav>
-        </div>
-    </header>
-
     {{- if ne $kind "note" }}
     {{- with .Params.cover.image }}
-    {{- $coverSizes := "(max-width: 672px) calc(100vw - 32px), 640px" }}
-    <figure class="post-opener">
-        {{ partial "responsive-image.html" (dict "page" $ "src" . "alt" ($.Params.cover.alt | default $.Title) "sizes" $coverSizes "widths" (slice 360 420 580 700 960 1200) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
+    {{- $coverSizes := "(max-width: 480px) calc((100vw - 32px) * .72), (max-width: 672px) calc((100vw - 32px) * .6), 384px" }}
+    <figure class="post-opener object-width">
+        {{ partial "responsive-image.html" (dict "page" $ "src" . "alt" ($.Params.cover.alt | default $.Title) "sizes" $coverSizes "widths" (slice 320 384 640 768) "loading" "eager" "decoding" "async" "fetchpriority" "high") }}
         {{- with $.Params.cover.caption }}
         <figcaption>{{ . }}{{ with $.Params.cover.credit }}<br>{{ . | markdownify }}{{ end }}</figcaption>
         {{- end }}
@@ -43,8 +30,4 @@
         {{ .Content }}
     </div>
 
-    <nav class="post-actions" aria-label="Post actions">
-        <a href="/">&lt;- BACK</a>
-        <button class="share-link" type="button" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">^ SHARE</button>
-    </nav>
 </article>
