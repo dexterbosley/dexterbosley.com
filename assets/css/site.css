@@ -688,7 +688,3 @@ mark {
     color: var(--ink);
     text-decoration: underline;
 }
-
-.post-content tr.comparison-muse td:first-child { color: #985717; }
-.post-content tr.comparison-amazon td:first-child { color: #526c34; }
-.post-content tr.comparison-meta td:first-child { color: #426c9c; }

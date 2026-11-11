@@ -1,7 +1,7 @@
 ---
 title: "On Shopping Agents"
 date: 2026-10-09
-lastmod: 2026-11-02
+lastmod: 2026-11-10
 draft: false
 type: essay
 description: "Shopping agents, advertising subsidies and the cost of convenience."
@@ -16,7 +16,9 @@ cover:
 
 ## **I.**
 
-Businesses will protect their margins with their own agents or block outside ones. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
+Much ado about whether consumers want shopping agents. I'm skeptical, but even granting the demand, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
+
+Saving people time is a proposition. Getting them to buy things is an enormous business. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
 
 ## **II.**
 
@@ -28,7 +30,7 @@ So let's assume:
 - A quarter of those weekly users buy once a month at $200: **$3bn in annual purchases**.
 - A 5% take for Muse: equivalent to [Stripe's entire processing charge](https://stripe.com/us/pricing) of roughly 3% plus a 2% convenience fee → **$150m in annual gross fees**.
 
-[ChatGPT doubled weekly users in roughly nine months](https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410). The dashed line applies that pace to the same assumed 5m starting point:
+The three scenarios below start at 5m weekly users and reach 10m, 50m and 200m after three years. For comparison, the dashed line applies [ChatGPT's earlier nine-month doubling pace](https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410) to the same starting point, reaching 80m. The bull case assumes faster growth, comparable to ChatGPT's later rise from 200m to nearly 700m weekly users in a year.
 
 ![Three-year weekly-user growth from 5m: bear 10m, base 50m and bull 200m. ChatGPT's nine-month doubling pace extrapolated from the same starting point reaches 80m.](/images/on-unserious-thinking/muse-growth-cases.svg)
 
@@ -36,11 +38,11 @@ So let's assume:
 
 In year three (so 2029-ish):
 
-- Bear, roughly [pre-IPO Duolingo](https://www.sec.gov/Archives/edgar/data/1562088/000162828021014753/duolingo424b4.htm) pace (20% annual growth in monthly users): 10m weekly users × 25% buying monthly → **$300m annual gross fees**.
-- Base, roughly [early Snapchat](https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm) pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → **$1.5bn annual gross fees**.
-- Bull, roughly [ChatGPT](https://openai.com/index/gpt-5-new-era-of-work/) pace (weekly users grew from 200m to nearly 700m in a year): 200m weekly users × 50% buying twice monthly → **$24bn annual gross fees**.
+- Bear, **26% annual user growth**, loosely comparable to [pre-IPO Duolingo](https://www.sec.gov/Archives/edgar/data/1562088/000162828021014753/duolingo424b4.htm) pace (20% annual growth in monthly users): 10m weekly users × 25% buying monthly → **$300m annual gross fees**.
+- Base, **115% annual user growth**, loosely comparable to [early Snapchat](https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm) pace (daily users roughly doubling in a year): 50m weekly users × 25% buying monthly → **$1.5bn annual gross fees**.
+- Bull, **242% annual user growth**, roughly [ChatGPT](https://openai.com/index/gpt-5-new-era-of-work/) pace (weekly users grew from 200m to nearly 700m in a year): 200m weekly users × 50% buying twice monthly → **$24bn annual gross fees**.
 
-The bull case assumes ChatGPT-like user growth plus twice the shopping rate and purchase frequency. By year three that means 100m shoppers spending $4,800 each annually through Muse: **$480bn in gross merchandise value (GMV)**.
+The bull case assumes the faster ChatGPT benchmark plus twice the shopping rate and purchase frequency. By year three that means 100m shoppers spending $4,800 each annually through Muse: **$480bn in gross merchandise value (GMV)**.
 
 That's about 5× [DoorDash's $102bn in 2025 marketplace gross order value](https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm). The $4,800 per shopper also exceeds the [$4,280 average annual US ecommerce spend per shopper in Landmark Global's 2026 factsheet](https://landmarkglobal.com/uploads/26-CFS/Factssheet-US-2026.pdf).
 
@@ -70,4 +72,8 @@ Amazon has a similar investment choice. It can put compute into agents that impr
 
 ## **V.**
 
-b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking. Beyond that, I struggle to see the case for an independent agent operating on top of the existing ecommerce ecosystem. In 2026, we're still in search of a consumer case.
+b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense. Travel makes sense when people already have a destination and dates and want help booking.
+
+But even granting consumer demand, the businesses that matter at scale have little reason to support an independent agent serving the shopper. And the promised mom-and-pop insurgency need only look at Amazon to see who ends up in control.
+
+The business incentives already make this a nonstarter to me. In 2026, we're still in search of a consumer case.

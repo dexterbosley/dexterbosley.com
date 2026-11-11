@@ -48,7 +48,7 @@ A public journal for essays, stories, notes, and small observations. The site sh
 - Notes do not render a visible cover banner, but cover fields still drive metadata and link cards.
 - Body images, graphs, figures, and tables share a centered `min(100%, 580px)` content-object width inside the `640px` reading column.
 - Charts and tables scroll within their own container on narrow screens. Keep chart labels at their desktop reading size instead of shrinking them to fit a phone.
-- Tables use a plain reading treatment like Codex tables: 14px sans-serif type, semibold headers, light horizontal row separators, no outer or vertical borders, no header fill, and comfortable cell padding. Keep equal `2.25rem` spacing before and after and horizontal scrolling on narrow screens. Comparison colors belong in row labels rather than filled rows.
+- Tables use a plain reading treatment like Codex tables: 14px sans-serif type, semibold headers, light horizontal row separators, no outer or vertical borders, no header fill, and comfortable cell padding. Keep equal `2.25rem` spacing before and after and horizontal scrolling on narrow screens. Keep table labels in the standard ink color. Charts use ink and muted grey, direct labels and line patterns; no outer frame or colored series.
 - Use native `<mark>` only for short inline prose highlights; `--wash` is for highlights and selection, not labels or section backgrounds.
 
 ## Distribution Infrastructure
