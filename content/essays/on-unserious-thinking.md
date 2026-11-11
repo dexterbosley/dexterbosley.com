@@ -18,7 +18,7 @@ cover:
 
 ## **I.**
 
-Much ado about whether consumers want shopping agents. I'm skeptical. The businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
+Much ado about whether consumers want shopping agents. I'm skeptical. Even if the demand materializes, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
 
 ## **II.**
 
@@ -64,7 +64,7 @@ Compare [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data/
 | Meta ad revenue increase, 2025 vs. 2024 | $35.5bn |
 | Meta total ad revenue, 2025 | $196.2bn |
 
-Growing Meta's 2025 ad revenue by 26.2% would add $51.5bn a year, matching the Muse bull case. In 2025, ad revenue grew by [22.1%, or $35.5bn](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). The required growth rate is 4.1 percentage points higher, from a larger base. Meta may get more from its compute by improving ad targeting.
+Growing Meta's 2025 ad revenue by 26.2% would add $51.5bn a year, matching the Muse bull case. In 2025, ad revenue grew by [22.1%, or $35.5bn](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). The required growth rate is 4.1 percentage points higher, from a larger base. Putting that compute into better ad targeting feels more sensible.
 
 Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of that revenue to discounts after ad costs, it could cut prices by roughly 2%. An upstart has to pay for compute and customer acquisition out of convenience fees.
 
