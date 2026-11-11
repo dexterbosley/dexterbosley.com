@@ -10,20 +10,19 @@
     <atom:link href="https://www.dexterbosley.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Shopping Agents</title>
-      <link>https://www.dexterbosley.com/essays/on-unserious-thinking/</link>
+      <link>https://www.dexterbosley.com/essays/on-shopping-agents/</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 &#43;0000</pubDate>
-      <guid>https://www.dexterbosley.com/essays/on-unserious-thinking/</guid>
+      <guid>https://www.dexterbosley.com/essays/on-shopping-agents/</guid>
       <description>Shopping agents, advertising subsidies and the cost of convenience.</description>
       <content:encoded><![CDATA[<h2 id="i"><strong>I.</strong></h2>
 <p>Much ado about whether consumers want shopping agents. I&rsquo;m skeptical, but even granting the demand, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer&rsquo;s behalf. They will protect their margins with their own agents or block outside ones.</p>
-<p>Saving people time is a proposition. Getting them to buy things is an enormous business. Consider ecommerce, all the rage these days with agents like Muse and Instinct.</p>
 <h2 id="ii"><strong>II.</strong></h2>
 <p>On its <a href="https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/">Q3 2026 earnings call</a> Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.</p>
-<p>So let&rsquo;s assume:</p>
+<p>To model three-year business outcomes, let&rsquo;s assume:</p>
 <ul>
 <li>Twice as many weekly users as daily users: <strong>2.5m daily → 5m weekly</strong>.</li>
 <li>A quarter of those weekly users buy once a month at $200: <strong>$3bn in annual purchases</strong>.</li>
-<li>A 5% take for Muse: equivalent to <a href="https://stripe.com/us/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee → <strong>$150m in annual gross fees</strong>.</li>
+<li>A 5% take for Muse: equivalent to <a href="https://stripe.com/pricing">Stripe&rsquo;s entire processing charge</a> of roughly 3% plus a 2% convenience fee → <strong>$150m in annual gross fees</strong>.</li>
 </ul>
 <p>The three scenarios below start at 5m weekly users and reach 10m, 50m and 200m after three years. For comparison, the dashed line applies <a href="https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410">ChatGPT&rsquo;s earlier nine-month doubling pace</a> to the same starting point, reaching 80m. The bull case assumes faster growth, comparable to ChatGPT&rsquo;s later rise from 200m to nearly 700m weekly users in a year.</p>
 <p><span class="content-chart" role="region" aria-label="Chart, scroll horizontally on small screens" tabindex="0"><img src="https://www.dexterbosley.com/images/on-unserious-thinking/muse-growth-cases.svg" alt="Three-year weekly-user growth from 5m: bear 10m, base 50m and bull 200m. ChatGPT&rsquo;s nine-month doubling pace extrapolated from the same starting point reaches 80m." loading="lazy" decoding="async"></span></p>

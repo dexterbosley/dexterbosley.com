@@ -1,12 +1,14 @@
 ---
 title: "On Shopping Agents"
+slug: "on-shopping-agents"
 date: 2026-10-09
-lastmod: 2026-11-10
+lastmod: 2026-11-11
 draft: false
 type: essay
 description: "Shopping agents, advertising subsidies and the cost of convenience."
 home_recent: true
 aliases:
+  - "/essays/on-unserious-thinking/"
   - "/essays/on-useful-digital-tools/"
 cover:
   image: "/images/on-unserious-thinking/on-shopping-agents_hilma-af-klint-the-swan-no-10-1915_painting.jpg"
@@ -18,17 +20,15 @@ cover:
 
 Much ado about whether consumers want shopping agents. I'm skeptical, but even granting the demand, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
 
-Saving people time is a proposition. Getting them to buy things is an enormous business. Consider ecommerce, all the rage these days with agents like Muse and Instinct.
-
 ## **II.**
 
 On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
 
-So let's assume:
+To model three-year business outcomes, let's assume:
 
 - Twice as many weekly users as daily users: **2.5m daily → 5m weekly**.
 - A quarter of those weekly users buy once a month at $200: **$3bn in annual purchases**.
-- A 5% take for Muse: equivalent to [Stripe's entire processing charge](https://stripe.com/us/pricing) of roughly 3% plus a 2% convenience fee → **$150m in annual gross fees**.
+- A 5% take for Muse: equivalent to [Stripe's entire processing charge](https://stripe.com/pricing) of roughly 3% plus a 2% convenience fee → **$150m in annual gross fees**.
 
 The three scenarios below start at 5m weekly users and reach 10m, 50m and 200m after three years. For comparison, the dashed line applies [ChatGPT's earlier nine-month doubling pace](https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410) to the same starting point, reaching 80m. The bull case assumes faster growth, comparable to ChatGPT's later rise from 200m to nearly 700m weekly users in a year.
 
