@@ -66,7 +66,7 @@ Compare [Amazon's advertising business](https://www.sec.gov/Archives/edgar/data/
 
 Growing Meta's 2025 ad revenue by 26.2% would add $51.5bn a year, matching the Muse bull case. In 2025, ad revenue grew by [22.1%, or $35.5bn](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm). The required growth rate is 4.1 percentage points higher, from a larger base. Putting that compute into better ad targeting feels more sensible.
 
-In a similar vein, on the supply side, Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of its ad revenue to discounts after covering ad costs, it could cut prices by roughly 2%. An upstart has to pay for compute and customer acquisition out of convenience fees.
+In a similar vein, on the supply side, Amazon can use agents to improve search and ad targeting in its own store. Advertising revenue can also fund lower prices. If Amazon devoted a quarter of its ad revenue to discounts after covering ad costs, it could cut prices by roughly 2% and swamp an agent's entire convenience fee. An upstart has to pay for compute and customer acquisition out of that fee. Without it, agents are left as a pure processing play, battling giants that have invested trillions in delivery, returns, and the rest of the retail infrastructure, with processing schemes of their own.
 
 ## **V.**
 
