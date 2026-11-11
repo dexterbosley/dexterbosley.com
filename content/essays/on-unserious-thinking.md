@@ -18,11 +18,11 @@ cover:
 
 ## **I.**
 
-Much ado about whether consumers want shopping agents. I'm skeptical, but even granting the demand, the businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
+Much ado about whether consumers want shopping agents. I'm skeptical. The businesses that matter at scale have little incentive to support an independent agent shopping on the consumer's behalf. They will protect their margins with their own agents or block outside ones.
 
 ## **II.**
 
-On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported over 10m Muse setups in the US and Canada with about 25% active daily. Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
+On its [Q3 2026 earnings call](https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/) Meta reported [over 10m Muse setups in the US and Canada with about 25% active daily](https://apnews.com/article/13ecd6c459e39a3602f302bcc2412fe9). Over a quarter of weekly users used it for shopping with average purchases above $200, including travel.
 
 To model three-year business outcomes, let's assume:
 
@@ -30,7 +30,7 @@ To model three-year business outcomes, let's assume:
 - A quarter of those weekly users buy once a month at $200: **$3bn in annual purchases**.
 - A 5% take for Muse: equivalent to [Stripe's entire processing charge](https://stripe.com/pricing) of roughly 3% plus a 2% convenience fee → **$150m in annual gross fees**.
 
-All lines start at 5m weekly users. ChatGPT grew from [200m weekly users in August 2024](https://www.investing.com/news/stock-market-news/openai-says-chatgpts-weekly-users-have-grown-to-200-million-3594410) to [nearly 700m in August 2025](https://openai.com/index/gpt-5-new-era-of-work/), roughly 3.5× in a year. Sustaining that pace for three years from 5m gives **214m weekly users**. That's the dashed reference line. The bull case reaches **twice that year-three user count: 429m**. Bear and base reach 10m and 50m.
+All lines start at 5m weekly users. ChatGPT grew from [200m weekly users in August 2024](https://www.reuters.com/technology/artificial-intelligence/openai-says-chatgpts-weekly-users-have-grown-200-million-2024-08-29/) to [nearly 700m in August 2025](https://www.reuters.com/business/openai-eyes-500-billion-valuation-potential-employee-share-sale-source-says-2025-08-06/), roughly 3.5× in a year. Sustaining that pace for three years from 5m gives **214m weekly users**. That's the dashed reference line. The bull case reaches **twice that year-three user count: 429m**. Bear and base reach 10m and 50m.
 
 The chart models Muse users, not actual ChatGPT users. All curves compound smoothly from the same starting point; the bull case reaches twice the reference at year three. Figures and annual growth rates are rounded.
 
@@ -74,8 +74,8 @@ Amazon has a similar investment choice. It can put compute into agents that impr
 
 ## **V.**
 
-Travel is a legitimate consumer use case: people have a destination and dates and want help booking. Beyond that, b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense.
+Travel is a legitimate consumer use case. Beyond that, b2c shopping agents bet on a consumer preference for productivity that feels absurd when the best consumer product of all time is an infinite feed of nonsense.
 
-But even granting consumer demand, the businesses that matter at scale have little reason to support an independent agent serving the shopper. And the promised mom-and-pop insurgency need only look at Amazon to see who ends up in control.
+The businesses that matter at scale have little reason to support an independent agent serving the shopper. And the promised mom-and-pop insurgency need only look at [Amazon to see who ends up in control](https://www.ft.com/content/64f01bfe-39b9-49f6-86eb-be96374539cf).
 
-The business incentives already make this a nonstarter to me. In 2026, we're still in search of a broader consumer case.
+In 2026, we're still in search of a broader consumer case.
