@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: "about"
-description: "Product manager at Ramp, based in New York."
+description: "Product manager at Ramp. Previously DoorDash, Uber, and WeWork."
 cover:
   image: "/images/about/about_francisco-goya-the-dog-1820-1823_painting.jpg"
   alt: "A small dog peering above a dark slope in Francisco Goya's The Dog"
@@ -13,5 +13,3 @@ cover:
 - Product manager at Ramp
 - Previously DoorDash, Uber, and WeWork
 - Economics at Northwestern University
-- Crystal Springs Uplands School
-- Based in New York

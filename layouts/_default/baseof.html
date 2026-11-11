@@ -75,6 +75,11 @@
         {{- end }}
         <header class="site-header">
             {{ if or .IsHome (eq .Layout "about") }}<h1 class="site-title">{{ $siteTitle }}</h1>{{ else }}<span class="site-title">{{ $siteTitle }}</span>{{ end }}
+            {{- if eq .Layout "about" }}
+            <nav class="post-actions-compact" aria-label="Back to home">
+                <a href="/">&lt; BACK</a>
+            </nav>
+            {{- end }}
         </header>
         {{- end }}
 
