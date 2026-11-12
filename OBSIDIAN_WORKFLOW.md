@@ -1,5 +1,7 @@
 # DexterBosley.com Workflow
 
+For the desktop editor, Save & Preview, Publish, and setup on another computer, start with [WRITING.md](WRITING.md). The source of truth is the existing `content/` directory.
+
 Run commands from the root of the `dexterbosley.com` repository. Edit source files, then rebuild `docs/` before publishing. Use Hugo 0.157.0 to keep generated output consistent.
 
 ## Preview And Build
@@ -48,7 +50,7 @@ home_recent: true
 Use a bundle when a post has local images:
 
 ```text
-posts/essays/post-slug/
+content/essays/post-slug/
   index.md
   post-slug_caption-title_photo.jpg
   post-slug_caption-title_graph.png
@@ -91,7 +93,7 @@ The site uses the native form endpoint. Do not restore an inline success message
 1. Run `hugo --cleanDestinationDir`.
 2. Run `python3 scripts/check_site.py` for local links, asset integrity, feeds, forms, and loading budgets.
 3. Review home, essay, story, note, archive, about, subscribe, and 404 at desktop and mobile widths. Check for horizontal page overflow and unreadable text.
-4. Confirm the home header shows `BY DEXTER BOSLEY` without navigation links, followed by the photo, subscribe form, `POPULAR`, and `POSTS`. Footer contains About, email, LinkedIn, and copyright.
+4. Confirm the home header shows `BY DEXTER BOSLEY` without navigation links, followed by the photo, subscribe form, `PINNED`, and `POSTS`. Footer contains About, email, LinkedIn, and copyright. Back and Share appear only in the top header of interior pages.
 5. Confirm titles and browser tabs are uppercase. Post navigation has `< BACK` above `^ SHARE`.
 6. Confirm the photo is responsive, has intrinsic dimensions, and uses a generated WebP instead of the full source JPEG. Confirm CSS and JavaScript are shared fingerprinted assets.
 7. Confirm forms have a real no-JS `action` and `method`, and invalid email input is rejected before submission.

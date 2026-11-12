@@ -2,3 +2,5 @@
 resources/_gen/
 .hugo_cache/
 email/
+.local-editor/
+__pycache__/
